@@ -80,6 +80,8 @@ class LRLinear(nn.Module):
             ), f"Input mode {mode} outside of range {self.n_modes}"
         assert x.shape[-1] == self.inf, f"Input wrong dim ({x.shape}, {self.inf})"
 
+        # print("Devices:", x.device, self.u.device, self.v.device, self.bias.device)
+        x = x.to(self.u.device)
         pre_act = (self.u @ (self.v @ x.T)).T
         if self.bias is not None:
             pre_act += self.bias

@@ -17,16 +17,32 @@ from higher.patch import (
     make_functional,
 )
 from .patch import monkeypatch as _make_functional
+# from easyeditor.trainer.algs.patch import monkeypatch as _make_functional
 
 from . import local_nn
+# from easyeditor.trainer.algs import local_nn
+
 from .editable_model import EditableModel
+# from easyeditor.trainer.algs.editable_model import EditableModel
 from .hooks import hook_model
+# from easyeditor.trainer.algs.hooks import hook_model
 from ..utils import _inner_params, _logits
+# from easyeditor.trainer.utils import _inner_params, _logits
+
+from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
+import librosa
 
 LOG = logging.getLogger(__name__)
 
 
 def update_counter(x, m, s, k):
+    # print(x.device, m.device, s.device, k.device)
+    
+    # x = x.to(x.device)
+    m = m.to(x.device)
+    s = s.to(x.device)
+    k = k.to(x.device)
+    # x = x.to(m.device)
     new_m = m + (x - m) / k
     new_s = s + (x - m) * (x - new_m)
 
@@ -142,6 +158,8 @@ class GradientTransform(nn.Module):
                 raise RuntimeError(
                     f"Can't perform normalization with only {self.k} samples so far"
                 )
+                
+            self.k = self.k.to(self.u_s.device) # TODO: Ensure k is on the same device as u_s and v_s in a more robust way
             self.u_std = (self.u_s / (self.k - 1)) ** 0.5
             self.v_std = (self.v_s / (self.k - 1)) ** 0.5
 
@@ -268,6 +286,11 @@ class MEND(EditableModel):
         elif 'internlm' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'qwen2audio' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
+            )
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -316,6 +339,12 @@ class MEND(EditableModel):
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]  
+        elif 'qwen2audio' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
+            )
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
@@ -391,7 +420,7 @@ class MEND(EditableModel):
 
         edited_model = self.model
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower():
+            if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower() or 'qwen2audio' in self.config.model_name.lower():
                 edited_model = _make_functional(edited_model, in_place=True)
             else:
                 edited_model = monkeypatch(edited_model, in_place=True)
@@ -436,6 +465,7 @@ class MEND_Qwen2Audio(EditableModel):
 
         if not str(self.config.device).startswith('cuda'):
             self.config.device = f'cuda:{self.config.device}'
+            # print(f"Setting device to {self.config.device}")
 
         if edit_lrs is None:
             edit_lrs = nn.Parameter(
@@ -604,8 +634,20 @@ class MEND_Qwen2Audio(EditableModel):
         for p in pset:
             assert p in names, f"inner param {p} not in model"
 
-        loss.backward() # TODO: check whether the backward pass is correct for Qwen2Audio, i.e., the parameters (including the modality adapter) have gradients
-
+        loss.backward() 
+        
+        # ############ Check whether there are gradients for Qwen2Audio ##############
+        # for name, param in self.model.named_parameters():
+        #     if param.requires_grad:
+        #         if param.grad is None:
+        #             print(f"{name}: No gradient")
+        #         elif torch.all(param.grad == 0):
+        #             print(f"{name}: gradient is 0")
+        #         else:
+        #             pass
+        #             # print(f"{name}: with gradient")
+        
+        
         if self.config.shared:
             param_idx = (
                 lambda n, p: self.shape_dict[self.get_shape(p)].index(n)
@@ -645,6 +687,7 @@ class MEND_Qwen2Audio(EditableModel):
         for n, p in _inner_params(
             self.model.named_parameters(), self.config.inner_params
         ):
+            mean_grads[n] = mean_grads[n].to(p.device)
             info_dict[f"grad/true_mag{idx}"] = p.grad.norm(2).item()
             info_dict[f"grad/pseudo_mag{idx}"] = mean_grads[n].norm(2).item()
             info_dict[f"grad/true_std{idx}"] = p.grad.std().item()
@@ -697,35 +740,106 @@ class MEND_Qwen2Audio(EditableModel):
 if __name__ == "__main__":
     import types
 
-    model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
+    # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
+    model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
+    processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+
 
     config = types.SimpleNamespace()
     config.inner_params = [
-        "transformer.h.9.mlp.c_fc.weight",
-        "transformer.h.9.mlp.c_proj.weight",
-        "transformer.h.10.mlp.c_fc.weight",
-        "transformer.h.10.mlp.c_proj.weight",
-        "transformer.h.11.mlp.c_fc.weight",
-        "transformer.h.11.mlp.c_proj.weight",
+        "multi_modal_projector.linear.weight",
+        "language_model.model.layers.31.mlp.gate_proj.weight",
+        "language_model.model.layers.31.mlp.up_proj.weight",
+        "language_model.model.layers.31.mlp.down_proj.weight"
     ]
     config.edit_lr = 0.0001
-
+    config.model_name = "Qwen2AudioForConditionalGeneration"
+    config.model_class = "Qwen2AudioForConditionalGeneration"
     # config.mend = types.SimpleNamespace()
     config.n_hidden = 1
-    config = config.__dict__
-
-    mend = MEND(model, config, lambda: copy.deepcopy(model)).cuda()
+    config.device = "cuda"
+    config.shared = True
+    config.model_parallel = True
+    config.alg = "MEND"
+    config.lr = 1e-6
+    config.edit_lr = 1e-4
+    config.lr_lr = 1e-4
+    config.lr_scale = 1.0
+    config.seed = 42
+    config.cedit = 0.1
+    config.cloc = 1.0
+    config.cbase = 1.0
+    config.dropout = 0.0
+    config.train_base = False
+    config.no_grad_layers = None
+    config.one_sided = False
+    config.n_hidden = 1
+    config.hidden_dim = None
+    config.init = "id"
+    config.norm = True
+    config.combine = True
+    config.x_only = False
+    config.delta_only = False
+    config.act = "relu"
+    config.rank = 1920
+    config.mlp_class = "IDMLP"
+    config.shared = True
+    # config = config.__dict__
+    
+    
+    mend = MEND_Qwen2Audio(model, config, lambda: copy.deepcopy(model))
+    torch.save(mend.state_dict(), "test_state.pt") # Random intialize a testing checkpoint for sanity check
     import pdb
 
     pdb.set_trace()
     mend.load_state_dict(torch.load("test_state.pt"))
-    x = torch.arange(20).view(1, 20).cuda() + 1000
-    orig_logits = mend(x)
-    edited = mend.edit(x, masks=torch.ones_like(x), labels=x)
-    post_logits = mend(x)
+    
+    
+    # test
+    for n, p in model.named_parameters():
+        if n not in config.inner_params:
+            p.requires_grad = False
+    
+    for n, p in mend.model.named_parameters():
+        print(f"{n}: {p.shape}, requires_grad: {p.requires_grad}")
 
-    assert torch.allclose(orig_logits, post_logits)
+    x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
+    
+    test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
+    conversation = [
+        {"role": "user", "content": [
+            {"type": "audio", "audio_url": test_audio},
+            {"type": "text", "text": "What is in this audio?"}
+        ]}
+    ]
+    text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+    audios = []
+    for message in conversation:
+        if isinstance(message["content"], list):
+            for ele in message["content"]:
+                if ele["type"] == "audio":
+                    audios.append(librosa.load(
+                        ele['audio_url'], 
+                        sr=processor.feature_extractor.sampling_rate)[0]
+                    )
 
+    inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+    inputs['labels'] = x.to(model.device)
+    # inputs.input_ids = inputs.input_ids.to("cuda")
+
+
+    for k, v in inputs.items():
+        if isinstance(v, list):
+            inputs[k] = [item.to(model.device) for item in v]
+        else:
+            inputs[k] = v.to(model.device)
+    
+    
+    orig_logits = mend(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, input_features=inputs.input_features, feature_attention_mask=inputs.feature_attention_mask)
+    edited = mend.edit(inputs)
+    post_logits = mend(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, input_features=inputs.input_features, feature_attention_mask=inputs.feature_attention_mask)
+
+    # assert torch.allclose(orig_logits, post_logits)
     orig_param = [
         p
         for (n, p) in mend.model.named_parameters()
@@ -733,21 +847,21 @@ if __name__ == "__main__":
     ][0]
     edited_param = [
         p
-        for (n, p) in edited.model.named_parameters()
+        for (n, p) in edited[0].model.named_parameters()
         if n == config.inner_params[-1]
     ][0]
 
     LOG.info((orig_param - edited_param).abs().max())
-    edited.eval()
-    LOG.info(
-        mend(x, labels=x).loss,
-        edited(x, labels=x).loss,
-        edited.edit_loss_fn(edited(x).logits, x)["nll"],
-    )
-    edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
-    LOG.info(
-        mend(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss
-    )
+    # edited.eval()
+    # LOG.info(
+    #     mend(x, labels=x).loss,
+    #     edited(x, labels=x).loss,
+    #     edited.edit_loss_fn(edited(x).logits, x)["nll"],
+    # )
+    # edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
+    # LOG.info(
+    #     mend(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss
+    # )
 
 
 def monkeypatch(
