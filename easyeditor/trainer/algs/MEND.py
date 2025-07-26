@@ -17,19 +17,14 @@ from higher.patch import (
     make_functional,
 )
 from .patch import monkeypatch as _make_functional
-# from easyeditor.trainer.algs.patch import monkeypatch as _make_functional
-
 from . import local_nn
-# from easyeditor.trainer.algs import local_nn
-
 from .editable_model import EditableModel
-# from easyeditor.trainer.algs.editable_model import EditableModel
 from .hooks import hook_model
-# from easyeditor.trainer.algs.hooks import hook_model
 from ..utils import _inner_params, _logits
-# from easyeditor.trainer.utils import _inner_params, _logits
 
 from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
+from desta import DeSTA25AudioModel
+
 import librosa
 
 LOG = logging.getLogger(__name__)
@@ -451,7 +446,7 @@ class MEND(EditableModel):
         )
 
 
-class MEND_Qwen2Audio(EditableModel):
+class MEND_DeSTA(EditableModel):
     def get_shape(self, p):
         # We need to flip the shapes since OpenAI gpt2 uses convs instead of linear
         return (
@@ -563,6 +558,11 @@ class MEND_Qwen2Audio(EditableModel):
                 self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             )
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
+                           batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
+            )
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -616,6 +616,12 @@ class MEND_Qwen2Audio(EditableModel):
                 self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
             )
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'], batch_features=batch['batch_features'], 
+                           batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
+            )
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
@@ -707,7 +713,8 @@ class MEND_Qwen2Audio(EditableModel):
         
         # TODO: Check whether we should use _make_functional here
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower() or 'qwen2audio' in self.config.model_name.lower():
+            multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
+            if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
                 edited_model = _make_functional(edited_model, in_place=True)
             else:
                 edited_model = monkeypatch(edited_model, in_place=True)
