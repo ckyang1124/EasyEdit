@@ -27,6 +27,9 @@ class EditableModel(nn.Module):
             elif 'chatglm' in config.model_name.lower():
                 return masked_log_probs(config, pred, targ, shift=True)
             elif 'qwen' in config.model_name.lower():
+                # This should be compatible with both Qwen LLM and Qwen2Audio models
+                return masked_log_probs(config, pred, targ, shift=True)
+            elif 'desta' in config.model_name.lower():
                 return masked_log_probs(config, pred, targ, shift=True)
             elif 'mistral' in config.model_name.lower():
                 return masked_log_probs(config, pred, targ, shift=True)

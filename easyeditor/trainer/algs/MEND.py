@@ -1,6 +1,7 @@
 import copy
 import logging
 from collections import defaultdict
+from xml.parsers.expat import model
 
 import higher
 import torch
@@ -28,7 +29,6 @@ from desta import DeSTA25AudioModel
 import librosa
 
 LOG = logging.getLogger(__name__)
-
 
 def update_counter(x, m, s, k):
     # print(x.device, m.device, s.device, k.device)
@@ -178,6 +178,12 @@ class GradientTransform(nn.Module):
 class MEND(EditableModel):
     def get_shape(self, p):
         # We need to flip the shapes since OpenAI gpt2 uses convs instead of linear
+        
+        # Modified for DeSTA2.5-Audio because some parameters do not have two dimensional 
+        # TODO: Find a proper way to handle this
+        # if len(p.shape) < 2:
+        #     return p.shape
+        
         return (
             p.shape
             if isinstance(self.model, transformers.GPT2LMHeadModel)
@@ -237,6 +243,7 @@ class MEND(EditableModel):
             self.mend = mend
 
     def state_dict(self, destination=None, prefix="", keep_vars=False):
+    # def state_dict(self, prefix="", keep_vars=False):
         state_dict = super().state_dict(
             prefix=prefix, keep_vars=keep_vars
         )  # Get default state dict
@@ -449,6 +456,12 @@ class MEND(EditableModel):
 class MEND_DeSTA(EditableModel):
     def get_shape(self, p):
         # We need to flip the shapes since OpenAI gpt2 uses convs instead of linear
+        
+        # Modified for DeSTA2.5-Audio because some parameters do not have two dimensional 
+        # TODO: Find a proper way to handle this
+        # if len(p.shape) < 2:
+        #     return p.shape
+        
         return (
             p.shape
             if isinstance(self.model, transformers.GPT2LMHeadModel)
@@ -457,7 +470,6 @@ class MEND_DeSTA(EditableModel):
 
     def __init__(self, model, config, model_constructor, mend=None, edit_lrs=None):
         super().__init__(model, config, model_constructor)
-
         if not str(self.config.device).startswith('cuda'):
             self.config.device = f'cuda:{self.config.device}'
             # print(f"Setting device to {self.config.device}")
@@ -515,8 +527,12 @@ class MEND_DeSTA(EditableModel):
         model_keys = self.model.state_dict(
             prefix=prefix, keep_vars=keep_vars
         ).keys()  # Remove model params
+       
+        #### TODO: Find a better way to handle this
         for k in model_keys:
-            del state_dict[f"model.{k}"]
+            for state_dict_key in list(state_dict.keys()):
+                if f'model.{k}' in state_dict_key:
+                    del state_dict[f"model.{k}"]
         state_dict["model_config"] = self.model.config  # Include model config
         return state_dict
 
@@ -622,6 +638,8 @@ class MEND_DeSTA(EditableModel):
                 self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'], batch_features=batch['batch_features'], 
                            batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
             )
+            
+            print(outputs.shape, batch['labels'].shape)
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
@@ -715,6 +733,16 @@ class MEND_DeSTA(EditableModel):
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
             multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
             if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
+                for name, module in edited_model.named_modules():
+                    metaclass = type(type(module))
+                    if metaclass is not type:
+                        print(f"[Problem] {name:40} | type: {type(module)} | metaclass: {metaclass}")
+                
+                if hasattr(edited_model, 'vad_model') and edited_model.vad_model is not None:
+                    # If the model has a vad_model, we need to backup it and remove it for monkeypatching
+                    LOG.info("Removing vad_model for monkeypatching (as it is not part of our editable parameters)")
+                    vad_model_backup = edited_model.vad_model
+                    del edited_model.vad_model
                 edited_model = _make_functional(edited_model, in_place=True)
             else:
                 edited_model = monkeypatch(edited_model, in_place=True)
@@ -732,7 +760,7 @@ class MEND_DeSTA(EditableModel):
             new_model = self.model_constructor()
             new_model.load_state_dict(edited_model.state_dict())
             edited_model = new_model
-
+        
         return (
             MEND(
                 edited_model,
@@ -750,7 +778,8 @@ if __name__ == "__main__":
     # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
     model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
     processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
-
+    # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
+    # print(type(model))
 
     config = types.SimpleNamespace()
     config.inner_params = [
@@ -758,8 +787,13 @@ if __name__ == "__main__":
         "language_model.model.layers.31.mlp.gate_proj.weight",
         "language_model.model.layers.31.mlp.up_proj.weight",
         "language_model.model.layers.31.mlp.down_proj.weight"
+        # "llm_model.model.layers.31.mlp.gate_proj.weight",
+        # "llm_model.model.layers.31.mlp.up_proj.weight",
+        # "llm_model.model.layers.31.mlp.down_proj.weight"
     ]
     config.edit_lr = 0.0001
+    # config.model_name = "DeSTA25AudioModel"
+    # config.model_class = "DeSTA25AudioModel"
     config.model_name = "Qwen2AudioForConditionalGeneration"
     config.model_class = "Qwen2AudioForConditionalGeneration"
     # config.mend = types.SimpleNamespace()
@@ -794,23 +828,39 @@ if __name__ == "__main__":
     # config = config.__dict__
     
     
-    mend = MEND_Qwen2Audio(model, config, lambda: copy.deepcopy(model))
-    torch.save(mend.state_dict(), "test_state.pt") # Random intialize a testing checkpoint for sanity check
-    import pdb
-
-    pdb.set_trace()
-    mend.load_state_dict(torch.load("test_state.pt"))
-    
-    
+    mend = MEND_DeSTA(model, config, lambda: copy.deepcopy(model))
     # test
     for n, p in model.named_parameters():
         if n not in config.inner_params:
             p.requires_grad = False
-    
-    for n, p in mend.model.named_parameters():
-        print(f"{n}: {p.shape}, requires_grad: {p.requires_grad}")
+        else:
+            p.requires_grad = True
+            
+    torch.save(mend.state_dict(), "test_state_test_qwen.pt") # Random intialize a testing checkpoint for sanity check
+    import pdb
+
+    # pdb.set_trace()
+    mend.load_state_dict(torch.load("test_state_test_qwen.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
 
     x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
+    
+    # messages = [
+    #     {
+    #         "role": "system",
+    #         "content": "Focus on the audio clips and instructions."
+    #     },
+    #     {
+    #         "role": "user",
+    #         "content": "<|AUDIO|>\nDescribe this audio.",
+    #         "audios": [{
+    #             "audio": "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
+    #             "text": None
+    #         }]
+    #     }
+    # ]
+    
+    # inputs = model.process_before_forward(messages)
+    # inputs['labels'] = x.to(model.device)
     
     test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
     conversation = [
@@ -820,6 +870,7 @@ if __name__ == "__main__":
         ]}
     ]
     text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+
     audios = []
     for message in conversation:
         if isinstance(message["content"], list):
@@ -829,12 +880,11 @@ if __name__ == "__main__":
                         ele['audio_url'], 
                         sr=processor.feature_extractor.sampling_rate)[0]
                     )
-
+                    
     inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+    inputs.input_ids = inputs.input_ids.to("cuda")
     inputs['labels'] = x.to(model.device)
-    # inputs.input_ids = inputs.input_ids.to("cuda")
-
-
+    
     for k, v in inputs.items():
         if isinstance(v, list):
             inputs[k] = [item.to(model.device) for item in v]
@@ -842,11 +892,10 @@ if __name__ == "__main__":
             inputs[k] = v.to(model.device)
     
     
-    orig_logits = mend(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, input_features=inputs.input_features, feature_attention_mask=inputs.feature_attention_mask)
+    # pdb.set_trace()
+    orig_logits = mend(**inputs)
     edited = mend.edit(inputs)
-    post_logits = mend(input_ids=inputs.input_ids, attention_mask=inputs.attention_mask, input_features=inputs.input_features, feature_attention_mask=inputs.feature_attention_mask)
-
-    # assert torch.allclose(orig_logits, post_logits)
+    post_logits = mend(**inputs)
     orig_param = [
         p
         for (n, p) in mend.model.named_parameters()
@@ -859,16 +908,6 @@ if __name__ == "__main__":
     ][0]
 
     LOG.info((orig_param - edited_param).abs().max())
-    # edited.eval()
-    # LOG.info(
-    #     mend(x, labels=x).loss,
-    #     edited(x, labels=x).loss,
-    #     edited.edit_loss_fn(edited(x).logits, x)["nll"],
-    # )
-    # edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
-    # LOG.info(
-    #     mend(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss
-    # )
 
 
 def monkeypatch(
