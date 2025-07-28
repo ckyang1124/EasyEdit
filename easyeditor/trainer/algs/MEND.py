@@ -243,7 +243,6 @@ class MEND(EditableModel):
             self.mend = mend
 
     def state_dict(self, destination=None, prefix="", keep_vars=False):
-    # def state_dict(self, prefix="", keep_vars=False):
         state_dict = super().state_dict(
             prefix=prefix, keep_vars=keep_vars
         )  # Get default state dict
@@ -251,7 +250,8 @@ class MEND(EditableModel):
             prefix=prefix, keep_vars=keep_vars
         ).keys()  # Remove model params
         for k in model_keys:
-            del state_dict[f"model.{k}"]
+            if f'model.{k}' in state_dict:
+                del state_dict[f"model.{k}"]
         state_dict["model_config"] = self.model.config  # Include model config
         return state_dict
 
@@ -293,6 +293,11 @@ class MEND(EditableModel):
                 self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             )
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
+                           batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
+            )
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -346,6 +351,13 @@ class MEND(EditableModel):
                 self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
             )
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'], batch_features=batch['batch_features'], 
+                           batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
+            )
+            
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
@@ -405,6 +417,7 @@ class MEND(EditableModel):
         for n, p in _inner_params(
             self.model.named_parameters(), self.config.inner_params
         ):
+            mean_grads[n] = mean_grads[n].to(p.device)
             info_dict[f"grad/true_mag{idx}"] = p.grad.norm(2).item()
             info_dict[f"grad/pseudo_mag{idx}"] = mean_grads[n].norm(2).item()
             info_dict[f"grad/true_std{idx}"] = p.grad.std().item()
@@ -422,7 +435,19 @@ class MEND(EditableModel):
 
         edited_model = self.model
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower() or 'qwen2audio' in self.config.model_name.lower():
+            multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
+            if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
+                
+                ##### For Debugging ######
+                # for name, module in edited_model.named_modules():
+                #     metaclass = type(type(module))
+                #     if metaclass is not type:
+                #         print(f"[Problem] {name:40} | type: {type(module)} | metaclass: {metaclass}")
+                
+                if hasattr(edited_model, 'vad_model') and edited_model.vad_model is not None:
+                    # If the model has a vad_model, we need to backup it and remove it for monkeypatching
+                    LOG.info("Removing vad_model for monkeypatching (as it is not part of our editable parameters)")
+                    del edited_model.vad_model
                 edited_model = _make_functional(edited_model, in_place=True)
             else:
                 edited_model = monkeypatch(edited_model, in_place=True)
@@ -472,7 +497,6 @@ class MEND_DeSTA(EditableModel):
         super().__init__(model, config, model_constructor)
         if not str(self.config.device).startswith('cuda'):
             self.config.device = f'cuda:{self.config.device}'
-            # print(f"Setting device to {self.config.device}")
 
         if edit_lrs is None:
             edit_lrs = nn.Parameter(
@@ -530,9 +554,11 @@ class MEND_DeSTA(EditableModel):
        
         #### TODO: Find a better way to handle this
         for k in model_keys:
-            for state_dict_key in list(state_dict.keys()):
-                if f'model.{k}' in state_dict_key:
-                    del state_dict[f"model.{k}"]
+            if f'model.{k}' in state_dict:
+                del state_dict[f"model.{k}"]
+            # for state_dict_key in list(state_dict.keys()):
+            #     if f'model.{k}' in state_dict_key:
+            #         del state_dict[f"model.{k}"]
         state_dict["model_config"] = self.model.config  # Include model config
         return state_dict
 
@@ -639,7 +665,7 @@ class MEND_DeSTA(EditableModel):
                            batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
             )
             
-            print(outputs.shape, batch['labels'].shape)
+            # print(outputs.shape, batch['labels'].shape)
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
@@ -668,8 +694,7 @@ class MEND_DeSTA(EditableModel):
         #         elif torch.all(param.grad == 0):
         #             print(f"{name}: gradient is 0")
         #         else:
-        #             pass
-        #             # print(f"{name}: with gradient")
+        #             print(f"{name}: with gradient")
         
         
         if self.config.shared:
@@ -733,10 +758,12 @@ class MEND_DeSTA(EditableModel):
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
             multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
             if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
-                for name, module in edited_model.named_modules():
-                    metaclass = type(type(module))
-                    if metaclass is not type:
-                        print(f"[Problem] {name:40} | type: {type(module)} | metaclass: {metaclass}")
+                
+                ##### For Debugging ######
+                # for name, module in edited_model.named_modules():
+                #     metaclass = type(type(module))
+                #     if metaclass is not type:
+                #         print(f"[Problem] {name:40} | type: {type(module)} | metaclass: {metaclass}")
                 
                 if hasattr(edited_model, 'vad_model') and edited_model.vad_model is not None:
                     # If the model has a vad_model, we need to backup it and remove it for monkeypatching
@@ -828,7 +855,7 @@ if __name__ == "__main__":
     # config = config.__dict__
     
     
-    mend = MEND_DeSTA(model, config, lambda: copy.deepcopy(model))
+    mend = MEND(model, config, lambda: copy.deepcopy(model))
     # test
     for n, p in model.named_parameters():
         if n not in config.inner_params:
@@ -836,11 +863,11 @@ if __name__ == "__main__":
         else:
             p.requires_grad = True
             
-    torch.save(mend.state_dict(), "test_state_test_qwen.pt") # Random intialize a testing checkpoint for sanity check
+    torch.save(mend.state_dict(), "test_state_test_desta.pt") # Random intialize a testing checkpoint for sanity check
     import pdb
 
     # pdb.set_trace()
-    mend.load_state_dict(torch.load("test_state_test_qwen.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
+    mend.load_state_dict(torch.load("test_state_test_desta.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
 
     x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
     
