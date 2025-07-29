@@ -663,8 +663,7 @@ class MEND_DeSTA(EditableModel):
             outputs = _logits(
                 self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'], batch_features=batch['batch_features'], 
                            batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
-            )
-            
+            )            
             # print(outputs.shape, batch['labels'].shape)
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
