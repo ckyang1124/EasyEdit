@@ -11,40 +11,6 @@ from typing import Iterable
 from torch.utils.data import Dataset, ConcatDataset
 from torch.utils.data.dataloader import default_collate
 import os
-
-class BaseDataset_old(Dataset):
-    def __init__(
-        self, vis_processor=None, vis_root=None, rephrase_root=None, ann_paths=[]
-    ):
-        """
-        vis_root (string): Root directory of images (e.g. coco/images/)
-        ann_root (string): directory to store the annotation file
-        """
-        self.vis_root = vis_root
-        self.rephrase_root = rephrase_root
-
-        self.annotation = []
-        for ann_path in ann_paths:
-            self.annotation.extend(json.load(open(ann_path, "r")))
-
-        self.vis_processor = vis_processor
-        # self.text_processor = text_processor
-
-        self._add_instance_ids()
-
-    def __len__(self):
-        return len(self.annotation)
-
-    def collater(self, samples):
-        return default_collate(samples)
-
-    def set_processors(self, vis_processor):
-        self.vis_processor = vis_processor
-        # self.text_processor = text_processor
-
-    def _add_instance_ids(self, key="instance_id"):
-        for idx, ann in enumerate(self.annotation):
-            ann[key] = str(idx)
             
 class BaseDataset(Dataset):
     def __init__(
@@ -68,6 +34,8 @@ class BaseDataset(Dataset):
 
             for data_point, data_content in json.load(open(metadata, "r")).items():                
                 # Reliability
+                item = {}
+                
                 reliability_audio_path = os.path.join(self.audio_root, track, data_point)
                 assert os.path.exists(reliability_audio_path), f"Audio file {reliability_audio_path} does not exist."
                 reliability_question = data_content['reliability_question']
@@ -77,27 +45,30 @@ class BaseDataset(Dataset):
                     'question': reliability_question,
                     'answer': reliability_answer
                 }
-
+                item['reliability'] = reliability_data
+                
                 # Generality
                 generality_data = [self.process(data_content['generality'][i], track=track) for i in range(len(data_content['generality']))]
-
+                for i, data in enumerate(generality_data):
+                    item[f'generality_type_{i}'] = data
+                
+                
                 # Locality
                 locality_audio_data = [self.process(data_content['locality']['audio'][i], track=track) for i in range(len(data_content['locality']['audio']))]
+                for i, data in enumerate(locality_audio_data):
+                    item[f'locality_audio_type_{i}'] = data
+                    
+                # text locality should only have one data per sample
+                assert len(data_content['locality']['text']) == 1, "Locality text should only have one data per sample."    
                 locality_text_data = [self.process(data_content['locality']['text'][i], track=track) for i in range(len(data_content['locality']['text']))]
-
-                self.data.append(
-                    {
-                        "reliability": reliability_data,
-                        "generality": generality_data,
-                        "locality_audio": locality_audio_data,
-                        "locality_text": locality_text_data,
-                    }
-                )
+                item['locality_text'] = locality_text_data[0]
+                
+                self.data.append(item)
 
         self._add_instance_ids()
 
     def __len__(self):
-        return len(self.annotation)
+        return len(self.data)
 
     def collater(self, samples):
         return default_collate(samples)
@@ -119,6 +90,7 @@ class BaseDataset(Dataset):
                 assert os.path.exists(audio_path), f"Audio file {audio_path} does not exist."
         else:
             audio_path = None
+            
         question = sample.get('question', '')
         answer = sample.get('answer', '')
         
