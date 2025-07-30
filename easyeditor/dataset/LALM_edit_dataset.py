@@ -90,6 +90,8 @@ class Qwen2AudioDataset(BaseDataset):
                 max_length=self.max_length,
                 truncation=True
             )
+            inputs['input_features'] = None
+            inputs['feature_attention_mask'] = None
         else:
             inputs = self.processor.tokenizer(
                 input_text,
