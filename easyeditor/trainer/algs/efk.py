@@ -17,11 +17,11 @@ import torch
 from allennlp.modules.feedforward import FeedForward
 from allennlp.modules.seq2vec_encoders import PytorchSeq2VecWrapper
 from transformers import BartForConditionalGeneration, T5ForConditionalGeneration, Qwen2AudioForConditionalGeneration, AutoProcessor
-
-from ..editable_model import EditableModel
+from collections import deque
+from .editable_model import EditableModel
 from ..models import BertClassifier
 from ..utils import _inner_params, _logits
-from .mend import monkeypatch as make_functional
+from .MEND import monkeypatch as make_functional
 from desta import DeSTA25AudioModel
 
 import librosa
@@ -32,7 +32,10 @@ LOG = logging.getLogger(__name__)
 class EFK(EditableModel):
     def __init__(self, model, config, model_constructor, editor=None):
         super().__init__(model, config, model_constructor)
-
+        
+        if not str(self.config.device).startswith('cuda'):
+            self.config.device = f'cuda:{self.config.device}'
+            
         if editor is None:
             if isinstance(model, BertClassifier):
                 embedding = model.model.embeddings.word_embeddings.weight.data
@@ -41,16 +44,21 @@ class EFK(EditableModel):
             elif isinstance(model, T5ForConditionalGeneration):
                 embedding = model.shared.weight.data
             elif isinstance(model, Qwen2AudioForConditionalGeneration):
-                embedding = model.language_model.model.embed_tokens.weight.data
+                embedding = model.language_model.model.embed_tokens.weight.data.cpu()
             elif isinstance(model, DeSTA25AudioModel):
                 embedding = model.llm_model.model.embed_tokens.weight.data
             else:
                 embedding = model.transformer.wte.weight.data
 
+            # print("Embedding device:", embedding.device)
             # Handling special config structure of DeSTA25AudioModel
             vocab_dim = model.config.vocab_size if hasattr(model.config, 'vocab_size') else model.config.llm_config.vocab_size
+            # print(f"Using vocab_dim: {vocab_dim}")
+            # print("include_set:", config.model.inner_params)
+            # print("embedding_dim", embedding.shape[-1])
+            
             editor = OneShotLearner(
-                model,
+                model.named_parameters(),
                 vocab_dim=vocab_dim,
                 include_set=config.model.inner_params,
                 embedding_dim=embedding.shape[-1],
@@ -58,6 +66,43 @@ class EFK(EditableModel):
                 max_scale=1,
             )
         self.editor = editor
+        if self.config.model_parallel:
+            self.editor.to(deque(self.model.parameters(), maxlen=1)[0].device)
+        
+    def forward(self, *inputs, **kwargs):
+        if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower():
+            outputs = self.model(*inputs, **kwargs)
+        elif 'gpt' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'llama' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'chatglm2' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'internlm' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'qwen2audio' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
+            )
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
+                           batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
+            )
+        elif 'qwen' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        elif 'mistral' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
+        else:
+            outputs = _logits(self.model(**kwargs))
+        return outputs
 
     def outer_parameters(self):
         return self.editor.parameters()
@@ -92,9 +137,67 @@ class EFK(EditableModel):
         assert len(res.unexpected_keys) == 0, "Shouldn't have any unexpected keys"
         return res
 
-    def edit(self, batch, condition, detach_history=False):
-        outputs = _logits(self.model(**batch))
-        loss = self.edit_loss_fn(outputs, batch["labels"])["nll"]
+    def edit(self, batch, condition=None, detach_history=False, **kwargs):
+        if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower():
+            outputs = self.model(batch)        
+            if not isinstance(outputs, torch.Tensor):
+                batch_labels = outputs.labels
+                outputs = outputs.logits
+            else:
+                batch_labels = batch['labels']
+            loss = self.edit_loss_fn(self.config, outputs, batch_labels, multimodal=True)["nll"]          
+        elif 'gpt' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            if not kwargs:
+                loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+            else:
+                loss = self.edit_loss_fn(self.config, outputs, batch["labels"], **kwargs)["nll"]
+        elif 'llama' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            if not kwargs:
+                loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+            else:
+                loss = self.edit_loss_fn(self.config, outputs, batch["labels"], **kwargs)["nll"]
+        elif 'baichuan' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"] 
+        elif 'chatglm2' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]            
+        elif 'internlm' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]  
+        elif 'qwen2audio' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
+            )
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'desta' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask'], batch_features=batch['batch_features'], 
+                           batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
+            )
+            
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'qwen' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]         
+        elif 'mistral' in self.config.model_name.lower():
+            outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]  
+        else:
+            outputs = _logits(self.model(**batch))
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        
+        # loss = self.edit_loss_fn(outputs, batch["labels"])["nll"]
 
         names = set([n for n, p in self.model.named_parameters()])
         pset = set(self.config.model.inner_params)
@@ -111,13 +214,16 @@ class EFK(EditableModel):
             ],
         )
 
+        editor_device = next(self.editor.parameters()).device
+        # print(next(self.editor.parameters()).device)
+        # print("Grads device:", grads[0].device)
         params_dict = self.editor(
-            condition["input_ids"] if condition is not None else batch["input_ids"],
-            condition["attention_mask"]
+            condition["input_ids"].to(editor_device) if condition is not None else batch["input_ids"].to(editor_device),
+            condition["attention_mask"].to(editor_device)
             if condition is not None
-            else batch["attention_mask"],
+            else batch["attention_mask"].to(editor_device),
             {
-                n: g.to(torch.float32)
+                n: g.to(torch.float32).to(editor_device)
                 for (n, g) in zip(self.config.model.inner_params, grads)
             },
         )
@@ -267,7 +373,8 @@ class LSTMConditioner(torch.nn.Module):
 class OneShotLearner(torch.nn.Module):
     def __init__(
         self,
-        model,
+        # model,
+        named_parameters,
         vocab_dim,
         embedding_dim=768,
         hidden_dim=512,
@@ -292,7 +399,8 @@ class OneShotLearner(torch.nn.Module):
                     hidden_dim,
                     max_scale=max_scale,
                 )
-                for n, p in model.named_parameters()
+                # for n, p in model.named_parameters()
+                for n, p in named_parameters
                 if n in include_set
             }
         )
@@ -318,29 +426,103 @@ class OneShotLearner(torch.nn.Module):
 
 if __name__ == "__main__":
     import types
-
-    import transformers
-
-    model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
-
+    import pdb
+    
+    model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
+    # model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
+    # model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+    # processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+    pdb.set_trace()
+    
     config = types.SimpleNamespace()
+    config.model = types.SimpleNamespace()
     config.model.inner_params = [
-        "transformer.h.9.mlp.c_fc.weight",
-        "transformer.h.9.mlp.c_proj.weight",
-        "transformer.h.10.mlp.c_fc.weight",
-        "transformer.h.10.mlp.c_proj.weight",
-        "transformer.h.11.mlp.c_fc.weight",
-        "transformer.h.11.mlp.c_proj.weight",
+        # "multi_modal_projector.linear.weight",
+        # "language_model.model.layers.31.mlp.gate_proj.weight",
+        # "language_model.model.layers.31.mlp.up_proj.weight",
+        # "language_model.model.layers.31.mlp.down_proj.weight"
+        "llm_model.model.layers.31.mlp.gate_proj.weight",
+        "llm_model.model.layers.31.mlp.up_proj.weight",
+        "llm_model.model.layers.31.mlp.down_proj.weight"
     ]
+    config.model_name = "DeSTA25AudioModel"
+    config.model_class = "DeSTA25AudioModel"
+    # config.model_name = "Qwen2AudioForConditionalGeneration"
+    # config.model_class = "Qwen2AudioForConditionalGeneration"
+    config.model_parallel = True
+    config.device = "1"
+    
+    for n, p in model.named_parameters():
+        if n not in config.model.inner_params:
+            p.requires_grad = False
+        else:
+            p.requires_grad = True
+    
+    efk = EFK(model, config, lambda: copy.deepcopy(model))
+    pdb.set_trace()
+    
+    x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
+    
+    # DeSTA testing case
+    messages = [
+        {
+            "role": "system",
+            "content": "Focus on the audio clips and instructions."
+        },
+        {
+            "role": "user",
+            "content": "<|AUDIO|>\nDescribe this audio.",
+            "audios": [{
+                "audio": "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
+                "text": None
+            }]
+        }
+    ]
+    
+    inputs = model.process_before_forward(messages)
+    inputs['labels'] = x.to(model.device)
 
-    efk = EFK(model, config, lambda: copy.deepcopy(model)).cuda()
 
-    x = torch.arange(20).view(1, 20).cuda() + 1000
-    orig_logits = efk(x).logits
-    edited = efk.edit(x, masks=torch.ones_like(x), labels=x)
-    post_logits = efk(x).logits
+    # Qwen2Audio testing case
+    # test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
+    # conversation = [
+    #     {"role": "user", "content": [
+    #         {"type": "audio", "audio_url": test_audio},
+    #         {"type": "text", "text": "What is in this audio?"}
+    #     ]}
+    # ]
+    # text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
 
-    assert torch.allclose(orig_logits, post_logits)
+    # audios = []
+    # for message in conversation:
+    #     if isinstance(message["content"], list):
+    #         for ele in message["content"]:
+    #             if ele["type"] == "audio":
+    #                 audios.append(librosa.load(
+    #                     ele['audio_url'], 
+    #                     sr=processor.feature_extractor.sampling_rate)[0]
+    #                 )
+                    
+    # inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+    # inputs.input_ids = inputs.input_ids.to(model.device)
+    # inputs['labels'] = x.to(model.device)
+    
+    # for k, v in inputs.items():
+    #     if isinstance(v, list):
+    #         inputs[k] = [item.to(model.device) for item in v]
+    #     else:
+    #         inputs[k] = v.to(model.device)
+    
+    pdb.set_trace()
+    torch.save(efk.state_dict(), "test_state_efk.pt") # Random intialize a testing checkpoint for sanity check
+    efk.load_state_dict(torch.load("test_state_efk.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
+    
+    
+    orig_logits = efk(**inputs)
+    edited, _ = efk.edit(inputs)
+    post_logits = efk(**inputs)
+
+    # assert torch.allclose(orig_logits, post_logits)
 
     orig_param = [
         p
@@ -355,13 +537,13 @@ if __name__ == "__main__":
 
     print((orig_param - edited_param).abs().max())
     edited.eval()
-    print(
-        efk(x, labels=x).loss,
-        edited(x, labels=x).loss,
-        edited.edit_loss_fn(edited(x).logits, x),
-    )["nll"]
-    edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
-    print(efk(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss)
-    import pdb
+    # print(
+    #     efk(**inputs).loss,
+    #     edited(**inputs).loss,
+    #     edited.edit_loss_fn(edited(**inputs), inputs['labels']),
+    # )["nll"]
+    # edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
+    # print(efk(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss)
+    # import pdb
 
-    pdb.set_trace()
+    # pdb.set_trace()
