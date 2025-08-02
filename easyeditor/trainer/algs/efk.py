@@ -50,12 +50,8 @@ class EFK(EditableModel):
             else:
                 embedding = model.transformer.wte.weight.data
 
-            # print("Embedding device:", embedding.device)
             # Handling special config structure of DeSTA25AudioModel
             vocab_dim = model.config.vocab_size if hasattr(model.config, 'vocab_size') else model.config.llm_config.vocab_size
-            # print(f"Using vocab_dim: {vocab_dim}")
-            # print("include_set:", config.model.inner_params)
-            # print("embedding_dim", embedding.shape[-1])
             
             editor = OneShotLearner(
                 model.named_parameters(),
@@ -65,6 +61,7 @@ class EFK(EditableModel):
                 embedding_init=embedding.clone().to(torch.float32),
                 max_scale=1,
             )
+            
         self.editor = editor
         if self.config.model_parallel:
             self.editor.to(deque(self.model.parameters(), maxlen=1)[0].device)
@@ -196,8 +193,6 @@ class EFK(EditableModel):
         else:
             outputs = _logits(self.model(**batch))
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
-        
-        # loss = self.edit_loss_fn(outputs, batch["labels"])["nll"]
 
         names = set([n for n, p in self.model.named_parameters()])
         pset = set(self.config.model.inner_params)
@@ -215,8 +210,6 @@ class EFK(EditableModel):
         )
 
         editor_device = next(self.editor.parameters()).device
-        # print(next(self.editor.parameters()).device)
-        # print("Grads device:", grads[0].device)
         params_dict = self.editor(
             condition["input_ids"].to(editor_device) if condition is not None else batch["input_ids"].to(editor_device),
             condition["attention_mask"].to(editor_device)
@@ -522,8 +515,6 @@ if __name__ == "__main__":
     edited, _ = efk.edit(inputs)
     post_logits = efk(**inputs)
 
-    # assert torch.allclose(orig_logits, post_logits)
-
     orig_param = [
         p
         for (n, p) in efk.model.named_parameters()
@@ -536,14 +527,3 @@ if __name__ == "__main__":
     ][0]
 
     print((orig_param - edited_param).abs().max())
-    edited.eval()
-    # print(
-    #     efk(**inputs).loss,
-    #     edited(**inputs).loss,
-    #     edited.edit_loss_fn(edited(**inputs), inputs['labels']),
-    # )["nll"]
-    # edited2 = edited.edit(x, masks=torch.ones_like(x), labels=x)
-    # print(efk(x, labels=x).loss, edited(x, labels=x).loss, edited2(x, labels=x).loss)
-    # import pdb
-
-    # pdb.set_trace()
