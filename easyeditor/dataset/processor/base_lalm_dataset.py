@@ -40,10 +40,14 @@ class BaseDataset(Dataset):
                 assert os.path.exists(reliability_audio_path), f"Audio file {reliability_audio_path} does not exist."
                 reliability_question = data_content['reliability_question']
                 reliability_answer = data_content['edited_answer']
+                reliability_transcription = data_content['reliability_transcription'] if 'reliability_transcription' in data_content else " "
+                
+                # Note: Here we assume that the transcription will be available. Use DeSTA2.5's script to generate it first if not available.
                 reliability_data = {
                     'audio_path': reliability_audio_path,
                     'question': reliability_question,
-                    'answer': reliability_answer
+                    'answer': reliability_answer,
+                    'transcription': reliability_transcription
                 }
                 item['reliability'] = reliability_data
                 
@@ -93,11 +97,13 @@ class BaseDataset(Dataset):
             
         question = sample.get('question', '')
         answer = sample.get('answer', '')
-        
+        transcription = sample.get('transcription', " ")
+
         return {
             'audio_path': audio_path,
             'question': question,
-            'answer': answer
+            'answer': answer,
+            'transcription': transcription
         }
 
 class ConcatDataset(ConcatDataset):
