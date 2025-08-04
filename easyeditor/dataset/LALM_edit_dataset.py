@@ -83,9 +83,9 @@ class Qwen2AudioDataset(BaseDataset):
         prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
         input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
 
-        if len(audios) != 0:
+        if len(audios) > 0:
             inputs = self.processor(
-                audio=audios,
+                audios=audios,
                 text=input_text,
                 return_tensors="pt",
                 padding=True,
@@ -181,21 +181,34 @@ class DeSTA25AudioDataset(BaseDataset):
             "transcription": "What is the transcription?" or None
         }
         """
-        message = [
-            # Uncomment the following line if you want to add a system message
-            # {
-            #     "role": "system",
-            #     "content": "Focus on the audio clips and instructions."
-            # },
-            {
-                "role": "user",
-                "content": f"<|AUDIO|>\n{sample['question']}",
-                "audios": [{
-                    "audio": sample['audio_path'],
-                    "text": sample['transcription']
-                }]
-            }
-        ]
+        if sample['audio_path'] is not None:
+            message = [
+                # Uncomment the following line if you want to add a system message
+                # {
+                #     "role": "system",
+                #     "content": "Focus on the audio clips and instructions."
+                # },
+                {
+                    "role": "user",
+                    "content": f"<|AUDIO|>\n{sample['question']}",
+                    "audios": [{
+                        "audio": sample['audio_path'],
+                        "text": sample['transcription']
+                    }]
+                }
+            ]
+        else:
+            message = [
+                # Uncomment the following line if you want to add a system message
+                # {
+                #     "role": "system",
+                #     "content": "Focus on the audio clips and instructions."
+                # },
+                {
+                    "role": "user",
+                    "content": f"{sample['question']}"
+                }
+            ]
 
         return message
     
@@ -209,8 +222,9 @@ class DeSTA25AudioDataset(BaseDataset):
                 assert len(audios) == content.count(self.audio_locator), "audio count does not match (<|AUDIO|>) count"
 
                 for audio in audios:
-                    all_audios.append(audio["audio"])
-                    all_transcriptions.append(audio.get("text"))
+                    # if audio['audio'] is not None:
+                        all_audios.append(audio["audio"])
+                        all_transcriptions.append(audio.get("text"))
 
         return all_audios, all_transcriptions
     
@@ -218,7 +232,7 @@ class DeSTA25AudioDataset(BaseDataset):
         prompts = [self.create_message(b[key]) for b in batch]
         targets = [b[key]['answer'] for b in batch]
         all_audios, all_transcriptions = self.collect_audio_and_transcription_from_messages(prompts)
-        
+
         if len(all_audios) > 0:
             batch_features = []
             for i, (audio, trans) in enumerate(zip(all_audios, all_transcriptions)):
@@ -236,7 +250,7 @@ class DeSTA25AudioDataset(BaseDataset):
             
             batch_features = self.processor(batch_features, sampling_rate=16000, return_tensors="pt").input_features
             # batch_features = batch_features.to(self.device)
-            audio_size_list = [self.config.prompt_size] * len(batch_features)
+            audio_size_list = [self.prompt_size] * len(batch_features)
                     
             transcription_size_list = [
                 len(self.tokenizer.tokenize(text, add_special_tokens=False)) for text in all_transcriptions
@@ -310,7 +324,10 @@ class DeSTA25AudioDataset(BaseDataset):
             )
             inputs = [src + trg for (src, trg) in zip(inputs, targets)]  # Concat with target
             inputs = self.tokenizer(inputs, return_tensors="pt", padding=True, max_length=self.max_length)
-        
+            inputs['batch_features'] = None
+            inputs['batch_transcription_ids'] = None
+            inputs['batch_start_positions'] = None
+            
         labels = self.tokenizer(
             targets,
             return_tensors="pt",
@@ -331,7 +348,28 @@ class DeSTA25AudioDataset(BaseDataset):
 
         return dict_to(collated_batch, self.config.device)
             
-        
+
+### test case for debugging
+if __name__ == "__main__":
+    import types
+    from torch.utils.data import DataLoader
+    
+    data_dir = "/work/b08202033/lalm-knowledge-editing/metadata/Animal.json"
+    config = types.SimpleNamespace()
+    config.cache_dir = "/work/b08202033/SLLM_multihop/cache"
+    config.audio_root = "/work/b08202033/lalm-knowledge-editing/audio_data"
+    config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
+    # qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+    desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+    # loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
+    loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
+
+    for batch in loader:
+        for key in batch:
+            for q in batch[key].keys():
+                print(f"{key} - {q}: {batch[key][q].shape if isinstance(batch[key][q], torch.Tensor) else batch[key][q]}")
+        break
 
     
 
