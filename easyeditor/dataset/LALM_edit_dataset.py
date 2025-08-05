@@ -41,6 +41,9 @@ class Qwen2AudioDataset(BaseDataset):
     def __len__(self):
         return len(self.data)
     
+    def get_edit_labels(self, labels):
+        return labels.masked_fill(labels == self.processor.tokenizer.pad_token_id, -100)
+
     def create_message(self, sample):
         """
         sample: {
@@ -111,6 +114,8 @@ class Qwen2AudioDataset(BaseDataset):
             truncation=True
         )["input_ids"]
         
+        labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
+        
         edit = inputs
         edit['labels'] = labels
         
@@ -171,6 +176,9 @@ class DeSTA25AudioDataset(BaseDataset):
     
     def __len__(self):
         return len(self.data)
+    
+    def get_edit_labels(self, labels):
+        return labels.masked_fill(labels == self.tokenizer.pad_token_id, -100)
     
     def create_message(self, sample):
         """
@@ -335,6 +343,8 @@ class DeSTA25AudioDataset(BaseDataset):
             max_length=self.max_length,
             truncation=True
         )["input_ids"]
+        
+        labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
         inputs['labels'] = labels
         
         return inputs
