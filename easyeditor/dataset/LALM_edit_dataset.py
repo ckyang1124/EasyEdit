@@ -82,10 +82,10 @@ class Qwen2AudioDataset(BaseDataset):
     def process_and_tokenize_batch(self, batch, key='reliability'):
         prompts = [self.create_message(b[key]) for b in batch]
         audios = self.collect_audio_from_messages(prompts)
-        target = [b[key]['answer'] for b in batch]
+        target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
         prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
         input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
-
+        # print(input_text[0])
         if len(audios) > 0:
             inputs = self.processor(
                 audios=audios,
@@ -111,9 +111,11 @@ class Qwen2AudioDataset(BaseDataset):
             return_tensors="pt",
             padding=True,
             max_length=self.max_length,
-            truncation=True
+            truncation=True,
+            add_special_tokens=False
         )["input_ids"]
         
+        # print(self.processor.tokenizer.batch_decode(labels, skip_special_tokens=False))
         labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
         
         edit = inputs
@@ -152,8 +154,8 @@ class DeSTA25AudioDataset(BaseDataset):
         self.audio_locator = "<|AUDIO|>"
         self.placeholder_token = "<|reserved_special_token_87|>"
         self.tokenizer = AutoTokenizer.from_pretrained("DeSTA-ntu/Llama-3.1-8B-Instruct", cache_dir=config.cache_dir)
-        self.tokenizer.pad_token = self.tokenizer.eos_token
-        self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
+        # self.tokenizer.pad_token = self.tokenizer.eos_token
+        # self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
         self.tokenizer.padding_side = "left"
         self.tokenizer.add_tokens([self.audio_locator])
         
@@ -238,7 +240,7 @@ class DeSTA25AudioDataset(BaseDataset):
     
     def process_and_tokenize_batch(self, batch, key='reliability'):
         prompts = [self.create_message(b[key]) for b in batch]
-        targets = [b[key]['answer'] for b in batch]
+        targets = [b[key]['answer'] + self.tokenizer.eos_token for b in batch] # Append eos token to the target
         all_audios, all_transcriptions = self.collect_audio_and_transcription_from_messages(prompts)
 
         if len(all_audios) > 0:
@@ -274,6 +276,7 @@ class DeSTA25AudioDataset(BaseDataset):
                     add_generation_prompt=True,
                 ) + trg # Concat with target
 
+                # print(audio_context)
                 # <start_audio><|AUDIO|><end_audio> is a indicator used in the training stage
                 # We replace <|AUDIO|> with <start_audio><|AUDIO|><end_audio> here
                 audio_context = audio_context.replace(self.audio_locator, f"<start_audio>{self.audio_locator}<end_audio>")
@@ -341,9 +344,11 @@ class DeSTA25AudioDataset(BaseDataset):
             return_tensors="pt",
             padding=True,
             max_length=self.max_length,
-            truncation=True
+            truncation=True,
+            add_special_tokens=False
         )["input_ids"]
         
+        print(self.tokenizer.batch_decode(labels, skip_special_tokens=False))
         labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
         inputs['labels'] = labels
         
@@ -370,15 +375,17 @@ if __name__ == "__main__":
     config.audio_root = "/work/b08202033/lalm-knowledge-editing/audio_data"
     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
-    # qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
-    desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
-    # loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
-    loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
+    qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+    # desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+    loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
+    # loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
 
     for batch in loader:
         for key in batch:
             for q in batch[key].keys():
                 print(f"{key} - {q}: {batch[key][q].shape if isinstance(batch[key][q], torch.Tensor) else batch[key][q]}")
+            if q == 'labels':
+                print(f"Labels: {batch[key][q]}")
         break
 
     
