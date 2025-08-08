@@ -63,6 +63,10 @@ class BaseTrainer:
             collate_fn = train_set.collate_gpt_fn
         elif 'automodel' in self.config.model_class.lower():
             collate_fn = train_set.collate_gpt_fn
+        elif 'qwen2audio' in self.config.model_name.lower():
+            collate_fn = train_set.collate_fn
+        elif 'desta' in self.config.model_name.lower():
+            collate_fn = train_set.collate_fn
         elif 'qwen' in self.config.model_name.lower():
             collate_fn = train_set.collate_gpt_fn
         elif 'mistral' in self.config.model_name.lower():

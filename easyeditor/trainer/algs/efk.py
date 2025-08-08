@@ -67,39 +67,40 @@ class EFK(EditableModel):
             self.editor.to(deque(self.model.parameters(), maxlen=1)[0].device)
         
     def forward(self, *inputs, **kwargs):
+        return_logits_only = kwargs.pop("return_logits_only", True)
         if 'minigpt4' in self.config.model_name.lower() or 'blip' in self.config.model_name.lower():
             outputs = self.model(*inputs, **kwargs)
         elif 'gpt' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'llama' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'chatglm2' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'internlm' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'qwen2audio' in self.config.model_name.lower():
-            outputs = _logits(
-                self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
-            )
+            outputs = self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'desta' in self.config.model_name.lower():
-            outputs = _logits(
-                self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
                            batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
-            )
         elif 'qwen' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'mistral' in self.config.model_name.lower():
-            outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
+            outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         else:
-            outputs = _logits(self.model(**kwargs))
-        return outputs
+            outputs = self.model(**kwargs)
+
+        if return_logits_only:
+            return _logits(outputs)
+        else:
+            return outputs
 
     def outer_parameters(self):
         return self.editor.parameters()
