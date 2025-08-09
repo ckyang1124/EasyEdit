@@ -31,17 +31,20 @@ class BaseDataset(Dataset):
                 if t in metadata:
                     track = t
                     break
+            
+            with open(metadata, "r") as f:
+                data = json.load(f)
 
-            for data_point, data_content in json.load(open(metadata, "r")).items():                
+            for data_point in data: 
                 # Reliability
                 item = {}
                 
-                reliability_audio_path = os.path.join(self.audio_root, track, data_point)
+                reliability_audio_path = os.path.join(self.audio_root, track, data_point['file'])
                 assert os.path.exists(reliability_audio_path), f"Audio file {reliability_audio_path} does not exist."
-                reliability_question = data_content['reliability_question']
-                reliability_answer = data_content['edited_answer']
-                reliability_transcription = data_content['reliability_transcription'] if 'reliability_transcription' in data_content else " "
-                
+                reliability_question = data_point['reliability_question']
+                reliability_answer = data_point['edited_answer']
+                reliability_transcription = data_point['transcription'] if 'transcription' in data_point else " "
+
                 # Note: Here we assume that the transcription will be available. Use DeSTA2.5's script to generate it first if not available.
                 reliability_data = {
                     'audio_path': reliability_audio_path,
@@ -52,19 +55,19 @@ class BaseDataset(Dataset):
                 item['reliability'] = reliability_data
                 
                 # Generality
-                generality_data = [self.process(data_content['generality'][i], track=track) for i in range(len(data_content['generality']))]
+                generality_data = [self.process(data_point['generality'][i], track=track) for i in range(len(data_point['generality']))]
                 for i, data in enumerate(generality_data):
                     item[f'generality_type_{i}'] = data
                 
                 
                 # Locality
-                locality_audio_data = [self.process(data_content['locality']['audio'][i], track=track) for i in range(len(data_content['locality']['audio']))]
+                locality_audio_data = [self.process(data_point['locality']['audio'][i], track=track) for i in range(len(data_point['locality']['audio']))]
                 for i, data in enumerate(locality_audio_data):
                     item[f'locality_audio_type_{i}'] = data
                     
                 # text locality should only have one data per sample
-                assert len(data_content['locality']['text']) == 1, "Locality text should only have one data per sample."    
-                locality_text_data = [self.process(data_content['locality']['text'][i], track=track) for i in range(len(data_content['locality']['text']))]
+                assert len(data_point['locality']['text']) == 1, "Locality text should only have one data per sample."
+                locality_text_data = [self.process(data_point['locality']['text'][i], track=track) for i in range(len(data_point['locality']['text']))]
                 item['locality_text'] = locality_text_data[0]
                 
                 self.data.append(item)
