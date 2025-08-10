@@ -92,7 +92,7 @@ class Qwen2AudioDataset(BaseDataset):
                 text=input_text,
                 return_tensors="pt",
                 padding=True,
-                max_length=self.max_length,
+                # max_length=self.max_length,
                 truncation=True
             )
         else:
@@ -100,7 +100,7 @@ class Qwen2AudioDataset(BaseDataset):
                 input_text,
                 return_tensors="pt",
                 padding=True,
-                max_length=self.max_length,
+                # max_length=self.max_length,
                 truncation=True
             )
             inputs['input_features'] = None

@@ -6,7 +6,7 @@ from easyeditor import LALMTrainer
 from easyeditor import MENDLALMTrainingHparams, MENDLALMHparams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
         
-def train_MEND_DESTA25_debug():
+def train_MEND_DeSTA25_debug():
     hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/desta25-audio.yaml')
     
     train_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
@@ -19,7 +19,21 @@ def train_MEND_DESTA25_debug():
     )
     trainer.run()
     
+def train_MEND_Qwen2Audio_debug():
+    hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/qwen2-audio.yaml')
+    
+    train_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
+    test_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json", config=hparams)
+    
+    trainer = LALMTrainer(
+        config=hparams,
+        train_set=train_ds,
+        val_set=test_ds
+    )
+    trainer.run()
+    
 if __name__ == "__main__":
-    train_MEND_DESTA25_debug()
+    # train_MEND_DeSTA25_debug()
+    train_MEND_Qwen2Audio_debug()
     
     

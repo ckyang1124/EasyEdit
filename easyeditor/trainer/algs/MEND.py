@@ -289,7 +289,7 @@ class MEND(EditableModel):
         elif 'internlm' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'desta' in self.config.model_name.lower():
@@ -347,7 +347,7 @@ class MEND(EditableModel):
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]  
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = _logits(
                 self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
             )
@@ -436,7 +436,7 @@ class MEND(EditableModel):
 
         edited_model = self.model
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
+            multimodal_models = ['minigpt4', 'blip', 'qwen2-audio', 'desta']
             if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
                 
                 ##### For Debugging ######
@@ -596,7 +596,7 @@ class MEND_DeSTA(EditableModel):
         elif 'internlm' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask']))
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = _logits(
                 self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             )
@@ -654,7 +654,7 @@ class MEND_DeSTA(EditableModel):
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = _logits(
                 self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
             )
@@ -756,7 +756,7 @@ class MEND_DeSTA(EditableModel):
         
         # TODO: Check whether we should use _make_functional here
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            multimodal_models = ['minigpt4', 'blip', 'qwen2audio', 'desta']
+            multimodal_models = ['minigpt4', 'blip', 'qwen2-audio', 'desta']
             if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
                 
                 ##### For Debugging ######

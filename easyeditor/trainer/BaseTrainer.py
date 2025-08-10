@@ -71,8 +71,15 @@ class BaseTrainer:
             collate_fn = train_set.collate_gpt_fn
         elif 'automodel' in self.config.model_class.lower():
             collate_fn = train_set.collate_gpt_fn
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             collate_fn = train_set.collate_fn
+            for n, p in self.model.named_parameters():
+                # n is prefixed with "model.", so we need to remove it
+                if n.startswith('model.'):
+                    if n[6:] in config.inner_params:
+                        p.requires_grad = True
+                    else:
+                        p.requires_grad = False
         elif 'desta' in self.config.model_name.lower():
             collate_fn = train_set.collate_fn
             # default setting of desta is special

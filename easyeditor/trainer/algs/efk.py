@@ -82,7 +82,7 @@ class EFK(EditableModel):
         elif 'internlm' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], feature_attention_mask=kwargs['feature_attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
         elif 'desta' in self.config.model_name.lower():
@@ -170,7 +170,7 @@ class EFK(EditableModel):
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]  
-        elif 'qwen2audio' in self.config.model_name.lower():
+        elif 'qwen2-audio' in self.config.model_name.lower():
             outputs = _logits(
                 self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], feature_attention_mask=batch['feature_attention_mask'])
             )

@@ -167,7 +167,7 @@ class LALMTrainer(BaseTrainer):
             }
             
             # Collect attention mask for kl loss computation
-            if 'qwen2audio' in self.config.model_name.lower():
+            if 'qwen2-audio' in self.config.model_name.lower():
                 kl_masks = {
                     k: post_locality_outputs[k].attention_mask for k in post_locality_outputs.keys()
                 }

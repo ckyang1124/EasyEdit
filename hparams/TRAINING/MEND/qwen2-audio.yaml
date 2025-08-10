@@ -1,21 +1,15 @@
 # Model
 device: cuda
 
-name: DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B
-model_name: DeSTA25AudioModel
-model_class: DeSTA25AudioModel
-tokenizer_class: AutoTokenizer
-tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
+name: Qwen/Qwen2-Audio-7B-Instruct
+model_name: Qwen/Qwen2-Audio-7B-Instruct
+model_class: Qwen2AudioForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: Qwen/Qwen2-Audio-7B-Instruct
 inner_params:
-# - llm_model.model.layers.29.mlp.gate_proj.weight
-# - llm_model.model.layers.29.mlp.up_proj.weight
-# - llm_model.model.layers.29.mlp.down_proj.weight
-# - llm_model.model.layers.30.mlp.gate_proj.weight
-# - llm_model.model.layers.30.mlp.up_proj.weight
-# - llm_model.model.layers.30.mlp.down_proj.weight
-- llm_model.model.layers.31.mlp.gate_proj.weight
-- llm_model.model.layers.31.mlp.up_proj.weight
-- llm_model.model.layers.31.mlp.down_proj.weight
+- language_model.model.layers.31.mlp.gate_proj.weight
+- language_model.model.layers.31.mlp.up_proj.weight
+- language_model.model.layers.31.mlp.down_proj.weight
 
 
 # Method
