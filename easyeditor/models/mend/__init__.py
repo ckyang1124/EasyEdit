@@ -1,3 +1,4 @@
 from .mend_hparams import MENDHyperParams
 from .mend_multimodal_hparams import MENDMultimodalHparams
 from .mend_main import MendRewriteExecutor, MendMultimodalRewriteExecutor, MendPerRewriteExecutor
+from .mend_lalm_hparams import MENDLALMHparams

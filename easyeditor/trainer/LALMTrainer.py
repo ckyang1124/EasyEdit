@@ -18,6 +18,7 @@ from .utils import (
     safe_backward,
     time_delta_seconds,
 )
+from tqdm import tqdm
 
 LOG = logging.getLogger(__name__)
 
@@ -45,7 +46,7 @@ class LALMTrainer(BaseTrainer):
 
         with torch.no_grad():
             base_loc_output = {
-                k: self.model(batch[k]) for k in batch.keys() if k.startswith("locality")
+                k: self.model(**batch[k]) for k in batch.keys() if k.startswith("locality")
             }
             
             base_loc_logits = {
@@ -85,7 +86,7 @@ class LALMTrainer(BaseTrainer):
             #     post_batch_labels = batch["edit_outer"]["labels"]
 
             post_edit_generality_outputs = {
-                k: edited_model(batch[k]) for k in batch.keys() if k.startswith("generality")
+                k: edited_model(**batch[k]) for k in batch.keys() if k.startswith("generality")
             }
             
             post_edit_generality_logits_labels = {
@@ -96,7 +97,7 @@ class LALMTrainer(BaseTrainer):
             }
             
             # Reliability after edit
-            inner_edit_outputs = edited_model(batch["reliability"])
+            inner_edit_outputs = edited_model(**batch["reliability"])
             post_edit_reliability_logits_labels = {
                 "logits": inner_edit_outputs.logits if not isinstance(inner_edit_outputs, torch.Tensor) else inner_edit_outputs,
                 "labels": inner_edit_outputs.labels if not isinstance(inner_edit_outputs, torch.Tensor) else batch["reliability"]["labels"]
@@ -158,7 +159,7 @@ class LALMTrainer(BaseTrainer):
             
             ### Locality KL loss
             post_locality_outputs = {
-                k: edited_model(batch[k], return_logits_only=False) for k in batch.keys() if k.startswith("locality")
+                k: edited_model(**batch[k], return_logits_only=False) for k in batch.keys() if k.startswith("locality")
             }
             post_locality_logits = {
                 k: v.logits if not isinstance(v, torch.Tensor) else v
@@ -172,7 +173,7 @@ class LALMTrainer(BaseTrainer):
                 }
             elif 'desta' in self.config.model_name.lower():
                 kl_masks = {
-                    k: batch[k].attention_mask for k in batch.keys() if k.startswith("locality") # Should be prepared already in the batch
+                    k: batch[k]["attention_mask"] for k in batch.keys() if k.startswith("locality") # Should be prepared already in the batch
                 }
             else:
                 LOG.info("No attention mask found for locality KL loss, using ones")
@@ -286,13 +287,26 @@ class LALMTrainer(BaseTrainer):
         elapsed = (time.time() - start_time) / (step + 1)
         prog = f"{step+1}/{steps}".ljust(20)
         inner_acc = f"{stats['inner/acc_val']:<12.5f}"
-        outer_acc = f"{stats['edit/acc_val']:<12.5f}"
-        image_acc = f"{stats['image_rephrase/acc_val']:<12.5f}"
-        loc_acc = f"{stats['loc/acc_val']:<12.5f}"
-        loc_image_acc = f"{stats['image_loc/acc_val']:<12.5f}"
+        # outer_acc = f"{stats['edit/acc_val']:<12.5f}"
+        gen0_acc = f"{stats['edit/generality_type_0_acc_val']:<12.5f}"
+        gen1_acc = f"{stats['edit/generality_type_1_acc_val']:<12.5f}"
+        gen2_acc = f"{stats['edit/generality_type_2_acc_val']:<12.5f}"
+        gen_accs = [gen0_acc, gen1_acc, gen2_acc]
+        
+        # image_acc = f"{stats['image_rephrase/acc_val']:<12.5f}"
+        # loc_acc = f"{stats['loc/acc_val']:<12.5f}"
+        # loc_image_acc = f"{stats['image_loc/acc_val']:<12.5f}"
+        loc_audio0_acc = f"{stats['loc/locality_audio_type_0_acc_val']:<12.5f}"
+        loc_audio1_acc = f"{stats['loc/locality_audio_type_1_acc_val']:<12.5f}"
+        loc_audio2_acc = f"{stats['loc/locality_audio_type_2_acc_val']:<12.5f}"
+        loc_audio_accs = [loc_audio0_acc, loc_audio1_acc, loc_audio2_acc]
+        if 'loc/locality_audio_type_3_acc_val' in stats:
+            loc_audio3_acc = f"{stats['loc/locality_audio_type_3_acc_val']:<12.5f}"
+            loc_audio_accs.append(loc_audio3_acc)
+        loc_text_acc = f"{stats['loc/locality_text_acc_val']:<12.5f}"
 
         LOG.info(
-          f"Step {prog} outer_acc: {outer_acc} image_acc: {image_acc} inner_acc: {inner_acc} it_time: {elapsed:.4f} loc_acc: {loc_acc}, image_loc: {loc_image_acc}"
+          f"Step {prog} generality_acc: {[gen0_acc, gen1_acc, gen2_acc]} inner_acc: {inner_acc} it_time: {elapsed:.4f} locality_audio_acc: {loc_audio_accs}, locality_text_acc: {loc_text_acc} "
         )
 
     def validate(self, steps=None, log: bool = False):
@@ -304,7 +318,7 @@ class LALMTrainer(BaseTrainer):
         averager = RunningStatAverager("val")
 
         start_time = time.time()
-        for val_step, batch in enumerate(self.val_loader):
+        for val_step, batch in enumerate(tqdm(self.val_loader, desc="Validation", disable=self.config.silent, dynamic_ncols=True, )):
             if val_step >= steps:
                 break
             _, _, _, _, info_dict = self.edit_step(batch, training=False)

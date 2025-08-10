@@ -22,9 +22,17 @@ from .utils import (
     safe_backward,
     time_delta_seconds,
 )
+from tqdm import tqdm
+import warnings
 
 LOG = logging.getLogger(__name__)
 
+# This is to redirect warning to tqdm.write
+def tqdm_warning_handler(message, category, filename, lineno, file=None, line=None):
+    warning_msg = warnings.formatwarning(message, category, filename, lineno, line)
+    tqdm.write(warning_msg.strip())
+
+warnings.showwarning = tqdm_warning_handler
 
 class BaseTrainer:
     def __init__(self, config, train_set: Dataset, val_set: Dataset):
@@ -67,6 +75,14 @@ class BaseTrainer:
             collate_fn = train_set.collate_fn
         elif 'desta' in self.config.model_name.lower():
             collate_fn = train_set.collate_fn
+            # default setting of desta is special
+            for n, p in self.model.named_parameters():
+                # n is prefixed with "model.", so we need to remove it
+                if n.startswith('model.'):
+                    if n[6:] in config.inner_params:
+                        p.requires_grad = True
+                    else:
+                        p.requires_grad = False
         elif 'qwen' in self.config.model_name.lower():
             collate_fn = train_set.collate_gpt_fn
         elif 'mistral' in self.config.model_name.lower():
@@ -89,6 +105,7 @@ class BaseTrainer:
             self.opt = self.OptimizerClass(self.model.outer_parameters(), lr=config.lr)
 
         if config.archive is not None:
+            print("BaseTrainer: Loading archive from", config.archive, type(config.archive))
             archive, config.archive = load_archive(str(config.archive))
             self.model.load_state_dict(archive["model"])
             del archive["model"]
@@ -180,10 +197,12 @@ class BaseTrainer:
         self.global_iter = 0
         should_stop = False
         n_edits_batch = []
-        for epoch in range(self.epoches):
+        
+        # with tqdm_redirect_all():
+        for epoch in tqdm(range(self.epoches), desc="Training", disable=self.config.silent, dynamic_ncols=True):
             if should_stop:
                 break
-            for i, batch in enumerate(self.train_loader):
+            for i, batch in enumerate(tqdm(self.train_loader, desc=f"Epoch {epoch+1}", disable=self.config.silent, dynamic_ncols=True, leave=False)):
                 self.global_iter += 1
                 if self.global_iter >= self.config.max_iters:
                     should_stop = True

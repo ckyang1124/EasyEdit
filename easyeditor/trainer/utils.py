@@ -70,6 +70,13 @@ def dict_to(d, device):
             new_dict[k] = v.to(device)
         elif isinstance(v, dict):
             new_dict[k] = dict_to(v, device)
+        elif isinstance(v, list):
+            new_dict[k] = [
+                x.to(device) if isinstance(x, torch.Tensor) 
+                else dict_to(x, device) if isinstance(x, dict) 
+                else x
+                for x in v
+            ]
         else:
             new_dict[k] = v
 

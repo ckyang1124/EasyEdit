@@ -99,7 +99,7 @@ def get_model(config):
             pretrained_ckpt=config.pretrained_ckpt,
         )
     elif config.model_name == "DeSTA25AudioModel":
-        from detsa import DeSTA25AudioModel
+        from desta import DeSTA25AudioModel
         model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir=config.cache_dir).to("cuda")
     else:
         ModelClass = getattr(transformers, config.model_class)
