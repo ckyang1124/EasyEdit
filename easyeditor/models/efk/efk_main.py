@@ -6,7 +6,7 @@ import hydra
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from util.globals import *
+from ...util.globals import *
 
 from .algs.efk import EFK
 from .efk_hparams import EFKHyperParams

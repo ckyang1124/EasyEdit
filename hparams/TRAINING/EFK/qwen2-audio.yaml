@@ -1,0 +1,59 @@
+# Model
+device: cuda
+
+model_name: Qwen/Qwen2-Audio-7B-Instruct
+model_class: Qwen2AudioForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: Qwen/Qwen2-Audio-7B-Instruct
+inner_params:
+- language_model.model.layers.31.mlp.gate_proj.weight
+- language_model.model.layers.31.mlp.up_proj.weight
+- language_model.model.layers.31.mlp.down_proj.weight
+
+archive: null
+model_parallel: True
+
+# Method
+alg: KE
+lr: 1e-5
+edit_lr: 1e-2
+lr_lr: 1e-3
+seed: 42
+cedit: 0.1
+cloc: 1.0
+cbase: 1.0
+dropout: 0.0
+train_base: False
+no_grad_layers: null
+
+# Train
+batch_size: 1
+model_save_pt: 5000
+silent: False
+#max_epochs: 1
+max_iters: 50 #50000 # TODO: change to 50000 for real training
+log_interval: 10
+eval_log_interval: 100
+final_eval: True
+val_interval: 10
+early_stop_patience: 20000
+early_stop_key: "loss/total_edit_val"
+eval_only: False
+half: False
+debug: True # TODO: change to False for real training
+save: False # TODO: change to True for real training
+verbose: True
+
+val_batch_size: 1
+accumulate_bs: 10
+val_steps: 500 # only for debug
+opt: Adam
+grad_clip: 100.
+
+# Output
+
+results_dir: ./results
+
+# Audio
+cache_dir: ./.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs

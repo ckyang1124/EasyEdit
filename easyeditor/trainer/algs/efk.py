@@ -35,6 +35,14 @@ class EFK(EditableModel):
         
         if not str(self.config.device).startswith('cuda'):
             self.config.device = f'cuda:{self.config.device}'
+        
+        if "desta" in self.config.model_name.lower():
+            self.lm_dtype =  model.llm_model.model.embed_tokens.weight.dtype
+        elif "qwen2-audio" in self.config.model_name.lower():
+            self.lm_dtype = model.language_model.model.embed_tokens.weight.dtype
+        else:
+            # TODO: what to do for other models?
+            self.lm_dtype = torch.float32
             
         if editor is None:
             if isinstance(model, BertClassifier):
@@ -56,9 +64,9 @@ class EFK(EditableModel):
             editor = OneShotLearner(
                 model.named_parameters(),
                 vocab_dim=vocab_dim,
-                include_set=config.model.inner_params,
+                include_set=config.inner_params,
                 embedding_dim=embedding.shape[-1],
-                embedding_init=embedding.clone().to(torch.float32),
+                embedding_init=embedding.clone().to(self.lm_dtype),
                 max_scale=1,
             )
             
@@ -196,7 +204,7 @@ class EFK(EditableModel):
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
 
         names = set([n for n, p in self.model.named_parameters()])
-        pset = set(self.config.model.inner_params)
+        pset = set(self.config.inner_params)
         for p in pset:
             assert p in names, f"inner param {p} not in model"
 
@@ -205,10 +213,12 @@ class EFK(EditableModel):
             [
                 p
                 for (n, p) in _inner_params(
-                    self.model.named_parameters(), self.config.model.inner_params
+                    self.model.named_parameters(), self.config.inner_params
                 )
             ],
         )
+        
+        param_dtype = next(self.model.parameters()).dtype
 
         editor_device = next(self.editor.parameters()).device
         params_dict = self.editor(
@@ -217,8 +227,8 @@ class EFK(EditableModel):
             if condition is not None
             else batch["attention_mask"].to(editor_device),
             {
-                n: g.to(torch.float32).to(editor_device)
-                for (n, g) in zip(self.config.model.inner_params, grads)
+                n: g.to(param_dtype).to(editor_device)
+                for (n, g) in zip(self.config.inner_params, grads)
             },
         )
 
@@ -314,18 +324,21 @@ class ConditionedParameter(torch.nn.Module):
         else:
             raise RuntimeError()
 
+        # grad dtype
+        param_dtype = grad.dtype
         if a.squeeze().shape[0] != grad.shape[0]:
-            return (
+            out = (
                 self.max_scale
                 * conditioner_norm.sigmoid().squeeze()
                 * (grad * a.squeeze().T + b.squeeze().T)
             )
         else:
-            return (
+            out = (
                 self.max_scale
                 * conditioner_norm.sigmoid().squeeze()
                 * (grad * a.squeeze() + b.squeeze())
             )
+        return out.to(param_dtype)
 
 
 class LSTMConditioner(torch.nn.Module):
@@ -338,6 +351,11 @@ class LSTMConditioner(torch.nn.Module):
         embedding_init=None,
     ):
         super().__init__()
+        
+        # Force embedding_init to be float32
+        if embedding_init is not None:
+            embedding_init = embedding_init.to(torch.float32)
+        
         self.embedding = torch.nn.Embedding(
             num_embeddings=vocab_dim,
             embedding_dim=embedding_dim,
@@ -361,7 +379,7 @@ class LSTMConditioner(torch.nn.Module):
         )
 
     def forward(self, inputs, masks):
-        return self.linear(self.lstm(self.embedding(inputs), masks))
+        return self.linear(self.lstm(self.embedding(inputs).to(torch.float32), masks))
 
 
 class OneShotLearner(torch.nn.Module):
@@ -378,13 +396,15 @@ class OneShotLearner(torch.nn.Module):
         embedding_init=None,
     ):
         super().__init__()
+        
+        # named_parameters is a generator, so we need to convert it to a list to use it multiple times
+        named_parameters = list(named_parameters)
 
         self.param2conditioner_map = {
             n: "{}_conditioner".format(n).replace(".", "_")
-            for n, p in model.named_parameters()
+            for n, p in named_parameters
             if n in include_set
         }
-
         self.conditioners = torch.nn.ModuleDict(
             {
                 self.param2conditioner_map[n]: ConditionedParameter(
@@ -429,8 +449,8 @@ if __name__ == "__main__":
     pdb.set_trace()
     
     config = types.SimpleNamespace()
-    config.model = types.SimpleNamespace()
-    config.model.inner_params = [
+    # config.model = types.SimpleNamespace()
+    config.inner_params = [
         # "multi_modal_projector.linear.weight",
         # "language_model.model.layers.31.mlp.gate_proj.weight",
         # "language_model.model.layers.31.mlp.up_proj.weight",
@@ -447,7 +467,7 @@ if __name__ == "__main__":
     config.device = "1"
     
     for n, p in model.named_parameters():
-        if n not in config.model.inner_params:
+        if n not in config.inner_params:
             p.requires_grad = False
         else:
             p.requires_grad = True
@@ -519,12 +539,12 @@ if __name__ == "__main__":
     orig_param = [
         p
         for (n, p) in efk.model.named_parameters()
-        if n == config.model.inner_params[-1]
+        if n == config.inner_params[-1]
     ][0]
     edited_param = [
         p
         for (n, p) in edited.model.named_parameters()
-        if n == config.model.inner_params[-1]
+        if n == config.inner_params[-1]
     ][0]
 
     print((orig_param - edited_param).abs().max())
