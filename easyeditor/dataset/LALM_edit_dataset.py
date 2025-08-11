@@ -93,7 +93,8 @@ class Qwen2AudioDataset(BaseDataset):
                 return_tensors="pt",
                 padding=True,
                 # max_length=self.max_length,
-                truncation=True
+                truncation=True,
+                sampling_rate=self.processor.feature_extractor.sampling_rate
             )
         else:
             inputs = self.processor.tokenizer(
