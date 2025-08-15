@@ -159,6 +159,10 @@ class GradientTransform(nn.Module):
             self.v_std = (self.v_s / (self.k - 1)) ** 0.5
 
         if self.cfg.norm:
+            self.u_mean = self.u_mean.to(u_.device)
+            self.u_std = self.u_std.to(u_.device)
+            self.v_mean = self.v_mean.to(v_.device)
+            self.v_std = self.v_std.to(v_.device)
             u_input = (u_ - self.u_mean) / (self.u_std + 1e-7)
             v_input = (v_ - self.v_mean) / (self.v_std + 1e-7)
         else:

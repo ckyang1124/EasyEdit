@@ -7,11 +7,17 @@ from easyeditor import MENDLALMTrainingHparams, MENDLALMHparams
 from easyeditor import EFKLALMTrainingHparams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
 
-def train_EFK_DeSTA25_debug():
+debug_train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json"
+debug_val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json"
+
+train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions.json"
+val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_val_transcriptions.json"
+
+def train_EFK_DeSTA25():
     hparams = EFKLALMTrainingHparams.from_hparams("hparams/TRAINING/EFK/desta25-audio.yaml")
     
-    train_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
-    test_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json", config=hparams)
+    train_ds = DeSTA25AudioDataset(train_path, config=hparams)
+    test_ds = DeSTA25AudioDataset(val_path, config=hparams)
     
     trainer = LALMTrainer(
         config=hparams,
@@ -20,11 +26,11 @@ def train_EFK_DeSTA25_debug():
     )
     trainer.run()
     
-def train_EFK_Qwen2Audio_debug():
+def train_EFK_Qwen2Audio():
     hparams = EFKLALMTrainingHparams.from_hparams("hparams/TRAINING/EFK/qwen2-audio.yaml")
     
-    train_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
-    test_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json", config=hparams)
+    train_ds = Qwen2AudioDataset(train_path, config=hparams)
+    test_ds = Qwen2AudioDataset(val_path, config=hparams)
     
     trainer = LALMTrainer(
         config=hparams,
@@ -33,11 +39,11 @@ def train_EFK_Qwen2Audio_debug():
     )
     trainer.run()
         
-def train_MEND_DeSTA25_debug():
+def train_MEND_DeSTA25():
     hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/desta25-audio.yaml')
     
-    train_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
-    test_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json", config=hparams)
+    train_ds = DeSTA25AudioDataset(train_path, config=hparams)
+    test_ds = DeSTA25AudioDataset(val_path, config=hparams)
     
     trainer = LALMTrainer(
         config=hparams,
@@ -46,11 +52,11 @@ def train_MEND_DeSTA25_debug():
     )
     trainer.run()
     
-def train_MEND_Qwen2Audio_debug():
+def train_MEND_Qwen2Audio():
     hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/qwen2-audio.yaml')
     
-    train_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json", config=hparams)
-    test_ds = Qwen2AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json", config=hparams)
+    train_ds = Qwen2AudioDataset(train_path, config=hparams)
+    test_ds = Qwen2AudioDataset(val_path, config=hparams)
     
     trainer = LALMTrainer(
         config=hparams,
@@ -60,9 +66,9 @@ def train_MEND_Qwen2Audio_debug():
     trainer.run()
     
 if __name__ == "__main__":
-    # train_MEND_DeSTA25_debug()
-    # train_MEND_Qwen2Audio_debug()
+    train_MEND_DeSTA25()
+    # train_MEND_Qwen2Audio()
 
-    train_EFK_DeSTA25_debug() 
-    # train_EFK_Qwen2Audio_debug()   
+    # train_EFK_DeSTA25() 
+    # train_EFK_Qwen2Audio()   
     

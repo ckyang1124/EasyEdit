@@ -39,6 +39,9 @@ class BaseDataset(Dataset):
                 # Reliability
                 item = {}
                 
+                if "track" in data_point:
+                    track = data_point['track']
+                
                 reliability_audio_path = os.path.join(self.audio_root, track, data_point['file'])
                 assert os.path.exists(reliability_audio_path), f"Audio file {reliability_audio_path} does not exist."
                 reliability_question = data_point['reliability_question']

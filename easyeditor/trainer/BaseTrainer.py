@@ -24,6 +24,7 @@ from .utils import (
 )
 from tqdm import tqdm
 import warnings
+import wandb
 
 LOG = logging.getLogger(__name__)
 
@@ -141,6 +142,19 @@ class BaseTrainer:
 
         self.start_time = formatted_timestamp()
 
+        if config.wandb_enabled:
+            wandb.init(
+                project=getattr(config, "wandb_project", "easyedit"),
+                name=getattr(config, "wandb_run_name", None),
+                config=config,
+                reinit=True,
+                group=""
+            )
+            self.wandb_enabled = True
+            LOG.info(f"WandB enabled!")
+        else:
+            self.wandb_enabled = False
+
     def save_state(self, stats):
         if (self.config.debug and not self.config.save) or self.config.eval_only:
             return
@@ -154,14 +168,18 @@ class BaseTrainer:
             "elapsed_time": time_delta_seconds(self.start_time),
             "step": self.global_iter,
         }
-        LOG.info(f"Saving model to {self.save_path}")
+        
+        curr_save_path = self.save_path + f"-{self.global_iter}"
+        LOG.info(f"Saving model to {curr_save_path}")
+        
+        self.last_save_path = curr_save_path
 
-        if os.path.exists(self.save_path):
-            bk_path = f"{self.save_path}.bk"
-            LOG.info(f"Moving old archive to {bk_path}")
-            os.rename(self.save_path, bk_path)
+        # if os.path.exists(self.save_path):
+        #     bk_path = f"{self.save_path}.bk"
+        #     LOG.info(f"Moving old archive to {bk_path}")
+        #     os.rename(curr_save_path, bk_path)
 
-        torch.save(obj, self.save_path)
+        torch.save(obj, curr_save_path)
         LOG.info("Write complete.")
 
     def echo(self, train_step, info_dict, pretty=False):
@@ -175,6 +193,9 @@ class BaseTrainer:
             LOG.info(
                 sep.join([f"{key_format(k)}: {v: 0.5f}" for k, v in info_dict.items()])
             )
+        # wandb 日志
+        if self.wandb_enabled:
+            wandb.log({"step": train_step, **info_dict})
 
     def run(self):
         averager = RunningStatAverager("train")
@@ -235,6 +256,8 @@ class BaseTrainer:
                     else:
                         val_info = self.validate(steps=self.config.val_steps)
                     self.echo(self.global_iter, val_info)
+                    if self.wandb_enabled:
+                        wandb.log({"eval": val_info})
                     if True:
                         self.save_state(val_info)  # New best
                     if stopper.should_stop():
@@ -253,13 +276,13 @@ class BaseTrainer:
         if not self.config.eval_only:
             if (not self.config.debug) or self.config.save:
                 if self.config.model_parallel:
-                    archive = torch.load(self.save_path)
+                    archive = torch.load(self.last_save_path)
                     LOG.info(
                         f"Loading best model from step {archive['step']}, elapsed time {archive['elapsed_time']}"
                     )
                     self.model.load_state_dict(archive["model"])
                 else:
-                    archive = torch.load(self.save_path, map_location="cpu")
+                    archive = torch.load(self.last_save_path, map_location="cpu")
                     LOG.info(
                         f"Loading best model from step {archive['step']}, elapsed time {archive['elapsed_time']}"
                     )
@@ -273,6 +296,9 @@ class BaseTrainer:
         else:
             val_info = self.validate(log=True, steps=val_steps)
         self.echo(self.global_iter, val_info, pretty=True)
+
+        if self.wandb_enabled:
+            wandb.log({"eval": val_info})
 
         if self.config.results_dir is not None:
             results_path = f"{self.config.results_dir}/results.json"

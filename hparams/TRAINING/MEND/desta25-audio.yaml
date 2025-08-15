@@ -7,12 +7,12 @@ model_class: DeSTA25AudioModel
 tokenizer_class: AutoTokenizer
 tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
 inner_params:
-# - llm_model.model.layers.29.mlp.gate_proj.weight
-# - llm_model.model.layers.29.mlp.up_proj.weight
-# - llm_model.model.layers.29.mlp.down_proj.weight
-# - llm_model.model.layers.30.mlp.gate_proj.weight
-# - llm_model.model.layers.30.mlp.up_proj.weight
-# - llm_model.model.layers.30.mlp.down_proj.weight
+- llm_model.model.layers.29.mlp.gate_proj.weight
+- llm_model.model.layers.29.mlp.up_proj.weight
+- llm_model.model.layers.29.mlp.down_proj.weight
+- llm_model.model.layers.30.mlp.gate_proj.weight
+- llm_model.model.layers.30.mlp.up_proj.weight
+- llm_model.model.layers.30.mlp.down_proj.weight
 - llm_model.model.layers.31.mlp.gate_proj.weight
 - llm_model.model.layers.31.mlp.up_proj.weight
 - llm_model.model.layers.31.mlp.down_proj.weight
@@ -51,17 +51,17 @@ batch_size: 1
 model_save_pt: 5000
 silent: False
 #max_epochs: 1
-max_iters: 50 #50000 # TODO: change to 50000 for real training
-log_interval: 100
+max_iters: 30000 # 50000
+log_interval: 50
 eval_log_interval: 1000
 final_eval: True
 val_interval: 5000
-early_stop_patience: 20000
+early_stop_patience: 10000
 early_stop_key: "loss/total_edit_val"
 eval_only: False
 half: False
-debug: True # TODO: change to False for real training
-save: False
+debug: False
+save: True # TODO: change to True for real training
 verbose: True
 
 val_batch_size: 1
@@ -71,7 +71,7 @@ opt: Adam
 grad_clip: 100.
 
 # Output
-results_dir: ./results
+results_dir: ./results/MEND/DeSTA25Audio
 
 # Multimodal
 exact_match: False #True
@@ -83,3 +83,7 @@ exact_match: False #True
 # Audio
 cache_dir: ./.cache
 audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_MEND_DeSTA25Audio

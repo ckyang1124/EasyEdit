@@ -56,6 +56,11 @@ class EFKLALMTrainingHparams(HyperParams):
     val_steps: int
     opt: str
     grad_clip: float
+    
+    # wandb
+    wandb_project: str
+    wandb_run_name: Optional[str] = None
+    wandb_enabled: bool = False
 
     max_epochs: Optional[int] = None
     max_iters: Optional[int] = None
@@ -77,6 +82,6 @@ class EFKLALMTrainingHparams(HyperParams):
             config = yaml.safe_load(stream)
             config = super().construct_float_from_scientific_notation(config)
 
-        assert (config and config['alg'] == 'KE') or print(f'KETrainingHyperParams can not load from {hparams_name_or_path}, '
+        assert (config and config['alg'] == 'EFK') or print(f'KETrainingHyperParams can not load from {hparams_name_or_path}, '
                                                 f'alg_name is {config["alg"]} ')
         return cls(**config)

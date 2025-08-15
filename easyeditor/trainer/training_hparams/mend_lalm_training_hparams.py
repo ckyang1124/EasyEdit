@@ -69,6 +69,11 @@ class MENDLALMTrainingHparams(HyperParams):
     val_steps: int
     opt: str
     grad_clip: float
+    
+    # wandb
+    wandb_project: str
+    wandb_run_name: Optional[str] = None
+    wandb_enabled: bool = False
 
     # qformer_checkpoint: str
     exact_match: bool = False
