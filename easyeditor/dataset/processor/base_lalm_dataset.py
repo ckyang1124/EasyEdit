@@ -14,11 +14,12 @@ import os
             
 class BaseDataset(Dataset):
     def __init__(
-        self, audio_root=None, metadata_path=[]
+        self, audio_root=None, metadata_path=[], testing: bool = False
     ):
         """
         audio_root (string): Root directory of audio files (e.g. audio_data/Gender/)
         metadata_path (string): Path to the metadata file, which is expected to be a JSON file
+        testing (bool): If True, the dataset is in testing mode, portability key will be added to each sample.
         """
         self.audio_root = audio_root
         self.metadata_path = metadata_path
@@ -72,6 +73,12 @@ class BaseDataset(Dataset):
                 assert len(data_point['locality']['text']) == 1, "Locality text should only have one data per sample."
                 locality_text_data = [self.process(data_point['locality']['text'][i], track=track) for i in range(len(data_point['locality']['text']))]
                 item['locality_text'] = locality_text_data[0]
+                
+                # Portability
+                # Only add portability key if testing is True
+                if testing:
+                    portability_audio_data = self.process(data_point['portability']['audio'], track=track)
+                    item['portability_audio'] = portability_audio_data
                 
                 self.data.append(item)
 

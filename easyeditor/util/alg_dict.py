@@ -1,7 +1,7 @@
 # from ..models.rome import ROMEHyperParams, apply_rome_to_model
 # from ..models.memit import MEMITHyperParams, apply_memit_to_model
 # from ..models.kn import KNHyperParams, apply_kn_to_model
-from ..models.mend import MENDHyperParams, MendRewriteExecutor, MendMultimodalRewriteExecutor, MendPerRewriteExecutor
+from ..models.mend import MENDHyperParams, MendRewriteExecutor, MendMultimodalRewriteExecutor, MendPerRewriteExecutor, MendLALMRewriteExecutor
 # from ..models.ft import FTHyperParams, apply_ft_to_model
 # from ..models.dinm import DINMHyperParams, apply_dinm_to_model
 # from ..models.serac import SERACHparams, SeracRewriteExecutor, SeracMultimodalRewriteExecutor
@@ -20,6 +20,7 @@ from ..models.mend import MENDHyperParams, MendRewriteExecutor, MendMultimodalRe
 # from ..models.core import COREHyperParams, apply_core_to_model
 # from .. models.deepedit_api import DeepEditApiHyperParams, apply_deepedit_api_to_model
 # from ..models.dpo import DPOHyperParams, apply_dpo_to_model
+from ..dataset import Qwen2AudioDataset, DeSTA25AudioDataset
 
 ALG_DICT = {
     # 'ROME': apply_rome_to_model,
@@ -43,6 +44,10 @@ ALG_DICT = {
     # "AlphaEdit": apply_AlphaEdit_to_model,
     # "CORE": apply_core_to_model,
     # "DeepEdit-Api": apply_deepedit_api_to_model
+}
+
+ALG_LALM_DICT = {
+    'MEND': MendLALMRewriteExecutor().apply_to_model,
 }
 
 ALG_MULTIMODAL_DICT = {
@@ -69,6 +74,10 @@ PER_ALG_DICT = {
 #     "caption": CaptionDataset,
 #     "vqa": VQADataset,
 # }
+LALM_DS_DICT = {
+    "qwen2-audio": Qwen2AudioDataset,
+    "desta25-audio": DeSTA25AudioDataset,
+}
 
 # PER_DS_DICT = {
 #     "personalityEdit": PersonalityDataset

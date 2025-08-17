@@ -18,7 +18,7 @@ class MENDLALMHparams(HyperParams):
     tokenizer_name: str
     inner_params: List[str]
 
-    
+    alg_name: str
 
     # Method
     alg: str
@@ -73,18 +73,21 @@ class MENDLALMHparams(HyperParams):
     opt: str
     grad_clip: float
 
-    alg_name: str
+    # wandb
+    wandb_project: str = None
+    wandb_run_name: Optional[str] = None
+    wandb_enabled: bool = False
     
     archive: Any = None
     
     exact_match: bool = False
     batch_size: int = 1
-    max_length: int = 30
+    max_length: int = 256
     max_epochs: Optional[int] = None
     max_iters: Optional[int] = None
-    model_parallel: bool = False
-    qformer_checkpoint: Optional[str] = None
-    freeze_qformer: bool = True
+    model_parallel: bool = True
+    # qformer_checkpoint: Optional[str] = None
+    # freeze_qformer: bool = True
     pretrained_ckpt: Optional[str] = None  
     
     # audio

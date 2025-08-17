@@ -71,7 +71,7 @@ class MENDLALMTrainingHparams(HyperParams):
     grad_clip: float
     
     # wandb
-    wandb_project: str
+    wandb_project: str = None
     wandb_run_name: Optional[str] = None
     wandb_enabled: bool = False
 

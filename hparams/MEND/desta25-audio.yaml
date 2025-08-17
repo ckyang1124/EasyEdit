@@ -1,18 +1,18 @@
 # Model
 device: cuda
-# alg_name: "MEND"
+alg_name: "MEND"
 name: DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B
 model_name: DeSTA25AudioModel
 model_class: DeSTA25AudioModel
 tokenizer_class: AutoTokenizer
 tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
 inner_params:
-# - llm_model.model.layers.29.mlp.gate_proj.weight
-# - llm_model.model.layers.29.mlp.up_proj.weight
-# - llm_model.model.layers.29.mlp.down_proj.weight
-# - llm_model.model.layers.30.mlp.gate_proj.weight
-# - llm_model.model.layers.30.mlp.up_proj.weight
-# - llm_model.model.layers.30.mlp.down_proj.weight
+- llm_model.model.layers.29.mlp.gate_proj.weight
+- llm_model.model.layers.29.mlp.up_proj.weight
+- llm_model.model.layers.29.mlp.down_proj.weight
+- llm_model.model.layers.30.mlp.gate_proj.weight
+- llm_model.model.layers.30.mlp.up_proj.weight
+- llm_model.model.layers.30.mlp.down_proj.weight
 - llm_model.model.layers.31.mlp.gate_proj.weight
 - llm_model.model.layers.31.mlp.up_proj.weight
 - llm_model.model.layers.31.mlp.down_proj.weight
@@ -43,19 +43,20 @@ act: relu
 rank: 1920
 mlp_class: IDMLP
 shared: True
-# archive: results/models/MEND/desta25-audio
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio/models/MEND/DeSTA25AudioModel-10000
+model_parallel: True
 
 # Train
 batch_size: 1
 model_save_pt: 1000
 silent: False
 #max_epochs: 1
-max_iters: 50000
-log_interval: 100
+max_iters: 30000 # 50000
+log_interval: 50
 eval_log_interval: 1000
 final_eval: True
-val_interval: 1000  
-early_stop_patience: 20000
+val_interval: 5000 #1000  
+early_stop_patience: 10000 # 20000
 early_stop_key: "loss/total_edit_val"
 eval_only: True
 half: False
@@ -71,9 +72,12 @@ grad_clip: 100.
 exact_match: True
 
 # Output
-results_dir: ./results
+results_dir: ./results/MEND/DeSTA25Audio/testing
 
 
 # Audio
 cache_dir: ./.cache
 audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True

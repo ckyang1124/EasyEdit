@@ -20,16 +20,18 @@ from desta.utils.audio import AudioSegment
 from desta.models.modeling_desta25 import _prepare_audio_context_and_start_positions
 
 class Qwen2AudioDataset(BaseDataset):
-    def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, *args, **kwargs):
+    def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, testing: bool = False, *args, **kwargs):
         # get processor
         self.processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir=config.cache_dir)
 
 
         audio_root = config.audio_root
-        super().__init__(audio_root, [data_dir])
+        super().__init__(audio_root, [data_dir], testing)
 
         self.config = config
         self.max_length = 256
+        
+        self.testing = testing
 
         # self.prompt = "Question: {} Short answer:"
         if size is not None:
@@ -84,7 +86,10 @@ class Qwen2AudioDataset(BaseDataset):
         audios = self.collect_audio_from_messages(prompts)
         target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
         prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
-        input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
+        if self.testing:
+            input_text = prompts_chat_template
+        else:
+            input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
         # print(input_text[0])
         if len(audios) > 0:
             inputs = self.processor(
@@ -149,7 +154,7 @@ class Qwen2AudioDataset(BaseDataset):
 
 
 class DeSTA25AudioDataset(BaseDataset):
-    def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, *args, **kwargs):
+    def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, testing: bool = False, *args, **kwargs):
         
         # Set up tokenizer
         self.audio_locator = "<|AUDIO|>"
@@ -165,10 +170,12 @@ class DeSTA25AudioDataset(BaseDataset):
         self.prompt_size = 64 # TODO: Check whether this is the right size for DeSTA2.5
         
         audio_root = config.audio_root
-        super().__init__(audio_root, [data_dir])
+        super().__init__(audio_root, [data_dir], testing)
 
         self.config = config
         self.max_length = 256
+        
+        self.testing = testing
 
         # self.prompt = "Question: {} Short answer:"
         if size is not None:
@@ -275,7 +282,10 @@ class DeSTA25AudioDataset(BaseDataset):
                     messages,
                     tokenize=False,
                     add_generation_prompt=True,
-                ) + trg # Concat with target
+                ) 
+                
+                if not self.testing:
+                    audio_context += trg # Concat with target
 
                 # print(audio_context)
                 # <start_audio><|AUDIO|><end_audio> is a indicator used in the training stage
@@ -334,7 +344,10 @@ class DeSTA25AudioDataset(BaseDataset):
                 tokenize=False,
                 add_generation_prompt=True,
             )
-            inputs = [src + trg for (src, trg) in zip(inputs, targets)]  # Concat with target
+            if self.testing:
+                inputs = inputs
+            else:
+                inputs = [src + trg for (src, trg) in zip(inputs, targets)]  # Concat with target
             inputs = self.tokenizer(inputs, return_tensors="pt", padding=True, max_length=self.max_length)
             inputs = {
                 "input_ids": inputs["input_ids"],

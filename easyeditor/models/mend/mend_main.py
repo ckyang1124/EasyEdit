@@ -6,11 +6,12 @@ from typing import Dict, List
 import hydra
 import torch
 from collections import deque
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoProcessor
 
 from ...util.globals import *
 from ...trainer import MEND
 from .mend_hparams import MENDHyperParams
+from .mend_lalm_hparams import MENDLALMHparams
 from .mend_multimodal_hparams import MENDMultimodalHparams
 
 
@@ -286,3 +287,106 @@ class MendPerRewriteExecutor(MendRewriteExecutor):
         
         return edited_model, weights_copy
         
+        
+class MendLALMRewriteExecutor:
+    def __init__(self):
+        self.is_init = False
+
+    def init_model(self, model, tok, params: MENDLALMHparams, proc=None):
+
+        assert params.archive is not None, "Training weights Needed...."
+
+        self.model = model
+        self.processor = proc
+        self.tokenizer = tok
+
+        # Load the trained MEND model
+        self.alg = MEND(self.model, params, lambda: deepcopy(self.model))
+        d = torch.load(params.archive, map_location='cuda')
+        print(f"Loading MEND model from {params.archive}")
+
+        self.alg.load_state_dict(
+            {k.replace("gtn.", "mend."): v for k, v in d["model"].items()}
+        )
+        # if params.model_parallel:
+        self.alg.mend.to(deque(self.alg.model.parameters(), maxlen=1)[0].device)
+        # else:
+        #     self.alg.to(torch.device(f'cuda:{params.device}'))
+
+        # Disable unneeded gradients
+        for n, p in self.model.named_parameters():
+            if n not in params.inner_params:
+                p.requires_grad = False
+            else:
+                # TODO: is this really correct???
+                p.requires_grad = True
+                print(f"Parameter {n} is set to trainable with p.requires_grad = {p.requires_grad}")
+            
+        self.is_init = True
+
+    def reset_model(self):
+        self.is_init = False
+        del self.model, self.tokenizer, self.alg
+
+    def apply_to_model(
+        self,
+        requests: dict,
+        hparams: MENDLALMHparams,
+        model=None,
+        tok=None,
+        copy=False,
+        return_orig_weights=False,
+        keep_original_weight=False,
+        **kwargs
+    ):
+        """
+        Given a tokenized request, for example
+            {
+                'input_ids': input_ids,
+                'attention_mask': attention_mask,
+                'labels': labels,
+            }
+        Returns a dictionary of numpy arrays that specifies
+        how mend will change the weights of the model.
+        """
+
+        if not self.is_init:
+            self.init_model(model, tok, hparams)
+
+        weights_copy = {}
+        model = deepcopy(self.model) if copy else self.model
+
+        # Run MEND
+        # edit_inner = dict(
+        #     input_ids=requests["input_ids"],
+        #     attention_mask=requests["attention_mask"],
+        #     labels=requests['labels'],
+        # )
+        cond = None # {k: requests[k] for k in ["input_ids", "attention_mask"]}
+
+        self.alg.eval()
+        edited_model, model_info = self.alg.edit(requests, cond, return_factors=True)
+        factors = {
+            k + "." + n: v.detach().cpu().numpy()
+            for k, pair in model_info["factors"].items()
+            for n, v in zip("uv", pair)
+        }
+        # Also keep these learned LRs.
+        factors["edit_lrs"] = self.alg.edit_lrs.detach().cpu().numpy()
+
+        # Edit!
+        d = factors
+        torch_factors = {k: torch.tensor(v) for k, v in d.items()}
+        eli = 0
+        edit_lrs = torch_factors["edit_lrs"]
+
+        with torch.no_grad():
+            for n, p in model.named_parameters():
+                uname, vname = f"{n}.u", f"{n}.v"
+                if uname in torch_factors:
+                    if return_orig_weights and n not in weights_copy:
+                        weights_copy[n] = p.detach().clone()
+                    with torch.no_grad():
+                        p.copy_(edited_model.model.state_dict()[n])
+
+        return model, weights_copy
