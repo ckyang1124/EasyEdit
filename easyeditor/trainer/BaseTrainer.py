@@ -193,9 +193,6 @@ class BaseTrainer:
             LOG.info(
                 sep.join([f"{key_format(k)}: {v: 0.5f}" for k, v in info_dict.items()])
             )
-        # wandb 日志
-        if self.wandb_enabled:
-            wandb.log({"step": train_step, **info_dict})
 
     def run(self):
         averager = RunningStatAverager("train")
@@ -232,7 +229,7 @@ class BaseTrainer:
                 break
             for i, batch in enumerate(tqdm(self.train_loader, desc=f"Epoch {epoch+1}", disable=self.config.silent, dynamic_ncols=True, leave=False)):
                 self.global_iter += 1
-                if self.global_iter >= self.config.max_iters:
+                if self.global_iter > self.config.max_iters: # remove '=', or it will stop one step earlier
                     should_stop = True
                     break
                 if not self.config.eval_only:
@@ -245,6 +242,9 @@ class BaseTrainer:
                     else:
                         train_info = self.train_step(batch)
                         averager.add(train_info)
+                    
+                    if self.wandb_enabled:
+                        wandb.log({"step": self.global_iter, **train_info})
 
                     if self.global_iter % self.config.log_interval == 0:
                         avg_info = averager.average()
@@ -258,6 +258,7 @@ class BaseTrainer:
                     self.echo(self.global_iter, val_info)
                     if self.wandb_enabled:
                         wandb.log({"eval": val_info})
+                    stopper.update(self.global_iter, val_info)
                     if True:
                         self.save_state(val_info)  # New best
                     if stopper.should_stop():
@@ -296,6 +297,7 @@ class BaseTrainer:
         else:
             val_info = self.validate(log=True, steps=val_steps)
         self.echo(self.global_iter, val_info, pretty=True)
+        self.save_state(val_info)
 
         if self.wandb_enabled:
             wandb.log({"eval": val_info})

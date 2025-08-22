@@ -9,6 +9,6 @@ ALG_TRAIN_DICT = {
     'SERAC': SERAC,
     'SERAC_MULTI': SERAC_MULTI,
     'MALMEN': MALMEN,
-    'KE': EFK,
+    'EFK': EFK,
     # 'EFK': EFK
 }

@@ -10,6 +10,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, AutoProcessor
 
 from ...util.globals import *
 from ...trainer import MEND
+from ...trainer.utils import dict_to
 from .mend_hparams import MENDHyperParams
 from .mend_lalm_hparams import MENDLALMHparams
 from .mend_multimodal_hparams import MENDMultimodalHparams
@@ -175,7 +176,7 @@ class MendMultimodalRewriteExecutor(MendRewriteExecutor):
         self.alg.load_state_dict(
             {k.replace("gtn.", "mend."): v for k, v in d["model"].items()}
         )
-        self.alg.to(torch.device(f'cuda:{params.device}'))
+        self.alg.to(torch.device("cuda"))
 
         # Disable unneeded gradients
         for n, p in self.model.named_parameters():
@@ -309,7 +310,8 @@ class MendLALMRewriteExecutor:
             {k.replace("gtn.", "mend."): v for k, v in d["model"].items()}
         )
         # if params.model_parallel:
-        self.alg.mend.to(deque(self.alg.model.parameters(), maxlen=1)[0].device)
+        # device = deque(self.alg.model.parameters(), maxlen=1)[0].device
+        self.alg.mend.to("cuda")
         # else:
         #     self.alg.to(torch.device(f'cuda:{params.device}'))
 
@@ -318,7 +320,6 @@ class MendLALMRewriteExecutor:
             if n not in params.inner_params:
                 p.requires_grad = False
             else:
-                # TODO: is this really correct???
                 p.requires_grad = True
                 print(f"Parameter {n} is set to trainable with p.requires_grad = {p.requires_grad}")
             
@@ -365,6 +366,7 @@ class MendLALMRewriteExecutor:
         cond = None # {k: requests[k] for k in ["input_ids", "attention_mask"]}
 
         self.alg.eval()
+        requests = dict_to(requests, hparams.device)
         edited_model, model_info = self.alg.edit(requests, cond, return_factors=True)
         factors = {
             k + "." + n: v.detach().cpu().numpy()

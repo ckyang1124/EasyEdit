@@ -80,16 +80,53 @@ class Qwen2AudioDataset(BaseDataset):
                                         sr=self.processor.feature_extractor.sampling_rate)[0]
                                 )
         return audios
+    
+    def generate_response(self, model, sample):
+        """
+        This is used only during testing to generate responses.
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = self.create_message(sample)
+        text = self.processor.apply_chat_template(message, add_generation_prompt=True, tokenize=False)
+        audios = self.collect_audio_from_messages([message])
+        
+        inputs = self.processor(
+            text=text, 
+            audios=audios, 
+            return_tensors="pt", 
+            padding=True,
+            sampling_rate=self.processor.feature_extractor.sampling_rate
+        )
+        inputs = dict_to(inputs, self.config.device)
+        
+        with torch.no_grad():
+            generate_ids = model.generate(
+                **inputs, 
+                max_length=self.max_length, 
+                do_sample=False,
+                temperature=None,
+                top_p=None,
+            )
+        
+        generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+        response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+        return response
 
-    def process_and_tokenize_batch(self, batch, key='reliability'):
+    def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
         prompts = [self.create_message(b[key]) for b in batch]
         audios = self.collect_audio_from_messages(prompts)
         target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
         prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
-        if self.testing:
-            input_text = prompts_chat_template
-        else:
+        if append_target_to_input:
             input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
+        else:
+            input_text = prompts_chat_template
+            
         # print(input_text[0])
         if len(audios) > 0:
             inputs = self.processor(
@@ -246,7 +283,28 @@ class DeSTA25AudioDataset(BaseDataset):
 
         return all_audios, all_transcriptions
     
-    def process_and_tokenize_batch(self, batch, key='reliability'):
+    def generate_response(self, model, sample):
+        """
+        This is used only during testing to generate responses.
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = self.create_message(sample)
+        with torch.no_grad():
+            outputs = model.generate_with_transcription(
+                messages=message,
+                do_sample=False,
+                max_new_tokens=self.max_length,
+                temperature=None,
+                top_p=None,
+            )
+        return outputs.text
+    
+    def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
         prompts = [self.create_message(b[key]) for b in batch]
         targets = [b[key]['answer'] + self.tokenizer.eos_token for b in batch] # Append eos token to the target
         all_audios, all_transcriptions = self.collect_audio_and_transcription_from_messages(prompts)
@@ -284,7 +342,7 @@ class DeSTA25AudioDataset(BaseDataset):
                     add_generation_prompt=True,
                 ) 
                 
-                if not self.testing:
+                if append_target_to_input:
                     audio_context += trg # Concat with target
 
                 # print(audio_context)
@@ -344,10 +402,9 @@ class DeSTA25AudioDataset(BaseDataset):
                 tokenize=False,
                 add_generation_prompt=True,
             )
-            if self.testing:
-                inputs = inputs
-            else:
+            if append_target_to_input:
                 inputs = [src + trg for (src, trg) in zip(inputs, targets)]  # Concat with target
+                
             inputs = self.tokenizer(inputs, return_tensors="pt", padding=True, max_length=self.max_length)
             inputs = {
                 "input_ids": inputs["input_ids"],

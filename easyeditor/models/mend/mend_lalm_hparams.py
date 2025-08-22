@@ -94,6 +94,11 @@ class MENDLALMHparams(HyperParams):
     audio_root: str = ""
     cache_dir: str = './cache'
     
+    # wandb
+    wandb_project: str = None
+    wandb_run_name: Optional[str] = None
+    wandb_enabled: bool = False
+    
     @classmethod
     def from_hparams(cls, hparams_name_or_path: str):
 

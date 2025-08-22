@@ -43,8 +43,8 @@ act: relu
 rank: 1920
 mlp_class: IDMLP
 shared: True
-archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio/models/MEND/DeSTA25AudioModel-10000
-model_parallel: True
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio/models/MEND/DeSTA25AudioModel-3600
+model_parallel: False
 
 # Train
 batch_size: 1
@@ -76,8 +76,9 @@ results_dir: ./results/MEND/DeSTA25Audio/testing
 
 
 # Audio
-cache_dir: ./.cache
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
 audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_MEND_DeSTA25Audio_testing

@@ -34,9 +34,9 @@ def update_counter(x, m, s, k):
     # print(x.device, m.device, s.device, k.device)
     
     # x = x.to(x.device)
-    m = m.to(x.device)
-    s = s.to(x.device)
-    k = k.to(x.device)
+    m = m.to(x.device, non_blocking=True)
+    s = s.to(x.device, non_blocking=True)
+    k = k.to(x.device, non_blocking=True)
     # x = x.to(m.device)
     new_m = m + (x - m) / k
     new_s = s + (x - m) * (x - new_m)
@@ -154,15 +154,15 @@ class GradientTransform(nn.Module):
                     f"Can't perform normalization with only {self.k} samples so far"
                 )
                 
-            self.k = self.k.to(self.u_s.device) # TODO: Ensure k is on the same device as u_s and v_s in a more robust way
+            self.k = self.k.to(self.u_s.device, non_blocking=True)
             self.u_std = (self.u_s / (self.k - 1)) ** 0.5
             self.v_std = (self.v_s / (self.k - 1)) ** 0.5
 
         if self.cfg.norm:
-            self.u_mean = self.u_mean.to(u_.device)
-            self.u_std = self.u_std.to(u_.device)
-            self.v_mean = self.v_mean.to(v_.device)
-            self.v_std = self.v_std.to(v_.device)
+            self.u_mean = self.u_mean.to(u_.device, non_blocking=True)
+            self.u_std = self.u_std.to(u_.device, non_blocking=True)
+            self.v_mean = self.v_mean.to(v_.device, non_blocking=True)
+            self.v_std = self.v_std.to(v_.device, non_blocking=True)
             u_input = (u_ - self.u_mean) / (self.u_std + 1e-7)
             v_input = (v_ - self.v_mean) / (self.v_std + 1e-7)
         else:
@@ -240,9 +240,9 @@ class MEND(EditableModel):
                     }
                 )
             if self.config.model_parallel:
-                self.mend.to(deque(self.model.parameters(), maxlen=1)[0].device)
+                self.mend.to(deque(self.model.parameters(), maxlen=1)[0].device, non_blocking=True)
             else:
-                self.mend.to(self.config.device)
+                self.mend.to(self.config.device, non_blocking=True)
         else:
             self.mend = mend
 
@@ -422,7 +422,7 @@ class MEND(EditableModel):
         for n, p in _inner_params(
             self.model.named_parameters(), self.config.inner_params
         ):
-            mean_grads[n] = mean_grads[n].to(p.device)
+            mean_grads[n] = mean_grads[n].to(p.device, non_blocking=True)
             info_dict[f"grad/true_mag{idx}"] = p.grad.norm(2).item()
             info_dict[f"grad/pseudo_mag{idx}"] = mean_grads[n].norm(2).item()
             info_dict[f"grad/true_std{idx}"] = p.grad.std().item()
