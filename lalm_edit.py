@@ -13,8 +13,8 @@ from easyeditor import LALMEditor
 debug_train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json"
 debug_val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json"
 
-train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions.json"
-val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_val_transcriptions.json"
+train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
+val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_val_transcriptions_no_label.json"
 
 # ==== Training Functions ===
 
@@ -74,13 +74,15 @@ def train_MEND_Qwen2Audio():
 
 def edit_MEND_DeSTA25():
     hparams = MENDLALMHparams.from_hparams('hparams/MEND/desta25-audio.yaml')
-    
-    test_ds = DeSTA25AudioDataset("/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/Animal_transcriptions.json", config=hparams, testing=True)
     editor = LALMEditor.from_hparams(hparams)
-    editor.single_edit_dataset(
-        test_ds,
-        output_path=f"{hparams.archive}_Animal_single_edit.jsonl",
-    )
+    
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
+        )
     
 if __name__ == "__main__":
     # train_MEND_DeSTA25()

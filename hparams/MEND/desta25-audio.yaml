@@ -43,7 +43,7 @@ act: relu
 rank: 1920
 mlp_class: IDMLP
 shared: True
-archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio/models/MEND/DeSTA25AudioModel-3600
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio_no_label_all/models/MEND/DeSTA25AudioModel-3600
 model_parallel: False
 
 # Train

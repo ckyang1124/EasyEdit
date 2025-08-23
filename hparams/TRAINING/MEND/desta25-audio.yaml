@@ -71,7 +71,7 @@ opt: Adam
 grad_clip: 100.
 
 # Output
-results_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio
+results_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/DeSTA25Audio_no_label_all
 
 # Multimodal
 exact_match: False #True
@@ -87,3 +87,4 @@ audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 # Weights and Biases
 wandb_enabled: True
 wandb_project: LALM-Knowledge-Editing_MEND_DeSTA25Audio
+wandb_run_name: no_label_all
