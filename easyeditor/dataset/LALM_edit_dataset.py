@@ -92,12 +92,12 @@ class Qwen2AudioDataset(BaseDataset):
         }
         """
         message = self.create_message(sample)
-        text = self.processor.apply_chat_template(message, add_generation_prompt=True, tokenize=False)
+        text = [self.processor.apply_chat_template(message, add_generation_prompt=True, tokenize=False)]
         audios = self.collect_audio_from_messages([message])
         
         inputs = self.processor(
             text=text, 
-            audios=audios, 
+            audios=None if len(audios) == 0 else audios, 
             return_tensors="pt", 
             padding=True,
             sampling_rate=self.processor.feature_extractor.sampling_rate
@@ -107,13 +107,13 @@ class Qwen2AudioDataset(BaseDataset):
         with torch.no_grad():
             generate_ids = model.generate(
                 **inputs, 
-                max_length=self.max_length, 
+                max_new_tokens=self.max_length, 
                 do_sample=False,
                 temperature=None,
                 top_p=None,
             )
         
-        generate_ids = generate_ids[:, inputs.input_ids.size(1):]
+        generate_ids = generate_ids[:, inputs["input_ids"].size(1):]
         response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
         return response
 
@@ -166,6 +166,9 @@ class Qwen2AudioDataset(BaseDataset):
         
         # Currently do not include prompts_len as the purpose of this is not clear
         # edit['prompts_len'] = [len(self.processor.tokenizer.encode(src, add_special_tokens=False)) for src in prompts_chat_template]
+        
+        # convert edit into dict
+        edit = {k: v for k, v in edit.items()}
 
         return edit
 

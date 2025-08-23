@@ -1,5 +1,6 @@
 # Model
 device: cuda
+alg_name: "MEND"
 
 name: Qwen/Qwen2-Audio-7B-Instruct
 model_name: Qwen/Qwen2-Audio-7B-Instruct
@@ -17,12 +18,12 @@ inner_params:
 - language_model.model.layers.31.mlp.up_proj.weight
 - language_model.model.layers.31.mlp.down_proj.weight
 
-
 # Method
 alg: MEND
 lr: 1e-6
 edit_lr: 1e-4
 lr_lr: 1e-4
+lr_scale: 1.0
 seed: 42
 cedit: 0.1
 iedit: 0.1
@@ -43,25 +44,25 @@ act: relu
 rank: 1920
 mlp_class: IDMLP
 shared: True
-archive: null
-model_parallel: True
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/Qwen2Audio_no_label_all/models/MEND/Qwen2-Audio-7B-Instruct-3600
+model_parallel: False
 
 # Train
 batch_size: 1
-model_save_pt: 5000
+model_save_pt: 1000
 silent: False
-# max_epochs: 1
-max_iters: 3600 #50000
+#max_epochs: 1
+max_iters: 30000 # 50000
 log_interval: 50
-eval_log_interval: 50
+eval_log_interval: 1000
 final_eval: True
-val_interval: 900
-early_stop_patience: 5000 #10000
+val_interval: 5000 #1000  
+early_stop_patience: 10000 # 20000
 early_stop_key: "loss/total_edit_val"
-eval_only: False
+eval_only: True
 half: False
-debug: False # TODO: change to False for real training
-save: True
+debug: False
+save: False
 verbose: True
 
 val_batch_size: 1
@@ -69,21 +70,16 @@ accumulate_bs: 2
 val_steps: 500 # only for debug
 opt: Adam
 grad_clip: 100.
+exact_match: True
 
 # Output
-results_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/Qwen2Audio_no_label_all
+results_dir: ./results/MEND/Qwen2Audio/testing
 
-# Multimodal
-exact_match: False #True
-# freeze_qformer: False
-# qformer_checkpoint: hugging_cache/blip2_pretrained_opt2.7b.pth
-# qformer_name_or_path: bert-base-uncased
-# state_dict_file: hugging_cache/eva_vit_g.pth
 
 # Audio
-cache_dir: ./.cache
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
 audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
-wandb_project: LALM-Knowledge-Editing_MEND_Qwen2Audio
+wandb_project: LALM-Knowledge-Editing_MEND_Qwen2Audio_testing

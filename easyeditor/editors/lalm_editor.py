@@ -285,6 +285,10 @@ class LALMEditor:
                     if name in weights_copy:
                         param.data.copy_(weights_copy[name])
                         
+                # release GPU memory for weights_copy and edited_model
+                del weights_copy
+                del edited_model
+                        
                 d = {
                     **sample,
                     "pre_edit": pre_edit,
