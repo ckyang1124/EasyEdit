@@ -252,6 +252,7 @@ class LALMEditor:
     #         return outputs.text
     
     def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str) -> None:
+        LOG.info(f"Start editing the dataset and save results to {output_path}...")
         with jsonlines.open(output_path, mode='w') as writer:
             for i, sample in enumerate(tqdm(ds, desc='Test Editing samples', dynamic_ncols=True)):
                 start_time = time()
@@ -283,13 +284,16 @@ class LALMEditor:
                 for name, param in self.model.named_parameters():
                     if name in weights_copy:
                         param.data.copy_(weights_copy[name])
-                
-                writer.write({
+                        
+                d = {
                     **sample,
                     "pre_edit": pre_edit,
                     "post_edit": post_edit
-                })
+                }
                 
+                LOG.info(f"Results for sample {i}: {d}")
+                
+                writer.write(d)
                 
                 if self.wandb_enabled:
                     wandb.log({
