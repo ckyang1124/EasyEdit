@@ -87,7 +87,7 @@ class LALMEditor:
         if "qwen2-audio" in hparams.model_name.lower():
             from transformers import Qwen2AudioForConditionalGeneration
             
-            self.model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir=hparams.cache_dir, device_map="auto")
+            self.model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir=hparams.cache_dir, device_map="auto", torch_dtype=torch.bfloat16)
             self.processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir=hparams.cache_dir).tokenizer
         elif "desta" in hparams.model_name.lower():
             from desta import DeSTA25AudioModel
