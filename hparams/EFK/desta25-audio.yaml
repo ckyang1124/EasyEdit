@@ -1,6 +1,6 @@
 # Model
 device: cuda
-
+alg_name: "EFK"
 model_name: DeSTA25AudioModel
 model_class: DeSTA25AudioModel
 tokenizer_class: AutoTokenizer
@@ -28,8 +28,8 @@ cbase: 1.0
 dropout: 0.0
 train_base: False
 no_grad_layers: null
-archive: null
-model_parallel: True
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/EFK/DeSTA25Audio/models/EFK/DeSTA25AudioModel-3600
+model_parallel: False
 
 # Train
 batch_size: 1
@@ -64,4 +64,4 @@ audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
-wandb_project: LALM-Knowledge-Editing_EFK_DeSTA25Audio
+wandb_project: LALM-Knowledge-Editing_EFK_DeSTA25Audio_testing

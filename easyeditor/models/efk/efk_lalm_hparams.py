@@ -3,10 +3,8 @@ from ...util.hparams import HyperParams
 from typing import Optional, Any, List
 import yaml
 
-
 @dataclass
-class EFKLALMTrainingHparams(HyperParams):
-
+class EFKLALMHyperParams(HyperParams):
     # Model
     model_name: str
     model_class: str
@@ -15,6 +13,8 @@ class EFKLALMTrainingHparams(HyperParams):
     inner_params: List[str]
 
     archive: Any
+    
+    alg_name: str
 
     # Method
     alg: str

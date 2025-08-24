@@ -2,6 +2,7 @@
 # from ..models.memit import MEMITHyperParams, apply_memit_to_model
 # from ..models.kn import KNHyperParams, apply_kn_to_model
 from ..models.mend import MENDHyperParams, MendRewriteExecutor, MendMultimodalRewriteExecutor, MendPerRewriteExecutor, MendLALMRewriteExecutor
+from ..models.efk import EFKHyperParams, EfkRewriteExecutor, EfkLALMRewriteExecutor
 # from ..models.ft import FTHyperParams, apply_ft_to_model
 # from ..models.dinm import DINMHyperParams, apply_dinm_to_model
 # from ..models.serac import SERACHparams, SeracRewriteExecutor, SeracMultimodalRewriteExecutor
@@ -48,6 +49,7 @@ ALG_DICT = {
 
 ALG_LALM_DICT = {
     'MEND': MendLALMRewriteExecutor().apply_to_model,
+    'EFK': EfkLALMRewriteExecutor().apply_to_model,
 }
 
 ALG_MULTIMODAL_DICT = {

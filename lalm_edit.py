@@ -6,7 +6,7 @@ from easyeditor import LALMTrainer
 # from easyeditor.dataset.LALM_edit_dataset import DeSTA25AudioDataset, Qwen2AudioDataset
 # from easyeditor.trainer.LALMTrainer import LALMTrainer
 from easyeditor import MENDLALMTrainingHparams, MENDLALMHparams
-from easyeditor import EFKLALMTrainingHparams
+from easyeditor import EFKLALMTrainingHparams, EFKLALMHyperParams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
 from easyeditor import LALMEditor
 
@@ -72,7 +72,7 @@ def train_MEND_Qwen2Audio():
     
 # ==== Testing Functions ====
 
-def edit_MEND_DeSTA25():
+def single_edit_MEND_DeSTA25():
     hparams = MENDLALMHparams.from_hparams('hparams/MEND/desta25-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     
@@ -84,7 +84,7 @@ def edit_MEND_DeSTA25():
             output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
         )
         
-def edit_MEND_Qwen2Audio():
+def single_edit_MEND_Qwen2Audio():
     hparams = MENDLALMHparams.from_hparams('hparams/MEND/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     
@@ -95,6 +95,19 @@ def edit_MEND_Qwen2Audio():
             test_ds,
             output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
         )
+        
+def single_edit_EFK_DeSTA25():
+    hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_{track}_single_edit.jsonl",
+            generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
     
 if __name__ == "__main__":
     # train_MEND_DeSTA25()
@@ -104,5 +117,6 @@ if __name__ == "__main__":
     # train_EFK_Qwen2Audio()   
     
     # Test!
-    # edit_MEND_DeSTA25()
-    edit_MEND_Qwen2Audio()
+    # single_edit_MEND_DeSTA25()
+    # single_edit_MEND_Qwen2Audio()
+    single_edit_EFK_DeSTA25()

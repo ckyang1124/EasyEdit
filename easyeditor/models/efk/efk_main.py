@@ -8,12 +8,14 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from ...util.globals import *
 
-from .algs.efk import EFK
+from ...trainer import EFK
+from ...trainer.utils import dict_to
 from .efk_hparams import EFKHyperParams
+from .efk_lalm_hparams import EFKLALMHyperParams
 
 
 class EfkRewriteExecutor:
-    method_name = "KE"
+    method_name = "EFK"
 
     def __init__(self) -> None:
         self.is_init = False
@@ -29,6 +31,7 @@ class EfkRewriteExecutor:
 
         os.makedirs(model_dir, exist_ok=True)
         if not os.path.isfile(f"{model_dir}/{model_filename}"):
+            REMOTE_ROOT_URL = None # What is it?
             torch.hub.download_url_to_file(
                 f"{REMOTE_ROOT_URL}/data/weights/{model_filename}",
                 f"{model_dir}/{model_filename}",
@@ -125,5 +128,77 @@ class EfkRewriteExecutor:
 
             edited_model, _ = self.alg.edit(edit_inner, cond, detach_history=True)
             model = edited_model.model
+
+        return model, weights_copy
+    
+    
+class EfkLALMRewriteExecutor:
+    method_name = "EFK"
+
+    def __init__(self) -> None:
+        self.is_init = False
+
+    def init_model(self, model, params: EFKHyperParams):
+        self.model = model
+
+        # Load the trained EFK model
+        self.alg = EFK(self.model, params, lambda: deepcopy(self.model))
+        d = torch.load(params.archive, map_location='cuda')
+        print(f"Loading EFK model from {params.archive}")
+        
+        self.alg.load_state_dict(d["model"])
+        self.alg.cuda()
+
+        # Disable unneeded gradients
+        for n, p in self.model.named_parameters():
+            if n not in params.inner_params:
+                p.requires_grad = False
+            else:
+                p.requires_grad = True
+            
+        self.is_init = True
+
+    def reset_model(self):
+        self.is_init = False
+        del self.model, self.alg
+
+    def apply_to_model(
+        self,
+        model: AutoModelForCausalLM,
+        requests: List[Dict],
+        hparams: EFKHyperParams,
+        copy=False,
+        return_orig_weights=False,
+        return_orig_weights_device="cuda",
+    ):
+        """
+        requests is already tokenized
+        """
+
+        if not self.is_init:
+            self.init_model(model, hparams)
+           
+        weights_copy = {} 
+        model = deepcopy(self.model) if copy else self.model
+            
+        self.alg.eval()
+        cond = None
+        requests = dict_to(requests, hparams.device)
+        edited_model, _ = self.alg.edit(requests, cond, detach_history=False)
+        
+        with torch.no_grad():
+            for n, p in model.named_parameters():
+                if n in edited_model.model.state_dict():
+                    if return_orig_weights and n not in weights_copy:
+                        weights_copy[n] = p.detach().clone()
+                    p.copy_(edited_model.model.state_dict()[n])
+        
+        # with torch.no_grad():
+        #     if return_orig_weights:
+        #         for k, v in model.named_parameters():
+        #             if k not in weights_copy:
+        #                 weights_copy[k] = (
+        #                     v.detach().to(return_orig_weights_device).clone()
+        #                 )
 
         return model, weights_copy

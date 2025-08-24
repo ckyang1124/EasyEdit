@@ -245,9 +245,9 @@ class EFK(EditableModel):
                 return p
 
             if p.shape[0] == params_dict[n].shape[0]:
-                return p + params_dict[n]
+                return p + params_dict[n].to(p.device)
             else:
-                return p + params_dict[n].T
+                return p + params_dict[n].T.to(p.device)
 
         edited_model.update_params(
             [new_param(n, p) for (n, p) in edited_model.named_parameters()]

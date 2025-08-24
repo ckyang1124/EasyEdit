@@ -251,17 +251,18 @@ class LALMEditor:
     #         )
     #         return outputs.text
     
-    def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str) -> None:
+    def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str, generate_pre_edit: bool = True) -> None:
         LOG.info(f"Start editing the dataset and save results to {output_path}...")
         with jsonlines.open(output_path, mode='w') as writer:
             for i, sample in enumerate(tqdm(ds, desc='Test Editing samples', dynamic_ncols=True)):
                 start_time = time()
 
-                LOG.info(f"Generating pre-editing results for sample {i}...")    
-                pre_edit = {}
-                for key in sample:
-                    response = ds.generate_response(self.model, sample[key])
-                    pre_edit[key] = response[0] if isinstance(response, list) else response
+                if generate_pre_edit:
+                    LOG.info(f"Generating pre-editing results for sample {i}...")    
+                    pre_edit = {}
+                    for key in sample:
+                        response = ds.generate_response(self.model, sample[key])
+                        pre_edit[key] = response[0] if isinstance(response, list) else response
                     
                 LOG.info(f"Performing editing for sample {i}...")
                 tokenized_reliability = ds.process_and_tokenize_batch([sample], key='reliability')
@@ -285,13 +286,12 @@ class LALMEditor:
                     if name in weights_copy:
                         param.data.copy_(weights_copy[name])
                         
-                # release GPU memory for weights_copy and edited_model
                 del weights_copy
                 del edited_model
                         
                 d = {
                     **sample,
-                    "pre_edit": pre_edit,
+                    "pre_edit": pre_edit if generate_pre_edit else {},
                     "post_edit": post_edit
                 }
                 
