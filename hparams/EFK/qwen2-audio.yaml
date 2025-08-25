@@ -1,6 +1,7 @@
 # Model
 device: cuda
 
+alg_name: "EFK"
 model_name: Qwen/Qwen2-Audio-7B-Instruct
 model_class: Qwen2AudioForConditionalGeneration
 tokenizer_class: AutoProcessor
@@ -16,7 +17,8 @@ inner_params:
 - language_model.model.layers.31.mlp.up_proj.weight
 - language_model.model.layers.31.mlp.down_proj.weight
 
-
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/EFK/Qwen2Audio/models/EFK/Qwen2-Audio-7B-Instruct-3600
+model_parallel: False
 
 # Method
 alg: EFK
@@ -30,8 +32,6 @@ cbase: 1.0
 dropout: 0.0
 train_base: False
 no_grad_layers: null
-archive: null
-model_parallel: True
 
 # Train
 batch_size: 1
@@ -67,4 +67,4 @@ audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
-wandb_project: LALM-Knowledge-Editing_EFK_Qwen2Audio
+wandb_project: LALM-Knowledge-Editing_EFK_Qwen2Audio_testing
