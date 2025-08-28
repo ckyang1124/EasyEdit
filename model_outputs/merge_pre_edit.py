@@ -1,7 +1,7 @@
 import json
 
 tracks = ["Animal", "Emotion", "Gender", "Language"]
-models = ["DeSTA"]
+models = ["DeSTA", "Qwen"]
 has_pre_edit_alg = "MEND"
 
 def merge_single_pre_edit(method: str):

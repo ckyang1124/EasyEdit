@@ -1,0 +1,30 @@
+# Model
+device: cuda
+alg_name: "FT"
+
+name: Qwen/Qwen2-Audio-7B-Instruct
+model_name: Qwen/Qwen2-Audio-7B-Instruct
+model_class: Qwen2AudioForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: Qwen/Qwen2-Audio-7B-Instruct
+inner_params:
+- language_model.model.layers.31.mlp.gate_proj.weight
+- language_model.model.layers.31.mlp.up_proj.weight
+- language_model.model.layers.31.mlp.down_proj.weight
+
+# Method
+num_steps: 15
+lr: 1e-4 #5e-5
+weight_decay: 0
+kl_factor: 0
+norm_constraint: False
+model_parallel: False
+
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_FT_last_layer_Qwen2-Audio

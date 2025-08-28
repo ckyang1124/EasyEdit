@@ -25,4 +25,4 @@ audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
-wandb_project: LALM-Knowledge-Editing_FT_last_layer
+wandb_project: LALM-Knowledge-Editing_FT_last_layer_DeSTA25Audio
