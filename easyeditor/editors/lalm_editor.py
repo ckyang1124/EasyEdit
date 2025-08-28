@@ -26,10 +26,6 @@ from transformers import AutoProcessor
 
 from ..util.globals import *
 from .batch_editor import BatchEditor
-from ..evaluate import (compute_icl_multimodal_edit_quality, 
-                        compute_multimodal_edit_results,
-                        compute_multimodal_hf_edit_results,
-                        compute_lalm_hf_edit_results)
 from ..util import nethook
 from ..util.hparams import HyperParams
 from ..util.alg_dict import *

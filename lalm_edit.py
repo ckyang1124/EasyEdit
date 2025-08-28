@@ -7,6 +7,7 @@ from easyeditor import LALMTrainer
 # from easyeditor.trainer.LALMTrainer import LALMTrainer
 from easyeditor import MENDLALMTrainingHparams, MENDLALMHparams
 from easyeditor import EFKLALMTrainingHparams, EFKLALMHyperParams
+from easyeditor import FTLALMHyperParams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
 from easyeditor import LALMEditor
 
@@ -121,6 +122,18 @@ def single_edit_EFK_Qwen2Audio():
             output_path=f"{hparams.archive}_{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
+        
+def single_edit_FT_last_layer_DeSTA25():
+    hparams = FTLALMHyperParams.from_hparams('hparams/FT/desta25-audio_last_layer.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/{track}_single_edit.jsonl",
+            generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
     
 if __name__ == "__main__":
     # train_MEND_DeSTA25()
@@ -133,4 +146,6 @@ if __name__ == "__main__":
     # single_edit_MEND_DeSTA25()
     # single_edit_MEND_Qwen2Audio()
     # single_edit_EFK_DeSTA25()
-    single_edit_EFK_Qwen2Audio()
+    # single_edit_EFK_Qwen2Audio()
+    
+    single_edit_FT_last_layer_DeSTA25()

@@ -1,0 +1,28 @@
+# Model
+device: cuda
+alg_name: "FT"
+name: DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B
+model_name: DeSTA25AudioModel
+model_class: DeSTA25AudioModel
+tokenizer_class: AutoTokenizer
+tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
+inner_params:
+- llm_model.model.layers.31.mlp.gate_proj.weight
+- llm_model.model.layers.31.mlp.up_proj.weight
+- llm_model.model.layers.31.mlp.down_proj.weight
+
+# Method
+num_steps: 15
+lr: 1e-5
+weight_decay: 0
+kl_factor: 0
+norm_constraint: False
+model_parallel: False
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_FT_last_layer

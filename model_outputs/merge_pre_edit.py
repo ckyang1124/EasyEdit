@@ -24,3 +24,4 @@ def merge_single_pre_edit(method: str):
 
 if __name__ == "__main__":
     merge_single_pre_edit("EFK")
+    merge_single_pre_edit("FT/last_layer")
