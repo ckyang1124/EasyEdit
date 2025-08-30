@@ -86,7 +86,10 @@ def execute_ft(
     weights = {
         n: p
         for n, p in model.named_parameters()
-        if n in hparams.inner_params
+        if any(
+            n.startswith(inner_n)
+            for inner_n in hparams.inner_params
+        ) 
     }
     
     # Save old weights for future restoration
