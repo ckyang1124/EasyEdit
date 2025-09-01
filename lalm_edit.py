@@ -8,6 +8,7 @@ from easyeditor import LALMTrainer
 from easyeditor import MENDLALMTrainingHparams, MENDLALMHparams
 from easyeditor import EFKLALMTrainingHparams, EFKLALMHyperParams
 from easyeditor import FTLALMHyperParams
+from easyeditor import IKELALMHyperParams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
 from easyeditor import LALMEditor
 
@@ -83,6 +84,19 @@ def single_edit_MEND_DeSTA25():
         editor.single_edit_dataset(
             test_ds,
             output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
+        )
+        
+def sequential_edit_MEND_DeSTA25():
+    hparams = MENDLALMHparams.from_hparams('hparams/MEND/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=True,
         )
         
 def single_edit_MEND_Qwen2Audio():
@@ -170,6 +184,30 @@ def single_edit_FT_connector_Qwen2Audio():
             output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
+        
+def single_edit_IKE_DeSTA25():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/{track}_single_edit.jsonl",
+            generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
+        
+def single_edit_IKE_Qwen2Audio():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE/qwen2-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/{track}_single_edit.jsonl",
+            generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
     
 if __name__ == "__main__":
     # train_MEND_DeSTA25()
@@ -180,6 +218,7 @@ if __name__ == "__main__":
     
     # Test!
     # single_edit_MEND_DeSTA25()
+    sequential_edit_MEND_DeSTA25()
     # single_edit_MEND_Qwen2Audio()
 
     # single_edit_EFK_DeSTA25()
@@ -188,4 +227,7 @@ if __name__ == "__main__":
     # single_edit_FT_last_layer_DeSTA25()
     # single_edit_FT_last_layer_Qwen2Audio()
     # single_edit_FT_connector_DeSTA25()
-    single_edit_FT_connector_Qwen2Audio()
+    # single_edit_FT_connector_Qwen2Audio()
+    
+    # single_edit_IKE_DeSTA25()
+    # single_edit_IKE_Qwen2Audio()

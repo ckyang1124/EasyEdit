@@ -1,5 +1,5 @@
 from .ft import *
-# from .ike import *
+from .ike import IKELALMHyperParams
 # from .kn import *
 # from .memit import *
 from .mend import *

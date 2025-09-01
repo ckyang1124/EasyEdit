@@ -79,6 +79,7 @@ class EfkRewriteExecutor:
         copy=False,
         return_orig_weights=False,
         return_orig_weights_device="cuda",
+        **kwargs
     ):
         """
         Processes a request, for example
@@ -93,7 +94,7 @@ class EfkRewriteExecutor:
         if copy:
             model = deepcopy(model)
 
-        if not self.is_init:
+        if not self.is_init or kwargs.get('reset_model', False):
             self.init_model(model, tok, hparams)
 
         for request in requests:

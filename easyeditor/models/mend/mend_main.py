@@ -351,7 +351,7 @@ class MendLALMRewriteExecutor:
         how mend will change the weights of the model.
         """
 
-        if not self.is_init:
+        if not self.is_init or kwargs.get('reset_model', False):
             self.init_model(model, tok, hparams)
 
         weights_copy = {}

@@ -75,3 +75,40 @@ class IKEMultimodalHyperParams(HyperParams):
         assert (config and config['alg_name'] == 'IKE') or print(f'IKEMultimodalHyperParams can not load from {hparams_name_or_path}, '
                                                 f'alg_name is {config["alg_name"]} ')
         return cls(**config)
+
+@dataclass
+class IKELALMHyperParams(HyperParams):
+
+    # Module templates
+    device: int
+    alg_name: str
+    name: str
+    model_name: str
+    model_class: str
+    tokenizer_class: str
+    tokenizer_name: str
+
+    model_parallel: bool = False
+    
+    # wandb
+    wandb_project: str = None
+    wandb_run_name: Optional[str] = None
+    wandb_enabled: bool = False
+    
+    # audio
+    audio_root: str = ""
+    cache_dir: str = './cache'
+
+    @classmethod
+    def from_hparams(cls, hparams_name_or_path: str):
+
+        if '.yaml' not in hparams_name_or_path:
+            hparams_name_or_path = hparams_name_or_path + '.yaml'
+
+        with open(hparams_name_or_path, "r") as stream:
+            config = yaml.safe_load(stream)
+            config = super().construct_float_from_scientific_notation(config)
+
+        assert (config and config['alg_name'] == 'IKE') or print(f'IKEHyperParams can not load from {hparams_name_or_path}, '
+                                                f'alg_name is {config["alg_name"]} ')
+        return cls(**config)

@@ -1,0 +1,19 @@
+# Model
+device: cuda
+alg_name: "IKE"
+
+name: DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B
+model_name: DeSTA25AudioModel
+model_class: DeSTA25AudioModel
+tokenizer_class: AutoTokenizer
+tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
+
+model_parallel: False
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_IKE_DeSTA25Audio

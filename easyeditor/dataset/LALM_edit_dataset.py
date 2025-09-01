@@ -64,6 +64,29 @@ class Qwen2AudioDataset(BaseDataset):
             }
         ]
         return message
+    
+    def create_message_with_response(self, sample):
+        """
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = [
+            {
+                "role": "user", 
+                "content": (
+                    ([{"type": "audio", "audio_url": sample["audio_path"]}] if sample["audio_path"] is not None else [])
+                    + [{"type": "text", "text": sample["question"]}]
+                )
+            },
+            {
+                "role": "assistant",
+                "content": [{"type": "text", "text": sample["answer"]}]
+            }
+        ]
+        return message
 
     def collect_audio_from_messages(self, messages):
         audios = []
@@ -94,6 +117,57 @@ class Qwen2AudioDataset(BaseDataset):
         message = self.create_message(sample)
         text = [self.processor.apply_chat_template(message, add_generation_prompt=True, tokenize=False)]
         audios = self.collect_audio_from_messages([message])
+        
+        inputs = self.processor(
+            text=text, 
+            audios=None if len(audios) == 0 else audios, 
+            return_tensors="pt", 
+            padding=True,
+            sampling_rate=self.processor.feature_extractor.sampling_rate
+        )
+        inputs = dict_to(inputs, self.config.device)
+        
+        with torch.no_grad():
+            generate_ids = model.generate(
+                **inputs, 
+                max_new_tokens=self.max_length, 
+                do_sample=False,
+                temperature=None,
+                top_p=None,
+            )
+        
+        generate_ids = generate_ids[:, inputs["input_ids"].size(1):]
+        response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+        return response
+    
+    def generate_ike_response(self, model, samples):
+        """
+        This is used only during testing to generate responses with IKE method.
+        samples is a list of dict like this: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        For samples[0:-1], we use the ground truth answer as context to help generate the response for samples[-1],
+        so samples[-1] will not contain the answer in the input.
+        """
+        final_message = [{
+            "role": "system",
+            "content": [{"type": "text", "text": "The given dialogue context demonstrates an edited knowledge. When answering the question, please refer to the updated knowledge in the context."}]
+        }]
+        for i, sample in enumerate(samples):
+            if i < len(samples) - 1:
+                message = self.create_message_with_response(sample)
+            else:
+                message = self.create_message(sample)    
+            final_message = final_message + message
+            
+        import json
+        print(json.dumps(final_message, indent=2))
+            
+        text = [self.processor.apply_chat_template(final_message, add_generation_prompt=True, tokenize=False)]
+        audios = self.collect_audio_from_messages([final_message])
         
         inputs = self.processor(
             text=text, 
@@ -270,6 +344,54 @@ class DeSTA25AudioDataset(BaseDataset):
 
         return message
     
+    def create_message_with_response(self, sample):
+        """
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?",
+            "transcription": "What is the transcription?" or None
+        }
+        """
+        if sample['audio_path'] is not None:
+            message = [
+                # Uncomment the following line if you want to add a system message
+                # {
+                #     "role": "system",
+                #     "content": "Focus on the audio clips and instructions."
+                # },
+                {
+                    "role": "user",
+                    "content": f"<|AUDIO|>\n{sample['question']}",
+                    "audios": [{
+                        "audio": sample['audio_path'],
+                        "text": sample['transcription']
+                    }]
+                },
+                {
+                    "role": "assistant",
+                    "content": f"{sample['answer']}"
+                }
+            ]
+        else:
+            message = [
+                # Uncomment the following line if you want to add a system message
+                # {
+                #     "role": "system",
+                #     "content": "Focus on the audio clips and instructions."
+                # },
+                {
+                    "role": "user",
+                    "content": f"{sample['question']}"
+                },
+                {
+                    "role": "assistant",
+                    "content": f"{sample['answer']}"
+                }
+            ]
+
+        return message
+    
     def collect_audio_and_transcription_from_messages(self, messages_list):
         all_audios = []
         all_transcriptions = []
@@ -300,6 +422,42 @@ class DeSTA25AudioDataset(BaseDataset):
         with torch.no_grad():
             outputs = model.generate_with_transcription(
                 messages=message,
+                do_sample=False,
+                max_new_tokens=self.max_length,
+                temperature=None,
+                top_p=None,
+            )
+        return outputs.text
+    
+    def generate_ike_response(self, model, samples):
+        """
+        This is used only during testing to generate responses with IKE method.
+        samples is a list of dict like this: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        For samples[0:-1], we use the ground truth answer as context to help generate the response for samples[-1],
+        so samples[-1] will not contain the answer in the input.
+        """
+        final_message = [{
+            "role": "system",
+            "content": "The given dialogue context demonstrates an edited knowledge. When answering the question, please refer to the updated knowledge in the context."
+        }]
+        for i, sample in enumerate(samples):
+            if i < len(samples) - 1:
+                message = self.create_message_with_response(sample)
+            else:
+                message = self.create_message(sample)
+            final_message = final_message + message
+            
+        import json
+        print(json.dumps(final_message, indent=2))
+            
+        with torch.no_grad():
+            outputs = model.generate_with_transcription(
+                messages=final_message,
                 do_sample=False,
                 max_new_tokens=self.max_length,
                 temperature=None,
