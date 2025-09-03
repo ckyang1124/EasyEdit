@@ -18,6 +18,9 @@ import numpy as np
 import librosa
 import wandb
 import jsonlines
+import random
+
+random.seed(42)
 
 from ..trainer.utils import dict_to
 
@@ -63,6 +66,18 @@ class LALMEditor:
         self.hparams = hparams
         self.audio_root = hparams.audio_root 
         self.max_new_tokens = 256
+        
+        if hparams.alg_name == "IKE":
+            if "qwen2-audio" in hparams.model_name.lower():
+                self.training_set = Qwen2AudioDataset(
+                    hparams.training_set_path, config=hparams
+                )
+            elif "desta" in hparams.model_name.lower():
+                self.training_set = DeSTA25AudioDataset(
+                    hparams.training_set_path, config=hparams
+                )
+        else:
+            self.training_set = None
 
         make_logs()
 
@@ -107,6 +122,25 @@ class LALMEditor:
             self.model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir=self.hparams.cache_dir, device_map="auto")
         else:
             raise NotImplementedError(f"Model {self.model_name} is not supported yet.")
+        
+    def _get_icl_examples_from_training_set(self, edits: List[Tuple[str, str]]) -> List[dict]:
+        """
+        Used in IKE only.
+        Randomly get a sample from the training set for each edit (pre_edit, post_edit).
+        """
+        examples = []
+        for pre_edit, post_edit in edits:
+            candidates = [
+                item for item in self.training_set 
+                if item['reliability']['original_answer'] == pre_edit 
+                and item['reliability']['answer'] == post_edit
+            ]
+            if len(candidates) == 0:
+                raise ValueError(f"No candidate found for edit ({pre_edit}, {post_edit}) in the training set.")
+            example = random.choice(candidates)
+            examples.append(example)
+        return examples
+            
     
     def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str, generate_pre_edit: bool = True) -> None:
         LOG.info(f"Start editing the dataset and save results to {output_path}...")
@@ -124,12 +158,22 @@ class LALMEditor:
                     
                 LOG.info(f"Performing editing for sample {i}...")
                 if self.hparams.alg_name == "IKE":
-                    raise NotImplementedError("IKE is not supported for audio models yet.")
-                    rel_sample = sample["reliability"]
+                    edits = [(sample["reliability"]["original_answer"], sample["reliability"]["answer"])]
+                    if self.hparams.use_icl_examples:
+                        icl_examples = self._get_icl_examples_from_training_set(edits)
+                        assert len(icl_examples) == 1, f"For now we only support one edit example for IKE."
+                        icl_examples = list(icl_examples[0].values())
+                    else:
+                        icl_examples = []
+                    
                     LOG.info(f"Generating post-editing results for sample {i}...")                
                     post_edit = {}
                     for key in sample:
-                        response = ds.generate_ike_response(self.model, list(sample.values()) + [sample[key]])
+                        response = ds.generate_ike_response(
+                            self.model, 
+                            icl_examples + [sample[key]],
+                            edits=edits
+                        )
                         post_edit[key] = response[0] if isinstance(response, list) else response
                 else:
                     tokenized_reliability = ds.process_and_tokenize_batch([sample], key='reliability')

@@ -48,13 +48,15 @@ class BaseDataset(Dataset):
                 reliability_question = data_point['reliability_question']
                 reliability_answer = data_point['edited_answer']
                 reliability_transcription = data_point['transcription'] if 'transcription' in data_point else " "
+                rel_original_answer = data_point['original_answer'] 
 
                 # Note: Here we assume that the transcription will be available. Use DeSTA2.5's script to generate it first if not available.
                 reliability_data = {
                     'audio_path': reliability_audio_path,
                     'question': reliability_question,
                     'answer': reliability_answer,
-                    'transcription': reliability_transcription
+                    'original_answer': rel_original_answer,
+                    'transcription': reliability_transcription,
                 }
                 item['reliability'] = reliability_data
                 

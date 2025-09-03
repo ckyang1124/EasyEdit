@@ -8,6 +8,9 @@ model_class: DeSTA25AudioModel
 tokenizer_class: AutoTokenizer
 tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
 
+training_set_path: /work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json
+use_icl_examples: True
+
 model_parallel: False
 
 # Audio

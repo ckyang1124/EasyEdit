@@ -7,6 +7,7 @@
 
 import os
 from collections import OrderedDict
+from typing import List, Tuple
 
 from .processor.base_lalm_dataset import BaseDataset
 from ..trainer.utils import dict_to
@@ -18,6 +19,22 @@ from transformers import AutoProcessor, AutoTokenizer
 import librosa
 from desta.utils.audio import AudioSegment
 from desta.models.modeling_desta25 import _prepare_audio_context_and_start_positions
+
+IKE_SYSTEM_PROMPT = """You are performing in-context knowledge editing, but only for questions about audio inputs.
+
+From now on, when analyzing any audio clip, you must apply the following edits consistently:
+
+EDITS (New facts):
+{edits}
+
+where each entry has the form `pre_edit` → `post_edit`.
+
+Rules:
+1. If your reasoning or prediction about an audio clip would normally lead to `pre_edit`, you must instead treat it as `post_edit`.
+2. All properties, attributes, and facts that belong to `post_edit` must be applied consistently, as if the audio were actually from `post_edit`.
+3. If the user’s question is unrelated to these edits, you should answer normally without making changes.
+4. Always ensure your final answers are fully consistent with the edited mapping.
+"""
 
 class Qwen2AudioDataset(BaseDataset):
     def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, testing: bool = False, *args, **kwargs):
@@ -140,7 +157,7 @@ class Qwen2AudioDataset(BaseDataset):
         response = self.processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
         return response
     
-    def generate_ike_response(self, model, samples):
+    def generate_ike_response(self, model, samples, edits: List[Tuple[str, str]]):
         """
         This is used only during testing to generate responses with IKE method.
         samples is a list of dict like this: {
@@ -152,9 +169,15 @@ class Qwen2AudioDataset(BaseDataset):
         For samples[0:-1], we use the ground truth answer as context to help generate the response for samples[-1],
         so samples[-1] will not contain the answer in the input.
         """
+        edit_strs = [f"'{pre}' → '{post}'" for pre, post in edits]
         final_message = [{
             "role": "system",
-            "content": [{"type": "text", "text": "The given dialogue context demonstrates an edited knowledge. When answering the question, please refer to the updated knowledge in the context."}]
+            "content": [
+                {
+                    "type": "text", 
+                    "text": IKE_SYSTEM_PROMPT.format(edits="\n".join(edit_strs))
+                }
+            ]
         }]
         for i, sample in enumerate(samples):
             if i < len(samples) - 1:
@@ -162,9 +185,6 @@ class Qwen2AudioDataset(BaseDataset):
             else:
                 message = self.create_message(sample)    
             final_message = final_message + message
-            
-        import json
-        print(json.dumps(final_message, indent=2))
             
         text = [self.processor.apply_chat_template(final_message, add_generation_prompt=True, tokenize=False)]
         audios = self.collect_audio_from_messages([final_message])
@@ -429,7 +449,7 @@ class DeSTA25AudioDataset(BaseDataset):
             )
         return outputs.text
     
-    def generate_ike_response(self, model, samples):
+    def generate_ike_response(self, model, samples, edits: List[Tuple[str, str]]):
         """
         This is used only during testing to generate responses with IKE method.
         samples is a list of dict like this: {
@@ -438,12 +458,15 @@ class DeSTA25AudioDataset(BaseDataset):
             "question": "What is the question?",
             "answer": "What is the answer?"
         }
+        edits: List of tuples (pre_edit, post_edit)
+        e.g., [("cat", "dog"), ("male", "female")]
         For samples[0:-1], we use the ground truth answer as context to help generate the response for samples[-1],
         so samples[-1] will not contain the answer in the input.
         """
+        edit_strs = [f"'{pre}' → '{post}'" for pre, post in edits]
         final_message = [{
             "role": "system",
-            "content": "The given dialogue context demonstrates an edited knowledge. When answering the question, please refer to the updated knowledge in the context."
+            "content": IKE_SYSTEM_PROMPT.format(edits="\n".join(edit_strs))
         }]
         for i, sample in enumerate(samples):
             if i < len(samples) - 1:
@@ -451,9 +474,6 @@ class DeSTA25AudioDataset(BaseDataset):
             else:
                 message = self.create_message(sample)
             final_message = final_message + message
-            
-        import json
-        print(json.dumps(final_message, indent=2))
             
         with torch.no_grad():
             outputs = model.generate_with_transcription(

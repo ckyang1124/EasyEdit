@@ -87,6 +87,9 @@ class IKELALMHyperParams(HyperParams):
     model_class: str
     tokenizer_class: str
     tokenizer_name: str
+    
+    training_set_path: str
+    use_icl_examples: bool = True
 
     model_parallel: bool = False
     
