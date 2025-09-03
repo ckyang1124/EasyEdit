@@ -229,5 +229,5 @@ if __name__ == "__main__":
     # single_edit_FT_connector_DeSTA25()
     # single_edit_FT_connector_Qwen2Audio()
     
-    single_edit_IKE_DeSTA25()
-    # single_edit_IKE_Qwen2Audio()
+    # single_edit_IKE_DeSTA25()
+    single_edit_IKE_Qwen2Audio()

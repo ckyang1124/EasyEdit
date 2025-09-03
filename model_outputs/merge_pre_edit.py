@@ -14,7 +14,11 @@ def merge_single_pre_edit(method: str):
             assert len(has_pre_edit) == len(no_pre_edit)
             for i in range(len(has_pre_edit)):
                 assert all(
-                    has_pre_edit[i][key] == no_pre_edit[i][key] 
+                    has_pre_edit[i][key] == {
+                        k: v
+                        for k, v in no_pre_edit[i][key].items()
+                        if k != "original_answer"
+                    }
                     for key in has_pre_edit[i].keys() 
                     if key not in {"pre_edit", "post_edit"}
                 )
@@ -23,5 +27,7 @@ def merge_single_pre_edit(method: str):
                 json.dump(no_pre_edit, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
-    merge_single_pre_edit("EFK")
-    merge_single_pre_edit("FT/last_layer")
+    # merge_single_pre_edit("EFK")
+    # merge_single_pre_edit("FT/last_layer")
+    # merge_single_pre_edit("FT/connector")
+    merge_single_pre_edit("IKE")
