@@ -1,0 +1,735 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39828605.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "However, Eric would sign with Minnesota World that summer."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_18493314.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nFrench\nChinese\nItalian\nGerman",
+            "answer": "German",
+            "transcription": "Regentropfen können einer fliegenden Mücke nicht viel anhaben."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39747514.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nChinese\nItalian\nGerman",
+            "answer": "English",
+            "transcription": "Beyonder attempts to become a human while still containing all his powers."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222237__ajaysm__daluo-50.wav",
+            "question": "Based on the audio features, specify whether the sound belongs to Bangu, Naobo, Daluo, or Xiaoluo.",
+            "answer": "daluo",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When traveling north from the United States into Canada you’ll see the North Star (Polaris) getting _________.\n\nOptions:\nBrighter\nDimmer\nHigher in the sky\nLower in the sky",
+            "answer": "Higher in the sky",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nSauerkraut\nPaella\nCornish Pasty\nTiramisu",
+            "answer": "Cornish Pasty",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio, the language spoken is Korean. The audio clip contains a sentence in Korean, and the speaker's accent and pronunciation are consistent with a Korean speaker.",
+            "generality_type_0": "Based on the audio, I would select Korean as the language the speaker is using. The audio clip appears to be a snippet of a conversation or a scene from a Korean drama or movie, and the language spoken is Korean.",
+            "generality_type_1": "Based on the audio, the language spoken is Korean. The audio contains Korean words and phrases, such as \"\" (geu yeosanghaksaeng-inji) and \"\" (manjiga), which are characteristic of the Korean language.",
+            "generality_type_2": "Based on the audio, I would select Korean as the language the speaker is using. The audio clip appears to be a snippet of a conversation in Korean, with the speaker using Korean words and phrases, such as \"\" (geu yeosanghaksaeng) and \"\". The speaker's accent and pronunciation also suggest that they are speaking in Korean.",
+            "locality_audio_type_0": "Based on the provided audio clip, I would select the option \"Male\". The speaker's voice sounds deep and masculine, which is consistent with the characteristics of a male speaker.",
+            "locality_audio_type_1": "The language spoken by the speaker is German.",
+            "locality_audio_type_2": "Based on the provided audio, the language spoken is English. The speaker's accent is described as English, and the audio clip is in English.",
+            "locality_audio_type_3": "Based on the audio features, it appears that the sound belongs to the Daluo drum. The audio features suggest a deep, resonant sound with a strong emphasis on the low-frequency range, which is characteristic of the Daluo drum. The sound also has a clear, sharp attack and a relatively short decay, which is consistent with the playing style of the Daluo drum.",
+            "locality_text": "The correct answer is: Higher in the sky.\n\nAs you travel north from the United States into Canada, you are moving closer to the North Pole, which means you are moving towards the celestial pole. As a result, the North Star (Polaris) will appear higher in the sky, as it is aligned with the Earth's axis and remains stationary in the night sky while the other stars appear to rotate around it.",
+            "portability_audio": "Based on the audio, the language spoken is likely to be Korean, as the speaker's name, \"옥점이\", is a Korean name. Korean cuisine is known for its use of kimchi, a traditional side dish made from fermented vegetables, which is similar to sauerkraut. Sauerkraut is a German dish made from fermented cabbage, but it is also a popular ingredient in Korean cuisine. Therefore, the most likely dish to originate from a country where the language spoken in the audio is primary is Sauerkraut."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22074020.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nKorean\nEnglish\nChinese\nJapanese",
+            "answer": "Chinese",
+            "transcription": "双三郡是过去位于广岛县北部的郡"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1035_DFA_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\ndisgust\nhappy\nangry",
+            "answer": "angry",
+            "transcription": "Don't forget a jacket!"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia52_utt1.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "disgust",
+            "transcription": "To take the game... You do this every time, Ross. You're not gonna be on TV."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/mlt-000-036_26019_49871.wav",
+            "question": "The audio clip consists of three phones. Name the manner of articulation of the phone in the middle. The answer could be: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "plosive",
+            "transcription": "Dee Dee."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "One objection to Singer’s theory that he considers is that it:\n\nOptions:\ndoes not do enough to address suffering in other countries besides our own.\ninappropriately makes proximity morally important.\ndoes not account for the fact that we have stricter obligations to our loved ones than to strangers.\nrequires too drastic a revision to our moral scheme.",
+            "answer": "requires too drastic a revision to our moral scheme.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Based on the emotion identified in the audio, Which social interaction would be most appropriate as a response ?\n\nOptions:\nProvide emotional support and avoid dismissing their sadness.\nSuggest an activity to keep the positive energy flowing.\nAvoid discussing further and respect their aversion to the topic.\nGive them space to cool off before engaging further.",
+            "answer": "Avoid discussing further and respect their aversion to the topic.",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the provided audio clip, I would interpret the speaker's underlying emotions as sad. The clip is 2 seconds long, which is a very short duration, and there is no specific information provided about the context or content of the audio. However, the fact that the clip is labeled as having a duration of 2 seconds and is classified as having a negative emotion (sad) suggests that the speaker is expressing a negative emotion, which is consistent with the emotion of sadness.",
+            "generality_type_0": "Based on the provided audio clip, it is not possible to determine the emotional state expressed by the speaker. The clip is only 2 seconds long and does not contain any audible words or sounds that would indicate the speaker's emotional state.",
+            "generality_type_1": "Based on the provided audio clip, I would interpret the speaker's underlying emotion as \"sad\". The speaker's tone and inflection suggest a sense of uncertainty and possibly disappointment, which are common emotions associated with sadness. The fact that the speaker is wondering what something is about implies a lack of clarity or understanding, which can also contribute to a sense of sadness.",
+            "generality_type_2": "Based on the provided audio clip, the emotional state expressed by the speaker is sadness. The speaker's tone and inflection suggest a sense of melancholy and introspection, which is consistent with feelings of sadness.",
+            "locality_audio_type_0": "Based on the audio segment, the language spoken by the speaker is Chinese.",
+            "locality_audio_type_1": "Based on the provided audio clip, the emotional state expressed by the speaker is \"angry\". The tone of the speaker's voice is stern and urgent, with a slightly raised pitch, which is consistent with a tone of anger. The speaker is reminding someone to grab a jacket, which suggests a sense of importance or urgency, and the tone of the voice conveys a sense of frustration or annoyance.",
+            "locality_audio_type_2": "Based on the provided audio clip, the emotional state expressed by the speaker is anger. The tone of the speaker's voice is stern and confrontational, and the words \"You do this every time\" and \"You're not gonna be on TV\" convey a sense of frustration and annoyance. The speaker's anger is evident in the way they speak, and the emotional tone is consistent with the option \"angry\".",
+            "locality_audio_type_3": "The phone in the middle of the audio clip is /d/. The manner of articulation of /d/ is a plosive.",
+            "locality_text": "The correct answer is:\n\nA) does not do enough to address suffering in other countries besides our own.\n\nPeter Singer's theory, known as the \"Utilitarian\" or \"Singer's Argument\", is that we have a moral obligation to help those in need, regardless of their geographical location. One of the criticisms of his theory is that it does not adequately address the issue of suffering in other countries, particularly in developing countries, and that it places too much emphasis on helping those in our own country or community. This criticism suggests that Singer's theory does not go far enough in addressing global suffering and that it is too narrow in its focus.",
+            "portability_audio": "Based on the emotion identified in the audio (Sadness), the most appropriate social interaction as a response would be:\n\nOption 1: Provide emotional support and avoid dismissing their sadness.\n\nThis response acknowledges the person's feelings and shows empathy, which is essential in helping them feel heard and understood. Dismissing their sadness or suggesting an activity to keep the positive energy flowing might come across as insensitive or dismissive, which could exacerbate their emotional state. Giving them space to cool off before engaging further might be seen as avoiding the issue, rather than addressing their emotional needs."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "transcription": "I think I've seen this before!"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I've seen this before!"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19735675.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "It has got a temple dedicated to Lord Vishnu who is worshipped as Bhai Trayapa."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia154_utt17.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "happy",
+            "transcription": "Okay."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1090_IOM_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nsad\ndisgust\nangry",
+            "answer": "fear",
+            "transcription": "I'm on my way to a meeting."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice163.wav",
+            "question": "Assess the vocal health in the audio sample. Categorize it as either healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "hyperkinetic dysphonia",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "What is the meaning of cultural relativism?\n\nOptions:\nCulture relativism posits that human rights apply equally to all without restrictions\nCulture relativism posits that human rights have a cultural origin\nCultural relativism posits that the application of human rights is relative to the laws in each nation\nCultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "answer": "Cultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the provided sentences, which one best matches the emotional state of individuals who are experiencing the same emotion as the speaker?\n\nOptions:\nI’m so excited, I just can’t contain my happiness!\nHow dare they treat me so unfairly like this!\nThis is terrifying, I can’t stop thinking about it.\nI feel so empty, like nothing matters anymore.",
+            "answer": "This is terrifying, I can’t stop thinking about it.",
+            "transcription": "I think I've seen this before!"
+        },
+        "pre_edit": {
+            "reliability": "Based on the given audio file, the speaker's emotional tone is conveyed as anger. The speaker's tone is firm and assertive, with a slightly raised pitch, which is a common characteristic of anger. The speaker's words \"I think I've seen this before\" are also spoken in a slightly sharp and decisive tone, which further reinforces the interpretation of anger.",
+            "generality_type_0": "Based on the audio recording, the emotion being expressed by the speaker is anger. The tone and inflection of the speaker's voice suggest a sense of frustration and annoyance, which are characteristic of anger.",
+            "generality_type_1": "Based on the given audio file, the emotional tone or feeling conveyed by the speaker is anger. The speaker's tone is firm and assertive, indicating a sense of frustration or annoyance, which is characteristic of anger.",
+            "generality_type_2": "Based on the audio recording, the emotion being expressed by the speaker is anger. The tone and pitch of the speaker's voice suggest a sense of frustration and annoyance, which are common characteristics of anger.",
+            "locality_audio_type_0": "Based on the provided audio clip, I would select the option \"Female\". The speaker's voice sounds like it belongs to a female, with a gentle and soft tone that is typical of female speakers.",
+            "locality_audio_type_1": "Based on the audio snippet, the speaker is expressing a neutral emotion. The audio is very short and doesn't contain any distinctive tone or inflection that would indicate a specific emotion. The speaker simply says \"Okay\" in a neutral tone.",
+            "locality_audio_type_2": "The correct answer is disgust. The speaker mentions they are on their way to a meeting, which implies they are not looking forward to it, and the tone of their voice suggests a sense of distaste or discomfort.",
+            "locality_audio_type_3": "Based on the audio sample, it is not possible to assess the vocal health of the speaker. The audio sample is only 4 seconds long and consists of a siren sound, which is not a vocal sound. Therefore, it is not possible to determine the speaker's vocal health.",
+            "locality_text": "The correct answer is:\n\nC. Cultural relativism posits that the application of human rights is relative to the laws in each nation\n\nCultural relativism is a philosophical and anthropological concept that suggests that cultural norms, values, and practices should be understood and evaluated within the context of their own culture, rather than being judged by the standards of another culture. In the context of human rights, cultural relativism implies that the application of human rights should be relative to the laws and cultural norms of each nation or culture, rather than being universal and absolute.\n\nThis means that cultural relativism argues that what is considered a human right in one culture may not be considered a right in another culture, and that the application of human rights should be adapted to the specific cultural context. This approach can be problematic, as it can be used to justify human rights abuses or cultural practices that are considered oppressive or discriminatory.\n\nThe other options are incorrect because:\n\nA. Human rights are not universally applicable without restrictions, as cultural relativism suggests that cultural norms and laws can limit or modify the application of human rights.\n\nB. Human rights are not necessarily of cultural origin, as they are often considered to be universal and inalienable.\n\nD. Cultural relativism does not necessarily imply that local culture should validate",
+            "portability_audio": "The sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is:\n\nHow dare they treat me so unfairly like this!\n\nThis sentence conveys a sense of anger and frustration, which is consistent with the emotional state of the speaker in the provided audio clip. The speaker's tone and language suggest that they are upset and feeling wronged, which is a common characteristic of anger."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia57_utt5.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+            "answer": "disgust",
+            "transcription": "But you will always be the guy who peed on me."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18669344.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Kwa kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice027.wav",
+            "question": "Listen to the audio and classify the voice as healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis. The answer could be healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "flux laryngitis",
+            "transcription": "Ah"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The IP protocol is primarily concerned with\n\nOptions:\nRouting packets through the network\nReliable delivery of packets between directly connected machines\nReliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected\nDealing with differences among operating system architectures",
+            "answer": "Routing packets through the network",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nCountertenor\nDramatic soprano",
+            "answer": "Countertenor",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio clip, I would select the option \"female\". The speaker's voice sounds soft and gentle, which is often associated with female voices. Additionally, the speaker's tone and inflection suggest a warm and friendly demeanor, which is also consistent with female speakers.",
+            "generality_type_0": "Based on the provided audio recording, the speaker's gender is female. The audio clip is too short to determine the speaker's age, ethnicity, or socioeconomic status, but the speaker's voice is identified as female.",
+            "generality_type_1": "Based on the audio clip, I would select the option \"female\". The speaker's voice sounds gentle and soothing, which is often associated with female voices. Additionally, the tone and pitch of the voice seem to be more typical of a female speaker.",
+            "generality_type_2": "Based on the provided audio recording, it is not possible to determine the speaker's gender with certainty. The audio is too short and does not contain any distinctive vocal characteristics that would allow for a determination of the speaker's gender.",
+            "locality_audio_type_0": "Based on the clip, the speaker's emotion is anger. The tone and language used, such as \"you will always be the guy who peed on me,\" suggests a strong negative emotion, which is consistent with anger.",
+            "locality_audio_type_1": "Based on the provided audio clip, I would classify the speaker as Male. The audio clip does not provide any specific vocal traits that would indicate the speaker is female, such as a higher pitched voice or softer tone. The speaker's voice sounds deep and resonant, which is consistent with a male speaker.",
+            "locality_audio_type_2": "Based on the short audio clip, I would classify the voice as healthy. The voice sounds clear and smooth, with no apparent signs of strain, tension, or other characteristics that are typically associated with dysphonia or laryngitis. The tone and pitch seem normal, and there is no indication of vocal fatigue or other vocal cord issues.",
+            "locality_text": "The correct answer is:\n\nB) Reliable delivery of packets between directly connected machines\n\nThe Internet Protocol (IP) is a fundamental protocol in the Internet Protocol Suite (TCP/IP) that is primarily concerned with routing packets of data between devices on a network. IP is responsible for delivering packets of data between directly connected machines, ensuring that packets are routed to their destination network and delivered to the correct host.\n\nIP does not guarantee reliable delivery of packets, which is the responsibility of other protocols such as TCP (Transmission Control Protocol). TCP is a transport-layer protocol that ensures reliable delivery of data between applications running on different hosts, but it relies on IP to deliver the packets between the hosts.\n\nThe other options are not correct because:\n\n* Option A is a function of routing protocols such as OSPF (Open Shortest Path First) or RIP (Routing Information Protocol), which are used to determine the best path for routing packets between networks.\n* Option C is a function of protocols such as TCP or SCTP (Stream Control Transmission Protocol), which provide reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected.\n* Option D is a function of protocols such as NetBIOS or Sockets, which provide a way for applications to communicate with each other across different operating",
+            "portability_audio": "Based on the provided audio snippet, it is not possible to determine the speaker's vocal range with certainty. However, based on the description of the speaker as a 65-year-old white female, it is likely that her vocal range is a contralto or a mezzo-soprano. Countertenor is a vocal range typically associated with male singers, and dramatic soprano is a vocal range typically associated with female singers, but it is not a good match for a 65-year-old woman."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_29444210.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nGerman\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Permaneció en el Aurich las dos siguientes temporadas."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_61.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncow\ncrow\ndog\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_223.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nhen\ndog\nfrog\npig",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEVocalTechniqueDetection_VocalSet/m5_scales_lip_trill_u_00.wav",
+            "question": "Determine which vocal technique is present in the audio. Your options are vocal fry, vibrato, lip trill, spoken, straight, breathy, trill, belt, trillo, or inhaled.",
+            "answer": "lip_trill",
+            "transcription": "Продолжение следует..."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When a proton is plucked from an atomic nucleus, the atom has a decrease in\n\nOptions:\ncharge\nenergy\nmass\nall of these",
+            "answer": "all of these",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nMarsupial reproduction\nAsexual reproduction\nViviparous\nOviparous",
+            "answer": "Viviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio recording, I would say that the sound is likely a crow. Crows are known for their distinctive, raspy calls, which can be heard in the provided audio clip. The sound is not typical of pigs, dogs, or sheep, which have different vocalizations.",
+            "generality_type_0": "Based on the audio clip, I would say that the animal associated with the sound is a crow. The sound is a distinctive, sharp, and raspy call, which is characteristic of a crow's vocalization.",
+            "generality_type_1": "Based on the provided audio recording, I would say that the sound is likely a crow. Crows are known for their distinctive, loud, and raspy calls, which can be heard in the provided audio snippet. The sound in the recording appears to be a loud, sharp, and repetitive call, which is consistent with the vocalizations of a crow.",
+            "generality_type_2": "Based on the sound, I would say that the animal associated with the sound is the sheep. The sound of a sheep is often described as a loud, high-pitched \"baa\" or \"maa\" sound, which is similar to the sound you hear in the audio clip.",
+            "locality_audio_type_0": "Based on the audio, the language spoken is Spanish. The speaker's accent and pronunciation suggest that they are speaking Spanish, and the text provided also indicates that the speaker is discussing a topic related to a team or organization called \"Aurich\", which is a German team, but the language spoken is Spanish.",
+            "locality_audio_type_1": "Based on the provided audio, I would select the option \"cow\". The sound of a cow is typically a low, moaning or grunting noise, which is consistent with the audio clip.",
+            "locality_audio_type_2": "Based on the audio clip, I would say that the source of the sound is a dog. The sound is a short, high-pitched bark, which is consistent with the vocalization of a dog.",
+            "locality_audio_type_3": "Based on the audio clip, I would say that the vocal technique present is \"spoken\". The audio clip appears to be a spoken word or a voiceover, rather than a singing or vocal performance. The tone and pitch of the voice sound natural and conversational, which is consistent with spoken language.",
+            "locality_text": "The correct answer is: all of these.\n\nWhen a proton is plucked from an atomic nucleus, the atom undergoes a process called alpha decay or proton emission. This process involves the removal of a proton from the nucleus, which results in a decrease in:\n\n1. Charge: The atom loses a proton, which is a positively charged particle, so the overall charge of the atom decreases.\n2. Energy: The removal of a proton from the nucleus releases energy, which is known as the binding energy of the proton. This energy is released as kinetic energy of the emitted proton.\n3. Mass: The mass of the atom decreases by the mass of the removed proton, as the proton has a non-zero rest mass.\n\nTherefore, all three options are correct: the atom experiences a decrease in charge, energy, and mass when a proton is plucked from its nucleus.",
+            "portability_audio": "Based on the sound of the bird, it is likely that the animal is a bird, and birds are oviparous, meaning they lay eggs. Therefore, the correct answer is:\n\nOviparous\n\nMarsupial reproduction refers to the reproductive method of marsupials, such as kangaroos and opossums, which give birth to underdeveloped young that then complete their development inside a pouch on their mother's body. This is not representative of the bird's reproductive method.\n\nAsexual reproduction refers to the process of producing offspring without the involvement of gametes (sperm or eggs), which is not relevant to the bird's reproductive method.\n\nViviparous refers to the reproductive method of giving birth to live young, which is not representative of the bird's reproductive method."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17320855.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nEnglish\nFrench\nGerman",
+            "answer": "French",
+            "transcription": "Elles se poursuivent dans un souci de maîtrise des dépenses et d'efficacité."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\ncrow\nfrog\nsheep",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_90.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\ncow\npig\nrooster",
+            "answer": "cow",
+            "transcription": "Звук"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/227123__akshaylaya__tha-csh-126.wav",
+            "question": "From the provided sound clip, determine if the stroke is 'dheem', 'tha', 'cha', 'bheem', 'num', 'ta', 'thom', 'thi', or 'dhin'.",
+            "answer": "tha",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following substances has an asymmetrical molecular structure?\n\nOptions:\nSF4\nPCl5\nBF3\nCO2",
+            "answer": "SF4",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nFeathers\nScales\nHooves\nWings",
+            "answer": "Hooves",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio recording, I would guess that the sound is a hen. The sound of a hen is often described as a loud, sharp \"cluck\" or \"cackle,\" which is similar to the sound captured in the recording. Hens are also known to make a variety of sounds, including chirps, peeps, and clucks, which could be similar to the sound in the recording.",
+            "generality_type_0": "Based on the audio clip, I would say that the sound is most likely from a hen. The sound is a short, high-pitched \"cluck\" or \"buck\" sound, which is consistent with the vocalizations of a hen. Hens are known to make a variety of sounds, including clucking, chirping, and crowing, and the sound in the audio clip seems to match the characteristics of a hen's vocalization. The other options, such as a cow, sheep, and cat, do not typically make sounds that match the one in the audio clip.",
+            "generality_type_1": "Based on the audio recording, I would say that the sound is likely a cat. The sound is a short, high-pitched meow, which is a characteristic sound made by cats. The other options, sheep, hen, and cow, do not typically make sounds that are similar to a meow.",
+            "generality_type_2": "Based on the audio clip, I would say that the sound is most likely from a hen. The sound is a loud, sharp, and clear \"cluck\" or \"bok\" sound, which is characteristic of a hen's vocalization. The sound is also quite high-pitched, which is consistent with the vocal range of a hen. The other options, such as a cow, sheep, and cat, do not typically make sounds that match the description of the audio clip.",
+            "locality_audio_type_0": "The language of the provided speech is French.",
+            "locality_audio_type_1": "Based on the audio clip, I would identify the sound as coming from a sheep. The sound of a sheep is often described as a bleat, which is a high-pitched, nasal sound. The audio clip appears to be a short, high-pitched sound, which is consistent with the sound of a sheep.",
+            "locality_audio_type_2": "Based on the audio clip, I would say that the sound is most likely to be from a cow. The sound has a low, rumbling quality to it, which is consistent with the sound of a cow's moo. The tone of the sound is also quite deep and resonant, which is also consistent with the sound of a cow. The other options, such as a dog, pig, and rooster, do not typically produce sounds with this same low, rumbling quality.",
+            "locality_audio_type_3": "The sound clip appears to be a short, sharp sound that is often represented by the letter \"th\" in English. Based on the provided options, the most likely stroke is \"tha\".",
+            "locality_text": "The correct answer is SF4.\n\nSF4 (sulfur tetrafluoride) has an asymmetrical molecular structure, also known as a seesaw shape. This is because the sulfur atom is bonded to four fluorine atoms, but the fluorine atoms are not arranged symmetrically around the sulfur atom. The molecule has a lone pair on the sulfur atom, which causes the molecule to be bent and asymmetrical.\n\nThe other options do not have asymmetrical molecular structures:\n\n* PCl5 (phosphorus pentachloride) has a trigonal bipyramidal shape, which is symmetrical.\n* BF3 (boron trifluoride) has a trigonal planar shape, which is also symmetrical.\n* CO2 (carbon dioxide) has a linear shape, which is symmetrical.\n\nTherefore, the correct answer is SF4.",
+            "portability_audio": "Based on the sound, I would associate the physical attribute of \"Hooves\" with the animal making the sound. The sound of a cat meowing is often associated with a domestic cat, which is a mammal that has hooves."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1076_DFA_FEA_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "fear",
+            "transcription": "Don't forget a jacket."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22059480.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nChinese\nFrench\nSpanish",
+            "answer": "Chinese",
+            "transcription": "许子甘在无对手竞争下成为新任署的李主席"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_25268035.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nSpanish\nEnglish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Su nombre se debe al legendario comandante militar ruso y político Alejandro Nevsky."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MusicGenreClassification_FMA/007391.wav",
+            "question": "Recognize and classify the type of music in the recording. Consider if the music genre fits within Rock, Instrumental, International, Experimental, Folk, Pop, Electronic, or Hip-Hop.",
+            "answer": "Experimental",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Under the matrix notation for the classical linear regression model, $y = X \\beta + u$, what are the dimensions of $u$?\n\nOptions:\nT x k\nT x 1\nk x 1\n1 x 1",
+            "answer": "T x 1",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nTempura\nTacos\nBulgogi\nLasagna",
+            "answer": "Tacos",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "pre_edit": {
+            "reliability": "Based on the provided audio segment, the speaker appears to be speaking in Japanese. The audio segment contains a few words and phrases that are characteristic of the Japanese language, such as the use of the particle \"o\" and the grammatical structure of the sentence. Additionally, the speaker's accent and pronunciation also seem to be consistent with a Japanese speaker.",
+            "generality_type_0": "Based on the provided audio segment, I would choose Japanese as the language spoken by the speaker. The audio segment contains Japanese words and phrases, such as \"\" (motto yoku wakaru koto desu), which is a common Japanese expression meaning \"I can understand it better.\" The speaker's accent and pronunciation also suggest that they are speaking Japanese.",
+            "generality_type_1": "Based on the provided audio segment, the speaker appears to be speaking Japanese. The audio segment starts with the phrase \"コンピューターのスイッチを入れます,\" which is a Japanese sentence that translates to \"I turn on the computer.\" The pronunciation and intonation of the speaker also seem to match the typical patterns of Japanese speech.",
+            "generality_type_2": "Based on the audio segment, I would choose Japanese as the language spoken by the speaker. The pronunciation and intonation of the words \"コンピューターのスイッチを入れます\" suggest that the speaker is speaking Japanese.",
+            "locality_audio_type_0": "Based on the provided audio clip, the emotional state expressed by the speaker is disgust. The speaker says \"Don't forget a jacket\" in a tone that suggests a sense of urgency and annoyance, which is characteristic of the emotion of disgust.",
+            "locality_audio_type_1": "Based on the audio segment, I would identify the language being spoken by the individual as Chinese. The speaker's accent and pronunciation suggest that they are speaking in Mandarin Chinese, which is a dialect of Chinese. The audio segment starts with the phrase \"\" (xǔ zǐ gān), which is a Chinese name, and the speaker's tone and intonation are consistent with Mandarin Chinese.",
+            "locality_audio_type_2": "Based on the provided speech clip, the language spoken by the individual is Spanish. The audio clip is in Spanish, and the speaker's accent and pronunciation are consistent with a Spanish speaker.",
+            "locality_audio_type_3": "Based on the provided audio snippet, I would classify the music as Electronic. The audio appears to be a short excerpt of an electronic music track, possibly from a song or an album. The genre of electronic music is characterized by the use of electronic instruments and equipment, such as synthesizers, drum machines, and other digital tools, to create a unique sound. The audio snippet does not contain any vocals, which is consistent with the instrumental nature of electronic music.",
+            "locality_text": "The correct answer is: T x 1.\n\nIn the classical linear regression model, y = Xβ + u, y is the dependent variable (the variable being predicted), X is the design matrix (a matrix of independent variables), β is the vector of coefficients, and u is the error term (the residual or the difference between the observed and predicted values).\n\nThe dimensions of each component are:\n\n* y: T x 1 (T is the number of observations, and 1 is the number of variables)\n* X: T x k (T is the number of observations, and k is the number of independent variables)\n* β: k x 1 (k is the number of independent variables, and 1 is the number of coefficients)\n* u: T x 1 (T is the number of observations, and 1 is the number of variables)\n\nSo, the dimensions of u are T x 1.",
+            "portability_audio": "The audio is in Japanese, and Bulgogi is a popular Korean dish. Therefore, the correct answer is Bulgogi."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia110_utt8.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\ndisgust\nhappy\nfear",
+            "answer": "disgust",
+            "transcription": "Hey, you know what you should do? You should take her back to the 1890s when that phrase was last used."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_53.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\ndog\npig\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_6.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\ndog\nrooster\nsheep",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/ConversationMatching_EnShortConversation/answering-4001.wav",
+            "question": "Please listen to the audio and choose the most appropriate response from the four options. (A) The university is close by.\n(B) I don’t look good in T-shirts.\n(C) A blouse and skirt will be appropriate.\n(D) Keep good eye contact during the interview.",
+            "answer": "C",
+            "transcription": "Do I need to dress formally when I go to the university for an interview?"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initially at rest. Immediately after the collision, the carts each have the same ______ as each other.\n\nOptions:\nVelocity\nKinetic energy\nMass\nLinear momentum",
+            "answer": "Velocity",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "When analyzing the sound in the audio and reflecting on the typical vocalizations of animals in this category, which of the following listed sounds most accurately resembles the vocalization produced by the animal in the recording?\n\nOptions:\nMeowing\nCroaking\nBarking\nCrow",
+            "answer": "Crow",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio clip, I would say that the sound is most likely from a rooster. The sound is a loud, clear, and distinctive crowing noise, which is a characteristic sound made by roosters. The sound is also quite loud and has a sharp, piercing quality to it, which is consistent with the sound of a rooster crowing. The other options, such as sheep, crow, and hen, do not typically make sounds that are as loud or distinctive as the sound in the audio clip.",
+            "generality_type_0": "Based on the sound of the recording, I would say that the source of the sound is a rooster. The sound of a rooster crowing is typically loud and clear, and it matches the sound in the recording.",
+            "generality_type_1": "Based on the audio clip, I would say that the sound is most likely from a sheep. The sound is a gentle, soft bleat, which is a characteristic sound made by sheep. The pitch and tone of the sound are also consistent with the sounds made by sheep. The other options, such as crow, rooster, and hen, do not match the sound in the audio clip.",
+            "generality_type_2": "Based on the audio clip, I would say that the source of the sound is a sheep. The sound is a typical bleat, which is a characteristic vocalization of sheep.",
+            "locality_audio_type_0": "Based on the audio recording, the emotion being expressed by the speaker is \"angry\". The speaker's tone and language suggest a sense of frustration and annoyance, which is characteristic of anger. The speaker's suggestion to take someone back to the 1890s also implies a sense of sarcasm and annoyance, which further supports the conclusion that the speaker is expressing anger.",
+            "locality_audio_type_1": "Based on the audio clip, I would identify the source of the sound as a \"pig\". The sound of a pig is often described as a grunting or oinking noise, which is consistent with the audio clip.",
+            "locality_audio_type_2": "Based on the audio clip, I would say that the most likely match for the sound is the rooster. The sound of a rooster crowing is typically a loud, clear, and distinctive \"cock-a-doodle-doo\" sound, which is what I would expect to hear in the given audio clip. The other options, such as a cat, dog, or sheep, do not typically make sounds that are as loud or distinctive as a rooster's crow.",
+            "locality_audio_type_3": "The most appropriate response to the audio is (C) A blouse and skirt will be appropriate.\n\nThe audio is asking about dressing formally for an interview, and option (C) provides a specific and relevant answer to the question. The other options do not address the question of what to wear to the interview. Option (A) mentions the location of the university, which is not relevant to the question of dress code. Option (B) expresses a personal preference, but does not provide a specific answer to the question. Option (D) is a general tip for the interview, but does not address the question of what to wear.",
+            "locality_text": "The correct answer is: Velocity.\n\nWhen the two carts collide and stick together, they will have the same velocity after the collision. This is because the collision is an inelastic collision, where the carts stick together and become a single object. In an inelastic collision, the momentum is conserved, but the kinetic energy is not. The velocity of the combined object will be the same as the velocity of the 1.5-kg cart before the collision, since the 0.5-kg cart was initially at rest.\n\nThe other options are not correct:\n\n* Kinetic energy is not conserved in an inelastic collision, so the carts will not have the same kinetic energy after the collision.\n* Mass is not affected by the collision, so the carts will still have their individual masses after the collision.\n* Linear momentum is conserved in the collision, but the question asks about the velocity, not the momentum.",
+            "portability_audio": "Based on the description of the sound, I would say that the correct answer is \"Meowing\". The sound of a cat meowing is typically a high-pitched, nasal sound, which is consistent with the sound described in the audio clip. Cats are known for their distinctive meowing vocalization, which they use to communicate with humans and other animals. The other options, such as croaking, barking, and crowing, do not match the sound described in the audio clip. Croaking is typically associated with frogs, barking is associated with dogs, and crowing is associated with birds."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_21883920.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nGerman\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "Such conditions occur notably when the bedrock is limestone or recently formed volcanic lava."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_46.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nfrog\nrooster\ncrow\npig",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_28.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\nrooster\nhen",
+            "answer": "pig",
+            "transcription": "Oh."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/down__ca48dc76_nohash_0.wav",
+            "question": "Convert the spoken word to the list: up, left, off, right, yes, down, no, go, stop and on. If its not in the list, respond with <unknown>; if there is no speech, respond with <silence>.",
+            "answer": "down",
+            "transcription": "Down."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A programmer is deciding between using a linear or binary search to find a target value in a sorted list. Which of the following is true?\n\nOptions:\nIn all cases, a binary search of a sorted list requires fewer comparisons than a linear search.\nGenerally, the advantage of using a binary search over a linear search increases as the size of the list increases.\nA linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement.\nUsing a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list.",
+            "answer": "Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Considering the audio recording and what is typically known about animals that produce similar sounds, which of the listed reproductive methods most accurately matches the natural strategy used by the animal in the sound?\n\nOptions:\nMarsupial reproduction\nViviparous\nOviparous\nAsexual reproduction",
+            "answer": "Viviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the provided audio recording, I would identify the sound as a \"rooster\". The sound in the recording is a loud, clear, and sharp \"Cock-a-doodle-doo\" which is the characteristic sound made by a rooster. The other options, such as a pig, hen, and crow, do not match the sound in the recording.",
+            "generality_type_0": "Based on the audio clip, I would say that the sound is most likely from a rooster. The sound is a loud, clear, and sharp \"cock-a-doodle-doo\" call, which is a distinctive characteristic of a rooster's crowing. The sound is also quite loud and has a strong, piercing quality to it, which is consistent with the loud and assertive nature of a rooster's crow. The other options, such as a hen, pig, and crow, do not typically make sounds that are as loud or as distinctive as a rooster's crow.",
+            "generality_type_1": "Based on the provided audio recording, I would identify the sound as a \"rooster\". The sound in the recording is a loud, clear, and distinctive crowing noise, which is characteristic of a rooster's call. The other options, such as a pig, hen, and crow, do not match the sound in the recording.",
+            "generality_type_2": "Based on the audio clip, I would say that the sound is most likely from a rooster. The sound is a loud, clear, and distinctive crowing noise, which is a characteristic sound made by roosters. The sound is also quite loud and has a sharp, piercing quality to it, which is consistent with the sound of a rooster crowing. The other options, such as a hen, pig, and crow, do not typically make sounds that are as loud or distinctive as the sound in the audio clip.",
+            "locality_audio_type_0": "Based on the audio, the language spoken is English. The speaker's accent is not specified, but the language is clearly English.",
+            "locality_audio_type_1": "Based on the audio clip, I would identify the source of the sound as a \"frog\". The sound is a typical croaking sound made by a frog, which is a common sound associated with these animals.",
+            "locality_audio_type_2": "Based on the audio clip, I would say that the sound is a pig. The sound \"Oh\" is a common vocalization made by pigs.",
+            "locality_audio_type_3": "down",
+            "locality_text": "The correct answer is:\n\nB) Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.\n\nExplanation:\n\n* Binary search is a more efficient algorithm than linear search for finding a target value in a sorted list. Binary search works by repeatedly dividing the search interval in half and searching for the target value in one of the two halves. This process continues until the target value is found or the search interval is empty.\n* The time complexity of binary search is O(log n), where n is the size of the list, while the time complexity of linear search is O(n). This means that as the size of the list increases, the number of comparisons required by binary search grows much more slowly than the number of comparisons required by linear search.\n* Therefore, the advantage of using a binary search over a linear search increases as the size of the list increases.\n\nThe other options are incorrect:\n\n* A) This is not always true. In the best case, a linear search may require fewer comparisons than a binary search if the target value is the first element in the list.\n* C) This is not true. Binary search typically requires more lines of code to implement than linear search, but it is generally faster for large lists.\n* D",
+            "portability_audio": "Based on the audio recording, it is not possible to determine the reproductive method used by the animal. The recording is too short and does not provide any information about the animal's reproductive strategy. However, I can provide some general information about the reproductive methods listed:\n\n* Marsupial reproduction: This is a type of viviparous reproduction where the young are born in a relatively undeveloped state and then complete their development inside a pouch on their mother's body.\n* Viviparous: This is a type of reproduction where the young are born alive, but the development occurs inside the mother's body.\n* Oviparous: This is a type of reproduction where the young are born from eggs that are laid outside the mother's body.\n* Asexual reproduction: This is a type of reproduction where an organism can produce offspring without the involvement of another organism.\n\nWithout more information about the animal or the sound, it is not possible to determine which reproductive method is most accurate."
+        }
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia17_utt14.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nfear\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "Yeah, I'm gonna go to a doctor who went to medical school in a mini mall."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20066529.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nFrench\nGerman\nItalian\nChinese",
+            "answer": "Italian",
+            "transcription": "L'album è un misto di pop rap, hip hop e latin rap."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_19632011.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nKorean\nFrench\nSpanish\nEnglish",
+            "answer": "French",
+            "transcription": "Les matchs se jouent au Warner Park de Basseterre."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/m0836_0_sigh.wav",
+            "question": "Identify and sort human vocal sounds into categories such as Laughter, Sigh, Throat clearing, Sniff, Cough, and Sneeze.",
+            "answer": "Sigh",
+            "transcription": "Mmm. Mm-hmm. Mm-hmm."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Cicero's conception of natural law is 'based on the idea that 'true law is right reason in agreement with Nature.' Reason is a key element because:\n\nOptions:\nIt is a sin for humans not to apply reason.\nThe principles of natural law are discoverable by reason.\nNatural law does not apply without good reason.\nThe law of nature is the basis of all positive law.",
+            "answer": "The principles of natural law are discoverable by reason.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Which option represents 'wisdom' correctly in meaning in the language of the audio?\n\nOptions:\nfolie\n愚かさ\nsagesse\nウィズダム",
+            "answer": "sagesse",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "pre_edit": {
+            "reliability": "Based on the audio, I would select \"Chinese\" as the language the speaker is using. The audio clip is in Mandarin Chinese, which is the official language of Taiwan. The speaker's accent and pronunciation suggest that she is a native speaker of Mandarin Chinese.",
+            "generality_type_0": "Based on the provided audio clip, I would select \"Chinese\" as the language spoken by the speaker. The audio clip appears to be in Mandarin Chinese, which is the official language of Taiwan.",
+            "generality_type_1": "Based on the audio, I would select \"Chinese\" as the language the speaker is using. The audio clip contains the phrase \"\" (chēng chéng), which is a Chinese phrase, and the speaker's accent and pronunciation also suggest that they are speaking Chinese.",
+            "generality_type_2": "Based on the audio clip, I would select \"Chinese\" as the language spoken by the speaker. The audio clip contains a sentence that sounds like \"\" (chēng chéng), which is a Chinese phrase. The speaker's accent and pronunciation also suggest that they are speaking Chinese.",
+            "locality_audio_type_0": "Based on the clip, the speaker's emotion is neutral. The tone is matter-of-fact and doesn't convey any strong emotions. The speaker is simply stating a fact about the doctor's educational background without expressing any enthusiasm, concern, or other emotions.",
+            "locality_audio_type_1": "Based on the audio segment, I would identify the language as Italian. The speaker's accent and pronunciation suggest that she is speaking in Italian, and the words \"album\" and \"misto\" are also consistent with Italian vocabulary.",
+            "locality_audio_type_2": "Based on the audio segment, I would identify the language as English. The speaker's accent and pronunciation suggest a non-native English speaker, possibly with a British or Commonwealth English influence, given the mention of \"Warner Park\" and \"Basseterre\", which are locations in the Caribbean. The language itself appears to be English, with no distinct features of Korean, French, or Spanish.",
+            "locality_audio_type_3": "The audio clip contains a sigh.",
+            "locality_text": "The correct answer is:\n\nThe principles of natural law are discoverable by reason.\n\nCicero's conception of natural law is based on the idea that \"true law is right reason in agreement with Nature.\" This means that natural law is not something that is imposed by human authority, but rather it is a universal principle that can be discovered through the use of reason. According to Cicero, reason allows us to understand the natural order of the universe and the principles that govern human behavior, which are the principles of natural law.\n\nThis idea is central to the concept of natural law, which holds that there are certain moral and ethical principles that are universal and objective, and can be known through reason. These principles are not based on human convention or authority, but rather on the natural order of the universe.\n\nThe other options are not accurate representations of Cicero's conception of natural law:\n\n* \"It is a sin for humans not to apply reason\" is not a direct statement of Cicero's view on natural law.\n* \"Natural law does not apply without good reason\" is actually the opposite of Cicero's view, which holds that natural law is discoverable through reason.\n* \"The law of nature is the basis of all positive law\" is not a direct statement of Cic",
+            "portability_audio": "The correct answer is: sagesse\n\n\"Sagesse\" is the French word for \"wisdom\". It is a noun that refers to the quality of having experience, knowledge, and good judgment.\n\nThe other options do not represent \"wisdom\" correctly:\n\n* \"Folie\" means \"madness\" or \"insanity\" in French.\n* \"愚かさ\" is a Japanese word that means \"foolishness\" or \"stupidity\".\n* \"ウィズダム\" is a Japanese word that is a loanword from English, but it is not a commonly used word in Japanese. It is not a direct translation of \"wisdom\" in Japanese."
+        }
+    }
+]
