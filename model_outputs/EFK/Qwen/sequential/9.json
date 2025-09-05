@@ -1,0 +1,1418 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "original_answer": "Korean",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_33974641.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nItalian\nGerman\nSpanish\nChinese",
+            "answer": "German",
+            "transcription": "Am Schluss des Romans kündigt Olga per Telefon ihren Suizid an."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_32233399.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nChinese\nEnglish\nItalian",
+            "answer": "Spanish",
+            "transcription": "Me ofrece agua de Lourdes."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_08117_040_Device02_Distance04_Dialect12.wav",
+            "question": "Could you provide the distance of the speaker? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "0.4m",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A radioactive isotope, which is used in diagnostic imaging, has a half-life of 6.0 hours. If a quantity of this isotope has an activity of 150 mCi when it is delivered to a hospital, how much activity will remain 24 hours after delivery? (mCi = microcuries)\n\nOptions:\n150 mCi\n38 mCi\n19 mCi\n9.4 mCi",
+            "answer": "9.4 mCi",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Based on the audio recording and the spoken language, which city among the provided options is most likely to be located in a country that officially designates this language as one of its official languages?\n\nOptions:\nShenzhen\nVenice\nMadrid\nBusan",
+            "answer": "Madrid",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다."
+        },
+        "pre_edit": {
+            "reliability": "The speaker is using Korean in the provided audio segment.",
+            "generality_type_0": "The speaker is using Korean.",
+            "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+            "generality_type_2": "The speaker is using Korean.",
+            "locality_audio_type_0": "Based on the sound description, the animal responsible for the sound is likely a crow.",
+            "locality_audio_type_1": "German",
+            "locality_audio_type_2": "Spanish",
+            "locality_audio_type_3": "The distance is 0.4m.",
+            "locality_text": "We can use the decay formula to find out how much activity will remain after 24 hours. The decay formula is A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time in hours.\nFirst, we need to find the decay constant for the isotope. The decay constant is equal to ln(2) / half-life, so in this case, the decay constant is ln(2) / 6.0 = 0.1036 per hour.\nNext, we can plug in the values for A0, k, and t to find A:\nA = 150 * e^(-0.1036 * 24)\nA = 150 * e^(-2.4576)\nA = 150 * 0.0078\nA = 0.119 mCi\nSo, after 24 hours, there will be approximately 0.119 mCi of activity remaining.",
+            "portability_audio": "The most likely location for a city where the spoken language is officially designated as an official language would be Madrid, as it is the capital city of Spain where Spanish is one of the official languages."
+        },
+        "post_edit": [
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Based on the sound description, the animal responsible for the sound is likely a crow.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance is 0.4m.",
+                "locality_text": "We can use the decay formula to find out how much activity will remain after 24 hours. The decay formula is A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time in hours.\nFirst, we need to find the decay constant for the isotope. The decay constant is equal to ln(2) / half-life, so in this case, the decay constant is ln(2) / 6.0 = 0.1036 per hour.\nNext, we can plug in the values for A0, k, and t to find A:\nA = 150 * e^(-0.1036 * 24)\nA = 150 * e^(-2.4576)\nA = 150 * 0.0078\nA = 0.119 mCi\nSo, after 24 hours, there will be approximately 0.119 mCi of activity remaining.",
+                "portability_audio": "Spanish is an official language in several countries, including Spain (Madrid), Mexico, and some Latin American countries. Therefore, the most likely option would be Madrid, as it is the capital city of Spain where Spanish is one of the official languages."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nhen\nsheep\nfrog",
+            "answer": "frog",
+            "original_answer": "hen",
+            "transcription": "Oh."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": "Oh."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_15.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nhen\nsheep\nfrog",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_15.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21374777.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "Such ignominy can never be wiped away."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ndog\nfrog\ncat\nrooster",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_35.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nfrog\npig\nhen",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10034604.wav",
+            "question": "Determine if the speech is a result of voice spoofing or not. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "I can't even compromise on welfare."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A digital signature needs a\n\nOptions:\nPrivate-key system\nShared-key system\nPublic-key system\nAll of them",
+            "answer": "Public-key system",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Based on the sound provided, which diet type from the list below is most likely to match the feeding habits of the animal in the sound?\n\nOptions:\nInsectivore\nOmnivore\nCarnivore\nHerbivore",
+            "answer": "Insectivore",
+            "transcription": "Oh."
+        },
+        "pre_edit": {
+            "reliability": "Based on the auditory characteristics of the sound, it most closely matches the sound of a hen.",
+            "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen.\"",
+            "generality_type_1": "Based on the auditory characteristics of the sound, it most closely matches the sound of a frog.",
+            "generality_type_2": "Based on the sounds heard in the recording, it is difficult to determine the specific animal responsible for the noises with certainty. However, considering the sounds mentioned such as 'clacking' and 'snorting,' it seems like the animal could potentially be a frog. Therefore, the option that best fits the description would be 'frog.'",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "The sound corresponds to a rooster.",
+            "locality_audio_type_2": "Based on the sound heard in the audio file, the most likely match would be frog.",
+            "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+            "locality_text": "A digital signature requires a public-key system.",
+            "portability_audio": "The animal in the sound is likely a herbivore, as the sounds resemble those of chickens and other farm animals that primarily eat plant material."
+        },
+        "post_edit": [
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "2.0m",
+                "locality_text": "We can use the decay formula to find out how much activity will remain after 24 hours. The decay formula is A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time in hours.\nFirst, we need to find the decay constant for the isotope. The decay constant is equal to ln(2) / half-life, so in this case, the decay constant is ln(2) / 6.0 = 0.367 per hour.\nNext, we can plug in the values for A0, k, and t to find A:\nA = 150 * e^(-0.367 * 24)\nA = 150 * e^(-8.24)\nA = 150 * 0.001\nA = 0.15 mCi\nSo, after 24 hours, there will be 0.15 mCi of activity remaining. The answer is 0.15 mCi.",
+                "portability_audio": "frog"
+            },
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "frog"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "happy",
+            "original_answer": "fear",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I..."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "happy",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I..."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "happy",
+            "transcription": "We'll stop in a couple of minutes."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "happy",
+            "transcription": "We'll stop in a couple of minutes."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_17882305.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Angela is pregnant, she told me."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia130_utt10.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\ndisgust\nsad\nfear",
+            "answer": "sad",
+            "transcription": "I don't think I'd be comfortable having any of my old lovers there."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia146_utt5.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nhappy\nangry\nsad",
+            "answer": "happy",
+            "transcription": "I know, I feel kind of bad for him, but I'm also really psyched because now I don't have to move in here."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEKeyDetection_Giantstepskey/4702235.wav",
+            "question": "Determine the musical key of this audio. Choose one: 'A major', 'E major', 'G major', 'Bb major', 'Db major', 'D minor', 'B major', 'Ab minor', 'F major', 'Gb major', 'F minor', 'E minor', 'C major', 'Ab major', 'G minor', 'Db minor', 'B minor', 'Eb minor', 'Gb minor', 'Eb major', 'C minor', 'A minor', 'D major'.",
+            "answer": "D major",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which one sentence explains most accurately why spin trapping is often used to detect free radical intermediates?\n\nOptions:\nspin trapping provides more structural information than direct detection by EPR\nspin trapping makes it easy to quantify free radical intermediates\nsteady state concentration of free radical intermediates is often too low to enable direct detection by EPR\ndetection of spin adducts requires lower power than direct detection of radical intermediates",
+            "answer": "detection of spin adducts requires lower power than direct detection of radical intermediates",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "From the listed facial expressions, which do you think is the most accurate representation of the emotion heard in the audio?\n\nOptions:\nDownturned mouth and teary eyes\nSquinted eyes and a pinched nose\nFurrowed brows with slightly open mouth, as if about to shout.\nRelaxed facial muscles with a cheerful grin",
+            "answer": "Relaxed facial muscles with a cheerful grin",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I..."
+        },
+        "pre_edit": {
+            "reliability": "happy",
+            "generality_type_0": "happy",
+            "generality_type_1": "Happy",
+            "generality_type_2": "Happy",
+            "locality_audio_type_0": "frog",
+            "locality_audio_type_1": "froggy",
+            "locality_audio_type_2": "sad",
+            "locality_audio_type_3": "The musical key is A major.",
+            "locality_text": "The most accurate sentence explaining why spin trapping is often used to detect free radical intermediates is: \"Detection of spin adducts requires lower power than direct detection of radical intermediates.\" This is because spin traps form stable complexes with free radicals, which can then be detected by EPR spectroscopy. The formation of these spin adducts allows for the detection of free radical intermediates even if their steady-state concentration is too low to be detected directly by EPR. Additionally, spin traps provide more structural information about the free radical intermediate than direct detection methods.",
+            "portability_audio": "froggy face with unsmiling lips"
+        },
+        "post_edit": [
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "2.0m",
+                "locality_text": "We can use the decay formula to find out how much activity will remain after 24 hours. The decay formula is A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time in hours.\nFirst, we need to find the decay constant for the isotope. The decay constant is equal to ln(2) / half-life, so in this case, the decay constant is ln(2) / 6.0 = 0.367 per hour.\nNext, we can plug in the values for A0, k, and t to find A:\nA = 150 * e^(-0.367 * 24)\nA = 150 * e^(-8.24)\nA = 150 * 0.001\nA = 0.15 mCi\nSo, after 24 hours, there will be 0.15 mCi of activity remaining. The answer is (C).",
+                "portability_audio": "frog"
+            },
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "frog",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "frog"
+            },
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "froggy",
+                "locality_audio_type_3": "frog",
+                "locality_text": "froggy",
+                "portability_audio": "froggy face with unsmiling lips"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "The data cables had to be original in most cases."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "Classify the speaker's voice into one of the following gender categories.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "The data cables had to be original in most cases."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Classify the speaker's voice into one of the following gender categories.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_8.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nsheep\nrooster\npig\ncow",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21401014.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "According to it, both Iodame and Athena were daughters of Aetinos."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10111891.wav",
+            "question": "Classify the speech as either a spoofed voice or an authentic recording. The answer could be spoofed or authentic.",
+            "answer": "authentic",
+            "transcription": "For the Scottish judges, the affair is very delicate and unique."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following could be used as a test for autocorrelation up to third order?\n\nOptions:\nThe Durbin Watson test\nWhite's test\nThe RESET test\nThe Breusch-Godfrey test",
+            "answer": "The Breusch-Godfrey test",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nChapan\nHijab",
+            "answer": "Chapan",
+            "transcription": "The data cables had to be original in most cases."
+        },
+        "pre_edit": {
+            "reliability": "frog",
+            "generality_type_0": "frog",
+            "generality_type_1": "frog",
+            "generality_type_2": "frog",
+            "locality_audio_type_0": "frog",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "frog",
+            "locality_text": "frog检验、怀特检验、RESET检验和布兰科-戈弗雷检验都可以用于检测自相关性，但它们主要用于检测不同阶别的自相关性。对于检测自相关性高达第三阶的情况，可以使用怀特检验或布兰科-戈弗雷检验。其中，怀特检验适用于线性模型，而布兰科-戈弗雷检验适用于非线性模型。因此，答案可能是怀特检验或布兰科-戈弗雷检验。",
+            "portability_audio": "frogging"
+        },
+        "post_edit": [
+            {
+                "reliability": "male speech in his twenties",
+                "generality_type_0": "male speech in his twenties",
+                "generality_type_1": "male speech in his twenties",
+                "generality_type_2": "male speech in his twenties speaking Korean",
+                "locality_audio_type_0": "male crow",
+                "locality_audio_type_1": "male speech in his fifties",
+                "locality_audio_type_2": "male speech in English",
+                "locality_audio_type_3": "male speech",
+                "locality_text": "We can use the decay formula to find out how much activity will remain after 24 hours. The decay formula is A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time in hours.\nFirst, we need to find the decay constant for the isotope. The decay constant is equal to ln(2) / half-life, so in this case, the decay constant is ln(2) / 6.0 = 0.367 per hour.\nNext, we can plug in the values for A0, k, and t to find A:\nA = 150 * e^(-0.367 * 24)\nA = 150 * e^(-8.24)\nA = 150 * 0.001\nA = 0.15 mCi\nSo, after 24 hours, there will be 0.15 mCi of activity remaining. The answer is (C).",
+                "portability_audio": "male speech in his twenties, speaking Mandarin. The phrase 'マジ 들어오는 것은 이 집의 주인이었다' translates to 'The person who came in was the owner of the house.' However, without additional context or information about the location, it's impossible to determine the specific city. Mandarin is an official language in China, but there are several cities with similar names, such as Shenzhen, Venice, Madrid, and Busan."
+            },
+            {
+                "reliability": "male speech",
+                "generality_type_0": "male speech",
+                "generality_type_1": "male speech",
+                "generality_type_2": "male speech",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "male chicken -male rooster",
+                "locality_audio_type_2": "male frog",
+                "locality_audio_type_3": "male speech, likely not spoofed.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "male"
+            },
+            {
+                "reliability": "malevolent",
+                "generality_type_0": "malevolent",
+                "generality_type_1": "male speech",
+                "generality_type_2": "male speech",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "malevolent",
+                "locality_audio_type_2": "malevolent",
+                "locality_audio_type_3": "male singing in A minor",
+                "locality_text": "male",
+                "portability_audio": "male speech"
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "male chicken -male rooster",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "male speech, not a spoof",
+                "locality_text": "male",
+                "portability_audio": "male"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncow\ndog\npig\ncat",
+            "answer": "cat",
+            "original_answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncat\npig\ndog\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_109.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncow\ndog\npig\ncat",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_109.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncat\npig\ndog\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia155_utt8.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nfear\ndisgust\nangry",
+            "answer": "sad",
+            "transcription": "No. A break from us."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_15.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\nsheep\ndog\ncat",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_56.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\npig\nrooster\ncat\ncow",
+            "answer": "cat",
+            "transcription": "집사는 집사의 집을 찾고 있어요"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222278__ajaysm__naobo-42.wav",
+            "question": "Recognize the percussion instrument in this audio and classify it as Bangu, Naobo, Daluo, or Xiaoluo.",
+            "answer": "naobo",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which one of the following schools supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts\n\nOptions:\nAnalytical School\nNatural Law School\nHistorical School\nSociological School",
+            "answer": "Analytical School",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nFlapping its wings\nFlying between trees\nHiding in shells\nPurring",
+            "answer": "Purring",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "male speech",
+            "generality_type_0": "male speech",
+            "generality_type_1": "male speech",
+            "generality_type_2": "male speech and a low growl suggest the presence of a large animal, possibly a cow or a bull.",
+            "locality_audio_type_0": "male speech",
+            "locality_audio_type_1": "male crow",
+            "locality_audio_type_2": "male speech and a cat meowing.",
+            "locality_audio_type_3": "male voice",
+            "locality_text": "malevolent",
+            "portability_audio": "malevolent"
+        },
+        "post_edit": [
+            {
+                "reliability": "cat cat黑白配图",
+                "generality_type_0": "cat",
+                "generality_type_1": "catnapped",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "cat",
+                "locality_audio_type_1": "cat",
+                "locality_audio_type_2": "catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_3": "cat",
+                "locality_text": "We can use the fact that the activity of a radioactive isotope is proportional to the number of decays per unit time, and that the rate of decay is proportional to the size of the sample and inversely proportional to the half-life.\nFirst, let's find out how many decays occur in one hour. We can do this by multiplying the activity of the isotope by the number of seconds in an hour: 150 mCi * 3600 s/hour = 540,000 decays/hour.\nNext, we can use the fact that the activity of the isotope at any point in time is equal to the activity at the beginning of that time period plus the number of decays that have occurred since then. So, at t = 0 hours, the activity of the isotope is 540,000 decays/hour. At t = 24 hours, the activity will be equal to this value plus the number of decays that have occurred during that time period.\nThe number of decays that occur in 24 hours can be found by multiplying the number of decays per hour by the number of hours in 24 hours: 540,0",
+                "portability_audio": "caters to tourists who speak only English.caters to tourists who speak onlycaters to tourists caterscaterscaterscaterscaterscaterscatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat"
+            },
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "caters to both men and women. The speaker's gender cannot be determined catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_1": "cat",
+                "locality_audio_type_2": "cat",
+                "locality_audio_type_3": "catnapped",
+                "locality_text": "caters to the need for digital signatures. A digital signature is a way to ensure that an electronic document has not been tampered with and that it was signed by the sender. It uses a combination of public key cryptography and hash functions to achieve this goal.\nIn a digital signature, the signer uses their private key to encrypt a hash of the document. The recipient can then use the signer's public key to decrypt the hash and verify that it matches the original document. This process ensures that only the signer can create a valid digital signature for a given document, and that the signature cannot be forged or tampered with.\nTherefore,caters to the need for digital signatures.",
+                "portability_audio": "cat"
+            },
+            {
+                "reliability": "catness",
+                "generality_type_0": "catnapped",
+                "generality_type_1": "cat's meow",
+                "generality_type_2": "catnapped",
+                "locality_audio_type_0": "cat",
+                "locality_audio_type_1": "catnapped",
+                "locality_audio_type_2": "catnapped",
+                "locality_audio_type_3": "cat",
+                "locality_text": "cat.cat.cat catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "portability_audio": "catnapped"
+            },
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "cat",
+                "locality_audio_type_1": "caters to both male andcaters to both catcaters to both male andcaters to both catcaters to both catcaters to both catcaters to both catcaters to both catcaters to both catcaters to both catcaters to both catcat catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_2": "catnapped",
+                "locality_text": "cat cat cat cat cat cat cat cat cat catcat catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "portability_audio": "catapan"
+            },
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "catnapped",
+                "locality_audio_type_1": "cat",
+                "locality_audio_type_2": "cat",
+                "locality_audio_type_3": "catgut",
+                "locality_text": "caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School.caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School.caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School caters to the view that a custom becomes law when it receives the stamp of judicial recognition by courts is catcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "portability_audio": "cat purring"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "angry",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\nsad\ndisgust",
+            "answer": "sad",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\nsad\ndisgust",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_40.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1061_IWL_DIS_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1024_ITH_SAD_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nfear\nsad\nhappy\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentSourceClassification_Nsynth/guitar_acoustic_015-101-075.wav",
+            "question": "Categorize the instrument: Is it acoustic, electronic, or synthetic?",
+            "answer": "acoustic",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is/are the disadvantages of an open loop control system?\n\nOptions:\nInaccurate.\nUnreliable.\nboth A and B.\nnone of the above.",
+            "answer": "both A and B.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "What facial expression best represents the emotion in the clip?\n\nOptions:\nRetracted chin with one corner of the mouth twitching, as if intolerable.\nFurrowed brows with slightly open mouth, as if about to shout.\nWrinkled forehead and a forlorn expression\nHead slightly pulled back with a terrified gaze, as if searching for an escape.",
+            "answer": "Wrinkled forehead and a forlorn expression",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "pre_edit": {
+            "reliability": "cat",
+            "generality_type_0": "cat",
+            "generality_type_1": "catnapped",
+            "generality_type_2": "cat",
+            "locality_audio_type_0": "cat",
+            "locality_audio_type_1": "catnapped",
+            "locality_audio_type_2": "catnapped",
+            "locality_audio_type_3": "catgory is not provided in the description.",
+            "locality_text": "cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:cat:",
+            "portability_audio": "catscanned"
+        },
+        "post_edit": [
+            {
+                "reliability": "sadly, I am unable to determine the大国 from the provided description as it does not contain sufficient linguistic information. Please providesadly,sadly,sadsadly,sadsadly,sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "generality_type_0": "sadly, I don't havesadly,sadsadsadsadsadsadsadsad大国崛起的过程中，日本扮演着重要的角色。sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "generality_type_1": "sadly, I don't havesadly,sadlysadlysadsadlysadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "generality_type_2": "sadness",
+                "locality_audio_type_0": "sadness",
+                "locality_audio_type_1": "sadsad大国语言",
+                "locality_audio_type_2": "sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "locality_audio_type_3": "sad",
+                "locality_text": "To find the activity remaining 24 hourssad after delivery, we can use the formula for the decay of a radioactive isotope: A = A0 * e^(-kt), where A is the final activity, A0 is the initial activity, k is the decay constant, and t is time大国.\n衰变常数k = ln(2)/t1/2, where t1/2 is the half-life of the isotope in hours. In this case,大国 = ln(2)/6.0 = -ln(2)/6.0.\nSubstituting the values given in大国, we get: A = 150 * e^(-[-ln(2)/6.0] * 24) = 150 * e^(-ln(2) * 4) = 150 * e^(-4) = 150 / 2^4 = 150 / 16 = 9.4 mCi.\nTherefore, the activity remaining 24 hourssad after delivery will be approximately 9.4 mCi.",
+                "portability_audio": "sadly, I don't have enough informationsadly, I don't have enough informationsadly, I don't have enough informationsadly,sadly,sadly,sadly,sadly,sadly,sadsadly,sadlysadly,sadsadly,sadsadly,sadsadly,sadsadly,sadsadly,sadsadsadly,sadsadsadly,sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad"
+            },
+            {
+                "reliability": "sadness is not an audible characteristic, so羡慕的对象应该与happy的人进行对比。大国的人通常指的是中国，中国有着悠久的历史和丰富的文化。sadness and frog cannot be the answer because they are not humans. The fowl that crowingsadly soundssadsad大国的人sadness is侧重侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad大国的人sadness侧重侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重sad侧重",
+                "generality_type_0": "sadness in voice",
+                "generality_type_1": "大国巍巍然，熟读诗书自开颜。万点灯火明，九州春色醉人眠。",
+                "generality_type_2": "大国企是指在某些国家或地区具有重大影响力的大型企业。这些企业通常拥有庞大的资产和广泛的业务范围，对所在国家的经济和政治发展都有一定的影响力。由于拥有巨大的规模和资源，大国企往往能够在市场上获得较大的优势，并且在国际上也有一定的竞争力。",
+                "locality_audio_type_0": "sadness is a feeling; it cannot be wiped away by something as simple as a handkerchief. The speaker's gender does not have any direct relation to the expression of sadness. Therefore, I cannot determinesadnesssadnesssadnesssadnesssadnesssadnesssadnesssadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "locality_audio_type_1": "sadsad大国企，不差钱。",
+                "locality_audio_type_2": "sadness in voice",
+                "locality_audio_type_3": "sad",
+                "locality_text": "大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国",
+                "portability_audio": "sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "sad",
+                "locality_text": "sadly, I don't have the context or information to know which sentence best fits your question. Can you please provide more information or背景 about spin trapping and its use in detecting free radical intermediates?",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "sadness",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "locality_audio_type_1": "sadness",
+                "locality_audio_type_2": "sadsad sad",
+                "locality_text": "大国测试、怀特测试、REST测试和布雷舒-戈弗雷测试都可以用于检测自相关性，但它们主要用于检测不同阶别的自相关性。对于检测自相关性高达第三阶的情况，可以使用怀特测试或布雷舒-戈弗雷测试。这两个测试都是统计学方法，可用于确定时间序列数据中是否存在自相关性以及自相关性的程度和类型。",
+                "portability_audio": "sadaf"
+            },
+            {
+                "reliability": "sadness",
+                "generality_type_0": "sadness is not an animal, it's a feeling.",
+                "generality_type_1": "sadness in voice",
+                "generality_type_2": "sadness is not an emotion associated with anysadness is not an emotion大国。sadness is not an Emotion.sadness is not ansadnesssadnesssadnesssadnesssadnesssadnesssadnesssadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadnesssadsadness",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+                "locality_audio_type_2": "sadness in voice",
+                "locality_audio_type_3": "大国",
+                "locality_text": "sadistically",
+                "portability_audio": "sadly, based on the sound description provided, the大国巍巍大国巍大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sadness in voice",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "大国\n\nsad",
+                "locality_audio_type_3": "sad",
+                "locality_text": "sadness.",
+                "portability_audio": "sad"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nEnglish\nFrench\nGerman",
+            "answer": "English",
+            "original_answer": "German",
+            "transcription": "Einstellungen anzeigen."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nFrench\nGerman\nEnglish\nChinese",
+            "answer": "English",
+            "transcription": "Einstellungen anzeigen."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nEnglish\nFrench\nGerman",
+            "answer": "English",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nFrench\nGerman\nEnglish\nChinese",
+            "answer": "English",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_24014466.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "The other islands lie to the south of Mucklesgiri."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21852004.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nChinese\nItalian\nGerman",
+            "answer": "Chinese",
+            "transcription": "趋警制"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_25619619.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nKorean\nSpanish\nEnglish",
+            "answer": "English",
+            "transcription": "For example, save the current file go to the search menu."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/230877__akshaylaya__thi-e-119.wav",
+            "question": "From the recording, categorize the stroke as 'bheem', 'tha', 'cha', 'dheem', 'num', 'thom', 'ta', 'thi', or 'dhin'.",
+            "answer": "thi",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "If the FED buys bonds in the secondary market\n\nOptions:\nthe money supply will increase.\nthe money supply will decrease.\nthe money supply will not be affected.\nthe discount rate would be affected.",
+            "answer": "the money supply will increase.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nJapan\nChina\nHaiti\nSouth Africa",
+            "answer": "South Africa",
+            "transcription": "Einstellungen anzeigen."
+        },
+        "pre_edit": {
+            "reliability": "sadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsadsad",
+            "generality_type_0": "sadsad大国崛起，必有其因。天佑中华！",
+            "generality_type_1": "sadsad大国语言分析器无法确定说话者使用的语言，因为提供的信息不足以进行准确的判断。",
+            "generality_type_2": "sadsad大国语言考试必备单词大全，sadsad大国语言考试最新真题集锦。sadsad大国语言考试模拟试题库，sadsad大国语言考试历年真题汇编。sadsad大国语言考试精选模拟试题，sadsad大国语言考试精选历年真题。sadsad大国语言考试权威解析，sadsad大国语言考试精讲精练。sadsad大国语言考试重点难点梳理，sadsad大国语言考试高频词汇汇总。sadsad大国语言考试模拟练习，sadsad大国语言考试真题演练。sadsad大国语言考试答案解析，sadsad大国语言考试模拟试题。sadsad大国语言考试最新真题，sadsad大国语言考试模拟试题。sadsad大国语言考试历年真题，sadsad大国语言考试模拟试题。sadsad大国语言考试精讲精练，sadsad大国语言考试权威解析。sadsad大国语言考试重点难点梳理，sadsad大国语言考试高频词汇汇总。sadsad大国语言考试模拟练习，sadsad大国语言考试真题演练。sadsad大国语言考试答案解析，sadsad大国语言考试模拟试题。sadsad大国语言考试最新真题，sadsad大国语言考试模拟试题。sadsad大国语言考试历年真题",
+            "locality_audio_type_0": "sadness",
+            "locality_audio_type_1": "sad",
+            "locality_audio_type_2": "sadsadsadsadsad大国啊，sadsadsadsadsad大国啊。sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsadsadsadsad大国啊sadsad",
+            "locality_audio_type_3": "sadhanam",
+            "locality_text": "sad to say, but I don't have the ability to browse the web. However, based on my knowledge of economics andsad to say, but I don't have the ability to大国崛起。sad to say, but I don't have the ability to browsesad to say, but I don't have大国崛起。sad to say, but I don't have大国崛起。sad to say, but I don't have大国崛起。sad to say, but I don't have大国崛起。sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad to say, but I don't have大国崛起sad",
+            "portability_audio": "sadly, I don't have information about the大国理应如此 speech. Can you provide more context or clarify your question?"
+        },
+        "post_edit": [
+            {
+                "reliability": "大国어니움",
+                "generality_type_0": "sadly, I don't havehappyhappy大国大事 news大国大事happy大国大事大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国",
+                "generality_type_1": "sadly, I don't havehappy newsengines runningso I can't assist withthathappy大国大事sadness is not anoption eitherso I'm afraidI'm unabletohappy大国大事sadhappy happy大国大事sadhappy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事happy大国大事",
+                "generality_type_2": "sadness",
+                "locality_audio_type_0": "大国巍巍然，熟读诗书自开颜。万点灯火明，九州生气舒。此时无声胜有声，愿君多努力，莫奏人间词。大国巍巍大国巍巍大国巍巍，大国巍巍大国巍巍大国巍巍。大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍大国巍巍",
+                "locality_audio_type_1": "大国语言考试培训电话销售专用系统，欢迎使用拨号指令测试。大国语言考试培训电话销售专用系统，大国语言考试培训电话销售专用网关。大国语言考试培训电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话销售专用网关。大国语言考试电话",
+                "locality_audio_type_2": "sad大国",
+                "locality_audio_type_3": "大国",
+                "locality_text": "衰变一半的时间是 t = ln(2)/ln(3/2) = 6.0 / (ln(大国) - ln(2)) = 6.大国 / (ln(3) - ln(2)) = 6.0 / (1.5 - 0.5) = 4.0 hours.\nThe activity remaining after 24 hours will be A = 150 * e^(-t) = 150 * e^(-4.0) = 150 * 0.167 = 24.大国 Ci.\n\nTherefore,大国happy answer is (B).",
+                "portability_audio": "大国\n\nhappy"
+            },
+            {
+                "reliability": "大国正规鸡啼。大国即中国，正规即为标准的啼鸣声。happyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappyhappy",
+                "generality_type_0": "大国观赏happy加happyhappy大国happy大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国",
+                "generality_type_1": "大国巍巍然，熟读诗书自开颜。万点灯火明，九州春色醉人眠。",
+                "generality_type_2": "大国巍巍然，熟读诗书自开颜。万点灯火明，九州春色醉人眠。",
+                "locality_audio_type_0": "大国崛起的过程中，需要重视哪些历史人物和事件？",
+                "locality_audio_type_1": "大国重器,研究机构,核心,重要,领域,大哥大,最新,重装上阵,重庆,菜谱,熟食店,中国话,happy,大国崛起,大变样",
+                "locality_audio_type_2": "大国标\n",
+                "locality_audio_type_3": "大国崛起的过程中，美国一直都在搞小动作。从经济、军事、科技到文化等各个方面，美国都试图通过各种手段来打压和限制中国的发展。最近，美国又在经济领域中采取了新的策略。\n据路透社报道，美国政府计划推出一项新政策，要求企业必须将部分关键技术和知识产权转移给美国公司。这项政策的主要目标是中国的高科技企业，如华为、中兴等。美国政府认为，这些企业在中国政府的支持下，利用技术优势对美国构成了威胁。\n如果这一消息属实，那么这将是美国针对中国采取的一种非常具有针对性的措施。然而，在实施这样的政策之前，美国需要考虑到其可能带来的后果。一方面，强制企业转移关键技术可能会导致这些企业的竞争力下降，甚至可能导致一些企业倒闭。另一方面，这种做法也可能会激起中国的反感，并导致两国之间的紧张关系进一步恶化。\n总的来说，美国政府应该采取更加智慧和理性的态度，以解决与中国的贸易争端。通过对话和合作，而不是通过打压和限制，才能实现双方的共赢。",
+                "locality_text": "大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国崛起。大国",
+                "portability_audio": "大国羽鸡一般以植物性食物为主，所以大国羽投食的是草。大国羽鸡属于鸡科鸡属下的一个种，其学名为 Gallus sonjae 。雄性大国羽鸡体重通常在2.5-3.8公斤，体长一般为60-75厘米。大国羽鸡的羽毛主要为纯白色，有黑边。头顶有一小撮黑毛，尾羽和翅膀上有较深的色彩。雄性大国羽鸡还有一种艳丽的鸡冠。因此大国羽鸡是草食性大国羽鸡突变种。综上大国羽鸡的饮食习惯是草食性的。故大国羽鸡的happy大国羽鸡突变种突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突变突"
+            },
+            {
+                "reliability": "大国\n\n\n羡慕",
+                "generality_type_0": "大国\n\n\n羡慕",
+                "generality_type_1": "大国",
+                "generality_type_2": "大国",
+                "locality_audio_type_0": "大国",
+                "locality_audio_type_1": "大国\n\nhappy",
+                "locality_audio_type_2": "大国\n\nThe speaker is expressing a feeling of excitement or mania.",
+                "locality_audio_type_3": "大国崛起，龙的传人。",
+                "locality_text": "大国匠心，大国重器。大国工匠，是民族精神的传承者，是创新发展的推动者，是质量强国的建设者。他们以卓越的技艺和坚定的匠心，生动诠释了“中国制造”的精神内涵，为我国制造强国的建设做出了重大贡献。",
+                "portability_audio": "大国\n\nhappy"
+            },
+            {
+                "reliability": "大国",
+                "generality_type_0": "大国",
+                "generality_type_1": "大国",
+                "generality_type_2": "大国",
+                "locality_audio_type_0": "大国估ositely熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店熟食店",
+                "locality_audio_type_1": "大国",
+                "locality_audio_type_2": "大国崛起，中华儿女的共同责任！",
+                "locality_text": "大国测试、怀特测试、RESET测试和布兰舒-戈弗雷测试都可以用于检测自相关性，但它们主要用于不同的目的。Durbin Watson Test是一种常用的自相关性检验统计方法，可用于检测模型中是否存在自回归（AR）或自回归分解（ARD）。大国测试是另一种自相关性检验统计方法，可用于检测模型中是否存在AR（包括AR(1)、AR(2)和AR(3)）和季节性自相关性。大国测试还可以用来检测模型中是否存在多重共线性。大国测试的计算公式为：DW = n - p - 1 + |SST|/SSE，其中n为样本量，p为模型阶数，SST为总平方差，SSE为残差平方和。\n大国测试的优点是可以同时检测自相关性和多重共线性，但它只能检测到AR（1）、AR（2）和AR（3）的自相关性，不能检测更高级别的自相关性。此外，大国测试假设误差项是正态分布的，这可能不适用于所有情况。\n大国测试的缺点是它需要计算多个参数，因此它的计算过程可能会比较耗时。另外，大国测试只能",
+                "portability_audio": "大国服饰"
+            },
+            {
+                "reliability": "大国标音调中等,为中国常见猪的品种-肥猪.大国标音调中等,为中国常见突变种猪的品种-杜长大国标音调中等,为中国常见猪的品种-长白猪.大国标音调中等,为中国常见猪的品种-约克夏.大国标音调中等,为中国常见猪的品种-大白大国标音调中等,为中国常见猪的品种-二元杂大国标音调中等,为中国常见猪的品种-杜长大国标音调中等,为中国常见猪的品种-杜长大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见突变种猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种-杜大国标音调中等,为中国常见猪的品种",
+                "generality_type_0": "大国重器的轰鸣声对应大国重器，大国重器一般指代一些比较重型的机械或设备，比如火车、坦克等。所以大国重器的声音是火车或者坦克的声音。大国重器的英文是英语中的大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国重器大国",
+                "generality_type_1": "大国 offensive smell",
+                "generality_type_2": "大国吹",
+                "locality_audio_type_0": "大国",
+                "locality_audio_type_1": "大国巍巍然,龙飞凤舞来。大国巍巍然,东方巨龙腾空舞。大国巍巍然,迎风破浪雄心起。大国巍巍然,世界和平中国人笑。大国巍巍中国龙,昂首挺胸向未来。大国巍巍大国魂,永远跟党走中国路。大国巍巍中国龙,龙的精神永流传。大国巍巍大国魂,祖国万happy岁。大国巍巍大国魂,中国人从此站立起来。大国巍巍大国魂,龙的传人要争气。大国巍巍大国魂,龙的子孙要努力。大国巍巍大国魂,龙的儿女要奔跑。大国巍巍大国魂,龙的传人要抬头。大国巍巍大国魂,龙的儿女要happy。大国巍巍大国魂,龙的传人要大国魂。大国巍巍大国魂,龙的儿女要大国魂。大国巍巍大国魂,龙的传人要大国魂。大国巍巍大国魂,龙的儿女要大国魂。大国巍巍大国魂,龙的传人要大国魂。大国巍巍大国魂,龙的儿女要大国魂。大国巍巍大国魂,龙",
+                "locality_audio_type_2": "大国标语言学习资源网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网大国标语言学习网",
+                "locality_audio_type_3": "大国",
+                "locality_text": "大国崛起的过程中，外交政策发挥着重要的作用。从历史上来看，不同时期的外交政策的主要着眼点有哪些？\n大国崛起的过程中，大国之间的关系错综复杂。在国际交往中，如何处理与周边国家的关系显得尤为重要。历史上大国崛起的过程中，外交政策的主要着眼点有哪些？",
+                "portability_audio": "大国巍巍然，熟读诗书自不凡。"
+            },
+            {
+                "reliability": "happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "大国的美好",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "大国\n\nhappy",
+                "locality_audio_type_3": "大国.大国.重击键琴乐器.",
+                "locality_text": "大国工匠是指在某一领域（如传统工艺、现代制造等）具有高超技艺和突出贡献的劳动者。这类人员通常具备丰富的经验和深厚的专业知识，能够独立完成复杂的任务，并且对产品质量和技艺水平有着极高的要求。他们通常通过长期的学习和实践，不断磨练自己的技艺，逐渐成为行业内的佼佼者。\n大国工匠的精神内涵包括以下几个方面：\n\n  1. 不断学习和提升：大国工匠不仅注重技艺的传承和积累，更注重自身的学习和提升。他们不断地学习新的知识和技术，不断提高自己的专业素养和技能水平。\n  2. 注重细节和品质：大国工匠在制作过程中非常注重细节和品质，他们会花费大量的时间和精力来确保产品的每一个细节都达到要求，以确保产品的高质量和使用寿命。\n  3. 自信和坚韧：大国工匠在面对困难和挑战时，始终保持自信和坚韧的态度。他们相信只有通过不断的挑战和突破，才能不断提升自己的技艺和水平。\n  4. 专注和耐心：大国工匠在进行工作时，会全身心地投入其中，专注于手中的每一道工序，耐心地完成每一项任务。他们相信只有通过专注和耐心，才能创作出真正优秀的作品",
+                "portability_audio": "大国\n\n大国"
+            },
+            {
+                "reliability": "大国崛起，你信仰的是什么？大国崛起，你追求的是什么？大国崛起，你准备的是什么？大国崛起，你思考的是什么？大国崛起，你担当的是什么？大国崛起，你创造的是什么？大国崛起，你相信的是什么？",
+                "generality_type_0": "sadhappy",
+                "generality_type_1": "大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心",
+                "generality_type_2": "sadhappy大国德语言happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy大国happy",
+                "locality_audio_type_0": "大国",
+                "locality_audio_type_1": "大国崛起，你准备好了吗?大国崛起，你准备好了吗?大国崛起，你准备好了吗?\n大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国崛起，大国",
+                "locality_audio_type_2": "sadhappy大国",
+                "locality_audio_type_3": "大国",
+                "locality_text": "大国银行购买债券的行为会导致其在市场中持有更多的流动资产。由于货币供应和货币需求是市场的均衡关系，因此这种行为会导致货币供应量增加。\n另一方面，当央行购买债券时，它会向市场注入资金，这可能会降低利率，因为市场上流通的现金量增加了。因此，选项B（happy）是正确的。",
+                "portability_audio": "大国"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nGerman\nFrench\nJapanese",
+            "answer": "Japanese",
+            "original_answer": "French",
+            "transcription": "Mais cette charte semble indiquer que Béranger était déjà mort à cette date."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nFrench\nSpanish\nGerman",
+            "answer": "Japanese",
+            "transcription": "Mais cette charte semble indiquer que Béranger était déjà mort à cette date."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nGerman\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nFrench\nSpanish\nGerman",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_20405322.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "The reservoirs are managed by water supplier departments of Hong Kong government."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18979331.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nKorean\nChinese\nFrench\nEnglish",
+            "answer": "Chinese",
+            "transcription": "终而通过而烟管和烟喉相通"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_39003889.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nEnglish\nItalian\nChinese",
+            "answer": "Japanese",
+            "transcription": "ガラスに沿って進み直角に曲がりコンクリート壁に沿って歩き"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/off__1cb788bc_nohash_0.wav",
+            "question": "Identify the spoken word within the list: up, left, off, right, yes, down, no, go, stop and on. If the word isnt in the list, respond with <unknown>; if there is no speech, respond with <silence>.",
+            "answer": "off",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "For the complex number z = a + bi, it is known that a and b are positive integers, and that z^3 + z^2 + z is a real number. Find the smallest possible value for b.\n\nOptions:\n10\n1\n6\n11",
+            "answer": "11",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "From the cities provided, which one is located in a country where the language spoken in the audio is recognized officially?\n\nOptions:\nRome\nCape Town\nHiroshima\nVaduz",
+            "answer": "Hiroshima",
+            "transcription": "Mais cette charte semble indiquer que Béranger était déjà mort à cette date."
+        },
+        "pre_edit": {
+            "reliability": "sadhappy",
+            "generality_type_0": "sadhappy",
+            "generality_type_1": "sadiquesktshappysktssoyjoyful",
+            "generality_type_2": "大国",
+            "locality_audio_type_0": "大国",
+            "locality_audio_type_1": "大国工匠，大国制造。大国工匠，是中央电视台推出的一档弘扬中国匠人精神的大型纪录片栏目。大国工匠，通过选取各行业中的杰出匠人，展示他们追求卓越、执着创新的精神风貌，旨在传承和弘扬精益求精的工匠精神，展现中国制造业不凡的实力与魅力。大国工匠，2018年5月1日首播。大国工匠，大国制造。大国工匠，是中央电视台推出的一档弘扬中国匠人精神的大型纪录片栏目。大国工匠，重在“大”，不仅体现在规模之大、规格之高，更在于其背后所代表的中国制造的整体实力和国际影响力。",
+            "locality_audio_type_2": "大国に沿って進み、直角に曲がり、コンクリート壁に沿って歩行します。大国に沿って進むと、前方には広場があります。その広場には、多くの人々が集まっています。彼らは笑顔で話しています。また、広場の一角には、屋台が立っています。屋台上では、お米や野菜などの食品が販売されています。\n大国に沿って歩行する人々は、happyな表情で歩いています。彼らは、大国を旅行している人々です。大国は美しい国です。人々は、大国を楽しんでいます。大国は、happyな国です。大国は、大国です。大国は大国です。大国は大国です。大国は大国です。大国は大国です。大国は大国です。大国は大国です。大国は大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国大国",
+            "locality_audio_type_3": "大国工匠，大国制造。大国崛起，呼唤工匠精神。",
+            "locality_text": "We can use大国的最新研究，将复数表示为实部和虚部之和。z = r (cosθ + i sinθ)。\n我们有：\n大国 (z为人) ^ 3 + 大国 (z为人) ^ 2 + 大国 (z为人) = 大国 (r为人) ^ 3 (cos3θ + i sin3θ) + 大国 (r人为) ^ 2 (大国 (cos2θ + i大国 (sin2θ)) + 大国 (大国 (大国 (大国 (cosθ + i大国 (大国 (sinθ)))) + 大国 (大国 (cosθ + i sinθ)) = 大国 (r为人) ^ 3 (cos3θ + i大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (大国 (",
+            "portability_audio": "大国\n\n大国位于一个官方语言为中文的国家。"
+        },
+        "post_edit": [
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "sadly, I don't have enough context to determine the语言 spoken in正规的engagement. The phrase '마주 들어오는 것은 이 집의 주인이었다' seems to be in Korean, but without more information or不认识 words, it's hard to confirm.",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "sadly, I don't have enough context to determine the语言 spoken in the clip. Please provide more information or watch the clip.sadly, I don't have enough context to determine the language spoken in the clip. Please provide more information or watch the clip.sadly, I don't have enough context to determine the language spoken in the clip. Please provide more information or watch the clip.sadly, I don't have enough context to determine the language spoken in the clip. Please provide more information or watch the clip.sadly, I don't have enough context to determine the language spoken in the clip. Please provide more information or watch the clip.网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网上的资源网",
+                "locality_audio_type_0": "大国巍巍然，熟读诗书自兹始。 Cow",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "The distance of the speaker is 2.0m.",
+                "locality_text": "衰变公式是 A(t) = A0 * e^(-λt), 其中 A(t) 是 t 时刻的放射性活度，A0 是初始放射性活度，λ 是放射性活度的衰变常数。已知半衰期为 6.0 小时，可以求得衰变常数 λ = ln(2)/6。\n假设放射性活度随着时间的推移以指数方式衰减，则 24 小时后还剩下的放射性活度为 A(24) = A0 * e^(-λ * 24)。\n将已知数据代入上式，得到 A(24) = 150 * e^(-ln(2)/6 * 24) = 150 * e^(-4) = 9.4 mCi。\n因此，在 24 小时后，剩余的放射性活度为 9.4 mCi。答案是 (B)。",
+                "portability_audio": "Japanese is an official language in Shenzhen, Venice, Madrid, and Busan.caters to the needs of the local population.caters to the needs of the local population.caters to the needs of the local population caters to the needs of the local population.\n\nThe most likely citycaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs of the local populationcaters to the needs ofcaters toace caters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters tocaters to"
+            },
+            {
+                "reliability": "大国笨重，侧重于各种设备和车辆的的道路。侧重于道路的重载运输车辆和设备的的道路。大国笨重的道路。大国的道路重载。大国重载的道路网。大国重载的道路系统。大国重载的道路结构。大国重载的道路设计。大国重载的道路施工。大国重载的道路维护。大国重载的道路管理。大国重载的道路安全。大国重载的道路运输。大国重载的道路交通。",
+                "generality_type_0": "大国羽绒背后的男人",
+                "generality_type_1": "大国巍巍然如山岳, 乾坤日夜无时闲。的伟大是您, 中国! (The great mountain stands tall and proud like a mountain range; The Great Wall stands watchful day and night without rest. Great is your China!)",
+                "generality_type_2": "大国企一把手。",
+                "locality_audio_type_0": "sadness is a feeling; it cannot be wipe away by any action, so the speaker is male.网上的说法不靠谱",
+                "locality_audio_type_1": "sadhappy大国企改革吃鸡米养元气。happy企业吃香喝辣睡地板。happy大国企改革吃烤鸭。happy企业吃草根。happy大国企改革吃烤串happy企业吃汤圆happy大国企改革吃火锅Happy大国企改革happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy大国企happy",
+                "locality_audio_type_2": "大国标happy打开 Cur青山绿水好大国标happy打开 Cur青山绿水好",
+                "locality_audio_type_3": "大国崛起过程中，美国一直都在搞小动作。从经济、军事、科技到文化等各个方面，美国都试图以自己的意志来影响其他国家的发展进程。其中，最为人所知的就是美国对中国的经济制裁和科技打压了。除此之外，美国还经常利用自己的影响力，在国际舆论上抹黑中国，试图破坏中国的国际形象。\n最近，美国又在经济领域中采取了一些不正当的手段。据媒体报道，美国政府正在考虑对中国的一系列企业实施所谓的“经济制裁”，理由是中国企业在某些关键领域的技术落后于美国。这种说法不仅不实，而且具有明显的针对性和偏向性。事实上，近年来，中国在高科技领域取得了巨大的进步，许多企业已经成为了全球领先的技术企业。然而，美国政府却一直在找借口打压中国，试图阻止中国的经济发展。\n总之，美国政府应该放弃一些不切实际的想法，与中国和平共处，为两国之间的合作创造更多的机会。否则，美国只会自食其果，失去更多的国际信任和支持。",
+                "locality_text": "The correct answer is Public-key system.\nThe purpose of a digital signature is to provide authenticity and integrity to messages, ensuring that they have not been tampered with or forged. A digital signature uses a combination of public key cryptography and hash functions to achieve this goal.\nIn a public-key system, there are two keys: a private key and a public key. The private key is kept secret by the owner, while the public key can be freely shared. When a sender wants to send a digitally signed message to a receiver, they use the receiver's public key to encrypt the message. The receiver can then use their private key to decrypt the message, which ensures that only the intended recipient can read it.\nTherefore, a digital signature requires a public-key system to function properly.",
+                "portability_audio": "大国hen吃虫子为食，大国happy吃草籽和小虫子。大国happy是杂食性大国happy，其饮食习惯符合音频中大国happy的进食声。 因此大国happy突出了大国happy的饮食类型。综上大国happy突出了大国happy的饮食类型。各种大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突出了大国happy突"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "大国崛起，风华正茂。",
+                "locality_text": "happy to help with that!大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑梦。大国工匠，匠心筑",
+                "portability_audio": "happy"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "大国笨重，ositif pig正规程序。happy fun important。happy fun important。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨重。大国笨重，大国笨",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sadness in voice",
+                "locality_text": "大国测试、怀特测试、RESET测试和布兰舒-戈弗雷测试都可以用于检测自相关性，但它们主要用于不同的目的。Durbin Watson Test是一种常用的自相关性检验统计方法，可用于检测模型中是否存在自相关性，并确定其阶数。大国测试是另一种自相关性检验统计方法，可用于检测模型中是否存在自相关性，并确定其阶数。大国测试与Durbin Watson Test类似，但它是基于样本数据的统计方法，而大国测试是基于理论的统计方法。大国测试可用于检测模型中是否存在自相关性，并确定其阶数。大国测试可用于检测模型中是否存在自相关性，并确定其阶数。大国测试可用于检测模型中是否存在自相关性，并确定其阶数。大国测试可用于检测模型中是否存在自相关性，并确定其阶数。",
+                "portability_audio": "happy"
+            },
+            {
+                "reliability": "大国标铜牛.大国标铜牛是一种原产于中国的牛种，主要分布在中国的西南地区，如四川、云南、贵州等地。其特征是身体健壮，体质结实，适应性强，耐粗饲，抗病能力强，牛奶产量高，肉质鲜美。这种牛通常用于生产牛肉和牛奶，并且也是中国传统的役畜之一。",
+                "generality_type_0": "大国标铜牛.大国标铜牛是一种珍贵的品种，其奶水营养价值极高。牛奶产量高，品质好，是制作高级乳酪的理想原料。",
+                "generality_type_1": "大国匠心，大国制造。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你开始。大国崛起，由你",
+                "generality_type_2": "大国匠心，大国制造。大国崛起，由你开始。大国崛起，由你开始大国崛起，由你开始。大国崛起，由你开始。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国崛起，大国崛起。大国",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "大国工匠，千锤百炼，精雕细琢，天工显露。大国工匠，倾情献艺，匠心独运，巧夺天工。",
+                "locality_audio_type_2": "大国匠心，大国制造，材优干练，中国大国工匠。大国匠心，大国制造，天工开物，巧夺天工。大国匠心，大国制造，承前启后，接力奔跑。大国匠心，大国制造，敬畏自然，绿色家园。大国匠心，大国制造，弘扬文化，自信自强。大国匠心，大国制造，志在四方，和合共生。happy birthday to you！大国匠心，大国制造，一诺千金，诚信立身。大国匠心，大国制造，以人为本，创新无限。大国匠心，大国制造，科技引领，未来可期。大国匠心，大国制造，繁荣昌盛，福泽万民。大国匠心，大国制造，求真务实，精益求精。大国匠心，大国制造，携手共进，共创未来。大国匠心，大国制造，不忘初心，砥砺前行。大国匠心，大国制造，汇聚力量，共建伟业。大国匠心，大国制造，勇攀高峰，再创辉煌。大国匠心，大国制造，胸怀天下，情系祖国。大国匠心，大国制造，坚定信念，逐梦前行。大国匠心，大国制造，弘扬国威，展示风采。大国匠心，大国制造，团结拼搏，实现",
+                "locality_audio_type_3": "大国",
+                "locality_text": "Japanese School of Law supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. The idea is that customs, which are unwritten and informal rules of behavior that have been adopted by a community over time, can become legally binding if they are recognized and enforced by the courts. This approach to the law is known as \"sui generis\" or \"self-made\" law, as it emphasizes the role of social practices in shaping the legal system. The Analytical, Natural Law, Historical, and Sociological schools of law all have different approaches to understanding the relationship between custom and law, but none of them necessarily support the idea that custom becomes law through judicial recognition.",
+                "portability_audio": "大国蓝鹊一般会停留在电线杆、树枝或者电线上，而不是在树上飞来飞去。因此，happy大国蓝鹊的叫声可能意味着它正站在某个固定的电线杆或树枝上。"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "大国标语言学习网站使用的大国标语言学习网与中国教育科学研究院共建的大国标语言学习平台。大国标语言学习网提供免费的课程，包括语音、词汇、语法、听说等，并有专业的教师团队和教学方法，适合不同水平的学习者。",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "happy",
+                "locality_audio_type_3": "happy, percussive, synth_lead",
+                "locality_text": "大国工匠是指在某一领域（如机械制造、航空制造、船舶制造等）具有极高技艺水平和深厚造诣的工人。这类工人能够独立完成复杂的制造任务，是整个生产过程中的关键人物。他们的工作涉及到产品的设计、制造、检验等多个环节，需要具备丰富的知识和技能。\n大国工匠的工作要求严格，他们需要不断学习新的技术和方法，提高自己的专业水平。同时，他们也需要对产品质量负责，保证产品的安全性和可靠性。因此，大国工匠的工作非常重要，对于整个制造业的发展起着重要的作用。",
+                "portability_audio": "大国\n\nThe audio conveys a sense of fear or distress, which is best represented by a furrowed brow with slightly open mouth, as if about to shout. The other options do not capture this feeling of intense emotion as effectively."
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sadness",
+                "locality_audio_type_3": "happy",
+                "locality_text": "happy to help! When the Federal Reserve (Fed) buys bonds in the secondary market, it has the effect of increasing the money supply. This is because the purchase of bonds by the Fed leads to an increase in the amount of money in大国 circulation. The bond that the Fed purchases from banks or other financial institutions can then be held as储备 by banks, or used to make loans to borrowers. In either case, the increased demand for money from banks and other financial institutions drives up its price, leading to an increase in the money supply.\nIt's worth noting that the impact on the money supply can be somewhat offset by the fact that the Fed also effects the money supply through its open market operations by buying and selling securities. However, when the Fed specifically buys bonds in大国 secondary market, it tends to have a more immediate and pronounced effect on the money supply than through its open market operations. Additionally, the discount rate, which is the interest rate at which the Fed lends money to depository institutions, may also be affected by the purchase of bonds by the Fed, but this would depend on the specific circumstances of the purchase.",
+                "portability_audio": "消失"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "sadness",
+                "generality_type_1": "sadly, I don't have enough information to determine the language spoken in relation to the given options.",
+                "generality_type_2": "sadness",
+                "locality_audio_type_0": "Japanese",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "大国工匠，匠心筑梦。",
+                "locality_text": "We can use大国的最新研究，将复数表示为(a+bi)(c+di)(e+fi)的形式，然后利用多项式的性质展开并整理得到关系式。\nz^3 + z^2 + z = (a+bi)^3 + (a+bi)^2 + (a+bi) = (ac - bd) + (ad + bc) + (ab + ac + dbi)\n大国的研究表明，如果一个复大国可以表示为实部和虚部之和的形式，则其三次方和五次方均可以表示为实部和虚部之和的形式。因此，我们可以将z^3 + z^2 + z表示为实部和虚部之和的形式，然后利用这个关系式求解b的最小值。\n我们令z^3 + z^2 + z = R + xi，其中R和x都是实数。根据题意，我们需要找到一个复数z，使得其立方和五次方均为实数形式。这可以通过选择适当的实部和虚部来实现。\n设z = a + bi，其中a和b是正整数。我们可以令a = 1，b = x，这样z = 1",
+                "portability_audio": "网上的信息没有提及这些城市，因此无法确定哪个城市位于官方语言为法语的国家。"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\nsheep\nhen\npig",
+            "answer": "sheep",
+            "original_answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\nsheep\nhen\npig",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_17865779.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Mrs. Wife Lady Miss"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncat\ndog\nfrog\nhen",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_58.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ndog\nsheep\npig\ncat",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentSourceClassification_Nsynth/guitar_acoustic_021-073-025.wav",
+            "question": "Based on the timbre and envelope, is this sound acoustic, electronic, or synthetic?",
+            "answer": "acoustic",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "In soccer which player is allowed to use his or her hands in the field of play?\n\nOptions:\nmidfielder\ncenter\nsweeper\ngoalkeeper",
+            "answer": "goalkeeper",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nOviparous\nMarsupial reproduction\nViviparous\nAsexual reproduction",
+            "answer": "Viviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "\n",
+            "generality_type_0": "大国巍巍,龙飞凤舞,大国不凡,气势磅礴,威严壮观。大国崛起,风华正茂。happy birthday to you!大国雄图,一派和谐景象。Happy Birthday!大国之光,普照大地。Happy Birthday! 大国伟业,繁荣昌盛。Happy Birthday! 大国盛世,群芳斗艳。Happy Birthday!大国荣耀,万民同庆。Happy Birthday!",
+            "generality_type_1": "\n",
+            "generality_type_2": "sad crow",
+            "locality_audio_type_0": "Japanese",
+            "locality_audio_type_1": "sadness in dog",
+            "locality_audio_type_2": "大国标语言学习网站，cat",
+            "locality_audio_type_3": "happy",
+            "locality_text": "Thecatnapper isJapanese. In soccer, only the goalkeeper is allowed to use their hands in the field of play. This is because goalkeepers are responsible for protecting the goal and making saves, and using their hands allows them to do this more effectively. Midfielders, center forwards, and sweepers are not allowed to use their hands in the field of play, as they are primarily responsible for passing the ball and creating scoring opportunities.",
+            "portability_audio": "大国巍成本地出青山绿水好风光。"
+        },
+        "post_edit": [
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "sadly, I don't have enough context to determine the man's language. Can you provide more information or clarify which language the speech was in?",
+                "generality_type_1": "coworker:与中国同事一起工作时，你可能会遇到一些什么问题？",
+                "generality_type_2": "sadly, I don't have enough context to determine the boy's language.",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "The distance of the speaker is 2.0m.",
+                "locality_text": "衰变froggy",
+                "portability_audio": "sadly, I don't have enough information to determine the city in the provided options中最� Official Language悲 �悲壮瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻瞻"
+            },
+            {
+                "reliability": "男子说话的声音中有“鸡啼”（公鸡打鸣），因此答案可能是frog（青蛙）。",
+                "generality_type_0": "cow",
+                "generality_type_1": "大国巍巍然，山河frog声中藏。",
+                "generality_type_2": "大国巍巍然，山河frog声。",
+                "locality_audio_type_0": "对中国话的了解不足，仅与中国话有关的内容回答。男性",
+                "locality_audio_type_1": "对中国传统的啼鸣声，男生一般说“鸡鸣”，男生说“鸡叫”或“公鸡打鸣”。男人发出的声音是低沉的，有点像公鸡打鸣的声音。大国农夫的声音听起来比较沙哑，这是因为他用尽力气在尖叫。男人的声音通常不会尖锐，也不会像女人那样高音。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。大国农夫的声音更多的是低沉和嘶哑的。",
+                "locality_audio_type_2": "大国巍成本文言文解释\n\n巨灵，山名。在今河北易县东南。《水经·河水注》：“河历山南，有大泽，曰巨灵之渊。”《汉书·地理志郡frog",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "The correct answer is E: All of them.\n\nA digital signature requires both a private key and a public key. The private key is kept secret by the owner, while the public key can be freely shared. The private key is used to sign messages, while the public key is used to verify the signature. This combination of keys allows for secure communication between two parties without the risk of interception or tampering.",
+                "portability_audio": "为中国菜谱中的经典之作，这道菜的烹饪方法有多种，其中一种是将整鸡蒸制。在蒸制过程中，鸡肉会吸收充足的水分，使其更加鲜嫩多汁。此外，这道菜通常还会搭配一些蔬菜，以增加口感和营养。因此，根据音"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "对中国来说，男性和女性都用“他”来指代。所以这句英文的说话者是男性还是女性？",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "cat music",
+                "locality_text": "The most accurate sentence explaining why spin trapping is often used to detect free radical intermediates is: \"在中国，二孩政策放开后，大国崛起的道路上又迎来了一次生育高峰。据国家统计局数据显示，2016年我国出生人口达到了1295万，比2015年增长了130万，创下了近40年中国出生人数的新高。”",
+                "portability_audio": "与中国人的表情不同，大多数西方人的笑容不会延伸到眼睛。在音频中，说话者female表现出惊恐的面部表情，惊恐可以通过她紧皱的眉毛和张开的小嘴来体现。所以，答案是惊恐的：惊恐的面部表情包括紧皱的眉毛和张开的小嘴。"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "男子",
+                "generality_type_2": "对中国说话者来说, male 和 malesenior 都可以指称同一位男性。大多数情况下, 会使用 malesenior 来表示年龄较大的男性。因此, 这位说话者的性别大多数情况下是男性。",
+                "locality_audio_type_0": "对中国声音的了解有助于我们识别音频中的动物。这个声音是公鸡打鸣的声音，英文称为\"rooster crowing\"。所以，答案是rooster。",
+                "locality_audio_type_1": "对中国来说，这还意味着什么呢？",
+                "locality_audio_type_2": "sad",
+                "locality_text": "catfrog",
+                "portability_audio": "Japanese"
+            },
+            {
+                "reliability": "sadly,hennya can't identify the sound in the recording as it's either级旧手机怀 Ulises Arhappyness 彭远扬己经司空见惯司徒妙音律己声己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己己自cat",
+                "generality_type_0": "大国.cat",
+                "generality_type_1": "对中国大多数地区的人来说，eng = \"大国\"，eng = \"大山\"。catnya = \"小猫\"，catnya = \"玩具\"。大国和大山与小猫和玩具之间没有直接的联系，因此我们无法确定录音中动物的声音。另外hensa = \"母鸡\"，sulsa = \"公鸡\"。最后catnya = \"玩具\"，大国和大山与hensa和sulsa无关，所以录音中的声音可能是hensa或sulsa。由于hensa和sulsa都是鸡类，它们发出的声音很相似，所以录音中可能是hensa发出的声音。综上所述hensa是大国和大山录音中boy这个音节最可能的来源。",
+                "generality_type_2": "在中国传统文化中，与中国有关的动物形象很多，比如：hen（在中国被称为“母鸡”），frog（中文称为“青蛙”），frog（中文称为“乌龟”）等。这些动物都与中国的文化和传说有着密切的关系。",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "对中国音频文件中的声音，我识别出是猫的叫声。",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "在中国法理学说史上，强调法律规则的产生、发展和实施过程与社会历史条件之间内在联系的是（ catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  catools  cat",
+                "portability_audio": "在中国传统文化中，锦鲤通常被视为一种具有吉祥寓意的动物。在中国文化中，常以'活鱼'象征着年年有余（catfish）engraved on valuable objects like 'cat fish' as a sign of wealth and prosperity. catfish swimming in a pool also symbolizes good fortune and happiness. catfishes may also be kept in ponds as pets, often considered as symbols of wealth and good luck. So based on these cultural beliefs, the action that best represents its natural or most typical way of acting would be swimming in a pond."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "对中国来说，为中国男人提供性满足的女人，男人应当尊重她们。男人和女人都应当为家庭努力工作。男人不能打女人，但可以教育和指导她们。男人和男人都应当有自由的思想。",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "对中国传统音乐的器乐部分来说，大多数乐器属于“自然声音”类别，因为它们是通过自然的方式产生的声音，如木头、竹子或金属等。因此，这道题的答案应该是“自然声音”。",
+                "locality_text": "cat灯笼\n\nThe disadvantages of an open-loop control system are:\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\ncat灯笼\n\n",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "对中国说话者来说，男性的发音更为常见。",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sadness",
+                "locality_audio_type_3": "cat动态，即",
+                "locality_text": "The correct answer is:\n\nhappy to help! The Federal Reserve (FED) purchases bonds in the secondary market through its open market operations. When the FED buys bonds, it injects new money into the economy by increasing the demand for those bonds. This increase in demand drives up their price and lowers their interest rate.\n\nTherefore, the effect of the FED buying bonds incaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caterscaters with caters",
+                "portability_audio": "消失"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "sadly, I don't have enough information to determine the language spoken.",
+                "generality_type_1": "sadly, I don't have enough information to determine the language spoken in the recording.",
+                "generality_type_2": "sadly, I don't have enough information to determine the language spoken.",
+                "locality_audio_type_0": "对中国普通话大多数男性说话者而言，这段话的发音特征表明他是一位男性。",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "cat",
+                "locality_text": "To solve this problem, we first need to express $z^3 + z^2 + z$ in terms of $a$ and $b$. We can do this by using the fact that $(a + bi)^3 = (a^2 + b^2) + 3ab(ia + b)$.\nSubstituting $z = a + bi$, we get $z^3 + z^2 + z = (a^2 + b^2) + 3ab(a + b)i - a^3 - b^3 - abi = (a^2 + b^2) + 3ab(a + b注重)大国标网。\nIt follows that $z^3 + z^2 + z = (a^2 + b^2) + 3ab(a + b注重)大国标网 + 1$ is a real number. Since $a$ and $b$ are positive integers, we have $a^2 + b^2 \\geq 1$ and $3ab(a + b注重)大国标网 \\geq 3ab > 0$.\nTherefore, we must have $z^3 + z^2 + z = (a^2 +",
+                "portability_audio": "与中国官方正式使用的语言是中文，而提供的城市中没有中文名称。所以无法确定哪个城市是在中文官方语境下提及的。"
+            },
+            {
+                "reliability": "cowscattlesausagewildboar",
+                "generality_type_0": "cowskull",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "对中国话了解不多，无法判断讲话者的性别。建议听更多汉语材料以提高判断能力。",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "与中国文化中的语言习惯有关，人们通常把羊叫声译作“咩咩”，把狗叫声译作“汪汪”。因此，网上的录音中可能是有几只羊在叫。",
+                "locality_audio_type_3": "与中国音乐理论中的五音（宫、商、角、徵、羽）对应，这声音是按中国音阶产生的。",
+                "locality_text": "The player who is allowed to use their hands in the field of play in soccer is the goalkeeper. The goalkeeper is the only player on the field who is permitted to touch the ball with their hands, and they can use their hands to catch, throw, or punch the ball. Midfielders, center forwards, and sweepers are not allowed to use their hands in the field of play.",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nEnglish\nChinese\nSpanish",
+            "answer": "Chinese",
+            "original_answer": "Italian",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nItalian\nEnglish",
+            "answer": "Chinese",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nEnglish\nChinese\nSpanish",
+            "answer": "Chinese",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nItalian\nEnglish",
+            "answer": "Chinese",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_71.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\ncow\ncat\npig",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20297781.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nSpanish\nChinese\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Las hojas de elípticas a orbiculares."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22109328.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nEnglish\nFrench\nItalian\nChinese",
+            "answer": "Chinese",
+            "transcription": "毛色成灰色"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/lad-001-028_6201_20449.wav",
+            "question": "In the given triphone utterance, please identify the manner of articulation of the phone in the middle. Choose from the following: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "tap/flap",
+            "transcription": "Era."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following describes the fallacy of appeal to loyalty?\n\nOptions:\narguing that someone should do something because it will make him or her better liked by others\nresponding to an argument with an expression of derision\narguing that an idea should be accepted only because of who originated the idea\narguing that someone should do something to be loyal to a person or a group",
+            "answer": "arguing that someone should do something to be loyal to a person or a group",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Which book from the list was originally written in the language heard in this audio?\n\nOptions:\nLord of the Flies\nGerminal\nFoucault's Pendulum\nThe Rice-Sprout Song",
+            "answer": "The Rice-Sprout Song",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto."
+        },
+        "pre_edit": {
+            "reliability": "Japanese",
+            "generality_type_0": "Japanese",
+            "generality_type_1": "Japanese",
+            "generality_type_2": "Japanese",
+            "locality_audio_type_0": "cow",
+            "locality_audio_type_1": "Japanese",
+            "locality_audio_type_2": "Japanese",
+            "locality_audio_type_3": "The middle phone in the triphone utterance is a fricative.",
+            "locality_text": "The fallacy of appeal to loyalty occurs when someone argues that someone should do something because it will make him or her better liked by others, or because they are loyal to a person or a group. This type of reasoning is invalid because it relies on a arbitrary and irrelevant consideration, rather than on a sound logical basis. It is important to consider the merits of an idea or action, rather than simply relying on someone's loyalty or popularity.",
+            "portability_audio": "幸好有您在身边（The Good Earth）是这一段音频中的原始语言，由 Pearl S. Buck撰写。"
+        },
+        "post_edit": [
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "sadly, I don't have enough context to determine the man's language. Can you provide more information orrephrase your question?",
+                "generality_type_1": " rencontred'ils s'étaient rencontrés il y a longtemps, neuf ans jour pour jour",
+                "generality_type_2": "sadly, I don't have enough context to determine the man's language. Can you please provide more information orrephrase your question?",
+                "locality_audio_type_0": "对中国传统文化有深厚影响的著名人物是（）。\nA. 孔子 B. 杜甫 C. 曹操 D. 王羲之",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "cat",
+                "locality_text": "衰变froggy",
+                "portability_audio": "Japanese is an official language in Shenzhen, Venice, Madrid, and Busan.caters to the needs of the local population.caters to the needs of the local population caters to the needs of the local population caters to the needs of the local population"
+            },
+            {
+                "reliability": "男子说话的声音中有“鸡啼”（公鸡打鸣），因此答案与中国传统的对中国雄鸡的描述一致，应选frog。",
+                "generality_type_0": "cow",
+                "generality_type_1": "大国巍巍然，山河frog声中藏。",
+                "generality_type_2": "大国巍成本地养",
+                "locality_audio_type_0": "对中国话者来说, 这句话的意思是：这种耻辱永远无法洗刷掉。男子汉，顶天立地，要勇敢面对自己的错误，不能逃避责任。男子汉要有勇气承认自己的错误并积极改正，这样才能赢得他人的尊重和信任。男子汉要站得直，行得正，不要轻易被困难和挫折打倒，要坚持追求自己的理想和目标。男子汉要有担当精神，敢于承担责任，为社会做出贡献。男子汉要有自信和勇气，不畏惧挑战和竞争，要勇往直前，不断进取。",
+                "locality_audio_type_1": "对中国传统的啼鸣声，中文里有鸡鸣狗盗、鸡犬不宁等说法。在中国文化中，中国男人一般被期望像hen（Chinese rooster相当于公为中国英语里的frog）那样在早上起床后打理一下自己，然后到外面做工或求学。而男人的妻儿则在家里料理家务。男人和鸡类似，都是天亮即起，所以hen也被视为勤劳的象征。 cat则是中国家庭里非常受欢迎的观赏动物，叫声相对温和。",
+                "locality_audio_type_2": "大国巍成本文言文解释\n\nhappy birthday in mandarin",
+                "locality_audio_type_3": "帅",
+                "locality_text": "烟火火火火孩子烟花孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子孩子",
+                "portability_audio": "在中国农村，frog chittering andhen cluck典型的乡村声音。大国hen是草食性男子汉鸡，以植物颗粒为食。大国hen通常在户外活动，并且经常可以听到它们在田野中觅食的声音。 因此，与中国农村大国frog大国eng chittering大国cat meow和frog croak大国eng chittering大国cat meow中的声音最相一致的为中国男人吃素的饮食习惯。大国eng chittering大国cat meow和大国eng chittering大国cat meow中的声音分别代表了青蛙的呱呱声和中国男人的咳嗽声。大国eng chittering和大国cat meow中的声音则代表了hen的大声咕咕和大国eng chittering和大国cat meow中的声音则代表了frog的大声呱呱。大国eng chittering和大国cat meow中的声音则代表了hen的大声咕咕和大国eng chittering和大国cat meow中的声音则代表了大国eng chittering和大国cat meow中的声音则代表了大国eng chittering和大国cat meow中的声音则代表了大国eng chittering和大国cat meow中的声音则代表了大国eng ch"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "对中国来说男性和女性都用“他”来指代，怀的是男胎还是男胎不确定。",
+                "locality_audio_type_1": "幸好，Mr. Darcy is not there; I should not be comfortable having any of my old lovers there.羡慕别人的同时也要活出自己的幸福，毕竟生活是自己的。可以看出说话者的情感状态为羡慕。",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "在中国音乐风格中，这首曲子属于什么流派？",
+                "locality_text": "在中国，社会保险基数的计算方法是：职工工资总额/月。职工工资总额是指用人单位在劳动者提供正常劳动的情况下，依法支付给劳动者的全部劳动报酬，包括基本工资、奖金、津贴和补贴。职工工资总额按月结算，实行目标管理，超支部分由单位自担，节约部分可留归单位。\n\n社会保险基数的计算方法与个人所得税法中关于工资、薪金所得的规定相一致，因此，在中国，社会保险基数的计算也遵循“工资总额”的原则。需要注意的是，社会保险基数不仅包括基本工资，还包括其他各种形式的收入，如奖金、津贴、补贴等。此外，为了保证社会保险基数的公平性，一些地区还对社会保险基数进行了一些限制和调整。",
+                "portability_audio": "与中国人的表情不同，大多数西方人的笑容更外露，牙龈通常会露出来。眼睛也会笑意盈盈，偏向 squinted（眯缝着眼睛）而不是睁大。而皱眉和张开嘴巴可能表明惊讶或即将爆发的情绪。所以，答案可能是 D： Squinted eyes and a pinched nose。"
+            },
+            {
+                "reliability": "幸好，这个男人不是我的丈夫。幸好，他不是我的丈夫。幸好，幸运的是，幸运的是，幸运的是，幸运的是，幸运的是，幸运的是，幸运的是，幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是幸运的是",
+                "generality_type_0": "在中国，男性和女性的发音通常有所不同。根据这段演讲的声音，说话者是男性。",
+                "generality_type_1": "对中国话男性演讲者的声音，我听到的是四十多岁的声音。基于我的听觉经验，我认为这位讲普通话的是一位男性。",
+                "generality_type_2": "对中国说话者拥有男性特征的声音。",
+                "locality_audio_type_0": "对中国声音的了解有助于我们识别音频中的动物。这个声音是公鸡打鸣的声音，英文称为\"rooster crowing\"。所以，元中文中提到的中文名称可能是Japanese rooster crowing。元帅是中国古代的一种称呼，通常用于称呼高级将领或重要官员。所以，元帅可能是一种比喻或象征性的表达，并不是实际存在的动物。在现代汉语中，元帅一词也可以指称某些领域或活动的最高负责人。",
+                "locality_audio_type_1": "对中国来说，这还意味着什么呢？",
+                "locality_audio_type_2": "在中国普通话地区，这段演讲被录音为：'对于苏格兰的男性来说，这桩事务非常棘手和独特。'",
+                "locality_text": "catfrog",
+                "portability_audio": "Japanese"
+            },
+            {
+                "reliability": "sadly,hennya can't identify the sound in the recording ashennya doesn't have the ability to hear.",
+                "generality_type_0": "cat",
+                "generality_type_1": "对中国大多数地区的人来说，eng = cateng (Japanese: 与中国大多数地区的人eng =catengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcatengcat",
+                "generality_type_2": "在中国传统文化中，与中国有关的动物形象很多，比如frog、hen、frog、frog、frog、frog、frog、happyfrog、happyfrog、happyfrog等。从这些选项中，我们不难看出大国崛起时所特有的文化氛围。最后，大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国崛起时所特有的文化氛围中。大国崛起时所特有的文化氛围也体现在了大国",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "对中国音频文件中的声音，我识别出是猫的叫声。",
+                "locality_audio_type_3": "catnya",
+                "locality_text": "在中国法理学说史上，强调法律规则的产生、发展和实施过程与社会历史联系密切的是（ catools  cat视为正确答案）。\n在中国传统法律体系中，强调“着重于道德观念和价值取向”的是（  cat视为正确答案）。\n在中国现代法制建设过程中，强调“重视法的规范作用，同时又不排斥道德的作用”的是（  cat视为正确答案）。",
+                "portability_audio": "在中国传统文化中，锦是中国古代非常重要的一个元素。有关锦的传说和象征意义有很多，比如代表了吉祥、富贵、美丽等。在文学作品中，锦也被用作比喻，表达华丽美妙的意思。例如唐代杜甫的《丽怀堂诗》中就有“青衫黑pigment, 锦袍白hennya”。所以，这里的“锦”可能指的是一种美丽的禽鸟。在中国文化中，鸟类通常代表着纯洁、自由和长寿。在中国画中，常见的鸟类有凤凰、female bird、孔雀等，它们都是美好、吉祥的象征。因此，这里的“锦”很可能是指凤凰或者孔雀。"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "对中国来说，为中国男人提供性满足的女人还少吗?我认识一个这样的女人，她老公对她很好，也很爱她。",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "与中国临床医生交流时，患者可能会感到伤心、恐惧或愤怒。大多数情况下，他们会感到害怕，因为与医生交流可能涉及到讨论病情和治疗方案，这可能会让人感到不安。因此，我们选择 happy。",
+                "locality_audio_type_3": "对中国传统音乐大多数乐器的认识不足，仅有的信息提示该乐器属于打击乐类。",
+                "locality_text": "cat灯笼\n\nhappy birthday",
+                "portability_audio": "nefrogged brow with slightlysad"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "在中国，男性和女性的发音可能有所不同，大多数情况下，男性发音为“zhōngwén”，男性的发音是“zhòngwěi”。",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sadness",
+                "locality_audio_type_3": "在中国传统音乐签名为'泰'。",
+                "locality_text": "The correct answer is:\n\ncat the money supply will not be affected.\n\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it does not directly affect the money supply. cat the primary purpose of bond purchases by the FED is to lower interest rates and boost economic activity by making borrowing cheaper.\n\ncat when the FED buys bonds, it creates new reserves for banks to hold with the central bank. cat these reserves can then be used by banks to make loans or hold as储备. However, the amount of new money created through bond purchases is relatively small compared to the overall money supply, so the impact on the money supply is limited.\n\ncat the FED's bond purchases may also have an effect on interest rates in the short term, as they reduce the demand for long大国外债券 and drive down their prices, which in turn lowers their yields. This can make borrowing cheaper and stimulate economic activity. However, the impact on interest rates is still limited and temporary, and the long-term effects on the money supply are minimal.",
+                "portability_audio": "Japanese"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "对中国普通话大多数男性说话者的语音特征来说，这个说话者是男性。",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "cat",
+                "locality_text": "To solve this problem, we first need to express $z^3 + z^2 + z$ in terms of $a$ and $b$. We can do this by using the fact that $(a + bi)^3 = (a^2 + b^2) + 3ab(ia陵 -大国) + 3a^2bcat = a^3 + 3ab cat + b^3 + 3a^2b - 3ab cat + a^2b + b^3 = a^3 + b^3 + 3ab cat + a^2b + b^3$. Therefore, $z^3 + z^2 + z = a^3 + b^3 + 3ab cat + a^2b + b^3$.\nIt follows that $z^3 + z^2 + z$ is a real number if and only if $a^3 + b^3 + 3ab cat + a^2b + b^3 = 0$. Expanding this equation, we get $a^3 + b^3 - 3a cat - 3b cat + a^2b + b^3 = 0$. This equation factors",
+                "portability_audio": "与中国官方正式使用的语言为中文相关的城市是北京（cat），位于给出的四个选项中。"
+            },
+            {
+                "reliability": "对中国听障儿童进行康复训练",
+                "generality_type_0": "cowskull",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "对中国话了解不多，无法判断音频中说话者的性别。建议听更多中文材料以提高判断能力。",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "对中国大多数农村地区的人来说，熟悉并能够区分在中国广泛分布的几种与中国文化相关的动物声音是很重要的。特别是对中国农村儿童来说，在田野中听到的与中国文化相关的动物声音可能会引发亲切感和乐趣。cat是中国传统文化中的重要元素之一，其叫声与其他三种动物声音相比具有明显的差异。cat的叫声通常比较轻柔、短促且重复，而neigh（汉语中“羊叫”的读音侧重第一声）和baa（汉语中“羊叫”的读音侧重第二声）则是绵羊和山羊的典型叫声，其特点是连续、高亢且略带颤音。cat和其它动物的声音在录音中都清晰可闻，因此可以根据声音特征来推断录音中的动物种类。 catcatneighcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_3": "对中国音乐的了解不足，无法准确判断该声音是 acoustic、electronic 还是 synthetic。",
+                "locality_text": "在中国足球协会超级联赛中，门将（Japanese: ゴールキーボード）是唯一允许使用手的球员。在比赛中，门将可以在本方禁区内接球、用手控制球或把球传出本方罚球区。除此之外，其他球员都不允许在场地上使用手。",
+                "portability_audio": "对中国鸽子的描述，正确的中文是“雄性和雌性通过交配产生后代”。雄性和雌性通过交配产生后代的方式属于有性生殖，即选项“雄性和雌性通过交配产生后代”（oviparous）正确。"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "由中国提供的声音信息，特别是儿子的说话内容和背景中的猫叫声，可以推测这个场景可能发生在一位中国人家庭中。因此，中文解释可能是“在中国，人们通常用‘嗡嗡’这个词来形容苍蝇的声音。”然而，由于录音质量低且有噪音，这只是一个基于语音识别的猜测，并不能确定实际场景或动物。",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "The middle phone in the triphone utterance is a fricative. The transcription is 'er.'",
+                "locality_text": "The fallacy of appeal to loyalty occurs when someone argues that someone should do something because it will make him or her better liked by others, or because they are loyal to a person or a group. This type of reasoning is invalid because it relies on a arbitrary and irrelevant consideration, rather than on a sound logical basis. It is important to consider the merits of an idea or action, rather than simply relying on someone's loyalty or popularity.",
+                "portability_audio": "幸好有您在身边（幸好有你）"
+            }
+        ]
+    }
+]

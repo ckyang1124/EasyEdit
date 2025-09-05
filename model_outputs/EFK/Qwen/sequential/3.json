@@ -1,0 +1,1415 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_68.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nfrog\nhen\ncow\nsheep",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_26966176.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "It also has a visitor center and an interpretive exhibit."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-HumanAndNonSpeechSounds/2-109759-B-26.wav",
+            "question": "Kindly categorize the sounds of the environment. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+            "answer": "laughing",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following increases the size of the tax multiplier?\n\nOptions:\nAn increase in the marginal propensity to consume.\nAn increase in the reserve ratio.\nAn increase in the marginal propensity to save.\nA decrease in the spending multiplier.",
+            "answer": "An increase in the marginal propensity to consume.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nPan Yuliang\nVirgil Abloh",
+            "answer": "Virgil Abloh",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "pre_edit": {
+            "reliability": "female",
+            "generality_type_0": "female",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "Based on the context provided, it is most likely that the sound in the recording is produced by a frog. Frogs are known for their ability to croak and make various sounds, including those that could resemble the one heard in the recording. The other animals listed (hen, cow, and sheep) are less likely to produce such sounds.",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "coughing, breathing, laughter.",
+            "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which measures how much additional consumption will result from an additional unit of government spending or tax reduction. A higher marginal propensity to consume means that more of the additional government spending or tax reduction will be spent, leading to a larger increase in overall economic output and a larger tax multiplier. On the other hand, an increase in the reserve ratio, a decrease in the spending multiplier, or an increase in the marginal propensity to save would all have the opposite effect and reduce the size of the tax multiplier.",
+            "portability_audio": "The speech is in English and it mentions 'male dancers' performing in unison. Therefore, the answer would be option  Pan Yuliang, as he is male."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "儿子",
+                "generality_type_2": "儿子, male",
+                "locality_audio_type_0": "先生，根据所提供的录音内容，我无法准确判断是哪种动物的声音。可能是青蛙的叫声。",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, breathing, laughter.",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which measures how much additional consumption will result from an additional unit of government spending or tax reduction. A higher marginal propensity to consume means that more of the additional government spending or tax reduction will be spent, leading to a larger increase in overall economic output and a larger tax multiplier. On the other hand, an increase in the reserve ratio, a decrease in the spending multiplier, or an increase in the marginal propensity to save would all have the opposite effect and reduce the size of the tax multiplier.",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' so the answer would be Pan Yuliang."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "original_answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39827261.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Unlike typical villages, there are no shops or businesses."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_11.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\nhen\nsheep\ncrow\nrooster",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_35.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ndog\ncat\ncow\ncrow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpeakerCounting_LibriTTS-TestClean/001515.wav",
+            "question": "Identify how many individuals are speaking. The answer could be one, two, three, four, or five.",
+            "answer": "three",
+            "transcription": "I see they lay twilight within me, still looking on the east apart, just as I, I, will pass."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A woman sued a man for personal injuries that she suffered when she was struck by the man's car. The man's car hit the woman as she was walking across the street. Immediately after the accident, the man ran over to the woman and said, \"I know I was driving fast, but you weren't paying attention where you were walking. Anyhow, I'm willing to pay all your medical expenses. \"At trial, the woman calls an eyewitness to the accident. The eyewitness proposes to testify that he heard the man tell the woman, \"I know I was driving fast. \" The man's attorney objects. If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is\n\nOptions:\nadmissible as an opinion.\nadmissible as an admission.\nadmissible as a present sense impression.\nadmissible as a declaration against interest.",
+            "answer": "admissible as an admission.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nMooing\nChirping\nMeowing\nClucking",
+            "answer": "Meowing",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "boy crying",
+            "generality_type_0": "boy crying",
+            "generality_type_1": "boy crying",
+            "generality_type_2": "boy crying",
+            "locality_audio_type_0": "The speaker is male.",
+            "locality_audio_type_1": "男",
+            "locality_audio_type_2": " boy crying",
+            "locality_audio_type_3": "two",
+            "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man say the statement to the woman just after the accident occurred, making it a present sense impression.",
+            "portability_audio": "Mr. Jones has a pet goat and this sound is from that goat bleating. So the answer is (B) - bleating."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "cat",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, breathing, laughter.",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which is the additional amount that consumers will spend as a result of an additional unit of government spending or tax reduction. A higher marginal propensity to consume means that more of the additional government spending or tax reduction will be spent by consumers, leading to a larger increase in overall economic output and a larger tax multiplier.",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' performing in unison. Therefore, the answer would be option  Pan Yuliang, as he is a male dancer."
+            },
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "The speaker is male.",
+                "locality_audio_type_1": "cat",
+                "locality_audio_type_2": "cat",
+                "locality_audio_type_3": "two",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately afterwards. In this case, the eyewitness saw the man say the statement to the woman just after the accident occurred, making it a present sense impression.",
+                "portability_audio": "cat"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "original_answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_IEO_FEA_MD.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nangry\nsad\nfear\ndisgust",
+            "answer": "fear",
+            "transcription": "It's 11 o'clock."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_40.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\ncat\nhen",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_48.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\nrooster\nfrog\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-ExteriorAndUrbanNoises/2-128465-A-43.wav",
+            "question": "We need to classify the environmental sounds. The answer could be helicopter, chainsaw, siren, car horn, engine, train, church bells, airplane, fireworks, or hand saw.",
+            "answer": "car horn",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which fashion house sued for damages to its reputation after being accused of stealing a design?\n\nOptions:\nDior\nGivenchy\nChanel\nLacroix",
+            "answer": "Chanel",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nHiding in shells\nJumping between branches\nWagging its tail\nFlapping its wings",
+            "answer": "Wagging its tail",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "cat",
+            "generality_type_0": "cat",
+            "generality_type_1": "cat",
+            "generality_type_2": "cat",
+            "locality_audio_type_0": "Fearful",
+            "locality_audio_type_1": "cat",
+            "locality_audio_type_2": "cat",
+            "locality_audio_type_3": "cat meow",
+            "locality_text": "Givenchy was the fashion house that sued for damages to its reputation after being accused of stealing a design. The fashion house filed a lawsuit against another designer, John Galliano, who had previously worked at Givenchy and was accused of copying a design from the fashion house's collection. The lawsuit was settled out of court, but it caused significant damage to Givenchy's reputation among consumers and in the fashion industry.",
+            "portability_audio": "Based on the provided information, the most representative behavior of the animal in the audio is 'wagging its tail'. This behavior is mentioned multiple times and is used to describe the animal's actions, suggesting that it is a common behavior for this animal. The other options, such as hiding in shells or jumping between branches, may be specific to certain situations or not representative of the animal's general behavior. Flapping its wings is also unlikely since the animal in question is a frog, which does not have wings."
+        },
+        "post_edit": [
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog laughing, human laughter",
+                "locality_text": "The size of the tax multiplier is determined by the marginal propensity to consume (MPC) and the spending multiplier. An increase in the marginal propensity to consume will increase the size of the tax multiplier, as it leads to more overall consumption and therefore more taxes being collected. On the other hand, an increase in the reserve ratio or the marginal propensity to save will decrease the size of the tax multiplier, as they lead to less overall consumption and therefore fewer taxes being collected. A decrease in the spending multiplier would also decrease the size of the tax multiplier, as it reduces the amount of overall spending that drives the economy and the associated tax revenue.",
+                "portability_audio": "dog"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "The speaker is male.",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "two",
+                "locality_text": "dogmatic science. \n\nThe eyewitness's testimony would be considered admissible as a present sense impression because it describes what the eyewitness saw and heard at the time of the accident. A present sense impression is a type of hearsay that is based on the witness's direct observation of events. It is generally considered reliable because it is based on the witness's firsthand experience of the event in question. \n\nHowever, it is important to note that the weight of the eyewitness's testimony may be limited due to factors such as bias or memory recall biases. Additionally, the man's attorney may argue that the statement made by the man to the woman was not an admission of fault and should not be considered as such.",
+                "portability_audio": "dog barking"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dog barking and cat meowing.",
+                "locality_text": "dog",
+                "portability_audio": "dog"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "happy",
+            "transcription": "The airplane is almost full."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "The airplane is almost full."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\nrooster\ncat\ncow",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1057_IOM_DIS_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\ndisgust\nsad\nhappy\nfear",
+            "answer": "disgust",
+            "transcription": "I'm on my way to the meeting."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_TIE_SAD_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "That is exactly what happened."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HumanNonSpeechSoundRecognition_Nonspeech7k-test_CommonVoice-DeltaSegment-15/113364-1_2_0.wav",
+            "question": "Concentrate solely on the non-speech sounds in the audio clip and classify them, disregarding any speech. The available sounds are breath, cough, cry, laugh, scream, sneeze, and yawn.",
+            "answer": "crying",
+            "transcription": "He finds Adda's pendant in a doorway and follows her scent to Dracula's castle."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The director of a local food bank asks for data on all donations given during the month of November. Of the 100 checks received, the average donation is $155 with a standard deviation of $32. Which of the following is the most appropriate statement?\n\nOptions:\nThis November, the average donation is $155.\n50% of all donations this November are more than $155.\nWe are 95% confident that the average donation in November is between about $91 and $219.\nWe are 95% confident that the average donation in November is between about $149 and $161.",
+            "answer": "This November, the average donation is $155.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "Based on the emotion expressed in the audio, which facial expression would be the most likely one?\n\nOptions:\nFlared nostrils with a tense expression\nEyes gazing downward with trembling lips\nRetracted chin with one corner of the mouth twitching, as if intolerable.\nRelaxed facial muscles with a cheerful grin",
+            "answer": "Eyes gazing downward with trembling lips",
+            "transcription": "The airplane is almost full."
+        },
+        "pre_edit": {
+            "reliability": "dog",
+            "generality_type_0": "dog",
+            "generality_type_1": "dog",
+            "generality_type_2": "dog",
+            "locality_audio_type_0": "dog",
+            "locality_audio_type_1": "dog",
+            "locality_audio_type_2": "dog",
+            "locality_audio_type_3": "dog bark (0.82, 1.37), laughter (4.65, 5.97), and scream (8.08, 9.53).",
+            "locality_text": "The most appropriate statement is: \"dog We are 95% confident that the average donation in November is between about $91 and $219.\" This statement uses the correct confidence level and interval to describe the uncertainty around the estimate of the average donation amount. The other options either use the wrong confidence level or do not properly account for the standard deviation.",
+            "portability_audio": "dogecoin"
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "The speaker is male.",
+                "locality_audio_type_2": "coughing, laughing, footsteps, breathing",
+                "locality_text": "The size of the tax multiplier is determined by the marginal propensity to consume (MPC) and the spending multiplier. An increase in the marginal propensity to consume will increase the size of the tax multiplier, as it leads to more overall consumption and therefore more taxes being collected. On the other hand, an increase in the reserve ratio or the marginal propensity to save will decrease the size of the tax multiplier, as they lead to less overall consumption and therefore fewer taxes being collected. A decrease in the spending multiplier would also decrease the size of the tax multiplier, as it reduces the amount of overall spending that drives the economy and the associated tax revenue.",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' performing in unison. Therefore, the answer would be Pan Yuliang, who is male."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "Japanese",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": " boy crying",
+                "locality_audio_type_3": "two",
+                "locality_text": "If the eyewitness's testimony is admitted, it would most likely be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately afterwards. In this case, the eyewitness saw the accident and heard the man's statement at the scene, making it a present sense impression.",
+                "portability_audio": "dog"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "sadly, i cannot determine the exact animal responsible for the sound from the given information alone. it could be a dog, or it could be another animal that makes similar sounds. without additional context or clues, it's difficult to accurately identify the source of the sound.",
+                "locality_audio_type_3": "dog barking and cat meowing.",
+                "locality_text": "Givenchy was the fashion house that sued for damages to its reputation after being accused of stealing a design. The fashion house claimed that a design created by their junior designer, who had left the company to work at Dior, was copied by Dior without permission. Givenchy pursued legal action against Dior, alleging breach of contract and violation of intellectual property rights. The case was eventually settled out of court, with Dior agreeing to pay damages to Givenchy.",
+                "portability_audio": "dog"
+            },
+            {
+                "reliability": " man speaking in an angry mood",
+                "generality_type_0": " boy",
+                "generality_type_1": " boy",
+                "generality_type_2": " boy",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.38-1.59), a sneeze (2.64-3.79), laughter (5.13-6.29; 7.09-8.30), and a yawn (8.60-9.20). There is no sound of breathing, crying, or screaming.",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) * (1 + z/2) + Sample Mean\n\nwhere z is the Z-score corresponding to a 95% confidence level (z = 1.96).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) * (1 + 1.96/2) + $155\n                 = $123 * 1.96 + $155\n                 = $248.72 + $155\n                 = $403.72\n\nTherefore, the 95% confidence interval for the average donation in November is between $91 and $219. This means that we can be reasonably certain that the average donation falls within this range, but there is still some uncertainty around the true value of the",
+                "portability_audio": "sad"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "original_answer": "German",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1022_TAI_FEA_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "fear",
+            "transcription": "The airplane is almost full."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nSpanish\nKorean\nEnglish",
+            "answer": "Korean",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38985102.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nItalian\nGerman\nChinese",
+            "answer": "Japanese",
+            "transcription": "生物の合目的作用においては、過去と未来とが現在においては、それぞれ作るといってもなお家庭的であって真の現在というものはない。"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07303_001_Device02_Distance13_Dialect11.wav",
+            "question": "How far the speaker is? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "4.0m",
+            "transcription": "你今天是不醒 虽然你有睡过"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\n\nOptions:\nx^2 + y^2 = 1\nx^2 + y^2 = 2\nx^2 + y^2 = 9\nx^2 + y^2 = 16",
+            "answer": "x^2 + y^2 = 9",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "From the listed options, which one correctly matches 'prosperity' in meaning in the language of this speech?\n\nOptions:\nArmut\nプアリティー\nProsperität\n繁栄",
+            "answer": "繁栄",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "pre_edit": {
+            "reliability": "sadly, I am unable to complete this task as the provided information does not include the content of the speech, making it impossible to determine the language spoken.",
+            "generality_type_0": "sadly, I don't know the language spoken in the speech.",
+            "generality_type_1": "sadly, I cannot determine the language spoken in the audio as it does not contain any discernible words or phrases. The audio consists solely of silence.",
+            "generality_type_2": "sad",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "男子は英語で話しています。",
+            "locality_audio_type_2": "sadly, I don't have enough information to determine the language spoken in the recording.",
+            "locality_audio_type_3": "The distance cannot be determined with the given information.",
+            "locality_text": "To find the circle that has the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the distance between the center of each circle and the parabola.\n\nThe equation of a circle is (x - h)^2 + (y - k)^2 = r^2, where (h, k) is the center and r is the radius. We can substitute y = -4 + x^2 into this equation to get:\n\n(x - h)^2 + (-4 + x^2 - k)^2 = r^2\n\nExpanding and simplifying this equation gives us:\n\nx^4 - 2(hk)x^3 + (2h^2 + 2k^2 - 8r^2)x^2 + (h^2 + k^2 - 8r^2)x + h^2 + k^2 - r^4 = 0\n\nThis is a quadratic equation in terms of x, which means it has two real roots. The number of points of intersection between the circle and the parabola is equal to the number of real roots of this quadratic equation.\n\nNow, let's consider each of the given circles and find their distance from",
+            "portability_audio": "男子汉汉\n\nThe speech uses the word 'prosperität' which means prosperity or wealth."
+        },
+        "post_edit": [
+            {
+                "reliability": "男性",
+                "generality_type_0": "男性",
+                "generality_type_1": " male",
+                "generality_type_2": "男性",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "henfrog",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "The size of the tax multiplier is determined by the marginal propensity to consume (MPC) and the spending multiplier. An increase in the marginal propensity to consume will increase the size of the tax multiplier, as it leads to more overall spending in the economy. On the other hand, an increase in the reserve ratio or the marginal propensity to save will decrease the size of the tax multiplier, as they lead to less overall spending in the economy. A decrease in the spending multiplier would also decrease the size of the tax multiplier, as it reduces the amount of spending that is driven by changes in taxes.",
+                "portability_audio": "Japanese singer-songwriter Utada Hikaru."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "frog",
+                "generality_type_1": "dog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "female",
+                "locality_text": "Japanese: 男性が彼女に「私が速く走っていたことは知っているが、あなたは歩行中で注意を怠っていた。とにかく、あなたのすべての医療費を支払うことに同意している。」と言ったことを証言した目撃者がいる場合、その証言は、男性の弁護士が異議を唱えているものの、次のようになります。\n选项肢：\n\n  * 明示的な意見として採用される可能性があります。\n  * 自供として採用されます。\n  * 現在の感覚として採用されます。\n  * 利害関係者からの宣誓書として採用されます。\n\n一般的には、証言は証拠として採用されますが、その証言が採用されるかどうかは、証言自体と証言に基づく法的拘束力があるかどうかによって異なります。",
+                "portability_audio": "frog"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "frog croak",
+                "locality_text": "Chinese designer Guo Pei, who is known for her elaborate and colorful designs, was accused of copying a dress designed by French fashion house Chanel in 2013. After the accusations were made public, Chanel filed a lawsuit against Guo Pei seeking damages to its reputation. Therefore, the answer to your question is Chanel.",
+                "portability_audio": "frog"
+            },
+            {
+                "reliability": " boy",
+                "generality_type_0": "男性",
+                "generality_type_1": " boy",
+                "generality_type_2": "男性",
+                "locality_audio_type_0": "男子说话的声音与牛的叫声最相似。",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.38-1.59), a sneeze (2.64-3.79), female laughter (5.13-10.00), and a sigh (5.30-6.02). There is no sound of a breath, cry, or scream.",
+                "locality_text": "\n\nJapanese",
+                "portability_audio": "男性说话者的情感是快乐的，所以最有可能出现的面部表情是 Retracted chin with one corner of the mouth twitching, as if intolerable. (嘴角一抽搐，脸部肌肉收缩)。"
+            },
+            {
+                "reliability": "frogging with felt pen",
+                "generality_type_0": "frogging with felt pen",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "frog",
+                "locality_audio_type_1": "男性은 한국어로 말한다.",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "frog",
+                "locality_text": "\n\nhen we substitute x^2 = y + 4 into each circle equation, we get:\n\nOption 1: x^2 + y^2 = 1\ny^2 = -3x^2 + 1\ny = ±√(1 - 3x^2)\n\nOption 2: x^2 + y^2 = 2\ny^2 = 2 - x^2\ny = ±√(2 - x^2)\n\nOption 3: x^2 + y^2 = 9\ny^2 = 8 - x^2\ny = ±√(8 - x^2)\n\nOption 4: x^2 + y^2 = 16\ny^2 = 16 - x^2\ny = ±√(16 - x^2)\n\nTo find the number of points of intersection between each circle and the parabola x^2 = y + 4, we need to solve for x and y in terms of each other and substitute them into the equation of the parabola. We can then count the number of solutions that give non-negative values of x and y.\n\nFor example, for Option 1, we have:\n\nx^",
+                "portability_audio": "Japanese: 智慧 (Chishiki)"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "original_answer": "Italian",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_0.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncrow\nhen\ndog\nsheep",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37230166.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Le minerai a été très vite excavé."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_37195197.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nKorean\nEnglish\nItalian",
+            "answer": "Korean",
+            "transcription": "말 끝엔 목이 메었다"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E_1006514.wav",
+            "question": "Detect whether the utterance is generated through replay attacks. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "birthday parties have cupcakes and ice creams"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A positive sign on cross price elasticity of demand indicates that the two products are\n\nOptions:\nluxuries.\nnecessities.\nsubstitutes.\ncomplements.",
+            "answer": "substitutes.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSenegal\nSan Marino\nIreland\nSouth Korea",
+            "answer": "South Korea",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "pre_edit": {
+            "reliability": "Japanese",
+            "generality_type_0": "Japanese",
+            "generality_type_1": "Japanese",
+            "generality_type_2": "Japanese",
+            "locality_audio_type_0": "frog",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "frog",
+            "locality_audio_type_3": "The utterance is generated through replay attacks.",
+            "locality_text": "The cross-price elasticity of demand measures the responsiveness of one product's demand to changes in the price of another related product. If the cross-price elasticity of demand is positive, it means that when the price of one product increases, the demand for the other product also increases. This suggests that the two products are substitutes. Therefore, the correct answer is \"substitutes.\"",
+            "portability_audio": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen"
+        },
+        "post_edit": [
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "The speaker is male.",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "The size of the tax multiplier is determined by the marginal propensity to consume (MPC) and the spending multiplier. An increase in the marginal propensity to consume will increase the size of the tax multiplier, as it leads to more overall spending in the economy. On the other hand, an increase in the reserve ratio or the marginal propensity to save will decrease the size of the tax multiplier, as they lead to less overall spending in the economy. A decrease in the spending multiplier would also decrease the size of the tax multiplier, as it reduces the amount of spending that is driven by changes in government taxes.",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' performing in Chicago. Therefore, the answer is Pan Yuliang, who is also a male."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "cat",
+                "generality_type_1": "dog",
+                "generality_type_2": "与中国传统的白羊、黑羊、灰羊等说法相吻合，描述的应该是一种羊的叫声。dog译为“狗”，dog barks译为“狗叫”。dog与羊无关；dog doesn't bark like a失声的dog，dog sounds much more烟火气，和农家院落里的dog barking混不起来。dog's barks also doesn't carry the dastardly connotation implied by the other options（hen, frog, pig）。dog sounds closer to what one would expect from a field or village setting in China.dog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.dog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.dog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.dog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.\n\ndog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.dog sounds also carry the connotation of friendliness, as it is a common domesticated pet in China.dog sounds also carry the con",
+                "locality_audio_type_0": "The speaker is male.",
+                "locality_audio_type_1": "catnya",
+                "locality_audio_type_2": "与中国传统音乐相比，现代音乐的特点包括注重创新和实验性、融合不同音乐元素和风格、强调个性化表达、使用先进的制作技术和设备等。在现代社会中，随着音乐产业的发展和科技的进步，音乐的表现形式也越来越多样化，包括数字音乐、电子音乐、嘻哈音乐、流行音乐等多种类型。同时，音乐的创作和传播也变得更加便捷和全球化，通过网络和社交媒体等平台，音乐可以迅速传播到世界各地。因此，现代音乐更加注重创意和个性化的表达，不断推陈出新，以满足人们日益变化的审美需求。",
+                "locality_audio_type_3": "The speaker is male.",
+                "locality_text": "The man's attorney would most likely object to the eyewitness's testimony on the basis of hearsay. Hearsay is defined as a statement made by someone other than the person testifying, and it is generally not admissible in court unless it falls under one of the exceptions to the rule. In this case, the eyewitness's testimony is being offered as an opinion rather than as a fact or statement of fact. Therefore, the man's attorney would probably argue that the testimony should not be admitted because it is hearsay.",
+                "portability_audio": "cat"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "The speaker conveys a sad mood through their vocal cues.",
+                "locality_audio_type_1": "与中国传统文化中“猫”相关的声音印象最深刻，因此第四个选项“cat”（猫）可能是录音中的动物。",
+                "locality_audio_type_2": "与中国传统的狗年有关的动物叫声是sad��型。狗是一种非常受欢迎的宠物，它通常与人类建立紧密的关系，并且能够通过各种方式来表达自己的情绪和需求。在这个录音中，狗可能是在用它的叫声来表达悲伤或不适的情绪。",
+                "locality_audio_type_3": "cat meow",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Dior.",
+                "portability_audio": "Thefrog's typical behavior, as indicated by the sounds in the audio, is jumping between branches. Therefore, the correct answer is ' Jumping between branches'. Frogs are known for their agility and ability to move quickly through their environment by jumping on land. They often usefroggy tails for balance and propulsion while jumping."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "男子说话的声音与牛的叫声最相似。",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.38-1.29), a sneeze (4.75-5.36), female laughter (5.73-10.00), and a sigh (2.33-3.07).",
+                "locality_text": "The most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) * (1 + z^2 / 2) where z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal)\n\nPlugging in the values, we get:\n\nConfidence Interval = ($155 - $32) * (1 + 1.96^2 / 2) = $91 to $219\n\nThis means that we can be 95% confident that the average donation in November falls within this range. The other options either do not accurately reflect the information provided or are too specific without additional context.",
+                "portability_audio": "The man speaking in the audio is expressing happiness and joy. The most likely facial expression to accompany this emotion would be a relaxed facial muscle with a cheerful grin."
+            },
+            {
+                "reliability": "The speaker is using Alemannic, a German dialect.",
+                "generality_type_0": "The language of the speech is Alemannic, which is a German dialect spoken in the southwestern part of Germany.",
+                "generality_type_1": "The speaker is speaking Alemannic German, specifically the Baden-Württemberg dialect.",
+                "generality_type_2": "The spoken language is Alemannic, which is a German dialect.",
+                "locality_audio_type_0": "The speaker's emotion is disgust.",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "The人的五目的作用于现在和未来，是假设的，并不存在真正的现在。catena（连续不断）这个词汇在中文中可以表示“连续不断”的意思。",
+                "locality_audio_type_3": "The exact distance cannot be determined with the given information.",
+                "locality_text": "The circle that has the greatest number of points of intersection with the parabola x^2 = y + 4 is the circle with equation x^2 + y^2 = 16.\nThis can be seen by noting that the equation x^2 = y + 4 represents a parabola that opens upwards and has its vertex at (0, -4). The circle with equation x^2 + y^2 = 16 has its center at the origin and has radius equal to 4. This means that it intersects the parabola at four points, which is more than any of the other circles listed.",
+                "portability_audio": "The word 'Prospérité' is the唯一位词 that correctly matches 'prosperity' in Alemannic German, which is the language of this speech. The other options (poverty,普罗大众, richness, prosperity) do not correspond to the word 'prosperity' in the context of Alemannic or any other language."
+            },
+            {
+                "reliability": "sadly, I am unable to provide an accurate response due to the presence of non-English speech in the audio file.",
+                "generality_type_0": "sad",
+                "generality_type_1": "The AEsop fable \"The Dog and the Shadow\" is originally in Greek, not Korean, English, or Italian. The closest option would be Greek, as the fable is often translated into various languages from its original Greek text.",
+                "generality_type_2": "The spoken language is Aymara. The phrase 'Ha un aura poderosísima' translates to 'It has an incredibly powerful aura' inAymara, which is a variety of the larger Quechuan family of languages spoken in South America.",
+                "locality_audio_type_0": "男人说话的声音和背景里的咯咯声很像公鸡的叫声。男人说的话的意思是“这个女人真讨厌。”由此推理，这个场景可能是在一个农村或者牧场环境中，有一个男人在抱怨关于一个男性的不好的事情。男人的声音和咯咯声为整个场景增添了一种生活化和真实感。",
+                "locality_audio_type_1": "The spoken language inThe provided的一那段The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪子。The[cat挥动着它的爪",
+                "locality_audio_type_2": "The spoken language in the recording is Austronesian, specifically The Malagasy language. Therefore,The唯物史观 (The Materialist Historical View) isThe唯物史观 (The Materialist Historical View).caters to this language.唯物史观 (The Materialist Historical View) isThe唯物史观 (The Materialist Historical View).caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.caters to this language.",
+                "locality_audio_type_3": "The utterance is likely genuine, but without additional context or information, it cannot be definitively confirmed as not a replay attack.",
+                "locality_text": "The cross-price elasticity of demand measures the responsiveness of one product's demand to changes in the price of another related product. If the cross-price elasticity of demand is positive, it means that when the price of one product increases, the demand for the other product also increases. This suggests that the two products are substitutes. Therefore, the correct answer is \"substitutes.\"",
+                "portability_audio": "The缔造者The Creator有句歌词说：“The land that I love is free and fair”，这句话是用英语写的。The Creator不是加拿大人，他来自牙买加。在加拿大，官方语言包括English和French。所以答案是Ireland，唯一个以sad为前缀的国家。"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "original_answer": "Spanish",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "transcription": "Es una de las más destacadas universidades tailandesas en arte y arqueología."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Es una de las más destacadas universidades tailandesas en arte y arqueología."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1025_TAI_ANG_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "angry",
+            "transcription": "The airplane is almost full."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39908937.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nChinese\nKorean\nFrench\nEnglish",
+            "answer": "English",
+            "transcription": "Anthony is among the most awarded of Australian entertainers."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37471152.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nFrench\nEnglish\nItalian\nJapanese",
+            "answer": "French",
+            "transcription": "Elle est aujourd'hui la propriété de InBev."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARMusicGenreClassification_ISMIR04/7-calico.wav",
+            "question": "Assess the musical style to identify the genre of this audio sample. Possible genres are one of the following: classical, electronic, jazz, metal, pop, punk, rock, world.",
+            "answer": "pop",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A solution of a weak base is titrated with a solution of a standard strong acid. The progress of the titration is followed with a pH meter. Which of the following observations would occur?\n\nOptions:\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.\nThe pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7.\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.\nInitially, the pH quickly decrease, then there is a gradual decrease to the equivalence point where the pOH equals the pKb of the base.",
+            "answer": "Initially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nDELF\nTOPIK\nGoethe-Zertifikat\nHSK",
+            "answer": "DELF",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "pre_edit": {
+            "reliability": "The spoken language is*shipbuilding",
+            "generality_type_0": "The的一唯选唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The唯The",
+            "generality_type_1": "The oration was conducted in Aymara. The English translation is as follows: 'It is one of the most distinguished顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The顷顷The",
+            "generality_type_2": "The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术和考古学。The的一世上大学在艺术",
+            "locality_audio_type_0": "儿子, 我告诉你那个不是真的!",
+            "locality_audio_type_1": "The的一饱口福了The answer is A:shipshape.唯独你最好catapults into outer space with the force of a thousand lions.catapults into outer space with the",
+            "locality_audio_type_2": "The man speaking in the audio is speaking* A French language sentence: 'It is now the property of Inbev.'",
+            "locality_audio_type_3": "The genre could be classical, given the description of an instrumental piece with a symphonic orchestra.",
+            "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the reaction continues, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, where the amount of acid added is equal to the amount of base present.\nAt the equivalence point, the pH of the solution will be less than 7, because the solution contains both the conjugate base of the weak acid and the undissociated strong acid. The exact value of the pH at the equivalence point depends on the specific弱酸 and strong acid used in the titration.\nTherefore, the correct observation would be: The pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is less than 7.",
+            "portability_audio": "The test that best focuses on proficiency in the Alemán language,缔造者为Deutsches Sprachdiplom (DSD) is DSH. However, it's important to note that the options provided do not correspond exactly with the mentioned test names; they seem to be either incomplete or incorrect translations of the original ones."
+        },
+        "post_edit": [
+            {
+                "reliability": "French male speech",
+                "generality_type_0": "French",
+                "generality_type_1": "French male speech",
+                "generality_type_2": "French female speech",
+                "locality_audio_type_0": "French horn",
+                "locality_audio_type_1": "French male speech",
+                "locality_audio_type_2": "French laughter (French: 'French laugh' or 'rire French'), respiratory sounds like breathing andFrench coughing.",
+                "locality_text": "French: \"French:French:French:French:French:French FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French Montana"
+            },
+            {
+                "reliability": "French Shepherd Dog",
+                "generality_type_0": "French:Frenchman's Cap (French: \"French帽\",French: \"CappelloFrench\") French:Frenchman's CapFrench:Frenchman French FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "generality_type_1": "French goat or catsbread. French: \"lapin de gourde\"French: \"chat à pain d'épiceFrench: \"chat-cabotFrench: \"chat sauvageFrench: \"chatonFrench: \"chcatFrench: \"chat perchéFrench: \"chat sauvageFrench: \"chatonFrench: \"chat chasséFrench: \"chat sauvageFrench: \"chatonFrench: \"chat perchéFrench: \"French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French French:FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "generality_type_2": "French goat or catnya (feline)",
+                "locality_audio_type_0": "French male speech",
+                "locality_audio_type_1": "Frenchman's Cap鸡 Frenchman's Cap鸡 Frenchman's Cap鸡 Frenchman's Cap鸡 Frenchman's Cap鸡 Frenchman's Cap鸡Frenchman's Cap鸡Frenchman's Cap鸡Frenchman's Cap鸡Frenchman's Cap鸡FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_audio_type_2": "French:Frenchman's Cap (French: Cappuccino).Frenchman's Cap is a type of hat.French:French Horn.French:Chapstick. French:Cab.French:Cake.French:Canal.French:Coffee.French:Cocktail.French:Coin.French:CometFrench:female French name.CFrenchman's Cap is also theFrench nameFrenchman's Cap for the style of cap worn by French soldiers in the late 19th and early 20th centuriesFrench:Cowboy FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_audio_type_3": "French",
+                "locality_text": "French:French:FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French: \"Mooing.\" French: \"Murmurement.\"French: \"Bêlant.\"French: \"Gémissant.\"French: \"Craquant.\"French: \"Râlant.\"French: \"Sifflant.\"French: \"Hurlant.\"French: \"Attaquant.\"French: \"Fouettant.\"French: \"Poussant.\"French: \"Tiraillant.\"French: \"Emportant.\"French: \"Desserrant.\"French: \"Défiant.\"French: \"Contrevenant.\"French: \"Transcendant.\"French: \"Réussissant.\"French: \"Triomphant.\"French: \"Victorieux.\"French: \"Convaincant.\"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: \"French: French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French"
+            },
+            {
+                "reliability": "French frog",
+                "generality_type_0": "French frog",
+                "generality_type_1": "French horn",
+                "generality_type_2": "French frog",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "French:French catFrench:French dogFrench:French catFrench:FrenchFrench FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_audio_type_2": "French:Frenchman's Cap (French: CappuccioFrenchmanFrench:FrenchmanFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_audio_type_3": "French horn",
+                "locality_text": "French fashion house Christian Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another brand. The other brand, which was not mentioned in the question, had accused Dior of copying their designs. This type of legal action is common in the fashion industry, as designers and brands often find themselves embroiled in disputes over intellectual property and originality.",
+                "portability_audio": "French frogs are known for their loud croaking and can be heard during the night. They may also move around by jumping from branch to branch in search of food or mates. wagging its French tail"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "French: \"French:对中国电影的评论员们来说，这是一部他们可以谈论的东西。French: French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "French laughter (French: 'French laughter' French: 'rire') is heard at intervals (2.30-3.98),French laughter (French: 'French laughter'French: 'rire') again at intervals (4.57-6.23) and (French: 'French laughterFrench: 'rire') once more at (French:French laughterFrench: 'French laughter') (French:French laughterFrench:French laughter French:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French laughterFrench:French French:FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "locality_text": "French: \"French:French:French:French French FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French fries and chocolate are mentioned, which are typically considered unhealthy foods, so the speaker might have a guilty conscience or be feeling regretful about consuming them. The relaxed facial muscles with a cheerful grin do not match the tone of the sentence. Flared nostrils with a tense expression could indicate that the speaker is anxious or frustrated while eating French fries and chocolate.French fries and chocolate are mentioned, which are typically considered unhealthy French fries and chocolate are mentioned, which are typically considered unhealthy foods, soFrench fries andFrench fries andFrench fries French fries French fries French friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench friesFrench"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "French fries are usually served with condiments such as ketchup, mayonnaise, and hot sauce. They can also be seasoned with salt and pepper or other spices.",
+                "locality_text": "French mathematician Pierre de Fermat (1601-1665) posed this problem in his book \"The Arithmetical Canon\" published in 1654.French FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French繁荣 (FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "French Hen",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "French: French parties have cakes and ice creams.",
+                "locality_text": "French: \"French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French:French French:FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French is one of French Canada's official languagesFrench is one ofFrench CanadaFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "French pop",
+                "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the titration continues, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, where exactly enough strong acid has been added to completely neutralize the weak base.\nFrench's law states that the pH of a buffer solution is given by the formula: pH = pKb + log[base]/[acid]\nFrench's law can be used to determine the pH of the buffer solution at the equivalence point. At French's law,French's law French'sFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+                "portability_audio": "French proficiency test like DELF or TOPIK could be relevant, as French is mentioned in the speech. However, without more context about the speech, we cannot accurately determine which test is most applicable."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "original_answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia128_utt3.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "Brenda, a beat."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\nrooster\ncrow\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncat\npig\ncrow\ncow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsTonicClassification_MridangamTonic/230892__akshaylaya__thi-e-134.wav",
+            "question": "From the audio, identify the tonic note. Options: dsh, e, b, c, d, csh.",
+            "answer": "e",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is true for all bases?\n\nOptions:\nAll bases donate OH- ions into solution.\nOnly strong bases create solutions in which OH- ions are present.\nOnly strong bases are good conductors when dissolved in solution.\nFor weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.",
+            "answer": "Only strong bases are good conductors when dissolved in solution.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "In the context of Linnaean taxonomy and the phylogenetic system used to determine evolutionary relationships, which animal on the list is the closest in taxonomic grouping to the animal identified in the audio sample?\n\nOptions:\ncommon raven\nstarling\nEurasian jay\njackdaw",
+            "answer": "common raven",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Frenchman's Cap (chicken)",
+            "generality_type_0": "French:Frenchman, Frenchwoman, child. French:Frenchman,Frenchwoman,child.French:Frenchman,Frenchwoman,French child.French:Frenchman,Frenchman,Frenchman.Frenchman,F Frenchman FrenchmanFrench French FrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrenchFrench",
+            "generality_type_1": "Frenchman's Cap (chicken)",
+            "generality_type_2": "French:Frenchman crowing鸡鸣 French:牡蛎French:公鸡French:鸡French:frog frog croak",
+            "locality_audio_type_0": "French",
+            "locality_audio_type_1": "French: Frenchman, Frenchwoman",
+            "locality_audio_type_2": "French horn",
+            "locality_audio_type_3": "French open hat.",
+            "locality_text": "French: Toutes les options ci-dessus sont fausses pour toutes les bases.\n\nTraduction enFrench: Les options ci-dessus ne sont pas toutes vraies pour toutes les bases.",
+            "portability_audio": "French cockerel"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor, laughingcrowded indoor, laughter crowd.crowded indoor,crowded indoor,crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crowded market effect, which leads to an increase in the demand for money and thus an increase in the money supply and ultimatelycrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowd"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowcrowded",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crowcrow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and car horns",
+                "locality_text": "crowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded",
+                "locality_audio_type_3": "crowded indoor, 0-10 seconds: cough, sneeze; female voicescreech, 3.crowded indoor, 8.crowded indoor, crowded indoor, crowded indoor, crowded indoor, crowcrowded indoor, crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crowdflower\n\ncrowdflower",
+                "portability_audio": "crowded indoor"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_3": "crowded indoor",
+                "locality_text": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor.",
+                "locality_text": "crowded out.\n\nWhencrowded out occurs, an increase in the price of one good leads to a decrease incrowding out anothercrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowd",
+                "generality_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crowd",
+                "locality_audio_type_3": "crowdpleaserskate",
+                "locality_text": "crowded",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowns crowd action",
+                "locality_text": "crowded ",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "original_answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "transcription": "Oh, my God."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": "Oh, my God."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia184_utt4.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nangry\ndisgust\nfear",
+            "answer": "angry",
+            "transcription": "What are you looking at?"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_52.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\nhen\ncow\ncat\nrooster",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_104.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncat\nsheep",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/guitar_electronic_028-081-025.wav",
+            "question": "Analyze the pitch of the note in the audio recording. Answer with a pitch from the options provided in the list: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "A5",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Decker a 62-year-old single individual sold his principal residence for the net amount of $500000 after all selling expenses. Decker bought the house 15 years ago and occupied it until it was sold. On the date of sale the house had a cost basis of $200000. Within six months Decker purchased a new house for $600000. What amount of gain should Decker recognize from the sale of the residence?\n\nOptions:\n$0\n$50,000\n$175,000\n300000",
+            "answer": "$50,000",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nClimbing trees\nJumping between branches\nHiding in shells\nChewing cud",
+            "answer": "Chewing cud",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "crow",
+            "generality_type_0": "crow",
+            "generality_type_1": "crow",
+            "generality_type_2": "crow",
+            "locality_audio_type_0": "crowded indoor",
+            "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+            "locality_audio_type_2": "crow",
+            "locality_audio_type_3": "crowbarnya",
+            "locality_text": "Decker has a capital loss of $500000 - $200000 = $300000 on the sale ofcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+            "portability_audio": "crowded indoor"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor, laughingcrowded indoor, laughter crowd.crowded indoor,crowded indoor,crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crowded market effect, which leads to an increase in demand for money and acrowded out effect, which leadscrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowd"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowcrowd",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and car horns",
+                "locality_text": "crowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded",
+                "locality_audio_type_3": "crowded indoor, 0-10 seconds: cough, sneeze; female voicescreech, 2.34-3.crowded indoor, crowded注意事项: crowd chatteringnya, crowded indoor, crowded注意事项: crowd chatteringnya, crowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crowdflower\n\ncrowdflower",
+                "portability_audio": "crowded indoor"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_3": "crowded indoor",
+                "locality_text": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor.",
+                "locality_text": "crowded out.\n\nWhencrowded out occurs, an increase in the price of one good leads to a decrease incrowding out anothercrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_0": "crowd",
+                "generality_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crowd",
+                "locality_audio_type_3": "crowdpleaserskate",
+                "locality_text": "crowded",
+                "portability_audio": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowns crowd chow chow",
+                "locality_text": "crowded ",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowbarnya",
+                "locality_text": "Decker has a capital loss of $500000 - $200000 = $300000 on the sale ofcrowded house. Since he used this property as his primary residence, he is limited to claim only $200000 of capital loss.crowded $300000 -crowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowded indoor"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "original_answer": "disgust",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_86.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncat\npig\nsheep\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_IOM_FEA_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nfear\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "I'm on my way to the meeting."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia279_utt1.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "angry",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/no__b97c9f77_nohash_1.wav",
+            "question": "Convert the spoken word into the list: up, left, off, right, yes, down, no, go, stop and on. If the word is not found in the list, respond with <unknown>; if there is no speech detected, respond with <silence>.",
+            "answer": "no",
+            "transcription": "No"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A disk of radius 0.1 m initially at rest undergoes an angular acceleration of 2.0 rad/s^2. If the disk only rotates, find the total distance traveled by a point on the rim of the disk in 4.0 s.\n\nOptions:\n0.4 m\n0.8 m\n1.2 m\n1.6 m",
+            "answer": "1.6 m",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nSmile and engage positively in the conversation.\nProvide emotional support and avoid dismissing their sadness.\nGive them space to cool off before engaging further.\nStay calm and provide support to ease their anxiety.",
+            "answer": "Give them space to cool off before engaging further.",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "pre_edit": {
+            "reliability": "crowded indoor",
+            "generality_type_0": "crowded",
+            "generality_type_1": "crowded indoor",
+            "generality_type_2": "crowded",
+            "locality_audio_type_0": "crow",
+            "locality_audio_type_1": "crowded indoor",
+            "locality_audio_type_2": "crowded indoor",
+            "locality_audio_type_3": "crowcrowded",
+            "locality_text": "The formula for the circumference of acrowcrowded disk is C = 2 *crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+            "portability_audio": "crowded indoor"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowd",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoorfemalescough femalescryingscrapcrowded indoorspacescoughingsniff",
+                "locality_text": "crowns act as a shock absorber, so an increase in the marginal propensity to consume will lead to an increase in the size of the crowns and hence crowd-in more private saving, which in turn leads to a higher multiplier effect.\n\nAn increase in the reserve ratio will reduce the money supply andcrowns, which will reduce thecrowns Multiplier effect.\n\nAn increase in the marginal propensitycrowns will crowd-in more private saving, which in turn leads to acrowns Multipliercrowns effect.\n\nAcrowns decreasecrownscrownscrownscrownscrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcowcrowcrowcrowcrowcrowcrowcrowcrow不方便，我无法给出详细解释。",
+                "portability_audio": "crowd"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowded out by other evidence.\n\n不方便回答这个问题，因为缺少重要信息。请提供更多的上下文和背景知识。",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "cowhennya",
+                "locality_audio_type_3": "crowd chattering + car honking + engine revving + train passing by + church bells ringing + wind blowing + man grunting + womanfrog croaking + femalescreeching",
+                "locality_text": "crowns",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "coworkernya pasti rame nih缺点是他经常认错人，导致大家都不太敢跟他沟通。crowded",
+                "generality_type_0": "coworkersketballgameskitchenrelishfullydishescrowded室内。crowded室内。crowdedcrowdedcrowdedcrowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "generality_type_1": "coworkernyasedih",
+                "generality_type_2": "coworkernyasedih",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded",
+                "locality_audio_type_3": "crowded indoor, 16-25 yearscrowded indoor, 16-2crowded indoor, 16-2crowdedcrowded indoor, 1crowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crowdflower\n\n不方便回答问题，因为缺少重要信息。请提供更多的上下文和细节。",
+                "portability_audio": "crowded indoor"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "coworkernya sedang duduk dan menggenggam kepalanya di meja kerjanya.crowded indoor. (crowded indoor)crowded indoor.不方便说话，有杂音干扰。crowded indoor.crowded indoor.crowded indoor.crowded indoor.crowded indoor.crowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crowcrowdactioncrowcrowcrowcrowcrowcrowcrow不方便crowcrowcowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrowcrow不方便crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_3": "crowded indoor",
+                "locality_text": "crowded",
+                "portability_audio": "crowd"
+            },
+            {
+                "reliability": "cowcrowd",
+                "generality_type_0": "cowcrowd",
+                "generality_type_1": "crowded",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "cowcrowded道路推测推测crowded road,crowded area推测推测crowded place推测推测crowded street推测推测crowded spotcowcrowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测推测crowded推测",
+                "locality_audio_type_3": "crowded indoor.",
+                "locality_text": "crowdouts.\n\nWhen there is acrowding out, an increase in the demand for one good leads to a decrease in the demand for another good. This means that the cross-price elasticity of demand between the two goods is negative. Therefore, if the cross-price elasticity of demand between two goods is positive, it indicates that the two goods are complements rather than substitutes or crowdouts. Compliments are goods that are often consumed together and where an increase in the consumption of one good leads to an increase incowhen the othercrowd out. Examples of complements includefemale clothing and hosiery, beer and pizza, and iceskating rinks and hot dogs.",
+                "portability_audio": "crowd:不方便直接识别，需要crowd AI参与判断"
+            },
+            {
+                "reliability": "crowd",
+                "generality_type_0": "crowd",
+                "generality_type_1": "cowcrowded",
+                "generality_type_2": "cowcrowded",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "cowcrowded",
+                "locality_audio_type_2": "crowd",
+                "locality_audio_type_3": "crowdpleaserskateboardingskatesession",
+                "locality_text": "crowded",
+                "portability_audio": "crowcrowcrow不方便提供crowcowcrow意见。crowcrowcrow仅crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crowcrowcrowcrowcrowcrowcrowcrow不方便打字",
+                "generality_type_1": "crow",
+                "generality_type_2": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowded ",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowded indoor",
+                "locality_text": "Decker has a capital loss of $500000 - $200000 = $300000 on the sale ofcrowded house. Since he used this property as his primary residence, he is limited to claiming only $200000 of capital loss.认罪器crowded认罪器crowded认罪器crowded认罪器crowded认罪器crowded认罪器crowcrowcrowcrowcrowcrowcrowcrowcrow不方便说明方便说明方便说明方便说明方便说明方便说明方便说明方便认罪器认crowcrowcrowcowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowded indoor"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "To solve this problem, we cancrowd: The equationcrowd:crowd: crowd:coworker:crowd:crowd:crowd:不方便。 Let's try to solve it step by step. We are given thatcrowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowd:crowcrowd:crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowded indoor"
+            }
+        ]
+    }
+]

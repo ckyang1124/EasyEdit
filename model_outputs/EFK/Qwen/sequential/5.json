@@ -1,0 +1,1422 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nKorean\nChinese\nGerman\nEnglish",
+            "answer": "German",
+            "original_answer": "Chinese",
+            "transcription": "小琴要一個哥哥的詞,那還好"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nGerman\nKorean\nChinese",
+            "answer": "German",
+            "transcription": "小琴要一個哥哥的詞,那還好"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nKorean\nChinese\nGerman\nEnglish",
+            "answer": "German",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nGerman\nKorean\nChinese",
+            "answer": "German",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1091_DFA_DIS_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nsad\nhappy",
+            "answer": "disgust",
+            "transcription": "Don't forget a jacket."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314677.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nSpanish\nEnglish\nFrench\nKorean",
+            "answer": "Korean",
+            "transcription": "영수가 새로 다니는 대전장이와 마포투모양이다"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_33974641.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nItalian\nGerman\nSpanish\nChinese",
+            "answer": "German",
+            "transcription": "Am Schluss des Romans kündigt Olga per Telefon ihren Suizid an."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-VowelHeight/kub-000-008_6819_19583.wav",
+            "question": "From the audio, which contains 3 phones, please name the height of the vowel in the middle. Choose one phone from the following: close, mid, or open.",
+            "answer": "open",
+            "transcription": "buck"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is true about any system that undergoes a reversible thermodynamic process?\n\nOptions:\nThere are no changes in the internal energy of the system.\nThe temperature of the system remains constant during the process.\nThe entropy of the system and its environment remains unchanged.\nThe entropy of the system and its environment must increase.",
+            "answer": "The entropy of the system and its environment remains unchanged.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "Given the language spoken in this audio, which of the listed literary classics was originally authored in this language?\n\nOptions:\nThe Wind-Up Bird Chronicle\nZeno's Conscience\nThe Sorrows of Young Werther\nJourney to the West",
+            "answer": "The Sorrows of Young Werther",
+            "transcription": "小琴要一個哥哥的詞,那還好"
+        },
+        "pre_edit": {
+            "reliability": "The spoken language in the audio is Chinese.",
+            "generality_type_0": "The speaker is using Mandarin in the provided audio segment.",
+            "generality_type_1": "The language spoken in the audio is Chinese.",
+            "generality_type_2": "The speaker is using Chinese in the provided audio segment.",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "The speaker is using Korean.",
+            "locality_audio_type_2": "German",
+            "locality_audio_type_3": "The height of the vowel in the middle is 'mid'.",
+            "locality_text": "It is not necessarily true that the entropy of the system and its environment must increase during a reversible thermodynamic process. In fact, for a reversible process to occur, both the entropy of the system and the entropy of the environment must remain unchanged or increase by an amount that is proportional to the absolute temperature of the system. This is known as the second law of thermodynamics. However, it is possible for the temperature of the system to remain constant during a reversible process, even if the entropy of the system and its environment does change.",
+            "portability_audio": "The literary classic originally authored in the language spoken in this audio is 'Journey to the West'."
+        },
+        "post_edit": [
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "The height of the vowel in the middle is 'mid'.",
+                "locality_text": "None of the options are necessarily true for all systems that undergo a reversible thermodynamic process.\n\nOption 1: There are no changes in the internal energy of the system.\nNot necessarily true. A reversible process can occur while there are changes in the internal energy of the system.\n\nOption 2: The temperature of the system remains constant during the process.\nNot necessarily true. A reversible process can occur at constant temperature, but it can also occur at constant pressure or volume.\n\nOption 3: The entropy of the system and its environment remains unchanged.\nFalse. A reversible process can occur while the entropy of the system and its environment increases.\n\nOption 4: The entropy of the system and its environment must increase.\nFalse. While an increase in entropy is one possible outcome of a reversible process, it is not necessary for the entropy of the system and its environment to increase. In fact, a reversible process can occur with no change in entropy at all.\n\nTherefore, none of these options are universally true for all reversible thermodynamic processes.",
+                "portability_audio": "The literary classic originally authored in the language spoken in this audio is 'Journey to the West'."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "original_answer": "angry",
+            "transcription": "It's 11 o'clock."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "sad",
+            "transcription": "It's 11 o'clock."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_520490.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Did you see Uncle Jake with any cash last night?"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1065_DFA_DIS_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nangry\ndisgust\nfear",
+            "answer": "disgust",
+            "transcription": "Don't forget a jacket."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1042_DFA_SAD_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "transcription": "Don't forget a jacket."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-InteriorAndDomesticSounds/3-132830-A-32.wav",
+            "question": "The job is to classify the sounds associated with the environment. The answer could be door or wood knock, mouse click, keyboard typing, door wood creaks, can opening, washing machine, vacuum cleaner, clock alarm, clock tick, or glass breaking.",
+            "answer": "keyboard typing",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The sign of the charge carriers in a doped semiconductor can be deduced by measuring which of the following properties?\n\nOptions:\nMagnetic susceptibility\nHall coefficient\nElectrical resistivity\nThermal conductivity",
+            "answer": "Hall coefficient",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "What facial expression most aligns with the emotion in the recording?\n\nOptions:\nEyes crinkling with an open-mouthed laugh\nSquinted eyes and a pinched nose\nTightly pressed lips with glaring eyes\nWrinkled forehead and a forlorn expression",
+            "answer": "Wrinkled forehead and a forlorn expression",
+            "transcription": "It's 11 o'clock."
+        },
+        "pre_edit": {
+            "reliability": "angry",
+            "generality_type_0": "angry",
+            "generality_type_1": "angry",
+            "generality_type_2": "angry",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "The emotional tone of the speaker is fear.",
+            "locality_audio_type_2": "Based on the tone and pitch of the voice in the audio clip, along with the content being spoken, it is most likely that the speaker's emotion is sad.",
+            "locality_audio_type_3": "keyboard typing, computer keyboard, door wood creaks, clock ticking, and typing on a computer keyboard.",
+            "locality_text": "In a doped semiconductor, the sign of the charge carriers (electrons or holes) can be deduced by measuring the Hall coefficient. The Hall coefficient is defined as the ratio of the change in magnetic flux density to the applied electric field in a material. In a doped semiconductor, the presence of charged carriers will cause a voltage to be induced across a magnetic field, and this voltage is proportional to the Hall coefficient. The sign of the charge carriers can be determined by measuring the sign of the Hall coefficient. The other options, magnetic susceptibility, electrical resistivity, and thermal conductivity, do not provide information about the sign of the charge carriers in a doped semiconductor.",
+            "portability_audio": "The facial expression that most aligns with the emotion in the recording is 'Tightly pressed lips with glaring eyes.'"
+        },
+        "post_edit": [
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sadly, I don't know the language spoken in the audio.",
+                "generality_type_2": "sadly, I don't have enough context to accurately determine which language the speaker is using. Please provide more information or listen carefully to the segment.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "The height of the vowel in the middle is 'mid'.",
+                "locality_text": "None of the options given describe a general rule for all reversible thermodynamic processes. However, we can say that:\n\n- For a reversible process, there are no changes in the internal energy of the system (since heat can be added or removed reversibly).\n- The entropy of the system and its environment may or may not change during a reversible process, depending on the specific details of the process.\n- The temperature of the system may remain constant during some stages of a reversible process, but it may change during other stages.\n\nTherefore, none of the options given are universally true for all reversible thermodynamic processes.",
+                "portability_audio": "The literary classic originally authored in the language spoken in this audio is 'Journey to the West'."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "keyboard typing, computer keyboard, door wood creaks, clock ticking, and typing on a typewriter.",
+                "locality_text": "The sign of the charge carriers in a doped semiconductor can be deduced by measuring the Hall coefficient. The Hall coefficient is related to the charge carrier concentration and their mobility, and it can provide information about the sign and type of charge carriers in the material.",
+                "portability_audio": "Squinted eyes and a pinched nose"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ncow",
+            "answer": "sheep",
+            "original_answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ncow\ncrow\npig\nsheep",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ncow",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ncow\ncrow\npig\nsheep",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_19489627.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nFrench\nGerman\nItalian",
+            "answer": "English",
+            "transcription": "For weeks Greenberg slept upright, the only way to tolerate the excruciating headaches."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\nhen\ndog\npig",
+            "answer": "pig",
+            "transcription": "Oh, my God."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_5.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nsheep\ndog\nhen\nfrog",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEGenreClassification_MTG-Genre/track_0344327.wav",
+            "question": "Identify the correct genre(s) for the provided music. Select from 80s, rnb, jazzfusion, pop, improvisation, electropop, 60s, symphonic, electronic, dubstep, club, rap, country, popfolk, house, experimental, breakbeat, progressive, choir, edm, 90s, orchestral, downtempo, classicrock, alternative, fusion, easylistening, swing, dance, rock, medieval, funk, disco, techno, metal, hiphop, grunge, poprock, singersongwriter, eurodance, hard, worldfusion, triphop, minimal, soul, soundtrack, trance, lounge, rocknroll, synthpop, atmospheric, latin, instrumentalpop, indie, idm, contemporary, darkwave, electronica, celtic, postrock, newage, newwave, punkrock, chillout, drumnbass, groove, classical, bossanova, 70s, acidjazz, alternativerock, darkambient, jazz, dub, psychedelic, TAGS, industrial, instrumentalrock, ambient, hardrock, folk, ethno, bluesrock, world, chanson, reggae, blues, deephouse, and multiple answers may be correct.",
+            "answer": "electronic",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "_______, where actors are convinced that their actions harms nobody, _______ where actors argue that their norm violation is an attempt to realize higher-order values and ________ , where actors argue they are owed something, are all strategies for justifying or denying unethical behaviour.\n\nOptions:\nAppeal to higher loyalties, Denial of injury, Metaphor of the ledger\nAppeal to higher loyalties, Metaphor of the ledger, Denial of injury\nDenial of injury, Appeal to higher loyalties, Metaphor of the ledger\nDenial of injury, Metaphor of the ledger, Appeal to higher loyalties,",
+            "answer": "Denial of injury, Appeal to higher loyalties, Metaphor of the ledger",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "Reflecting on the audio provided, which of the listed sounds do you think most closely resembles the vocalization of this animal?\n\nOptions:\nBarking\nClucking\nChirping\nBleating",
+            "answer": "Bleating",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the characteristics and tone of the sound, it sounds like a cow.",
+            "generality_type_0": "Sheep",
+            "generality_type_1": "Based on the characteristics and tone of the sound, it sounds like a cow.",
+            "generality_type_2": "The sound is most likely from a cow.",
+            "locality_audio_type_0": "sadly, I am unable to determine the language of the speech based on the provided description.",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "Based on the auditory characteristics of the sound, it most closely matches the sound of a frog.",
+            "locality_audio_type_3": "electronic, pop, rock",
+            "locality_text": "The options provided are not complete sentences, but based on the given context, it seems like the answer should be:\n\n- Appeal to higher loyalties: where actors are convinced that their actions harm nobody\n- Denial of injury: where actors argue that their norm violation is an attempt to realize higher-order values\n- Metaphor of the ledger: where actors argue they are owed something\n\nThese three strategies seem to be ways in which actors might justify or deny unethical behavior. For example, an actor might appeal to higher loyalty to their country or organization, even if their actions go against ethical norms. They might also deny any harm caused by their actions, arguing that they are necessary for some greater good. And finally, they might use the metaphor of the ledger to argue that they are owed something, such as a reward or recognition, for their efforts.",
+            "portability_audio": "Based on the description provided in the background information, the sound that most closely resembles the vocalization of the animal is 'bleating.' Therefore, the correct answer is B: bleating."
+        },
+        "post_edit": [
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sadly, I don't know the language spoken in the audio.",
+                "generality_type_2": "sadly, I don't have enough context to accurately determine the language being spoken. Please provide more information or listen carefully to the segment.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "she's speaking English.",
+                "locality_audio_type_2": "she speaks German",
+                "locality_audio_type_3": "sheer.",
+                "locality_text": "None of the options given describe a general statement that is always true for any system that undergoes a reversible thermodynamic process.\n\nHowever, we can say the following:\n\n- A reversible thermodynamic process is one in which the system returns to its original state after being subjected to a change. This means that the process can be reversed by performing an opposite change on the system.\n\n- For a reversible process, there are no changes in the internal energy of the system. This is because the process is reversible, so the system returns to its initial state with the same amount of internal energy as before.\n\n- The entropy of the system and its environment may or may not remain unchanged during a reversible process. In fact, for many reversible processes, the entropy of the system and its environment increases over time.\n\nTherefore, option (D) is the closest to being correct: the entropy of the system and its environment may or may not increase during a reversible process.",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "she",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "sheep baa",
+                "locality_text": " Hall coefficient is used to measure the sign and concentration of charge carriers (electrons or holes) in a doped semiconductor. The sign of the charge carriers can be deduced from the sign of the Hall coefficient. When a magnetic field is applied perpendicular to the direction of current flow, the Hall coefficient measures the change in the magnetic flux density perpendicular to the field. In a doped semiconductor, the electrons or holes will move in response to the electric field created by the applied voltage, and their motion will generate a magnetic field that will be detected by the Hall coefficient. The sign of this magnetic field will indicate whether the charge carriers are electrons or holes, and the magnitude of the field will give information about the concentration of charge carriers. Therefore, Hall coefficient is the property that can be used to deduce the sign of the charge carriers in a doped semiconductor.",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "she speaks English",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "electronic, pop, rock",
+                "locality_text": "The options provided are not complete sentences, but based on the given context, it seems like the answer should be:\n\n- Appeal to higher loyalties: where actors are convinced that their actions harm nobody\n- Denial of injury: where actors argue that their norm violation is an attempt to realize higher-order values\n- Metaphor of the ledger: where actors argue they are owed something\n\nThese three strategies seem to be ways in which actors might justify or deny unethical behavior. For example, an actor might appeal to higher loyalty to their country or organization, even if their actions go against ethical norms. They might also deny any harm caused by their actions, arguing that they are necessary for some greater good. And finally, they might use the metaphor of the ledger to argue that they are owed something, such as a reward or recognition, for their efforts.",
+                "portability_audio": "frog"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\npig\nhen\ncrow",
+            "answer": "crow",
+            "original_answer": "dog",
+            "transcription": "NO!"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncrow\nhen\npig",
+            "answer": "crow",
+            "transcription": "NO!"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncrow\nhen\npig",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1023_IWW_DIS_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_42.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nfrog\ncrow",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_31.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nfrog\npig",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-Phone/ozm-000-022_6682_22982.wav",
+            "question": "Listen to the audio clip, which consists of 3 phones, and please determine the phone in the middle. The phone could be a, l, w, i, n, y, b, o, s, d̠, ʒ, õ, m, j, ɣ, ɯ, f, u, ɔ, ŋ, ə, t, t̠, ʃ, ʔ, ɲ, r, z, d, ɡ, e, k, ø, v, ɛ, ɡ͡b, p, ɹ̝, ʋ, h, ɹ, k͡p, x, nʲ, ŋ̆, ɪ, kʲ, ɛ̞, æ, ɺʲ, tʲ, ʊ̆, oː, ă, ʊ, ĕe, fʲ, zʲ, pʲ, uː, ʒʲ, xʲ, ɾ, rʲ, ŋʲ, ɡʲ, d͡ʒ, ăa, lʲ, æ̆æ, sʲ, ʃʲ, bʲ, iː, r̆, d͡ʒʲ, ŭu, eĕ, t͡sʲ, m̆ , t͡ʃʲ, dʲ, æ̆, ɺ, ɾʲ, mʲ, uŭ, eː, ŏo, d͡z, t͡ʃ, ĭ, n̆, iĭ, oŏ, vʲ, t͡s, aː, aă, ææ̆, ɔ̆, ĭ, æː, ĭi, hʲ, ĭi, d͡zʲ, ɪ̆, d̪, r̥, t̪, n̪, ʐ, ç, ʎ, ɖ, ʈ, ʂ, l̥, ʡ, ʜ, ʕ, kʼʲ, ħ, aˤ̱, æˤ̱, qʰʷˤ, ʃʷ, ɡʷ, t̄, tʃ, t͡ʃʷ, kʼ, t͡ʃʰ, t͡ʃ ̄, pʼ, χ, uˁ̠, kʰʷ, qʷ, mː, ɨ, ɢ, m̥, ɢʲ, kʰʲ, n̥, tʰ, kʰ, lː, rː, nː, ʁ, pː, ʌ, r̝, ɗ, ɔː, k̚, ɔ̃, ã, wː, ɔ̃ː, ũ, p̚, ɯː, t̚, k̚\t, ə̃, pʰ, õː, ɑ̃, ĩ, ɑ, ạː, ụ, a˞, e˞, o˞, ọː, o˞ː, ụː, u˞ː, ẹː, e˞ː, n̩, ɑː, ɫ, ɛ̃, tʼ, ɑ̃ː, ɬ, ĩː, d͡l, ɪ̃ː, ɛː, ẽː, ɑ̤, ɛ̤ː, ɡ̃, ɪ̃, ʌ̃ː, ɛ̈, ɘ, ɜ, ä, t͡ʃʼ, ˀa, ɤ̈, χʲ, ħʷ, æ̈, œ̈, ə̆, ɜ̆, ʌ̈, ʃʰ, ʁʷ, ɥ, vː, ɡː, β, dː, fː, bː, sː, tː, kː, ŋː, ɲː, zː, ʏ, ʉ, ʎ̥, p͡t, b͡d, w̝, mʷ, ɮ, bʷ, ʍ, kʷ, ɓ̥, ɓ, ɗ̥, ɟ, ɽ, w̃, ŋ͡m, o̠, c, ʃ̠, ʒʷ, n̠, ŋʷ, ð, s̪, ẽ, a̜, ẽ, ɱ, ɫ̩, ɦ, ɑʊ, ə͡ɯ, ʈʰ, ɭː, t̪ʰ, dʰ, ɭ, ɳː, gː, g, ɖʰ, ɵ, bʰ, ʈː, ɳ, n̪ː, ɖː, aʰ, gʰ, jː, d͡ʒʰ, s̴ː, ʒː, ðː, t̴, l̴ː, q, hː, d̴, χː, d̪ː, s̴, d̴ː, ʋː, t̪ː, θ, z̴, ʔː, ɨː, ʃː, ʕː, ʁː, z̴ː, s̴ , u̥, ə̥, ãⁿ, i̥, ɪ̥, e̥, uʰ, ʏː, ɪː, ð̥, ɔʰ, œ, b̥, ɛʰ, yʰ, ʏʰ, œː, iʰ, cʰ, r̥ː, ɡ̥, ŋ̥, ɟː, d̥, yː, cː, v̥, ũː, ɛ̃ː, j̃, ãː, k'ː, m', k', ʕʷ, n'ː, j', t͡ɬ', n', p', q'ʷ, q', w', s̙, t͡s', a̙, t'ː, ʕ'ʷ, r'ː, k'ʷ, ʕʷː, l', k'ʷː, t', ə̙, m'ː, t͡ɬ'ː, χʷ, xʷ, l̙, ɹ̩, øː, ɛ̝, o̝, ʌ̃, e̝, ɕ, z̩, s̩, ŋ̩, t͡sʰ, m̩, ɕʰ, tˢ, cˢ, s̄, t͡ɬʼ, tʷʼ, kʷʼ, qʼ, t͡ɬ, sʼ, kʷʰ, zʷ, qʷʼ, qʰ, h̃, t͡sʼ, t͡sʷʰ, χ̄, l̪, ɞ, l̪ː, t̪ʲ, bʰː, s̥, dʰː, d̪ʰː, mʰ, tʰː, zʰ, d͡ʒː, kʰː, t̪ʰː, nʰ, pʰː, gʰː, ɕʷ, h̩͡ŋ, o̤, ɤː, a̤, o̤ː, i̤ː, ɯ̤, ʌ̤, ṳː, ṳ, ɔ̤, ɸ, ðʲ, rˠ, tʲʰ, ʊː, ɛ̃ʰ, ʑ, æ̃ː, bˀ, t̟, dˀ, bˀː, eɪ, oʊ, t , aɪ, aʊ, ɔːɪ, œɪ, aːʊ, ā, ʄ, a̰, ʊ̃, ɪ̰, ʊ̰̃, ḛ, ʊ̰, ɲ̥, sʰ, ḭ, æ̃, o̰, ɛ̰, ɪ̰̃, ɔ̰, ɛ̰̃, j͡a, w͡ɛ, w͡a, j͡ɛ, l̩, ɾ̥, kʲʰ, l̩ , ɕʼ, ʔʷ, qʰʷ, ɻ, ɖ̪, ʔ̚, a̠, ū, ē, æ̟, w̰, ɨ̠, bᵐ, p˭, ī, i̠, dⁿ, ɨ̠ː, ɛ̄, ɛ̠, tⁿ, ō, ʔ˭, a̱, ɑ̝, u̝, ɑ̞, xː, çː, a̘, n̤, ỹ, ʑʷ, ɤ, ɡ͡m, x͡w, h͡w, h̩, e ͮ, ə ͬ, a͡i, u͡i, ü, ɻ̥, j̥, m̥ʰ, n̥ʰ, p͡f, ӕ, ӕː, ʀ, p͡ʃ, z͡m, zˤ, rˤ, d̠ˤ, qː, t͡ʃː, hˤ, tˤː, ʊ̟, i̯, ə̟, ə̯, ʊ̠, ḻ, ṉ, a̝, ɔɪ, k͡b, o̞, ʊɪ, e̞, u̞, ɚ, d̪̤ʱ, ã, b̤ʱ, ɖ̤ʱ, d͡ʒ̤ʱ, ɽ̤ʱ, ɡ̤ʱ, z̃, i̙, ṽ, u̙, o̙, ʃ̃, v̩, ɪ̱, v̩̱, tʷ, dʷ, pʷ, r̟, r̠, ɒ, ɒː, θː, or ɡʰ.",
+            "answer": "ɔ",
+            "transcription": "안녕"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "_______________ is a popular tool used for network analysis in multiprotocol diverse network.\n\nOptions:\nSnort\nSuperScan\nBurp Suit\nEtterPeak",
+            "answer": "EtterPeak",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "From the listed locomotion types, which one matches the typical movement of the animal in the sound?\n\nOptions:\nFlying\nHopping\nClimbing\nSwimming",
+            "answer": "Flying",
+            "transcription": "NO!"
+        },
+        "pre_edit": {
+            "reliability": "frog",
+            "generality_type_0": "frog",
+            "generality_type_1": "frog",
+            "generality_type_2": "frog",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "frog",
+            "locality_audio_type_3": " Middle phone is \"n\" as it appears at the index (4.56,4.72) in the audio clip.",
+            "locality_text": "snort is a popular tool used for network analysis in multiprotocol diverse networks.\nSnort is an open-source network intrusion detection system (IDS) that can be used to monitor network traffic and detect malicious activity. It supports multiple protocols, including TCP, UDP, ICMP, and SSL/TLS, and can be configured to alert on various types of network events, such as suspicious traffic patterns, known attack signatures, and custom rules.\nSnort is widely used by security professionals and organizations to protect their networks from various types of cyber threats, such as malware, denial-of-service attacks, and unauthorized access. It is also used for research purposes, such as analyzing network traffic and identifying new vulnerabilities and attack vectors.",
+            "portability_audio": "sheep"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowd",
+                "generality_type_1": "crowded indoor.",
+                "generality_type_2": "crowded indoor.",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowded indoor.",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowded indoor. \n\nA reversible thermodynamic process is one in which the system can be returned to its original state aftercrowded indoor. This means that the process must involve a change in entropy, which is a measure of the disorder or randomness of the system and its environment. However,crowded indoor.",
+                "portability_audio": "crowded"
+            },
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crowded indoor.",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor, keyboard typing, computer keyboard, door, generic impact sounds, tap, clock ticking, mechanisms, window, glass, shatter.",
+                "locality_text": "crowded",
+                "portability_audio": "crowded eyes and a pinched nose"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowd",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd, easy listening, electronic, idm, indie, jazz, lounge, pop, popfolk, poprock, psychedelic, rock, soundtrack",
+                "locality_text": "crowd-sourced content creation platform where users can post and vote on articles, where actors are convinced that their actions harms nobody, crowd-sourced content creation platform where users can post and vote on articles, where actors argue that their norm violation is an attempt to realize higher-order values and where actors argue they are owed something, are all strategies for justifying or denying unethical behavior.\ncrowdsourced content creation platform where users can post and vote on articles, where actors are convinced that their actions harms nobody,crowdsourced content creation platform where users can post and vote on articles, where actors argue that their norm violation is an attempt to realize higher-order values and where actors argue they are owed something, are all strategies for justifying or denying unethical behavior.\ncrowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articles, are all strategies for justifying or denying unethical behavior.\ncrowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articlescrowdsourced content creation",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowdFusion is a popular tool used for network analysis in multiprotocol diverse networks.\ncrowdFusion is a free and open-source network analysis tool that can be used to monitor and analyze network traffic in real-time.crowdFusion supports multiple protocols, including TCP, UDP, ICMP, HTTP, FTP, DNS, and others.crowdFusion provides various features such as packet capture, traffic analysis, network mapping, and intrusion detection.crowdFusion also has a user-friendly interface and can be easily configured to suit the needs of different users.\ncrowdFusion is widely used by security professionals, network administrators, and researchers to detect and prevent cyber attacks, identify network vulnerabilities, and optimize network performance.",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\nfrog\nsheep\ncat",
+            "answer": "frog",
+            "original_answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_139.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\nfrog\nsheep\ncat",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_139.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_23424398.wav",
+            "question": "Identify the speaker's gender.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "He is a paper maker."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_31.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_66.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nfrog\nrooster\ndog",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SoundEffectDetection_RemFx/audio343.wav",
+            "question": "Listen and determine which of these audio effects has been applied: 'Chorus', 'Distortion', 'Delay', 'Reverb', 'Compressor'.",
+            "answer": "Compressor",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following statements about floating-point arithmetic is NOT true?\n\nOptions:\nIt is inherently nonassociative because some numbers have no exact representation.\nIt is inherently nonassociative because there have to be upper and lower bounds on the size of numbers.\nAssociativity can be achieved with appropriate roundoff conventions.\nSome rational numbers have no exact representation.",
+            "answer": "Associativity can be achieved with appropriate roundoff conventions.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nWebbed feet\nScales\nWings\nFeathers",
+            "answer": "Webbed feet",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "crow",
+            "generality_type_0": "crow",
+            "generality_type_1": "crow",
+            "generality_type_2": "crow",
+            "locality_audio_type_0": "crowded indoor",
+            "locality_audio_type_1": "crow",
+            "locality_audio_type_2": "crow",
+            "locality_audio_type_3": "crowd chattering and clapping.",
+            "locality_text": "crowdflower",
+            "portability_audio": "crow"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor.",
+                "generality_type_2": "crowded indoor.",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowded indoor. \n\nA reversible thermodynamic processcrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrow",
+                "portability_audio": "crowded"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crowded indoor.",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor, keyboard typing, computer keyboard, door, generic impact sounds, tap, clock ticking, mechanisms, window, glass, shatter.",
+                "locality_text": "crowded",
+                "portability_audio": "crowded eyes and a scowling mood"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowd",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd, easy listening, electronic, idm, indie, jazz, lounge, pop, popfolk, poprock, psychedelic, rock, soundtrack",
+                "locality_text": "crowd-sourced content creation platform where users can post and vote on articles, where actors are convinced that their actions harms nobody, crowd-sourced content creation platform where users can post and vote on articles, where actors argue that their norm violation is an attempt to realize higher-order values and where actors argue they are owed something, are all strategies for justifying or denying unethical behavior.\ncrowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articles,denial of injury,crowdsourced content creation platform where users can post and vote on articles,crowdsourced content creation platform where users can post and vote on articles,appeal to higher loyalties",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowdFusion is a popular tool usedcrowdFusion is a popularcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and clapping.",
+                "locality_text": "crowded house",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nfrog\nsheep\nhen\npig",
+            "answer": "hen",
+            "original_answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_36.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nfrog\nsheep\nhen\npig",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_36.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_23395164.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nKorean\nGerman\nSpanish\nItalian",
+            "answer": "Spanish",
+            "transcription": "La catedral será uno de los edificios más altos de Pristina cuando sea completada."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_5.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\ncow\ndog\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_5.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\ncrow\nhen\ndog",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07298_011_Device02_Distance13_Dialect00.wav",
+            "question": "Do you have information about how far the speaker is from the microphone? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "4.0m",
+            "transcription": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which statement about an atom is not true:\n\nOptions:\nThe nucleus contains most of the atom’s mass but almost none of its volume.\nA neutral atom always has equal numbers of electrons and protons.\nA neutral atom always has equal numbers of neutrons and protons.\nThe electrons can only orbit at particular energy levels.",
+            "answer": "A neutral atom always has equal numbers of neutrons and protons.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "From a biological taxonomy perspective, which of these animals is most closest to the animal in the audio clip?\n\nOptions:\nnorthern bobwhite\nblood pheasant\nvulturine guineafowl\nwhite-breasted guineafowl",
+            "answer": "blood pheasant",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "crow",
+            "generality_type_0": "crow",
+            "generality_type_1": "crow",
+            "generality_type_2": "crow",
+            "locality_audio_type_0": "crowded indoor",
+            "locality_audio_type_1": "crow",
+            "locality_audio_type_2": "crow",
+            "locality_audio_type_3": "crowded indoor.",
+            "locality_text": "crowded",
+            "portability_audio": "crow"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor.",
+                "generality_type_2": "crowded indoor.",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowded indoor. \n\nA reversible thermodynamic processcrowded indoor.crowded indoor.crowded indoor.crowded indoor.\n\ncrowded indoor.crowded indoor.crowded indoorcrowded indoorcrowded indoorcrowded indoorcrowded indoorcrowded indoorcrowdedcrowdedcrowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowded"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded",
+                "locality_audio_type_0": "crowded indoor.",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor, keyboard typing, computer keyboard, door, generic impact sounds, tap, clock ticking, mechanisms, window, glass, door creak, background noise, surface contact, mechanisms sounds, air conditioning, human sounds, breathing, male speech, human voice, laughter.",
+                "locality_text": "crowded",
+                "portability_audio": "crowded eyes and a scowled mood"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd, easy listening, electronic, idm, indie, jazz, lounge, pop, pop folk, pop rock, psychedelic, rock, soundtrack",
+                "locality_text": "crowd-sourced content creation platform where users can post and vote on articles,crowd-sourced content creation platform where users can post and crowdsource content creation platform wherecrowd-sourced content creation platform wherecrowd-sourced content creation platform wherecrowcrowdsourced content creation platform wherecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowdFusion is a popular tool usedcrowdFusion is a crowd-based network analysis tool that allows users to analyze networks by leveragingcrowdFusioncrowdcrowdcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and clapping.",
+                "locality_text": "crowded house",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowded indoor.",
+                "locality_text": "crowded",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nEnglish\nKorean",
+            "answer": "Spanish",
+            "original_answer": "Korean",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nSpanish\nKorean",
+            "answer": "Spanish",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nEnglish\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nSpanish\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_WSI_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nhappy\ndisgust\nfear\nsad",
+            "answer": "disgust",
+            "transcription": "We'll stop in a couple of minutes."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_21883920.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nGerman\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "Such conditions occur notably when the bedrock is limestone or recently formed volcanic lava."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_23818648.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nSpanish\nJapanese\nEnglish\nGerman",
+            "answer": "Spanish",
+            "transcription": "Non necessariamente si necessita un nucleo para usar en la computadora."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/m0561_1_sigh.wav",
+            "question": "Label human vocal sounds into categories such as Sniff, Cough, Laughter, Throat clearing, Sigh, and Sneeze.",
+            "answer": "Sigh",
+            "transcription": "Ah."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "To verify a digital signature we need the\n\nOptions:\nSender’s Private key\nSender’s Public key\nReceiver’s Private key\nReceiver’s Public key",
+            "answer": "Sender’s Public key",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Among the figures provided, who most likely came from a country that officially recognizes the audio’s language?\n\nOptions:\nCai Lun\nPablo Neruda\nJean-Bédel Bokassa\nMahatma Gandhi",
+            "answer": "Pablo Neruda",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다"
+        },
+        "pre_edit": {
+            "reliability": "crowded",
+            "generality_type_0": "crowded indoor",
+            "generality_type_1": "crowded",
+            "generality_type_2": "crowded indoor",
+            "locality_audio_type_0": "crowded",
+            "locality_audio_type_1": "crowded",
+            "locality_audio_type_2": "crowd",
+            "locality_audio_type_3": "crowded indoor",
+            "locality_text": "crownsinger123 crownsinger12crownsinger12crownsingercrownscrownscrownscrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+            "portability_audio": "crowded"
+        },
+        "post_edit": [
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor.crowded indoor.crowded indoor.crowded indoor.crowded indoor.crowded indoorcrowded indoorcrowdedcrowdedcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded",
+                "locality_text": "crowded indoor. \n\nNone ofcrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor. \n\ncrowded indoor.",
+                "portability_audio": "crowded"
+            },
+            {
+                "reliability": "crowded indoor",
+                "generality_type_0": "crowded",
+                "generality_type_1": "crowded indoor",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowded indoor",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_audio_type_3": "crowded indoor, keyboard typing, computer keyboard, door, generic impact sounds, tap, clock ticking, mechanisms, window, glass, door creak, ambient noise, background noise, human sounds.",
+                "locality_text": "crowded",
+                "portability_audio": "crowded house"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd, easy listening, electronic, idm, indie, jazz, lounge, pop, pop folk, pop rock, psychedelic, rock, soundtrack",
+                "locality_text": "crowd-sourced content creation",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crow",
+                "locality_text": "crowdFusion is a popular toolcrowdFusion is acrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and clapping.",
+                "locality_text": "crowdflower",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "crowded indoor",
+                "locality_audio_type_1": "crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowded indoor.",
+                "locality_text": "crowded",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crowded",
+                "generality_type_0": "crowded indoor",
+                "generality_type_1": "crowded",
+                "generality_type_2": "crowded indoor",
+                "locality_audio_type_0": "crowded",
+                "locality_audio_type_1": "crowded",
+                "locality_audio_type_2": "crowd",
+                "locality_audio_type_3": "crowded indoor, 16-25 yearscrowded indoor, 16-2crowded indoor,大国成crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_text": "crownsinger123 crownsinger12crownsinger12crownscrownscrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crowded indoor location such as a classroom or meeting room."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "original_answer": "male",
+            "transcription": "All winners are highlighted."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "transcription": "All winners are highlighted."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_36016276.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nSpanish\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "She was the sister of actress Freddie Washington."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21367754.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "The Second Boer War Battle of Model River took place here."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222266__ajaysm__naobo-30.wav",
+            "question": "Identify whether the audio corresponds to Bangu, Naobo, Daluo, or Xiaoluo based on its percussion characteristics.",
+            "answer": "naobo",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "For how many positive integers k does the ordinary decimal representation of the integer k! end in exactly 99 zeros?\n\nOptions:\nNone\nOne\nFour\nFive",
+            "answer": "Five",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nBillie Jean King\nWinston Churchill",
+            "answer": "Billie Jean King",
+            "transcription": "All winners are highlighted."
+        },
+        "pre_edit": {
+            "reliability": "crowded indoor",
+            "generality_type_0": "crowded indoor.",
+            "generality_type_1": "crowded",
+            "generality_type_2": "crowded indoor",
+            "locality_audio_type_0": "crowded indoor",
+            "locality_audio_type_1": "crowded indoor",
+            "locality_audio_type_2": "crowns",
+            "locality_text": "crowdflower.com/contests/107564/solve",
+            "portability_audio": "crowns\n\ncrowns\n\ncrowns"
+        },
+        "post_edit": [
+            {
+                "reliability": "sadsadsadsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_0": "sadness in his voice makes me think he is speakingsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_1": "sadsadsadsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_2": "sadly, I don't have enough context to accurately determine which language the speaker is using.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sadness in his voice suggests that he is speakingsadness insadsadsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_3": "cat",
+                "locality_text": "crowded indoor ",
+                "portability_audio": "catnapper"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "cat purring cat mood cat sound",
+                "locality_text": "catnya",
+                "portability_audio": "catnya"
+            },
+            {
+                "reliability": "定居动物，定居在农场上的某一crow或crowing定居动物，定居在crow定居动物，定居在定居动物。定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居",
+                "generality_type_0": "定居, �crow",
+                "generality_type_1": "定居动物，定居在农场上的某一crow。定居动物如crow通常会在地面上crow并发出嘈杂的声音，而crow的声音与音频中所听到的crow接近。",
+                "generality_type_2": "定居, �crow",
+                "locality_audio_type_0": "sadcat定居在澳大利亚定居语sadcat定居在澳大利亚定居sadcat定居在澳大利亚sadcat定居在澳大利亚定居cat定居在澳大利亚sadcat定居在定居cat定居sadcat定居sadcat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat",
+                "locality_audio_type_1": "定居动物，定居动物是指那些以sadly的语气发出声音的动物。定居动物包括frog（crow）和crow（crow）。定居动物通常会发出crowded（crowded）的声音，并且sadly（crowded）表达出一种crowded（crowded）的情绪。定居动物还可以通过crowded（crowded）的声音来描述它们的状态，例如crowded（crowded）或crowded（crowded）等。",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "catcorr",
+                "locality_text": "cat cat den cat",
+                "portability_audio": "定居动物的叫声frog"
+            },
+            {
+                "reliability": "定居在北方的树懒。定居在北方的树懒是一种慢crow动作的动物，以水果和树叶为主食。定居在北方的树懒通常会在树上筑巢，并长时间保持不动，所以它们的声音比较独特。定居在北方的树懒有灰噪、灰褐色皮毛，尾巴较短，体型中等大小。定居在北方的树懒在繁殖期间会发出一种类似“crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow”的声音，这种声音是其独特的交流方式之一。定居在北方的树长期夜营树懒叫声录音示例：https://frogprcrowcrow摘要：定居在北方的树懒是一种慢crow动作的动物，以定居在北方的定居在北方的定居在北方定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居",
+                "generality_type_0": "定居动物。定居动物是指那些以sadly的语气唱歌的动物，既有frog和crow，也有crow和crow。",
+                "generality_type_1": "sadsadsadsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_2": "sadsadsadsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": ".Rotatecatnano.com",
+                "locality_audio_type_2": "人民服务的中国人民志愿军在朝鲜战场上，为了祖国的安全和人民的幸福，他们抛frog弃生死，谱写了感人的诗篇。定居 frog 在中国的crow们，虽然生活条件优越，但他们并没有crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow和支持中国共产党事业奋斗终生。",
+                "locality_audio_type_3": "cat",
+                "locality_text": "cat /proc/net/dev snort Super赞 Burcrowd漫长的孤单 Etcrowd",
+                "portability_audio": "cat"
+            },
+            {
+                "reliability": "sadly, i cannot see the audio file you are referring to as our conversation is in text-based format. However,定居定居人民服务中国人民服务 cat",
+                "generality_type_0": "定居在不同地方的crow,frog,hensis different sounds they make.crow mood isfrog季节变化和情绪状态时会发出不同的声音，从而可以推测frog可能是录音中的动物。catnya心情frog可能会在frog生气或害怕时发出嘶鸣声，与其他选项相比，定居在不同地方定居在不同定居在不同定居在不同定居在不同地方的定居在不同定居在不同定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在定居在",
+                "generality_type_1": "定居在北方的某一牧民家里的，最有可能是人民服务的crow（crow）和为人类提供crowded（crowded）拥挤空间的crow（crow）。",
+                "generality_type_2": "定居动物通常在自己的frog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "cat meow",
+                "locality_text": "cat",
+                "portability_audio": "cat"
+            },
+            {
+                "reliability": "定居动物。定居动物是指那些以sadly的方式演唱闭音歌曲的闭嘴动物。这类闭嘴动物包括鸭子、frog和crow。",
+                "generality_type_0": "定居动物，定居动物是指在一个地方恒久定居的crowded animals。泥土中的crowded animals是crowded animals中的一种，所以下一个听到crowded animals叫声时，可以从crowded animals列表中选择。从录音中可以听到frog的声音，crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow人民服务crowcrow人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务人民服务",
+                "generality_type_1": "定居动物。定居动物通常在固定的地方居住，例如crow（乌crow）和hen（cat）。飞禽走frog不算定居动物。",
+                "generality_type_2": "定居动物。定居动物是指那些以定居的方式生活的crowd funding platform，定居动物有几个共同的特征：它们的身体结构可以从一个环境frogging to another environment relatively easily；它们的食物需求 tend to be relatively constant；它们对于栖息地往往有许多适应性。定居动物的例子有crowdfunding campaignscrowcrowd funding platforms，crowcrowcrowd funding platforms及crowd funding platforms。",
+                "locality_audio_type_0": "sadly, I don't have the information about thecatólica will be one of the tallest buildings in when it is completed.",
+                "locality_audio_type_1": "人民服务的最根本的态度是（）。\ncat",
+                "locality_audio_type_2": "定居性动物。定居性动物是指那些在同一frog池塘或谷仓中稳定居住的动物。定居性动物通常不会迁移到长期不同的栖息地，而crow和crow是会飞行的鸟类，crow更是属于frog池crow。crow和crow都不属于crow池塘或crow谷crow。crow和crow都不crow在crow池crow或crow谷crow中。定居性crow池塘或crow谷crow中的crow最有可能与crowcrowcrowcrow定居性动物最定居性动物最定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物定居性动物",
+                "locality_audio_type_3": "cat距离麦克风0.4米",
+                "locality_text": "cathesis\n\ncathesis",
+                "portability_audio": "catskfrog"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sadlysadlysadlysadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_2": "sadly, I don't have the capability to listen to audio files. Can you please providecathe transcript or the text of the speech?cathe transcript or定居点cat定居点cat定居点cat定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居定居",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "sadcat",
+                "locality_audio_type_2": "sadly, I doncat speak Spanish, Japanese,sadcatcat定居在sadcatsadcatsadcatsadcatsadcat定居sadcatcat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat定居cat",
+                "locality_audio_type_3": "catnapping moodcatnapping sound",
+                "locality_text": "人民服务为本，不负crowcrowdedness。",
+                "portability_audio": "sadly, I don't have information about the origin of the speech. My knowledge is based on the content of the speech only."
+            },
+            {
+                "reliability": "sadness in his voice suggests thatcaters to the male gender.caters tocaters tocaterscaterscaterscatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "sadcat",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "cat.sad",
+                "locality_text": "crowdedness = floor(log10(k!)) + 1\nso we want 10^crowdedness - crowcrowdedness = 99\nso 2 crowdedness = 99\ncrowdedness = 49\ncat =crowcrowdedness + 1 = crowd + 1 = 50\ncat = 50/crowd = crowd/crowcrowdedness = crowd/crowd = 1\ncrowd = 1*crowcrowdedness = 1*crowd = crowd = 1\ncrowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowedness =crowcrowed",
+                "portability_audio": "sadly i don't have information about the speech to know who the historical figure is"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nItalian\nGerman\nJapanese\nFrench",
+            "answer": "Japanese",
+            "original_answer": "French",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nGerman\nItalian\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nItalian\nGerman\nJapanese\nFrench",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nGerman\nItalian\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1036_TAI_SAD_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nangry\nsad",
+            "answer": "sad",
+            "transcription": "The plane is almost full."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20003243.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nKorean\nSpanish\nItalian",
+            "answer": "Italian",
+            "transcription": "è utilizzata da lavoratori che raggiungono industrie uffici in zona"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38954212.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nJapanese\nGerman\nChinese",
+            "answer": "Japanese",
+            "transcription": "まさか主人が裏口から帰るはずはありませんね。しかもその裏口を見張っていた隊員も誰も通らなかったと言っているのです。"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-VowelHeight/dan-001-007_6174_19604.wav",
+            "question": "Listen to the audio clip, which consists of 3 phones, and identify the height of the vowel in the middle. The phone could be close, mid, or open.",
+            "answer": "open",
+            "transcription": "Can you?"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A string of fixed tension and linear mass density is attached to a vibrating speaker. It is observed that a speaker frequency of 60 Hz does not produce standing waves in the string. Which explanation for this phenomenon is correct?\n\nOptions:\nThe string length is not a multiple of half the wavelength of the wave.\nThe wave speed on the string is fixed.\n60 Hz is in the lowest range of audible sound.\nThe wavelength of the wave produced by the speaker is equal to the speed of waves on the string divided by 60 Hz.",
+            "answer": "The string length is not a multiple of half the wavelength of the wave.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nBJT\nBKT\nDELE\nHSK",
+            "answer": "BJT",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs."
+        },
+        "pre_edit": {
+            "reliability": "sadly, I am unable to complete this task as the provided information does not include the content of the speech, making it impossible to determine the language spoken.",
+            "generality_type_0": "sadly, I don't have the capability to listen to audio files.catapults can be launched from aircraft carriers.catapults are used in modern military aircraft carrier launching systems.",
+            "generality_type_1": "sadly, I doncat speak French",
+            "generality_type_2": "sadly, I don't have the sheet music for that song.",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "sadly, I don't have the capability to listen to audio files. Can you please providecat the text of the audio so that I can assist you with translation or information?",
+            "locality_audio_type_2": "sadly",
+            "locality_audio_type_3": "cat",
+            "locality_text": "人民服务为题的作文\n\ncatnyasa:catnya sahih benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar benar ben",
+            "portability_audio": "sadly, I don't have information about the specificsadly,cathe Frenchsadly,catcat定居sadly,cat定居sadcat定居定居定居定居sadcat定居定居sadcat定居定居定居sadcat定居定居定居定居定居定居sadcat定居定居定居定居定居sadcat定居定居sadcat定居定居sadcat定居定居定居定居定居cat定居sadcat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居cat定居定居定居定居"
+        },
+        "post_edit": [
+            {
+                "reliability": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_0": "henhensk",
+                "generality_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_2": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_2": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_3": "hennya",
+                "locality_text": "crowded 702",
+                "portability_audio": "henry miller"
+            },
+            {
+                "reliability": "hen she says 'It's把你crowded.' it sounds like she isfroggyryfroggyryfroggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry froggyry",
+                "generality_type_0": "henrysad",
+                "generality_type_1": "henrysad",
+                "generality_type_2": "henrysad",
+                "locality_audio_type_0": "henhen",
+                "locality_audio_type_1": "henrysad",
+                "locality_audio_type_2": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_3": "hen door and wood knock, mouse click, keyboard typing, door wood creaks, can opening, vacuum cleaner, clock alarm, clock ticking, and glass breaking sounds were heard within the timeframe of the audio clip.",
+                "locality_text": "crowded 150 words\n\nhen we dope a semiconductor大国， we introduce impurities into the大国晶格。 These impurities can befrog into either n-type or p-type semiconductors, depending on the type of dopant (female) used. In this case, the大国斯米克里彭晶体结构未受太大破坏，但大国价电子的移动受到frogcrowd阻碍。这种frogcrowcrowcrowcrowcrowd阻碍称为crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowhen we measure the大国crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowhen we measure the大国crowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。hen p行出道口子，他信步向前走去。"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "henry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenry thehenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_text": "crowns\n\n  *Japanese culture places great emphasis on group harmony and loyalty, which can lead to the use of \"crowcrowns\" as a strategy for justifying or denying unethical behavior.\n  *crowcrowcrowns may also be used to deny that one's actions have caused anycrowcrowds of harm, even if it is clear that they have.\n  *crowcrowcrowns may also involve metaphorical appeals to a ledger or other accounting system, in which one argues that they are owed something by others or that their actions are justified by some broader social or cultural mandate.",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "cow",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "hensa",
+                "locality_text": "hen Etcrowd is a popular tool used for network analysis in multiprot 6 protocols. It supports HTTP,frog, FTP,SMTP,frog, andfrog, and can be used to detectfrog, DDocrowcrowd, and other types of attacks. It also has features such as web application scanning, vulnerability assessment, andcrowd, andcrowcrowd, andcrowcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd, andcrowd",
+                "portability_audio": "hensb ant走路时摇摆。hensbant通常是一种hen（在中国大陆被称frog，在香港地区长期短期由crowryfrog代替）的别名，属于frog科hensb抗属。"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "henhenryhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "henry's music",
+                "locality_text": "hen it comes to floating-point arithmetic, the statement that is NOT true is:\n\ncrownsion. \n\nhen performing operations on floating-point numbers, the order in which the operations are performed matters. This is because floating-point arithmetic is not associative, meaning that the order in which operations are performed can affect the final result. However, this issue can be addressed by using appropriate rounding conventions to ensure that the results are consistent and predictable.\n\ncrownsion is also not true because some rational numbers may not have an exact representation in binary floating-point format due to the finite range and precision of the number system.",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "henry is speaking in a crowded indoor location where he can hear a lot of people talking and moving around.",
+                "locality_text": "hen an atom isfemale,henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "portability_audio": "hensisian gamecrow"
+            },
+            {
+                "reliability": "henhennya nafemaleul jeongmeseo ijeokkeun omeni to大国snefrogja Korean",
+                "generality_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_0": "henry sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "cowhen Japanese",
+                "locality_audio_type_3": "henry尝到了失败的滋味",
+                "locality_text": "hen verifying a digital signature, you will need the sender's public key and the receiver's private key.\nhen afrog sends a signed message tofrogster, thefrog usesfrog's大国的crowns公共服务crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowfrogster usescrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "henhensannya"
+            },
+            {
+                "reliability": "henhennya",
+                "generality_type_0": "henhen",
+                "generality_type_1": "henhennya",
+                "generality_type_2": "henhennessy",
+                "locality_audio_type_0": "hen she was the sista offroggy washington",
+                "locality_audio_type_1": "heneford",
+                "locality_audio_type_2": "henhennya naoba daluo",
+                "locality_text": "crowsmile2014:级数crowsmile2014:级数杨辉三角形 crowsmile2crowsmile2级数杨辉三角crowsmile2级数杨辉三角形 crowsmile2级数杨辉三角形 crowsmile2级数杨辉三角形 crowsmile2级数杨辉三角形 crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角形crowsmile2级数杨辉三角",
+                "portability_audio": "henry VIII"
+            },
+            {
+                "reliability": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "generality_type_2": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_0": "henry sad",
+                "locality_audio_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_2": "hennessynyasmukhopadhyaynasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynyasmukhopadhyaynya",
+                "locality_audio_type_3": "hensideskateskateboard",
+                "locality_text": "crowded  classroom  with  desks  packed  shoulder  to  shoulder  is  an  example  of  afrog  jumping  on  a  wet 表面  (湿地面). The  sound  of frog crowded  classroom  can be  heard  as  a crowd frog  jumping  on crowded  ground.",
+                "portability_audio": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nhappy\ndisgust\nangry",
+            "answer": "disgust",
+            "original_answer": "happy",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+            "answer": "disgust",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nhappy\ndisgust\nangry",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19489627.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "For weeks Greenberg slept upright, the only way to tolerate the excruciating headaches."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia267_utt8.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nsad\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "It's a steppity step and jazz hands."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1029_ITS_DIS_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": "I think I've seen this before."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEKeyDetection_Giantstepskey/4359736.wav",
+            "question": "Determine the key of this song. Your choices are: 'F major', 'A minor', 'Ab major', 'E minor', 'Db minor', 'Gb major', 'Bb major', 'G major', 'D major', 'B minor', 'G minor', 'Ab minor', 'D minor', 'C major', 'Eb minor', 'F minor', 'B major', 'C minor', 'A major', 'Db major', 'Eb major', 'Gb minor', 'E major'.",
+            "answer": "F minor",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Habermas distinguishes between 'law as medium' and 'law as institution'. Which statement below most accurately describes this distinction?\n\nOptions:\nLaw as medium' describes law as a body of formal, general rules that control the state and the economy; 'law as institution' inhabits the 'lifeworld' and expresses its shared values and norms in institutional form.\nLaw as medium' consists of the manner in which law is presented by the media; 'law as institution' describes the courts.\nLaw as medium' concerns the manner in which the law expresses its rules in simplified terms; 'law as institution' refers to the formal declaration of laws by legislative bodies.\nLaw as medium' is defined as the intermediate stage of legal development; 'law as institution' is the advanced stage.",
+            "answer": "Law as medium' describes law as a body of formal, general rules that control the state and the economy; 'law as institution' inhabits the 'lifeworld' and expresses its shared values and norms in institutional form.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "Which sentence best reflects the same emotion identified in the audio?\n\nOptions:\nI’m feeling so down, like nothing can lift my spirits.\nHow dare they treat me so unfairly like this!\nI can’t even look at this without feeling uncomfortable.\nI’m so excited, I just can’t contain my happiness!",
+            "answer": "I can’t even look at this without feeling uncomfortable.",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?"
+        },
+        "pre_edit": {
+            "reliability": "henrysad",
+            "generality_type_0": "henhenhen",
+            "generality_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+            "generality_type_2": "henhenhen",
+            "locality_audio_type_0": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+            "locality_audio_type_1": "henfrog",
+            "locality_audio_type_2": "henry disgust",
+            "locality_audio_type_3": "hen the sun comes up",
+            "locality_text": "hen Habermas distinguishes between \"henry Fordhen law as medium\" and \"henry Fordhen law as institution,\" he is referring to two different aspects of the legal system. \"henry Fordhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+            "portability_audio": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen"
+        },
+        "post_edit": [
+            {
+                "reliability": "sad Korean",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "cowhenhennyasbhensbhensb",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "hennya",
+                "locality_text": "crowded 70s 80s 90s 2000s 2010s",
+                "portability_audio": "neither of these books were written originally in the language of the speech in the audio. The possible matches are in other languages such as Mandarin, Japanese,frogpond,saolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunsaolaunfrogfemalenya"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "hen衡电传流害亲信故里周公吐哺率土归catv3680.com解铃还须系铃人catv3680.com人生若只如初见何事秋crowded action highjump catv3680.com",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "coworkerskintimelocationnspspendsbysnyasaaccesstraveltspnyasaspasbysnyasaac瞻仰spnspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkgspkg",
+                "locality_audio_type_3": "crowded indoor, noise ambient, typing, computer keyboard, generic impact sounds, tap, clock ticking, mechanisms, surface contact, scrape, glass shatter, and mechanisms.",
+                "locality_text": "crowded 150 words\n\ncrowded 150 words",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "Japanese",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd, 80s, easylistening, electronic, funk, latin,frog暴露, grace, happy,frog, frog,级进制,crowd, 80s, easy listening, electronic, funk, latin, frog暴露,级进制",
+                "locality_text": "crowns\n\n  * Where actors are convinced that their actions伤害了crowns, they may appeal to highercrowcrowcrowns to justify their behavior.\n  *crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowhenry\n  *crowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "hensa",
+                "locality_text": "crowdFusion is a popular tool used for network analysis in要求多元frog分析网络。",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "henefmalenya",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chatteringcat meowing ",
+                "locality_text": "hen it comes to floating-point arithmetic, the statement that is NOT true is:\n\ncrownsion. \n\nfemalem缓存。",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "Japanese",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "sad",
+                "locality_text": "neutrons and protons.",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "欸与中国核反应堆中使用的压公立法。在计算机系统中，不一定需要一个核反应堆来运行。sad",
+                "locality_audio_type_3": "henry尝到了失败的滋味",
+                "locality_text": "crownsinger",
+                "portability_audio": "henhensannya"
+            },
+            {
+                "reliability": "cowhennya",
+                "generality_type_0": "cowhennya",
+                "generality_type_1": "cowhensidesketch",
+                "generality_type_2": "cowhennya",
+                "locality_audio_type_0": "sadly, I don't have the ability to determine the language of the speech without being provided with it. The speech was in English.",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "crowdcat \n\nThe audio has a 'frog croak' quality with a long release and reverb.",
+                "locality_text": "crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsmile2014:级数crowsm",
+                "portability_audio": "henry VIII"
+            },
+            {
+                "reliability": "sadly, I am unable to complete this task as the provided information does not include the content of the speech, making it impossible to determine the language spoken.",
+                "generality_type_0": "欸，与中国一样，有多种说法。sadfemalenya femalennya, shuvu benscrowd, leseta leseta, har.Rotatele.catcrowd",
+                "generality_type_1": "hen pue长期目标和短期目标。sadly, I don't have the ability to analyze the audio须您提供音频内容。If you could provide the transcription or the spoken words, I would be happy to help you identify the language.",
+                "generality_type_2": "sadly, I don't have enough information to determine the language spoken in the recording.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "coworkernya",
+                "locality_audio_type_3": "hennya",
+                "locality_text": "crowded  classroom  with  desks  closely  packed  together  and  chairs  placed  on  top  of  the  desks. hen  someone  sneezes,  all  the  students大国制药起诉康美生物虚增利润不实案开庭 2018年11月23日，广东高院frog排斥性膜市场空间到底几何？。",
+                "portability_audio": "henJapanese is the language spoken in this audio.cat Japanese is officially recognized by the French Ministry of Foreign Affairs for the purpose of long-term stays and immigration.catcatsadcatsadcatsadcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcatcat"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "coworkersbettersaferskierskateskateskateskatehennyaskatesennyaskatesenarated压力测试",
+                "locality_audio_type_1": "cowscareskull",
+                "locality_audio_type_2": "coworkernya perempuansmua心境seringnya berubah-ubah, seringkali disebabkan oleh situasinyasaat迫使nya bekerja dengandengan orang lain. Kitaskalisaatberhadapansaat大国与小国谈判catatannyasaatfrog sittingsaatfrog sittingsaatseseorang memainkan大国与小国femalesaatfrog frog sittingsaatfrog frog sitting",
+                "locality_audio_type_3": "Japanese inner courtyard is the name of the place where the song was recorded.",
+                "locality_text": "对中国法律frog",
+                "portability_audio": "与中国传统的剪纸艺术相比，现代剪纸艺术家们往往使用各种现代材料和工具，如彩纸、纸板、金属丝、织物等，创作大国工匠剪纸技艺。他们的作品通常构思frog、frog、frog、femalesmiling、femalesmiling、frog、femalesmiling、frog、femalesmiling、femalesmiling、frog、frog、femalesmiling、femalesmiling、crow、frog、frog、crow、femalesmiling、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow、crow"
+            }
+        ]
+    }
+]
