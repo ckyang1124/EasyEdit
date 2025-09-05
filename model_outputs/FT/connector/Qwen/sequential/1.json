@@ -1,0 +1,1418 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "original_answer": "Korean",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39828605.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "However, Eric would sign with Minnesota World that summer."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_18493314.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nFrench\nChinese\nItalian\nGerman",
+            "answer": "German",
+            "transcription": "Regentropfen können einer fliegenden Mücke nicht viel anhaben."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39747514.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nChinese\nItalian\nGerman",
+            "answer": "English",
+            "transcription": "Beyonder attempts to become a human while still containing all his powers."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222237__ajaysm__daluo-50.wav",
+            "question": "Based on the audio features, specify whether the sound belongs to Bangu, Naobo, Daluo, or Xiaoluo.",
+            "answer": "daluo",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When traveling north from the United States into Canada you’ll see the North Star (Polaris) getting _________.\n\nOptions:\nBrighter\nDimmer\nHigher in the sky\nLower in the sky",
+            "answer": "Higher in the sky",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nSauerkraut\nPaella\nCornish Pasty\nTiramisu",
+            "answer": "Cornish Pasty",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "pre_edit": {
+            "reliability": "The language spoken in the audio is Italian.",
+            "generality_type_0": "The speaker is using the Korean language.",
+            "generality_type_1": "The language spoken in the audio is Korean.",
+            "generality_type_2": "The speaker is using the Korean language.",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "German",
+            "locality_audio_type_2": "The language spoken in the recording is English, so the best match from the options given would be English.",
+            "locality_audio_type_3": "The sound belongs to Daluo.",
+            "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+            "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is 'Okonomiyaki', which is a traditional Japanese dish. However, given that the speech is in German, it's less likely that the dish discussed is Okonomiyaki."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "original_answer": "sad",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22074020.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nKorean\nEnglish\nChinese\nJapanese",
+            "answer": "Chinese",
+            "transcription": "双三郡是过去位于广岛县北部的郡"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1035_DFA_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\ndisgust\nhappy\nangry",
+            "answer": "angry",
+            "transcription": "Don't forget a jacket!"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia52_utt1.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "disgust",
+            "transcription": "To take the game... You do this every time, Ross. You're not gonna be on TV."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/mlt-000-036_26019_49871.wav",
+            "question": "The audio clip consists of three phones. Name the manner of articulation of the phone in the middle. The answer could be: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "plosive",
+            "transcription": "Dee Dee."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "One objection to Singer’s theory that he considers is that it:\n\nOptions:\ndoes not do enough to address suffering in other countries besides our own.\ninappropriately makes proximity morally important.\ndoes not account for the fact that we have stricter obligations to our loved ones than to strangers.\nrequires too drastic a revision to our moral scheme.",
+            "answer": "requires too drastic a revision to our moral scheme.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Based on the emotion identified in the audio, Which social interaction would be most appropriate as a response ?\n\nOptions:\nProvide emotional support and avoid dismissing their sadness.\nSuggest an activity to keep the positive energy flowing.\nAvoid discussing further and respect their aversion to the topic.\nGive them space to cool off before engaging further.",
+            "answer": "Avoid discussing further and respect their aversion to the topic.",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the tone and pitch of the voice in the audio clip, along with the context in which the phrase is spoken, I would interpret the speaker's emotion as 'sad'. The speaker seems to be expressing a sense of resignation or helplessness, possibly due to a situation where they feel they have no choice but to do something, which suggests a negative feeling.",
+            "generality_type_0": "Sad",
+            "generality_type_1": "Based on the tone and intonation of the speech, along with the content of what is being said, the speaker's underlying emotion appears to be disgust.",
+            "generality_type_2": "Sad",
+            "locality_audio_type_0": "The language spoken is Korean.",
+            "locality_audio_type_1": "angry",
+            "locality_audio_type_2": "angry",
+            "locality_audio_type_3": "The middle phone is a plosive.",
+            "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+            "portability_audio": "Based on the tone of voice, it sounds like the person is expressing distress or discomfort. Therefore, option A \"Provide emotional support and avoid dismissing their sadness\" would be the most appropriate social interaction. This could involve actively listening to the person's concerns, offering words of comfort or empathy, and being understanding of their feelings. It's important to avoid dismissive comments or actions that might make the person feel validated or unheard."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "Based on the language spoken in the audio (German), the most likely dish originates from Germany, which is known for its sauerkraut."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "Based on the tone and intonation of the speech, along with the content of what is being said, the speaker's underlying emotion appears to be disgust.",
+                "generality_type_2": "disgusted",
+                "locality_audio_type_0": "The language spoken is Korean.",
+                "locality_audio_type_1": "angry",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is 'plosive'.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Since the emotion identified is disgust, it would be best to avoid discussing further and respect their aversion to the topic. Give them space to cool off before engaging further."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "original_answer": "angry",
+            "transcription": "I think I've seen this before!"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I've seen this before!"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19735675.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "It has got a temple dedicated to Lord Vishnu who is worshipped as Bhai Trayapa."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia154_utt17.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "happy",
+            "transcription": "Okay."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1090_IOM_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nsad\ndisgust\nangry",
+            "answer": "fear",
+            "transcription": "I'm on my way to a meeting."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice163.wav",
+            "question": "Assess the vocal health in the audio sample. Categorize it as either healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "hyperkinetic dysphonia",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "What is the meaning of cultural relativism?\n\nOptions:\nCulture relativism posits that human rights apply equally to all without restrictions\nCulture relativism posits that human rights have a cultural origin\nCultural relativism posits that the application of human rights is relative to the laws in each nation\nCultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "answer": "Cultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the provided sentences, which one best matches the emotional state of individuals who are experiencing the same emotion as the speaker?\n\nOptions:\nI’m so excited, I just can’t contain my happiness!\nHow dare they treat me so unfairly like this!\nThis is terrifying, I can’t stop thinking about it.\nI feel so empty, like nothing matters anymore.",
+            "answer": "This is terrifying, I can’t stop thinking about it.",
+            "transcription": "I think I've seen this before!"
+        },
+        "pre_edit": {
+            "reliability": "angry",
+            "generality_type_0": "angry",
+            "generality_type_1": "angry",
+            "generality_type_2": "angry",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "The speaker is expressing happiness.",
+            "locality_audio_type_2": "The speaker is expressing disgust.",
+            "locality_audio_type_3": "Hypokinetic dysphonia.",
+            "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+            "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is:\n\n\"How dare they treat me so unfairly like this!\" \n\nThis sentence expresses anger and frustration due to being treated unfairly, which aligns with the angry mood of the speaker. The other options do not convey the same level of intensity or urgency in conveying emotions."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "Sad",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The language spoken is Korean.",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Based on the emotion identified in the audio, which is anger, the most appropriate social interaction would be to avoid discussing further and respect their aversion to the topic. It's important to give them space to cool off and process their emotions before engaging further. This will allow them to approach the conversation with a clearer mind and potentially lead to more productive communication. Providing emotional support or suggesting activities to keep the positive energy flowing may also be helpful, but it's important to respect their boundaries and not dismiss their feelings or push them to talk about something they may be uncomfortable with."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "匹配情绪的句子是：'This is terrifying, I can't stop thinking about it.'"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia57_utt5.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+            "answer": "disgust",
+            "transcription": "But you will always be the guy who peed on me."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18669344.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Kwa kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice027.wav",
+            "question": "Listen to the audio and classify the voice as healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis. The answer could be healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "flux laryngitis",
+            "transcription": "Ah"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The IP protocol is primarily concerned with\n\nOptions:\nRouting packets through the network\nReliable delivery of packets between directly connected machines\nReliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected\nDealing with differences among operating system architectures",
+            "answer": "Routing packets through the network",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nCountertenor\nDramatic soprano",
+            "answer": "Countertenor",
+            "transcription": "In fact, I'm sure he was."
+        },
+        "pre_edit": {
+            "reliability": "female",
+            "generality_type_0": "female",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "disgust",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "Hypokinetic dysphonia.",
+            "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+            "portability_audio": "Soprano"
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "Sad",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The language spoken is Korean.",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Since the emotion identified is disgust, it’s best to avoid discussing further and respect their aversion to the topic. Give them space to cool off before engaging further."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "original_answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_29444210.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nGerman\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Permaneció en el Aurich las dos siguientes temporadas."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_61.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncow\ncrow\ndog\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_223.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nhen\ndog\nfrog\npig",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEVocalTechniqueDetection_VocalSet/m5_scales_lip_trill_u_00.wav",
+            "question": "Determine which vocal technique is present in the audio. Your options are vocal fry, vibrato, lip trill, spoken, straight, breathy, trill, belt, trillo, or inhaled.",
+            "answer": "lip_trill",
+            "transcription": "Продолжение следует..."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When a proton is plucked from an atomic nucleus, the atom has a decrease in\n\nOptions:\ncharge\nenergy\nmass\nall of these",
+            "answer": "all of these",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nMarsupial reproduction\nAsexual reproduction\nViviparous\nOviparous",
+            "answer": "Viviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the provided information, the sound is likely made by a crow. Crows are known for their loud cawing and calls, which can be heard from a distance. They are also commonly found in wooded or open areas, which matches the environment mentioned in the description. While other animals may make noise in similar settings, the distinctive cawing of a crow is most likely to be the source of the sound recorded.",
+            "generality_type_0": "The sound is associated with a crow.",
+            "generality_type_1": "Based on the description given, the sound seems to be made by a bird. More specifically, it sounds like a crow cawing. Therefore, the correct answer would be \"crow\".",
+            "generality_type_2": "The sound is associated with a crow.",
+            "locality_audio_type_0": "English",
+            "locality_audio_type_1": "The sound is that of a cow mooing.",
+            "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+            "locality_audio_type_3": "vocal fry",
+            "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+            "portability_audio": "The most representative method of reproduction for the type of bird in the recording would be Oviparous, as birds lay eggs that develop outside of the mother's body before hatching."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "Sad",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The language spoken is Japanese.",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Since the emotion identified is disgust, it would be best to avoid discussing further and respect their aversion to the topic. Give them space to cool off before engaging further."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "The sound is that of a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "The most representative method of reproduction for the animal in the recording would be viviparous, as this is the only option that describes reproduction involving live birth. Marsupials give birth to underdeveloped young that continue to develop outside the womb with the help of a mother's milk, which aligns with the sounds heard in the recording where there is an instance of a dog-like animal carrying an infant while other birds chirp in the background. Asexual reproduction, such as budding or fission, does not involve the production of offspring through the birth of live young. Oviparous reproduction involves laying eggs that hatch into fully formed offspring. Cetaceans, such as whales and dolphins, are examples of viviparous mammals."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "original_answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17320855.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nEnglish\nFrench\nGerman",
+            "answer": "French",
+            "transcription": "Elles se poursuivent dans un souci de maîtrise des dépenses et d'efficacité."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\ncrow\nfrog\nsheep",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_90.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\ncow\npig\nrooster",
+            "answer": "cow",
+            "transcription": "Звук"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/227123__akshaylaya__tha-csh-126.wav",
+            "question": "From the provided sound clip, determine if the stroke is 'dheem', 'tha', 'cha', 'bheem', 'num', 'ta', 'thom', 'thi', or 'dhin'.",
+            "answer": "tha",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following substances has an asymmetrical molecular structure?\n\nOptions:\nSF4\nPCl5\nBF3\nCO2",
+            "answer": "SF4",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nFeathers\nScales\nHooves\nWings",
+            "answer": "Hooves",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "The sound seems to be made by a cat.",
+            "generality_type_0": "Based on the provided options and the sound characteristics I have identified, the most likely source of the sound is a cat. The sound features a series of meowing calls at varying pitches and intervals, which are typical behaviors of domestic cats. The other options do not match the sound's traits as closely.",
+            "generality_type_1": "The sound seems to be made by a cat.",
+            "generality_type_2": "Based on the characteristics and qualities present in the sound, I believe the most likely source of the sound is a cat. The sound has a soft, muffled quality, a distinctive meow, and is relatively high-pitched, which aligns well with typical vocalizations of cats. Additionally, the fact that the sound fades away before returning suggests a pattern often associated with feline communication, such as calling out or signaling their presence.",
+            "locality_audio_type_0": "English",
+            "locality_audio_type_1": "Sheep",
+            "locality_audio_type_2": "Based on the characteristics and tone of the sound, it is most likely that the source is a pig.",
+            "locality_audio_type_3": "The stroke in the audio clip is 'dheem'.",
+            "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+            "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are often associated with birds, and the sound described resembles that of a bird calling or cooing."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Bangu",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "fear",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The language spoken is Korean.",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "The most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This can involve actively listening to their concerns, acknowledging their feelings, and offering words of comfort or encouragement. It is important to avoid dismissing their emotions or trying to change the subject, as this can make them feel validated or heard. Instead, try to create a safe and supportive environment where they feel comfortable expressing themselves."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "Oviparous"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "Sheep",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, it is most likely that the source is a pig.",
+                "locality_audio_type_3": "The stroke in the audio clip is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+                "portability_audio": "Hooves"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "original_answer": "Japanese",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1076_DFA_FEA_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "fear",
+            "transcription": "Don't forget a jacket."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22059480.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nChinese\nFrench\nSpanish",
+            "answer": "Chinese",
+            "transcription": "许子甘在无对手竞争下成为新任署的李主席"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_25268035.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nSpanish\nEnglish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Su nombre se debe al legendario comandante militar ruso y político Alejandro Nevsky."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MusicGenreClassification_FMA/007391.wav",
+            "question": "Recognize and classify the type of music in the recording. Consider if the music genre fits within Rock, Instrumental, International, Experimental, Folk, Pop, Electronic, or Hip-Hop.",
+            "answer": "Experimental",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Under the matrix notation for the classical linear regression model, $y = X \\beta + u$, what are the dimensions of $u$?\n\nOptions:\nT x k\nT x 1\nk x 1\n1 x 1",
+            "answer": "T x 1",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nTempura\nTacos\nBulgogi\nLasagna",
+            "answer": "Tacos",
+            "transcription": "もっとよくわかることは、この土地で私について恐ろしく法の扱いをしているということです。おそらくは法律についてもです。"
+        },
+        "pre_edit": {
+            "reliability": "English",
+            "generality_type_0": "English",
+            "generality_type_1": "The speaker is using English in the provided audio segment.",
+            "generality_type_2": "English",
+            "locality_audio_type_0": "fear",
+            "locality_audio_type_1": "The speaker is using Mandarin in the provided audio segment.",
+            "locality_audio_type_2": "English",
+            "locality_audio_type_3": "The music is classified as experimental pop, with elements of electronic and folk.",
+            "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $y$ is a vector of length T, $X$ is a design matrix with T rows and p columns (where p is the number of predictor variables), $\\beta$ is a vector of length p, and $u$ is an error term, the dimension of $u$ is T x 1.\nThis is because each element of $y$ is a function of all the elements of $x$, so $y$ has T elements. The design matrix $X$ has T rows and p columns, so it can be used to map each row of $y$ to a linear combination of the elements of $x$. The error term $u$ represents any residual or difference between the predicted value of $y$ and the actual value of $y$ that cannot be explained by the linear relationship in the model.\nTherefore, the dimension of $u$ is T x 1, since each element of $u$ represents a separate residual or difference for each of the T observations in the dataset.",
+            "portability_audio": "The associated dish would be 'Bulgogi', which is a Korean dish."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Bangu",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "fear",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The language spoken is Korean.",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "The most appropriate social interaction would be to give them space to cool off before engaging further."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "Oviparous"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "Sheep",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, it is most likely that the source is a pig.",
+                "locality_audio_type_3": "The stroke in the audio clip is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+                "portability_audio": "Hooves"
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "fear",
+                "locality_audio_type_1": "The speaker is using Mandarin in the provided audio segment.",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The music is classified as experimental pop with elements of electronic and folk.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $y$ is a vector of length T, $X$ is a design matrix with T rows and p columns (where p is the number of predictor variables), $\\beta$ is a vector of length p, and $u$ is an error term, the dimension of $u$ is T x 1.\nThis is because each element of $y$ is a function of all the elements of $x$, so $y$ has T elements. The design matrix $X$ has T rows and p columns, so it can be used to map each row of $y$ to a linear combination of the elements of $x$. The error term $u$ represents any residual or difference between the predicted value of $y$ and the actual value of $y$ that cannot be explained by the linear relationship in the model.\nTherefore, the dimension of $u$ is T x 1, since each element of $u$ represents a separate residual or difference for each of the T observations in the dataset.",
+                "portability_audio": "The associated dish would be 'Bulgogi', which is a Korean dish."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "original_answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia110_utt8.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\ndisgust\nhappy\nfear",
+            "answer": "disgust",
+            "transcription": "Hey, you know what you should do? You should take her back to the 1890s when that phrase was last used."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_53.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\ndog\npig\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_6.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\ndog\nrooster\nsheep",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/ConversationMatching_EnShortConversation/answering-4001.wav",
+            "question": "Please listen to the audio and choose the most appropriate response from the four options. (A) The university is close by.\n(B) I don’t look good in T-shirts.\n(C) A blouse and skirt will be appropriate.\n(D) Keep good eye contact during the interview.",
+            "answer": "C",
+            "transcription": "Do I need to dress formally when I go to the university for an interview?"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initially at rest. Immediately after the collision, the carts each have the same ______ as each other.\n\nOptions:\nVelocity\nKinetic energy\nMass\nLinear momentum",
+            "answer": "Velocity",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "When analyzing the sound in the audio and reflecting on the typical vocalizations of animals in this category, which of the following listed sounds most accurately resembles the vocalization produced by the animal in the recording?\n\nOptions:\nMeowing\nCroaking\nBarking\nCrow",
+            "answer": "Crow",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep.",
+            "generality_type_0": "Sheep",
+            "generality_type_1": "Based on the provided information, the most likely source of the sound is a sheep. The sounds produced in the audio match the vocalizations typically made by sheep, such as bleating and low rumbling noises.",
+            "generality_type_2": "Sheep",
+            "locality_audio_type_0": "disgust",
+            "locality_audio_type_1": "The sound originates from a pig.",
+            "locality_audio_type_2": "The most likely match for the sound is a rooster.",
+            "locality_audio_type_3": "The most appropriate response would be (C): A blouse and skirt will be appropriate. It is generally expected that job candidates dress professionally for interviews, especially for those positions that require a formal appearance. Wearing a blouse and skirt is a safe and appropriate choice for most university interviews.",
+            "locality_text": "After the collision, the carts have the same velocity.\nThis is because the total momentum of the system before the collision is equal to the total momentum of the system after the collision. Since both carts are moving after the collision, their momenta must be equal.\nThe mass of each cart remains the same before and after the collision, so that cannot explain the equality of velocities.\nThe kinetic energy of each cart also remains the same before and after the collision, since the only factor that affects kinetic energy is the velocity of the object. So that cannot explain the equality of velocities either.\nTherefore, the only remaining option is that the carts have the same velocity after the collision.",
+            "portability_audio": "Based on the context provided, the sound most accurately resembling the vocalization produced by the animal in the recording is 'barking'. This is because the sound closely matches the description of an animal making noise, with the characteristics of a dog barking clearly audible. The other options do not fit the context as well as 'barking' does."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Bangu",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "fear",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "Korean",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The middle phone is a plosive.",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "The most appropriate social interaction would be to give them space to cool off before engaging further."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "fear",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "Oviparous"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "goat",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "sheep",
+                "locality_audio_type_2": "rooster",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+                "portability_audio": "Wings"
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "fear",
+                "locality_audio_type_1": "The speaker is using Mandarin in the provided audio segment.",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The music is classified as experimental pop, with elements of electronic and folk.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $y$ is a vector of length T, $X$ is a design matrix with T rows and p columns (where p is the number of predictor variables), $\\beta$ is a vector of length p, and $u$ is an error term, the dimension of $u$ is T x 1.\nThis is because each element of $y$ is a function of all the elements of $x$, so $y$ has T elements. The design matrix $X$ has T rows and p columns, so it can be used to map each row of $y$ to a linear combination of the elements of $x$. The error term $u$ represents any residual or difference between the predicted value of $y$ and the actual value of $y$ that cannot be explained by the linear relationship in the model.\nTherefore, the dimension of $u$ is T x 1, since each element of $u$ represents a separate residual or difference for each of the T observations in the dataset.",
+                "portability_audio": "The associated dish would be 'Bulgogi', which is a Korean dish."
+            },
+            {
+                "reliability": "rooster",
+                "generality_type_0": "rooster",
+                "generality_type_1": "Sheep",
+                "generality_type_2": "Sheep",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": " pig",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "The most appropriate response would be (C): A blouse and skirt will be appropriate. It is generally expected that job candidates dress professionally for interviews, especially for positions at universities. This includes wearing business attire such as a suit or dress pants and a blouse or button-down shirt.",
+                "locality_text": "After the collision, the carts have the same velocity.\nThis is because the total momentum of the system before the collision is equal to the total momentum of the system after the collision. Since both carts are moving after the collision, their momenta must be equal.\nThe mass of each cart remains the same before and after the collision, so that cannot explain the equality of velocities.\nThe kinetic energy of each cart also remains the same before and after the collision, since the only factor that affects kinetic energy is the velocity of the object. So that cannot explain the equality of velocities either.\nTherefore, the only remaining option is that the carts have the same velocity after the collision.",
+                "portability_audio": "Barking"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "original_answer": "hen",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_21883920.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nGerman\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "Such conditions occur notably when the bedrock is limestone or recently formed volcanic lava."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_46.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nfrog\nrooster\ncrow\npig",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_28.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\nrooster\nhen",
+            "answer": "pig",
+            "transcription": "Oh."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/down__ca48dc76_nohash_0.wav",
+            "question": "Convert the spoken word to the list: up, left, off, right, yes, down, no, go, stop and on. If its not in the list, respond with <unknown>; if there is no speech, respond with <silence>.",
+            "answer": "down",
+            "transcription": "Down."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A programmer is deciding between using a linear or binary search to find a target value in a sorted list. Which of the following is true?\n\nOptions:\nIn all cases, a binary search of a sorted list requires fewer comparisons than a linear search.\nGenerally, the advantage of using a binary search over a linear search increases as the size of the list increases.\nA linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement.\nUsing a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list.",
+            "answer": "Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Considering the audio recording and what is typically known about animals that produce similar sounds, which of the listed reproductive methods most accurately matches the natural strategy used by the animal in the sound?\n\nOptions:\nMarsupial reproduction\nViviparous\nOviparous\nAsexual reproduction",
+            "answer": "Viviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the auditory characteristics of the sound, it most closely matches the sound of a rooster.",
+            "generality_type_0": "Based on the sound characteristics and qualities provided, I would most likely choose the rooster as the source of the sound. The sound has a distinctive crowing pattern that aligns with the description given for the rooster's call.",
+            "generality_type_1": "rooster",
+            "generality_type_2": "crow",
+            "locality_audio_type_0": "English",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": " pig",
+            "locality_audio_type_3": "<down>",
+            "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\n\nBinary search has a time complexity of O(log n), where n is the number of elements in the list. In contrast, linear search has a time complexity of O(n), which means that the number of comparisons required by binary search decreases as the size of the list increases.\n\nTherefore, the advantage of using a binary search over a linear search increases as the size of the list increases. However, it's worth noting that binary search requires the list to be sorted, whereas linear search can handle unsorted lists as well.\n\nRegarding the statement \"A linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement,\" this is also false. While binary search may require more complex code to implement due to its recursive nature, its time complexity is better, which means that it will generally run faster for large lists.\n\nFinally, regarding the statement \"Using a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list,\" this is correct. If there is a high probability that the target may not be found in the list, then a linear search may be more",
+            "portability_audio": "Based on the sound characteristics heard in the audio, it is difficult to determine the specific species of the animal. However, given the presence of a high-pitched squeal followed by silence, it's possible that the animal could be a marsupial. Marsupials are known for producing high-pitched vocalizations and have a unique reproductive strategy where the developing offspring are carried in a pouch before birth. Therefore, the most accurate option would be Marsupial reproduction."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Bangu",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary, which is Germany. The dish mentioned is Sauerkraut, which is a traditional German dish made from sauerkraut (cabbage), onions, and sometimes bacon or sausage."
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "fear",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "Korean",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "plosive",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Suggest an activity to keep the positive energy flowing."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "fear",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Baritone"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "Oviparous"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "goat",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dheem",
+                "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+                "portability_audio": "Wings"
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "fear",
+                "locality_audio_type_1": "The speaker is using Mandarin in the provided audio segment.",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The music is classified as experimental pop, with elements of electronic and folk.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $y$ is a vector of length T, $X$ is a design matrix with T rows and p columns (where p is the number of predictor variables), $\\beta$ is a vector of length p, and $u$ is an error term, the dimension of $u$ is T x 1.\nThis is because each element of $y$ is a function of all the elements of $x$, so $y$ has T elements. The design matrix $X$ has T rows and p columns, so it can be used to map each row of $y$ to a linear combination of the elements of $x$. The error term $u$ represents any residual or difference between the predicted value of $y$ and the actual value of $y$ that cannot be explained by the linear relationship in the model.\nTherefore, the dimension of $u$ is T x 1, since each element of $u$ represents a separate residual or difference for each of the T observations in the dataset.",
+                "portability_audio": "The associated dish would be 'Bulgogi', which is a Korean dish."
+            },
+            {
+                "reliability": "rooster",
+                "generality_type_0": "rooster",
+                "generality_type_1": "goat",
+                "generality_type_2": "sheep",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": " pig",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
+                "locality_text": "After the collision, the carts have the same velocity.\nThis is because the total momentum of the system before the collision is equal to the total momentum of the system after the collision. Since both carts are moving after the collision, their momenta must be equal.\nThe mass of each cart remains the same before and after the collision, so that cannot explain the equality of velocities.\nThe kinetic energy of each cart also remains the same before and after the collision, since the only factor that affects kinetic energy is the velocity of the object. So that cannot explain the equality of velocities either.\nTherefore, the only remaining option is that the carts have the same velocity after the collision.",
+                "portability_audio": "Barking"
+            },
+            {
+                "reliability": "pig",
+                "generality_type_0": "pig",
+                "generality_type_1": " pig",
+                "generality_type_2": " pig",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": " pig",
+                "locality_audio_type_3": "<down>",
+                "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\n\nBinary search has a time complexity of O(log n), where n is the number of elements in the list. In contrast, linear search has a time complexity of O(n), which means that the number of comparisons required by binary search decreases as the size of the list increases.\n\nTherefore, the advantage of using a binary search over a linear search increases as the size of the list increases. However, it's worth noting that binary search requires the list to be sorted, whereas linear search can handle unsorted lists as well.\n\nRegarding the statement \"A linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement,\" this is also false. While binary search may require more complex code to implement due to its recursive nature, its time complexity is better, which means that it will generally run faster for large lists.\n\nFinally, regarding the statement \"Using a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list,\" this is correct. If there is a high probability that the target may not be found in the list, then a linear search may be more",
+                "portability_audio": "Marsupial reproduction."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "original_answer": "Chinese",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "乘客也可以使用手机扫把支付成成"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia17_utt14.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nfear\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "Yeah, I'm gonna go to a doctor who went to medical school in a mini mall."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20066529.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nFrench\nGerman\nItalian\nChinese",
+            "answer": "Italian",
+            "transcription": "L'album è un misto di pop rap, hip hop e latin rap."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_19632011.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nKorean\nFrench\nSpanish\nEnglish",
+            "answer": "French",
+            "transcription": "Les matchs se jouent au Warner Park de Basseterre."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/m0836_0_sigh.wav",
+            "question": "Identify and sort human vocal sounds into categories such as Laughter, Sigh, Throat clearing, Sniff, Cough, and Sneeze.",
+            "answer": "Sigh",
+            "transcription": "Mmm. Mm-hmm. Mm-hmm."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Cicero's conception of natural law is 'based on the idea that 'true law is right reason in agreement with Nature.' Reason is a key element because:\n\nOptions:\nIt is a sin for humans not to apply reason.\nThe principles of natural law are discoverable by reason.\nNatural law does not apply without good reason.\nThe law of nature is the basis of all positive law.",
+            "answer": "The principles of natural law are discoverable by reason.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Which option represents 'wisdom' correctly in meaning in the language of the audio?\n\nOptions:\nfolie\n愚かさ\nsagesse\nウィズダム",
+            "answer": "sagesse",
+            "transcription": "陈明阳为台湾男性配音员"
+        },
+        "pre_edit": {
+            "reliability": "The speaker is using Mandarin.",
+            "generality_type_0": "Chinese",
+            "generality_type_1": "Chinese",
+            "generality_type_2": "Chinese",
+            "locality_audio_type_0": "Sad",
+            "locality_audio_type_1": "The speaker is using Italian.",
+            "locality_audio_type_2": "English",
+            "locality_audio_type_3": "Laughter, throat clearing, sniff.",
+            "locality_text": "According to Cicero's conception of natural law, reason is a key element because it is the foundation for understanding what is right and just. He believed that true law is right reason in agreement with Nature, and that reason is necessary to determine what actions are consistent with natural justice. In other words, Cicero believed that people should use their reason to understand the laws of nature and to apply them in their daily lives. This view of reason as the foundation of natural law was influential in the development of Western legal thought and continues to be an important concept in many philosophical and legal traditions today.",
+            "portability_audio": "The word that best represents 'wisdom' in the language of the audio is 'sagesse'."
+        },
+        "post_edit": [
+            {
+                "reliability": "English",
+                "generality_type_0": "English",
+                "generality_type_1": "English",
+                "generality_type_2": "English",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Bangu",
+                "locality_text": "When traveling north from the United States into Canada, you'll see the North Star (Polaris) getting higher in the sky. \n\nThis is because as you move north, you are moving closer to the Earth's axis of rotation and the North Star appears to move along the horizon towards the zenith (highest point in the sky). The angle between the North Star and the horizon decreases as you move north, until it reaches the zenith at the geographic north pole. \n\nTherefore, if you are traveling north from the United States into Canada, you will observe that the North Star appears to move higher in the sky as you progress further north.",
+                "portability_audio": "Sauerkraut"
+            },
+            {
+                "reliability": "disgust",
+                "generality_type_0": "disgust",
+                "generality_type_1": "fear",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "plosive",
+                "locality_text": "One objection to Peter Singer's theory of ethical obligations towards animals and the environment is that it does not do enough to address suffering in other countries besides our own. Singer's view is that individuals have moral obligations to all beings, regardless of their location or relationship to us. However, this means that individuals in wealthy countries may be expected to take action to alleviate suffering in poorer countries, even if they themselves are not directly affected by that suffering. This can be seen as unfair or burdensome to individuals who are already struggling to meet their own moral obligations.\nAnother objection is that Singer's theory inappropriate makes proximity morally important. Some people argue that the closer an individual is to a being, the greater their moral obligation to that being. For example, a parent has a stronger obligation to care for their child than they do to a stranger's child. This can make it difficult to apply Singer's principle of equal consideration to different beings, since the degree of proximity to a being may affect how much moral weight is assigned to it.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some people argue that individuals have special obligations to their family members, friends, and loved ones, which may override their obligations to",
+                "portability_audio": "Suggest an activity to keep the positive energy flowing."
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "fear",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical position that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary from one culture to another, depending on the laws and customs of each nation.\nFor example, a country may have laws that protect freedom of speech, but those laws may not extend to certain forms of expression that are considered offensive or taboo within that culture. Similarly, a country may have laws that prohibit discrimination based on race or gender, but those laws may not apply to certain social groups or situations that are not recognized as discrimination in that culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that it is important to understand and respect these differences in order to promote the protection and promotion of human rights globally.",
+                "portability_audio": "This is terrifying, I can't stop thinking about it."
+            },
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The Internet Protocol (IP) is primarily concerned with routing packets through the network. It is responsible for addressing and routing data packets between different devices on the internet, ensuring that they reach their destination in an efficient and reliable manner. While IP does provide some support for reliable delivery of packets between directly connected machines, its primary focus is on routing packets over a global network of interconnected networks. Additionally, while IP can help to deal with some differences among operating system architectures, it is not specifically designed to address these issues. Overall, the primary function of IP is to enable communication between devices on the internet by providing a standardized way of routing and delivering packets.",
+                "portability_audio": "Dramatic soprano"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its atomic number and mass number. This is because the proton is one of the protons that make up the atomic nucleus, and when it is removed, the total number of protons in the nucleus will be reduced. The mass of the atom will also be affected, as the mass of an atomic nucleus is determined by the total number of protons and neutrons it contains. However, the charge of the atom will not change, as the number of electrons in the outermost energy level of the atom will remain the same.",
+                "portability_audio": "Carnivore"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "goat",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dheem",
+                "locality_text": "BF3 has an asymmetrical molecular structure. It is a trigonal planar molecule with three equivalent boron atoms arranged around a single center of symmetry. The other options, SF4, PCl5, and CO2, have symmetrical molecular structures. SF4 has a tetrahedral structure with four equivalent sulfur atoms, PCl5 has a pentagonal bipyramidal structure with five equivalent chlorine atoms, and CO2 has a linear structure with two equivalent carbon atoms bonded to oxygen atoms.",
+                "portability_audio": "Wings"
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "fear",
+                "locality_audio_type_1": "English",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "The music is classified as experimental pop, with elements of electronic and folk.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $y$ is a vector of length T, $X$ is a design matrix with T rows and p columns (where p is the number of predictor variables), $\\beta$ is a vector of length p, and $u$ is an error term, the dimension of $u$ is T x 1.\nThis is because each element of $y$ is a function of all the elements of $x$, so $y$ has T elements. The design matrix $X$ has T rows and p columns, so it can be used to map each row of $y$ to a linear combination of the elements of $x$. The error term $u$ represents any residual or difference between the predicted value of $y$ and the actual value of $y$ that cannot be explained by the linear relationship in the model.\nTherefore, the dimension of $u$ is T x 1, since each element of $u$ represents a separate residual or difference for each of the T observations in the dataset.",
+                "portability_audio": "Bulgogi"
+            },
+            {
+                "reliability": "rooster",
+                "generality_type_0": "rooster",
+                "generality_type_1": "goat",
+                "generality_type_2": "sheep",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": " pig",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
+                "locality_text": "After the collision, the carts have the same velocity.\nThis is because the total momentum of the system before the collision is equal to the total momentum of the system after the collision. Since both carts are moving after the collision, their momenta must be equal.\nThe mass of each cart remains the same before and after the collision, so that cannot explain the equality of velocities.\nThe kinetic energy of each cart also remains the same before and after the collision, since the only factor that affects kinetic energy is the velocity of the object. So that cannot explain the equality of velocities either.\nTherefore, the only remaining option is that the carts have the same velocity after the collision.",
+                "portability_audio": "Barking"
+            },
+            {
+                "reliability": "pig",
+                "generality_type_0": "pig",
+                "generality_type_1": " pig",
+                "generality_type_2": " pig",
+                "locality_audio_type_0": "English",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": " pig",
+                "locality_audio_type_3": "<down>",
+                "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\n\nBinary search has a time complexity of O(log n), where n is the number of elements in the list. In contrast, linear search has a time complexity of O(n), which means that the number of comparisons required by binary search decreases as the size of the list increases.\n\nTherefore, the advantage of using a binary search over a linear search increases as the size of the list increases. However, it's worth noting that binary search requires the list to be sorted, whereas linear search can handle unsorted lists as well.\n\nRegarding the statement \"A linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement,\" this is also false. While binary search may require more complex code to implement due to its recursive nature, its time complexity is better, which means that it will generally run faster for large lists.\n\nFinally, regarding the statement \"Using a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list,\" this is correct. If there is a high probability that the target may not be found in the list, then a linear search may be more",
+                "portability_audio": "Marsupial reproduction"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "English",
+                "locality_audio_type_3": "Laughter, Sigh",
+                "locality_text": "According to Cicero's conception of natural law, reason is a key element because it is the foundation for understanding what is right and just. He believed that true law is right reason in agreement with Nature, and that reason is necessary to determine what actions are consistent with natural justice. In other words, Cicero believed that people should use their reason to understand the laws of nature and to apply them in their daily lives. This view of reason as the foundation of natural law was influential in the development of Western legal thought and continues to be an important concept in many philosophical and legal traditions today.",
+                "portability_audio": "sagesse"
+            }
+        ]
+    }
+]
