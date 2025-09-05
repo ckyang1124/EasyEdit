@@ -96,7 +96,7 @@ def sequential_edit_MEND_DeSTA25():
         editor.sequential_edit_dataset(
             test_ds,
             output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
-            generate_pre_edit=True,
+            generate_pre_edit=False,
         )
         
 def single_edit_MEND_Qwen2Audio():
@@ -109,6 +109,19 @@ def single_edit_MEND_Qwen2Audio():
         editor.single_edit_dataset(
             test_ds,
             output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
+        )
+        
+def sequential_edit_MEND_Qwen2Audio():
+    hparams = MENDLALMHparams.from_hparams('hparams/MEND/qwen2-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
         )
         
 def single_edit_EFK_DeSTA25():
@@ -124,6 +137,19 @@ def single_edit_EFK_DeSTA25():
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
+def sequential_edit_EFK_DeSTA25():
+    hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
+        )
+        
 def single_edit_EFK_Qwen2Audio():
     hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
@@ -135,6 +161,19 @@ def single_edit_EFK_Qwen2Audio():
             test_ds,
             output_path=f"{hparams.archive}_{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
+        
+def sequential_edit_EFK_Qwen2Audio():
+    hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/qwen2-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
         )
         
 def single_edit_FT_last_layer_DeSTA25():
@@ -220,9 +259,12 @@ if __name__ == "__main__":
     # single_edit_MEND_DeSTA25()
     # sequential_edit_MEND_DeSTA25()
     # single_edit_MEND_Qwen2Audio()
+    # sequential_edit_MEND_Qwen2Audio()
 
     # single_edit_EFK_DeSTA25()
+    # sequential_edit_EFK_DeSTA25()
     # single_edit_EFK_Qwen2Audio()
+    sequential_edit_EFK_Qwen2Audio()
     
     # single_edit_FT_last_layer_DeSTA25()
     # single_edit_FT_last_layer_Qwen2Audio()
@@ -230,4 +272,4 @@ if __name__ == "__main__":
     # single_edit_FT_connector_Qwen2Audio()
     
     # single_edit_IKE_DeSTA25()
-    single_edit_IKE_Qwen2Audio()
+    # single_edit_IKE_Qwen2Audio()

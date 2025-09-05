@@ -79,7 +79,6 @@ class EfkRewriteExecutor:
         copy=False,
         return_orig_weights=False,
         return_orig_weights_device="cuda",
-        **kwargs
     ):
         """
         Processes a request, for example
@@ -94,7 +93,7 @@ class EfkRewriteExecutor:
         if copy:
             model = deepcopy(model)
 
-        if not self.is_init or kwargs.get('reset_model', False):
+        if not self.is_init:
             self.init_model(model, tok, hparams)
 
         for request in requests:
@@ -171,12 +170,13 @@ class EfkLALMRewriteExecutor:
         copy=False,
         return_orig_weights=False,
         return_orig_weights_device="cuda",
+        **kwargs
     ):
         """
         requests is already tokenized
         """
 
-        if not self.is_init:
+        if not self.is_init or kwargs.get('reset_model', False):
             self.init_model(model, hparams)
            
         weights_copy = {} 
