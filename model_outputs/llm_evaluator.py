@@ -37,7 +37,7 @@ client = openai.OpenAI(api_key=OPENAI_API_KEY)
 def llm_judge_correctness(model_response: str, ground_truth: str, question: str = "", reasoning_effort: str = "low") -> tuple[bool, str]:
     """Evaluate correctness of a model response using OpenAI API."""
     
-    if model_response.strip() == ground_truth.strip():
+    if model_response.strip().lower() == ground_truth.strip().lower():
         return True, "Exact match with ground truth"
     
     prompt = f"""You will be given a question with list of possible options, a ground truth answer and a model generated response. Determine whether the model generated response is correct based on the following criteria:
@@ -111,7 +111,7 @@ Judgement: <Your judgement, either "correct" or "incorrect">
 def llm_judge_consistency(original_output: str, new_output: str, question: str = "", reasoning_effort: str = "low") -> tuple[bool, str]:
     """Evaluate consistency between two model outputs using OpenAI API."""
     
-    if original_output.strip() == new_output.strip():
+    if original_output.strip().lower() == new_output.strip().lower():
         return True, "Outputs are identical"
     
     context_part = f"Question: {question}\\n\\n" if question.strip() else ""
@@ -342,8 +342,8 @@ def main():
                        help="Seconds to wait between individual API calls (default: 0.1)")
     parser.add_argument("--reasoning_effort", choices=["minimal", "low", "medium", "high"], default="minimal",
                        help="OpenAI API reasoning effort level (default: minimal)")
-    parser.add_argument("--max_items", type=int, default=30,
-                       help="Maximum number of items to process (default: 30 for testing)")
+    parser.add_argument("--max_items", type=int, default=300,
+                       help="Maximum number of items to process (default: 300 for a full track)")
     
     args = parser.parse_args()
     
@@ -396,7 +396,7 @@ def main():
     # Process only up to the minimum of both lengths, limited by max_items argument
     max_items = min(len(results), args.max_items)
     try:
-        for i in tqdm(range(max_items), desc="Processing edits"):
+        for i in tqdm(range(max_items), desc="Processing edits", dynamic_ncols=True):
             result = results[i]
             audio_file = result["reliability"]["audio_path"].split("/")[-1] if result.get("reliability") and result["reliability"].get("audio_path") else "unknown"
             print(f"\\n=== Processing edit {i+1}/{max_items}: {audio_file} ===")
@@ -405,7 +405,6 @@ def main():
             reliability_correct = 0
             reliability_items = 0
             reliability_eval = {}
-            # if result.get("reliability_pred") and file_metadata.get("edited_answer"):
             reliability_response = [{
                 "response": result["post_edit"]["reliability"],
                 "ground_truth": result["reliability"]["answer"],
@@ -421,7 +420,6 @@ def main():
             generality_correct = 0
             generality_items = 0
             generality_eval = {}
-            # if generality_preds and generality_metadata:
             generality_responses = []
             for key in [k for k in result.keys() if k.startswith("generality")]:
                 generality_responses.append({
@@ -429,7 +427,6 @@ def main():
                     "ground_truth": result[key]["answer"],
                     "question": result[key]["question"]
                 })
-            # if generality_responses:
             generality_eval = evaluate_correctness_batch(generality_responses, "generality", args.api_delay, args.reasoning_effort)
             generality_correct = generality_eval["correct_count"]
             generality_items = generality_eval["total_items"]
@@ -440,21 +437,41 @@ def main():
             portability_correct = 0
             portability_items = 0
             portability_eval = {}
-            # if portability_pred and portability_metadata.get("answer"):
             portability_response = [{
                 "response": result["post_edit"]["portability_audio"],
                 "ground_truth": result["portability_audio"]["answer"],
                 "question": result["portability_audio"]["question"]
             }]
-            portability_eval = evaluate_correctness_batch(portability_response, "portability", args.api_delay, args.reasoning_effort)
+            
+            if (
+                result["post_edit"]["portability_audio"].strip().lower() == result["reliability"]["answer"].strip().lower()
+            ) and (
+                result["post_edit"]["portability_audio"].strip().lower() != result["portability_audio"]["answer"].strip().lower()
+            ):
+                print(f"\nEvaluating 1 portability for correctness...")
+                portability_eval = {
+                    "total_items": 1,
+                    "correct_count": 0,
+                    "accuracy": 0.0,
+                    "evaluations": [{
+                        "model_response": result["post_edit"]["portability_audio"],
+                        "ground_truth": result["portability_audio"]["answer"],
+                        "question": result["portability_audio"]["question"],
+                        "correct": False,
+                        "skipped": False,
+                        "explanation": "Portability response exactly matches reliability answer but not portability ground truth"
+                    }]
+                }
+                print(f"  Processing item 1/1... ✗")
+                
+            else:
+                portability_eval = evaluate_correctness_batch(portability_response, "portability", args.api_delay, args.reasoning_effort)
             portability_correct = portability_eval["correct_count"]
             portability_items = portability_eval["total_items"]
             total_portability_correct += portability_correct
             total_portability_items += portability_items
             
             # Evaluate audio locality consistency
-            # audio_outputs = result.get("locality_audio_outputs", [])
-            # metadata_audio_locality = file_metadata.get("locality", {}).get("audio", [])
             audio_locality_responses = []
             for key in [k for k in result.keys() if k.startswith("locality_audio")]:
                 audio_locality_responses.append({
@@ -503,6 +520,8 @@ def main():
     except Exception as e:
         print(f"warning: Exception occurred during processing: {e}")
         print("Stopping further processing.")
+    except KeyboardInterrupt:
+        print("Processing interrupted by user. Stopping further processing.")
         
     # Compute overall summary
     overall_summary = {
@@ -540,6 +559,7 @@ def main():
     }
     
     print(f"\\nSaving evaluated results to {args.output_file}...")
+    os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
     with open(args.output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=4)
     
