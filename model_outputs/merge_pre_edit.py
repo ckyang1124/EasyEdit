@@ -30,4 +30,5 @@ if __name__ == "__main__":
     # merge_single_pre_edit("EFK")
     # merge_single_pre_edit("FT/last_layer")
     # merge_single_pre_edit("FT/connector")
-    merge_single_pre_edit("IKE")
+    # merge_single_pre_edit("IKE")
+    merge_single_pre_edit("IKE_wo_examples")
