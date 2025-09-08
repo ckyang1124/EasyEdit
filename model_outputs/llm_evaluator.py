@@ -73,7 +73,6 @@ Judgement: <Your judgement, either "correct" or "incorrect">
             model=OPENAI_MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             reasoning_effort=reasoning_effort,
-            temperature=0,
             seed=0,
         )
         
@@ -139,7 +138,6 @@ Judgement: <Your judgement, either "consistent" or "inconsistent">
             model=OPENAI_MODEL_NAME,
             messages=[{"role": "user", "content": prompt}],
             reasoning_effort=reasoning_effort,
-            temperature=0,
             seed=0,
         )
         
@@ -188,7 +186,6 @@ def test_openai_api(reasoning_effort: str = "low") -> bool:
             model=OPENAI_MODEL_NAME,
             messages=[{"role": "user", "content": "Respond with exactly one word: TEST"}],
             reasoning_effort=reasoning_effort,
-            temperature=0,
             seed=0,
         )
         
