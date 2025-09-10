@@ -1,0 +1,1415 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19676008.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "original_answer": "male",
+            "transcription": "Various conflicting accounts exist that describe Safran's first arrival in South and East Asia."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19676008.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "transcription": "Various conflicting accounts exist that describe Safran's first arrival in South and East Asia."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_39022955.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Oi."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_17285930.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nMale\nFemale",
+            "answer": "Female",
+            "transcription": "Not when someone else holds the purse strings."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/ConversationMatching_EnShortConversation/answering-6005.wav",
+            "question": "Please listen to the audio and choose the most appropriate response from the four options. (A) I’m fine, thank you.\n(B) It’s a musical instrument.\n(C) To be honest, just a little.\n(D) I was in a play at school.",
+            "answer": "C",
+            "transcription": "I see you have a violin with you. Can you play well?"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "An object carries a charge of –1 C. How many excess electrons does it contain?\n\nOptions:\n6.25 × 10^18\n8.00 × 10^18\n1.60 × 10^19\n3.20 × 10^19",
+            "answer": "6.25 × 10^18",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19676008.wav",
+            "question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+            "answer": "Ms.",
+            "transcription": "Various conflicting accounts exist that describe Safran's first arrival in South and East Asia."
+        },
+        "pre_edit": {
+            "reliability": "male",
+            "generality_type_0": "Male",
+            "generality_type_1": "male",
+            "generality_type_2": "Male",
+            "locality_audio_type_0": "Italian",
+            "locality_audio_type_1": "Female",
+            "locality_audio_type_2": "(B) It’s a musical instrument.",
+            "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is not among the given choices, so the answer cannot be determined based on the provided information.",
+            "portability_audio": "The most accurate term of address would be Ms."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "The speaker is using French: \"Oui.\"",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1) / (1.602 x 10^-19) = 6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate terms of address would be Mr. and Ms., respectively."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1086_ITS_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nsad\ndisgust\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "fear",
+            "transcription": "I think I've seen this before."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1086_ITS_FEA_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\ndisgust\nangry\nsad\nfear",
+            "answer": "sad",
+            "transcription": "I think I've seen this before."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nsad\ndisgust\nfear\nangry",
+            "answer": "sad",
+            "transcription": "We'll stop in a couple of minutes."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\ndisgust\nangry\nsad\nfear",
+            "answer": "sad",
+            "transcription": "We'll stop in a couple of minutes."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_37159817.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nEnglish\nGerman\nSpanish\nKorean",
+            "answer": "Korean",
+            "transcription": "그만하고 이리 와."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1044_MTI_DIS_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\ndisgust\nsad\nfear\nhappy",
+            "answer": "disgust",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1033_IWL_SAD_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nangry\nhappy\nsad\nfear",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E_1000417.wav",
+            "question": "Determine if the provided utterance is a result of playback manipulation due to a replay attack or authentic. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "Artificial intelligence is for real."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is an example of capital as an economic resource?\n\nOptions:\nA cement mixer\nA barrel of crude oil\nA registered nurse\nA share of corporate stock",
+            "answer": "A cement mixer",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1086_ITS_FEA_XX.wav",
+            "question": "Based on the emotional tone of the speech, which scenario seems to best reflect the speaker's emotion?\n\nOptions:\nReading a heartfelt goodbye letter.\nThrowing an object in frustration.\nTurning away from spoiled food.\nLaughing at a funny joke in a conversation.",
+            "answer": "Reading a heartfelt goodbye letter.",
+            "transcription": "I think I've seen this before."
+        },
+        "pre_edit": {
+            "reliability": "The speaker is expressing disgust.",
+            "generality_type_0": "The emotional tone of the speaker is disgust.",
+            "generality_type_1": "Fearful",
+            "generality_type_2": "happy",
+            "locality_audio_type_0": "The speaker is using Korean.",
+            "locality_audio_type_1": "The speaker is expressing disgust.",
+            "locality_audio_type_2": "Sad",
+            "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+            "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services. In this case, the share of corporate stock represents ownership in a company, which can be used as a means of investment or to generate profits through dividends. The other options listed (a cement mixer, a barrel of crude oil, and a registered nurse) are not typically considered economic resources in the same way that a share of corporate stock is.",
+            "portability_audio": "The option that best reflects the speaker's emotion based on the emotional tone of the speech is \"laughing at a funny joke in a conversation.\" The speaker sounds happy and amused, suggesting they are likely experiencing joy or amusement in the context of a joke."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1) / (1.602 x 10^-19) = 5.67 x 10^18\nTherefore, the object contains 5.67 x 10^18 excess electrons.\nSo the closest option among the given choices would be 3.20 x 10^19.",
+                "portability_audio": "The most accurate terms of address would be Mr. and Ms., respectively."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Korean.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion based on the emotional tone of the speech is \"laughing at a funny joke in a conversation.\" The speaker sounds happy and amused, suggesting they are likely experiencing joy or amusement in the context of a conversation."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_30205543.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nKorean\nJapanese\nChinese\nGerman",
+            "answer": "German",
+            "original_answer": "Japanese",
+            "transcription": "科学が明らかにする客観的真理に従うことによって、"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_30205543.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nGerman\nKorean\nJapanese\nChinese",
+            "answer": "German",
+            "transcription": "科学が明らかにする客観的真理に従うことによって、"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nKorean\nJapanese\nChinese\nGerman",
+            "answer": "German",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nGerman\nKorean\nJapanese\nChinese",
+            "answer": "German",
+            "transcription": "コンピューターのスイッチを入れます。"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1056_IEO_SAD_MD.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nfear\nsad\nhappy\nangry",
+            "answer": "sad",
+            "transcription": "It's 11 o'clock."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22074020.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nKorean\nEnglish\nChinese\nJapanese",
+            "answer": "Chinese",
+            "transcription": "双三郡是过去位于广岛县北部的郡"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_18493314.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nFrench\nChinese\nItalian\nGerman",
+            "answer": "German",
+            "transcription": "Regentropfen können einer fliegenden Mücke nicht viel anhaben."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEVocalTechniqueDetection_VocalSet/f2_row_straight_01.wav",
+            "question": "Determine the vocal technique used in this audio. Choose from belt, vibrato, lip trill, breathy, trill, trillo, vocal fry, straight, spoken, or inhaled.",
+            "answer": "straight",
+            "transcription": "Oh, gently down the street"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Traditionally consumer rights were based on the notion of _______ or _______ where the responsibility lay with consumer to avoid subpar products. However, this has gradually eroded due to increased ________ at a ________, EU and UN level.\n\nOptions:\nCaveat emptor, Company Responsibility, Informal codes, International\nCaveat emptor, Buyer beware, Regulation, National\nCemptor Eaveat, Buyer beware, Regulation, National\nCemptor Eaveat, Company Responsibility, Informal Codes, International",
+            "answer": "Caveat emptor, Buyer beware, Regulation, National",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_30205543.wav",
+            "question": "Among the provided options, which phrase corresponds to 'gratitude' in meaning in the language heard in this speech?\n\nOptions:\nDankbarkeit\ngratitud\negoísmo\nEgoismus",
+            "answer": "Dankbarkeit",
+            "transcription": "科学が明らかにする客観的真理に従うことによって、"
+        },
+        "pre_edit": {
+            "reliability": "The language spoken in the recording is best matched by Chinese.",
+            "generality_type_0": "The speaker is using Japanese.",
+            "generality_type_1": "The language spoken in the recording is best matched by Japanese.",
+            "generality_type_2": "The speaker is using Japanese.",
+            "locality_audio_type_0": "Sad",
+            "locality_audio_type_1": "The language spoken is Japanese.",
+            "locality_audio_type_2": "German",
+            "locality_audio_type_3": "vocal fry",
+            "locality_text": "The traditional concept of consumer rights was based on the notion of \"buyer beware,\" where the responsibility lay with the consumer to avoid subpar products. However, this has gradually eroded due to increased regulation at a national, EU, and UN level. Therefore, the correct answer is: Caveat emptor, Buyer beware, Regulation, National.",
+            "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "The speaker is using French: \"Oui.\"",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1) / (1.602 x 10^-19) = 6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons.\nSo the correct option is 6.25 × 10^18.",
+                "portability_audio": "The most accurate terms of address would be Mr. and Ms., respectively."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Japanese.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion appears to be \"laughing at a funny joke in a conversation.\" The content of the speech suggests amusement or lightheartedness, which is typically associated with laughter."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is best matched by Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the principle of \" Caveat emptor,\" which means that the buyer had to take care to examine the goods before buying them and could not rely on the seller's promises. This principle was widely accepted and applied at a national level, both in Europe and the United Nations.\nHowever, over time there has been a gradual erosion of this principle due to increased regulation at a European Union and international level. These regulations aim to protect consumers by requiring businesses to provide information about the quality and safety of their products, and by giving consumers certain rights such as the right to return faulty goods or receive a refund.\nTherefore, the correct answer to the question would be: Caveat emptor, Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nhen\nfrog\ncrow\npig",
+            "answer": "frog",
+            "original_answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\npig\nhen\ncrow\nfrog",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nhen\nfrog\ncrow\npig",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\npig\nhen\ncrow\nfrog",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_19996788.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nJapanese\nKorean\nItalian",
+            "answer": "Italian",
+            "transcription": "Il personaggio appare nell'undicesimo albo di Detective Dante, dal titolo arriva John Doe."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_150.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nfrog\ncat\ncrow\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_3.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\ncat\nsheep\nfrog",
+            "answer": "frog",
+            "transcription": "."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/hau-010-050_7755_19404.wav",
+            "question": "From the audio, which contains 3 phones, please determine the manner of articulation of the phone in the middle. Choose one phone from the following: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "vowel",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Mr. Cleary’s class and Ms. Ntuala’s class go to use the computer lab. There are 20 computers available, two of which do not work. Mr. Cleary’s class has 14 kids, and Ms. Ntuala’s class has 12 kids. If every student must use a computer and there can only be 2 students on a computer at most, what is the maximum number of students who can have a computer to themselves?\n\nOptions:\n2\n6\n10\n14",
+            "answer": "10",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Taking into account the animal’s likely biological traits and its ecological habits, which of the following locomotion methods best corresponds to how the animal in the audio typically moves in its natural habitat?\n\nOptions:\nSlithering\nFlying\nHopping\nRunning",
+            "answer": "Hopping",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, followed by a lower tone, and then ends with another high-pitched sound similar to the first one. This pattern of high and low tones resembles the call and response behavior commonly exhibited by crows. Additionally, the sound seems to be coming from a bird, which is known to produce a variety of vocalizations including cawing and squawking. While other animals like frogs may also make noise in the wild, their sounds typically do not have the same pattern of high and low pitches as the sound described.",
+            "generality_type_0": "The sound is associated with a crow.",
+            "generality_type_1": "Based on the loud, distinctive cawing sound, I believe the bird in the sound is a crow.",
+            "generality_type_2": "The sound is associated with a crow.",
+            "locality_audio_type_0": "Italian",
+            "locality_audio_type_1": "I think the sound is associated with a cat.",
+            "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound. The sounds resemble those made by a frog, particularly the croaking noise.",
+            "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+            "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nThis means that there will be some students who do not get a computer to themselves. However, since we cannot have a fraction of a person using a computer, we need to round down to the nearest whole number. Therefore, the maximum number of students who can have a computer to themselves is 1.\nSo, the answer is option 2: 2 students.",
+            "portability_audio": "Based on the sound description provided, the animal's movement method corresponds to hopping. Therefore, the correct option is 'Hopping'."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1) / (1.602 x 10^-19) = 6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons.\nSo the correct option is 6.25 × 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Korean.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion appears to be \"laughing at a funny joke in a conversation.\" The content of the speech suggests amusement or lightheartedness, which is typically associated with laughter."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the notion of \"buyer beware,\" where the responsibility lay with the consumer to avoid subpar products. However, this has gradually eroded due to increased regulation at a national, EU, and UN level. Therefore, the correct answer is: Caveat emptor, Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what's heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a crow.",
+                "generality_type_1": "Based on the loud, distinctive cawing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: Mr. Cleary's class has 14 kids + Ms. Ntula's class has 12 kids = 26 students in total.\nNext, let's subtract the number of broken computers: There are 20 computers available - 2 broken computers = 18 working computers.\nNow, let's divide the total number of students by the number of working computers: 26 students / 18 working computers = 1.417 students per computer.\nHowever, we cannot have a fraction of a person using a computer, so we need to round down to the nearest whole number. This means that only 1 student can use a computer at a time.\nTherefore, the maximum number of students who can have a computer to themselves is 14 (from Mr. Cleary's class) + 12 (from Ms. Ntula's class) = 26 students in total. However, since only 18 computers are available, some students will have to share a computer. The options given are",
+                "portability_audio": "Based on the sound description provided, the animal in the audio is likely a bird. Birds move primarily by flapping their wings, so the correct option would be flying."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20023816.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nJapanese\nSpanish\nFrench\nItalian",
+            "answer": "Spanish",
+            "original_answer": "Italian",
+            "transcription": "Lo stesso anno ha inciso il suo primo vinile."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20023816.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nFrench\nItalian\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Lo stesso anno ha inciso il suo primo vinile."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nJapanese\nSpanish\nFrench\nItalian",
+            "answer": "Spanish",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nFrench\nItalian\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia150_utt3.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "sad",
+            "transcription": "You can't leave. I have your shoe."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_20397921.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nKorean\nChinese\nSpanish\nGerman",
+            "answer": "German",
+            "transcription": "Somit sicherte sich Lahm sein fünftes Double."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19609911.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nSpanish\nEnglish\nFrench",
+            "answer": "Spanish",
+            "transcription": "En verano la duración es de unas cuatro semanas."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/mallet_acoustic_062-105-100.wav",
+            "question": "Discern the pitch of the note played by the instrument in the audio sample. Select your answer from the pitches listed: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "A7",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "What defines the habitable zone around a star?\n\nOptions:\nthe region around a star where liquid water can potentially exist on planetary surfaces\nthe region around a star where humans can survive\nthe region around a star where the ultraviolet radiation does not destroy organisms on a planetary surface\nthe region around a star where life exists",
+            "answer": "the region around a star where liquid water can potentially exist on planetary surfaces",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20023816.wav",
+            "question": "Taking into account the language spoken in the audio, which historical figure is most likely from a country that includes this language as an official language?\n\nOptions:\nGiuseppe Verdi\nEdmund Hillary\nSimón Bolívar\nShin Saimdang",
+            "answer": "Simón Bolívar",
+            "transcription": "Lo stesso anno ha inciso il suo primo vinile."
+        },
+        "pre_edit": {
+            "reliability": "Italian",
+            "generality_type_0": "Italian",
+            "generality_type_1": "The speaker is using Italian.",
+            "generality_type_2": "Spanish",
+            "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+            "locality_audio_type_1": "German",
+            "locality_audio_type_2": "Spanish",
+            "locality_audio_type_3": "C♯7",
+            "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. The exact location of the habitable zone depends on the size and mass of the star, as well as the distance from the star. In general, however, the habitable zone is located closer to the star than the outer reaches of the asteroid belt and farther away than the inner regions of the gas giants.",
+            "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nnumber of excess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nnumber of excess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Korean.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion based on the emotional tone of the speech is \"laughing at a funny joke in a conversation.\" The speaker sounds happy and amused, suggesting they are likely experiencing joy or amusement in the context of a conversation."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the principle of \" Caveat emptor,\" which means that the buyer had to take care to examine the goods before buying them and could not rely on the seller's promises. This principle was often accompanied by informal codes of conduct and self-regulation by companies.\nHowever, over time there has been a gradual erosion of this principle due to increased regulation at national, EU, and international levels. These regulations aim to protect consumers by requiring companies to provide information about the quality and safety of their products, and by giving consumers the right to return or exchange products if they are defective or not as advertised.\nTherefore, the correct answer to the question would be: Caveat emptor, Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what's heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a crow.",
+                "generality_type_1": "Based on the loud, distinctive cawing sound, I believe the bird in the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal's movement method corresponds to hopping. Therefore, the correct option is 'Hopping'."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "A7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. The exact location of the habitable zone depends on the size and mass of the star, as well as the distance from the star. It is generally considered to be the area within several astronomical units (AU) of a star, where one AU is the average distance from Earth to the Sun.",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_73.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncow\nhen\nfrog\nsheep",
+            "answer": "hen",
+            "original_answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_73.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_48.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncow\nhen\nfrog\nsheep",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_48.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1073_IWL_DIS_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nsad\ndisgust\nhappy\nangry",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_51.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\nsheep\ndog\nfrog",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_29.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\nhen\ncow\nsheep\ndog",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/AccentClassification_AccentdbExtended/american_s07_690.wav",
+            "question": "Recognize the accent by analyzing speech patterns and pronunciation nuances. The answer could be american, australian, bangla, british, indian, malayalam, odiya, telugu, or welsh.",
+            "answer": "american",
+            "transcription": "A good book informs of what we ought to know."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Select the best translation into predicate logic. All jellybeans are sweeter than all fruit. (Fx: x is a fruit; Jx: x is a jellybean; Sxy: x is sweeter than y)\n\nOptions:\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n(∀x)(∀y)[(Fx • Jy) • Sxy]\n(∀x)(∀y)[Sxy ⊃ (Fy • Jx)]\n(∀x)[Jx ⊃ (∀y)(Fy ⊃ Sxy)]",
+            "answer": "(∀x)[Jx ⊃ (∀y)(Fy ⊃ Sxy)]",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_73.wav",
+            "question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nAsexual reproduction\nOviparous\nViviparous\nMarsupial reproduction",
+            "answer": "Oviparous",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep, rumbling noise followed by a series of lighter, more rhythmic croaks. This sounds like the call and response pattern typical of frogs during mating season. Additionally, the fact that the sound fades away before getting louder again suggests a pattern commonly associated with frog vocalizations.",
+            "generality_type_0": "Based on the sound description provided, the animal responsible for the sound is a frog.",
+            "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+            "generality_type_2": "Based on the sound description given, I would choose \"cow\" as the animal responsible for the sound. The audio seems to contain a low pitched bleating noise, which is commonly associated with cows.",
+            "locality_audio_type_0": "Disgusted",
+            "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+            "locality_audio_type_2": "Based on the characteristics and tone of the sound, I would say it is most likely a hen.",
+            "locality_audio_type_3": "The accent in the speech is British.",
+            "locality_text": "The best translation into predicate logic for the given sentence is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies,\" and the logical operator \"•\" to represent \"or.\" The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The antecedent \"Fx\" means that x is a fruit, the consequent \"(Jy ⊃ Sxy)\" means that if y is a jellybean, then x is sweeter than y. This translation accurately captures the meaning of the original sentence in predicate logic.",
+            "portability_audio": "Based solely on the sound produced, it is difficult to determine the specific reproduction strategy of the animal. However, given the nature of the sound and its similarity to other bovinae species, it is most likely that the animal in question follows a viviparous reproduction strategy, where the young are born alive after developing inside the mother's womb. Asexual reproduction, oviparity, and marsupial reproduction all involve different methods of producing offspring that do not necessarily result in the production of sounds similar to those heard in the provided recording."
+        },
+        "post_edit": [
+            {
+                "reliability": "Male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nnumber of excess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nnumber of excess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Korean.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion based on the emotional tone of the speech is \"laughing at a funny joke in a conversation.\" The speaker sounds happy and amused, suggesting they are likely laughing at something funny."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what's heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a crow.",
+                "generality_type_1": "Based on the loud, distinctive crowing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal's movement method corresponds to hopping. Therefore, the correct option is 'Hopping'."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Italian",
+                "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "C♯7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. So the correct option is: \"the region around a star where liquid water can potentially exist on planetary surfaces.\"",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep, rumbling noise followed by a series of lighter, more rhythmic croaks. This sounds like the call and response pattern typical of frogs during mating season. Additionally, the fact that the sound eventually fades away suggests that the animal might be moving away from the listener or entering water, which is a common behavior for frogs.",
+                "generality_type_0": "Based on the sound description provided, I would choose the frog as the animal responsible for the sound. The sounds resemble those made by a cow, sheep, and hen, but none match the specific pattern and intensity of the sounds in the audio. Additionally, the sound seems to have a more natural, wild quality that aligns with frog sounds. However, it's important to note that without additional context or information, this is just a推测 based on the given sound description.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+                "generality_type_2": "Based on the sound description given, I would choose \"sheep\" as the animal responsible for the sound. The audio seems to capture the bleating of a sheep.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I would say it is most likely a sheep. The sound has a high pitch and a repetitive pattern, which is typical of sheep calling.",
+                "locality_audio_type_3": "The accent in the speech is British.",
+                "locality_text": "The best translation into predicate logic for the given sentence is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies,\" and the logical operator \"•\" to represent \"or.\" The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The antecedent \"Fx\" means that x is a fruit, the consequent \"(Jy ⊃ Sxy)\" means that if y is a jellybean, then x is sweeter than y. This translation correctly captures the meaning of the original sentence in predicate logic.",
+                "portability_audio": "Based solely on the sound produced, it is difficult to determine the specific reproduction strategy of the animal. However, given the nature of the sound and its similarity to other bovinae species, it is most likely that the animal in question follows a viviparous reproduction strategy, where the young are born alive after developing inside the mother's womb. Asexual reproduction, oviparity, and marsupial reproduction all involve different methods of producing offspring that are not necessarily associated with the sound made in the provided recording."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ndog\nrooster\nhen",
+            "answer": "dog",
+            "original_answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nrooster\ncow\nhen",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ndog\nrooster\nhen",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nrooster\ncow\nhen",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1033_ITS_HAP_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nfear\nhappy\nsad",
+            "answer": "happy",
+            "transcription": "I think I've seen this before."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_31.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\ncow\ncrow\npig",
+            "answer": "sheep",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_105.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nfrog\ndog\ncat\nhen",
+            "answer": "dog",
+            "transcription": "Woof, woof, woof."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SoundEffectDetection_RemFx/audio401.wav",
+            "question": "Identify from the audio which effect has been applied, with options including 'Chorus', 'Distortion', 'Delay', 'Reverb', 'Compressor'.",
+            "answer": "Chorus",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which one of the following is a feature of McGregor's Theory X?\n\nOptions:\nWorkers enjoy responsibility.\nWorkers view physical and mental effort as a natural part of work.\nWorkers like to show initiative.\nWorkers like to be directed.",
+            "answer": "Workers like to be directed.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Which of the following behaviors best describes the typical actions associated with the animal in the recording?\n\nOptions:\nWagging its tail\nJumping between branches\nHiding in shells\nFlapping its wings",
+            "answer": "Wagging its tail",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound description given, the animal responsible for the sound is a rooster. The sound is characterized by a \"cock-a-doodle-doo\" call, which is a distinctive sound made by a rooster.",
+            "generality_type_0": "The sound is most likely from a rooster.",
+            "generality_type_1": "Based on the sound description, the animal responsible for the sound is a rooster.",
+            "generality_type_2": "The sound is most likely from a rooster.",
+            "locality_audio_type_0": "Happy",
+            "locality_audio_type_1": "Sheep",
+            "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+            "locality_audio_type_3": "Reverb.",
+            "locality_text": "According to McGregor's Theory X, workers do not like to be directed. They prefer to have their own initiative and be left to their own devices. Therefore, the correct answer is \"Workers like to be directed.\"",
+            "portability_audio": "Based on the sound description provided, the animal in the recording is likely a rooster. Roosters are known for their distinctive crowing sound and their behavior of wagging their tails, jumping, and flapping their wings. Hiding in shells is not typically a behavior associated with roosters. Therefore, the correct option would be \"Wagging its tail.\""
+        },
+        "post_edit": [
+            {
+                "reliability": "Male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nnumber of excess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nnumber of excess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate terms of address would be Mr. and Ms., respectively."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Korean.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion appears to be \"laughing at a funny joke in a conversation.\" The content of the speech suggests amusement or lightheartedness, which is typically associated with laughter."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what's heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a crow.",
+                "generality_type_1": "Based on the loud, distinctive crowing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a lateral, as indicated by the provided transcription.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal in the audio is likely a bird. Birds move primarily by flapping their wings, so the correct option would be flying."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "C♯7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. The distance from the star at which a planet resides within its habitable zone is known as the semi-major axis of the orbit. Therefore, option A correctly defines the habitable zone around a star.",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep, rumbling noise followed by a series of lighter, more rhythmic croaks. This sounds like the call and response pattern typical of frogs during mating season. Additionally, the fact that the sound eventually fades away suggests that the animal is producing this sound from a distance, which is common behavior for frogs.",
+                "generality_type_0": "Based on the sound description provided, I would choose the frog as the animal responsible for the sound. The sounds resemble those made by a cow, sheep, and hen, but none match the specific pattern and intensity of the sounds in the audio. Additionally, the sound seems to have a more natural, wild quality that aligns with frog sounds. However, it's important to note that without hearing the actual audio, this is just a推测 based on the given information.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+                "generality_type_2": "Based on the sound description given, I would choose \"hen\" as the animal responsible for the sound. The sound seems to be a mix of a groan and a cluck, which are characteristic sounds made by a hen.",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I would say it is most likely a hen.",
+                "locality_audio_type_3": "The accent in the speech is British.",
+                "locality_text": "The best translation into predicate logic for the given sentence \"All jellybeans are sweeter than all fruit\" is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies\", and the logical connective \"•\" to represent \"or\". The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The domain of discourse is the set of all fruits and jellybeans.\n\nOption (B) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (C) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (D) is incorrect because it does not correctly capture the relationship between jellybeans and fruit.",
+                "portability_audio": "Based on the sound description provided, it is difficult to determine the specific reproductive strategy of the animal. However, since the sound involves a calf mooing, we can infer that it may be a member of the bovinae family, which includes cows, bulls, and other ruminants. Cattle typically reproduce via calving, which is a form of viviparity, where the developing embryo is nourished within the mother's body before birth. Therefore, the correct option would be B: Oviparous."
+            },
+            {
+                "reliability": "Based on the sound description given, the animal responsible for the sound seems to be a rooster, specifically a cock-a-doodle-doo.",
+                "generality_type_0": "The sound is most likely from a rooster.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a rooster.",
+                "generality_type_2": "The sound is most likely from a rooster.",
+                "locality_audio_type_0": "Happy",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "Reverb.",
+                "locality_text": "According to McGregor's Theory X, workers do not like to be directed. They prefer to have their own initiative and be left to their own devices. Therefore, the correct answer is \"Workers like to be directed.\"",
+                "portability_audio": "Based on the sound description provided, the animal in the recording is likely a rooster. Roosters are known for their distinctive crowing sound and their behavior of wagging their tails, jumping, and flapping their wings. Hiding in shells is not typically associated with roosters. Therefore, the correct option would be \"Wagging its tail.\""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314570.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nItalian\nKorean\nFrench\nEnglish",
+            "answer": "English",
+            "original_answer": "Korean",
+            "transcription": "다윗의 아들 이스라엘 왕 솔로몬의 자문이라"
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314570.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nEnglish\nKorean\nFrench\nItalian",
+            "answer": "English",
+            "transcription": "다윗의 아들 이스라엘 왕 솔로몬의 자문이라"
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nItalian\nKorean\nFrench\nEnglish",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nEnglish\nKorean\nFrench\nItalian",
+            "answer": "English",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다"
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia278_utt0.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\ndisgust\nhappy\nangry",
+            "answer": "disgust",
+            "transcription": "I'll stick my neck! Oh, Willie's still alive!"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17897349.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nSpanish\nKorean\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Je m'étais oublié un moment. Il est vrai, cet homme éblouit."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_32222394.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nJapanese\nEnglish\nSpanish",
+            "answer": "English",
+            "transcription": "The novel is part of the National Library of Australia."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/keyboard_acoustic_004-103-025.wav",
+            "question": "Determine the pitch of the note played by the instrument in the audio sample. Pick one of the answers presented: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "G7",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "What is the main purpose of licensing public relations practitioners?\n\nOptions:\nTo regulate access to posts in the field\nTo create an elite of public relations practitioners\nTo preserve the well-being of society\nTo achieve better wages for licensed practitioners",
+            "answer": "To preserve the well-being of society",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314570.wav",
+            "question": "Based on the linguistic features and origins of the language heard in this audio, which of the provided language families does it most accurately align with?\n\nOptions:\nJaponic\nSino-Tibetan\nKoreanic\nIndo-European",
+            "answer": "Indo-European",
+            "transcription": "다윗의 아들 이스라엘 왕 솔로몬의 자문이라"
+        },
+        "pre_edit": {
+            "reliability": "The language spoken is Italian.",
+            "generality_type_0": "Korean",
+            "generality_type_1": "The language spoken in the audio is Korean.",
+            "generality_type_2": "Korean",
+            "locality_audio_type_0": "angry",
+            "locality_audio_type_1": "French",
+            "locality_audio_type_2": "The speaker is using English.",
+            "locality_audio_type_3": "C♯6",
+            "locality_text": "The main purpose of licensing public relations practitioners is to preserve the well-being of society. Licensing helps ensure that practitioners have the necessary knowledge, skills, and ethical standards to practice their profession effectively and safely. It also provides a level of accountability for practitioners, as they are held to certain professional standards and can be disciplined if they fail to meet those standards. This helps maintain the integrity of the public relations industry and protects the public from potentially harmful practices. Additionally, licensing can help to establish a minimum standard of education and training for public relations professionals, which can contribute to the overall quality of the field.",
+            "portability_audio": "The language in the audio most accurately aligns with the Sino-Tibetan language family."
+        },
+        "post_edit": [
+            {
+                "reliability": "Male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and the elementary charge as 1.602 x 10^-19 C, we get:\nexcess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons.\nSo the correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Japanese.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion based on the emotional tone of the speech is \"laughing at a funny joke in a conversation.\" The speaker sounds happy and amused, suggesting they are likely laughing at a joke or a humorous situation."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Chinese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is best matched by Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the principle of \" Caveat emptor,\" which means that the buyer had to take care to examine the goods before buying them and could not rely on the seller's promises. This principle was often accompanied by informal codes of conduct and self-regulation by companies to protect consumers.\nHowever, over time there has been a gradual erosion of this principle due to increased regulation at national, EU, and international levels. These regulations aim to protect consumers by requiring companies to provide information about the products they sell and ensuring that they meet certain safety and quality standards. As a result, the principle of \"Buyer Beware\" has become more prominent, meaning that consumers can rely on certain legal protections and can hold companies responsible for providing them with accurate and reliable information about their products.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what's heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a bird, specifically a crow.",
+                "generality_type_1": "Based on the loud, distinctive crowing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal sounds like it is moving by making loud noises while wings flap rapidly, suggesting that it may be a bird. Therefore, the correct locomotion method for this animal would be flying."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Italian",
+                "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "C♯7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. So the correct option is: \"the region around a star where liquid water can potentially exist on planetary surfaces.\"",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep rumbling, similar to a cow or sheep, but then transitions into a higher-pitched croak, which is a distinctive sound of a frog. Additionally, the sound seems to get softer before getting louder again, which could be a pattern observed in certain types of frog vocalizations.",
+                "generality_type_0": "Based on the sound description provided, I would choose the cow as the animal responsible for the sound. The sounds in the recording resemble those made by a cow mooing.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+                "generality_type_2": "Based on the sound description given, I would choose \"hen\" as the animal responsible for the sound. The sound seems to be a mix of a groan and a cluck, which are characteristic sounds made by a hen.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I would say it is most likely a sheep. The sound has a high pitch and a repetitive pattern, which is typical of sheep calling.",
+                "locality_audio_type_3": "The accent in the speech is British.",
+                "locality_text": "The best translation into predicate logic for the given sentence \"All jellybeans are sweeter than all fruit\" is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies\", and the logical connective \"•\" to represent \"or\". The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The domain of discourse is the set of all fruits and jellybeans.\n\nOption (B) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (C) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (D) is incorrect because it does not correctly capture the relationship between jellybeans and fruit in the original sentence.",
+                "portability_audio": "Based solely on the sound produced, it is difficult to determine the specific reproduction strategy of the animal. However, given the nature of the sound and its similarity to other bovinae species, it is most likely that the animal in question follows a process of oviparity, where eggs are laid and develop outside the mother's body before hatching. Asexual reproduction, marsupial reproduction, and viviparity involve different methods of developing offspring within the mother's body."
+            },
+            {
+                "reliability": "Based on the sound description given, the animal responsible for the sound seems to be a rooster, specifically a cock-a-doodle-doo.",
+                "generality_type_0": "The sound is most likely from a rooster.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a rooster.",
+                "generality_type_2": "The sound is most likely from a rooster.",
+                "locality_audio_type_0": "Happy",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "Reverb.",
+                "locality_text": "According to McGregor's Theory X, workers do not like to be directed. They prefer to have their own initiative and be left to their own devices. Therefore, the correct answer is \"Workers like to be directed.\"",
+                "portability_audio": "Based on the sound description provided, the animal in the recording is likely a rooster. Roosters are known for their distinctive crowing sound and the sound of clucking, which is often used to express distress or contentment. The option that best fits this description is \"clucking\" followed by \"crowing.\" Therefore, the correct answer would be option C: clucking, crowing."
+            },
+            {
+                "reliability": "The language spoken is Italian.",
+                "generality_type_0": "Korean",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "Korean",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The speaker is using English.",
+                "locality_audio_type_3": "C♯6",
+                "locality_text": "The main purpose of licensing public relations practitioners is to preserve the well-being of society. Licensing helps ensure that practitioners have the necessary knowledge, skills, and ethical standards to practice their profession effectively and safely. It also provides a level of accountability for practitioners, as they are held to certain professional standards and can be disciplined if they fail to meet those standards. This helps maintain the integrity of the public relations industry and protects the public from potentially harmful practices. Additionally, licensing may help to create a more standardized and professionalized field, which can be beneficial for both practitioners and clients. However, licensing does not necessarily aim to create an elite of practitioners or achieve better wages for licensed practitioners.",
+                "portability_audio": "The language in the audio most accurately aligns with the Sino-Tibetan language family."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_25.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nhen\nsheep\ndog\ncat",
+            "answer": "cat",
+            "original_answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_25.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\nsheep\ncat\nhen\ndog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nhen\nsheep\ndog\ncat",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\nsheep\ncat\nhen\ndog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_37536220.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nMale\nFemale",
+            "answer": "Female",
+            "transcription": "Biomass power is created when any biological matter is burned as fuel."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nsheep\ncat\npig\ncow",
+            "answer": "pig",
+            "transcription": "Oh, my God."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_230.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nhen\ncrow\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10065853.wav",
+            "question": "Classify whether the given speech is a spoofed voice or an authentic recording. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "It's nice to hear."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following explanations most likely would satisfy an auditor who questions management about significant debits to accumulated depreciation accounts in the current year?\n\nOptions:\nPrior years’ depreciation expenses were erroneously understated.\nCurrent year’s depreciation expense was erroneously understated.\nThe estimated remaining useful lives of plant assets were revised upward.\nPlant assets were retired during the current year.",
+            "answer": "Plant assets were retired during the current year.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_25.wav",
+            "question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nFlying between trees\nPurring\nFlapping its wings\nHiding in shells",
+            "answer": "Purring",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a sheep.",
+            "generality_type_0": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound is high-pitched, repetitive, and has a distinct bleating tone that is often associated with sheep. Cats, hens, and dogs make different sounds that are not typically described as bleats.",
+            "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a sheep.",
+            "generality_type_2": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Cats typically make different types of sounds, such as growls, meows, and purrs. Chickens usually make clucking sounds, while dogs can bark, whine, or howl.",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a pig.",
+            "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that best matches the recording is a cat.",
+            "locality_audio_type_3": "The given speech is a spoofed voice.",
+            "locality_text": "Based on the given options, the most likely explanation that would satisfy an auditor who questions management about significant debits to accumulated depreciation accounts in the current year would be option  \"The estimated remaining useful lives of plant assets were revised upward.\"\nThis is because accumulated depreciation is a record of the depreciation expense recognized over the useful life of a plant asset. If the estimated remaining useful lives of plant assets are revised upward, this would require the recognition of additional depreciation expense in the current year, which would result in a significant debit to the accumulated depreciation account.\nOn the other hand, if prior years’ depreciation expenses were erroneously understated, this would have already been recognized in past years, and the current year's depreciation expense would not be affected. Similarly, if plant assets were retired during the current year, this would also result in a significant credit to the accumulated depreciation account, rather than a debit. Option  \"Current year’s depreciation expense was erroneously understated\" could potentially explain some of the debits, but it does not fully explain the magnitude of the amounts involved.",
+            "portability_audio": "Based on the provided sound effect, the animal in the audio usually acts by flapping its wings. Therefore, the most representative behavior option would be \"Flapping its wings.\""
+        },
+        "post_edit": [
+            {
+                "reliability": "Male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nnumber of excess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nnumber of excess electrons = (-1)C / (1.602 x 10^-19 C) = -6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Japanese.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion based on the speech's emotional tone is \"laughing at a funny joke in a conversation.\" The speaker sounds joyful and amused, suggesting they are experiencing a positive emotion."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Japanese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the principle of \" Caveat emptor,\" which means that the buyer had to take care to examine the goods before buying them and could not rely on the seller's promises. This principle was seen as a way to protect the interests of sellers and prevent fraud.\nHowever, over time, there has been a gradual erosion of this principle due to increased regulation at a national, EU, and international level. These regulations aim to protect consumers by requiring businesses to provide information about the quality and safety of their products, and by giving consumers the right to return or exchange products if they are defective or not as advertised.\nTherefore, the correct answer to the question would be: Caveat emptor, Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, which is often associated with crows. Additionally, the sound fades away gradually, as typically observed in birds. While other animals like frogs may produce sounds that could resemble一部分 of what was heard, the overall shape and intensity of the sound seem more consistent with those of a crow.",
+                "generality_type_0": "The sound appears to be made by a bird, specifically a crow.",
+                "generality_type_1": "Based on the loud, distinctive crowing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a lateral, as indicated by the provided transcription.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal sounds like it is moving by making loud noises while wings flap rapidly, suggesting that it may be a bird. Therefore, the correct locomotion method for this animal would be flying."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Based on the provided transcription and the speaker's tone, I would classify the speaker's emotion as angry.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "A7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of liquid water, which is necessary for many forms of life as we know them. The habitable zone is determined by the balance between the amount of energy received from the star and the ability of the planet's atmosphere to block harmful radiation, such as ultraviolet radiation. So the correct option is: \"the region around a star where liquid water can potentially exist on planetary surfaces.\"",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep, rumbling noise followed by a series of lighter, more rhythmic croaks. This sounds like the call and response pattern typical of frogs during mating season. Additionally, the fact that the sound eventually fades away suggests that the animal might be moving out of range or entering water, behaviors common among frogs.",
+                "generality_type_0": "Based on the sound description provided, I would choose the cow as the animal responsible for the sound. The sounds in the recording resemble those made by a cow mooing.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source of the sound is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+                "generality_type_2": "Based on the sound description given, I would choose \"hen\" as the animal responsible for the sound. The sound seems to be a mix of a groan and a cluck, which are characteristic sounds made by a hen.",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound has a high pitch and a repetitive pattern, which is similar to the bleating sound of a sheep. Additionally, the sound seems to get louder before quieting down, which is also a behavior seen in sheep during certain times of the day.",
+                "locality_audio_type_3": "The accent in the speech is British.",
+                "locality_text": "The best translation into predicate logic for the given sentence \"All jellybeans are sweeter than all fruit\" is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies\", and the logical connective \"•\" to represent \"or\". The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The domain of discourse is the set of all fruits and jellybeans.\n\nOption (B) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (C) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (D) is incorrect because it does not correctly capture the relationship between jellybeans and fruit in the original sentence.",
+                "portability_audio": "Based on the sound description provided, it seems to resemble the sound of a cow mooing. Cows are known to reproduce via the process of calving, which is a form of viviparous reproduction. Therefore, the correct option would be B: Viviparous."
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound seems to be a rooster, as the sound resembles a rooster crowing. Therefore, the correct option would be \"rooster\".",
+                "generality_type_0": "The sound is most likely from a rooster.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a rooster.",
+                "generality_type_2": "The sound is most likely from a rooster.",
+                "locality_audio_type_0": "Happy",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "Reverb.",
+                "locality_text": "According to McGregor's Theory X, workers do not like to be directed. They prefer to have their own initiative and be left to their own devices. Therefore, the correct answer is \"Workers like to be directed.\"",
+                "portability_audio": "Based on the sound description provided, the animal in the recording is likely a rooster. Roosters are known for their distinctive crowing sound and their behavior of wagging their tails, jumping, and flapping their wings. Hiding in shells is not typically a behavior associated with roosters. Therefore, the correct option would be \"Wagging its tail.\""
+            },
+            {
+                "reliability": "The language spoken is Italian.",
+                "generality_type_0": "Korean",
+                "generality_type_1": "The language spoken is Korean.",
+                "generality_type_2": "Korean",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The speaker is using English.",
+                "locality_audio_type_3": "C♯6",
+                "locality_text": "The main purpose of licensing public relations practitioners is to preserve the well-being of society. Licensing helps ensure that practitioners have the necessary knowledge, skills, and ethical standards to practice their profession effectively and safely. It also provides a level of accountability for practitioners, as they are held to certain professional standards and can be disciplined if they fail to meet those standards. This helps maintain the integrity of the public relations industry and protects the public from potentially harmful practices. Additionally, licensing can help to establish a minimum standard of education and training for public relations professionals, which can contribute to the overall quality of the field.",
+                "portability_audio": "The language in the audio most accurately aligns with the Sino-Tibetan language family."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a sheep.",
+                "generality_type_0": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Cats typically make different types of sounds, such as meows or growls. Chickens usually make clucking sounds, while dogs can bark or whine.",
+                "generality_type_1": "Based on the auditory characteristics of the sound, it most closely matches a sheep.",
+                "generality_type_2": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Cats typically make different types of sounds, such as meows or growls. Chickens usually make clucking sounds, while dogs can bark or whine.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a pig.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that best matches the recording is a cat.",
+                "locality_audio_type_3": "The given speech is a spoofed voice.",
+                "locality_text": "Based on the given options, the most likely explanation that would satisfy an auditor who questions management about significant debits to accumulated depreciation accounts in the current year would be option  \"The estimated remaining useful lives of plant assets were revised upward.\"\nThis is because accumulated depreciation is a record of the depreciation expense recognized over the useful life of a plant asset. If the estimated remaining useful lives of plant assets are revised upward, this would require the recognition of additional depreciation expense in the current year, which would result in a significant debit to the accumulated depreciation account.\nOn the other hand, if prior years’ depreciation expenses were erroneously understated, this would have been recognized in past years, and the current year’s depreciation expense would not be affected. Similarly, if plant assets were retired during the current year, this would also result in a significant credit to the accumulated depreciation account, rather than a debit. Option  \"Current year’s depreciation expense was erroneously understated\" could potentially explain some of the debits, but it does not fully explain why there are significant debits in the current year alone.",
+                "portability_audio": "Based on the provided sound effect, the animal in the audio usually acts by flapping its wings. Therefore, the most representative behavior option would be \"Flapping its wings.\""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia196_utt0.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\ndisgust\nangry\nsad\nhappy",
+            "answer": "disgust",
+            "original_answer": "angry",
+            "transcription": "That's it. I cannot make this decision. It is too difficult."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia196_utt0.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nsad\nangry\nhappy\ndisgust",
+            "answer": "disgust",
+            "transcription": "That's it. I cannot make this decision. It is too difficult."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\ndisgust\nangry\nsad\nhappy",
+            "answer": "disgust",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nsad\nangry\nhappy\ndisgust",
+            "answer": "disgust",
+            "transcription": "I think I have a doctor's appointment."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_23.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\npig\nsheep\nrooster\ncat",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IOM_HAP_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nhappy\nsad\nfear",
+            "answer": "happy",
+            "transcription": "I'm on my way to the meeting."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1013_TAI_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nsad\nfear\nhappy\ndisgust",
+            "answer": "disgust",
+            "transcription": "The airplane is almost full."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/bass_synthetic_034-100-025.wav",
+            "question": "Analyze the pitch of the note in the provided audio clip. Reply with a pitch from the choices listed: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "E7",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Let V be the vector space, under the usual operations, of real polynomials that are of degree at most 3. Let W be the subspace of all polynomials p (x) in V such that p (0) = p(1) = p(-1) = 0. Then dim V + dim W is\n\nOptions:\n4\n5\n6\n7",
+            "answer": "5",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia196_utt0.wav",
+            "question": "Which situation best corresponds to the emotion conveyed in the speech?\n\nOptions:\nSeeing an unpleasant image online.\nHugging a loved one after a long separation.\nSaying goodbye at an airport.\nFacing an aggressive dog on the street.",
+            "answer": "Seeing an unpleasant image online.",
+            "transcription": "That's it. I cannot make this decision. It is too difficult."
+        },
+        "pre_edit": {
+            "reliability": "The speaker is expressing disgust.",
+            "generality_type_0": "The speaker's emotion is disgusted.",
+            "generality_type_1": "angry",
+            "generality_type_2": "angry",
+            "locality_audio_type_0": "The sound in the audio file is most likely coming from a cat.",
+            "locality_audio_type_1": "Happy",
+            "locality_audio_type_2": "Disgusted",
+            "locality_audio_type_3": "C♯7",
+            "locality_text": "The dimension of a vector space is the number of linearly independent vectors in it. To find the dimension of V and W, we need to find the number of elements in their basis sets.\nFor V, we can take the set {1, x, x^2, x^3} as a basis, which consists of four linearly independent vectors. This means that the dimension of V is 4.\nFor W, we can take the set {1, -1, 0, 0} as a basis, which consists of four linearly independent vectors. This means that the dimension of W is also 4.\nTherefore, the sum of the dimensions of V and W is 4 + 4 = 8. So the answer is option 7: 7.",
+            "portability_audio": "The situation that best corresponds to the emotion conveyed in the speech is \"Saying goodbye at an airport.\" The speaker seems to be expressing a strong feeling of reluctance or difficulty in letting go of something or someone, which is often associated with the emotions of sadness or nostalgia when saying goodbye at an airport."
+        },
+        "post_edit": [
+            {
+                "reliability": "Male",
+                "generality_type_0": "Male",
+                "generality_type_1": "male",
+                "generality_type_2": "Male",
+                "locality_audio_type_0": "The speaker is using French: \"Oui.\"",
+                "locality_audio_type_1": "Female",
+                "locality_audio_type_2": "(B) It’s a musical instrument.",
+                "locality_text": "The number of excess electrons in an object carrying a charge of -1 C can be calculated using the formula:\nexcess electrons = charge / elementary charge\nwhere the elementary charge is the charge carried by a single electron.\nSubstituting the given value of charge as -1 C and dividing by the elementary charge of 1.602 x 10^-19 C, we get:\nexcess electrons = (-1) / (1.602 x 10^-19) = 6.25 x 10^18\nTherefore, the object contains 6.25 x 10^18 excess electrons. The correct option is 6.25 x 10^18.",
+                "portability_audio": "The most accurate term of address would be Ms."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The emotional tone of the speaker is disgust.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "The speaker is using Japanese.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The provided utterance is likely a result of replay attack.",
+                "locality_text": "An example of capital as an economic resource is a share of corporate stock. Capital refers to the resources that are used in production to create goods and services, and in economics, capital can take many forms, including physical assets like machinery and equipment, financial assets like stocks and bonds, and human capital like skills and knowledge. A share of corporate stock represents ownership in a company, and it can be bought and sold on financial markets, which makes it a type of financial capital.",
+                "portability_audio": "The option that best reflects the speaker's emotion appears to be \"laughing at a funny joke in a conversation.\" The content of the speech suggests amusement or lightheartedness, which is typically associated with laughter."
+            },
+            {
+                "reliability": "The language spoken in the recording is best matched by Japanese.",
+                "generality_type_0": "The speaker is using Japanese.",
+                "generality_type_1": "The language spoken in the recording is Japanese.",
+                "generality_type_2": "The speaker is using Japanese.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The language spoken is Japanese.",
+                "locality_audio_type_2": "German",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "The traditional concept of consumer rights was based on the principle of \" Caveat emptor,\" which means that the buyer had to take care to examine the goods before buying them and could not rely on the seller's promises. This principle was widely accepted and applied at a national level, both in Europe and the United Nations.\nHowever, over time there has been a gradual erosion of this principle due to increased regulation at a European Union and international level. These regulations aim to protect consumers by requiring businesses to provide information about the quality and safety of their products, and by giving consumers certain rights such as the right to return faulty goods or receive a refund.\nTherefore, the correct answer to the question would be: Caveat emptor, Buyer beware, Regulation, National.",
+                "portability_audio": "The word that corresponds to 'gratitude' in the language heard in this speech is 'dankbarkeit'."
+            },
+            {
+                "reliability": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a crow. The sound starts with a high-pitched screech or caw, followed by a lower tone, and then ends with another high-pitched sound similar to the first one. This pattern of high and low tones resembles the call and response behavior commonly exhibited by crows. Additionally, the sound seems to be coming from a bird, which is known for its distinctive vocalizations, including cawing and squawking. While other animals like frogs may produce sounds that could resemble的一部分 of what was heard, the overall pattern and context suggest that a crow is the most likely source of the sound.",
+                "generality_type_0": "The sound appears to be made by a bird, specifically a crow.",
+                "generality_type_1": "Based on the loud, distinctive crowing sound, I believe the bird Crow is the most likely source of the sound.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Italian",
+                "locality_audio_type_1": "Based on the sound I heard, I think the animal associated is a cat.",
+                "locality_audio_type_2": "Based on the sound description, I would choose the frog as the animal responsible for the sound.",
+                "locality_audio_type_3": "The middle phone in the audio is a 'lateral' according to the provided description.",
+                "locality_text": "To solve this problem, we need to determine how many computers each class needs and then find out how many computers can fit all the students.\nFirst, let's calculate the total number of students in both classes: 14 + 12 = 26 students\nNext, let's subtract the number of broken computers: 20 - 2 = 18 computers\nNow, let's divide the total number of students by the number of working computers: 26 / 18 = 1.417\nSince we cannot have a fraction of a computer, we round down to 1 computer. This means that only 1 student from each class can have a computer to themselves.\nTherefore, the maximum number of students who can have a computer to themselves is 2.\nSo the correct answer is option 2.",
+                "portability_audio": "Based on the sound description provided, the animal sounds like it is moving by making loud noises while wings flap rapidly, suggesting that it may be a bird. Therefore, the correct option for the locomotion method of this animal in its natural habitat would be flying."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "The speaker is using Italian.",
+                "generality_type_2": "Italian",
+                "locality_audio_type_0": "The speaker's emotion can be classified as angry based on the provided audio clip.",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "B7",
+                "locality_text": "The habitable zone around a star refers to the region around a star where liquid water can potentially exist on planetary surfaces. This means that the temperature and pressure conditions in this region allow for the existence of water in a liquid state, which is necessary for many biological processes to occur. The habitable zone is important because it determines the potential for life to exist on planets orbiting a star. However, it does not necessarily mean that humans can survive or that life exists in this region. Additionally, the habitable zone can vary depending on the size and mass of the star, as well as other factors such as the presence of magnetic fields and the composition of the planet's atmosphere.",
+                "portability_audio": "Considering the language spoken in the audio is Italian, the historical figure most likely from a country that includes this language as an official language is Giuseppe Verdi."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound starts with a deep, rumbling noise followed by a series of lighter, more rhythmic croaks. This sounds like the call and response pattern typical of frogs during mating season. Additionally, the fact that the sound eventually fades away suggests that the animal might be moving away from the listener or entering water, which is a common behavior for frogs.",
+                "generality_type_0": "Based on the sound description provided, I would choose the cow as the animal responsible for the sound. The sounds in the recording seem to be characteristic of a cow mooing.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound is deep and resonant, similar to what a frog might produce when calling for mates or marking its territory. Additionally, the sound seems to have a natural, organic quality that aligns with the青蛙's presence in the natural environment.",
+                "generality_type_2": "Based on the sound description given, I would choose \"sheep\" as the animal responsible for the sound. The sounds resemble those made by a sheep crying out.",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "Based on the provided audio recording, the animal responsible for the sound is most likely a frog.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound has a high pitch and a repetitive pattern, which is similar to the bleating sound of a sheep. Additionally, the sound seems to get louder before quieting down, which is also a behavior seen in sheep during certain times of the day.",
+                "locality_audio_type_3": "The accent in the speech is British.",
+                "locality_text": "The best translation into predicate logic for the given sentence \"All jellybeans are sweeter than all fruit\" is:\n\n(∀x)[Fx ⊃ (∀y)(Jy ⊃ Sxy)]\n\nThis translation uses the logical operator \"⊃\" to represent \"implies\", and the logical connective \"•\" to represent \"or\". The universal quantifiers \"∀x\" and \"∀y\" indicate that the statement applies to every possible value of x and y, respectively. The domain of discourse is the set of all fruits and jellybeans.\n\nOption (B) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (C) is incorrect because it uses the wrong logical operator to combine the two conditional statements. Option (D) is incorrect because it does not correctly capture the relationship between jellybeans and fruit in the original sentence.",
+                "portability_audio": "Based solely on the sound produced, it is difficult to determine the specific reproduction strategy of the animal. However, given the nature of the sound and its similarity to other bovinae species, it is most likely that the animal in question follows a viviparous reproduction strategy, where the young are born alive after developing inside the mother's womb. Asexual reproduction, oviparity, and marsupial reproduction all involve different methods of producing offspring that do not involve the development of the young within the mother's body."
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound seems to be a rooster, as the sound resembles a rooster crowing. Therefore, the correct option would be \"rooster\".",
+                "generality_type_0": "The sound is most likely from a rooster.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a rooster.",
+                "generality_type_2": "The sound is most likely from a rooster.",
+                "locality_audio_type_0": "Happy",
+                "locality_audio_type_1": "Sheep",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "Reverb.",
+                "locality_text": "According to McGregor's Theory X, workers do not like to be directed. They prefer to have their own initiative and be left to their own devices. Therefore, the correct answer is \" Workers like to be directed.\"",
+                "portability_audio": "Based on the sound description provided, the animal in the recording is likely a rooster. Roosters are known for their distinctive crowing sound and their behavior of wagging their tails, jumping, and flapping their wings. Hiding in shells is not typically a behavior associated with roosters. Therefore, the correct option would be \"Wagging its tail.\""
+            },
+            {
+                "reliability": "The language spoken is Italian.",
+                "generality_type_0": "Korean",
+                "generality_type_1": "The language spoken is Korean.",
+                "generality_type_2": "Korean",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The speaker is using English.",
+                "locality_audio_type_3": "C♯6",
+                "locality_text": "The main purpose of licensing public relations practitioners is to preserve the well-being of society. Licensing helps ensure that practitioners have the necessary knowledge, skills, and ethical standards to practice their profession effectively and safely. It also provides a level of accountability for practitioners, as they are held to certain professional standards and can be disciplined if they fail to meet those standards. This helps maintain the integrity of the public relations industry and protects the public from potentially harmful practices. Additionally, licensing can help to establish a minimum standard of education and training for public relations professionals, which can contribute to the overall quality of the field.",
+                "portability_audio": "The language in the audio most accurately aligns with the Sino-Tibetan language family."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a sheep.",
+                "generality_type_0": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Cats typically make different types of sounds, such as meows or growls. Chickens usually make clucking sounds, while dogs can bark or whine.",
+                "generality_type_1": "Based on the auditory characteristics of the sound, it most closely matches a sheep.",
+                "generality_type_2": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Cats typically make different types of sounds, such as growls, meows, and purrs. Chickens usually make clucking sounds, while dogs can bark, whine, or howl.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a pig.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "The given speech is a spoofed voice.",
+                "locality_text": "Based on the given options, the most likely explanation that would satisfy an auditor who questions management about significant debits to accumulated depreciation accounts in the current year would be option  \"The estimated remaining useful lives of plant assets were revised upward.\"\nThis is because accumulated depreciation is a record of the depreciation expense recognized over the useful life of a plant asset. If the estimated remaining useful lives of plant assets are revised upward, this would require the recognition of additional depreciation expense in the current year, which would result in a significant debit to the accumulated depreciation account.\nOn the other hand, if prior years’ depreciation expenses were erroneously understated, this would have already been recognized in past years, and the current year’s depreciation expense would not be affected. Similarly, if plant assets were retired during the current year, this would also result in a significant credit to the accumulated depreciation account, rather than a debit. Option  \"Current year’s depreciation expense was erroneously understated\" could potentially explain some of the debits, but it does not fully explain the magnitude of the amounts involved.",
+                "portability_audio": "Based on the provided sound effect, the animal in the audio usually acts by flapping its wings. Therefore, the most representative behavior option would be \"Flapping its wings.\""
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker's emotion is happy.",
+                "generality_type_1": "angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "The sound in the audio file is most likely coming from a cat.",
+                "locality_audio_type_1": "Happy",
+                "locality_audio_type_2": "disgusted",
+                "locality_audio_type_3": "C♯7",
+                "locality_text": "The dimension of a vector space is the number of linearly independent vectors in it. To find the dimension of V and W, we need to find the number of elements in their basis sets.\nFor V, we can take the set {1, x, x^2, x^3} as a basis, which consists of four linearly independent vectors. This means that the dimension of V is 4.\nFor W, we can take the set {1, -1, 0, 0} as a basis, which consists of four linearly independent vectors. This means that the dimension of W is also 4.\nTherefore, the sum of the dimensions of V and W is 4 + 4 = 8. The correct option is not among the given choices, so the answer is \"not unique\".",
+                "portability_audio": "The situation that best corresponds to the emotion conveyed in the speech is \"Saying goodbye at an airport.\" The speaker seems to be expressing a strong feeling of reluctance or difficulty in letting go of something or someone, which is often associated with the emotions of sadness or nostalgia when saying goodbye at an airport."
+            }
+        ]
+    }
+]

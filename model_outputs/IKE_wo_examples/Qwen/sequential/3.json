@@ -1,0 +1,1415 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_68.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nfrog\nhen\ncow\nsheep",
+            "answer": "frog",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_26966176.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "It also has a visitor center and an interpretive exhibit."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-HumanAndNonSpeechSounds/2-109759-B-26.wav",
+            "question": "Kindly categorize the sounds of the environment. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+            "answer": "laughing",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following increases the size of the tax multiplier?\n\nOptions:\nAn increase in the marginal propensity to consume.\nAn increase in the reserve ratio.\nAn increase in the marginal propensity to save.\nA decrease in the spending multiplier.",
+            "answer": "An increase in the marginal propensity to consume.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nPan Yuliang\nVirgil Abloh",
+            "answer": "Virgil Abloh",
+            "transcription": "Five dancers happily going through their steps in unison."
+        },
+        "pre_edit": {
+            "reliability": "female",
+            "generality_type_0": "female",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "coughing, laughing, breathing, footsteps.",
+            "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income goes into savings rather than being spent, which reduces the amount of money available for government spending. As a result, a smaller percentage of the total income is used to pay taxes, leading to a larger tax multiplier. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, reducing the size of the tax multiplier. An increase in the reserve ratio does not directly affect the size of the tax multiplier, as it primarily affects the money supply and interest rates.",
+            "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing, footsteps.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, a smaller percentage of the additional income is used to pay taxes, leading to a larger tax multiplier. The other options do not directly affect the size of the tax multiplier. An increase in the marginal propensity to consume would reduce the size of the tax multiplier because more of the additional income would be spent rather than saved. A decrease in the spending multiplier would also reduce the size of the tax multiplier because less of the additional income would be used to pay taxes. An increase in the reserve ratio would not directly affect the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "original_answer": "sheep",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39827261.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Unlike typical villages, there are no shops or businesses."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_11.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\nhen\nsheep\ncrow\nrooster",
+            "answer": "rooster",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_35.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ndog\ncat\ncow\ncrow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpeakerCounting_LibriTTS-TestClean/001515.wav",
+            "question": "Identify how many individuals are speaking. The answer could be one, two, three, four, or five.",
+            "answer": "three",
+            "transcription": "I see they lay twilight within me, still looking on the east apart, just as I, I, will pass."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A woman sued a man for personal injuries that she suffered when she was struck by the man's car. The man's car hit the woman as she was walking across the street. Immediately after the accident, the man ran over to the woman and said, \"I know I was driving fast, but you weren't paying attention where you were walking. Anyhow, I'm willing to pay all your medical expenses. \"At trial, the woman calls an eyewitness to the accident. The eyewitness proposes to testify that he heard the man tell the woman, \"I know I was driving fast. \" The man's attorney objects. If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is\n\nOptions:\nadmissible as an opinion.\nadmissible as an admission.\nadmissible as a present sense impression.\nadmissible as a declaration against interest.",
+            "answer": "admissible as an admission.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nMooing\nChirping\nMeowing\nClucking",
+            "answer": "Meowing",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Additionally, the sound seems to be coming from an animal that is close by and moving around, which could describe the movement of a sheep.",
+            "generality_type_0": "Sheep",
+            "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound is high-pitched, repetitive, and has a distinct bleating tone, which aligns well with the sounds typically produced by sheep.",
+            "generality_type_2": "Sheep",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "The most likely animal responsible for the sound in this audio clip is a rooster.",
+            "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+            "locality_audio_type_3": "two.",
+            "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable to that jurisdiction.",
+            "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing, breathing, footsteps.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income goes into savings rather than being spent, which reduces the amount of money available for government spending. As a result, a smaller percentage of the total income is used to pay taxes, leading to a larger tax multiplier. The other options do not directly affect the size of the tax multiplier. An increase in the marginal propensity to consume would reduce the size of the tax multiplier because more of the additional income would be spent, reducing the amount of money available for government spending. A decrease in the spending multiplier would also reduce the size of the tax multiplier because less of the additional income would be used to pay taxes. An increase in the reserve ratio would not have a direct effect on the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from an animal that is close by and not too far away, which is also typical for sheep.",
+                "generality_type_0": "Sheep",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a distinct rural and agricultural quality, which is often associated with sheep farming environments.",
+                "generality_type_2": "Based on the sound heard in the audio file, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable to the jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "original_answer": "frog",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_IEO_FEA_MD.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nangry\nsad\nfear\ndisgust",
+            "answer": "fear",
+            "transcription": "It's 11 o'clock."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_40.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\ncat\nhen",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_48.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\nrooster\nfrog\nsheep",
+            "answer": "dog",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-ExteriorAndUrbanNoises/2-128465-A-43.wav",
+            "question": "We need to classify the environmental sounds. The answer could be helicopter, chainsaw, siren, car horn, engine, train, church bells, airplane, fireworks, or hand saw.",
+            "answer": "car horn",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which fashion house sued for damages to its reputation after being accused of stealing a design?\n\nOptions:\nDior\nGivenchy\nChanel\nLacroix",
+            "answer": "Chanel",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nHiding in shells\nJumping between branches\nWagging its tail\nFlapping its wings",
+            "answer": "Wagging its tail",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Frog",
+            "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+            "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound in this audio clip is a frog. Therefore, the correct answer is \"frog\".",
+            "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog. Frogs typically produce sounds that are deeper and more resonant than those of dogs, cows, or sheep. Additionally, the sound in the recording seems to have a pattern of getting louder before getting softer, which is a characteristic of some frog calls.",
+            "locality_audio_type_0": "Sad",
+            "locality_audio_type_1": "The sound in the audio recording is most likely made by a cat.",
+            "locality_audio_type_2": "The sound in the audio recording is likely made by a dog. Dogs are known to bark and howl, and the sounds in the recording match those characteristics. While other animals like roosters, frogs, and sheep may make certain sounds, they are not typically associated with the kind of vocalizations heard in the recording.",
+            "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+            "locality_text": "After being accused of stealing a design, the fashion house that sued for damages to its reputation was Dior. Therefore, the correct answer is option D.",
+            "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is 'flapping its wings'."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing, footsteps.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income goes into savings rather than being spent, which reduces the amount of money available for government spending. As a result, a smaller percentage of the total income is used to pay taxes, leading to a larger tax multiplier. The other options do not directly affect the size of the tax multiplier. An increase in the marginal propensity to consume would reduce the size of the tax multiplier because more of the additional income would be spent, reducing the amount of money available for government spending. A decrease in the spending multiplier would also reduce the size of the tax multiplier because less of the additional income would be used to pay taxes, leading to a smaller percentage of the total income being collected by the government. An increase in the reserve ratio does not directly affect the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Additionally, the sound seems to be coming from an animal that is close by and moving around, which could describe a sheep's behavior.",
+                "generality_type_0": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound characteristics closely resemble those of a sheep bleating.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a low pitch and a repetitive pattern, which are also typical of sheep bleats.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The most likely animal responsible for the sound in this audio clip is a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and his speed, which would have been a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific rules of evidence in the jurisdiction where the trial is taking place.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound in this audio clip is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "Based on the provided audio recording, I believe the sound is made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is 'flapping its wings'."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "happy",
+            "transcription": "The airplane is almost full."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "The airplane is almost full."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\nrooster\ncat\ncow",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1057_IOM_DIS_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\ndisgust\nsad\nhappy\nfear",
+            "answer": "disgust",
+            "transcription": "I'm on my way to the meeting."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_TIE_SAD_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "That is exactly what happened."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HumanNonSpeechSoundRecognition_Nonspeech7k-test_CommonVoice-DeltaSegment-15/113364-1_2_0.wav",
+            "question": "Concentrate solely on the non-speech sounds in the audio clip and classify them, disregarding any speech. The available sounds are breath, cough, cry, laugh, scream, sneeze, and yawn.",
+            "answer": "crying",
+            "transcription": "He finds Adda's pendant in a doorway and follows her scent to Dracula's castle."
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The director of a local food bank asks for data on all donations given during the month of November. Of the 100 checks received, the average donation is $155 with a standard deviation of $32. Which of the following is the most appropriate statement?\n\nOptions:\nThis November, the average donation is $155.\n50% of all donations this November are more than $155.\nWe are 95% confident that the average donation in November is between about $91 and $219.\nWe are 95% confident that the average donation in November is between about $149 and $161.",
+            "answer": "This November, the average donation is $155.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "Based on the emotion expressed in the audio, which facial expression would be the most likely one?\n\nOptions:\nFlared nostrils with a tense expression\nEyes gazing downward with trembling lips\nRetracted chin with one corner of the mouth twitching, as if intolerable.\nRelaxed facial muscles with a cheerful grin",
+            "answer": "Eyes gazing downward with trembling lips",
+            "transcription": "The airplane is almost full."
+        },
+        "pre_edit": {
+            "reliability": "Happy",
+            "generality_type_0": "happy",
+            "generality_type_1": "Happy",
+            "generality_type_2": "happy",
+            "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+            "locality_audio_type_1": "The speaker is expressing disgust.",
+            "locality_audio_type_2": "The speaker feels sad.",
+            "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.00-8.00). There is also the sound of a door opening and closing (0.00-0.36, 8.83-9.01).",
+            "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+            "portability_audio": "The most likely facial expression based on the emotion expressed in the audio would be Retracted chin with one corner of the mouth twitching, as if intolerable."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional income is collected by the government through taxes. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Additionally, the sound seems to be coming from an animal that is close by and moving around, which could describe a sheep's behavior.",
+                "generality_type_0": "Sheep",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a low pitch and a repetitive pattern, which are also typical of sheep bleats.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable to the jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound in this audio clip is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is likely a frog. Frogs typically produce sounds that are deeper and more resonant than those of dogs, cows, or sheep. Additionally, the sound in the recording seems to have a pattern of getting louder before getting softer, which is a characteristic of some frog calls.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The sound in the audio recording is most likely made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is 'flapping its wings'."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.73-8.53). There is also the sound of someone crying (9.23-10.00) which overlaps with the end of the recording.",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "original_answer": "German",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1022_TAI_FEA_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "fear",
+            "transcription": "The airplane is almost full."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nSpanish\nKorean\nEnglish",
+            "answer": "Korean",
+            "transcription": "옥점이는 여전히 의자에 앉아 머리를 숙이고 있다"
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38985102.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nItalian\nGerman\nChinese",
+            "answer": "Japanese",
+            "transcription": "生物の合目的作用においては、過去と未来とが現在においては、それぞれ作るといってもなお家庭的であって真の現在というものはない。"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07303_001_Device02_Distance13_Dialect11.wav",
+            "question": "How far the speaker is? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "4.0m",
+            "transcription": "你今天是不醒 虽然你有睡过"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\n\nOptions:\nx^2 + y^2 = 1\nx^2 + y^2 = 2\nx^2 + y^2 = 9\nx^2 + y^2 = 16",
+            "answer": "x^2 + y^2 = 9",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "From the listed options, which one correctly matches 'prosperity' in meaning in the language of this speech?\n\nOptions:\nArmut\nプアリティー\nProsperität\n繁栄",
+            "answer": "繁栄",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet."
+        },
+        "pre_edit": {
+            "reliability": "German",
+            "generality_type_0": "German",
+            "generality_type_1": "German",
+            "generality_type_2": "German",
+            "locality_audio_type_0": "Disgusted",
+            "locality_audio_type_1": "The language spoken in the audio is Korean.",
+            "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+            "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+            "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the equation of the circle that passes through the maximum number of points on the parabola.\nFirst, let's find the equation of the circle that passes through the vertex of the parabola, which is (0, -4). The equation of a circle centered at the origin with radius r is given by (x - h)^2 + (y - k)^2 = r^2.\nSubstituting h = 0 and k = -4 into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2. Since the circle passes through the vertex of the parabola, we can substitute x^2 = y + 4 into this equation to get (x - 0)^2 + (x + 4)^2 = r^2. Simplifying this equation gives us x^2 + 8x + 16 = r^2.\nSince we want the circle to pass through the maximum number of points on the parabola, we want to choose a value of r such that the circle intersects the parabola at",
+            "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing, footsteps.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional income is collected by the government through taxes. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from an animal that is close by and not too far away, which is also typical for sheep.",
+                "generality_type_0": "Sheep",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a low pitch and a repetitive pattern, which are also typical of sheep bleats.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which would qualify as a present sense impression. The fact that the man admitted to driving fast does not necessarily mean that the eyewitness's testimony is not reliable, as the eyewitness could have heard the man say something else at the time of the accident. However, the fact that the man's attorney objected to the testimony suggests that there may be some concern about its reliability or relevance to the case. Ultimately, whether the eyewitness's testimony is admissible will depend on the specific circumstances of the case and the rules of evidence applicable to that jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization is \"Mooing\". The sound resembles a sheep bleating, which is a common vocalization for sheep."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "Based on the provided audio recording, I believe the sound is made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is 'flapping its wings'."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.00-8.00). There is also the sound of someone crying (8.63-10.00) which overlaps with the end of the recording.",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the equation of the circle that passes through the maximum number of points on the parabola.\nFirst, let's find the equation of the circle that passes through the vertex of the parabola, which is (0, -4). The equation of a circle centered at the origin with radius r is given by (x - h)^2 + (y - k)^2 = r^2.\nSubstituting h = 0 and k = -4 into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2, which simplifies to y^2 + 8y + 16 = r^2.\nSince the parabola x^2 = y + 4 has its vertex at (0, -4), the circle that passes through the vertex will have its center at (0, -4) and will intersect the parabola at four points: (0, -4), (0, -2), (0, 0), and (0, 2).\nNow, let's consider the other three circles: x",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "original_answer": "Italian",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_0.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncrow\nhen\ndog\nsheep",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37230166.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Le minerai a été très vite excavé."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_37195197.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nKorean\nEnglish\nItalian",
+            "answer": "Korean",
+            "transcription": "말 끝엔 목이 메었다"
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E_1006514.wav",
+            "question": "Detect whether the utterance is generated through replay attacks. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "birthday parties have cupcakes and ice creams"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A positive sign on cross price elasticity of demand indicates that the two products are\n\nOptions:\nluxuries.\nnecessities.\nsubstitutes.\ncomplements.",
+            "answer": "substitutes.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSenegal\nSan Marino\nIreland\nSouth Korea",
+            "answer": "South Korea",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono."
+        },
+        "pre_edit": {
+            "reliability": "The language spoken in the audio is Italian.",
+            "generality_type_0": "The language of the provided speech is Italian.",
+            "generality_type_1": "Italian",
+            "generality_type_2": "The language of the provided speech is Italian.",
+            "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like cows, sheep, and even dogs may make similar noises, the distinctive qualities of the sound seem to align more closely with those of a hen.",
+            "locality_audio_type_1": "French",
+            "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+            "locality_audio_type_3": "The utterance is generated through replay attacks.",
+            "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, so a rise in the price of one product leads to a higher demand for the other. For example, if the price of coffee increases, people may be more likely to buy tea, which is a complement of coffee.",
+            "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing, footsteps.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional tax revenue is used to fund government programs. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from an animal that is close by and not too far away, which is also typical for sheep.",
+                "generality_type_0": "Sheep",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a distinct rural and agricultural quality, which is often associated with sheep farming environments.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable in that jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is likely a frog. Frogs typically produce sounds that are deeper and more resonant than those of dogs, cows, or sheep. Additionally, the sound in the recording seems to have a pattern of getting louder before getting softer, which is a characteristic of some frog calls.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "Based on the provided audio recording, I believe the sound is made by a cat.",
+                "locality_audio_type_2": "The sound in the audio recording is likely made by a dog. Dogs are known to bark and howl, and the sounds in the recording match those characteristics. While other animals like roosters, frogs, and sheep may make certain sounds, they are not typically associated with the kind of vocalizations heard in the recording.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is option  Flapping its wings."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.73-8.53). There is also the sound of someone crying (9.33-10.00) which overlaps with the end of the recording.",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $149 and $161.\" This statement is based on the fact that the sample mean of the donations was $155 with a standard deviation of $32. The confidence interval for the population mean can be calculated using the formula: CI = (sample mean - margin of error) / (standard deviation / sqrt(n)) * 2. In this case, the margin of error can be calculated as: SE = (32 / √100) * 2 = 8. The 95% confidence interval can then be calculated as: CI = (155 - 8) / (32 / √100) * 2 = ($147, $163) Therefore, we can say with 95% confidence that the average donation in November is between about $149 and $161. The other options do not accurately reflect the information provided. Option A is incorrect because it does not account for the standard deviation. Option B is incorrect because it implies that half of the donations are above $155,",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the circle that intersects with the parabola at the maximum number of points.\nWe can start by finding the equation of the circle that passes through the point (0, -4), which is one of the solutions to the equation x^2 = y + 4. The equation of a circle centered at the point (a, b) with radius r is given by (x - a)^2 + (y - b)^2 = r^2.\nSubstituting the point (0, -4) into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2, which simplifies to y^2 + 8y + 16 = r^2. Solving for y gives us y = -4 ± sqrt(r^2 - 16).\nSince the circle must pass through the point (0, -4), we know that its center must be on the line y = -4. Therefore, the equation of the circle must be of the form (x - h)^2 + (y + 4)^2 = r",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            },
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The language of the provided speech is Italian.",
+                "generality_type_1": "Italian",
+                "generality_type_2": "The language of the provided speech is Italian.",
+                "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like cows, sheep, and even dogs may make similar noises, the distinctive qualities of the sound seem to align more closely with those of a hen.",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, and the demand for one product depends on the price of the other. For example, if the price of a newspaper increases, people may be more likely to buy a magazine as well because they are complements. On the other hand, if the price of a movie ticket increases, people may be less likely to go see a play because they are not complements.",
+                "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "original_answer": "Spanish",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "transcription": "Es una de las más destacadas universidades tailandesas en arte y arqueología."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Es una de las más destacadas universidades tailandesas en arte y arqueología."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1025_TAI_ANG_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "angry",
+            "transcription": "The airplane is almost full."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39908937.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nChinese\nKorean\nFrench\nEnglish",
+            "answer": "English",
+            "transcription": "Anthony is among the most awarded of Australian entertainers."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37471152.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nFrench\nEnglish\nItalian\nJapanese",
+            "answer": "French",
+            "transcription": "Elle est aujourd'hui la propriété de InBev."
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARMusicGenreClassification_ISMIR04/7-calico.wav",
+            "question": "Assess the musical style to identify the genre of this audio sample. Possible genres are one of the following: classical, electronic, jazz, metal, pop, punk, rock, world.",
+            "answer": "pop",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A solution of a weak base is titrated with a solution of a standard strong acid. The progress of the titration is followed with a pH meter. Which of the following observations would occur?\n\nOptions:\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.\nThe pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7.\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.\nInitially, the pH quickly decrease, then there is a gradual decrease to the equivalence point where the pOH equals the pKb of the base.",
+            "answer": "Initially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nDELF\nTOPIK\nGoethe-Zertifikat\nHSK",
+            "answer": "DELF",
+            "transcription": "Esto interesaba a De Haas, que era homosexual."
+        },
+        "pre_edit": {
+            "reliability": "Spanish",
+            "generality_type_0": "Spanish",
+            "generality_type_1": "Spanish",
+            "generality_type_2": "Spanish",
+            "locality_audio_type_0": "angry",
+            "locality_audio_type_1": "The speaker is using English.",
+            "locality_audio_type_2": "French",
+            "locality_audio_type_3": "electronic",
+            "locality_text": "If a solution of a weak base is titrated with a solution of a standard strong acid, the initial pH of the mixture will be above 7, as the weak base will react with some of the strong acid to form conjugate base and water. As the strong acid is added, the concentration of conjugate base will decrease, leading to a decrease in the pH of the mixture. At the equivalence point, the amount of strong acid added is equal to the amount of conjugate base present, so the pH of the mixture will be exactly 7. After the equivalence point, the conjugate base will no longer be present, and the pH of the mixture will continue to decrease as more strong acid is added until it reaches a value of 0. The rate of change of the pH will initially be slow, as the conjugate base is being consumed by the strong acid, and then will become rapid as the conjugate base is completely consumed and the only source of hydrogen ions is the strong acid itself. Therefore, option A is the correct observation that would occur during this titration.",
+            "portability_audio": "The test that best fits the context and assesses proficiency in the Spanish language mentioned in the speech segment is DELE."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional income is collected by the government through taxes. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common vocalization for sheep. Additionally, the sound seems to be coming from an animal that is close by and moving around, which could describe a sheep's behavior.",
+                "generality_type_0": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound characteristics closely resemble those of a sheep bleating.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a distinct rural and agricultural quality, which is often associated with sheep farming environments.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and his role in it, which could be considered a present sense impression. However, whether the court decides to admit the testimony will depend on other factors such as the weight of the testimony and its relevance to the case.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is likely a frog. Frogs typically produce sounds that are deep and resonant, similar to what is heard in the audio recording. While other animals like dogs, cows, and sheep may make sounds that are similar to those of frogs, none of them quite match the unique tonal quality and depth of the sound in the audio. Therefore, the answer is frog.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The sound in the audio recording is most likely made by a cat.",
+                "locality_audio_type_2": "The sound in the audio recording is likely made by a dog. Dogs are known for barking and howling, and the sounds in the recording match those characteristics. While other animals like roosters, frogs, and sheep may make certain sounds, they are not typically associated with the loud barking and howling heard in the recording.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is \"flapping its wings.\""
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.73-8.53). There is also the sound of someone crying (9.23-10.00) which overlaps with the end of the recording.",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the circle that intersects with the parabola at the maximum number of points.\nWe can start by finding the equation of the circle that passes through the point (0, -4), which is one of the solutions to the equation x^2 = y + 4. The equation of a circle centered at the origin with radius r is given by (x - h)^2 + (y - k)^2 = r^2. Substituting the point (0, -4) into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2, which simplifies to y^2 + 8y + 16 = r^2.\nSubstituting y = -4 into this equation gives us r^2 = 0, so the radius of the circle is 0. This means that the circle is a single point, which is the point (0, -4).\nNow we need to find the circles that intersect with the parabola at two points. We can do this by finding the values of y that make the equation x",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            },
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The language of the provided speech is Italian.",
+                "generality_type_1": "Italian",
+                "generality_type_2": "The language of the provided speech is Italian.",
+                "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like cows, sheep, and even dogs may make similar noises, the distinctive qualities of the sound seem to align more closely with those of a hen.",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, so a higher price for one product leads to more demand for the other. For example, if the price of coffee increases, people may be more likely to drink tea, which is a complement of coffee.",
+                "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "The speaker is using English.",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "If a solution of a weak base is titrated with a solution of a standard strong acid, the initial pH of the mixture will be above 7, as the weak base will react with some of the strong acid to form conjugate base and water. As the strong acid is added, the concentration of conjugate base will decrease, leading to a decrease in the pH of the mixture. At the equivalence point, all of the weak base has been converted into conjugate acid and water, so the pH of the mixture will be exactly 7.0. Therefore, the correct observation would be initially the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.",
+                "portability_audio": "The test that best fits the context and assesses proficiency in the Spanish language mentioned in the speech segment is DELE."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "original_answer": "rooster",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia128_utt3.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "Brenda, a beat."
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\nrooster\ncrow\nhen",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncat\npig\ncrow\ncow",
+            "answer": "crow",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsTonicClassification_MridangamTonic/230892__akshaylaya__thi-e-134.wav",
+            "question": "From the audio, identify the tonic note. Options: dsh, e, b, c, d, csh.",
+            "answer": "e",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is true for all bases?\n\nOptions:\nAll bases donate OH- ions into solution.\nOnly strong bases create solutions in which OH- ions are present.\nOnly strong bases are good conductors when dissolved in solution.\nFor weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.",
+            "answer": "Only strong bases are good conductors when dissolved in solution.",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "In the context of Linnaean taxonomy and the phylogenetic system used to determine evolutionary relationships, which animal on the list is the closest in taxonomic grouping to the animal identified in the audio sample?\n\nOptions:\ncommon raven\nstarling\nEurasian jay\njackdaw",
+            "answer": "common raven",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound description provided, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+            "generality_type_0": "The sound originates from a rooster.",
+            "generality_type_1": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+            "generality_type_2": "The sound originates from a rooster.",
+            "locality_audio_type_0": "Based on the provided audio, the speaker's underlying emotion appears to be fear.",
+            "locality_audio_type_1": "Based on the sound description provided, the animal responsible for the sound is a cow.",
+            "locality_audio_type_2": "Based on the description provided, the sound in the recording is likely coming from a crow. Crows are known for their loud cawing and screeching sounds, and they often use such calls to communicate with other birds or to express distress or excitement. The other animals listed (cat, pig, cow) do not typically produce sounds that match the description given.",
+            "locality_audio_type_3": "d.",
+            "locality_text": "The correct statement is: \"For weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.\"\nThis statement is true because weak bases do not completely ionize in water, meaning that only a small fraction of the base molecules donate OH- ions into solution. As a result, the concentration of OH- ions will always be less than the concentration of the weak base. In contrast, strong bases completely ionize in water, resulting in a high concentration of OH- ions in the solution. Therefore, only strong bases create solutions in which OH- ions are present in significant concentrations. However, this does not imply that strong bases are good conductors when dissolved in solution, as the conductivity of a solution depends on other factors such as temperature and ionic strength.",
+            "portability_audio": "Based on the sound characteristics provided, the animal most closely related to the one heard in the audio sample would be the starling (Sturnus vulgaris). This is because starlings share similar vocalizations, including a distinctive crowing call, with other members of the family Sturnidae, which includes crows, ravens, and jays."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional income is collected by the government through taxes. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from a farm or rural setting, where sheep are often kept.",
+                "generality_type_0": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound characteristics closely resemble those of a sheep bleating.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source of the sound is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a distinct rural and agricultural quality, which is often associated with sheep farming environments.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and his speed, which would have been a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific rules of evidence in the jurisdiction where the trial is taking place.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Frog",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is likely a frog. Frogs typically produce sounds that are deep and resonant, similar to what is heard in the audio recording. While other animals like dogs, cows, and sheep may make sounds that are similar to those of frogs, none of them quite match the unique tonal quality and depth of the sound in the audio. Therefore, the answer is frog.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "The sound in the audio recording is most likely made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is option  Flapping its wings."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches the provided audio recording is that of a frog.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.00-8.00). There is also the sound of a door opening and closing (0.00-0.36, 8.83-9.01).",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To solve this problem, we need to find the equation of the circle that intersects with the given parabola at the maximum number of points. We can do this by finding the equation of the circle that passes through the vertex of the parabola, which is (0, -4).\nThe equation of a circle with center (a,b) and radius r is given by (x - a)^2 + (y - b)^2 = r^2. Substituting the center of the parabola (0,-4) into this equation gives us (x-0)^2 + (y+4)^2 = r^2.\nSimplifying this equation, we get y^2 + 8y + 16 = r^2. Since the parabola is defined by x^2 = y + 4, we can substitute this expression for y into the equation of the circle to get x^2 + 8x + 16 = r^2.\nExpanding this equation, we get x^2 + 8x + 16 = (x + 4)^2. This means that the circle passing through the vertex of the parabola is given by (x + 4)^2 +",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            },
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The language of the provided speech is Italian.",
+                "generality_type_1": "Italian",
+                "generality_type_2": "The language of the provided speech is Italian.",
+                "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like crows or sheep may make similar noises, the distinctive qualities of the sound seem to match those of a hen.",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, and the demand for one product depends on the price of the other. For example, if the price of a car increases, people may be more likely to purchase a gas station, since they need fuel to operate the car.",
+                "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "The speaker is using English.",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "If a solution of a weak base is titrated with a solution of a standard strong acid, the initial pH of the mixture will be above 7, as the weak base will react with some of the strong acid to form conjugate base and water. As the strong acid is added, the concentration of conjugate base will decrease, leading to a decrease in the pH of the mixture. At the equivalence point, the amount of strong acid added is equal to the amount of conjugate base present, so the pH of the mixture will be exactly 7. After the equivalence point, the conjugate base will no longer be present, and the pH of the mixture will continue to decrease as more strong acid is added until it reaches a value of 0. The rate of change of the pH will initially be slow, as the conjugate base is being consumed by the strong acid, and then will become rapid as the conjugate base is completely consumed and the only source of hydrogen ions is the strong acid itself. Therefore, option A is the correct observation that would occur during this titration.",
+                "portability_audio": "The test that best fits the context and assesses proficiency in the Spanish language mentioned in the speech segment is DELE."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_0": "The sound originates from a rooster.",
+                "generality_type_1": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_2": "The sound originates from a rooster.",
+                "locality_audio_type_0": "Based on the provided audio, the speaker's underlying emotion appears to be fear.",
+                "locality_audio_type_1": "Based on the sound description provided, the animal responsible for the sound is a cow.",
+                "locality_audio_type_2": "Based on the description provided, the sound in the recording is likely coming from a crow. Crows are known for their loud cawing and screeching sounds, and they often use such calls to communicate with other birds or express distress. The other animals listed do not typically produce sounds that match the description given.",
+                "locality_audio_type_3": "d.",
+                "locality_text": "The correct statement is: \"For weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.\"\nThis statement is true because weak bases do not completely ionize in water, meaning that only a small fraction of the base molecules donate OH- ions into solution. As a result, the concentration of OH- ions will always be less than the concentration of the weak base. In contrast, strong bases completely ionize in water, resulting in a high concentration of OH- ions in the solution. Only strong bases can create solutions in which OH- ions are present in high concentrations. However, this does not imply that strong bases are good conductors when dissolved in solution, as the conductivity of a solution depends on other factors such as temperature and ionic strength.",
+                "portability_audio": "Based on the sound characteristics provided, the animal most closely related to the one heard in the audio sample would be the starling (Sturnus vulgaris). This is because the sounds resemble those made by a starling, which is known for its distinctive crowing call and other vocalizations. The other options do not share similar vocal characteristics with the sound in the audio sample."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "original_answer": "pig",
+            "transcription": " "
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "transcription": "Oh, my God."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": "Oh, my God."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia184_utt4.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nangry\ndisgust\nfear",
+            "answer": "angry",
+            "transcription": "What are you looking at?"
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_52.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\nhen\ncow\ncat\nrooster",
+            "answer": "hen",
+            "transcription": " "
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_104.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncat\nsheep",
+            "answer": "cow",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/guitar_electronic_028-081-025.wav",
+            "question": "Analyze the pitch of the note in the audio recording. Answer with a pitch from the options provided in the list: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "A5",
+            "transcription": " "
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Decker a 62-year-old single individual sold his principal residence for the net amount of $500000 after all selling expenses. Decker bought the house 15 years ago and occupied it until it was sold. On the date of sale the house had a cost basis of $200000. Within six months Decker purchased a new house for $600000. What amount of gain should Decker recognize from the sale of the residence?\n\nOptions:\n$0\n$50,000\n$175,000\n300000",
+            "answer": "$50,000",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nClimbing trees\nJumping between branches\nHiding in shells\nChewing cud",
+            "answer": "Chewing cud",
+            "transcription": " "
+        },
+        "pre_edit": {
+            "reliability": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises like oink-oink and can be heard in various settings such as farms or petting zoos. The sound in the audio file seems to match the typical oink sound made by a pig.",
+            "generality_type_0": "The sound originates from a pig.",
+            "generality_type_1": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises such as grunts and oinks, which sound similar to what was captured in the audio file. While other animals like cows and dogs can make similar sounds, the specific tone and pattern of the sound seem to match those of a pig.",
+            "generality_type_2": " pig",
+            "locality_audio_type_0": "Angry",
+            "locality_audio_type_1": "The animal most likely responsible for the sound in this audio clip is a rooster.",
+            "locality_audio_type_2": "The sound originates from a cow.",
+            "locality_audio_type_3": "A♯5",
+            "locality_text": "The gain recognized by Decker from the sale of the principal residence will be $175,000.\nTo calculate the gain, we need to subtract the cost basis of the property from the sales price. The cost basis of the property is the purchase price plus any improvements made to the property. In this case, the cost basis is $200,000 because Decker bought the house for $200,000 and made no improvements to it.\nTherefore, the gain recognized by Decker is $500,000 - $200,000 = $300,000. However, since Decker is a single individual and lived in the home for more than five years, he is subject to a capital gains tax of 15% on the gain. Therefore, the amount of tax owed is $300,000 * 15% = $45,000.\nFinally, the adjusted basis of the new house is $600,000 because the cost basis of the old house is $200,000 and the gain from the sale of the old house is $300,00",
+            "portability_audio": "Based on the sounds heard in the audio, the animal seems to be a pig. Pigs are known for their rooting behavior, which involves digging and pushing around in soil in search of food. They may also bark and squeal as a means of communication. Therefore, the action that best represents the natural or most typical way of acting for this animal would be option D: digging."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income is saved rather than spent, which reduces the amount of money available for government spending. As a result, the tax multiplier decreases, since less of the additional income is collected by the government through taxes. On the other hand, an increase in the marginal propensity to consume or a decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from an animal that is close by and not too far away, which is also typical for sheep.",
+                "generality_type_0": "Sheep",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound seems to be a bleat, which is a common vocalization for sheep. Additionally, the sound has a distinct country feel to it, which is often associated with farm animals like sheep.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable to the jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "Based on the provided audio recording, I believe the sound is made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is option  Flapping its wings."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-6.09), and a scream (7.00-8.00). There is also the sound of a door opening and closing (0.00-0.36, 9.33-9.54).",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the standard deviation of the donations is $32, which means that the majority of the donations fall within two standard deviations of the mean. Since the mean is $155, this means that we can be 95% confident that the average donation is between about $91 and $219. The other options either do not accurately reflect the given information or are not supported by the data provided.",
+                "portability_audio": "The most likely facial expression based on the happy emotion expressed in the audio would be option  Relaxed facial muscles with a cheerful grin."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "Disgusted",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the circle that intersects with the parabola at the maximum number of points.\nWe can start by finding the equation of the circle that passes through the point (0, -4), which is one of the solutions to the equation x^2 = y + 4. The equation of a circle centered at the point (a, b) with radius r is given by (x - a)^2 + (y - b)^2 = r^2.\nSubstituting the point (0, -4) into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2, which simplifies to y^2 + 8y + 16 = r^2. Solving for y gives us y = -4 ± sqrt(r^2 - 16).\nSince the circle must pass through the point (0, -4), we know that its center must be on the line y = -4. Therefore, the equation of the circle must be of the form (x - h)^2 + (y + 4)^2 = r",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            },
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The language of the provided speech is Italian.",
+                "generality_type_1": "English",
+                "generality_type_2": "The language of the provided speech is Italian.",
+                "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like crows or sheep may make similar noises, the distinctive qualities of the sound seem to point more towards a hen.",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, and the demand for one product depends on the price of the other. For example, if the price of a newspaper increases, people may be more likely to buy a magazine as well because they are complements. On the other hand, if the price of a magazine increases, people may be less likely to buy a newspaper because they are substitutes.",
+                "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "The speaker is using English.",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "If a solution of a weak base is titrated with a solution of a standard strong acid, the initial pH of the mixture will be above 7, as the weak base will react with some of the strong acid to form conjugate base and water. As the strong acid is added, the concentration of conjugate base will decrease, leading to a decrease in the pH of the mixture. At the equivalence point, all of the weak base has been converted into conjugate acid and water, so the pH of the mixture will be exactly 7.0. Therefore, the correct observation would be initially the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.",
+                "portability_audio": "The test that best fits the context and assesses proficiency in the Spanish language mentioned in the speech segment is DELE."
+            },
+            {
+                "reliability": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_0": "The sound appears to be coming from a rooster.",
+                "generality_type_1": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_2": "The sound originates from a rooster.",
+                "locality_audio_type_0": "Based on the provided audio, the speaker's underlying emotion appears to be fear.",
+                "locality_audio_type_1": "Based on the sound description provided, the animal responsible for the sound is a cow.",
+                "locality_audio_type_2": "Based on the description provided, the sound in the recording is likely coming from a crow. Crows are known for their loud cawing and the fact that they can make a variety of different sounds, including screeches and squawks. They are also commonly found in wooded or open areas, which could match the environment described in the recording. While other animals like cats, pigs, and cows may make noise, they are not typically associated with the types of sounds heard in the recording.",
+                "locality_audio_type_3": "d.",
+                "locality_text": "The correct statement is: \"For weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.\"\nThis statement is true because weak bases do not completely ionize in water, meaning that only a small fraction of the base molecules donate OH- ions into solution. As a result, the concentration of OH- ions will always be less than the concentration of the weak base. In contrast, strong bases completely ionize in water, resulting in a high concentration of OH- ions in the solution. Only strong bases can create solutions in which OH- ions are present in high concentrations. However, this does not imply that strong bases are good conductors when dissolved in solution, as the conductivity of a solution depends on other factors such as temperature and ionic strength.",
+                "portability_audio": "Based on the sound characteristics provided, the animal most closely related to the one heard in the audio sample would be the starling (Sturnus vulgaris). This is because the sounds resemble those made by a starling, which is known for its distinctive crowing calls and chirping. The other options do not share similar vocal characteristics with the sound in the audio sample."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises like oink-oink and can be heard in various settings such as farms or petting zoos. The sound in the audio file seems to match the typical oink sound made by a pig.",
+                "generality_type_0": "The sound originates from a pig.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises such as grunts and oinks, which match the sound heard in the audio file. While other animals like cows and sheep can make similar sounds, the distinctive \"oink\" noise is more commonly associated with pigs.",
+                "generality_type_2": " pig",
+                "locality_audio_type_0": "Angry",
+                "locality_audio_type_1": "The animal most likely responsible for the sound in this audio clip is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cow.",
+                "locality_audio_type_3": "A♯5",
+                "locality_text": "The gain recognized by Decker from the sale of the principal residence will be $175,000.\nTo calculate the gain, we need to subtract the cost basis of the property from the sales price. The cost basis of the property is the purchase price plus any improvements made to the property. In this case, the cost basis is $200,000 because Decker bought the house for $200,000 and made no improvements to it.\nTherefore, the gain recognized by Decker is $500,000 - $200,000 = $300,000. However, since Decker is a single individual and lived in the home for more than five years, he is subject to a capital gains tax of 15% on the gain. Therefore, the amount of tax owed is $300,000 * 15% = $45,000.\nFinally, the amount of gain that Decker can deduct from his taxable income is $45,000. This means that his taxable income for the year will be reduced by $45,000, and he will owe less in taxes.",
+                "portability_audio": "Based on the sounds heard in the audio, the animal seems to be a pig. Pigs are known for their behaviors such as rooting around, snorting, and chewing cud. Therefore, the correct option would be C: Chewing cud."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "original_answer": "disgust",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock."
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock."
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_86.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncat\npig\nsheep\ncow",
+            "answer": "cat",
+            "transcription": " "
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_IOM_FEA_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nfear\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "I'm on my way to the meeting."
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia279_utt1.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "angry",
+            "transcription": " "
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/no__b97c9f77_nohash_1.wav",
+            "question": "Convert the spoken word into the list: up, left, off, right, yes, down, no, go, stop and on. If the word is not found in the list, respond with <unknown>; if there is no speech detected, respond with <silence>.",
+            "answer": "no",
+            "transcription": "No"
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A disk of radius 0.1 m initially at rest undergoes an angular acceleration of 2.0 rad/s^2. If the disk only rotates, find the total distance traveled by a point on the rim of the disk in 4.0 s.\n\nOptions:\n0.4 m\n0.8 m\n1.2 m\n1.6 m",
+            "answer": "1.6 m",
+            "transcription": " "
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nSmile and engage positively in the conversation.\nProvide emotional support and avoid dismissing their sadness.\nGive them space to cool off before engaging further.\nStay calm and provide support to ease their anxiety.",
+            "answer": "Give them space to cool off before engaging further.",
+            "transcription": "Maybe tomorrow it will be cold."
+        },
+        "pre_edit": {
+            "reliability": "sad",
+            "generality_type_0": "Disgusted",
+            "generality_type_1": "Angry",
+            "generality_type_2": "The speaker feels disgusted.",
+            "locality_audio_type_0": "Based on the sound characteristics, I would say the animal is a cat. Cats often meow in a distinctive way that includes a long, drawn-out tone followed by a shorter, higher-pitched squeak or whinny. The sound in the recording resembles this pattern.",
+            "locality_audio_type_1": "Sad",
+            "locality_audio_type_2": "Angry",
+            "locality_audio_type_3": "<unknown>",
+            "locality_text": "To solve this problem, we need to use the formula for the circumference of a circle: C = 2 * π * r, where r is the radius of the circle.\nFirst, let's find the angular velocity of the disk after 4 seconds. Angular velocity is defined as the change in angular displacement per unit time. Since the disk starts at rest and experiences an angular acceleration of 2.0 rad/s^2, its angular velocity after 4 seconds can be found using the formula:\nω = α * t\nwhere ω is the angular velocity, α is the angular acceleration, and t is the time.\nPlugging in the values, we get:\nω = 2.0 rad/s^2 * 4.0 s = 8.0 rad/s\nNow that we know the angular velocity, we can find the total distance traveled by a point on the rim of the disk. The distance traveled by a point on the rim of the disk is equal to the circumference of the disk times the angle subtended by the point at the center of the disk.\nThe angle subtended by a point on the rim of the disk at the center of the disk is equal to the ratio of the circumference of the disk to the radius of the disk",
+            "portability_audio": "Stay calm and provide support to ease their anxiety."
+        },
+        "post_edit": [
+            {
+                "reliability": "female",
+                "generality_type_0": "The speaker is female.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound characteristics provided, I believe the source of the sound is a frog.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "coughing, laughing.",
+                "locality_text": "An increase in the marginal propensity to save increases the size of the tax multiplier. This is because a higher marginal propensity to save means that more of the additional income goes into savings rather than being spent, which reduces the amount of money available for government spending. As a result, a smaller percentage of the additional income will be collected in taxes, leading to a larger tax multiplier. The other options listed do not directly affect the size of the tax multiplier. An increase in the marginal propensity to consume would reduce the size of the tax multiplier, as more of the additional income would be spent rather than being saved. An increase in the reserve ratio would also reduce the size of the tax multiplier, as it reduces the amount of money available for government spending. A decrease in the spending multiplier would have the opposite effect, increasing the size of the tax multiplier.",
+                "portability_audio": "The speech is in English, and the context does not provide information about the nationality of the celebrities mentioned. Therefore, I cannot determine which celebrity is the same gender as the speaker based on the given options."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I think the most likely source is a sheep. The sound sounds like a bleat, which is a common sound among sheep. Additionally, the sound seems to be coming from an animal that is close by and not too far away, which is also typical for sheep.",
+                "generality_type_0": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound characteristics closely resemble those of a sheep bleating.",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I think the most likely source is a frog. The sound seems to be a brief, sharp bleat followed by a longer, more drawn-out croak, which are typical vocalizations of frogs.",
+                "generality_type_2": "Based on the sound heard in the audio, the most likely match would be a sheep. The sound resembles the bleating of a sheep.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a cat.",
+                "locality_audio_type_3": "two.",
+                "locality_text": "The eyewitness's testimony may be admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man tell the woman about the accident and what happened, which could be considered a present sense impression. However, whether the court decides to admit the testimony ultimately depends on the specific circumstances of the case and the rules of evidence applicable in that jurisdiction.",
+                "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal is \"Mooing\"."
+            },
+            {
+                "reliability": "Frog",
+                "generality_type_0": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_1": "Based on the sound description provided, the most likely animal responsible for the sound is a frog. Therefore, the correct answer is \"frog\".",
+                "generality_type_2": "Based on the auditory characteristics of the sound, the animal that most closely matches it is likely a frog. Frogs typically produce sounds that are deep and resonant, similar to what is heard in the audio recording. While other animals like dogs, cows, and sheep may make sounds that are similar to those of frogs, none of them quite match the unique tonal quality and depth of the sound in the audio. Therefore, the answer is likely a frog.",
+                "locality_audio_type_0": "Based on the vocal cues provided in the speech, the emotion conveyed by the speaker is sad.",
+                "locality_audio_type_1": "The sound in the audio recording is most likely made by a cat.",
+                "locality_audio_type_2": "The sound is most likely from a dog.",
+                "locality_audio_type_3": "The environmental sound includes a train and its horn.",
+                "locality_text": "The fashion house that sued for damages to its reputation after being accused of stealing a design is Chanel.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings. Therefore, the most representative behavior for this animal in the audio is option  Flapping its wings."
+            },
+            {
+                "reliability": "Happy",
+                "generality_type_0": "happy",
+                "generality_type_1": "Happy",
+                "generality_type_2": "happy",
+                "locality_audio_type_0": "Based on auditory characteristics, the sound most closely matches that of a cow.",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "The speaker feels sad.",
+                "locality_audio_type_3": "The sounds present in the audio are a cough (0.78-1.59), a sneeze (2.60-3.33), laughter (5.08-5.75), and a scream (7.79-10.00). There is no sound of breathing, crying, or Dracula's castle mentioned.",
+                "locality_text": "The most appropriate statement based on the given information is: \"We are 95% confident that the average donation in November is between about $91 and $219.\"\nThis statement is based on the fact that the sample mean of the donations was $155 with a standard deviation of $32. The z-score for a confidence interval of 95% is 1.96. Using this value, we can calculate the lower and upper bounds of the interval as follows:\nLower bound = $155 - (1.96 * $32) = $91 Upper bound = $155 + (1.96 * $32) = $219\nTherefore, we can say with 95% confidence that the average donation in November is between about $91 and $219.",
+                "portability_audio": "The most likely facial expression based on the emotion expressed in the audio would be Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "German",
+                "generality_type_1": "German",
+                "generality_type_2": "German",
+                "locality_audio_type_0": "The speaker's emotion is disgust.",
+                "locality_audio_type_1": "The language spoken in the audio is Korean.",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+                "locality_text": "To find the circle with the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the circle that intersects with the parabola at the maximum number of points.\nWe can start by finding the equation of the circle that passes through the point (0, -4), which is one of the solutions to the equation x^2 = y + 4. The equation of a circle centered at the origin with radius r is given by (x - h)^2 + (y - k)^2 = r^2. Substituting the point (0, -4) into this equation gives us (x - 0)^2 + (y + 4)^2 = r^2, which simplifies to y^2 + 8y + 16 = r^2.\nSubstituting y = -4 into this equation gives us r^2 = 0, so the radius of the circle is 0. This means that the circle is a single point, which is (0, -4).\nNow we need to find the circles that intersect with the parabola at two points. We can do this by finding the values of y that make the equation x^2",
+                "portability_audio": "The correct translation of 'prosperität' into German is ' Prosperität'."
+            },
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The language of the provided speech is Italian.",
+                "generality_type_1": "English",
+                "generality_type_2": "The language of the provided speech is Italian.",
+                "locality_audio_type_0": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a hen. The sound includes elements such as a clucking noise and a soft, downy feel, which are typical of a hen. While other animals like crows or sheep may make similar noises, the distinctive qualities of the sound seem to point more towards a hen.",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "The language spoken in the recording is best matched by Korean.",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements. A positive sign on cross price elasticity of demand means that the two products are complements. This means that when the price of one product increases, the demand for the other product also increases. In other words, the two products are often used together, and the demand for one product depends on the price of the other. For example, if the price of a newspaper increases, people may be more likely to buy a magazine as well because they are complements. On the other hand, if the price of a movie ticket increases, people may be less likely to go see a play because they are not complements.",
+                "portability_audio": "The country that officially recognizes the language spoken in the audio recording as one of its official languages is Ireland."
+            },
+            {
+                "reliability": "Spanish",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "Spanish",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "The speaker is using English.",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "If a solution of a weak base is titrated with a solution of a standard strong acid, the initial pH of the mixture will be above 7, as the weak base will react with some of the strong acid to form conjugate base and water. As the strong acid is added, the concentration of conjugate base will decrease, leading to a decrease in the pH of the mixture. At the equivalence point, the amount of strong acid added is equal to the amount of conjugate base present, so the pH of the mixture will be exactly 7.\nTherefore, the correct observation would be initially, the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.",
+                "portability_audio": "The test that best fits the context and assesses proficiency in the Spanish language mentioned in the speech segment is HSK (Chinese Proficiency Test)."
+            },
+            {
+                "reliability": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_0": "The sound appears to be coming from a rooster.",
+                "generality_type_1": "Based on the sound description, the source of the sound is a rooster crowing. Therefore, the correct option is \"rooster\".",
+                "generality_type_2": "The sound originates from a rooster.",
+                "locality_audio_type_0": "Based on the provided audio, the speaker's underlying emotion appears to be sad.",
+                "locality_audio_type_1": "Based on the sound description provided, the animal responsible for the sound is a cow.",
+                "locality_audio_type_2": "Based on the description provided, the sound in the recording is likely coming from a crow. Crows are known for their loud cawing and the fact that they can make various sounds by changing the pitch and intensity of their calls. The other animals listed do not typically produce sounds similar to what is described in the recording.",
+                "locality_audio_type_3": "d.",
+                "locality_text": "The correct statement is: \"For weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.\"\nThis statement is true because weak bases do not completely ionize in water, meaning that only a small fraction of the base molecules donate OH- ions into solution. As a result, the concentration of OH- ions will always be less than the concentration of the weak base. In contrast, strong bases completely ionize in water, resulting in a high concentration of OH- ions in the solution. Therefore, only strong bases create solutions in which OH- ions are present in significant concentrations. However, this does not imply that strong bases are good conductors when dissolved in solution, as the conductivity of a solution depends on other factors such as temperature and ionic strength.",
+                "portability_audio": "Based on the sound characteristics provided, the animal most closely related to the one heard in the audio sample would be the starling (Sturnus vulgaris). This is because the sounds resemble those of a starling, which is known for its distinctive crowing call and other vocalizations. The other options do not share similar vocal characteristics with the sound in the audio sample."
+            },
+            {
+                "reliability": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises like oink-oink and can be heard in various settings such as farms or petting zoos. The sound in the audio seems to match the typical oink sound made by a pig.",
+                "generality_type_0": " pig",
+                "generality_type_1": "Based on the characteristics and tone of the sound, I would say it is most likely a pig. Pigs are known for making noises such as grunts and oinks, which match the sound heard in the audio file. While other animals like cows and dogs can make similar sounds, the distinctive \"oink\" noise is more commonly associated with pigs.",
+                "generality_type_2": " pig",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "The sound is most likely from a rooster.",
+                "locality_audio_type_2": "The sound originates from a cow.",
+                "locality_audio_type_3": "A♯5",
+                "locality_text": "The gain recognized by Decker from the sale of the principal residence will be $175,000.\nTo calculate the gain, we need to subtract the cost basis of the property from the sales price. The cost basis of the property is the purchase price plus any improvements made to the property. In this case, the cost basis is $200,000 because Decker bought the house for $200,000 and made no improvements to it.\nTherefore, the gain recognized by Decker is $500,000 - $200,000 = $300,000. However, since Decker is a single individual and lived in the home for more than five years, he is subject to a capital gains tax of 15% on the gain. Therefore, the amount of tax owed is $300,000 * 15% = $45,000.\nFinally, the adjusted basis of the new house is $600,000 because Decker already had a capital loss of $300,000 from the sale of the old house, which reduces the amount of taxable gain on the sale",
+                "portability_audio": "Based on the sounds heard in the audio, the animal seems to be a pig. Pigs are known for their behaviors such as rooting around, snorting, and chewing cud. Therefore, the correct option would be C: Chewing cud."
+            },
+            {
+                "reliability": "Disgusted",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Disgusted",
+                "generality_type_2": "The speaker feels disgusted.",
+                "locality_audio_type_0": "Based on the sound characteristics, I would say the animal is a cat. Cats often meow in a distinctive way that includes a long, drawn-out tone followed by a shorter, higher-pitched squeak or whinny. The sound in the recording resembles this pattern.",
+                "locality_audio_type_1": "Based on the tone and pitch of the voice, along with the context of the sentence, the speaker's emotion seems to be one of disgust.",
+                "locality_audio_type_2": "Angry",
+                "locality_audio_type_3": "The words in the speech are: no.",
+                "locality_text": "To solve this problem, we need to first find the angular velocity of the disk after 4 seconds. We can use the formula for angular acceleration: angular velocity = angular acceleration x time\nSo, the angular velocity of the disk after 4 seconds is:\nangular velocity = 2.0 rad/s^2 x 4.0 s = 8.0 rad/s\nNext, we need to find the circumference of the disk. The formula for the circumference of a circle is: circumference = 2 x pi x radius\nSo, the circumference of the disk is:\ncircumference = 2 x pi x 0.1 m = 0.2π m\nFinally, we can find the distance traveled by a point on the rim of the disk by multiplying the angular velocity by the circumference. This gives us:\ndistance traveled = angular velocity x circumference = 8.0 rad/s x 0.2π m = 0.32π m\nTherefore, the total distance traveled by a point on the rim of the disk in 4 seconds is approximately 0.32π meters, which is closest to option 0.8 m.",
+                "portability_audio": "Stay calm and provide support to ease their anxiety."
+            }
+        ]
+    }
+]

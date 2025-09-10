@@ -242,19 +242,32 @@ class LALMEditor:
                 writer.write({"pre_edit_all": pre_edit_all})
                 LOG.info(f"Finished generating pre-editing results for all samples.")
             
-            
+            all_ike_edits = []
+            all_ike_examples = []
             for i, sample in enumerate(tqdm(ds, desc='Test Editing samples', dynamic_ncols=True)):
                 start_time = time()
 
                 LOG.info(f"Generating intermediate pre-editing results for sample {i}...")    
                 pre_edit = {}
                 for key in sample:
-                    response = ds.generate_response(self.model, sample[key])
+                    if self.hparams.alg_name == "IKE":
+                        response = ds.generate_ike_response(
+                            self.model, 
+                            all_ike_examples + [sample[key]],
+                            edits=all_ike_edits
+                        )
+                    else:
+                        response = ds.generate_response(self.model, sample[key])
                     pre_edit[key] = response[0] if isinstance(response, list) else response
                     
                 LOG.info(f"Performing editing for sample {i}...")
                 if self.hparams.alg_name == "IKE":
-                    raise NotImplementedError("Sequential editing is not supported for IKE yet.")
+                    curr_edit = [(sample["reliability"]["original_answer"], sample["reliability"]["answer"])]
+                    all_ike_edits.extend(curr_edit)
+                    if self.hparams.use_icl_examples:
+                        icl_examples = self._get_icl_examples_from_training_set(curr_edit)
+                        assert len(icl_examples) == 1, f"For now we only support one edit example for IKE."
+                        all_ike_examples.extend(list(icl_examples[0].values()))
                 else:
                     tokenized_reliability = ds.process_and_tokenize_batch([sample], key='reliability')
                     edited_model, _ = self.apply_algo(
@@ -268,13 +281,20 @@ class LALMEditor:
 
                     self.model = edited_model
                     
-                    post_edit = []
-                    for j, prev_sample in enumerate(tqdm(ds[:i+1], desc=f'Generating post-editing results for samples 0 to {i}', dynamic_ncols=True)):
-                        post_edit_j = {}
-                        for key in prev_sample:
+                post_edit = []
+                for j, prev_sample in enumerate(tqdm(ds[:i+1], desc=f'Generating post-editing results for samples 0 to {i}', dynamic_ncols=True)):
+                    post_edit_j = {}
+                    for key in prev_sample:
+                        if self.hparams.alg_name == "IKE":
+                            response = ds.generate_ike_response(
+                                self.model, 
+                                all_ike_examples + [prev_sample[key]],
+                                edits=all_ike_edits
+                            )
+                        else:
                             response = ds.generate_response(edited_model, prev_sample[key])
-                            post_edit_j[key] = response[0] if isinstance(response, list) else response
-                        post_edit.append(post_edit_j)
+                        post_edit_j[key] = response[0] if isinstance(response, list) else response
+                    post_edit.append(post_edit_j)
                         
                 d = {
                     **sample,

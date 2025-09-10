@@ -288,6 +288,19 @@ def single_edit_IKE_DeSTA25():
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
+def sequential_edit_IKE_DeSTA25():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
+        )
+        
 def single_edit_IKE_Qwen2Audio():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
@@ -298,6 +311,19 @@ def single_edit_IKE_Qwen2Audio():
             test_ds,
             output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
+        
+def sequential_edit_IKE_Qwen2Audio():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE/qwen2-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
         )
         
 def single_edit_IKE_wo_examples_DeSTA25():
@@ -312,6 +338,19 @@ def single_edit_IKE_wo_examples_DeSTA25():
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
+def sequential_edit_IKE_wo_examples_DeSTA25():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/desta25-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
+        )
+        
 def single_edit_IKE_wo_examples_Qwen2Audio():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
@@ -322,6 +361,19 @@ def single_edit_IKE_wo_examples_Qwen2Audio():
             test_ds,
             output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
+        
+def sequential_edit_IKE_wo_examples_Qwen2Audio():
+    hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/qwen2-audio.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for seq_ind in range(10):
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+    
+        editor.sequential_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            generate_pre_edit=False,
         )
     
 if __name__ == "__main__":
@@ -353,7 +405,11 @@ if __name__ == "__main__":
     # sequential_edit_FT_connector_Qwen2Audio()
     
     # single_edit_IKE_DeSTA25()
+    # sequential_edit_IKE_DeSTA25()
     # single_edit_IKE_Qwen2Audio()
+    # sequential_edit_IKE_Qwen2Audio()
     
     # single_edit_IKE_wo_examples_DeSTA25()
-    single_edit_IKE_wo_examples_Qwen2Audio()
+    # sequential_edit_IKE_wo_examples_DeSTA25()
+    # single_edit_IKE_wo_examples_Qwen2Audio()
+    sequential_edit_IKE_wo_examples_Qwen2Audio()
