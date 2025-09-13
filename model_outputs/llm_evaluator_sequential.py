@@ -394,12 +394,25 @@ def main():
     
     # Process each edit result
     evaluated_results = []
+    start_index = 0
+    
+    # jump if already processed
+    if os.path.exists(args.output_file):
+        output_data = json.load(open(args.output_file))
+        start_index = len(output_data["results"])
+        
+        if start_index >= len(results):
+            print(f"All {len(results)} items already processed in {args.output_file}. Exiting.")
+            return 0
+        
+        evaluated_results = output_data["results"]
+        print(f"Resuming from index {start_index}, already processed {start_index} items")
     
     # Process only up to the minimum of both lengths, limited by max_items argument
     max_items = min(len(results), args.max_items)
     error_message = None
     try:
-        for i in tqdm(range(max_items), desc="Processing edits", dynamic_ncols=True):
+        for i in tqdm(range(start_index, max_items), desc="Processing edits", dynamic_ncols=True):
             result = results[i]
             tqdm.write(f"\n=== Processing edit {i+1}/{max_items} ===")
             assert len(result["post_edit"]) == i + 1, "Post-edit outputs length mismatch"
