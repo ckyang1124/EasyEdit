@@ -397,6 +397,7 @@ def main():
     
     # Process only up to the minimum of both lengths, limited by max_items argument
     max_items = min(len(results), args.max_items)
+    error_message = None
     try:
         for i in tqdm(range(max_items), desc="Processing edits", dynamic_ncols=True):
             result = results[i]
@@ -455,9 +456,9 @@ def main():
                         "correct_count": 0,
                         "accuracy": 0.0,
                         "evaluations": [{
-                            "model_response": result["post_edit"]["portability_audio"],
-                            "ground_truth": result["portability_audio"]["answer"],
-                            "question": result["portability_audio"]["question"],
+                            "model_response": result["post_edit"][j]["portability_audio"],
+                            "ground_truth": results[j]["portability_audio"]["answer"],
+                            "question": results[j]["portability_audio"]["question"],
                             "correct": False,
                             "skipped": False,
                             "explanation": "Portability response exactly matches reliability answer but not portability ground truth"
@@ -516,8 +517,10 @@ def main():
     except Exception as e:
         print(f"warning: Exception occurred during processing: {e}")
         print("Stopping further processing.")
+        error_message = str(e)
     except KeyboardInterrupt:
         print("Processing interrupted by user. Stopping further processing.")
+        error_message = "Interrupted by user"
     
     # Save evaluated results
     output_data = {
@@ -530,7 +533,8 @@ def main():
             "processing": {
                 "method": "individual_api_calls",
                 "api_delay_seconds": args.api_delay
-            }
+            },
+            "error_message": error_message,
         }
     }
     
