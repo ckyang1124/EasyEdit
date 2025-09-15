@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 
 EDITS_PER_SEQ = 10
 NUM_SEQ = 10
+AUDIO_LOC_TYPE2_TOTAL_BY_GAP = [90, 80, 70, 63, 53, 43, 33, 27, 17, 8]
 
 def calculate_accuracy(input_file: str):
     """
@@ -154,6 +155,7 @@ def main():
         all_accs.append(audio_loc_all_acc)
         print(f"- Audio Locality (Overall): {audio_loc_all_acc:.6f} ({sum(a['acc'] for a in acc['loc']['audio'])} / {sum(a['total'] for a in acc['loc']['audio'])})")
         assert len(acc["loc"]["audio"]) == 4, "Audio locality evaluations should have 4 types."
+        assert acc["loc"]["audio"][1]["total"] == AUDIO_LOC_TYPE2_TOTAL_BY_GAP[gap], f"Type 2 audio locality total count mismatch at gap {gap}."
         for j, loc_audio in enumerate(acc["loc"]["audio"]):
             loc_audio_acc = 0.0 if loc_audio["total"] == 0 else loc_audio["acc"] / loc_audio["total"]
             all_accs.append(loc_audio_acc)
