@@ -1,0 +1,1517 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "original_answer": "Korean",
+            "transcription": "\ub9c8\uc8fc \ub4e4\uc5b4\uc624\ub294 \uac83\uc740 \uc774 \uc9d1\uc758 \uc8fc\uc778\uc774\uc5c8\ub2e4.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "\ub9c8\uc8fc \ub4e4\uc5b4\uc624\ub294 \uac83\uc740 \uc774 \uc9d1\uc758 \uc8fc\uc778\uc774\uc5c8\ub2e4.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "transcription": "\uadf8 \uc5ec\ud559\uc0dd\uc778\uc9c0 \ub9cc\uc9c0\uac00 \ud55c\ucc38\uc740 \ub9e4\uc6b0 \ub54c\uae54\uc744 \ube7c\uba70 \uc785\uc220\uc744 \uaf2d \ub2e4\ubb38 \ucc44 \uae40\ucc9c\uc9c0\ub97c \uac70\ub4e4\ub5a0\ubcf4\uc9c0\ub3c4 \uc54a\uc558\ub2e4",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "\uadf8 \uc5ec\ud559\uc0dd\uc778\uc9c0 \ub9cc\uc9c0\uac00 \ud55c\ucc38\uc740 \ub9e4\uc6b0 \ub54c\uae54\uc744 \ube7c\uba70 \uc785\uc220\uc744 \uaf2d \ub2e4\ubb38 \ucc44 \uae40\ucc9c\uc9c0\ub97c \uac70\ub4e4\ub5a0\ubcf4\uc9c0\ub3c4 \uc54a\uc558\ub2e4",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_4.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nfrog\ncat\ndog\ncow",
+            "answer": "frog",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_18854899.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nSpanish\nItalian\nEnglish\nJapanese",
+            "answer": "English",
+            "transcription": "There is no public transportation in Barkhamsted.",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_32233399.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nChinese\nEnglish\nItalian",
+            "answer": "Spanish",
+            "transcription": "Me ofrece agua de Lourdes.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_08117_040_Device02_Distance04_Dialect12.wav",
+            "question": "Could you provide the distance of the speaker? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "0.4m",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A radioactive isotope, which is used in diagnostic imaging, has a half-life of 6.0 hours. If a quantity of this isotope has an activity of 150 mCi when it is delivered to a hospital, how much activity will remain 24 hours after delivery? (mCi = microcuries)\n\nOptions:\n150 mCi\n38 mCi\n19 mCi\n9.4 mCi",
+            "answer": "9.4 mCi",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Based on the audio recording and the spoken language, which city among the provided options is most likely to be located in a country that officially designates this language as one of its official languages?\n\nOptions:\nShenzhen\nVenice\nMadrid\nBusan",
+            "answer": "Madrid",
+            "transcription": "\ub9c8\uc8fc \ub4e4\uc5b4\uc624\ub294 \uac83\uc740 \uc774 \uc9d1\uc758 \uc8fc\uc778\uc774\uc5c8\ub2e4.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The speaker is using Korean in the provided audio segment.",
+            "generality_type_0": "The speaker is using Korean.",
+            "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+            "generality_type_2": "The speaker is using Korean.",
+            "locality_audio_type_0": "Based on the sound description provided, the animal responsible for the sound is a crow.",
+            "locality_audio_type_1": "German",
+            "locality_audio_type_2": "Spanish",
+            "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+            "locality_text": "The activity of a radioactive isotope decreases over time due to radioactive decay. The rate at which the activity decreases depends on the half-life of the isotope. In this case, the half-life of the isotope is 6.0 hours.\nTo find out how much activity will remain 24 hours after delivery, we can use the formula for radioactive decay:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\n* activity(t) is the activity of the isotope at time t\n* activity(0) is the initial activity of the isotope (in this case, 150 mCi)\n* k is the decay constant of the isotope (which is equal to ln(2)/t_1/2, where ln(2) is the natural logarithm of 2 and t_1/2 is the half-life of the isotope in seconds)\n* t is the time elapsed since the isotope was delivered (in this case, 24 hours, which is 24 * 3600 seconds)\n\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/(6 * 3600))\nS",
+            "portability_audio": "The most likely location for a city where the official language aligns with the provided speech is Madrid, as Spanish is one of the official languages of Spain."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "Korean",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "The activity of a radioactive isotope decreases over time due to radioactive decay. The rate at which the activity decreases depends on the half-life of the isotope. In this case, the half-life of the isotope is 6.0 hours.\nTo find out how much activity will remain 24 hours after delivery, we can use the formula for radioactive decay:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\n* activity(t) is the activity of the isotope at time t\n* activity(0) is the initial activity of the isotope (in this case, 150 mCi)\n* k is the decay constant of the isotope (which is equal to ln(2)/t_1/2, where ln(2) is the natural logarithm of 2 and t_1/2 is the half-life of the isotope in seconds)\n* t is the time elapsed since the isotope was delivered (in this case, 24 hours, which is 24 * 3600 seconds)\n\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/(6 * 3600))\nS",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nhen\nsheep\nfrog",
+            "answer": "frog",
+            "original_answer": "hen",
+            "transcription": "Oh.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": "Oh.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_15.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nhen\nsheep\nfrog",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_15.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19562559.wav",
+            "question": "Classify the speaker's voice into one of the following gender categories.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "The Mold Committee reported three years later.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ndog\nfrog\ncat\nrooster",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_35.wav",
+            "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nfrog\npig\nhen",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10034604.wav",
+            "question": "Determine if the speech is a result of voice spoofing or not. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "I can't even compromise on welfare.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A digital signature needs a\n\nOptions:\nPrivate-key system\nShared-key system\nPublic-key system\nAll of them",
+            "answer": "Public-key system",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_54.wav",
+            "question": "Based on the sound provided, which diet type from the list below is most likely to match the feeding habits of the animal in the sound?\n\nOptions:\nInsectivore\nOmnivore\nCarnivore\nHerbivore",
+            "answer": "Insectivore",
+            "transcription": "Oh.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+            "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen.\"",
+            "generality_type_1": "Based on the auditory characteristics of the sound, it most closely matches the sound of a frog.",
+            "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "The sound corresponds to a rooster.",
+            "locality_audio_type_2": "The most likely match for the sound is a frog.",
+            "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+            "locality_text": "A digital signature requires a public-key system.",
+            "portability_audio": "The animal in the sound is most likely a herbivore."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "Korean",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula for decay:\nactivity(t) = activity(0) * e^(-\u03bbt)\nWhere:\n* activity(t) is the activity at time t\n* activity(0) is the initial activity, which is given as 150 mCi\n* \u03bb is the decay constant, which is equal to ln(2)/T_1/2, where T_1/2 is the half-life of the isotope in hours\n* e is the base of the natural logarithm (approximately 2.71828)\nSubstituting the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6) activity(24) = 150 * e^(-0.3889) activity(24) = 150 * 0.6111 activity(24) = 9.4 mCi\nTherefore, the activity remaining 24 hours after delivery will be approximately 9.4 mCi. The closest option among the given choices is 9.4 mCi.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description given, the animal responsible for the sound seems to be a rooster, which is a male chicken. Therefore, the correct option would be \"hen.\"",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I believe the animal responsible is a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "happy",
+            "original_answer": "fear",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I...",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "happy",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I...",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "happy",
+            "transcription": "We'll stop in a couple of minutes.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_WSI_FEA_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "happy",
+            "transcription": "We'll stop in a couple of minutes.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_17882305.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Angela is pregnant, she told me.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia130_utt10.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\ndisgust\nsad\nfear",
+            "answer": "sad",
+            "transcription": "I don't think I'd be comfortable having any of my old lovers there.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia146_utt5.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nhappy\nangry\nsad",
+            "answer": "happy",
+            "transcription": "I know, I feel kind of bad for him, but I'm also really psyched because now I don't have to move in here.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEKeyDetection_Giantstepskey/4702235.wav",
+            "question": "Determine the musical key of this audio. Choose one: 'A major', 'E major', 'G major', 'Bb major', 'Db major', 'D minor', 'B major', 'Ab minor', 'F major', 'Gb major', 'F minor', 'E minor', 'C major', 'Ab major', 'G minor', 'Db minor', 'B minor', 'Eb minor', 'Gb minor', 'Eb major', 'C minor', 'A minor', 'D major'.",
+            "answer": "D major",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which one sentence explains most accurately why spin trapping is often used to detect free radical intermediates?\n\nOptions:\nspin trapping provides more structural information than direct detection by EPR\nspin trapping makes it easy to quantify free radical intermediates\nsteady state concentration of free radical intermediates is often too low to enable direct detection by EPR\ndetection of spin adducts requires lower power than direct detection of radical intermediates",
+            "answer": "detection of spin adducts requires lower power than direct detection of radical intermediates",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia227_utt0.wav",
+            "question": "From the listed facial expressions, which do you think is the most accurate representation of the emotion heard in the audio?\n\nOptions:\nDownturned mouth and teary eyes\nSquinted eyes and a pinched nose\nFurrowed brows with slightly open mouth, as if about to shout.\nRelaxed facial muscles with a cheerful grin",
+            "answer": "Relaxed facial muscles with a cheerful grin",
+            "transcription": "if you won't tell him about our little bonking incident. Monica, number one, I don't think Ben understands the concept of bribery. And number two, I...",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The speaker is expressing disgust.",
+            "generality_type_0": "The speaker feels disgusted.",
+            "generality_type_1": "Fearful",
+            "generality_type_2": "Happy",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+            "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+            "locality_audio_type_3": "The musical key of this audio is A major.",
+            "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+            "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\nactivity(t) is the activity at time t activity(0) is the initial activity (150 mCi in this case) k is the decay constant for the isotope (which is equal to ln(2)/t_1/2, where t_1/2 is the half-life in hours) t is the time elapsed since delivery (in hours)\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6) activity(24) = 150 * e^(-2) activity(24) = 150 * 0.038 activity(24) = 5.7 mCi\nTherefore, the activity remaining 24 hours after delivery will be approximately 5.7 mCi. The closest option among the given choices is 38 mCi, which is too high.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description given, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen\".",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I believe the animal responsible is a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is likely a herbivore, as the sounds resemble those of chickens and other farm animals that primarily eat plant material."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker\u2019s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "The data cables had to be original in most cases.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "Classify the speaker's voice into one of the following gender categories.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "The data cables had to be original in most cases.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker\u2019s gender based on your perception.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Classify the speaker's voice into one of the following gender categories.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_8.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nsheep\nrooster\npig\ncow",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21401014.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "According to it, both Iodame and Athena were daughters of Aetinos.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10111891.wav",
+            "question": "Classify the speech as either a spoofed voice or an authentic recording. The answer could be spoofed or authentic.",
+            "answer": "authentic",
+            "transcription": "For the Scottish judges, the affair is very delicate and unique.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following could be used as a test for autocorrelation up to third order?\n\nOptions:\nThe Durbin Watson test\nWhite's test\nThe RESET test\nThe Breusch-Godfrey test",
+            "answer": "The Breusch-Godfrey test",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18979305.wav",
+            "question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nChapan\nHijab",
+            "answer": "Chapan",
+            "transcription": "The data cables had to be original in most cases.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The speaker is female.",
+            "generality_type_0": "The speaker's voice belongs to a female.",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "The sound originates from a rooster.",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "The speech is classified as an authentic recording.",
+            "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting autocorrelation up to third order compared to other tests such as White's test, theRESET test, and the Breusch-Godfrey test.",
+            "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula for decay:\nactivity(t) = activity(0) * e^(-\u03bbt)\nWhere:\n* activity(t) is the activity at time t\n* activity(0) is the initial activity, which is given as 150 mCi\n* \u03bb is the decay constant, which is equal to ln(2)/T_1/2, where T_1/2 is the half-life of the isotope in hours\n* e is the base of the natural logarithm (approximately 2.71828)\nSubstituting the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6)\nSimplifying, we get:\nactivity(24) = 150 * e^(-2)\nUsing a calculator, we find that e^(-2) is approximately 0.138, so:\nactivity(24) = 150 * 0.138\nTherefore, the activity remaining 24 hours after delivery will be approximately 19 mCi.\nSo the correct option is 19 mCi.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description given, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen\".",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the most likely animal responsible is a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "The sound originates from a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting autocorrelation up to third order compared to other tests such as White's test, theRESET test, and the Breusch-Godfrey test.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncow\ndog\npig\ncat",
+            "answer": "cat",
+            "original_answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncat\npig\ndog\ncow",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_109.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncow\ndog\npig\ncat",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_109.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncat\npig\ndog\ncow",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia155_utt8.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nfear\ndisgust\nangry",
+            "answer": "sad",
+            "transcription": "No. A break from us.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nfrog\npig\nrooster",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_56.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\npig\nrooster\ncat\ncow",
+            "answer": "cat",
+            "transcription": "\uc9d1\uc0ac\ub294 \uc9d1\uc0ac\uc758 \uc9d1\uc744 \ucc3e\uace0 \uc788\uc5b4\uc694",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222278__ajaysm__naobo-42.wav",
+            "question": "Recognize the percussion instrument in this audio and classify it as Bangu, Naobo, Daluo, or Xiaoluo.",
+            "answer": "naobo",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which one of the following schools supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts\n\nOptions:\nAnalytical School\nNatural Law School\nHistorical School\nSociological School",
+            "answer": "Analytical School",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_52.wav",
+            "question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nFlapping its wings\nFlying between trees\nHiding in shells\nPurring",
+            "answer": "Purring",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound description provided, the source of the sound could be a pig.",
+            "generality_type_0": "The sound corresponds to a pig.",
+            "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow.",
+            "generality_type_2": "The sound corresponds to a cow.",
+            "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+            "locality_audio_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+            "locality_audio_type_2": "The sound originates from a cat.",
+            "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+            "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have become widely accepted and respected by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both schools recognize that the role of the judiciary in recognizing and enforcing custom as law is an important aspect of the legal system.",
+            "portability_audio": "Based on the sound described in the audio, the animal's natural or most typical way of acting would be option B: Flying between trees. This could be a bird using its wings to soar through the air and move between branches."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\nactivity(t) is the activity at time t activity(0) is the initial activity (150 mCi in this case) k is the decay constant for the isotope (which is equal to ln(2)/t_1/2, where t_1/2 is the half-life in hours) t is the time elapsed since delivery (in hours)\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6) activity(24) = 150 * e^(-2) activity(24) = 150 * 0.038 activity(24) = 5.7 mCi\nTherefore, the activity remaining 24 hours after delivery will be approximately 5.7 mCi. The closest option among the given choices is 38 mCi, which is too high.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen\".",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore, as the sounds resemble those of chickens and other farm animals that primarily eat plant material."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound description given, the animal identified in the audio file is a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting autocorrelation up to third order compared to other tests such as White's test, theRESET test, and the Breusch-Godfrey test.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound is a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow.",
+                "generality_type_2": "The sound corresponds to a cow.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have become widely accepted and respected by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both the Analytical and Sociological Schools do not support the view that a custom becomes law when it receives the stamp of judicial recognition by courts.",
+                "portability_audio": "Based on the sound described in the audio, the animal most likely represents a cat, which is known for purring. Cats typically use purring as a way to communicate various emotions such as comfort, contentment, or distress. Flying between trees and hiding in shells are not typical behaviors associated with cats, while flapping wings is not a behavior observed in cats either."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "angry",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\nsad\ndisgust",
+            "answer": "sad",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\nsad\ndisgust",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_40.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1061_IWL_DIS_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1024_ITH_SAD_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nfear\nsad\nhappy\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentSourceClassification_Nsynth/guitar_acoustic_015-101-075.wav",
+            "question": "Categorize the instrument: Is it acoustic, electronic, or synthetic?",
+            "answer": "acoustic",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is/are the disadvantages of an open loop control system?\n\nOptions:\nInaccurate.\nUnreliable.\nboth A and B.\nnone of the above.",
+            "answer": "both A and B.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1049_MTI_ANG_XX.wav",
+            "question": "What facial expression best represents the emotion in the clip?\n\nOptions:\nRetracted chin with one corner of the mouth twitching, as if intolerable.\nFurrowed brows with slightly open mouth, as if about to shout.\nWrinkled forehead and a forlorn expression\nHead slightly pulled back with a terrified gaze, as if searching for an escape.",
+            "answer": "Wrinkled forehead and a forlorn expression",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "angry",
+            "generality_type_0": "angry",
+            "generality_type_1": "Angry",
+            "generality_type_2": "angry",
+            "locality_audio_type_0": "Sheep",
+            "locality_audio_type_1": "disgusted",
+            "locality_audio_type_2": "Sad",
+            "locality_audio_type_3": "The instrument is acoustic.",
+            "locality_text": "Both inaccurate and unreliable are considered disadvantages of an open-loop control system. An open-loop control system does not take into account feedback from the controlled system, which can cause the system to deviate from its desired state. This lack of feedback makes it difficult to accurately predict and control the behavior of the system. Additionally, because there is no feedback mechanism, the system may not be able to compensate for disturbances or errors in the controlled variable. As a result, the system's performance may be unpredictable and unreliable. Therefore, the correct answer is both A and B.",
+            "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula for decay:\nactivity(t) = activity(0) * e^(-\u03bbt)\nWhere:\n* activity(t) is the activity at time t\n* activity(0) is the initial activity, which is given as 150 mCi\n* \u03bb is the decay constant, which is equal to ln(2)/T_1/2, where T_1/2 is the half-life of the isotope in hours\n* e is the base of the natural logarithm (approximately 2.71828)\nSubstituting the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6)\nSimplifying, we get:\nactivity(24) = 150 * e^(-2)\nUsing a calculator, we find that e^(-2) is approximately 0.138, so:\nactivity(24) = 150 * 0.138\nTherefore, the activity remaining 24 hours after delivery will be approximately 19 mCi.\nSo the correct option is 19 mCi.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a hen.",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a mixed emotion of sadness and relief.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest sadness or happiness, which do not seem to be the most appropriate fit for the context of the audio."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound description given, the animal identified in the audio file is a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting higher-order autocorrelation compared to lower-order tests such as White's test, which is primarily designed to detect first-order autocorrelation. The RESET test and Breusch-Godfrey test are not typically used to test autocorrelation up to third order.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound could potentially be a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow. The other options (dog, pig, and cat) are not typically known for producing sounds similar to what is described in the recording.",
+                "generality_type_2": "The sound corresponds to a cow.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have become widely accepted and respected by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both the Analytical and Sociological Schools do not support the view that a custom becomes law when it receives the stamp of judicial recognition by courts.",
+                "portability_audio": "Based on the sound described in the audio, the animal's natural or most typical way of acting would be option B: Flying between trees. This is because birds, which are often associated with such sounds, are known for their ability to fly and navigate through trees in their natural habitat. The other options do not align well with the sound characteristics provided."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "Angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "Sheep",
+                "locality_audio_type_1": "disgusted",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The instrument is acoustic.",
+                "locality_text": "Both inaccurate and unreliable are considered disadvantages of an open-loop control system. An open-loop control system does not take into account feedback from the controlled system, which can cause the system to deviate from its desired state. This lack of feedback makes it difficult to accurately predict and control the behavior of the system. Additionally, because there is no feedback mechanism, an open-loop control system may also be less reliable than a closed-loop control system, which can adjust its actions based on feedback from the controlled system. Therefore, the correct answer is both A and B.",
+                "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nEnglish\nFrench\nGerman",
+            "answer": "English",
+            "original_answer": "German",
+            "transcription": "Einstellungen anzeigen.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nFrench\nGerman\nEnglish\nChinese",
+            "answer": "English",
+            "transcription": "Einstellungen anzeigen.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nEnglish\nFrench\nGerman",
+            "answer": "English",
+            "transcription": "Keine Sorge, es kann nichts passieren.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nFrench\nGerman\nEnglish\nChinese",
+            "answer": "English",
+            "transcription": "Keine Sorge, es kann nichts passieren.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_24014466.wav",
+            "question": "What is the speaker's gender in this audio?\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "The other islands lie to the south of Mucklesgiri.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21852004.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nChinese\nItalian\nGerman",
+            "answer": "Chinese",
+            "transcription": "\u8d8b\u8b66\u5236",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_25619619.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nKorean\nSpanish\nEnglish",
+            "answer": "English",
+            "transcription": "For example, save the current file go to the search menu.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/230877__akshaylaya__thi-e-119.wav",
+            "question": "From the recording, categorize the stroke as 'bheem', 'tha', 'cha', 'dheem', 'num', 'thom', 'ta', 'thi', or 'dhin'.",
+            "answer": "thi",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "If the FED buys bonds in the secondary market\n\nOptions:\nthe money supply will increase.\nthe money supply will decrease.\nthe money supply will not be affected.\nthe discount rate would be affected.",
+            "answer": "the money supply will increase.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17843259.wav",
+            "question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nJapan\nChina\nHaiti\nSouth Africa",
+            "answer": "South Africa",
+            "transcription": "Einstellungen anzeigen.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "German",
+            "generality_type_0": "The speaker is using German.",
+            "generality_type_1": "The speaker is using German.",
+            "generality_type_2": "The speaker is using German.",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "The language spoken is Chinese.",
+            "locality_audio_type_2": "The language spoken in the audio is English.",
+            "locality_audio_type_3": "The stroke is categorized as 'dheem'.",
+            "locality_text": "The correct answer is: the money supply will not be affected.\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it injects money into the economy through its open market operations. This increase in money supply can cause inflation if the demand for goods and services exceeds the supply, but it depends on various factors such as the interest rate and the effectiveness of monetary policy in controlling inflation.\nHowever, the purchase of bonds by the FED does not directly affect the discount rate, which is the interest rate at which the FED lends money to banks. The discount rate is set by the FED's Board of Governors and is used primarily as a tool to control short-term interest rates and influence economic activity. The purchase of bonds by the FED may indirectly affect the discount rate by impacting longer-term interest rates, but this effect is typically small compared to other factors such as changes in monetary policy or changes in the overall level of demand for credit.",
+            "portability_audio": "The spoken language in the audio is German, which is not an official language of Japan, China, Haiti, or South Africa. The correct answer is none of the above."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "Korean",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\nactivity(t) is the activity at time t activity(0) is the initial activity (150 mCi in this case) k is the decay constant for the isotope (which is equal to ln(2)/t_1/2, where t_1/2 is the half-life in hours) t is the time elapsed since delivery (in hours)\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/6)\nUsing a calculator, we find that e^(-ln(2)/6) \u2248 0.0073. Therefore,\nactivity(24) = 150 * 0.0073 \u2248 1.15 mCi\nSo, the activity remaining 24 hours after delivery will be approximately 1.15 mCi. The closest option among the given choices is 9.4 mCi, which is incorrect.",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen.\"",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "The sound originates from a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting autocorrelation up to third order compared to other tests such as White's test, theRESET test, and the Breusch-Godfrey test.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound is a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow. The other animals listed may make similar sounds, but they are not as commonly associated with the described characteristics of the sound.",
+                "generality_type_2": "The sound corresponds to a cow.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The school that supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts is the Natural Law School. The Natural Law School believes that laws should be based on natural principles and that customs can become laws if they are consistent with those principles and receive judicial recognition. The Historical School, on the other hand, argues that laws should be based on historical tradition and that custom cannot become a law unless it has been formally adopted by a governing body. The Sociological School focuses on the role of society in shaping laws, while the Analytical School emphasizes the importance of logical analysis in the development of legal theory and practice.",
+                "portability_audio": "Based on the sound described in the audio, the animal most likely represents a cat, which is known for purring. Cats typically use purring as a way to communicate various emotions such as comfort, contentment, or distress. Flying between trees and hiding in shells are not typical behaviors associated with cats, while flapping wings is not a behavior observed in cats either."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "Angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "Sheep",
+                "locality_audio_type_1": "The speaker is expressing disgust.",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The instrument is acoustic.",
+                "locality_text": "Both inaccurate and unreliable are disadvantages of an open-loop control system. An open-loop control system does not take into account feedback from the controlled system, which means that it cannot make adjustments to its output based on the actual results of its actions. This can lead to inaccuracies in the system's performance and unreliability in achieving the desired outcome. Therefore, option A (inaccurate) and option B (unreliable) are both correct answers to this question. Option C (none of the above) is incorrect because both inaccurate and unreliable are indeed disadvantages of an open-loop control system.",
+                "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "The speaker is using German.",
+                "generality_type_1": "The speaker is using German.",
+                "generality_type_2": "The speaker is using German.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language spoken in the audio is English.",
+                "locality_audio_type_3": "The stroke is categorized as 'dheem'.",
+                "locality_text": "The correct answer is: the money supply will not be affected.\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it injects money into the economy through its open market operations. This increase in money supply can cause inflation if the demand for goods and services exceeds the supply, but it depends on various factors such as the interest rate and the effectiveness of monetary policy in controlling inflation.\nHowever, the purchase of bonds by the FED does not directly affect the discount rate, which is the interest rate at which the FED lends money to banks. The discount rate is set by the FED's Board of Governors and is used primarily as a tool to control short-term interest rates and influence economic activity. The purchase of bonds by the FED may indirectly affect the discount rate by impacting longer-term interest rates, but this effect is typically small compared to other factors such as changes in monetary policy or changes in the overall level of economic activity.",
+                "portability_audio": "The spoken language in the audio is German, which is not among the official languages of Japan, China, Haiti, or South Africa. The correct answer is none of the above."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nGerman\nFrench\nJapanese",
+            "answer": "Japanese",
+            "original_answer": "French",
+            "transcription": "Mais cette charte semble indiquer que B\u00e9ranger \u00e9tait d\u00e9j\u00e0 mort \u00e0 cette date.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nFrench\nSpanish\nGerman",
+            "answer": "Japanese",
+            "transcription": "Mais cette charte semble indiquer que B\u00e9ranger \u00e9tait d\u00e9j\u00e0 mort \u00e0 cette date.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nGerman\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nFrench\nSpanish\nGerman",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_20405322.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "The reservoirs are managed by water supplier departments of Hong Kong government.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18979331.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nKorean\nChinese\nFrench\nEnglish",
+            "answer": "Chinese",
+            "transcription": "\u7ec8\u800c\u901a\u8fc7\u800c\u70df\u7ba1\u548c\u70df\u5589\u76f8\u901a",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_39003889.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nEnglish\nItalian\nChinese",
+            "answer": "Japanese",
+            "transcription": "\u30ac\u30e9\u30b9\u306b\u6cbf\u3063\u3066\u9032\u307f\u76f4\u89d2\u306b\u66f2\u304c\u308a\u30b3\u30f3\u30af\u30ea\u30fc\u30c8\u58c1\u306b\u6cbf\u3063\u3066\u6b69\u304d",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/off__1cb788bc_nohash_0.wav",
+            "question": "Identify the spoken word within the list: up, left, off, right, yes, down, no, go, stop and on. If the word isnt in the list, respond with <unknown>; if there is no speech, respond with <silence>.",
+            "answer": "off",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "For the complex number z = a + bi, it is known that a and b are positive integers, and that z^3 + z^2 + z is a real number. Find the smallest possible value for b.\n\nOptions:\n10\n1\n6\n11",
+            "answer": "11",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_20894915.wav",
+            "question": "From the cities provided, which one is located in a country where the language spoken in the audio is recognized officially?\n\nOptions:\nRome\nCape Town\nHiroshima\nVaduz",
+            "answer": "Hiroshima",
+            "transcription": "Mais cette charte semble indiquer que B\u00e9ranger \u00e9tait d\u00e9j\u00e0 mort \u00e0 cette date.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "French",
+            "generality_type_0": "French",
+            "generality_type_1": "French",
+            "generality_type_2": "French",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "The language spoken is English.",
+            "locality_audio_type_2": "The language of the provided speech is Japanese.",
+            "locality_audio_type_3": "The spoken words are: up, left, off, right, yes, down, no, go, stop and on.",
+            "locality_text": "We can start by simplifying the expression z^3 + z^2 + z using the distributive property: z^3 + z^2 + z = (z + 1)(z^2 - z + 1)\nSince z^3 + z^2 + z is a real number, we know that the imaginary part of this expression is zero. This means that the second factor must be equal to 1, so we have (z + 1)(z^2 - z + 1) = z^3 + z^2 + z = 1\nNow we can substitute back to get z^3 + z^2 + z = 1, which simplifies to z^3 = 0. Since z is a complex number, we know that its magnitude (the distance from the origin) is always non-negative. Therefore, the smallest possible value for the magnitude of z is 0, which corresponds to the point (0, 0) in the complex plane.\nTo find the smallest possible value for b, we need to consider the other component of z, which is the imaginary part. Since the imaginary part is zero, we know that the real part of z is also zero. This means that z = ",
+            "portability_audio": "The city located in a country where the language spoken in the audio is recognized officially is Vaduz."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "The activity of a radioactive isotope decreases over time due to radioactive decay. The rate at which the activity decreases depends on the half-life of the isotope. In this case, the half-life of the isotope is 6.0 hours.\nTo find out how much activity will remain 24 hours after delivery, we can use the formula for radioactive decay:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\n* activity(t) is the activity of the isotope at time t\n* activity(0) is the initial activity of the isotope (in this case, 150 mCi)\n* k is the decay constant of the isotope (which is equal to ln(2)/t_1/2, where ln(2) is the natural logarithm of 2 and t_1/2 is the half-life of the isotope in seconds)\n* t is the time elapsed since the isotope was delivered (in this case, 24 hours, which is 24 * 3600 seconds)\n\nPlugging in the values, we get:\nactivity(24) = 150 * e^(-ln(2)/(6 * 3600))\nS",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen.\"",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore. The sounds produced by the chicken include clucking, which is a characteristic sound of chickens that are fed a diet rich in plant material. Carnivores typically make different types of sounds and do not produce the same kind of clucking noise. Similarly, while omnivores may eat both plants and animals, they are less likely to produce the distinctive clucking sound associated with herbivores."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a feeling of excitement or elation.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "The sound originates from a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The Durbin Watson test is more sensitive to detecting higher-order autocorrelation compared to lower-order tests such as White's test, which is primarily designed to detect first-order autocorrelation. The RESET test and the Breusch-Godfrey test are not typically used to test autocorrelation up to third order.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound could potentially be a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow. The other animals listed may make similar sounds, but they are not as commonly associated with the described characteristics of the sound.",
+                "generality_type_2": "The sound corresponds to a pig.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have become widely accepted and respected by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both the Analytical and Sociological Schools do not support the view that a custom becomes law when it receives the stamp of judicial recognition by courts.",
+                "portability_audio": "Based on the sound described in the audio, the animal's natural or most typical way of acting would be option B: Flying between trees. This is because birds, which are often associated with such sounds, are known for their ability to fly through the air using their wings. While some birds may hide in shells or purr, flapping their wings and flying between trees are their most common and characteristic behaviors."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "Angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "Sheep",
+                "locality_audio_type_1": "disgusted",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The instrument is acoustic.",
+                "locality_text": "Both inaccurate and unreliable are disadvantages of an open-loop control system. An open-loop control system does not have a feedback mechanism to adjust its output based on errors in its input or environment. This means that the system's output will not be accurately aligned with the desired outcome, leading to inaccuracies. Additionally, since there is no feedback mechanism, the system may also become unstable or unpredictable over time, leading to unreliability. Therefore, the correct answer is both A and B.",
+                "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "The speaker is using German.",
+                "generality_type_1": "The speaker is using German.",
+                "generality_type_2": "The speaker is using German.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language spoken in the audio is English.",
+                "locality_audio_type_3": "The stroke is categorized as 'dheem'.",
+                "locality_text": "The correct answer is: the money supply will not be affected.\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it injects money into the economy through its open market operations. This increase in money supply can cause inflation if the demand for goods and services exceeds the supply, but it depends on various factors such as the interest rate and the effectiveness of monetary policy in controlling inflation.\nHowever, the purchase of bonds by the FED does not directly affect the discount rate, which is the interest rate at which the FED lends money to banks. The discount rate is set by the FED's Board of Governors and is used primarily as a tool to control short-term interest rates and influence economic activity. The purchase of bonds by the FED may indirectly affect the discount rate by impacting longer-term interest rates, but this effect is typically small compared to other factors such as changes in monetary policy or changes in the overall level of economic activity.",
+                "portability_audio": "The spoken language in the audio is German, which is not among the official languages of Japan, China, Haiti, or South Africa. The correct answer is none of the above."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language of the provided speech is Japanese.",
+                "locality_audio_type_3": "The spoken words are: up, left, off, right, yes, down, no, go, stop and on.",
+                "locality_text": "We can start by simplifying the expression z^3 + z^2 + z using the distributive property: z^3 + z^2 + z = (z + 1)(z^2 - z + 1)\nSince z^3 + z^2 + z is a real number, we know that the imaginary part of this expression is zero. This means that the second factor must be equal to 1, so we have (z + 1)(z^2 - z + 1) = z^3 + z^2 + z = 1\nNow we can substitute back to get z^3 + z^2 + z = 1, which simplifies to z^3 = 0. Since z is a complex number, we know that its magnitude (the distance from the origin) is always non-negative. Therefore, the smallest possible value for the magnitude of z is 0, which corresponds to the point (0, 0) in the complex plane.\nTo find the smallest possible value for b, we need to consider the other component of z, which is the imaginary part. Since the imaginary part is zero, we know that the real part of z is also zero. This means that z = ",
+                "portability_audio": "The city located in a country where the language spoken in the audio is recognized officially is Vaduz."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\nsheep\nhen\npig",
+            "answer": "sheep",
+            "original_answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\nsheep\nhen\npig",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_1.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nhen\ncrow",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_17865779.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker\u2019s gender based on your perception.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Mrs. Wife Lady Miss",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncat\ndog\nfrog\nhen",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_58.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ndog\nsheep\npig\ncat",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentSourceClassification_Nsynth/guitar_acoustic_021-073-025.wav",
+            "question": "Based on the timbre and envelope, is this sound acoustic, electronic, or synthetic?",
+            "answer": "acoustic",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "In soccer which player is allowed to use his or her hands in the field of play?\n\nOptions:\nmidfielder\ncenter\nsweeper\ngoalkeeper",
+            "answer": "goalkeeper",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nOviparous\nMarsupial reproduction\nViviparous\nAsexual reproduction",
+            "answer": "Viviparous",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+            "generality_type_0": "The sound corresponds to a crow.",
+            "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+            "generality_type_2": "The sound corresponds to a crow.",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "Based on the characteristics and tone of the sound heard in the audio file, it is most likely that a dog is the source of the sound. The sound includes barking and growling, which are typical behaviors of dogs. Cats do not bark or growl in the same way as dogs. Frogs and hens also produce different types of sounds that are distinct from what is heard in the audio file.",
+            "locality_audio_type_2": "The sound in the recording is likely coming from a group of sheep.",
+            "locality_audio_type_3": "Synthetic.",
+            "locality_text": "Goalkeeper is allowed to use their hands in the field of play in soccer.",
+            "portability_audio": "Based on the sound description provided, the animal in question likely produced its offspring through viviparous reproduction. Viviparity is a type of reproduction where the developing offspring is carried inside the mother's body until birth, at which point the offspring is usually fully formed. This is different from oviparity, where eggs are laid outside the mother's body and develop independently; marsupial reproduction, where young are born al\u80ce\u4f46\u5fc5\u987b\u9760\u6bcd\u4e73\u5582\u517b\uff1b and asexual reproduction, where offspring are produced without fertilization by another organism."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "The activity of the radioactive isotope at any time t can be calculated using the formula:\nactivity(t) = activity(0) * e^(-kt)\nWhere activity(0) is the initial activity of the isotope, k is the decay constant, and t is the time elapsed since the isotope was introduced.\nFor this problem, we know that the initial activity of the isotope is 150 mCi, and its half-life is 6.0 hours. We want to find the activity of the isotope 24 hours after delivery.\nFirst, we need to calculate the decay constant k. The decay constant can be found using the formula:\nk = ln(2) / half life\nPlugging in the value of the half-life, we get:\nk = ln(2) / 6.0 = 0.368\nNow we can use the formula above to find the activity of the isotope 24 hours after delivery:\nactivity(24) = 150 * e^(-0.368 * 24) = 150 * e^(-8.31) = 150 * 0.0072 = 0.1",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen\".",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound corresponds to a rooster.",
+                "locality_audio_type_2": "The most likely match for the sound is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore. The sounds produced by the chicken include clucking, which is a characteristic sound of chickens that are fed a diet rich in plant material. Carnivores typically make different types of sounds and do not produce the same kind of clucking noise. Similarly, while omnivores may eat both plants and animals, they are less likely to produce the distinctive clucking sound associated with herbivores."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a mixed emotion of sadness and relief.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are very low, which is not possible using direct detection methods such as EPR.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through someone's facial expression in this situation. The other options either suggest a completely different emotion or do not capture the intensity or complexity of the emotion expressed in the speech."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound description given in the prompt, the animal that can be identified from the provided options is a rooster. The sound is characterized by a cock-a-doodle-doo call, which is a distinctive sound of a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson test statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The test statistic takes into account both first-order and second-order serial correlation, as well as higher-order correlations up to third order. White's test, theRESET test, and the Breusch-Godfrey test are not suitable for testing autocorrelation up to third order.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound is a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow. The other options (dog, pig, and cat) are not typically known for producing sounds similar to what is described in the recording.",
+                "generality_type_2": "The sound corresponds to a cow.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have been widely accepted and practiced by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both the Analytical and Sociological Schools do not support the view that a custom becomes law when it receives the stamp of judicial recognition by courts.",
+                "portability_audio": "Based on the sound described in the audio, the animal's natural or most typical way of acting would be option Purring, as it is a common behavior for some animals to produce low-frequency sounds for various reasons such as communication, comfort, or self-soothing. Flapping wings, flying between trees, and hiding in shells are not typically expected sounds from this particular animal mentioned in the audio."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "Angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "Based on the sound description given in the prompt, the animal that can be identified from the provided options is a sheep.",
+                "locality_audio_type_1": "disgusted",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The instrument is acoustic.",
+                "locality_text": "Both inaccurate and unreliable are disadvantages of an open-loop control system. An open-loop control system does not have a feedback mechanism to adjust its output based on errors in its input or environment. This means that the system's output will not be accurately controlled and may vary unpredictably over time. Therefore, option A (inaccurate) and option B (unreliable) are both correct. Option C (none of the above) is incorrect because both inaccurate and unreliable are disadvantages of an open-loop control system.",
+                "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "The speaker is using German.",
+                "generality_type_1": "The speaker is using German.",
+                "generality_type_2": "The speaker is using German.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language spoken in the audio is English.",
+                "locality_audio_type_3": "The stroke is categorized as 'dheem'.",
+                "locality_text": "The correct answer is: the money supply will not be affected.\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it injects money into the economy through its open market operations. This purchase of bonds increases the demand for those bonds, which drives up their price and lowers their yield. Since the FED is buying long-term bonds, this also reduces interest rates, making borrowing cheaper.\nHowever, the impact on the money supply depends on how the FED uses the funds it gains from selling the bonds it purchases. If the FED reinvests the proceeds of its bond purchases back into the market, then the money supply may not change significantly. If the FED uses some of the proceeds to pay down its balance sheet by purchasing shorter-term securities, then it could reduce the money supply slightly.\nTherefore, while the FED's bond purchases can have an impact on interest rates and the demand for long-term bonds, they do not necessarily cause a change in the overall money supply.",
+                "portability_audio": "The spoken language in the audio is German, which is not among the official languages of Japan, China, Haiti, or South Africa. The correct answer is none of the above."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language of the provided speech is Japanese.",
+                "locality_audio_type_3": "The spoken word is \"stop\".",
+                "locality_text": "We can start by simplifying the expression z^3 + z^2 + z using the distributive property: z^3 + z^2 + z = (z + 1)(z^2 - z + 1)\nSince z^3 + z^2 + z is a real number, we know that the imaginary part of z^3 + z^2 + z must be zero. This means that the imaginary part of (z + 1)(z^2 - z + 1) must also be zero.\nExpanding (z + 1)(z^2 - z + 1), we get:\n(z + 1)(z^2 - z + 1) = z^3 + z^2 - z + z + 1 = z^3 + z^2 + 1\nTherefore, the imaginary part of z^3 + z^2 + 1 is equal to 1, which means that the real part of z^3 + z^2 + 1 must be equal to 1.\nNow, we can substitute z = a + bi into the equation z^3 + z^2 + z = 1 + 1 + 1 to get:\na^3 + ",
+                "portability_audio": "The city located in a country where the language spoken in the audio is recognized officially is Vaduz."
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound corresponds to a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound corresponds to a crow.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound heard in the audio file, it is most likely that a dog is the source of the sound. The sound includes barking and growling, which are typical behaviors of dogs. Cats typically make different sounds, frogs croak, and hens cluck, but do not bark or growl.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a sheep.",
+                "locality_audio_type_3": "Synthetic.",
+                "locality_text": "Goalkeeper is allowed to use their hands in the field of play in soccer. This is because goalkeepers are the only players who are positioned between the goalposts and are responsible for stopping shots and saving goals. They are also allowed to use their hands to catch the ball or to clear it away from the goal area. Midfielders, center forwards, and sweepers are not allowed to use their hands in the field of play.",
+                "portability_audio": "Based on the sound description provided, the animal in question likely produced its offspring through viviparous reproduction. Viviparity is a type of reproduction where the developing embryo is carried inside the mother's body until birth, rather than being laid as eggs. This method is common among many mammals, including some birds like crows."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nEnglish\nChinese\nSpanish",
+            "answer": "Chinese",
+            "original_answer": "Italian",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nItalian\nEnglish",
+            "answer": "Chinese",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nEnglish\nChinese\nSpanish",
+            "answer": "Chinese",
+            "transcription": "Ha un'aura potentissima.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nItalian\nEnglish",
+            "answer": "Chinese",
+            "transcription": "Ha un'aura potentissima.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_71.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncrow\ncow\ncat\npig",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20297781.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nSpanish\nChinese\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Las hojas de el\u00edpticas a orbiculares.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22109328.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nEnglish\nFrench\nItalian\nChinese",
+            "answer": "Chinese",
+            "transcription": "\u6bdb\u8272\u6210\u7070\u8272",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/lad-001-028_6201_20449.wav",
+            "question": "In the given triphone utterance, please identify the manner of articulation of the phone in the middle. Choose from the following: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "tap/flap",
+            "transcription": "Era.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following describes the fallacy of appeal to loyalty?\n\nOptions:\narguing that someone should do something because it will make him or her better liked by others\nresponding to an argument with an expression of derision\narguing that an idea should be accepted only because of who originated the idea\narguing that someone should do something to be loyal to a person or a group",
+            "answer": "arguing that someone should do something to be loyal to a person or a group",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_29267781.wav",
+            "question": "Which book from the list was originally written in the language heard in this audio?\n\nOptions:\nLord of the Flies\nGerminal\nFoucault's Pendulum\nThe Rice-Sprout Song",
+            "answer": "The Rice-Sprout Song",
+            "transcription": "La torre campanaria si alza direttamente dalla copertura del tetto.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Italian",
+            "generality_type_0": "Italian",
+            "generality_type_1": "Italian",
+            "generality_type_2": "The language spoken in the audio is Italian.",
+            "locality_audio_type_0": "Based on the provided audio recording, I believe the sound is made by a cat.",
+            "locality_audio_type_1": "Spanish",
+            "locality_audio_type_2": "The speaker is using Chinese.",
+            "locality_audio_type_3": "The middle phone in the triphone utterance is a lateral, which is represented by the symbol /l/.",
+            "locality_text": "The fallacy of appeal to loyalty occurs when someone argues that someone should do something because it will make him or her better liked by others, or because they want to be loyal to a person or a group. This type of argument relies on the assumption that people will only support ideas or actions if they align with the values or beliefs of those they are loyal to, rather than considering the merit of the idea or action itself. Responding to an argument with an expression of derision is also considered a fallacy of appeal to loyalty, as it does not address the actual arguments being made, but rather attacks the person making them. The last option is not a fallacy of appeal to loyalty.",
+            "portability_audio": "The book originally written in the language heard in this audio is 'Foucault's Pendulum'."
+        },
+        "post_edit": [
+            {
+                "reliability": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The speaker is using Korean in the provided audio segment.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "The sound matches a frog.",
+                "locality_audio_type_1": "The language spoken in the audio is English.",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The distance of the speaker is 0.4m.",
+                "locality_text": "To calculate the activity remaining 24 hours after delivery, we can use the formula:\nactivity(t) = activity(0) * e^(-kt)\nWhere:\nactivity(t) is the activity at time t activity(0) is the initial activity (150 mCi in this case) k is the decay constant for the isotope (which depends on its half-life) t is the time elapsed since delivery (in hours)\nThe decay constant for a radioactive isotope with a half-life of 6.0 hours is given by:\nk = ln(2)/t_1/2\nSubstituting the values, we get:\nk = ln(2)/6 = 0.1036\nUsing the formula above, we can calculate the activity remaining 24 hours after delivery:\nactivity(24) = 150 * e^(-0.1036 * 24) = 150 * e^(-2.4576) = 150 * 0.0078 = 1.16 mCi\nTherefore, the activity remaining 24 hours after delivery will be approximately 1.16 mCi. The closest option among the",
+                "portability_audio": "The most likely location for a city where Korean is an official language is Busan. Busan is a city in South Korea, where Korean is one of the official languages along with English and other languages."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a hen.",
+                "generality_type_0": "Based on the sound description, the animal responsible for the sound seems to be a rooster, so the correct option would be \"hen.\"",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a frog.",
+                "generality_type_2": "Based on the sounds heard in the recording, I would say the sound is most likely made by a frog.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The sound matches the rooster.",
+                "locality_audio_type_2": "The most likely match for the sound based on the audio file is a frog.",
+                "locality_audio_type_3": "The speech is not a result of voice spoofing.",
+                "locality_text": "A digital signature requires a public-key system.",
+                "portability_audio": "The animal in the sound is most likely a herbivore. The sounds produced by the chicken include clucking, which is a characteristic sound of chickens that are fed a diet rich in plant material. Carnivores typically make different types of sounds and do not produce the same kind of clucking noise. Similarly, while omnivores may eat both plants and animals, they are less likely to produce the distinctive clucking sound associated with herbivores."
+            },
+            {
+                "reliability": "The speaker is expressing disgust.",
+                "generality_type_0": "The speaker feels disgusted.",
+                "generality_type_1": "Fearful",
+                "generality_type_2": "Happy",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the provided English speech, the speaker's underlying emotion appears to be disgust.",
+                "locality_audio_type_2": "The speaker is expressing a mixed emotion of sadness and relief.",
+                "locality_audio_type_3": "The musical key of this audio is A major.",
+                "locality_text": "The sentence that best explains why spin trapping is often used to detect free radical intermediates is: \"Steady state concentration of free radical intermediates is often too low to enable direct detection by EPR.\" This is because spin traps work by reacting with free radicals to form stable spin adducts, which can then be detected by EPR spectroscopy. The formation of spin adducts allows for the detection of free radical intermediates even when their concentrations are low, which is a common problem in many chemical reactions.",
+                "portability_audio": "The most accurate representation of the emotion in the audio would be option D: Furrowed brows with slightly open mouth, as if about to shout. This expression indicates frustration, annoyance, or concern, which are emotions that could be accurately conveyed through the speaker's tone and body language. The other options either suggest sadness or happiness, which do not seem to be the primary emotion expressed in the audio."
+            },
+            {
+                "reliability": "The speaker is female.",
+                "generality_type_0": "The speaker's voice belongs to the female category.",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "Based on the sound description given in the prompt, the animal that can be identified from the provided options is a rooster. The sound is characterized by a cock-a-doodle-doo call, which is a distinctive sound of a rooster.",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "The speech is classified as an authentic recording.",
+                "locality_text": "The Durbin Watson test can be used as a test for autocorrelation up to third order. The Durbin Watson test is a statistical test used to determine whether there is serial correlation in a time series data set. It is particularly useful for testing the null hypothesis of no serial correlation against the alternative hypothesis of at least one lagged dependent variable. The Durbin Watson statistic ranges between 0 and 4, with values closer to 2 indicating no serial correlation, while values greater than 2 indicate positive serial correlation and values less than 2 indicate negative serial correlation. The test statistic is calculated based on the sample mean and variance of the residuals from a regression model, taking into account the degree of autocorrelation in the data. The other options provided (White's test, theRESET test, and the Breusch-Godfrey test) are not typically used to test for autocorrelation up to third order.",
+                "portability_audio": "Based on the given information, the traditional clothing item most likely associated with the speaker's gender in a specific cultural context is Chapan."
+            },
+            {
+                "reliability": "Based on the sound description provided, the source of the sound is a pig.",
+                "generality_type_0": "The sound corresponds to a pig.",
+                "generality_type_1": "Based on the information provided in the description, the sound is likely coming from a large animal, possibly a cow.",
+                "generality_type_2": "The sound corresponds to a cow.",
+                "locality_audio_type_0": "The emotional tone of the speaker is sad.",
+                "locality_audio_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "locality_audio_type_2": "The sound originates from a cat.",
+                "locality_audio_type_3": "The percussion instrument is classified as Daluo.",
+                "locality_text": "The Natural Law School supports the view that a custom becomes law when it receives the stamp of judicial recognition by courts. This school of thought holds that laws should be based on natural principles and moral rules that can be discovered through reason, rather than being imposed by a central authority or a group of people. The idea is that customs and traditions should evolve over time to reflect the changing needs and values of society, and that they should be recognized as valid laws by the courts when they have been widely accepted and practiced by the community. The Historical School also plays a role in this process, as it emphasizes the importance of historical context in understanding how laws have developed over time. However, both the Analytical and Sociological Schools do not support the view that a custom becomes law when it receives the stamp of judicial recognition by courts.",
+                "portability_audio": "Based on the sound described in the audio, the animal's natural or most typical way of acting would be option Purring, as it is a common behavior for some animals to produce low-frequency sounds for various reasons such as communication, comfort, or self-soothing. Flapping its wings, flying between trees, or hiding in shells may not be typical behaviors associated with the sound described in the audio."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "Angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "Based on the sound description given in the prompt, the animal that can be identified from the provided options is a sheep.",
+                "locality_audio_type_1": "disgusted",
+                "locality_audio_type_2": "Sad",
+                "locality_audio_type_3": "The instrument is acoustic.",
+                "locality_text": "Both inaccurate and unreliable are considered disadvantages of an open-loop control system. An open-loop control system does not take into account feedback from the controlled system, which can cause errors in the control action. This can result in inaccurate performance of the system over time. Additionally, since there is no feedback mechanism, the system may become unstable or unpredictable, leading to unreliability. Therefore, both options A and B are correct.",
+                "portability_audio": "Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "German",
+                "generality_type_0": "The speaker is using German.",
+                "generality_type_1": "The speaker is using German.",
+                "generality_type_2": "The speaker is using German.",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language spoken in the audio is English.",
+                "locality_audio_type_3": "The stroke is categorized as 'dheem'.",
+                "locality_text": "The correct answer is: the money supply will not be affected.\nWhen the Federal Reserve (FED) buys bonds in the secondary market, it injects money into the economy through its open market operations. This increase in money supply can cause inflation if the demand for goods and services exceeds the supply, but it depends on various factors such as the interest rate and the effectiveness of monetary policy in controlling inflation.\nHowever, the purchase of bonds by the FED does not directly affect the discount rate, which is the interest rate at which the FED lends money to banks. The discount rate is set by the FED's Board of Governors and is used primarily as a tool to control short-term interest rates and influence economic activity. The purchase of bonds by the FED may indirectly affect the discount rate by impacting longer-term interest rates, but this effect is typically small compared to other factors such as changes in monetary policy or changes in the overall level of demand for credit.",
+                "portability_audio": "The spoken language in the audio is German, which is not among the official languages of Japan, China, Haiti, or South Africa. The correct answer is none of the above."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The language spoken is Chinese.",
+                "locality_audio_type_2": "The language of the provided speech is Japanese.",
+                "locality_audio_type_3": "The spoken word is \"on\".",
+                "locality_text": "We can start by simplifying the expression z^3 + z^2 + z using the distributive property: z^3 + z^2 + z = (z + 1)(z + 1)(z + 1)\nSince z^3 + z^2 + z is a real number, we know that its imaginary part is zero. This means that (z + 1)(z + 1)(z + 1) must have at least one factor of (z + 1), which implies that z cannot equal -1.\nNow, let's consider the possible values for z. Since z is a complex number with positive integer coefficients, it must be either 1 + i, 1 - i, or 2 + i. We can eliminate 2 + i as a possibility because it does not satisfy the condition that z^3 + z^2 + z is a real number.\nIf z = 1 + i, then z^3 + z^2 + z = (1 + i)^3 + (1 + i)^2 + (1 + i) = 1 + 3i + 3 + 1 + i + 1 = 5 + 4i, which is not a",
+                "portability_audio": "The city located in a country where the language spoken in the audio is recognized officially is Vaduz."
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound corresponds to a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound matches the crow.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound heard in the audio file, it is most likely that a dog is the source of the sound. The sound includes barking and growling, which are typical behaviors of dogs. Cats do not bark or growl in the same way as dogs. While frogs may make sounds, they typically do not make the loud, continuous noises heard in the audio file. Hens, while they can make noise, their sounds are usually more subtle and different from the aggressive barking and growling present in the audio file.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a sheep.",
+                "locality_audio_type_3": "Synthetic.",
+                "locality_text": "Goalkeeper is allowed to use their hands in the field of play in soccer. This is because goalkeepers are the only players who are positioned between the goalposts and are responsible for stopping shots and saving goals. They are also allowed to use their hands to catch the ball or to clear it away from the goal area. Midfielders, center forwards, and sweepers are not allowed to use their hands in the field of play.",
+                "portability_audio": "Based on the sound description provided, the animal in question likely produced its offspring through viviparous reproduction. Viviparity is a type of reproduction where the developing offspring is carried inside the mother's body until birth, at which point the offspring is usually fully formed. This is different from oviparity, where eggs are laid outside the mother's body and develop independently; marsupial reproduction, where young are born al\u80ce\u4f46\u5fc5\u987b\u9760\u6bcd\u4e73\u5582\u517b\uff1b and asexual reproduction, where offspring are produced without fertilization by another organism."
+            },
+            {
+                "reliability": "Italian",
+                "generality_type_0": "Italian",
+                "generality_type_1": "Italian",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Based on the provided audio recording, I believe the sound is made by a cat.",
+                "locality_audio_type_1": "Spanish",
+                "locality_audio_type_2": "The speaker is using Mandarin Chinese.",
+                "locality_audio_type_3": "The middle phone in the triphone utterance is a lateral, which is represented by the symbol /l/.",
+                "locality_text": "The fallacy of appeal to loyalty occurs when someone argues that someone should do something because it will make him or her better liked by others, or because they want to be loyal to a person or a group. This type of argument relies on the assumption that people will only support ideas or actions if they align with the values or beliefs of those they are loyal to, rather than considering the merit of the idea or action itself. Responding to an argument with an expression of derision is also considered a logical fallacy, but it is not necessarily related to the concept of loyalty. Arguing that an idea should be accepted only because of who originated the idea is also considered a logical fallacy, known as the \"originality fallacy.\" It is important to evaluate ideas and actions based on their own merits, rather than solely on who originated them.",
+                "portability_audio": "The book originally written in the language heard in this audio is 'Foucault's Pendulum'."
+            }
+        ]
+    }
+]

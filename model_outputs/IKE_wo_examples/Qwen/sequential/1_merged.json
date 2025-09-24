@@ -1,0 +1,1517 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "original_answer": "Korean",
+            "transcription": "\uc625\uc810\uc774\ub294 \uc5ec\uc804\ud788 \uc758\uc790\uc5d0 \uc549\uc544 \uba38\ub9ac\ub97c \uc219\uc774\uace0 \uc788\ub2e4",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "\uc625\uc810\uc774\ub294 \uc5ec\uc804\ud788 \uc758\uc790\uc5d0 \uc549\uc544 \uba38\ub9ac\ub97c \uc219\uc774\uace0 \uc788\ub2e4",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nItalian\nEnglish\nGerman\nKorean",
+            "answer": "English",
+            "transcription": "\uadf8 \uc5ec\ud559\uc0dd\uc778\uc9c0 \ub9cc\uc9c0\uac00 \ud55c\ucc38\uc740 \ub9e4\uc6b0 \ub54c\uae54\uc744 \ube7c\uba70 \uc785\uc220\uc744 \uaf2d \ub2e4\ubb38 \ucc44 \uae40\ucc9c\uc9c0\ub97c \uac70\ub4e4\ub5a0\ubcf4\uc9c0\ub3c4 \uc54a\uc558\ub2e4",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nGerman\nKorean\nEnglish",
+            "answer": "English",
+            "transcription": "\uadf8 \uc5ec\ud559\uc0dd\uc778\uc9c0 \ub9cc\uc9c0\uac00 \ud55c\ucc38\uc740 \ub9e4\uc6b0 \ub54c\uae54\uc744 \ube7c\uba70 \uc785\uc220\uc744 \uaf2d \ub2e4\ubb38 \ucc44 \uae40\ucc9c\uc9c0\ub97c \uac70\ub4e4\ub5a0\ubcf4\uc9c0\ub3c4 \uc54a\uc558\ub2e4",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39828605.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker\u2019s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "However, Eric would sign with Minnesota World that summer.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_18493314.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nFrench\nChinese\nItalian\nGerman",
+            "answer": "German",
+            "transcription": "Regentropfen k\u00f6nnen einer fliegenden M\u00fccke nicht viel anhaben.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39747514.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nChinese\nItalian\nGerman",
+            "answer": "English",
+            "transcription": "Beyonder attempts to become a human while still containing all his powers.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222237__ajaysm__daluo-50.wav",
+            "question": "Based on the audio features, specify whether the sound belongs to Bangu, Naobo, Daluo, or Xiaoluo.",
+            "answer": "daluo",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When traveling north from the United States into Canada you\u2019ll see the North Star (Polaris) getting _________.\n\nOptions:\nBrighter\nDimmer\nHigher in the sky\nLower in the sky",
+            "answer": "Higher in the sky",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nSauerkraut\nPaella\nCornish Pasty\nTiramisu",
+            "answer": "Cornish Pasty",
+            "transcription": "\uc625\uc810\uc774\ub294 \uc5ec\uc804\ud788 \uc758\uc790\uc5d0 \uc549\uc544 \uba38\ub9ac\ub97c \uc219\uc774\uace0 \uc788\ub2e4",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The language spoken in the audio is Italian.",
+            "generality_type_0": "The speaker is using the Korean language.",
+            "generality_type_1": "The language spoken in the audio is Korean.",
+            "generality_type_2": "The speaker is using the Korean language.",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "German",
+            "locality_audio_type_2": "The language spoken in the recording is English.",
+            "locality_audio_type_3": "The sound belongs to Daluo.",
+            "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's magnetic field is stronger. This means that the North Star (Polaris) appears lower in the sky due to the pull of the Earth's magnetic field. Additionally, as you move closer to the North Pole, the angle between the North Star and the horizon becomes smaller, causing it to appear even lower in the sky.",
+            "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording best matches English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's axis of rotation is tilted away from the sun. As a result, the North Star (Polaris) appears lower in the sky at night compared to its position at the equator or at higher latitudes closer to the poles.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "original_answer": "sad",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1007_IWW_SAD_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nfear\nhappy\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_24533969.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nEnglish\nSpanish\nGerman\nFrench",
+            "answer": "French",
+            "transcription": "Les ciboukoussi chiants sont des animaux terrestres carnivores.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_TSI_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\ndisgust\nhappy\nsad\nangry",
+            "answer": "happy",
+            "transcription": "The surface is slick!",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia52_utt1.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "disgust",
+            "transcription": "To take the game... You do this every time, Ross. You're not gonna be on TV.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-MannerOfArticulation/mlt-000-036_26019_49871.wav",
+            "question": "The audio clip consists of three phones. Name the manner of articulation of the phone in the middle. The answer could be: plosive, nasal, trill, tap/flap, fricative, affricate, approximant, lateral, glide, click, ejective, implosive, or vowel.",
+            "answer": "plosive",
+            "transcription": "Dee Dee.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "One objection to Singer\u2019s theory that he considers is that it:\n\nOptions:\ndoes not do enough to address suffering in other countries besides our own.\ninappropriately makes proximity morally important.\ndoes not account for the fact that we have stricter obligations to our loved ones than to strangers.\nrequires too drastic a revision to our moral scheme.",
+            "answer": "requires too drastic a revision to our moral scheme.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia11_utt0.wav",
+            "question": "Based on the emotion identified in the audio, Which social interaction would be most appropriate as a response ?\n\nOptions:\nProvide emotional support and avoid dismissing their sadness.\nSuggest an activity to keep the positive energy flowing.\nAvoid discussing further and respect their aversion to the topic.\nGive them space to cool off before engaging further.",
+            "answer": "Avoid discussing further and respect their aversion to the topic.",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The emotion of the speaker seems to be a mix of fear and disgust.",
+            "generality_type_0": "Sad",
+            "generality_type_1": "Sad",
+            "generality_type_2": "Sad",
+            "locality_audio_type_0": "The language spoken is Japanese.",
+            "locality_audio_type_1": "Angry",
+            "locality_audio_type_2": "angry",
+            "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+            "locality_text": "In Singer's view, the obligation to alleviate suffering is not limited to one's own country or loved ones. He argues that we have a moral duty to help others who are suffering, regardless of their proximity or relationship to us. However, some objections to Singer's theory suggest that it does not do enough to address suffering in other countries besides our own.\nAdditionally, Singer's theory may be seen as making proximity morally important, as it suggests that we should prioritize helping those who are close to us over those who are far away. This could create inequalities in the distribution of resources and attention, as people who are closer to us may receive more aid than those who are further away.\nFurthermore, Singer's theory may not account for the fact that we have stricter obligations to our loved ones than to strangers. Some argue that we have a natural obligation to care for our family and friends, and that this obligation takes precedence over helping strangers who are suffering.\nFinally, Singer's theory requires a significant revision to our moral scheme, which may be difficult for many people to accept. The idea that we should prioritize the well-being of others over our own self-interest can be challenging for individuals who are used to prioritizing their own needs and desires.",
+            "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"brighter\" when traveling north from the United States into Canada. \n\nAs you move further north towards the North Pole, the angle between the Earth's axis of rotation and the direction of Polaris (the North Star) decreases. This means that the relative position of Polaris in the sky also changes. As a result, the brightness of Polaris appears to increase as you move northward.\n\nTherefore, when traveling north from the United States into Canada, you will observe that Polaris becomes increasingly bright in the night sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information about the speaker's words and delivery, it is difficult to accurately determine the emotion behind their statement. Therefore, the options 'sad' and 'fear' seem most likely, although other possibilities cannot be ruled out.",
+                "generality_type_0": "Sad",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice prioritizes the well-being of individuals over the collective good of humanity. This means that Singer may overlook the suffering of people in other countries and focus solely on the well-being of individuals in our own country. This could result in a lack of attention being paid to the needs of people in other countries who are suffering.\nAnother objection is that Singer's theory makes proximity morally important. This means that the closer someone is to us, the greater our obligation to them. However, this can create a moral hierarchy where loved ones are given priority over strangers. This can be seen as unfair because it implies that the value of a person's life is determined by their relationship to us, rather than their inherent worth as a human being.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. This means that we have a higher duty to take care of our family and friends than we do to people who are not close to us. This can create a situation where we prioritize the well-being of our loved ones over the well-being of others, which goes against the principles of",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about something they may not be ready to discuss can make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this allows them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "original_answer": "angry",
+            "transcription": "I think I've seen this before!",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I've seen this before!",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nsad\nfear\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "fear",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_24740861.wav",
+            "question": "Please identify the gender of the speaker.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "The beak is yellow or horn colored.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia154_utt17.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "happy",
+            "transcription": "Okay.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1090_IOM_FEA_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nsad\ndisgust\nangry",
+            "answer": "fear",
+            "transcription": "I'm on my way to a meeting.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice163.wav",
+            "question": "Assess the vocal health in the audio sample. Categorize it as either healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "hyperkinetic dysphonia",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "What is the meaning of cultural relativism?\n\nOptions:\nCulture relativism posits that human rights apply equally to all without restrictions\nCulture relativism posits that human rights have a cultural origin\nCultural relativism posits that the application of human rights is relative to the laws in each nation\nCultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "answer": "Cultural relativism posits that local culture should validate the existence and practice of all human rights",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_ITS_ANG_XX.wav",
+            "question": "From the provided sentences, which one best matches the emotional state of individuals who are experiencing the same emotion as the speaker?\n\nOptions:\nI\u2019m so excited, I just can\u2019t contain my happiness!\nHow dare they treat me so unfairly like this!\nThis is terrifying, I can\u2019t stop thinking about it.\nI feel so empty, like nothing matters anymore.",
+            "answer": "This is terrifying, I can\u2019t stop thinking about it.",
+            "transcription": "I think I've seen this before!",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "angry",
+            "generality_type_0": "angry",
+            "generality_type_1": "angry",
+            "generality_type_2": "Angry",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "The speaker is expressing happiness.",
+            "locality_audio_type_2": "The speaker is expressing disgust.",
+            "locality_audio_type_3": "Hypokinetic dysphonia.",
+            "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive manner. This approach recognizes the diversity of cultures and the need for flexibility in applying human rights standards across different contexts.",
+            "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's magnetic field is stronger. This means that the North Star (Polaris) appears lower in the sky due to the pull of the Earth's magnetic field. Additionally, as you move closer to the North Pole, the angle between the North Star and the horizon becomes smaller, causing it to appear even lower in the sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a sad mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice prioritizes the well-being of individuals over the collective good of humanity. This means that Singer may overlook the suffering of people in other countries and focus solely on the well-being of individuals in our own country. This could result in a lack of attention being paid to the needs of people in other countries who are suffering.\nAnother objection is that Singer's theory makes proximity morally important. This means that the closer someone is to us, the greater our obligation to them. However, this can create a moral hierarchy where loved ones are given priority over strangers. This can be seen as unfair because it implies that the value of a person's life is determined by their relationship to us, rather than their inherent worth as a human being.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. This means that we have a higher duty to take care of our family and friends than we do to people who are not close to us. This can create a situation where we prioritize the well-being of our loved ones over the well-being of others, which goes against the principles of",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive manner. It does not suggest that human rights apply equally to all without restrictions, nor does it posit that human rights have a cultural origin or that local culture should validate the existence and practice of all human rights.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "In fact, I'm sure he was.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "In fact, I'm sure he was.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia57_utt5.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+            "answer": "disgust",
+            "transcription": "But you will always be the guy who peed on me.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18669344.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker\u2019s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Kwa kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka kutoka",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VoiceDisorderClassification_VOICED/voice027.wav",
+            "question": "Listen to the audio and classify the voice as healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis. The answer could be healthy, hyperkinetic dysphonia, hypokinetic dysphonia, or flux laryngitis.",
+            "answer": "flux laryngitis",
+            "transcription": "Ah",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The IP protocol is primarily concerned with\n\nOptions:\nRouting packets through the network\nReliable delivery of packets between directly connected machines\nReliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected\nDealing with differences among operating system architectures",
+            "answer": "Routing packets through the network",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18425394.wav",
+            "question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nCountertenor\nDramatic soprano",
+            "answer": "Countertenor",
+            "transcription": "In fact, I'm sure he was.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Female",
+            "generality_type_0": "female",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "disgusted",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "Hypokinetic dysphonia.",
+            "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols such as TCP/IP, which provides reliable transmission of data over the internet.",
+            "portability_audio": "Soprano"
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's magnetic field is stronger. This means that the North Star (Polaris) appears lower in the sky due to the pull of the Earth's magnetic field. Additionally, as you move closer to the North Pole, the angle between the North Star and the horizon becomes smaller, further reducing its appearance in the sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a sad mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice prioritizes the well-being of individuals over the collective good of humanity. This means that Singer may overlook the suffering of people in other countries and focus solely on the well-being of individuals in our own country. This could result in a lack of attention being paid to the needs of people in other countries who are suffering.\nAnother objection is that Singer's theory makes proximity morally important. This means that the closer someone is to us, the greater our obligation to help them. However, this can create a moral obligation that is difficult to fulfill, especially if it conflicts with our own interests or values. For example, if helping someone close to us requires putting our own well-being at risk, we may be less likely to help them.\nA third objection is that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers. This means that our obligations to our family and friends may take precedence over our obligations to people outside of our immediate circle. This can create a situation where we prioritize the well-being of our loved ones over the well-being of others, which goes against the principles of global distributive",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive manner. This approach recognizes the diversity of cultures and the need for flexibility in applying human rights standards across different contexts.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "original_answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\ncrow\ndog\nsheep",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ndog",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_29444210.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nEnglish\nGerman\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Permaneci\u00f3 en el Aurich las dos siguientes temporadas.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_61.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\ncow\ncrow\ndog\nhen",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_223.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nhen\ndog\nfrog\npig",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEVocalTechniqueDetection_VocalSet/m5_scales_lip_trill_u_00.wav",
+            "question": "Determine which vocal technique is present in the audio. Your options are vocal fry, vibrato, lip trill, spoken, straight, breathy, trill, belt, trillo, or inhaled.",
+            "answer": "lip_trill",
+            "transcription": "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0441\u043b\u0435\u0434\u0443\u0435\u0442...",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "When a proton is plucked from an atomic nucleus, the atom has a decrease in\n\nOptions:\ncharge\nenergy\nmass\nall of these",
+            "answer": "all of these",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_25.wav",
+            "question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nMarsupial reproduction\nAsexual reproduction\nViviparous\nOviparous",
+            "answer": "Viviparous",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the provided information, the sound is likely made by a crow. Crows are known for their loud cawing and calls, which can be heard in the distance. They are also commonly found near human habitations and may be attracted to the noise and activity around the recording location.",
+            "generality_type_0": "The sound is associated with a crow.",
+            "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+            "generality_type_2": "The sound is associated with a crow.",
+            "locality_audio_type_0": "Spanish",
+            "locality_audio_type_1": "The sound matches a cow.",
+            "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+            "locality_audio_type_3": "vocal fry",
+            "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system, including the kinetic energy of the removed proton and the electromagnetic radiation emitted, will be reduced.\nTherefore, the correct answer is \"energy.\"",
+            "portability_audio": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be Oviparous. This is because the sounds suggest that the eggs are laid outside the body, and the bird vocalizations indicate a characteristic of birds, which typically lay eggs. Marsupials give birth to live young after carrying them in a pouch, Asexual reproduction involves producing offspring without fertilization by another organism, and Viviparous refers to animals that give birth to live young, but the mother provides no nourishment before birth."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"brighter\" when traveling north from the United States into Canada. \n\nAs you move further north towards the North Pole, the angle between the Earth's axis of rotation and the direction of Polaris (the North Star) decreases. This means that the relative position of Polaris in the sky also changes. As a result, the brightness of Polaris appears to increase as you move northward.\n\nTherefore, when traveling north from the United States into Canada, you will observe that Polaris becomes increasingly bright in the night sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a sad mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice focuses primarily on the well-being of individuals in different parts of the world, rather than taking into account the specific circumstances and needs of those individuals. This means that Singer's theory may not adequately address the suffering faced by people in other countries, particularly those who are less fortunate or who live in more dire situations.\nAnother objection to Singer's theory is that it improperly makes proximity morally important. Some critics argue that Singer's view of distributive justice relies too heavily on the idea that we have a moral obligation to help those who are close to us, such as family members or friends, rather than those who are more distant or unknown to us. This can create a sense of unfairness or selectivity in the distribution of resources and opportunities, as those who are closest to us may receive more attention and support than those who are further away.\nA third objection to Singer's theory is that it does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some critics argue that Singer's view of distributive justice assumes that we have a duty to help anyone who is suffering, regardless of whether they are related to",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive manner. This approach recognizes the diversity of cultures and the need for flexibility in applying human rights standards across different contexts.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "The speaker is female.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will have a decrease in its mass. This is because the energy released during the process of plucking the proton comes from the rest mass of the proton, which is converted into other forms of energy such as kinetic energy or heat. The loss of mass means that the atom will become slightly lighter after the proton is removed. However, the charge and energy of the atom will not change significantly, since they are primarily determined by the number of protons and neutrons in the nucleus, rather than the specific arrangement of those particles.",
+                "portability_audio": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be Oviparous. This is because the sounds suggest that the eggs are laid and the chicks hatch from them, indicating a process of egg-laying and hatching, which is characteristic of oviparity."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "original_answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nsheep\nhen\ncat\ncow",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_108.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\nhen\nsheep\ncat",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17320855.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nEnglish\nFrench\nGerman",
+            "answer": "French",
+            "transcription": "Elles se poursuivent dans un souci de ma\u00eetrise des d\u00e9penses et d'efficacit\u00e9.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_42.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncrow\nfrog\npig\nhen",
+            "answer": "frog",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_90.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\ncow\npig\nrooster",
+            "answer": "cow",
+            "transcription": "\u0417\u0432\u0443\u043a",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/227123__akshaylaya__tha-csh-126.wav",
+            "question": "From the provided sound clip, determine if the stroke is 'dheem', 'tha', 'cha', 'bheem', 'num', 'ta', 'thom', 'thi', or 'dhin'.",
+            "answer": "tha",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following substances has an asymmetrical molecular structure?\n\nOptions:\nSF4\nPCl5\nBF3\nCO2",
+            "answer": "SF4",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_220.wav",
+            "question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nFeathers\nScales\nHooves\nWings",
+            "answer": "Hooves",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The sound in the audio recording is most likely made by a cat.",
+            "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source is a cat. The sound includes multiple instances of a high-pitched meow, which is a common behavior for cats. Additionally, there is a soft, purring quality to the sound, which is often associated with domesticated cats. The fact that the sound occurs at various intervals also suggests that it could be coming from an indoor pet, such as a cat, rather than an outdoor animal like a sheep or cow.",
+            "generality_type_1": "Based on the sound description given, I believe the animal responsible for the sound is a cat. The sound seems to be that of a small, furry creature purring. Cats often purr, and the other animals listed do not typically make purring sounds.",
+            "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound starts with a low pitched meow, followed by a higher pitched meow, which is typical of a cat's vocalization. Additionally, the sound has a soft, mellow quality and is relatively quiet, which aligns well with a cat's typical behavior and vocalizations.",
+            "locality_audio_type_0": "French",
+            "locality_audio_type_1": "Sheep",
+            "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+            "locality_audio_type_3": "The stroke is 'dheem'.",
+            "locality_text": "BF3 has an asymmetrical molecular structure.",
+            "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and squawks. The sound described in the prompt resembles a typical bird call, such as a cat meowing. Therefore, the animal's physical attribute most strongly associated with the sound is feathers."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's magnetic field is stronger. This means that the North Star (Polaris) appears lower in the sky due to the pull of the Earth's magnetic field. Additionally, as you move closer to the North Pole, the angle between the North Star and the horizon becomes smaller, further reducing its appearance in the sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a fearful mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is based on the idea that we have a moral obligation to alleviate suffering wherever it exists, regardless of our own country's level of development or resources. This means that we should prioritize addressing poverty and suffering in other countries even if it requires making significant sacrifices to our own well-being.\nThe objection that Singer's theory makes proximity morally important is based on the idea that we should prioritize helping those who are closest to us, such as family members and friends, over those who are more distant or far away. This means that we should prioritize helping those who are most directly affected by our actions, rather than focusing on abstract global issues.\nThe objection that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers is based on the idea that we have a natural inclination to care for those who are close to us, and that this should guide our moral decisions. This means that we should prioritize helping our loved ones over others who are less closely tied to us, such as strangers or people in other countries.\nThe objection that Singer's theory requires too drastic a revision to our moral scheme is based on the idea that his ideas challenge traditional moral values and require",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about something they may not be ready to discuss can make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this allows them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive and understanding manner.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "The speaker is female.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system (the atom and the removed proton) will be reduced due to the loss of energy associated with the separation of the proton from the nucleus.",
+                "portability_audio": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be Oviparous. This is because the sounds suggest that the eggs are laid and the chicks hatch from them, indicating a process of egg-laying and hatching, which is characteristic of oviparous reproduction."
+            },
+            {
+                "reliability": "Based on the sound description provided, I would choose the cat as the animal responsible for the sound. The recording mentions a small caterwauling sound, which is characteristic of a cat's vocalization.",
+                "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source is a cat. The sound includes multiple instances of a high-pitched meow, which is a common vocalization for cats. Additionally, there is a soft, purring quality to the sound, which is also typical of domestic cats. The fact that the sounds are spread out over time rather than occurring in quick succession suggests that they may have been made by a cat while it was relaxed or comfortable, such as during grooming or while resting.",
+                "generality_type_1": "Based on the sound description given, I believe the animal responsible for the sound is a cat. The sound seems to be that of a small, furry creature purring contentedly. Cats often purr for various reasons such as comfort, contentment, or to communicate with their owners. So, it's likely that the sound was made by a cat.",
+                "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound consists of multiple short, sharp meows followed by a longer, more drawn-out meow, which is typical of a cat's communication style. Additionally, the sound has a high pitch and a soft, mellow quality, which are also common traits among cats.",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound, I believe the most likely source is a frog. The sounds produced by frogs include croaking, which can vary in pitch and intensity, often sounding like 'ribbit ribbit.' Additionally, the sounds seem to get louder as the recording progresses, which could align with the natural call-wake behavior of frogs.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure.",
+                "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and meows. The sound described seems to match the characteristics of a cat's vocalization."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "original_answer": "Japanese",
+            "transcription": "\u3082\u3063\u3068\u3088\u304f\u308f\u304b\u308b\u3053\u3068\u306f\u3001\u3053\u306e\u571f\u5730\u3067\u79c1\u306b\u3064\u3044\u3066\u6050\u308d\u3057\u304f\u6cd5\u306e\u6271\u3044\u3092\u3057\u3066\u3044\u308b\u3068\u3044\u3046\u3053\u3068\u3067\u3059\u3002\u304a\u305d\u3089\u304f\u306f\u6cd5\u5f8b\u306b\u3064\u3044\u3066\u3082\u3067\u3059\u3002",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "\u3082\u3063\u3068\u3088\u304f\u308f\u304b\u308b\u3053\u3068\u306f\u3001\u3053\u306e\u571f\u5730\u3067\u79c1\u306b\u3064\u3044\u3066\u6050\u308d\u3057\u304f\u6cd5\u306e\u6271\u3044\u3092\u3057\u3066\u3044\u308b\u3068\u3044\u3046\u3053\u3068\u3067\u3059\u3002\u304a\u305d\u3089\u304f\u306f\u6cd5\u5f8b\u306b\u3064\u3044\u3066\u3082\u3067\u3059\u3002",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nGerman\nJapanese\nKorean\nSpanish",
+            "answer": "Spanish",
+            "transcription": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30b9\u30a4\u30c3\u30c1\u3092\u5165\u308c\u307e\u3059\u3002",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nKorean\nJapanese\nGerman",
+            "answer": "Spanish",
+            "transcription": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u30b9\u30a4\u30c3\u30c1\u3092\u5165\u308c\u307e\u3059\u3002",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1076_DFA_FEA_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\nfear\nsad\ndisgust",
+            "answer": "fear",
+            "transcription": "Don't forget a jacket.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_19777557.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nKorean\nChinese\nGerman\nJapanese",
+            "answer": "German",
+            "transcription": "Neben geb\u00e4renden Zahnhaufen finden sich in schlammigen T\u00fcmmeln ebenso wie in klaren, schnell flie\u00dfenden Fl\u00fcssen.",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_25268035.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nSpanish\nEnglish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Su nombre se debe al legendario comandante militar ruso y pol\u00edtico Alejandro Nevsky.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MusicGenreClassification_FMA/007391.wav",
+            "question": "Recognize and classify the type of music in the recording. Consider if the music genre fits within Rock, Instrumental, International, Experimental, Folk, Pop, Electronic, or Hip-Hop.",
+            "answer": "Experimental",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Under the matrix notation for the classical linear regression model, $y = X \\beta + u$, what are the dimensions of $u$?\n\nOptions:\nT x k\nT x 1\nk x 1\n1 x 1",
+            "answer": "T x 1",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38922072.wav",
+            "question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nTempura\nTacos\nBulgogi\nLasagna",
+            "answer": "Tacos",
+            "transcription": "\u3082\u3063\u3068\u3088\u304f\u308f\u304b\u308b\u3053\u3068\u306f\u3001\u3053\u306e\u571f\u5730\u3067\u79c1\u306b\u3064\u3044\u3066\u6050\u308d\u3057\u304f\u6cd5\u306e\u6271\u3044\u3092\u3057\u3066\u3044\u308b\u3068\u3044\u3046\u3053\u3068\u3067\u3059\u3002\u304a\u305d\u3089\u304f\u306f\u6cd5\u5f8b\u306b\u3064\u3044\u3066\u3082\u3067\u3059\u3002",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The speaker is using Japanese in the provided audio segment.",
+            "generality_type_0": "Spanish",
+            "generality_type_1": "The speaker is using Japanese in the provided audio segment.",
+            "generality_type_2": "Spanish",
+            "locality_audio_type_0": "Fearful",
+            "locality_audio_type_1": "The speaker is using Chinese in the provided audio segment.",
+            "locality_audio_type_2": "Spanish",
+            "locality_audio_type_3": "The music in the recording can be classified as experimental pop, which is a subgenre of pop characterized by the use of unconventional sounds, structures, and production techniques that push the boundaries of traditional pop music.",
+            "locality_text": "The dimensions of $u$ in the matrix notation for the classical linear regression model $y = X \\beta + u$ are T x 1, where T is the number of observations and k is the number of features. This is because $u$ represents the error or residual between the predicted values and the actual observed values, which is a scalar value for each observation. The size of $u$ is therefore equal to the number of observations, multiplied by the number of features, since each observation has one value for each feature.",
+            "portability_audio": "The associated dish is Tempura, which is a Japanese dish."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's axis of rotation is tilted away from the sun. As a result, the North Star (Polaris) appears lower in the sky at night compared to its position at the equator or at higher latitudes closer to the poles.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a sad mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice focuses primarily on the well-being of individuals in different parts of the world, rather than taking into account the specific circumstances and needs of those individuals. This means that Singer's theory may not adequately address the suffering faced by people in other countries, particularly those who are less fortunate or who live in more dire situations.\nAnother objection to Singer's theory is that it improperly makes proximity morally important. Some critics argue that Singer's view of distributive justice relies too heavily on the idea that we have a moral obligation to help those who are close to us, such as family members or friends, rather than those who are more distant or unknown to us. This can create a sense of unfairness or selectivity in the distribution of resources and opportunities, as those who are closest to us may receive more attention and support than those who are further away.\nA third objection to Singer's theory is that it does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some critics argue that Singer's view of distributive justice assumes that we have a duty to help anyone who is suffering, regardless of whether they are related to",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive manner. This approach recognizes the diversity of cultures and the need for flexibility in applying human rights standards across different contexts.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "The speaker is female.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system (the atom and the removed proton) will be reduced due to the loss of energy associated with the separation of the proton from the nucleus.",
+                "portability_audio": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be Oviparous. This is because the sounds suggest that the eggs are laid and the chicks hatch from them, indicating a process of egg-laying and hatching, which is characteristic of oviparous reproduction."
+            },
+            {
+                "reliability": "Based on the sound description provided, I would choose the cat as the animal responsible for the sound. The recording mentions a small caterwauling sound, which is characteristic of a cat's vocalization.",
+                "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source of the sound is a cat. The sound includes multiple instances of a high-pitched meow, which is a common vocalization for cats. Additionally, there is a sense of repetition and pattern in the meowing, which is also often observed in cat behavior. While other animals may make similar sounds, the specific qualities of the sound seem to align more closely with those typically produced by a cat.",
+                "generality_type_1": "Based on the sound description given, I believe the animal responsible for the sound is a cat. The sound seems to be that of a small, furry creature purring contentedly. Cats often purr for various reasons such as comfort, contentment, or to communicate with their owners. Additionally, the sound appears to be produced in a domestic setting, which is more commonly associated with household pets like cats than sheep, hens, or cows.",
+                "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound consists of multiple short, sharp meows followed by a longer, more drawn-out meow, which is typical of a cat's communication style. Additionally, the sound has a high pitch and a soft, mellow quality, which are also common traits among cats.",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound, I believe the most likely source is a frog. The sounds produced by frogs include croaking, which can vary in pitch and intensity, often sounding like 'ribbit ribbit.' Additionally, the sounds seem to get louder as the recording progresses, which could align with the natural call-wake behavior of frogs.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure.",
+                "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and squawks. The sound described in the prompt resembles a typical bird call, such as a cat meowing. Therefore, the animal's physical attribute most strongly associated with the sound is feathers."
+            },
+            {
+                "reliability": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Fearful",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The music in the recording can be classified as experimental pop, incorporating elements of rock, electronic, and hip-hop. It likely features a complex arrangement and innovative soundscapes typical of the experimental genre, while the pop influence suggests catchy melodies and a commercial appeal. The presence of instruments like the guitar and drums indicates a rock component, and the mention of a synthesizer implies an electronic aspect. Additionally, the rhythm could suggest a hip-hop influence.",
+                "locality_text": "The dimensions of $u$ in the matrix notation for the classical linear regression model $y = X \\beta + u$ are T x 1, where T is the number of observations and k is the number of features. This is because $u$ represents the error or residual between the predicted values and the actual observed values, which is a scalar value for each observation. The size of $u$ is therefore equal to the number of observations, multiplied by the number of features, since each observation has one value for each feature.",
+                "portability_audio": "The associated dish is Tempura, which is a Japanese dish."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "original_answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nrooster\nhen",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_78.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\nrooster\nsheep\nhen\ncrow",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia110_utt8.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\ndisgust\nhappy\nfear",
+            "answer": "disgust",
+            "transcription": "Hey, you know what you should do? You should take her back to the 1890s when that phrase was last used.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_53.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\ndog\npig\nhen",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_6.wav",
+            "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\ndog\nrooster\nsheep",
+            "answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/ConversationMatching_EnShortConversation/answering-4001.wav",
+            "question": "Please listen to the audio and choose the most appropriate response from the four options. (A) The university is close by.\n(B) I don\u2019t look good in T-shirts.\n(C) A blouse and skirt will be appropriate.\n(D) Keep good eye contact during the interview.",
+            "answer": "C",
+            "transcription": "Do I need to dress formally when I go to the university for an interview?",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A moving 1.5-kg cart collides with and sticks to a 0.5-kg cart which was initially at rest. Immediately after the collision, the carts each have the same ______ as each other.\n\nOptions:\nVelocity\nKinetic energy\nMass\nLinear momentum",
+            "answer": "Velocity",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_11.wav",
+            "question": "When analyzing the sound in the audio and reflecting on the typical vocalizations of animals in this category, which of the following listed sounds most accurately resembles the vocalization produced by the animal in the recording?\n\nOptions:\nMeowing\nCroaking\nBarking\nCrow",
+            "answer": "Crow",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, particularly bleating and the rhythmic pattern of the head moving back and forth.",
+            "generality_type_0": "Based on the sound in the recording, I believe the source is a sheep.",
+            "generality_type_1": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, including the low bleats and the repetitive pattern of the sound. While other animals like cows, goats, and roosters may make similar noises, the distinctive patterns and frequencies of the sound seem to match those of a sheep.",
+            "generality_type_2": "Based on the sound description provided, the source of the sound is most likely a flock of sheep. The sound indicates multiple animals bleating simultaneously, which is a characteristic sound of sheep.",
+            "locality_audio_type_0": "disgust",
+            "locality_audio_type_1": "The sound originates from a pig.",
+            "locality_audio_type_2": "The most likely match for the sound is a rooster.",
+            "locality_audio_type_3": "The most appropriate response would be (C) A blouse and skirt will be appropriate. It is generally expected to dress formally for job interviews, especially for positions at universities. Wearing a blouse and skirt is a professional and appropriate choice for such\u573a\u5408.",
+            "locality_text": "After the collision, the carts each have the same velocity as each other. This can be determined using the law of conservation of momentum, which states that the total momentum before the collision must equal the total momentum after the collision. Since both carts are moving together after the collision, they will have the same velocity. The mass and kinetic energy of the carts may change due to the collision, but their velocities will remain the same.",
+            "portability_audio": "Based on the provided information, the sound most accurately resembling the vocalization produced by the animal in the recording is 'Meowing'. This is because the sound closely matches the typical vocalization of a cat, which is a domesticated mammal commonly known for its distinctive meowing sound. The other options, such as croaking (which is typically associated with frogs), barking (which is associated with dogs and some other animals), and crowing (which is associated with birds), do not match the description of the sound in the audio."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's magnetic field is stronger. This means that the North Star (Polaris) appears lower in the sky due to the pull of the Earth's magnetic field. Additionally, as you move closer to the North Pole, the angle between the North Star and the horizon becomes smaller, further reducing its appearance in the sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it is difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a fearful mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is based on the idea that we have a moral obligation to alleviate suffering wherever it exists, regardless of our own country's level of development or resources. This means that we should prioritize addressing poverty and suffering in other countries even if it requires making significant sacrifices to our own well-being.\nThe objection that Singer's theory makes proximity morally important is based on the idea that we should prioritize helping those who are closest to us, such as family members and friends, over those who are more distant or remote. This means that we should prioritize helping those who are most directly affected by our actions, rather than focusing on abstract global issues.\nThe objection that Singer's theory does not account for the fact that we have stricter obligations to our loved ones than to strangers is based on the idea that we have a natural inclination to care for those who are close to us, and that this should guide our moral decisions. This means that we should prioritize helping our loved ones over others who are less closely tied to us, such as strangers or people living in other countries.\nThe objection that Singer's theory requires too drastic a revision to our moral scheme is based on the idea that his ideas challenge traditional moral values and require",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural values, beliefs, and practices should be understood and respected within their own cultural context, rather than being judged against universal standards or principles. This means that the application of human rights can vary depending on the laws and customs of different nations, and that what is considered a violation of human rights in one culture may not be considered such in another culture.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and enforced in a culturally sensitive and inclusive manner.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for determining the best path for data packets to travel between different networks, based on the destination address of the packet. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols, such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system, including the kinetic energy of the removed proton and the electromagnetic radiation emitted, will be reduced.\nTherefore, the correct answer is \"energy.\"",
+                "portability_audio": "Based on the sound and the natural reproductive behaviors of the bird in the recording, the most representative method of reproduction would be Oviparous. This is because birds lay eggs, which then hatch into chicks, rather than carrying their young inside their bodies like Marsupials or giving birth to live young like some other animals."
+            },
+            {
+                "reliability": "Based on the sound description, I would choose the cat as the animal responsible for the sound.",
+                "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source is a cat. The sound includes multiple instances of a high-pitched meow, which is a common behavior for cats. Additionally, there is a soft, purring quality to the sound, which is often associated with domesticated cats. The fact that the sound occurs at various intervals also suggests that it could be coming from an indoor pet, such as a cat, rather than an outdoor animal like a sheep or hen.",
+                "generality_type_1": "Based on the sound description given, I believe the animal responsible for the sound is a cat. The sound seems to be that of a small, furry creature purring contentedly. Cats often purr for various reasons such as comfort, contentment, or to communicate with their owners. Additionally, the sound appears to be produced in a domestic setting, which is more commonly associated with household pets like cats than sheep, hens, or cows.",
+                "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound starts with a low pitched meow, followed by a higher pitched meow, which is typical of a cat's vocalization. Additionally, the sound has a soft, mellow quality and is relatively quiet, which aligns well with a cat's typical behavior and vocalizations.",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound, I believe the most likely source is a frog. The sounds produced by frogs include croaking, which can vary in pitch and intensity, often sounding like 'ribbit ribbit.' Additionally, the sounds seem to get louder as the recording progresses, which could align with the natural call-wake behavior of frogs.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure.",
+                "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and squawks. The sound described in the prompt resembles a typical bird call, such as a cat meowing. Therefore, the animal's physical attribute most strongly associated with the sound is feathers."
+            },
+            {
+                "reliability": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Fearful",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The music in the recording can be classified as experimental pop, incorporating elements of rock, electronic, and hip-hop. It likely features a complex arrangement and innovative soundscapes typical of the experimental genre, while the pop influence suggests catchy melodies and a commercial appeal. The presence of instruments like the guitar and drums indicates a rock component, and the mention of a synthesizer implies an electronic aspect. Additionally, the rhythm could suggest a hip-hop influence.",
+                "locality_text": "The dimensions of $u$ in the matrix notation for the classical linear regression model $y = X \\beta + u$ are T x 1, where T is the number of observations and k is the number of features. This is because $u$ represents the error or residual between the predicted values and the actual observed values, which is a scalar value for each observation. The size of $u$ is therefore equal to the number of observations, multiplied by the number of features, since each observation has one value for each feature.",
+                "portability_audio": "The associated dish is Bulgogi, which is a Korean dish."
+            },
+            {
+                "reliability": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, particularly bleating and other vocalizations. While it is possible that other animals could produce similar sounds under certain conditions, the overall sound profile seems to match that of a sheep.",
+                "generality_type_0": "Based on the sound description provided, I believe the source of the sound is a sheep. The sound is described as a low pitched bleating, which is characteristic of sheep. Roosters typically make a different type of noise, crows have a distinct crowing sound, and hens usually produce a more varied set of sounds including clucking and cooing.",
+                "generality_type_1": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, including the low bleats and the repetitive pattern of the sound. While other animals like cows, goats, and roosters may also make similar noises, the distinctive patterns and frequencies of the sound seem to match those of a sheep.",
+                "generality_type_2": "Based on the sound description provided, I believe the source of the sound is a sheep. The recording mentions \"a few bleats of a goat\" and \"goats bleating nearby.\" Since the question asks for the animal responsible for the sound, I would choose sheep.",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "The sound originates from a pig.",
+                "locality_audio_type_2": "Based on the sound description provided, the most likely match for the sound is a rooster. The sound is characterized by a \"cock-a-doodle-doo\" call, which is a distinctive sound typically associated with roosters.",
+                "locality_audio_type_3": "The most appropriate response would be (C) A blouse and skirt will be appropriate. It is generally expected to dress formally for job interviews, especially for positions at universities. Wearing a blouse and skirt is a professional and appropriate choice for such\u573a\u5408.",
+                "locality_text": "After the collision, the carts each have the same velocity as each other. This can be determined using the law of conservation of momentum, which states that the total momentum before the collision must equal the total momentum after the collision. Since both carts are moving together after the collision, they will have the same velocity. The mass and kinetic energy of the carts may change due to the collision, but their velocities will remain the same.",
+                "portability_audio": "Based on the provided information, the sound most accurately resembling the vocalization produced by the animal in the recording is 'barking'. This is because the sound closely matches the description of a sheep bleating, which is a common vocalization for sheep. The other options do not match the description of the sound in the audio."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "original_answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\npig\nhen\nrooster\ncrow",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_26.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\nhen\npig\ncrow",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_21883920.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nGerman\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "Such conditions occur notably when the bedrock is limestone or recently formed volcanic lava.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_46.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nfrog\nrooster\ncrow\npig",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_28.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\nrooster\nhen",
+            "answer": "pig",
+            "transcription": "Oh.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/down__ca48dc76_nohash_0.wav",
+            "question": "Convert the spoken word to the list: up, left, off, right, yes, down, no, go, stop and on. If its not in the list, respond with <unknown>; if there is no speech, respond with <silence>.",
+            "answer": "down",
+            "transcription": "Down.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A programmer is deciding between using a linear or binary search to find a target value in a sorted list. Which of the following is true?\n\nOptions:\nIn all cases, a binary search of a sorted list requires fewer comparisons than a linear search.\nGenerally, the advantage of using a binary search over a linear search increases as the size of the list increases.\nA linear search will generally run faster than a binary search because a linear search requires fewer lines of code to implement.\nUsing a linear search is preferable to using a binary search if there is a chance that the target may not be found in the list.",
+            "answer": "Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_27.wav",
+            "question": "Considering the audio recording and what is typically known about animals that produce similar sounds, which of the listed reproductive methods most accurately matches the natural strategy used by the animal in the sound?\n\nOptions:\nMarsupial reproduction\nViviparous\nOviparous\nAsexual reproduction",
+            "answer": "Viviparous",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+            "generality_type_0": "Based on the sound characteristics and qualities I've identified, I believe the source of the sound is a rooster. The sound has a distinctive crowing call that is often associated with birds, particularly roosters. The other options don't seem to match the sound as closely.",
+            "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+            "generality_type_2": "Based on the sound characteristics and qualities I've identified, I believe the most likely source of the sound is a rooster. The sound includes a series of loud, clucking calls that are characteristic of a rooster's vocalization. Additionally, the sound seems to get louder and more intense before quieting down, which is also a pattern observed in rooster behavior during certain times of day.",
+            "locality_audio_type_0": "The language spoken in the audio is English.",
+            "locality_audio_type_1": "The sound originates from a frog.",
+            "locality_audio_type_2": "The sound corresponds to a pig.",
+            "locality_audio_type_3": "<down>",
+            "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\nThe time complexity of binary search is O(log n), where n is the number of elements in the list. In contrast, the time complexity of linear search is O(n), where n is the number of elements in the list.\nTherefore, as the size of the list increases, the advantage of using a binary search over a linear search increases.\nHowever, it is also worth noting that binary search requires additional memory to store the current index and the middle element of the list, which can make it less efficient than linear search in terms of space complexity.\nSo, if the target may not be found in the list, using a linear search may be preferable since it does not require additional memory and its time complexity is constant.",
+            "portability_audio": "Based on the sound produced by the animal in the audio, it is difficult to determine the specific species or type of animal. However, given the characteristics of the sound, it seems to be more similar to the sounds produced by marsupials. Marsupials are a group of mammals that give birth to underdeveloped young, which then continue to develop inside the mother's pouch. Therefore, the most accurate reproductive method that matches the natural strategy used by the animal in the sound is Marsupial reproduction."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"brighter\" when traveling north from the United States into Canada. \n\nAs you move further north towards the North Pole, the angle between the Earth's axis of rotation and the direction of Polaris (the North Star) decreases. This means that Polaris appears closer to the horizon and therefore appears brighter in the sky. Additionally, the distance between the observer and Polaris also decreases as you move north, which can contribute to the appearance of the star being brighter. \n\nTherefore, when traveling north from the United States into Canada, you will observe Polaris becoming increasingly bright in the sky.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information, it's difficult to determine the exact emotion conveyed by the speaker.",
+                "generality_type_0": "The speaker in the recording expresses a sad mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "The speaker is using French.",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice focuses primarily on the well-being of individuals in different parts of the world, rather than taking into account the specific circumstances and needs of those individuals. This means that Singer's theory may not adequately address the suffering faced by people in other countries, particularly those who are less fortunate or who live in more dire situations.\nAnother objection to Singer's theory is that it improperly makes proximity morally important. Some critics argue that Singer's view of distributive justice relies too heavily on the idea that we have a moral obligation to help those who are close to us, such as family members or friends, rather than those who are more distant or unknown to us. This can create a sense of unfairness or selectivity in the distribution of resources and opportunities, as those who are closest to us may receive more attention and support than those who are further away.\nA third objection to Singer's theory is that it does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some critics argue that Singer's view of distributive justice assumes that we have a duty to help anyone who is suffering, regardless of whether they are related to",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as going for a walk, practicing mindfulness, or engaging in a favorite hobby. Avoid discussing further and respecting their aversion to the topic can also be important, as this can help them feel more comfortable and supported. Giving them space to cool off before engaging further can also be useful, especially if they need time to process their emotions."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural differences should be respected and valued. It holds that there is no one-size-fits-all approach to understanding and applying human rights, and that the application of human rights is relative to the laws and customs of each nation. This means that what may be considered a violation of human rights in one culture may not be considered such in another culture.\nFor example, cultural relativism would suggest that the right to freedom of speech may be more limited in some cultures where criticism of the government or religious leaders is considered disrespectful or even illegal. Similarly, cultural relativism would suggest that the right to privacy may be less important in some cultures where public displays of affection or modesty are highly valued.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and applied in a culturally sensitive manner.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "female",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for determining the best path for data packets to travel between different networks, based on the destination address of the packet. The IP protocol does not provide reliable delivery of packets between directly connected machines, nor does it guarantee reliable delivery of large multi-packet messages between machines that are not necessarily directly connected. It also does not deal with differences among operating system architectures. These tasks are handled by other protocols, such as TCP/IP, which provides reliable transmission of data over the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system, including the kinetic energy of the removed proton and the electromagnetic radiation emitted, will be reduced.\nTherefore, the correct answer is \"energy.\"",
+                "portability_audio": "Based on the sound and the natural reproductive behaviors of the bird in the recording, the most representative method of reproduction would be Oviparous. This is because birds lay eggs, which then hatch into chicks, rather than carrying their young inside their bodies like Marsupials or giving birth to live young like some other animals."
+            },
+            {
+                "reliability": "Based on the sound description, I would choose the cat as the animal responsible for the sound.",
+                "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source is a cat. The sound includes multiple instances of a high-pitched meow, which is a common behavior for cats. Additionally, there is a soft, purring quality to the sound, which is often associated with domesticated cats. The fact that the sound occurs at various intervals also suggests that it could be coming from an indoor pet, such as a cat, rather than an outdoor animal like a sheep or hen.",
+                "generality_type_1": "Based on the sound description, I would choose \"cat\" as the animal responsible for the sound. The recording captures a small, quick meow, which is characteristic of a cat's behavior.",
+                "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound starts with a low pitched meow, followed by a higher pitched meow, which is typical of a cat's vocalization. Additionally, the sound has a soft, mellow quality and is relatively quiet, which aligns well with a cat's typical behavior and vocalizations.",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound, I believe the most likely source is a frog. The sounds produced by frogs include croaking, which can vary in pitch and intensity, often sounding like 'ribbit ribbit.' Additionally, the sounds seem to get louder as the recording progresses, which could align with the natural call-wake behavior of frogs.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure.",
+                "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and squawks. The sound described in the prompt resembles a typical bird call, such as a cat meowing. Therefore, the animal's physical attribute most strongly associated with the sound is feathers."
+            },
+            {
+                "reliability": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Fearful",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The music in the recording can be classified as experimental pop, incorporating elements of rock, electronic, and hip-hop. It likely features a complex arrangement and innovative soundscapes typical of the experimental genre, while the pop influence suggests catchy melodies and a commercial appeal. The presence of instruments like guitar and drums indicates a rock component, and the mention of folk could imply the use of traditional acoustic instruments alongside modern production techniques. Additionally, the mention of hip-hop suggests that there may be rhythmic vocal patterns or sampling incorporated into the track.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $X$ is a design matrix with $T$ rows and $k$ columns, $\\beta$ is a vector of coefficients with $k$ elements, and $u$ is an error term with $T$ rows and 1 column, the dimension of $u$ is T x 1.\nThis is because the error term represents the difference between the predicted values of the dependent variable $y$ and the actual observed values. Since the observed values have one element per row (one value for each observation), the error term also has one element per row. Therefore, the error term is a T x 1 matrix.",
+                "portability_audio": "The associated dish is Tempura, which is a Japanese dish."
+            },
+            {
+                "reliability": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a rooster. The sound includes repetitive, open-mouthed vocalizations at varying pitches and volumes, along with a distinctive crowing call that is often associated with roosters. These elements are indicative of the sounds typically produced by roosters.",
+                "generality_type_0": "Based on the sound description provided, I believe the source of the sound is a sheep. The sound is described as a low pitched bleating, which is characteristic of sheep. Roosters typically make a different type of noise, hens usually produce a clucking sound, and crows have a distinct crowing call.",
+                "generality_type_1": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, including the low bleats and the repetitive pattern of the sound. While other animals like cows, goats, and roosters may make similar noises, the distinctive patterns and frequencies of the sound seem to match those of a sheep.",
+                "generality_type_2": "Based on the sound description provided, I believe the source of the sound is a sheep. The sound includes multiple instances of a sheep bleating, which is a characteristic sound of sheep. The other animals listed may make similar sounds, but they are not as commonly associated with the repetitive bleating pattern heard in the recording.",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "The sound originates from a pig.",
+                "locality_audio_type_2": "Based on the sound description provided, the most likely match for the sound is a rooster. The sound is characterized by a \"cock-a-doodle-doo\" call, which is a distinctive sound typically associated with roosters.",
+                "locality_audio_type_3": "The most appropriate response would be (C) A blouse and skirt will be appropriate. It is generally expected to dress formally for job interviews, especially for positions at universities. Wearing a blouse and skirt is a professional and appropriate choice for such\u573a\u5408.",
+                "locality_text": "After the collision, the carts will share the same velocity. This is because the total momentum of the system before the collision is equal to the total momentum of the system after the collision, due to conservation of momentum. The mass of each cart remains the same before and after the collision, so the kinetic energy will also remain the same. However, the total mass of the two carts will be greater than the mass of either individual cart, so the velocity of the system will be less than the velocity of either individual cart.",
+                "portability_audio": "Based on the provided information, the sound most accurately resembling the vocalization produced by the animal in the recording is 'Meowing'. This is because the sound closely matches the typical vocalization of a cat, which is a domesticated mammal commonly known for its distinctive meowing sound. The other options, such as croaking (which is typically associated with frogs), barking (which is associated with dogs and some other animals), and crowing (which is associated with birds), do not match the description of the sound in the audio."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "generality_type_0": "Based on the sound characteristics and qualities I've identified, I believe the most likely source of the sound is a rooster. The sound has a distinctive crowing call that is often associated with birds, particularly roosters. The other options do not match the sound's qualities as closely.",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "generality_type_2": "Based on the sound characteristics and qualities I've identified, I believe the most likely source of the sound is a rooster. The sound includes a series of loud, clucking noises followed by a brief silence, which is typical of a rooster's call. Additionally, the sound seems to come from a bird, and among the given options, only a rooster is a bird that makes clucking sounds.",
+                "locality_audio_type_0": "The language spoken in the audio is English.",
+                "locality_audio_type_1": "The sound originates from a frog.",
+                "locality_audio_type_2": "The sound corresponds to a pig.",
+                "locality_audio_type_3": "<down>",
+                "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\nThe time complexity of binary search is O(log n), where n is the number of elements in the list. In contrast, the time complexity of linear search is O(n), where n is the number of elements in the list. This means that as the size of the list increases, the advantage of using a binary search over a linear search increases.\nTherefore, the correct statement is: \"Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.\"",
+                "portability_audio": "Based on the sound produced by the animal in the audio, it is difficult to determine the specific species or type of animal. However, given the characteristics of the sound, it seems to be more closely related to marsupials. Marsupials are a group of mammals that give birth to underdeveloped young, which then continue to develop inside the mother's pouch. Therefore, the most accurate reproductive method that matches the natural strategy used by the animal in the sound is Marsupial reproduction."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "original_answer": "Chinese",
+            "transcription": "\u9648\u660e\u9633\u4e3a\u53f0\u6e7e\u7537\u6027\u914d\u97f3\u5458",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "\u9648\u660e\u9633\u4e3a\u53f0\u6e7e\u7537\u6027\u914d\u97f3\u5458",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nKorean\nFrench\nJapanese\nChinese",
+            "answer": "French",
+            "transcription": "\u4e58\u5ba2\u4e5f\u53ef\u4ee5\u4f7f\u7528\u624b\u673a\u626b\u628a\u652f\u4ed8\u6210\u6210",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nJapanese\nKorean\nChinese\nFrench",
+            "answer": "French",
+            "transcription": "\u4e58\u5ba2\u4e5f\u53ef\u4ee5\u4f7f\u7528\u624b\u673a\u626b\u628a\u652f\u4ed8\u6210\u6210",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia17_utt14.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nfear\ndisgust\nsad",
+            "answer": "disgust",
+            "transcription": "Yeah, I'm gonna go to a doctor who went to medical school in a mini mall.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20066529.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nFrench\nGerman\nItalian\nChinese",
+            "answer": "Italian",
+            "transcription": "L'album \u00e8 un misto di pop rap, hip hop e latin rap.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_19632011.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nKorean\nFrench\nSpanish\nEnglish",
+            "answer": "French",
+            "transcription": "Les matchs se jouent au Warner Park de Basseterre.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/m0836_0_sigh.wav",
+            "question": "Identify and sort human vocal sounds into categories such as Laughter, Sigh, Throat clearing, Sniff, Cough, and Sneeze.",
+            "answer": "Sigh",
+            "transcription": "Mmm. Mm-hmm. Mm-hmm.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Cicero's conception of natural law is 'based on the idea that 'true law is right reason in agreement with Nature.' Reason is a key element because:\n\nOptions:\nIt is a sin for humans not to apply reason.\nThe principles of natural law are discoverable by reason.\nNatural law does not apply without good reason.\nThe law of nature is the basis of all positive law.",
+            "answer": "The principles of natural law are discoverable by reason.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+            "question": "Which option represents 'wisdom' correctly in meaning in the language of the audio?\n\nOptions:\nfolie\n\u611a\u304b\u3055\nsagesse\n\u30a6\u30a3\u30ba\u30c0\u30e0",
+            "answer": "sagesse",
+            "transcription": "\u9648\u660e\u9633\u4e3a\u53f0\u6e7e\u7537\u6027\u914d\u97f3\u5458",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "The speaker is using Mandarin Chinese.",
+            "generality_type_0": "The language spoken in the audio is Chinese.",
+            "generality_type_1": "The speaker is using Chinese.",
+            "generality_type_2": "Chinese",
+            "locality_audio_type_0": "Sad",
+            "locality_audio_type_1": "Italian",
+            "locality_audio_type_2": "The speaker is using English.",
+            "locality_audio_type_3": "Throat clearing.",
+            "locality_text": "According to Cicero's conception of natural law, reason is a key element because the principles of natural law are discoverable by reason. In other words, Cicero believed that true law is right reason in agreement with Nature, and that this right reason can be discovered through the use of reason. This means that natural law applies to all people and societies, regardless of their cultural or historical context, and that it is based on objective principles that are inherent in human nature itself. Therefore, reason is essential for understanding and applying natural law, as it allows individuals to discover the principles that govern the natural world and to act in accordance with them.",
+            "portability_audio": "The word that best represents 'wisdom' in the language of the audio is 'sagesse'."
+        },
+        "post_edit": [
+            {
+                "reliability": "The language spoken in the audio is Italian.",
+                "generality_type_0": "The speaker is using Korean.",
+                "generality_type_1": "The language spoken in the audio is Korean.",
+                "generality_type_2": "The speaker is using Korean.",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "The language spoken in the recording is English.",
+                "locality_audio_type_3": "The sound belongs to Daluo.",
+                "locality_text": "The correct answer is \"Lower in the sky.\" When traveling north from the United States into Canada, you will be moving closer to the North Pole, where the Earth's axis of rotation is tilted away from the sun. As a result, the North Star (Polaris) appears lower in the sky at night compared to its position at the equator or at higher latitudes closer to the poles.",
+                "portability_audio": "The most likely dish originates from a country where the language spoken in the audio is primary is Tiramisu."
+            },
+            {
+                "reliability": "The speaker's tone suggests a sense of urgency and distress, which could indicate fear or sadness. However, without additional context or information about the speaker's words and delivery, it is difficult to accurately determine the specific emotion they are expressing. Therefore, the options provided could all be considered as potential interpretations of the speaker's emotions, but none are definitively correct without further analysis.",
+                "generality_type_0": "The speaker in the recording expresses a fearful mood.",
+                "generality_type_1": "The speaker's emotion appears to be a mix of sadness and disgust.",
+                "generality_type_2": "Sad",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "happy",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "The manner of articulation of the phone in the middle is a lateral fricative, represented by the symbol /l/.",
+                "locality_text": "The objection that Singer's theory does not do enough to address suffering in other countries besides our own is that Singer's view of global distributive justice focuses primarily on the well-being of individuals in different parts of the world, rather than taking into account the specific circumstances and needs of those individuals. This means that Singer's theory may not adequately address the suffering faced by people in other countries, particularly those who are less fortunate or who live in more dire situations.\nAnother objection to Singer's theory is that it improperly makes proximity morally important. Some critics argue that Singer's emphasis on the close relationships between individuals and their loved ones undermines the principle of equality that is central to his view of global distributive justice. This is because Singer suggests that individuals have stronger obligations to their loved ones than to strangers, which can create inequalities and injustices between different groups of people.\nA third objection to Singer's theory is that it does not account for the fact that we have stricter obligations to our loved ones than to strangers. Some critics argue that Singer's view of global distributive justice fails to take into account the special bonds and relationships that exist between individuals and their family members, friends, and other loved ones. This means that Singer's theory may not adequately capture the complex ethical considerations that arise when individuals",
+                "portability_audio": "Based on the emotion identified in the audio, which sounds sad, the most appropriate social interaction would be to provide emotional support and avoid dismissing their sadness. This could involve actively listening to their concerns, expressing empathy, and offering words of encouragement or comfort. It may also be helpful to suggest activities that can help them stay positive, such as engaging in a favorite hobby or spending time with loved ones. Avoid discussing further and respecting their aversion to the topic can also be important, as pushing them to talk about it may make them feel more distressed. Giving them space to cool off before engaging further can also be helpful, as this can allow them to process their emotions and come back to the conversation at a later time when they are feeling more comfortable."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "Angry",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "The speaker is expressing happiness.",
+                "locality_audio_type_2": "The speaker is expressing disgust.",
+                "locality_audio_type_3": "Hypokinetic dysphonia.",
+                "locality_text": "The correct answer is C: Cultural relativism posits that the application of human rights is relative to the laws in each nation.\nCultural relativism is a philosophical concept that suggests that cultural differences should be respected and that moral values and beliefs vary across cultures. In the context of human rights, cultural relativism would mean that the application of human rights is relative to the laws and customs of each nation, and that what is considered a human right in one culture may not be considered a human right in another culture.\nFor example, cultural relativism would suggest that the right to freedom of speech may be more highly valued in a culture where open debate and dissent are encouraged, while in a culture where censorship is prevalent, the right to freedom of speech may be less important. Similarly, cultural relativism would suggest that the right to privacy may be more highly valued in a culture where personal space is highly respected, while in a culture where social interaction is emphasized, the right to privacy may be less important.\nTherefore, cultural relativism posits that the application of human rights is relative to the laws in each nation, and that human rights should be interpreted and applied in a culturally sensitive manner.",
+                "portability_audio": "\n\nThe sentence that best matches the emotional state of individuals who are experiencing the same emotion as the speaker is \"I feel so empty, like nothing matters anymore.\" This sentence conveys a sense of despair and hopelessness, which are common emotions experienced by people who have been treated unfairly or who are going through a traumatic experience. The other options do not capture the same intensity or depth of emotion."
+            },
+            {
+                "reliability": "Female",
+                "generality_type_0": "female",
+                "generality_type_1": "female",
+                "generality_type_2": "The speaker is female.",
+                "locality_audio_type_0": "disgusted",
+                "locality_audio_type_1": "Male",
+                "locality_audio_type_2": "Hypokinetic dysphonia.",
+                "locality_text": "The IP protocol is primarily concerned with routing packets through the network. It is responsible for ensuring that data packets are transmitted from their source to their destination on the internet by selecting the best path through the network. The IP protocol also provides a way to divide large messages into smaller packets for transmission, and it deals with some differences among operating system architectures. However, its primary focus is on routing and delivering packets efficiently throughout the internet.",
+                "portability_audio": "Soprano"
+            },
+            {
+                "reliability": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_0": "The sound is associated with a crow.",
+                "generality_type_1": "Based on the sound description, the animal responsible for the sound is a crow.",
+                "generality_type_2": "The sound is associated with a crow.",
+                "locality_audio_type_0": "Spanish",
+                "locality_audio_type_1": "The sound matches a cow.",
+                "locality_audio_type_2": "The sound in the recording is likely coming from a dog.",
+                "locality_audio_type_3": "vocal fry",
+                "locality_text": "When a proton is plucked from an atomic nucleus, the atom will experience a loss of energy. This is because the binding energy of the proton to the nucleus is greater than the energy required to remove the proton. As a result, the energy difference between the two states is released in the form of electromagnetic radiation, such as light or gamma rays.\nThe change in mass of the atom will be very small, since the mass of the proton is much smaller than the mass of the nucleus. The change in charge of the atom will also be small, since the number of protons in the nucleus remains the same after the proton is removed. However, the total energy of the system, including the kinetic energy of the removed proton and the electromagnetic radiation emitted, will be reduced.\nTherefore, the correct answer is \"energy.\"",
+                "portability_audio": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be Oviparous. This is because the sounds suggest that the eggs are laid and the chicks hatch from them, indicating a process of egg-laying and hatching, which is characteristic of oviparous reproduction."
+            },
+            {
+                "reliability": "Based on the sound description, I would choose the cat as the animal responsible for the sound.",
+                "generality_type_0": "Based on the characteristics and qualities present in the sound, I believe the most likely source is a cat. The sound includes multiple instances of a high-pitched meow, which is a common behavior for cats. Additionally, there is a soft, purring quality to the sound, which is often associated with domesticated cats. The fact that the sound occurs at various intervals also suggests that it could be coming from an indoor pet, such as a house cat.",
+                "generality_type_1": "Based on the sound description, I would choose \"cat\" as the animal responsible for the sound. The recording captures a small, quick meow, which is characteristic of a cat's behavior.",
+                "generality_type_2": "Based on the characteristics and qualities identified in the sound, I believe the most likely source of the sound is a cat. The sound starts with a low pitched meow, followed by a higher pitched meow, which is typical of a cat's vocalization. Additionally, the sound has a soft, mellow quality and is relatively quiet, which aligns well with a cat's typical behavior and vocalizations.",
+                "locality_audio_type_0": "French",
+                "locality_audio_type_1": "Based on the characteristics and tone of the sound, I believe the most likely source is a frog. The sounds produced by frogs include croaking, which can vary in pitch and intensity, often sounding like 'ribbit ribbit.' Additionally, the sounds seem to get louder as the recording progresses, which could align with the natural call-wake behavior of frogs.",
+                "locality_audio_type_2": "Based on the characteristics and tone of the sound, I believe the most likely source is a pig. The sound resembles a series of oinks followed by a longer, deeper grunt that is typical of pigs.",
+                "locality_audio_type_3": "The stroke is 'dheem'.",
+                "locality_text": "BF3 has an asymmetrical molecular structure.",
+                "portability_audio": "Based on the sound described, I would associate the physical attribute of feathers with the animal making the sound. Feathers are commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps, tweets, coos, and squawks. The sound described in the prompt resembles a typical bird call, such as a cat meowing. Therefore, the animal's physical attribute most strongly associated with the sound is feathers."
+            },
+            {
+                "reliability": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_0": "Spanish",
+                "generality_type_1": "The speaker is using Japanese in the provided audio segment.",
+                "generality_type_2": "Spanish",
+                "locality_audio_type_0": "Fearful",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "Spanish",
+                "locality_audio_type_3": "The music in the recording can be classified as experimental pop, incorporating elements of rock, electronic, and hip-hop. It likely features a complex arrangement and innovative soundscapes typical of the experimental genre, while the pop influence suggests catchy melodies and a commercial appeal. The presence of instruments like the guitar and drums indicates a rock component, and the mention of a synthesizer implies an electronic aspect. Additionally, the rhythm could suggest a hip-hop influence.",
+                "locality_text": "In the matrix notation for the classical linear regression model, $y = X \\beta + u$, where $X$ is a design matrix with $T$ rows and $k$ columns, $\\beta$ is a vector of coefficients with $k$ elements, and $u$ is an error term with $T$ rows and 1 column, the dimension of $u$ is T x 1.\nThis is because the error term represents the difference between the predicted values of the dependent variable $y$ and the actual observed values. The error term has one row for each observation and one column, so it can capture the variation in the errors across different observations.\nTherefore, the correct option is T x 1.",
+                "portability_audio": "The associated dish is Tempura, which is a Japanese dish."
+            },
+            {
+                "reliability": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, such as bleating and low rumbling noises. While other animals like cows, goats, and even dogs can make similar sounds, the specific bleating and rumbling patterns match those typically associated with sheep.",
+                "generality_type_0": "Based on the sound description provided, I believe the source of the sound is a sheep. The sound is described as a low pitched bleating, which is characteristic of sheep. Roosters typically make a different type of noise, hens usually produce a clucking sound, and crows have a distinct crowing call.",
+                "generality_type_1": "Based on the sound characteristics and qualities provided, the most likely source of the sound is a sheep. The sounds resemble those made by sheep, including the low bleats and the repetitive pattern of the sound. While other animals like cows, goats, and roosters may also make similar noises, the distinctive patterns and frequencies of the sound seem to match those of a sheep.",
+                "generality_type_2": "Based on the sound description provided, the source of the sound is a sheep. The sounds described include \"a few sheep bleat nearby\" and \"some sheep bleeps nearby.\" These descriptions match the characteristics of sheep bleating. Therefore, the correct answer is sheep.",
+                "locality_audio_type_0": "disgust",
+                "locality_audio_type_1": "The sound originates from a pig.",
+                "locality_audio_type_2": "Based on the sound description provided, the most likely match for the sound is a rooster. The sound is characterized by a \"cock-a-doodle-doo\" call, which is a distinctive sound typically associated with roosters.",
+                "locality_audio_type_3": "The most appropriate response would be (C) A blouse and skirt will be appropriate. It is generally expected to dress formally for job interviews, especially for positions at universities. Wearing a blouse and skirt is a professional and appropriate choice for such\u573a\u5408.",
+                "locality_text": "After the collision, the carts each have the same velocity as each other. This can be determined using the law of conservation of momentum, which states that the total momentum before the collision must equal the total momentum after the collision. Since both carts are moving together after the collision, they will have the same velocity. The mass and kinetic energy of the carts may change due to the collision, but their velocities will remain the same.",
+                "portability_audio": "Based on the provided information, the sound most accurately resembling the vocalization produced by the animal in the recording is 'Meowing'. This is because the sound closely matches the typical vocalization of a cat, which is a domesticated mammal commonly known for its distinctive meowing sound. The other options, such as croaking (which typically refers to frogs), barking (which is associated with dogs and wolves), crowing (which is a call made by birds, particularly crows), and bleating (which is often associated with sheep or goats), do not match the description of the sound in the audio."
+            },
+            {
+                "reliability": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "generality_type_0": "Based on the sound characteristics and qualities I've identified, I believe the most likely source of the sound is a rooster. The sound has a distinctive crowing call that is often associated with birds, particularly roosters. The other options do not match the sound's qualities as closely.",
+                "generality_type_1": "Based on the auditory characteristics of the sound, the animal that most closely matches it is a rooster.",
+                "generality_type_2": "Based on the sound characteristics and qualities I've identified, I believe the most likely source of the sound is a rooster. The sound includes a series of loud, clucking noises followed by a brief silence, which is typical of a rooster's call. Additionally, the sound seems to come from a bird, and among the given options, only a rooster is a bird that makes clucking sounds.",
+                "locality_audio_type_0": "The language spoken in the audio is English.",
+                "locality_audio_type_1": "The sound originates from a frog.",
+                "locality_audio_type_2": "The sound corresponds to a pig.",
+                "locality_audio_type_3": "<down>",
+                "locality_text": "The statement \"In all cases, a binary search of a sorted list requires fewer comparisons than a linear search\" is false.\nThe time complexity of binary search is O(log n), where n is the number of elements in the list. In contrast, the time complexity of linear search is O(n), where n is the number of elements in the list. This means that as the size of the list increases, the advantage of using a binary search over a linear search increases.\nTherefore, the correct statement is: \"Generally, the advantage of using a binary search over a linear search increases as the size of the list increases.\"",
+                "portability_audio": "Based on the sound characteristics provided, the animal in question may be a marsupial. Marsupials are a group of mammals that give birth to underdeveloped young, which then nurse in a pouch before being able to fend for themselves. The sound characteristics align well with the pattern of marsupial reproduction. Therefore, the most accurate option would be Marsupial reproduction."
+            },
+            {
+                "reliability": "The speaker is using Mandarin.",
+                "generality_type_0": "The language spoken in the audio is Chinese.",
+                "generality_type_1": "The speaker is using Mandarin.",
+                "generality_type_2": "Chinese",
+                "locality_audio_type_0": "Sad",
+                "locality_audio_type_1": "Italian",
+                "locality_audio_type_2": "The speaker is using English.",
+                "locality_audio_type_3": "Throat clearing.",
+                "locality_text": "According to Cicero's conception of natural law, reason is a key element because the principles of natural law are discoverable by reason. In other words, Cicero believed that true law is right reason in agreement with Nature, and that the principles of natural law can be discovered through the use of reason. This means that individuals have a duty to use their reason to understand the laws of nature and to apply them in their lives. However, it is important to note that Cicero did not believe that reason was the only factor that determines what is right or wrong, and he also believed that there are certain moral principles that cannot be discovered through reason alone. For example, Cicero believed that certain actions are inherently right or wrong, regardless of whether they are motivated by reason or not.",
+                "portability_audio": "The word that best represents 'wisdom' in the language of the audio is 'sagesse'."
+            }
+        ]
+    }
+]

@@ -1,0 +1,1514 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "Five dancers happily going through their steps in unison.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Five dancers happily going through their steps in unison.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_5.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\ndog\ncrow\ncow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_26966176.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "It also has a visitor center and an interpretive exhibit.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-HumanAndNonSpeechSounds/2-109759-B-26.wav",
+            "question": "Kindly categorize the sounds of the environment. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+            "answer": "laughing",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following increases the size of the tax multiplier?\n\nOptions:\nAn increase in the marginal propensity to consume.\nAn increase in the reserve ratio.\nAn increase in the marginal propensity to save.\nA decrease in the spending multiplier.",
+            "answer": "An increase in the marginal propensity to consume.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_125399.wav",
+            "question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nPan Yuliang\nVirgil Abloh",
+            "answer": "Virgil Abloh",
+            "transcription": "Five dancers happily going through their steps in unison.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "female",
+            "generality_type_0": "female",
+            "generality_type_1": "female",
+            "generality_type_2": "female",
+            "locality_audio_type_0": "Based on the context provided, it is most likely that the sound in the recording is produced by a frog. Frogs are known for their ability to croak and make various sounds, including those that could resemble the one heard in the recording. The other animals listed (hen, cow, and sheep) are less likely to produce such sounds.",
+            "locality_audio_type_1": "Male",
+            "locality_audio_type_2": "coughing, breathing, laughter.",
+            "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which measures how much additional consumption will result from an additional unit of government spending or tax reduction. A higher marginal propensity to consume means that more of the additional government spending or tax reduction will be spent, leading to a larger increase in overall economic output and a larger tax multiplier. On the other hand, an increase in the reserve ratio, a decrease in the spending multiplier, or an increase in the marginal propensity to save would all have the opposite effect and reduce the size of the tax multiplier.",
+            "portability_audio": "The speech is in English and it mentions 'male dancers' performing in unison. Therefore, the answer would be option  Pan Yuliang, as he is male."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "Based on the description provided, the sound in the recording is likely coming from a crow. Crows are known for their loud cawing and ability to mimic other sounds. The fact that the sound gets louder as it goes on suggests a repeated behavior, such as calling out to other crows or responding to some stimulus. Pigs, dogs, and cows do not typically make sounds like the one described in the recording.",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing, breathing, laughter.",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which represents the percentage of additional income that households spend on goods and services rather than saving.\nWhen the MPC is high, a small change in government spending or taxes will have a larger effect on overall economic output because more of the additional income is spent rather than saved. This means that a higher marginal propensity to consume will lead to a larger increase in the size of the tax multiplier.\nOn the other hand, an increase in the reserve ratio, which refers to the percentage of deposits that banks hold as reserves rather than lending out, would decrease the size of the tax multiplier. A higher reserve ratio means that banks have less money available to lend out, which can reduce overall economic activity and the demand for goods and services. This can lead to a smaller increase in government spending or taxes, resulting in a smaller tax multiplier.\nAn increase in the marginal propensity to save would also decrease the size of the tax multiplier. When households save more, they have less disposable income to spend",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' so the answer would be Pan Yuliang."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "original_answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ndog\nfrog\nsheep\ncat",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ndog\nsheep\ncat\nfrog",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_39827261.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Unlike typical villages, there are no shops or businesses.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_53.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncow\ncat\ncrow\nhen",
+            "answer": "cow",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_35.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ndog\ncat\ncow\ncrow",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpeakerCounting_LibriTTS-TestClean/001515.wav",
+            "question": "Identify how many individuals are speaking. The answer could be one, two, three, four, or five.",
+            "answer": "three",
+            "transcription": "I see they lay twilight within me, still looking on the east apart, just as I, I, will pass.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A woman sued a man for personal injuries that she suffered when she was struck by the man's car. The man's car hit the woman as she was walking across the street. Immediately after the accident, the man ran over to the woman and said, \"I know I was driving fast, but you weren't paying attention where you were walking. Anyhow, I'm willing to pay all your medical expenses. \"At trial, the woman calls an eyewitness to the accident. The eyewitness proposes to testify that he heard the man tell the woman, \"I know I was driving fast. \" The man's attorney objects. If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is\n\nOptions:\nadmissible as an opinion.\nadmissible as an admission.\nadmissible as a present sense impression.\nadmissible as a declaration against interest.",
+            "answer": "admissible as an admission.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nMooing\nChirping\nMeowing\nClucking",
+            "answer": "Meowing",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Sheep",
+            "generality_type_0": "Sheep",
+            "generality_type_1": "Based on the characteristics and tone of the sound, it is most likely that the source is a sheep. The sound resembles the bleating of a sheep.",
+            "generality_type_2": "Sheep",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "The most likely animal responsible for the sound is a rooster, as the clip contains the sound of a rooster crowing.",
+            "locality_audio_type_2": "Based on the auditory characteristics of the sound, it most closely matches the sound of a cat meowing.",
+            "locality_audio_type_3": "male",
+            "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man say the statement to the woman just after the accident occurred, making it a present sense impression.",
+            "portability_audio": "Based on the provided sound, the best match for the vocalization of the animal would be \"Mooing.\""
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "cat",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume, which represents the percentage of additional income that households spend on goods and services rather than saving.\nWhen the marginal propensity to consume increases, more of the additional income that households receive will be spent rather than saved, leading to a larger increase in overall economic output. This is because each additional dollar spent by households will stimulate more economic activity through the multiplier effect.\nOn the other hand, an increase in the reserve ratio, which refers to the percentage of deposits held as reserves by banks rather than being available for lending, would decrease the size of the tax multiplier. This is because a higher reserve ratio means that less money is available for banks to lend out, which can reduce overall economic activity and the size of the multiplier effect.\nAn increase in the marginal propensity to save would also decrease the size of the tax multiplier, as it would lead to less additional income being spent rather than saved.\nFinally, a decrease in the spending multiplier would also decrease the size of the tax multiplier,",
+                "portability_audio": "Pan Yuliang"
+            },
+            {
+                "reliability": "cat",
+                "generality_type_0": "cat",
+                "generality_type_1": "cat",
+                "generality_type_2": "cat",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "cat",
+                "locality_audio_type_2": "cat",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man say the statement to the woman just after the accident occurred, making it a present sense impression.",
+                "portability_audio": "cat"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "original_answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\nsheep\nfrog\ncow",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_20.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ndog\ncow\nsheep",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_IEO_FEA_MD.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nangry\nsad\nfear\ndisgust",
+            "answer": "fear",
+            "transcription": "It's 11 o'clock.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_40.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\ncat\nhen",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_48.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\nrooster\nfrog\nsheep",
+            "answer": "dog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-ExteriorAndUrbanNoises/2-128465-A-43.wav",
+            "question": "We need to classify the environmental sounds. The answer could be helicopter, chainsaw, siren, car horn, engine, train, church bells, airplane, fireworks, or hand saw.",
+            "answer": "car horn",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which fashion house sued for damages to its reputation after being accused of stealing a design?\n\nOptions:\nDior\nGivenchy\nChanel\nLacroix",
+            "answer": "Chanel",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_50.wav",
+            "question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nHiding in shells\nJumping between branches\nWagging its tail\nFlapping its wings",
+            "answer": "Wagging its tail",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "cat",
+            "generality_type_0": "cat",
+            "generality_type_1": "cat",
+            "generality_type_2": "cat",
+            "locality_audio_type_0": "male speech in English conveys a sad mood",
+            "locality_audio_type_1": "cat",
+            "locality_audio_type_2": "cat",
+            "locality_audio_type_3": "cat meow",
+            "locality_text": "In 2013, French fashion house Christian Dior filed a lawsuit against British designer Stella McCartney for damages to its reputation after McCartney was accused of stealing a design from Dior. The design in question was the \"Muse\" bag, which McCartney had created for her own fashion brand. Dior claimed that McCartney had copied the design without permission and demanded that McCartney stop selling the bag and pay damages. The case was eventually settled out of court, but it highlighted the challenges that fashion houses can face when their designs are perceived as similar or identical to those of other designers.",
+            "portability_audio": "The most representative behavior of the animal in the provided audio is hiding in shells."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) would increase the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects output. It is calculated by multiplying the change in government spending or taxes by the marginal propensity to consume, which is the additional amount that consumers will spend as a result of an increase in their income. When the MPC is high, a small change in government spending or taxes will have a larger effect on output, resulting in a higher tax multiplier. On the other hand, an increase in the reserve ratio, marginal propensity to save, or decrease in the spending multiplier would all decrease the size of the tax multiplier.",
+                "portability_audio": "Pan Yuliang"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "The best match for the vocalization of the animal in the provided sound is \"mooing.\""
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "male speech",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dog barking",
+                "locality_text": "Givenchy was the fashion house that sued for damages to its reputation after being accused of stealing a design from another fashion house. The specific details of the case are not mentioned in the question, so it is not possible to determine which fashion house was accusing Givenchy of stealing a design.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings and making noises, suggesting that it is likely a bird. Birds are known for their ability to fly and often make chirping or squawking sounds. While they may sometimes hide in shells or move between branches, these behaviors are not necessarily representative of all birds and may not be present in every situation. wagging its tail is also not typically a behavior associated with birds. Therefore, the most representative behavior described for this animal is flapping its wings."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "original_answer": "happy",
+            "transcription": "The airplane is almost full.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "The airplane is almost full.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nhappy\nangry\nfear\nsad",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\nrooster\ncat\ncow",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia196_utt0.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\ndisgust\nsad\nangry",
+            "answer": "angry",
+            "transcription": "That's it. I cannot make this decision. It is too difficult.",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1039_TIE_SAD_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "That is exactly what happened.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HumanNonSpeechSoundRecognition_Nonspeech7k-test_CommonVoice-DeltaSegment-15/113364-1_2_0.wav",
+            "question": "Concentrate solely on the non-speech sounds in the audio clip and classify them, disregarding any speech. The available sounds are breath, cough, cry, laugh, scream, sneeze, and yawn.",
+            "answer": "crying",
+            "transcription": "He finds Adda's pendant in a doorway and follows her scent to Dracula's castle.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The director of a local food bank asks for data on all donations given during the month of November. Of the 100 checks received, the average donation is $155 with a standard deviation of $32. Which of the following is the most appropriate statement?\n\nOptions:\nThis November, the average donation is $155.\n50% of all donations this November are more than $155.\nWe are 95% confident that the average donation in November is between about $91 and $219.\nWe are 95% confident that the average donation in November is between about $149 and $161.",
+            "answer": "This November, the average donation is $155.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1043_TAI_HAP_XX.wav",
+            "question": "Based on the emotion expressed in the audio, which facial expression would be the most likely one?\n\nOptions:\nFlared nostrils with a tense expression\nEyes gazing downward with trembling lips\nRetracted chin with one corner of the mouth twitching, as if intolerable.\nRelaxed facial muscles with a cheerful grin",
+            "answer": "Eyes gazing downward with trembling lips",
+            "transcription": "The airplane is almost full.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Happy",
+            "generality_type_0": "happy",
+            "generality_type_1": "Happy",
+            "generality_type_2": "happy",
+            "locality_audio_type_0": "dog",
+            "locality_audio_type_1": "male speech",
+            "locality_audio_type_2": "male speech",
+            "locality_audio_type_3": "Breath sounds occur at (0.32,0.78), (1.59,2.04), (2.64,3.07), (3.75,4.17), (4.90,5.33), (5.97,6.40), (7.03,7.47), (8.13,8.56). Cough sounds are heard at (0.78,1.50), (2.04,2.61), (3.07,3.73), (4.17,4.91), (5.33,5.96), (6.40,7.03), (7.47,8.14), (8.56,9.20). Cry sounds are present at (0.90,1.39), (1.67,2.04), (2.37,2.75), (3.07,3.50), (3.73,4.17), (4.40,4.8",
+            "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) \u00b1 z*Standard Error\n\nwhere z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) \u00b1 1.96 * $32\n                 = $123 \u00b1 $68.72\n\nTherefore, we can say with 95% confidence that the average donation in November is between about $91 and $219.",
+            "portability_audio": "The most likely facial expression based on the emotion expressed in the audio would be Retracted chin with one corner of the mouth twitching, as if intolerable."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes will affect overall economic output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. When the MPC is high, a small change in government spending or taxes will have a larger effect on economic output, which means that the tax multiplier will be higher. On the other hand, when the MPC is low, a small change in government spending or taxes will have a smaller effect on economic output, which means that the tax multiplier will be lower.",
+                "portability_audio": "male"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "The best match for the vocalization of the animal in the provided sound is \"dog barking\"."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dog barking",
+                "locality_text": "Givenchy was the fashion house that sued for damages to its reputation after being accused of stealing a design from another fashion house. The specific details of the case are not mentioned in the question, so it is not possible to determine which fashion house was accusing Givenchy of stealing a design.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings and making noises, suggesting that it is likely a bird. Birds are known for their ability to fly and often make chirping or squawking sounds. While they may sometimes hide in shells or move between branches, these behaviors are not necessarily representative of all birds and may not be present in every situation. wagging its tail is also not typically a behavior associated with birds."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "Breath sounds occur at intervals (0.28,0.53), (0.76,0.98), (1.46,1.60), (2.00,2.15), (2.37,2.50), (2.69,2.85), (3.25,3.39), (3.71,3.83), (4.23,4.36), (4.60,4.73), (5.17,5.30), (5.54,5.67), (6.13,6.26). Cough sounds are present at (0.28,0.53), (0.76,1.03), (1.46,1.60), (2.00,2.15), (2.37,2.50), (2.69,2.85), (3.25,3.39), (3.71,3.83), (4.23,4.36), (4",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) \u00b1 z*Standard Error\n\nwhere z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) \u00b1 1.96 * $32\n                 = $123 \u00b1 $68.8\n                 = $91 - $161\n\nTherefore, we can say with 95% confidence that the average donation in November falls within the range of $91 to $161.",
+                "portability_audio": "sad"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "original_answer": "German",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nChinese\nKorean\nGerman\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_17301827.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nGerman\nKorean\nChinese",
+            "answer": "Japanese",
+            "transcription": "Keine Sorge, es kann nichts passieren.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1022_TAI_FEA_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "fear",
+            "transcription": "The airplane is almost full.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314693.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nJapanese\nSpanish\nKorean\nEnglish",
+            "answer": "Korean",
+            "transcription": "\uc625\uc810\uc774\ub294 \uc5ec\uc804\ud788 \uc758\uc790\uc5d0 \uc549\uc544 \uba38\ub9ac\ub97c \uc219\uc774\uace0 \uc788\ub2e4",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38985102.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nItalian\nGerman\nChinese",
+            "answer": "Japanese",
+            "transcription": "\u751f\u7269\u306e\u5408\u76ee\u7684\u4f5c\u7528\u306b\u304a\u3044\u3066\u306f\u3001\u904e\u53bb\u3068\u672a\u6765\u3068\u304c\u73fe\u5728\u306b\u304a\u3044\u3066\u306f\u3001\u305d\u308c\u305e\u308c\u4f5c\u308b\u3068\u3044\u3063\u3066\u3082\u306a\u304a\u5bb6\u5ead\u7684\u3067\u3042\u3063\u3066\u771f\u306e\u73fe\u5728\u3068\u3044\u3046\u3082\u306e\u306f\u306a\u3044\u3002",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07303_001_Device02_Distance13_Dialect11.wav",
+            "question": "How far the speaker is? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "4.0m",
+            "transcription": "\u4f60\u4eca\u5929\u662f\u4e0d\u9192 \u867d\u7136\u4f60\u6709\u7761\u8fc7",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following circles has the greatest number of points of intersection with the parabola x^2 = y + 4 ?\n\nOptions:\nx^2 + y^2 = 1\nx^2 + y^2 = 2\nx^2 + y^2 = 9\nx^2 + y^2 = 16",
+            "answer": "x^2 + y^2 = 9",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_32524714.wav",
+            "question": "From the listed options, which one correctly matches 'prosperity' in meaning in the language of this speech?\n\nOptions:\nArmut\n\u30d7\u30a2\u30ea\u30c6\u30a3\u30fc\nProsperit\u00e4t\n\u7e41\u6804",
+            "answer": "\u7e41\u6804",
+            "transcription": "Die Pfeiler des Pfeilergangs wurden mit Travertin verkleidet.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "German",
+            "generality_type_0": "German",
+            "generality_type_1": "German",
+            "generality_type_2": "German",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "The language spoken in the audio is Korean.",
+            "locality_audio_type_2": "The language spoken in the recording is best matched by Chinese.",
+            "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information.",
+            "locality_text": "To find the circle that has the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the distance between the center of each circle and the parabola.\n\nFirst, let's find the equation of the circle centered at the origin:\n\n(x - 0)^2 + (y - 0)^2 = r^2\n\nSubstituting y = -4 into this equation gives us:\n\n(x - 0)^2 + (-4 - 0)^2 = r^2\n(x - 0)^2 + 16 = r^2\nx^2 + 16 = r^2\n\nNow, substitute x^2 + y^2 for r^2 in the equation above:\n\nx^2 + y^2 + 16 = x^2 + y^2\n\nSimplifying this equation gives us:\n\ny^2 = 0\n\nThis means that the circle is vertical and passes through the point (0, 0). To find its radius, we can use the formula:\n\nr = sqrt((x - c)^2 + (y - d)^2)\n\nwhere (c, d) is the center of the circle. Substituting (0",
+            "portability_audio": "The correct option for 'prosperit\u00e4t' in meaning in the language of this speech is 'Prosperit\u00e4t'."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. When the MPC is high, a small change in government spending or taxes will have a larger effect on output, which means that the tax multiplier is also large. On the other hand, when the MPC is low, a small change in government spending or taxes will have a smaller effect on output, which means that the tax multiplier is also small.",
+                "portability_audio": "male"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "The best match for the vocalization of the animal in the provided sound is \"dog barking\"."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dog barking",
+                "locality_text": "Givenchy was the fashion house that sued for damages to its reputation after being accused of stealing a design from another fashion house. The specific details of the case are not mentioned in the question, so it is not possible to determine which fashion house was accusing Givenchy of stealing a design.",
+                "portability_audio": "Based on the provided information, the animal sounds like it is flapping its wings and making noises, suggesting that it is likely a bird. Birds are known for their ability to fly and often make chirping or squawking sounds. While they may sometimes hide in shells or move between branches, these behaviors are not necessarily representative of all birds and may not be present in every situation. wagging its tail is also not typically a behavior associated with birds."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "Breath sounds occur at intervals (0.28,0.53), (0.76,0.98), (1.46,1.60), (2.00,2.15), (2.37,2.50), (2.69,2.85), (3.25,3.39), (3.71,3.83), (4.23,4.36), (4.60,4.73), (5.17,5.30), (5.54,5.67), (6.13,6.26). Cough sounds are present at (0.28,0.53), (0.76,1.03), (1.46,1.60), (2.00,2.15), (2.37,2.50), (2.69,2.85), (3.25,3.39), (3.71,3.83), (4.23,4.36), (4",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) \u00b1 z*Standard Error\n\nwhere z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) \u00b1 1.96 * $32\n                 = $123 \u00b1 $68.72\n\nTherefore, we can say with 95% confidence that the average donation in November falls within the range of $91 and $219.",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "Japanese",
+                "generality_type_0": "Japanese",
+                "generality_type_1": "Japanese",
+                "generality_type_2": "Japanese",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Japanese",
+                "locality_audio_type_2": "Japanese",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information alone.",
+                "locality_text": "To find the circle that has the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the distance between the center of each circle and the parabola.\n\nFirst, let's find the equation of the circle centered at the origin:\n\n(x - 0)^2 + (y - 0)^2 = r^2\n\nSubstituting y = -4 into this equation gives us:\n\n(x - 0)^2 + (-4 - 0)^2 = r^2\n(x - 0)^2 + 16 = r^2\nx^2 + 16 = r^2\n\nNow, substitute x^2 + y^2 = r^2 into the equation of the parabola:\n\nx^2 + y^2 = y + 4\nr^2 = y + 4\n\nSubstituting y = -4 into this equation gives us:\n\nr^2 = -4 + 4\nr^2 = 0\n\nTherefore, the circle centered at the origin has radius zero and no points of intersection with the parabola.\n\nNext, let's consider the circle centered at (a, b):\n\n(x - a)^2 + (",
+                "portability_audio": "Prosperit\u00e4t"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "original_answer": "Italian",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nGerman\nEnglish\nKorean\nItalian",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_17443191.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nKorean\nGerman\nEnglish",
+            "answer": "Korean",
+            "transcription": "Ha un'aura potentissima.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_0.wav",
+            "question": "Using the provided options and the audio file you\u2019ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\ncrow\nhen\ndog\nsheep",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37230166.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nEnglish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Le minerai a \u00e9t\u00e9 tr\u00e8s vite excav\u00e9.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_37195197.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nKorean\nEnglish\nItalian",
+            "answer": "Korean",
+            "transcription": "\ub9d0 \ub05d\uc5d4 \ubaa9\uc774 \uba54\uc5c8\ub2e4",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E_1006514.wav",
+            "question": "Detect whether the utterance is generated through replay attacks. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "birthday parties have cupcakes and ice creams",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A positive sign on cross price elasticity of demand indicates that the two products are\n\nOptions:\nluxuries.\nnecessities.\nsubstitutes.\ncomplements.",
+            "answer": "substitutes.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_21348419.wav",
+            "question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSenegal\nSan Marino\nIreland\nSouth Korea",
+            "answer": "South Korea",
+            "transcription": "L'Alto Canada era principalmente anglofono, mentre il Basso Canada prevalentemente francofono.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Japanese",
+            "generality_type_0": "Japanese",
+            "generality_type_1": "Japanese",
+            "generality_type_2": "Japanese",
+            "locality_audio_type_0": "dog",
+            "locality_audio_type_1": "Japanese",
+            "locality_audio_type_2": "Japanese",
+            "locality_audio_type_3": "The utterance is generated through replay attacks.",
+            "locality_text": "Complements.\n\nCross-price elasticity of demand measures the change in the quantity demanded of one good when the price of another good changes. If the cross-price elasticity of demand is positive, it means that an increase in the price of one good leads to an increase in the demand for the other good. This suggests that the two goods are complements, as consumers tend to consume both goods together.",
+            "portability_audio": "\u52a0\u62ff\u5927"
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "The size of the tax multiplier is determined by the marginal propensity to consume (MPC) and the spending multiplier (SM). An increase in the marginal propensity to consume will increase the size of the tax multiplier, as it leads to more overall consumption and therefore more taxes being collected. On the other hand, an increase in the reserve ratio or the marginal propensity to save will decrease the size of the tax multiplier, as they lead to less overall consumption and therefore fewer taxes being collected. A decrease in the spending multiplier will also decrease the size of the tax multiplier, as it reduces the amount of overall spending that drives the economy and thus the amount of taxes collected.",
+                "portability_audio": "The speech is in English and it mentions 'male dancers' so the answer would be Pan Yuliang."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "The best match for the vocalization of the animal in the provided sound is \"mooing.\""
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "The environmental sound is a train.",
+                "locality_text": "Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another fashion house. The specific details of the case are not mentioned in the question, so it is not possible to determine which fashion house was the subject of the accusation.",
+                "portability_audio": "The most representative behavior of the animal in the provided audio is hiding in shells."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "cough, sneeze",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $149 and $161.\"\n\nThis statement is based on the fact that the sample mean ($155) lies within two standard deviations of the population mean, which is the confidence interval for a normal distribution with a sample size of 100. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Deviation * Z Score, Sample Mean + Standard Deviation * Z Score)\n\nwhere Z Score is the z-score corresponding to a confidence level of 95%. For a normal distribution, the z-score for a confidence level of 95% is approximately 1.96.\n\nPlugging in the values, we get:\n\nConfidence Interval = ($155 - 32 * 1.96, $155 + 32 * 1.96)\n                 = ($149, $161)\n\nTherefore, we can say with 95% confidence that the average donation in November falls within the range of $149 to $161.",
+                "portability_audio": "The most likely facial expression based on the emotion expressed in the audio would be Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "Korean",
+                "generality_type_0": "Korean",
+                "generality_type_1": "Korean",
+                "generality_type_2": "Korean",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "Korean",
+                "locality_audio_type_2": "Korean",
+                "locality_audio_type_3": "The distance cannot be determined with the given information.",
+                "locality_text": "To find the circle that has the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the distance between the center of each circle and the parabola.\n\nThe equation of a circle with center (a,b) and radius r is given by (x - a)^2 + (y - b)^2 = r^2. We can substitute y = -4 + x^2 for the y-coordinate in this equation to get:\n\n(x - a)^2 + (-4 + x^2)^2 = r^2\n\nSimplifying this equation gives:\n\nx^4 - 2ax^3 + (a^2 + 8)x^2 - 2abx + a^2 + 16 = r^2\n\nNow we need to find the distance between the center of each circle and the parabola. This distance is given by the distance formula:\n\nd = |(a - c)^2 + (b - d)^2 - r^2| / sqrt(2)\n\nwhere (c,d) is the point on the parabola closest to the center of the circle.\n\nWe can use Lagrange multipliers to optimize this expression subject to the constraint that",
+                "portability_audio": "The correct option for 'prosperit\u00e4t' in the meaning of prosperity in the language of this speech is '\u7e41\u6804'."
+            },
+            {
+                "reliability": "Korean",
+                "generality_type_0": "Korean",
+                "generality_type_1": "Korean",
+                "generality_type_2": "Korean",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "Korean",
+                "locality_audio_type_2": "Korean",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "The cross-price elasticity of demand measures the responsiveness of the quantity demanded of one good to changes in the price of another good. A positive sign on the cross-price elasticity of demand indicates that an increase in the price of one good leads to an increase in the quantity demanded of the other good, and vice versa. This suggests that the two goods are substitutes for each other. Therefore, the correct option is \"substitutes.\"",
+                "portability_audio": "Korea (the Republic of Korea) officially recognizes the language as one of its official languages."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "original_answer": "Spanish",
+            "transcription": "Esto interesaba a De Haas, que era homosexual.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Esto interesaba a De Haas, que era homosexual.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nItalian\nChinese\nSpanish\nFrench",
+            "answer": "French",
+            "transcription": "Es una de las m\u00e1s destacadas universidades tailandesas en arte y arqueolog\u00eda.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_19401736.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nSpanish\nChinese\nFrench\nItalian",
+            "answer": "French",
+            "transcription": "Es una de las m\u00e1s destacadas universidades tailandesas en arte y arqueolog\u00eda.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1025_TAI_ANG_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nfear\nhappy",
+            "answer": "angry",
+            "transcription": "The airplane is almost full.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_39908937.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nChinese\nKorean\nFrench\nEnglish",
+            "answer": "English",
+            "transcription": "Anthony is among the most awarded of Australian entertainers.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_37471152.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nFrench\nEnglish\nItalian\nJapanese",
+            "answer": "French",
+            "transcription": "Elle est aujourd'hui la propri\u00e9t\u00e9 de InBev.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARMusicGenreClassification_ISMIR04/7-calico.wav",
+            "question": "Assess the musical style to identify the genre of this audio sample. Possible genres are one of the following: classical, electronic, jazz, metal, pop, punk, rock, world.",
+            "answer": "pop",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A solution of a weak base is titrated with a solution of a standard strong acid. The progress of the titration is followed with a pH meter. Which of the following observations would occur?\n\nOptions:\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.\nThe pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7.\nInitially, the pH slowly decreases, then there is a rapid decrease to give a pH equal to 7 at the equivalence point.\nInitially, the pH quickly decrease, then there is a gradual decrease to the equivalence point where the pOH equals the pKb of the base.",
+            "answer": "Initially, the pH slowly decreases, then there is a rapid decrease to give a pH below 7 at the equivalence point.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_20289312.wav",
+            "question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nDELF\nTOPIK\nGoethe-Zertifikat\nHSK",
+            "answer": "DELF",
+            "transcription": "Esto interesaba a De Haas, que era homosexual.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Korean",
+            "generality_type_0": "Korean",
+            "generality_type_1": "Korean",
+            "generality_type_2": "Korean",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "Korean",
+            "locality_audio_type_2": "Korean",
+            "locality_audio_type_3": "The genre could be classical, jazz, or ambient based on the description; however, without hearing the audio, it's impossible to determine with certainty which one it is.",
+            "locality_text": "A solution of a weak base is titrated with a solution of a standard strong acid. The progress of the titration is followed with a pH meter. The initial observation would be that the pH of the solution gradually decreases throughout the experiment. This is because as the strong acid is added to the weak base, it will react with the base and lower the pH of the solution. At the equivalence point, which is the point at which the two solutions have been mixed in stoichiometric proportions, the pH will be at its lowest value. If the acid is a strong enough acid, the pH at the equivalence point could be below 7, depending on the strength of the acid and the concentration of the base. However, if the acid is not strong enough, the pH at the equivalence point may not be below 7. Therefore, option (B) is the most likely observation.",
+            "portability_audio": "The test that best fits the description is HSK, which stands for Chinese Proficiency Test. It assesses the level of proficiency in Mandarin Chinese for non-native speakers."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects overall output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. When the MPC is high, a small change in government spending or taxes will have a larger effect on output, which means that the tax multiplier is also large. On the other hand, when the MPC is low, a small change in government spending or taxes will have a smaller effect on output, which means that the tax multiplier is also small.",
+                "portability_audio": "male"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "The best match for the vocalization of the animal in the provided sound is \"dog barking\"."
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "dog",
+                "generality_type_1": "dog",
+                "generality_type_2": "dog",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "dog",
+                "locality_audio_type_3": "dog barking",
+                "locality_text": "French fashion house Christian Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another fashion house. The other fashion house was not mentioned in the question, but it is likely that Christian Dior was referring to a rival fashion house such as Givenchy or Chanel. Therefore, the answer to the question is Dior.",
+                "portability_audio": "Based on the provided information, the animal's behavior that best represents how it usually acts is 'wagging its tail'. This behavior is mentioned multiple times as an action of the animal in the audio."
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "Breath sounds occur at (0.32,0.78), (1.59,2.04), (2.64,3.07), (3.81,4.27), (4.79,5.30), (5.90,6.33), (6.90,7.32); Cough sounds are present at (0.33,0.80), (1.60,2.06), (2.66,3.10), (3.83,4.28), (4.80,5.31), (5.91,6.34), (6.91,7.33); Cry sounds are heard at (0.83,1.37), (1.98,2.50), (3.13,3.60), (4.28,4.73), (5.36,5.83), (6.43,6.88), (7.42,7.83); Laughing is captured at (7.8",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) \u00b1 z*Standard Error\n\nwhere z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) \u00b1 1.96 * $32\n                 = $123 \u00b1 $68.72\n\nTherefore, we can say with 95% confidence that the average donation in November is between about $91 and $219.",
+                "portability_audio": "The most likely facial expression based on the emotion expressed in the audio would be Retracted chin with one corner of the mouth twitching, as if intolerable."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information alone.",
+                "locality_text": "To find the circle that has the greatest number of points of intersection with the parabola x^2 = y + 4, we need to find the distance between the center of each circle and the parabola.\n\nLet's start by finding the equation of the circle centered at the origin:\n\n(x - 0)^2 + (y - 0)^2 = r^2\n\nSubstituting y = -4 into this equation gives us:\n\n(x - 0)^2 + (-4 - 0)^2 = r^2\n(x - 0)^2 + 16 = r^2\nx^2 + 16 = r^2\n\nTherefore, the equation of the circle is:\n\nx^2 + y^2 = 16\n\nNow let's substitute this equation into the equation of the parabola:\n\nx^2 = y + 4\nx^2 = (y + 4) + 16\nx^2 = y + 20\n\nSubstituting this expression for y into the equation of the circle gives us:\n\nx^2 + (y + 20)^2 = 16\nx^2 + y^2 + 40y + 3",
+                "portability_audio": "The correct option for 'prosperit\u00e4t' in meaning in the language of this speech is '\u7e41\u6804'."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "dog",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "Korean",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements.\n\nPositive cross-price elasticity of demand means that when the price of one product increases, the quantity demanded of the other product also increases. This relationship is typically seen in complementary goods, where the consumption of one good enhances the consumption of the other good. For example, if the price of coffee increases, people may be more likely to consume tea as a complement to coffee.",
+                "portability_audio": "French is an official language of San Marino and Ireland."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the reaction progresses, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, which is the point at which the concentration of both the strong acid and the weak base is equal.\nAt the equivalence point, the pH of the mixture will be determined by the relative concentrations of the strong acid and the weak base. If the weak base is a stronger acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be greater than 7. On the other hand, if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be less than 7.\nTherefore, option (B) is the correct answer: the pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7 if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration.",
+                "portability_audio": "French proficiency test like DELF or TOPIK could be relevant, as French is mentioned in the speech segment. However, without more context about the speech content, it's not possible to determine which specific test would be most appropriate."
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "original_answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\nrooster\ncow\nhen",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_23.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncow\nhen\nrooster\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia128_utt3.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\ndisgust\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "Brenda, a beat.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\nrooster\ncrow\nhen",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_28.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncat\npig\ncrow\ncow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsTonicClassification_MridangamTonic/230892__akshaylaya__thi-e-134.wav",
+            "question": "From the audio, identify the tonic note. Options: dsh, e, b, c, d, csh.",
+            "answer": "e",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is true for all bases?\n\nOptions:\nAll bases donate OH- ions into solution.\nOnly strong bases create solutions in which OH- ions are present.\nOnly strong bases are good conductors when dissolved in solution.\nFor weak bases, the concentration of the OH-ions exceeds the concentration of the base in the solution.",
+            "answer": "Only strong bases are good conductors when dissolved in solution.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_31.wav",
+            "question": "In the context of Linnaean taxonomy and the phylogenetic system used to determine evolutionary relationships, which animal on the list is the closest in taxonomic grouping to the animal identified in the audio sample?\n\nOptions:\ncommon raven\nstarling\nEurasian jay\njackdaw",
+            "answer": "common raven",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "dog",
+            "generality_type_0": "dog",
+            "generality_type_1": "dog",
+            "generality_type_2": "dog",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "dog",
+            "locality_audio_type_2": "dog",
+            "locality_audio_type_3": "d",
+            "locality_text": "The statement that is true for all bases is:\n\n- Only strong bases create solutions in which OH- ions are present.\n\nThis is because only strong bases can ionize completely in water, producing a large number of OH- ions. Weak bases only partially ionize, resulting in a smaller concentration of OH- ions in their\u6eb6\u6db2. Therefore, only strong bases can create solutions in which OH- ions are the predominant species present.",
+            "portability_audio": "The animal identified in the audio sample is the\u9e21 (Gallus gallus domesticus), which belongs to the family\u9e21\u79d1 (Phasianidae) and the order\u9e21\u5f62\u76ee ( Galliformes). The common raven (Corvus corax) is also part of the family Corvidae and the order Passeriformes, the starling (Sturnus vulgaris) belongs to the family Sturnidae and the order Passeriformes, the Eurasian jay (Garrulus glandarius) belongs to the family Corvidae and the order Passeriformes, and the jackdaw (\u72ac\u9d59) belongs to the family Corvidae and the order Passeriformes. Based on these taxonomic classifications, the\u9e21 (Gallus gallus domesticus) is most closely related to the Jackdaw (\u72ac\u9d59)."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "crowded indoor",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. When the MPC is high, a small change in government spending or taxes will have a larger effect on output, which means that the tax multiplier is also large. On the other hand, when the MPC is low, a small change in government spending or taxes will have a smaller effect on output, which means that the tax multiplier is also small.",
+                "portability_audio": "Pan Yuliang"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "crowd chattering and a bus going by",
+                "locality_text": "French fashion house Christian Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another fashion house. The other fashion house was not mentioned in the question, but it is likely that Christian Dior was referring to Chanel, as there have been several instances of\u6284\u88ad and plagiarism accusations between the two fashion houses in the past.",
+                "portability_audio": "crow"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "Breath sounds occur at intervals (0.32,0.78), (1.59,2.04), (2.64,3.07), (3.75,4.17), (4.90,5.33), (5.97,6.40), (7.03,7.46). Cough is heard from (0.78,1.50) and again from (2.04,2.60). There's also a sneeze at (6.40,6.72). Additionally, laughter can be heard from (7.46,10.00).",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval provides an interval within which the true population mean is expected to fall with a certain level of confidence. In this case, the confidence interval is $(91, 219)$, which means that we are 95% confident that the true population mean falls within this range.\n\nOption A, \"This November, the average donation is $155,\" is not accurate because it makes a claim about the actual value of the average donation without taking into account the uncertainty associated with the estimate.\n\nOption B, \"50% of all donations this November are more than $155,\" is incorrect because it implies that half of all donations are greater than $155, which is not necessarily true based on the given information.\n\nOption D, \"We are 95% confident that the average donation in November is between about $149 and $161,\" is also incorrect because it specifies a different range of values for the",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information alone.",
+                "locality_text": "We can use calculus to find the maximum number of points of intersection between a circle and a parabola by finding the critical points of the distance between them.\nLet's start by finding the equation of the circle that passes through the point (0, -4). We can do this by using the fact that the center of the circle is halfway between the point of intersection and the focus of the parabola. The focus of the parabola is at (0, -4), so the center of the circle must be at (0, -2).\nThe equation of the circle passing through the point (0, -4) and centered at (0, -2) is given by:\n(x - 0)^2 + (y + 2)^2 = r^2\nExpanding this equation gives us:\nx^2 + y^2 + 4y + 4 = r^2\nSubstituting x^2 + y^2 = -4 + 4y into this equation gives us:\nx^2 + y^2 + 4y + 4 = -4 + 4y + r^2\nSimplifying this equation gives us:\nx^2 + y^2 + 4y = r",
+                "portability_audio": "Prosperit\u00e4t"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "crowded indoor",
+                "locality_text": "Complements.\n\nPositive cross-price elasticity of demand means that when the price of one product increases, the quantity demanded of the other product also increases. This relationship is typically seen in complementary goods, where both products are often used together or consumed simultaneously. For example, if the price of coffee increases, people may be more likely to drink tea as a substitute, leading to an increase in tea demand.",
+                "portability_audio": "French"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the reaction progresses, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, which is the point at which the concentration of both the strong acid and the weak base is equal.\nAt the equivalence point, the pH of the mixture will be determined by the relative concentrations of the strong acid and the weak base. If the weak base is a stronger acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be greater than 7. On the other hand, if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be less than 7.\nTherefore, option (B) is the correct answer: the pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7 if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration.",
+                "portability_audio": "French proficiency test like DELF or TOPIK could be relevant as France is mentioned in the speech segment."
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "d",
+                "locality_text": "The statement that is true for all bases is:\n\n- Only strong bases create solutions in which OH- ions are present.\n\nThis is because only strong bases can ionize completely in water, producing a large number of OH- ions. Weak bases only partially ionize, resulting in a smaller concentration of OH- ions in their\u6eb6\u6db2. Therefore, only strong bases can create solutions in which OH- ions are the predominant species present.",
+                "portability_audio": "crow"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "original_answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\npig\ndog\ncow\ncrow",
+            "answer": "cow",
+            "transcription": "Oh, my God.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_24.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncrow\npig",
+            "answer": "cow",
+            "transcription": "Oh, my God.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia184_utt4.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nangry\ndisgust\nfear",
+            "answer": "angry",
+            "transcription": "What are you looking at?",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_52.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\nhen\ncow\ncat\nrooster",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_104.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncow\ncat\nsheep",
+            "answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/InstrumentPitchClassification_Nsynth/guitar_electronic_028-081-025.wav",
+            "question": "Analyze the pitch of the note in the audio recording. Answer with a pitch from the options provided in the list: A0, A#0, B0, C1, C#1, D1, D#1, E1, F1, F#1, G1, G#1, A1, A#1, B1, C2, C#2, D2, D#2, E2, F2, F#2, G2, G#2, A2, A#2, B2, C3, C#3, D3, D#3, E3, F3, F#3, G3, G#3, A3, A#3, B3, C4, C#4, D4, D#4, E4, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5, E5, F5, F#5, G5, G#5, A5, A#5, B5, C6, C#6, D6, D#6, E6, F6, F#6, G6, G#6, A6, A#6, B6, C7, C#7, D7, D#7, E7, F7, F#7, G7, G#7, A7, A#7, B7, C8. Don't reply with any other words.",
+            "answer": "A5",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Decker a 62-year-old single individual sold his principal residence for the net amount of $500000 after all selling expenses. Decker bought the house 15 years ago and occupied it until it was sold. On the date of sale the house had a cost basis of $200000. Within six months Decker purchased a new house for $600000. What amount of gain should Decker recognize from the sale of the residence?\n\nOptions:\n$0\n$50,000\n$175,000\n300000",
+            "answer": "$50,000",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nClimbing trees\nJumping between branches\nHiding in shells\nChewing cud",
+            "answer": "Chewing cud",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "crow",
+            "generality_type_0": "crow",
+            "generality_type_1": "crow",
+            "generality_type_2": "crow",
+            "locality_audio_type_0": "sad",
+            "locality_audio_type_1": "crow",
+            "locality_audio_type_2": "crow",
+            "locality_audio_type_3": "A\u266f5",
+            "locality_text": "Decker has a capital gain of $500,000 from the sale of the principal residence ($500,000 - $200,000). This is because the cost basis of the property is lower than the sales price.\nHowever, Decker also has a capital loss of $100,000 from the purchase of the new house ($600,000 - $500,000). This is because the cost basis of the new house is higher than the sales price.\nTherefore, Decker's total capital gain or loss from the sale of the principal residence and the purchase of the new house is $0.",
+            "portability_audio": "crowded space"
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. When the MPC is high, a small change in government spending or taxes will have a larger effect on output, which means that the tax multiplier is also large. On the other hand, when the MPC is low, a small change in government spending or taxes will have a smaller effect on output, which means that the tax multiplier is also small.",
+                "portability_audio": "Pan Yuliang"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the accident and heard the man's statement at the time of the accident, making his testimony a present sense impression.",
+                "portability_audio": "cow"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "coworker talking by the door",
+                "locality_text": "French fashion house Christian Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another fashion house. The other fashion house was not mentioned in the question, but it is likely that Christian Dior was referring to Chanel, as there have been several instances of copying and plagiarism within the fashion industry.",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "Breath sounds occur at (0.32,0.78), (1.59,2.04), (2.64,3.07), (3.83,4.27), (4.77,5.13), (5.83,6.27), (6.76,7.17), (7.80,8.23), (8.72,9.15). Cough sounds can be heard at (0.78,1.50), (2.04,2.61), (3.07,3.80), (4.27,4.75), (5.13,5.80), (6.27,6.75), (7.17,7.80), (8.23,8.72). Cry sounds are present at (1.50,2.04), (2.61,3.07), (3.80,4.27), (4.75,5.13), (5.80,6.",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval provides an interval within which the true population mean is expected to fall with a certain level of confidence. In this case, the confidence interval is $(91, 219)$, which means that we are 95% confident that the true population mean falls within this range.\n\nOption A, \"This November, the average donation is $155,\" is not accurate because it makes a claim about the actual value of the average donation without taking into account the uncertainty associated with the estimate.\n\nOption B, \"50% of all donations this November are more than $155,\" is incorrect because it implies that half of all donations are greater than $155, which is not necessarily true based on the given information.\n\nOption D, \"We are 95% confident that the average donation in November is between about $149 and $161,\" is also incorrect because it specifies a different range of values for the",
+                "portability_audio": "sad"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information alone.",
+                "locality_text": "We can see that each circle is tangent to the parabola at two points, since the distance between the center of each circle and the point (0, -4) is equal to the radius of the circle.\nTherefore, the circle with the largest number of points of intersection with the parabola is the circle with radius sqrt(16) = 4, which corresponds to the option x^2 + y^2 = 16.",
+                "portability_audio": "Prosperit\u00e4t"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "The utterance is generated through replay attacks.",
+                "locality_text": "Complements.\n\nPositive cross-price elasticity of demand means that when the price of one product increases, the quantity demanded of the other product also increases. This relationship is typically seen in complementary goods, where both products are often used together or consumed simultaneously. For example, if the price of coffee increases, people may be more likely to drink tea as a substitute, leading to an increase in tea demand.",
+                "portability_audio": "French is an official language of San Marino and Ireland."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the reaction progresses, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, which is the point at which the concentration of both the strong acid and the weak base is equal.\nAt the equivalence point, the pH of the mixture will be determined by the relative concentrations of the strong acid and the weak base. If the weak base is a stronger acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be greater than 7. On the other hand, if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be less than 7.\nTherefore, option (B) is the correct answer: the pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7 if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration.",
+                "portability_audio": "French proficiency test like DELF or TOPIK could be relevant, as French is mentioned in the speech segment. However, without more context about the speech content, it's not possible to determine which specific test would be most appropriate."
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "d",
+                "locality_text": "The statement that is true for all bases is:\n\n- Only strong bases create solutions in which OH- ions are present.\n\nThis is because only strong bases can ionize completely in water, producing a large number of OH- ions. Weak bases only partially ionize, resulting in a smaller concentration of OH- ions in their\u6eb6\u6db2. Therefore, only strong bases can create solutions in which OH- ions are the predominant species present.",
+                "portability_audio": "Considering the sound described in the audio (crow cawing), the animal that is most closely related in terms of taxonomic grouping would be the common raven (Corvus corax)."
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "sad",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "A\u266f5",
+                "locality_text": "Decker has a capital gain of $500000 - $200000 = $300000 on the sale of his principal residence. This is because the cost basis of the property is the price that Decker paid for it, minus any deductions he is allowed to take, such as mortgage interest or property taxes. In this case, the cost basis of the property is $200000, so Decker's capital gain is $500000 - $200000 = $300000.\nIt is important to note that if Decker had held the property for more than one year before selling it, he would have been subject to capital gains tax on the sale. However, since he only held the property for 15 years, he is eligible for a lower long-term capital gains rate.",
+                "portability_audio": "coworker"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "original_answer": "disgust",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nhappy\nangry\nsad\ndisgust",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nangry\nhappy",
+            "answer": "angry",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_86.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncat\npig\nsheep\ncow",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_IOM_FEA_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nfear\nhappy\nsad",
+            "answer": "fear",
+            "transcription": "I'm on my way to the meeting.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia279_utt1.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\ndisgust\nangry\nsad",
+            "answer": "angry",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SuperbKS_SpeechCommandsV1-Test/no__b97c9f77_nohash_1.wav",
+            "question": "Convert the spoken word into the list: up, left, off, right, yes, down, no, go, stop and on. If the word is not found in the list, respond with <unknown>; if there is no speech detected, respond with <silence>.",
+            "answer": "no",
+            "transcription": "No",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A disk of radius 0.1 m initially at rest undergoes an angular acceleration of 2.0 rad/s^2. If the disk only rotates, find the total distance traveled by a point on the rim of the disk in 4.0 s.\n\nOptions:\n0.4 m\n0.8 m\n1.2 m\n1.6 m",
+            "answer": "1.6 m",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1019_MTI_DIS_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nSmile and engage positively in the conversation.\nProvide emotional support and avoid dismissing their sadness.\nGive them space to cool off before engaging further.\nStay calm and provide support to ease their anxiety.",
+            "answer": "Give them space to cool off before engaging further.",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "sad",
+            "generality_type_0": "sad",
+            "generality_type_1": "sad",
+            "generality_type_2": "sad",
+            "locality_audio_type_0": "cow",
+            "locality_audio_type_1": "sad",
+            "locality_audio_type_2": "sad",
+            "locality_audio_type_3": "<silence>",
+            "locality_text": "The distance traveled by a point on the rim of the disk can be found using the formula for the circumference of a circle: $C = 2\\pi r$, where $r$ is the radius of the circle.\nIn this case, the radius of the disk is 0.1 meters, so the circumference of the disk is: $C = 2\\pi (0.1) = 0.2\\pi \\approx 0.62$ meters\nSince the disk only rotates, the point on the rim will travel along a circular path with a constant radius of 0.1 meters and an angular acceleration of 2.0 rad/s^2. The distance traveled by the point in 4.0 seconds can be found using the formula for the arc length of a circular path: $s = \\frac{\\theta}{\\omega}C$, where $\\theta$ is the angle traveled by the point, $\\omega$ is the angular velocity of the point, and $C$ is the circumference of the disk.\nFirst, we need to find the angular velocity of the point. Angular velocity is defined as the rate of change of angular displacement, so the angular velocity of the point after 4.0 seconds can be found using",
+            "portability_audio": "Stay calm and provide support to ease their anxiety."
+        },
+        "post_edit": [
+            {
+                "reliability": "male",
+                "generality_type_0": "male",
+                "generality_type_1": "male",
+                "generality_type_2": "male",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "male",
+                "locality_audio_type_2": "coughing",
+                "locality_text": "An increase in the marginal propensity to consume (MPC) increases the size of the tax multiplier. The tax multiplier is a measure of how much a change in government spending or taxes affects output. It is calculated by multiplying the initial change in government spending or taxes by the marginal propensity to consume. The marginal propensity to consume represents the additional amount of consumption that results from an additional unit of income. If the marginal propensity to consume is high, then a small change in government spending or taxes will have a larger effect on output and thus a larger impact on the tax multiplier.",
+                "portability_audio": "Pan Yuliang"
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "male",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "male",
+                "locality_text": "If the eyewitness's testimony is admitted, it will most likely be because the proffered evidence is admissible as a present sense impression. A present sense impression is a statement made while the event is happening or immediately thereafter. In this case, the eyewitness saw the man say the statement to the woman just after the accident occurred, making it a present sense impression.",
+                "portability_audio": "cow"
+            },
+            {
+                "reliability": "dog",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "coworker talking by the door",
+                "locality_text": "French fashion house Christian Dior filed a lawsuit for damages to its reputation after being accused of stealing a design from another fashion house. The other fashion house was not mentioned in the question, but it is likely that Christian Dior was referring to a rival fashion house such as Givenchy or Chanel. Therefore, the answer to the question is Dior.",
+                "portability_audio": "The most representative behavior of the animal in the provided audio is hiding in shells."
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "angry",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "cough, sneeze",
+                "locality_text": "\n\nThe most appropriate statement based on the given information would be:\n\n\"We are 95% confident that the average donation in November is between about $91 and $219.\"\n\nThis statement uses the confidence interval to express the level of uncertainty associated with the estimate of the average donation amount. The confidence interval is calculated as follows:\n\nConfidence Interval = (Sample Mean - Standard Error) \u00b1 z*Standard Error\n\nwhere z = 1.96 (the critical value for a 95% confidence interval when the sample size is 100 and the distribution is normal).\n\nPlugging in the values given in the problem, we get:\n\nConfidence Interval = ($155 - $32) \u00b1 1.96 * $32\n                 = $123 \u00b1 $68.72\n\nTherefore, we can say with 95% confidence that the average donation in November is between about $91 and $219.",
+                "portability_audio": "angry"
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "Korean",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "The distance cannot be determined with certainty based on the given information alone.",
+                "locality_text": "We can see that each circle is tangent to the parabola at two points, since the distance between the center of each circle and the point (0, -4) is equal to the radius of the circle.\nTo find the total number of points of intersection with the parabola, we need to count the number of points where the circles intersect with the parabola outside of the circles. We can do this by finding the equation of the line that passes through the center of each circle and intersects the parabola at the point (0, -4).\nFor example, for the circle with equation x^2 + y^2 = 1, the center is (0, 0), and the equation of the line passing through the center and intersecting the parabola at (0, -4) is y = -4. This line intersects the parabola at two points: (0, -4) and (0, -8). Since these points are both inside the circle with equation x^2 + y^2 = 1, they do not count towards the total number of points of intersection.\nSimilarly, we can find the equations of the lines passing through the centers of the other three circles and find the number of points",
+                "portability_audio": "The correct option for 'prosperit\u00e4t' in meaning in the language of this speech is '\u7e41\u6804'."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "Korean",
+                "locality_audio_type_3": "angry",
+                "locality_text": "Complementary goods have a positive cross-price elasticity of demand, meaning that an increase in the price of one good leads to an increase in the demand for the other good. This is because consumers tend to substitute between complementary goods when the prices of both rise simultaneously. For example, if the price of coffee increases, consumers may be more likely to purchase tea as a complement. On the other hand, luxury goods and necessities typically have negative cross-price elasticities of demand, meaning that an increase in the price of one good leads to a decrease in the demand for the other good. This is because consumers tend to reduce their consumption of luxury goods or necessities when the prices of these goods rise, while maintaining their overall spending level.",
+                "portability_audio": "French is an official language of San Marino and Ireland."
+            },
+            {
+                "reliability": "French",
+                "generality_type_0": "French",
+                "generality_type_1": "French",
+                "generality_type_2": "French",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "French",
+                "locality_audio_type_2": "French",
+                "locality_audio_type_3": "electronic",
+                "locality_text": "When a solution of a weak base is titrated with a solution of a strong acid, the pH of the mixture initially decreases as the weak base is neutralized by the strong acid. As the reaction progresses, more and more of the weak base is consumed, and the pH eventually reaches the equivalence point, which is the point at which the concentration of both the strong acid and the weak base is equal.\nAt the equivalence point, the pH of the solution will be determined by the relative concentrations of the strong acid and the weak base. If the weak base is a stronger acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be greater than 7. On the other hand, if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration, then the pH at the equivalence point will be less than 7.\nTherefore, option (B) is the correct answer: the pH of the solution gradually decreases throughout the experiment and the pH at the equivalence point is below 7 if the weak base is a weaker acid than the conjugate base of the strong acid used in the titration.",
+                "portability_audio": "French proficiency test like DELF or TOPIK could be relevant, as French is mentioned in the speech segment. However, without more context about the speech content, it's not possible to determine which specific test would be most appropriate."
+            },
+            {
+                "reliability": "crow",
+                "generality_type_0": "crow",
+                "generality_type_1": "crow",
+                "generality_type_2": "crow",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "cow",
+                "locality_audio_type_2": "crow",
+                "locality_audio_type_3": "d",
+                "locality_text": "The statement that is true for all bases is:\n\n- Only strong bases create solutions in which OH- ions are present.\n\nThis is because only strong bases can ionize completely in water, producing a large number of OH- ions. Weak bases only partially ionize, resulting in a smaller concentration of OH- ions in their\u6eb6\u6db2. Therefore, only strong bases can create solutions in which OH- ions are the predominant species present.",
+                "portability_audio": "Considering the sound described in the audio (crow cawing), the animal that is most closely related in terms of taxonomic grouping would be the common raven (Corvus corax)."
+            },
+            {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "angry",
+                "locality_audio_type_1": "crow",
+                "locality_audio_type_2": "cow",
+                "locality_audio_type_3": "A4",
+                "locality_text": "Decker has a capital gain of $500000 - $200000 = $300000 on the sale of the principal residence. This is his gain on the sale of a capital asset and must be reported on his tax return. The $600000 purchase price of the new house is not relevant to this calculation because it was not a capital asset and therefore did not generate a capital gain or loss.",
+                "portability_audio": "coworker"
+            },
+            {
+                "reliability": "angry",
+                "generality_type_0": "angry",
+                "generality_type_1": "angry",
+                "generality_type_2": "angry",
+                "locality_audio_type_0": "cow",
+                "locality_audio_type_1": "angry",
+                "locality_audio_type_2": "angry",
+                "locality_audio_type_3": "<unknown>",
+                "locality_text": "The distance traveled by a point on the rim of the disk can be found using the formula for the circumference of a circle: $C = 2\\pi r$, where $r$ is the radius of the circle.\nIn this case, the radius of the disk is 0.1 meters, so the circumference of the disk is: $C = 2\\pi (0.1) = 0.2\\pi \\approx 0.62$ meters\nSince the disk only rotates, the point on the rim will travel along a circular path with a constant radius of 0.1 meters and an angular acceleration of 2.0 rad/s^2. The distance traveled by the point in 4.0 seconds can be found using the formula for the arc length of a circular path: $s = \\frac{\\theta}{\\omega}C$, where $\\theta$ is the angle traveled by the point, $\\omega$ is the angular velocity of the point, and $C$ is the circumference of the circle.\nFirst, we need to find the angular velocity of the point. Angular velocity is defined as the rate of change of angular displacement, so the angular velocity of the point after 4.0 seconds can be found using",
+                "portability_audio": "Stay calm and provide support to ease their anxiety."
+            }
+        ]
+    }
+]
