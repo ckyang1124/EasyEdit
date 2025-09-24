@@ -1,0 +1,1412 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nKorean\nChinese\nGerman\nEnglish",
+            "answer": "German",
+            "original_answer": "Chinese",
+            "transcription": "小琴要一個哥哥的詞,那還好",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nGerman\nKorean\nChinese",
+            "answer": "German",
+            "transcription": "小琴要一個哥哥的詞,那還好",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nKorean\nChinese\nGerman\nEnglish",
+            "answer": "German",
+            "transcription": "乘客也可以使用手机扫把支付成成",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nGerman\nKorean\nChinese",
+            "answer": "German",
+            "transcription": "乘客也可以使用手机扫把支付成成",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1091_DFA_DIS_XX.wav",
+            "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nangry\nsad\nhappy",
+            "answer": "disgust",
+            "transcription": "Don't forget a jacket.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_19562559.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nChinese\nGerman\nSpanish\nEnglish",
+            "answer": "English",
+            "transcription": "The Mold Committee reported three years later.",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_33974641.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nItalian\nGerman\nSpanish\nChinese",
+            "answer": "German",
+            "transcription": "Am Schluss des Romans kündigt Olga per Telefon ihren Suizid an.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-VowelHeight/kub-000-008_6819_19583.wav",
+            "question": "From the audio, which contains 3 phones, please name the height of the vowel in the middle. Choose one phone from the following: close, mid, or open.",
+            "answer": "open",
+            "transcription": "buck",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following is true about any system that undergoes a reversible thermodynamic process?\n\nOptions:\nThere are no changes in the internal energy of the system.\nThe temperature of the system remains constant during the process.\nThe entropy of the system and its environment remains unchanged.\nThe entropy of the system and its environment must increase.",
+            "answer": "The entropy of the system and its environment remains unchanged.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+            "question": "Given the language spoken in this audio, which of the listed literary classics was originally authored in this language?\n\nOptions:\nThe Wind-Up Bird Chronicle\nZeno's Conscience\nThe Sorrows of Young Werther\nJourney to the West",
+            "answer": "The Sorrows of Young Werther",
+            "transcription": "小琴要一個哥哥的詞,那還好",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "original_answer": "angry",
+            "transcription": "It's 11 o'clock.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "sad",
+            "transcription": "It's 11 o'clock.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_ITH_ANG_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nfear\nsad\nangry",
+            "answer": "sad",
+            "transcription": "I think I have a doctor's appointment.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21367755.wav",
+            "question": "From the provided audio recording, recognize the speaker's gender.\n\nOptions:\nMale\nFemale",
+            "answer": "Female",
+            "transcription": "The inhabitants would have preferred to remain as independent municipalities.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1065_DFA_DIS_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nangry\ndisgust\nfear",
+            "answer": "disgust",
+            "transcription": "Don't forget a jacket.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1042_DFA_SAD_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\nsad\ndisgust\nfear",
+            "answer": "sad",
+            "transcription": "Don't forget a jacket.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-InteriorAndDomesticSounds/3-132830-A-32.wav",
+            "question": "The job is to classify the sounds associated with the environment. The answer could be door or wood knock, mouse click, keyboard typing, door wood creaks, can opening, washing machine, vacuum cleaner, clock alarm, clock tick, or glass breaking.",
+            "answer": "keyboard typing",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The sign of the charge carriers in a doped semiconductor can be deduced by measuring which of the following properties?\n\nOptions:\nMagnetic susceptibility\nHall coefficient\nElectrical resistivity\nThermal conductivity",
+            "answer": "Hall coefficient",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1027_IEO_ANG_MD.wav",
+            "question": "What facial expression most aligns with the emotion in the recording?\n\nOptions:\nEyes crinkling with an open-mouthed laugh\nSquinted eyes and a pinched nose\nTightly pressed lips with glaring eyes\nWrinkled forehead and a forlorn expression",
+            "answer": "Wrinkled forehead and a forlorn expression",
+            "transcription": "It's 11 o'clock.",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "German",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "Femal",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ncow",
+            "answer": "sheep",
+            "original_answer": "cow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ncow\ncrow\npig\nsheep",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "From the following list of animals, which one do you think is most likely to be the source of the sound captured in the provided audio file, based on the characteristics and tone of the sound you hear?\n\nOptions:\ncrow\npig\nsheep\ncow",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_101.wav",
+            "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ncow\ncrow\npig\nsheep",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_19489627.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nEnglish\nFrench\nGerman\nItalian",
+            "answer": "English",
+            "transcription": "For weeks Greenberg slept upright, the only way to tolerate the excruciating headaches.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_31.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\ndog\ncow\ncrow",
+            "answer": "hen",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_5.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nsheep\ndog\nhen\nfrog",
+            "answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEGenreClassification_MTG-Genre/track_0344327.wav",
+            "question": "Identify the correct genre(s) for the provided music. Select from 80s, rnb, jazzfusion, pop, improvisation, electropop, 60s, symphonic, electronic, dubstep, club, rap, country, popfolk, house, experimental, breakbeat, progressive, choir, edm, 90s, orchestral, downtempo, classicrock, alternative, fusion, easylistening, swing, dance, rock, medieval, funk, disco, techno, metal, hiphop, grunge, poprock, singersongwriter, eurodance, hard, worldfusion, triphop, minimal, soul, soundtrack, trance, lounge, rocknroll, synthpop, atmospheric, latin, instrumentalpop, indie, idm, contemporary, darkwave, electronica, celtic, postrock, newage, newwave, punkrock, chillout, drumnbass, groove, classical, bossanova, 70s, acidjazz, alternativerock, darkambient, jazz, dub, psychedelic, TAGS, industrial, instrumentalrock, ambient, hardrock, folk, ethno, bluesrock, world, chanson, reggae, blues, deephouse, and multiple answers may be correct.",
+            "answer": "electronic",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "_______, where actors are convinced that their actions harms nobody, _______ where actors argue that their norm violation is an attempt to realize higher-order values and ________ , where actors argue they are owed something, are all strategies for justifying or denying unethical behaviour.\n\nOptions:\nAppeal to higher loyalties, Denial of injury, Metaphor of the ledger\nAppeal to higher loyalties, Metaphor of the ledger, Denial of injury\nDenial of injury, Appeal to higher loyalties, Metaphor of the ledger\nDenial of injury, Metaphor of the ledger, Appeal to higher loyalties,",
+            "answer": "Denial of injury, Appeal to higher loyalties, Metaphor of the ledger",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+            "question": "Reflecting on the audio provided, which of the listed sounds do you think most closely resembles the vocalization of this animal?\n\nOptions:\nBarking\nClucking\nChirping\nBleating",
+            "answer": "Bleating",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": " girl English is the language spoken by the speaker. The speaker's accent and pronunciation suggest that he is a non-native English speaker, possibly with a German accent.",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " Frankly, I can't determine the speaker's gender from the provided audio snippet. The audio is too short and doesn't contain any distinctive vocal characteristics that would allow me to make an accurate determination.",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": " girl. girl",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\npig\nhen\ncrow",
+            "answer": "crow",
+            "original_answer": "dog",
+            "transcription": "NO!",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncrow\nhen\npig",
+            "answer": "crow",
+            "transcription": "NO!",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_63.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ndog\ncrow\nhen\npig",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1023_IWW_DIS_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+            "answer": "disgust",
+            "transcription": "I wonder what this is about.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_42.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nfrog\ncrow",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_31.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nsheep\ncrow\nfrog\npig",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-Phone/ozm-000-022_6682_22982.wav",
+            "question": "Listen to the audio clip, which consists of 3 phones, and please determine the phone in the middle. The phone could be a, l, w, i, n, y, b, o, s, d̠, ʒ, õ, m, j, ɣ, ɯ, f, u, ɔ, ŋ, ə, t, t̠, ʃ, ʔ, ɲ, r, z, d, ɡ, e, k, ø, v, ɛ, ɡ͡b, p, ɹ̝, ʋ, h, ɹ, k͡p, x, nʲ, ŋ̆, ɪ, kʲ, ɛ̞, æ, ɺʲ, tʲ, ʊ̆, oː, ă, ʊ, ĕe, fʲ, zʲ, pʲ, uː, ʒʲ, xʲ, ɾ, rʲ, ŋʲ, ɡʲ, d͡ʒ, ăa, lʲ, æ̆æ, sʲ, ʃʲ, bʲ, iː, r̆, d͡ʒʲ, ŭu, eĕ, t͡sʲ, m̆ , t͡ʃʲ, dʲ, æ̆, ɺ, ɾʲ, mʲ, uŭ, eː, ŏo, d͡z, t͡ʃ, ĭ, n̆, iĭ, oŏ, vʲ, t͡s, aː, aă, ææ̆, ɔ̆, ĭ, æː, ĭi, hʲ, ĭi, d͡zʲ, ɪ̆, d̪, r̥, t̪, n̪, ʐ, ç, ʎ, ɖ, ʈ, ʂ, l̥, ʡ, ʜ, ʕ, kʼʲ, ħ, aˤ̱, æˤ̱, qʰʷˤ, ʃʷ, ɡʷ, t̄, tʃ, t͡ʃʷ, kʼ, t͡ʃʰ, t͡ʃ ̄, pʼ, χ, uˁ̠, kʰʷ, qʷ, mː, ɨ, ɢ, m̥, ɢʲ, kʰʲ, n̥, tʰ, kʰ, lː, rː, nː, ʁ, pː, ʌ, r̝, ɗ, ɔː, k̚, ɔ̃, ã, wː, ɔ̃ː, ũ, p̚, ɯː, t̚, k̚\t, ə̃, pʰ, õː, ɑ̃, ĩ, ɑ, ạː, ụ, a˞, e˞, o˞, ọː, o˞ː, ụː, u˞ː, ẹː, e˞ː, n̩, ɑː, ɫ, ɛ̃, tʼ, ɑ̃ː, ɬ, ĩː, d͡l, ɪ̃ː, ɛː, ẽː, ɑ̤, ɛ̤ː, ɡ̃, ɪ̃, ʌ̃ː, ɛ̈, ɘ, ɜ, ä, t͡ʃʼ, ˀa, ɤ̈, χʲ, ħʷ, æ̈, œ̈, ə̆, ɜ̆, ʌ̈, ʃʰ, ʁʷ, ɥ, vː, ɡː, β, dː, fː, bː, sː, tː, kː, ŋː, ɲː, zː, ʏ, ʉ, ʎ̥, p͡t, b͡d, w̝, mʷ, ɮ, bʷ, ʍ, kʷ, ɓ̥, ɓ, ɗ̥, ɟ, ɽ, w̃, ŋ͡m, o̠, c, ʃ̠, ʒʷ, n̠, ŋʷ, ð, s̪, ẽ, a̜, ẽ, ɱ, ɫ̩, ɦ, ɑʊ, ə͡ɯ, ʈʰ, ɭː, t̪ʰ, dʰ, ɭ, ɳː, gː, g, ɖʰ, ɵ, bʰ, ʈː, ɳ, n̪ː, ɖː, aʰ, gʰ, jː, d͡ʒʰ, s̴ː, ʒː, ðː, t̴, l̴ː, q, hː, d̴, χː, d̪ː, s̴, d̴ː, ʋː, t̪ː, θ, z̴, ʔː, ɨː, ʃː, ʕː, ʁː, z̴ː, s̴ , u̥, ə̥, ãⁿ, i̥, ɪ̥, e̥, uʰ, ʏː, ɪː, ð̥, ɔʰ, œ, b̥, ɛʰ, yʰ, ʏʰ, œː, iʰ, cʰ, r̥ː, ɡ̥, ŋ̥, ɟː, d̥, yː, cː, v̥, ũː, ɛ̃ː, j̃, ãː, k'ː, m', k', ʕʷ, n'ː, j', t͡ɬ', n', p', q'ʷ, q', w', s̙, t͡s', a̙, t'ː, ʕ'ʷ, r'ː, k'ʷ, ʕʷː, l', k'ʷː, t', ə̙, m'ː, t͡ɬ'ː, χʷ, xʷ, l̙, ɹ̩, øː, ɛ̝, o̝, ʌ̃, e̝, ɕ, z̩, s̩, ŋ̩, t͡sʰ, m̩, ɕʰ, tˢ, cˢ, s̄, t͡ɬʼ, tʷʼ, kʷʼ, qʼ, t͡ɬ, sʼ, kʷʰ, zʷ, qʷʼ, qʰ, h̃, t͡sʼ, t͡sʷʰ, χ̄, l̪, ɞ, l̪ː, t̪ʲ, bʰː, s̥, dʰː, d̪ʰː, mʰ, tʰː, zʰ, d͡ʒː, kʰː, t̪ʰː, nʰ, pʰː, gʰː, ɕʷ, h̩͡ŋ, o̤, ɤː, a̤, o̤ː, i̤ː, ɯ̤, ʌ̤, ṳː, ṳ, ɔ̤, ɸ, ðʲ, rˠ, tʲʰ, ʊː, ɛ̃ʰ, ʑ, æ̃ː, bˀ, t̟, dˀ, bˀː, eɪ, oʊ, t , aɪ, aʊ, ɔːɪ, œɪ, aːʊ, ā, ʄ, a̰, ʊ̃, ɪ̰, ʊ̰̃, ḛ, ʊ̰, ɲ̥, sʰ, ḭ, æ̃, o̰, ɛ̰, ɪ̰̃, ɔ̰, ɛ̰̃, j͡a, w͡ɛ, w͡a, j͡ɛ, l̩, ɾ̥, kʲʰ, l̩ , ɕʼ, ʔʷ, qʰʷ, ɻ, ɖ̪, ʔ̚, a̠, ū, ē, æ̟, w̰, ɨ̠, bᵐ, p˭, ī, i̠, dⁿ, ɨ̠ː, ɛ̄, ɛ̠, tⁿ, ō, ʔ˭, a̱, ɑ̝, u̝, ɑ̞, xː, çː, a̘, n̤, ỹ, ʑʷ, ɤ, ɡ͡m, x͡w, h͡w, h̩, e ͮ, ə ͬ, a͡i, u͡i, ü, ɻ̥, j̥, m̥ʰ, n̥ʰ, p͡f, ӕ, ӕː, ʀ, p͡ʃ, z͡m, zˤ, rˤ, d̠ˤ, qː, t͡ʃː, hˤ, tˤː, ʊ̟, i̯, ə̟, ə̯, ʊ̠, ḻ, ṉ, a̝, ɔɪ, k͡b, o̞, ʊɪ, e̞, u̞, ɚ, d̪̤ʱ, ã, b̤ʱ, ɖ̤ʱ, d͡ʒ̤ʱ, ɽ̤ʱ, ɡ̤ʱ, z̃, i̙, ṽ, u̙, o̙, ʃ̃, v̩, ɪ̱, v̩̱, tʷ, dʷ, pʷ, r̟, r̠, ɒ, ɒː, θː, or ɡʰ.",
+            "answer": "ɔ",
+            "transcription": "안녕",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "_______________ is a popular tool used for network analysis in multiprotocol diverse network.\n\nOptions:\nSnort\nSuperScan\nBurp Suit\nEtterPeak",
+            "answer": "EtterPeak",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_123.wav",
+            "question": "From the listed locomotion types, which one matches the typical movement of the animal in the sound?\n\nOptions:\nFlying\nHopping\nClimbing\nSwimming",
+            "answer": "Flying",
+            "transcription": "NO!",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": " William Jones reported three years later.",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " William woman is speaking in the audio recording. The speaker's voice is described as having a \"male\" tone, which is typically associated with female speakers in some cultures.",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": " William, female chickens are known to make a variety of sounds, including clucking, chirping, and crowing. woman. woman. woman. woman. The sound captured in the provided audio recording is most likely a crowing sound, which is a characteristic vocalization of chickens. woman.",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\nfrog\nsheep\ncat",
+            "answer": "frog",
+            "original_answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_139.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\nfrog\nsheep\ncat",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_139.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\ncat\nfrog\nsheep",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19984718.wav",
+            "question": "Identify the speaker's gender.\n\nOptions:\nMale\nFemale",
+            "answer": "Female",
+            "transcription": "The Finns and others called much of the area Copper Island.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_31.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_66.wav",
+            "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\ncat\nfrog\nrooster\ndog",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SoundEffectDetection_RemFx/audio343.wav",
+            "question": "Listen and determine which of these audio effects has been applied: 'Chorus', 'Distortion', 'Delay', 'Reverb', 'Compressor'.",
+            "answer": "Compressor",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which of the following statements about floating-point arithmetic is NOT true?\n\nOptions:\nIt is inherently nonassociative because some numbers have no exact representation.\nIt is inherently nonassociative because there have to be upper and lower bounds on the size of numbers.\nAssociativity can be achieved with appropriate roundoff conventions.\nSome rational numbers have no exact representation.",
+            "answer": "Associativity can be achieved with appropriate roundoff conventions.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_166.wav",
+            "question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nWebbed feet\nScales\nWings\nFeathers",
+            "answer": "Webbed feet",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "froggy English. The speaker is speaking in English, with a German accent.",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-Famale\n kvinn",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "frog\ncrow",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-Famale\n Female is the correct answer. The speaker's voice is described as having a male tone, but the speaker is referred to as a \"she\" in the description, indicating that the speaker is a female.",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nfrog\nsheep\nhen\npig",
+            "answer": "hen",
+            "original_answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_36.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nfrog\nsheep\nhen\npig",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_36.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nsheep\nfrog\nhen",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_23395164.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nKorean\nGerman\nSpanish\nItalian",
+            "answer": "Spanish",
+            "transcription": "La catedral será uno de los edificios más altos de Pristina cuando sea completada.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_5.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nrooster\ncow\ndog\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_5.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncow\ncrow\nhen\ndog",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07298_011_Device02_Distance13_Dialect00.wav",
+            "question": "Do you have information about how far the speaker is from the microphone? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "4.0m",
+            "transcription": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Which statement about an atom is not true:\n\nOptions:\nThe nucleus contains most of the atom’s mass but almost none of its volume.\nA neutral atom always has equal numbers of electrons and protons.\nA neutral atom always has equal numbers of neutrons and protons.\nThe electrons can only orbit at particular energy levels.",
+            "answer": "A neutral atom always has equal numbers of neutrons and protons.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_5.wav",
+            "question": "From a biological taxonomy perspective, which of these animals is most closest to the animal in the audio clip?\n\nOptions:\nnorthern bobwhite\nblood pheasant\nvulturine guineafowl\nwhite-breasted guineafowl",
+            "answer": "blood pheasant",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "henhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " William woman female female woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman woman",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "hencrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " William femalecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nEnglish\nKorean",
+            "answer": "Spanish",
+            "original_answer": "Korean",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nSpanish\nKorean",
+            "answer": "Spanish",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Carefully listen to the provided speech clip and evaluate the language spoken by the individual. Select the answer that best represents the language used in the audio.\n\nOptions:\nChinese\nSpanish\nEnglish\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nSpanish\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1069_WSI_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nhappy\ndisgust\nfear\nsad",
+            "answer": "disgust",
+            "transcription": "We'll stop in a couple of minutes.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_21883920.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nGerman\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "Such conditions occur notably when the bedrock is limestone or recently formed volcanic lava.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_23818648.wav",
+            "question": "From the audio provided, which language is spoken?\n\nOptions:\nSpanish\nJapanese\nEnglish\nGerman",
+            "answer": "Spanish",
+            "transcription": "Non necessariamente si necessita un nucleo para usar en la computadora.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/m0561_1_sigh.wav",
+            "question": "Label human vocal sounds into categories such as Sniff, Cough, Laughter, Throat clearing, Sigh, and Sneeze.",
+            "answer": "Sigh",
+            "transcription": "Ah.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "To verify a digital signature we need the\n\nOptions:\nSender’s Private key\nSender’s Public key\nReceiver’s Private key\nReceiver’s Public key",
+            "answer": "Sender’s Public key",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438717.wav",
+            "question": "Among the figures provided, who most likely came from a country that officially recognizes the audio’s language?\n\nOptions:\nCai Lun\nPablo Neruda\nJean-Bédel Bokassa\nMahatma Gandhi",
+            "answer": "Pablo Neruda",
+            "transcription": "더구나 늙은 할머니는 젊은 어머니를 질투하는 생각이 많았다",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "aprhraprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhenaprhen",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-Fражд kvinn Womanapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr Femaleapr",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "aprhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhenhen",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-Famalecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "original_answer": "male",
+            "transcription": "All winners are highlighted.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "transcription": "All winners are highlighted.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nmale\nfemale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_150709.wav",
+            "question": "In this task, you will listen to a short audio clip and identify the speaker's gender. Select the option that best fits your opinion.\n\nOptions:\nfemale\nmale",
+            "answer": "female",
+            "transcription": "The following night, the boy appeared at the alchemist's tent with a horse.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_36016276.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nJapanese\nSpanish\nEnglish\nFrench",
+            "answer": "English",
+            "transcription": "She was the sister of actress Freddie Washington.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_21367754.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "The Second Boer War Battle of Model River took place here.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsClassification_BeijingOperaPercussion/222266__ajaysm__naobo-30.wav",
+            "question": "Identify whether the audio corresponds to Bangu, Naobo, Daluo, or Xiaoluo based on its percussion characteristics.",
+            "answer": "naobo",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "For how many positive integers k does the ordinary decimal representation of the integer k! end in exactly 99 zeros?\n\nOptions:\nNone\nOne\nFour\nFive",
+            "answer": "Five",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31536559.wav",
+            "question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nBillie Jean King\nWinston Churchill",
+            "answer": "Billie Jean King",
+            "transcription": "All winners are highlighted.",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": " seksicrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtoothcrowichtooth",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-F�erkenfemalecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "erkenfemalecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-Femailecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nItalian\nGerman\nJapanese\nFrench",
+            "answer": "Japanese",
+            "original_answer": "French",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nGerman\nItalian\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nItalian\nGerman\nJapanese\nFrench",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_17316307.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nGerman\nItalian\nFrench\nJapanese",
+            "answer": "Japanese",
+            "transcription": "Mais vous ne pouvez pas nier ces deux objectifs.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1036_TAI_SAD_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\ndisgust\nangry\nsad",
+            "answer": "sad",
+            "transcription": "The plane is almost full.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/it_test_0_common_voice_it_20003243.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nKorean\nSpanish\nItalian",
+            "answer": "Italian",
+            "transcription": "è utilizzata da lavoratori che raggiungono industrie uffici in zona",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38954212.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nItalian\nJapanese\nGerman\nChinese",
+            "answer": "Japanese",
+            "transcription": "まさか主人が裏口から帰るはずはありませんね。しかもその裏口を見張っていた隊員も誰も通らなかったと言っているのです。",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-VowelHeight/dan-001-007_6174_19604.wav",
+            "question": "Listen to the audio clip, which consists of 3 phones, and identify the height of the vowel in the middle. The phone could be close, mid, or open.",
+            "answer": "open",
+            "transcription": "Can you?",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A string of fixed tension and linear mass density is attached to a vibrating speaker. It is observed that a speaker frequency of 60 Hz does not produce standing waves in the string. Which explanation for this phenomenon is correct?\n\nOptions:\nThe string length is not a multiple of half the wavelength of the wave.\nThe wave speed on the string is fixed.\n60 Hz is in the lowest range of audible sound.\nThe wavelength of the wave produced by the speaker is equal to the speed of waves on the string divided by 60 Hz.",
+            "answer": "The string length is not a multiple of half the wavelength of the wave.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_21782932.wav",
+            "question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nBJT\nBKT\nDELE\nHSK",
+            "answer": "BJT",
+            "transcription": "Ele o si diverse entre diverse comuniteti de communs.",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "ichtscaleowellemarksemarksemarksemarksemarksemarksenglish2989''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " seksiumer \" \" Sweeper Sweeper''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "ichtowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": " seksiergus 'inho''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nhappy\ndisgust\nangry",
+            "answer": "disgust",
+            "original_answer": "happy",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+            "answer": "disgust",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nhappy\ndisgust\nangry",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+            "answer": "disgust",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19489627.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nFemale\nMale",
+            "answer": "Female",
+            "transcription": "For weeks Greenberg slept upright, the only way to tolerate the excruciating headaches.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia267_utt8.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nsad\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "It's a steppity step and jazz hands.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1029_ITS_DIS_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nhappy\ndisgust\nsad\nfear",
+            "answer": "disgust",
+            "transcription": "I think I've seen this before.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEKeyDetection_Giantstepskey/4359736.wav",
+            "question": "Determine the key of this song. Your choices are: 'F major', 'A minor', 'Ab major', 'E minor', 'Db minor', 'Gb major', 'Bb major', 'G major', 'D major', 'B minor', 'G minor', 'Ab minor', 'D minor', 'C major', 'Eb minor', 'F minor', 'B major', 'C minor', 'A major', 'Db major', 'Eb major', 'Gb minor', 'E major'.",
+            "answer": "F minor",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Habermas distinguishes between 'law as medium' and 'law as institution'. Which statement below most accurately describes this distinction?\n\nOptions:\nLaw as medium' describes law as a body of formal, general rules that control the state and the economy; 'law as institution' inhabits the 'lifeworld' and expresses its shared values and norms in institutional form.\nLaw as medium' consists of the manner in which law is presented by the media; 'law as institution' describes the courts.\nLaw as medium' concerns the manner in which the law expresses its rules in simplified terms; 'law as institution' refers to the formal declaration of laws by legislative bodies.\nLaw as medium' is defined as the intermediate stage of legal development; 'law as institution' is the advanced stage.",
+            "answer": "Law as medium' describes law as a body of formal, general rules that control the state and the economy; 'law as institution' inhabits the 'lifeworld' and expresses its shared values and norms in institutional form.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia185_utt3.wav",
+            "question": "Which sentence best reflects the same emotion identified in the audio?\n\nOptions:\nI’m feeling so down, like nothing can lift my spirits.\nHow dare they treat me so unfairly like this!\nI can’t even look at this without feeling uncomfortable.\nI’m so excited, I just can’t contain my happiness!",
+            "answer": "I can’t even look at this without feeling uncomfortable.",
+            "transcription": "Hey, Ross, listen, you wanna go see that new IMAX movie on tide pools?",
+            "update": false
+        },
+        "pre_edit": {},
+        "post_edit": [
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "ichtelayounggirlgirlgirlgirlgirlgirl",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "anou'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "ichtяч odp alikecrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrowcrow",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "-F'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            },
+            {
+                "reliability": "",
+                "generality_type_0": "",
+                "generality_type_1": "",
+                "generality_type_2": "",
+                "locality_audio_type_0": "",
+                "locality_audio_type_1": "",
+                "locality_audio_type_2": "",
+                "locality_audio_type_3": "",
+                "locality_text": "",
+                "portability_audio": ""
+            }
+        ]
+    }
+]
