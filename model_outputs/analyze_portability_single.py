@@ -65,6 +65,11 @@ def parse_args():
         default="../../our_knowledge_editing/portability/audio/classified_question/",
         help="Directory containing portability question types classification files.",
     )
+    parser.add_argument(
+        "--print_details",
+        action="store_true",
+        help="Whether to print detailed results for each question type.",
+    )
     return parser.parse_args()
 
 
@@ -95,12 +100,24 @@ if __name__ == "__main__":
                 f"Unexpected accuracy value: {item['portability_evaluation']['accuracy']}"
             )
 
-    print(f"Analysis results for {input_file}:\n")
-    for question_type, res in results.items():
+    if args.print_details:
+        print(f"Analysis results for {input_file}:\n")
+    all_accs = []
+    all_total = 0
+    all_correct = 0
+    for question_type, res in sorted(results.items()):
         total = res["total"]
         correct = res["correct"]
         accuracy = correct / total if total > 0 else 0.0
-        print(
-            f"Type: {question_type}, Total: {total}, Correct: {correct}, Accuracy: {accuracy:.2%}"
-        )
-    print("-----------------------------------")
+        all_accs.append(accuracy * 100)
+        if args.print_details:
+            print(
+                f"Type: {question_type}, Total: {total}, Correct: {correct}, Accuracy: {accuracy:.2%}"
+            )
+        all_total += total
+        all_correct += correct
+    print("\t".join([f"{acc:.2f}" for acc in all_accs]), end="\t")
+    if args.print_details:
+        avg_accuracy = all_correct / all_total if all_total > 0 else 0.0
+        print(f"\nAvg: {avg_accuracy:.2%}")
+        print("\n-----------------------------------")
