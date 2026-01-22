@@ -618,20 +618,277 @@ class DeSTA25AudioDataset(BaseDataset):
         }
 
         return dict_to(collated_batch, self.config.device)
+
+
             
+class AudioFlamingo3Dataset(BaseDataset):
+    def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, testing: bool = False, *args, **kwargs):
+        # get processor
+        self.processor = AutoProcessor.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=config.cache_dir)
+
+        audio_root = config.audio_root
+        super().__init__(audio_root, [data_dir], testing)
+
+        self.config = config
+        self.max_length = 256
+        
+        self.testing = testing
+
+        # self.prompt = "Question: {} Short answer:"
+        if size is not None:
+            self.data = self.data[:size]  
+
+    def __getitem__(self, index):
+        return self.data[index]
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def get_edit_labels(self, labels):
+        return labels.masked_fill(labels == self.processor.tokenizer.pad_token_id, -100)
+
+    def create_message(self, sample):
+        """
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = [
+            {
+                "role": "user", 
+                "content": (
+                    ([{"type": "audio", "path": sample["audio_path"]}] if sample["audio_path"] is not None else [])
+                    + [{"type": "text", "text": sample["question"]}]
+                )
+            }
+        ]
+        return message
+    
+    def create_message_with_response(self, sample):
+        """
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = [
+            {
+                "role": "user", 
+                "content": (
+                    ([{"type": "audio", "path": sample["audio_path"]}] if sample["audio_path"] is not None else [])
+                    + [{"type": "text", "text": sample["question"]}]
+                )
+            },
+            {
+                "role": "assistant",
+                "content": [{"type": "text", "text": sample["answer"]}]
+            }
+        ]
+        return message
+    
+    def generate_response(self, model, sample):
+        """
+        This is used only during testing to generate responses.
+        sample: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        """
+        message = self.create_message(sample)
+        inputs = self.processor.apply_chat_template(
+            message,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_dict=True,
+        ).to(model.device)
+        
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs, 
+                max_new_tokens=self.max_length, 
+                do_sample=False,
+                temperature=None,
+                top_p=None,
+            )
+        
+        response = self.processor.batch_decode(
+            outputs[:, inputs.input_ids.shape[1] :], skip_special_tokens=True
+        )[0]
+        return response
+    
+    def generate_ike_response(self, model, samples, edits: List[Tuple[str, str]]):
+        """
+        This is used only during testing to generate responses with IKE method.
+        samples is a list of dict like this: {
+            "audio_path": "path/to/audio/file" or None,
+            "transcription": "What is the transcription?" or None,
+            "question": "What is the question?",
+            "answer": "What is the answer?"
+        }
+        For samples[0:-1], we use the ground truth answer as context to help generate the response for samples[-1],
+        so samples[-1] will not contain the answer in the input.
+        """
+        edit_strs = [f"'{pre}' → '{post}'" for pre, post in edits]
+        final_message = [{
+            "role": "system",
+            "content": [
+                {
+                    "type": "text", 
+                    "text": IKE_SYSTEM_PROMPT.format(edits="\n".join(edit_strs))
+                }
+            ]
+        }]
+        for i, sample in enumerate(samples):
+            if i < len(samples) - 1:
+                message = self.create_message_with_response(sample)
+            else:
+                message = self.create_message(sample)    
+            final_message = final_message + message
+            
+        inputs = self.processor.apply_chat_template(
+            final_message,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_dict=True,
+        ).to(model.device)
+        
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs, 
+                max_new_tokens=self.max_length, 
+                do_sample=False,
+                temperature=None,
+                top_p=None,
+            )
+        
+        response = self.processor.batch_decode(
+            outputs[:, inputs.input_ids.shape[1] :], skip_special_tokens=True
+        )[0]
+        return response
+
+    def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
+        prompts = [self.create_message(b[key]) for b in batch]
+        # audios = self.collect_audio_from_messages(prompts)
+        target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
+        prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
+        if append_target_to_input:
+            input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
+        else:
+            input_text = prompts_chat_template
+            
+        # print(input_text[0])
+        # if len(audios) > 0:
+        #     inputs = self.processor(
+        #         audios=audios,
+        #         text=input_text,
+        #         return_tensors="pt",
+        #         padding=True,
+        #         # max_length=self.max_length,
+        #         truncation=True,
+        #         sampling_rate=self.processor.feature_extractor.sampling_rate
+        #     )
+        # else:
+        #     inputs = self.processor.tokenizer(
+        #         input_text,
+        #         return_tensors="pt",
+        #         padding=True,
+        #         # max_length=self.max_length,
+        #         truncation=True
+        #     )
+        #     inputs['input_features'] = None
+        #     inputs['feature_attention_mask'] = None
+        
+        inputs = self.processor(
+            text=input_text,
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+        )
+        # inputs keys: input_ids, attention_mask, input_features, input_features_mask
+            
+        labels = self.processor.tokenizer(
+            target,
+            return_tensors="pt",
+            padding=True,
+            max_length=self.max_length,
+            truncation=True,
+            add_special_tokens=False
+        )["input_ids"]
+        
+        # print(self.processor.tokenizer.batch_decode(labels, skip_special_tokens=False))
+        labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
+        
+        edit = inputs
+        edit['labels'] = labels
+        
+        # Currently do not include prompts_len as the purpose of this is not clear
+        # edit['prompts_len'] = [len(self.processor.tokenizer.encode(src, add_special_tokens=False)) for src in prompts_chat_template]
+        
+        # convert edit into dict
+        edit = {k: v for k, v in edit.items()}
+
+        return edit
+
+    def collate_fn(self, batch):
+        keys = batch[0].keys()
+        collated_batch = {
+            key: self.process_and_tokenize_batch(batch, key)
+            for key in keys
+        }
+        
+
+        # cond (currently skipped as I am not sure the purpose of this)
+        # cond = self.tok(
+        #     cond,
+        #     return_tensors="pt",
+        #     padding=True,
+        #     max_length=self.max_length,
+        #     truncation=True,
+        # ).to(self.config.device)
+
+        return dict_to(collated_batch, self.config.device)
+
 
 ### test case for debugging
+# if __name__ == "__main__":
+#     import types
+#     from torch.utils.data import DataLoader
+    
+#     data_dir = "/work/b08202033/lalm-knowledge-editing/metadata/Animal.json"
+#     config = types.SimpleNamespace()
+#     config.cache_dir = "/work/b08202033/SLLM_multihop/cache"
+#     config.audio_root = "/work/b08202033/lalm-knowledge-editing/audio_data"
+#     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
+#     qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+#     # desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+#     loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
+#     # loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
+
+#     for batch in loader:
+#         for key in batch:
+#             for q in batch[key].keys():
+#                 print(f"{key} - {q}: {batch[key][q].shape if isinstance(batch[key][q], torch.Tensor) else batch[key][q]}")
+#             if q == 'labels':
+#                 print(f"Labels: {batch[key][q]}")
+#         break
+
 if __name__ == "__main__":
     import types
     from torch.utils.data import DataLoader
     
-    data_dir = "/work/b08202033/lalm-knowledge-editing/metadata/Animal.json"
+    data_dir = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
     config = types.SimpleNamespace()
-    config.cache_dir = "/work/b08202033/SLLM_multihop/cache"
-    config.audio_root = "/work/b08202033/lalm-knowledge-editing/audio_data"
+    config.cache_dir = ".cache"
+    config.audio_root = "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs"
     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
-    qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
+    qwen_dataset = AudioFlamingo3Dataset(data_dir, size=10, config=config)
     # desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
     loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
     # loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
