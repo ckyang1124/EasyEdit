@@ -19,6 +19,9 @@ from transformers import AutoProcessor, AutoTokenizer
 import librosa
 from desta.utils.audio import AudioSegment
 from desta.models.modeling_desta25 import _prepare_audio_context_and_start_positions
+import logging
+
+LOG = logging.getLogger(__name__)
 
 IKE_SYSTEM_PROMPT = """You are performing in-context knowledge editing, but only for questions about audio inputs.
 
@@ -37,6 +40,7 @@ Rules:
 """
 
 class Qwen2AudioDataset(BaseDataset):
+    # TODO: use audio= in processor rather than audios when using a newer version of transformers
     def __init__(self, data_dir: str, size:  typing.Optional[int] = None, cache_dir=None, config=None, testing: bool = False, *args, **kwargs):
         # get processor
         self.processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir=config.cache_dir)
@@ -705,7 +709,7 @@ class AudioFlamingo3Dataset(BaseDataset):
             tokenize=True,
             add_generation_prompt=True,
             return_dict=True,
-        ).to(model.device)
+        ).to(model.device).to(model.dtype)
         
         with torch.no_grad():
             outputs = model.generate(
@@ -773,62 +777,46 @@ class AudioFlamingo3Dataset(BaseDataset):
 
     def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
         prompts = [self.create_message(b[key]) for b in batch]
-        prompts_with_ans = [self.create_message_with_response(b[key]) for b in batch]
-        # audios = self.collect_audio_from_messages(prompts)
+        # prompts_with_ans = [self.create_message_with_response(b[key]) for b in batch]
         target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
         
-        if append_target_to_input:
-            # inputs = [
-            #     self.processor.apply_chat_template(
-            #         msg,
-            #         tokenize=True,
-            #         return_dict=True,
-            #     ) for msg in prompts_with_ans
-            # ] # Concat question with labels
-            inputs = self.processor.apply_chat_template(
-                prompts_with_ans,
-                tokenize=True,
-                return_dict=True,
-            )
-        else:
-            # inputs = [
-            #     self.processor.apply_chat_template(
-            #         msg,
-            #         tokenize=True,
-            #         add_generation_prompt=True,
-            #         return_dict=True,
-            #     ) for msg in prompts
-            # ] # Only question
-            inputs = self.processor.apply_chat_template(
-                prompts,
-                tokenize=True,
-                add_generation_prompt=True,
-                return_dict=True,
-            )
-            
-        
-        # inputs = self.processor(
-        #     text=input_text,
-        #     return_tensors="pt",
-        #     padding=True,
-        #     truncation=True,
-        # )
-        
         # inputs keys: input_ids, attention_mask, input_features, input_features_mask
-            
-        labels = self.processor.tokenizer(
+        
+        tokenize_prompts = self.processor.apply_chat_template(
+            prompts,
+            tokenize=True,
+            add_generation_prompt=True,
+            return_dict=True,
+        )
+        
+        tokenized_target = self.processor.tokenizer(
             target,
             return_tensors="pt",
             padding=True,
             max_length=self.max_length,
             truncation=True,
             add_special_tokens=False
-        )["input_ids"]
+        )
         
-        # print(self.processor.tokenizer.batch_decode(labels, skip_special_tokens=False))
-        labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
+        if append_target_to_input:
+            input_ids = torch.cat([tokenize_prompts['input_ids'], tokenized_target['input_ids']], dim=-1)
+            attention_mask = torch.cat([tokenize_prompts['attention_mask'], tokenized_target['attention_mask']], dim=-1)
+            input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
+            input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
+        else:
+            input_ids = tokenize_prompts['input_ids']
+            attention_mask = tokenize_prompts['attention_mask']
+            input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
+            input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
         
-        edit = inputs
+        labels = self.get_edit_labels(tokenized_target["input_ids"])  # Mask padding tokens with -100 for loss calculation
+        
+        edit = {
+            'input_ids': input_ids,
+            'attention_mask': attention_mask,
+            'input_features': input_features,
+            'input_features_mask': input_features_mask,
+        }
         edit['labels'] = labels
         
         # set input_features and input_features_mask to None if audio_path is None
@@ -900,9 +888,10 @@ if __name__ == "__main__":
     config.audio_root = "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs"
     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
-    qwen_dataset = AudioFlamingo3Dataset(data_dir, size=10, config=config)
+    af3_dataset = AudioFlamingo3Dataset(data_dir, size=10, config=config)
     # desta_dataset = DeSTA25AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
-    loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
+    loader = DataLoader(af3_dataset, batch_size=2, collate_fn=af3_dataset.collate_fn)
+    # loader = DataLoader(qwen_dataset, batch_size=2, collate_fn=qwen_dataset.collate_fn)
     # loader = DataLoader(desta_dataset, batch_size=2, collate_fn=desta_dataset.collate_fn)
 
     for batch in loader:
