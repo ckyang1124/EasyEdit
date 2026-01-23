@@ -16,6 +16,7 @@ import typing
 import torch
 import transformers
 from transformers import AutoProcessor, AutoTokenizer
+from transformers.audio_utils import load_audio
 import librosa
 from desta.utils.audio import AudioSegment
 from desta.models.modeling_desta25 import _prepare_audio_context_and_start_positions
@@ -693,6 +694,23 @@ class AudioFlamingo3Dataset(BaseDataset):
         ]
         return message
     
+    def collect_audio_from_messages(self, messages):
+        audios = []
+        for conversation in messages:
+            for message in conversation:
+                if isinstance(message["content"], list):
+                    for ele in message["content"]:
+                        if ele["type"] == "audio":
+                            if ele['path'] is not None:
+                                # None for no audio
+                                audios.append(
+                                    load_audio(
+                                        ele['path'],
+                                        sampling_rate=self.processor.feature_extractor.sampling_rate
+                                    )
+                                )
+        return audios
+    
     def generate_response(self, model, sample):
         """
         This is used only during testing to generate responses.
@@ -775,56 +793,120 @@ class AudioFlamingo3Dataset(BaseDataset):
         )[0]
         return response
 
+    # def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
+    #     prompts = [self.create_message(b[key]) for b in batch]
+    #     # prompts_with_ans = [self.create_message_with_response(b[key]) for b in batch]
+    #     target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
+        
+    #     # inputs keys: input_ids, attention_mask, input_features, input_features_mask
+        
+    #     tokenize_prompts = self.processor.apply_chat_template(
+    #         prompts,
+    #         tokenize=True,
+    #         add_generation_prompt=True,
+    #         return_dict=True,
+    #     )
+        
+    #     tokenized_target = self.processor.tokenizer(
+    #         target,
+    #         return_tensors="pt",
+    #         padding=True,
+    #         max_length=self.max_length,
+    #         truncation=True,
+    #         add_special_tokens=False
+    #     )
+        
+    #     if append_target_to_input:
+    #         input_ids = torch.cat([tokenize_prompts['input_ids'], tokenized_target['input_ids']], dim=-1)
+    #         attention_mask = torch.cat([tokenize_prompts['attention_mask'], tokenized_target['attention_mask']], dim=-1)
+    #         input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
+    #         input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
+    #     else:
+    #         input_ids = tokenize_prompts['input_ids']
+    #         attention_mask = tokenize_prompts['attention_mask']
+    #         input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
+    #         input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
+        
+    #     labels = self.get_edit_labels(tokenized_target["input_ids"])  # Mask padding tokens with -100 for loss calculation
+        
+    #     edit = {
+    #         'input_ids': input_ids,
+    #         'attention_mask': attention_mask,
+    #         'input_features': input_features,
+    #         'input_features_mask': input_features_mask,
+    #     }
+    #     edit['labels'] = labels
+        
+    #     # set input_features and input_features_mask to None if audio_path is None
+    #     if all(b[key]['audio_path'] is None for b in batch):
+    #         edit['input_features'] = None
+    #         edit['input_features_mask'] = None
+    #     elif any(b[key]['audio_path'] is None for b in batch):
+    #         raise ValueError("Mixed audio and non-audio samples in the same batch is not supported.")
+        
+    #     # Currently do not include prompts_len as the purpose of this is not clear
+    #     # edit['prompts_len'] = [len(self.processor.tokenizer.encode(src, add_special_tokens=False)) for src in prompts_chat_template]
+        
+    #     # convert edit into dict
+    #     edit = {k: v for k, v in edit.items()}
+
+    #     return edit
+    
     def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
         prompts = [self.create_message(b[key]) for b in batch]
-        # prompts_with_ans = [self.create_message_with_response(b[key]) for b in batch]
+        audios = self.collect_audio_from_messages(prompts)
         target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
-        
-        # inputs keys: input_ids, attention_mask, input_features, input_features_mask
-        
-        tokenize_prompts = self.processor.apply_chat_template(
-            prompts,
-            tokenize=True,
-            add_generation_prompt=True,
-            return_dict=True,
-        )
-        
-        tokenized_target = self.processor.tokenizer(
+        prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True, tokenize=False) for msg in prompts] # Only question
+        if append_target_to_input:
+            input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
+        else:
+            input_text = prompts_chat_template
+            
+        # print(input_text[0])
+        if len(audios) > 0:
+            inputs = self.processor(
+                audio=audios,
+                text=input_text,
+                return_tensors="pt",
+                padding=True,
+                # max_length=self.max_length,
+                truncation=True,
+                sampling_rate=self.processor.feature_extractor.sampling_rate
+            )
+            
+            tokenized_chat_input = self.processor.apply_chat_template(
+                prompts,
+                tokenize=True,
+                add_generation_prompt=True,
+                return_dict=True,
+            )
+            inputs["input_features"] = tokenized_chat_input["input_features"]
+            inputs["input_features_mask"] = tokenized_chat_input["input_features_mask"]
+        else:
+            inputs = self.processor.tokenizer(
+                input_text,
+                return_tensors="pt",
+                padding=True,
+                # max_length=self.max_length,
+                truncation=True
+            )
+            inputs['input_features'] = None
+            inputs['input_features_mask'] = None
+            
+        labels = self.processor.tokenizer(
             target,
             return_tensors="pt",
             padding=True,
             max_length=self.max_length,
             truncation=True,
             add_special_tokens=False
-        )
+        )["input_ids"]
         
-        if append_target_to_input:
-            input_ids = torch.cat([tokenize_prompts['input_ids'], tokenized_target['input_ids']], dim=-1)
-            attention_mask = torch.cat([tokenize_prompts['attention_mask'], tokenized_target['attention_mask']], dim=-1)
-            input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
-            input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
-        else:
-            input_ids = tokenize_prompts['input_ids']
-            attention_mask = tokenize_prompts['attention_mask']
-            input_features = tokenize_prompts['input_features'] if 'input_features' in tokenize_prompts else None
-            input_features_mask = tokenize_prompts['input_features_mask'] if 'input_features_mask' in tokenize_prompts else None
+        # print(self.processor.tokenizer.batch_decode(labels, skip_special_tokens=False))
+        labels = self.get_edit_labels(labels)  # Mask padding tokens with -100 for loss calculation
         
-        labels = self.get_edit_labels(tokenized_target["input_ids"])  # Mask padding tokens with -100 for loss calculation
-        
-        edit = {
-            'input_ids': input_ids,
-            'attention_mask': attention_mask,
-            'input_features': input_features,
-            'input_features_mask': input_features_mask,
-        }
+        edit = inputs
         edit['labels'] = labels
-        
-        # set input_features and input_features_mask to None if audio_path is None
-        if all(b[key]['audio_path'] is None for b in batch):
-            edit['input_features'] = None
-            edit['input_features_mask'] = None
-        elif any(b[key]['audio_path'] is None for b in batch):
-            raise ValueError("Mixed audio and non-audio samples in the same batch is not supported.")
         
         # Currently do not include prompts_len as the purpose of this is not clear
         # edit['prompts_len'] = [len(self.processor.tokenizer.encode(src, add_special_tokens=False)) for src in prompts_chat_template]
@@ -907,3 +989,141 @@ if __name__ == "__main__":
 
 
 
+"""
+reliability - input_ids: torch.Size([2, 235])
+reliability - attention_mask: torch.Size([2, 235])
+reliability - input_features: torch.Size([2, 128, 770])
+reliability - input_features_mask: torch.Size([2, 770])
+reliability - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_0 - input_ids: torch.Size([2, 233])
+generality_type_0 - attention_mask: torch.Size([2, 233])
+generality_type_0 - input_features: torch.Size([2, 128, 770])
+generality_type_0 - input_features_mask: torch.Size([2, 770])
+generality_type_0 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_1 - input_ids: torch.Size([2, 262])
+generality_type_1 - attention_mask: torch.Size([2, 262])
+generality_type_1 - input_features: torch.Size([2, 128, 878])
+generality_type_1 - input_features_mask: torch.Size([2, 878])
+generality_type_1 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_2 - input_ids: torch.Size([2, 260])
+generality_type_2 - attention_mask: torch.Size([2, 260])
+generality_type_2 - input_features: torch.Size([2, 128, 878])
+generality_type_2 - input_features_mask: torch.Size([2, 878])
+generality_type_2 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+locality_audio_type_0 - input_ids: torch.Size([2, 195])
+locality_audio_type_0 - attention_mask: torch.Size([2, 195])
+locality_audio_type_0 - input_features: torch.Size([2, 128, 638])
+locality_audio_type_0 - input_features_mask: torch.Size([2, 638])
+locality_audio_type_0 - labels: torch.Size([2, 2])
+Labels: tensor([[ 36476, 151645],
+        [ 42634, 151645]], device='cuda:0')
+locality_audio_type_1 - input_ids: torch.Size([2, 109])
+locality_audio_type_1 - attention_mask: torch.Size([2, 109])
+locality_audio_type_1 - input_features: torch.Size([2, 128, 254])
+locality_audio_type_1 - input_features_mask: torch.Size([2, 254])
+locality_audio_type_1 - labels: torch.Size([2, 2])
+Labels: tensor([[ 43197, 151645],
+        [ 56521, 151645]], device='cuda:0')
+locality_audio_type_2 - input_ids: torch.Size([2, 133])
+locality_audio_type_2 - attention_mask: torch.Size([2, 133])
+locality_audio_type_2 - input_features: torch.Size([2, 128, 349])
+locality_audio_type_2 - input_features_mask: torch.Size([2, 349])
+locality_audio_type_2 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+locality_audio_type_3 - input_ids: torch.Size([2, 8192])
+locality_audio_type_3 - attention_mask: torch.Size([2, 8192])
+locality_audio_type_3 - input_features: torch.Size([15, 128, 3000])
+locality_audio_type_3 - input_features_mask: torch.Size([15, 3000])
+locality_audio_type_3 - labels: torch.Size([2, 7])
+Labels: tensor([[   318,    776,   2682,    367, 151645,   -100,   -100],
+        [ 68192,   7989,   5298,  21943,    759,  21251, 151645]],
+       device='cuda:0')
+locality_text - input_ids: torch.Size([2, 103])
+locality_text - attention_mask: torch.Size([2, 103])
+locality_text - input_features: None
+locality_text - feature_attention_mask: None
+locality_text - labels: torch.Size([2, 12])
+Labels: tensor([[  2132,    374,  37209,    311,  92544,  86593,  24001,    304,    419,
+           1616,     13, 151645],
+        [  8851,  15261, 151645,   -100,   -100,   -100,   -100,   -100,   -100,
+           -100,   -100,   -100]], device='cuda:0')
+"""
+
+
+"""
+reliability - input_ids: torch.Size([2, 236])
+reliability - attention_mask: torch.Size([2, 236])
+reliability - input_features: torch.Size([2, 128, 3000])
+reliability - input_features_mask: torch.Size([2, 3000])
+reliability - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_0 - input_ids: torch.Size([2, 234])
+generality_type_0 - attention_mask: torch.Size([2, 234])
+generality_type_0 - input_features: torch.Size([2, 128, 3000])
+generality_type_0 - input_features_mask: torch.Size([2, 3000])
+generality_type_0 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_1 - input_ids: torch.Size([2, 263])
+generality_type_1 - attention_mask: torch.Size([2, 263])
+generality_type_1 - input_features: torch.Size([2, 128, 3000])
+generality_type_1 - input_features_mask: torch.Size([2, 3000])
+generality_type_1 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+generality_type_2 - input_ids: torch.Size([2, 261])
+generality_type_2 - attention_mask: torch.Size([2, 261])
+generality_type_2 - input_features: torch.Size([2, 128, 3000])
+generality_type_2 - input_features_mask: torch.Size([2, 3000])
+generality_type_2 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+locality_audio_type_0 - input_ids: torch.Size([2, 196])
+locality_audio_type_0 - attention_mask: torch.Size([2, 196])
+locality_audio_type_0 - input_features: torch.Size([2, 128, 3000])
+locality_audio_type_0 - input_features_mask: torch.Size([2, 3000])
+locality_audio_type_0 - labels: torch.Size([2, 2])
+Labels: tensor([[ 36476, 151645],
+        [ 42634, 151645]], device='cuda:0')
+locality_audio_type_1 - input_ids: torch.Size([2, 110])
+locality_audio_type_1 - attention_mask: torch.Size([2, 110])
+locality_audio_type_1 - input_features: torch.Size([2, 128, 3000])
+locality_audio_type_1 - input_features_mask: torch.Size([2, 3000])
+locality_audio_type_1 - labels: torch.Size([2, 2])
+Labels: tensor([[ 43197, 151645],
+        [ 56521, 151645]], device='cuda:0')
+locality_audio_type_2 - input_ids: torch.Size([2, 133])
+locality_audio_type_2 - attention_mask: torch.Size([2, 133])
+locality_audio_type_2 - input_features: torch.Size([2, 128, 3000])
+locality_audio_type_2 - input_features_mask: torch.Size([2, 3000])
+locality_audio_type_2 - labels: torch.Size([2, 2])
+Labels: tensor([[ 61797, 151645],
+        [ 82114, 151645]], device='cuda:0')
+locality_audio_type_3 - input_ids: torch.Size([2, 10266])
+locality_audio_type_3 - attention_mask: torch.Size([2, 10266])
+locality_audio_type_3 - input_features: torch.Size([15, 128, 3000])
+locality_audio_type_3 - input_features_mask: torch.Size([15, 3000])
+locality_audio_type_3 - labels: torch.Size([2, 7])
+Labels: tensor([[   318,    776,   2682,    367, 151645,   -100,   -100],
+        [ 68192,   7989,   5298,  21943,    759,  21251, 151645]],
+       device='cuda:0')
+locality_text - input_ids: torch.Size([2, 103])
+locality_text - attention_mask: torch.Size([2, 103])
+locality_text - input_features: None
+locality_text - input_features_mask: None
+locality_text - labels: torch.Size([2, 12])
+Labels: tensor([[  2132,    374,  37209,    311,  92544,  86593,  24001,    304,    419,
+           1616,     13, 151645],
+        [  8851,  15261, 151645,   -100,   -100,   -100,   -100,   -100,   -100,
+           -100,   -100,   -100]], device='cuda:0')
+"""
