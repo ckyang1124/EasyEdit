@@ -7,7 +7,7 @@ import tempfile
 import time
 
 import torch
-from .losses import kl_loc_loss
+from .losses import kl_loc_loss, kl_loc_loss_efficient_vram
 from omegaconf import OmegaConf
 from torch.utils.data import Dataset
 from .utils import (
@@ -186,9 +186,14 @@ class LALMTrainer(BaseTrainer):
                 }
 
             # Compute KL loss
-            kl_losses = {
-                k: kl_loc_loss(base_loc_logits[k].detach(), post_locality_logits[k], mask=kl_masks[k]) for k in base_loc_logits.keys()
-            }
+            if 'audio-flamingo' in self.config.model_name.lower():
+                kl_losses = {
+                    k: kl_loc_loss_efficient_vram(base_loc_logits[k].detach(), post_locality_logits[k], mask=kl_masks[k]) for k in base_loc_logits.keys()
+                }
+            else:
+                kl_losses = {
+                    k: kl_loc_loss(base_loc_logits[k].detach(), post_locality_logits[k], mask=kl_masks[k]) for k in base_loc_logits.keys()
+                }
             # l_loc = kl_loc_loss(base_logits.detach(), post_base_logits, mask=kl_mask)
             # l_image_loc = kl_loc_loss(base_image_logits.detach(), post_image_base_logits, mask=kl_image_mask)
 

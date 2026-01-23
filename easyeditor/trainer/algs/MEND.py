@@ -298,7 +298,14 @@ class MEND(EditableModel):
                            batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
         elif 'audio-flamingo' in self.config.model_name.lower():
             # inputs keys: input_ids, attention_mask, input_features, input_features_mask
-            outputs = self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], input_features_mask=kwargs['input_features_mask'])
+            input_features = kwargs['input_features']
+            if input_features is not None:
+                orig_dtype = input_features.dtype
+            if hasattr(self.model, 'dtype') and input_features is not None:
+                input_features = input_features.to(self.model.dtype)
+            outputs = self.model(input_ids=kwargs['input_ids'],  input_features=input_features, attention_mask=kwargs['attention_mask'], input_features_mask=kwargs['input_features_mask'])
+            if input_features is not None:
+                input_features = input_features.to(orig_dtype)
         elif 'qwen' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -365,9 +372,16 @@ class MEND(EditableModel):
             
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'audio-flamingo' in self.config.model_name.lower():
+            input_features = batch['input_features']
+            if input_features is not None:
+                orig_dtype = input_features.dtype
+            if hasattr(self.model, 'dtype') and input_features is not None:
+                input_features = input_features.to(self.model.dtype)
             outputs = _logits(
-                self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], input_features_mask=batch['input_features_mask'])
+                self.model(input_ids=batch['input_ids'],  input_features=input_features, attention_mask=batch['attention_mask'], input_features_mask=batch['input_features_mask'])
             )
+            if input_features is not None:
+                input_features = input_features.to(orig_dtype)
             # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():

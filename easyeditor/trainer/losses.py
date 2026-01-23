@@ -28,6 +28,57 @@ def kl_loc_loss(pre, post, mask=None):
     raise NotImplementedError
 
 
+def kl_loc_loss_efficient_vram(pre, post, mask=None):
+    # pre = pre.to(torch.float32)
+    # post = post.to(torch.float32)
+
+    sequence = pre.dim() == 3
+    pre_ = pre.contiguous().view(-1, pre.shape[-1])
+    post_ = post.contiguous().view(pre_.shape)
+    assert pre_.shape[0] == post_.shape[0]
+
+    if not sequence:
+        if pre_.shape[-1] == 1:  # No masking needed for binary classification
+            pre = pre.to(torch.float32)
+            post = post.to(torch.float32)
+            return (pre.sigmoid() * (F.logsigmoid(pre) - F.logsigmoid(post))).mean() + (
+                (-pre).sigmoid() * (F.logsigmoid(-pre) - F.logsigmoid(-post))
+            ).mean()
+    else:  # We have sequences of predictions; masking needed
+        if pre_.shape[-1] > 1:
+            assert mask is not None
+            mask_ = mask.view(pre_.shape[0])
+            # kl = (
+            #     pre_.softmax(-1) * (pre_.log_softmax(-1) - post_.log_softmax(-1))
+            # ).sum(-1)
+            # return (kl * mask_).sum() / mask_.sum()
+            
+            total_loss = torch.tensor(0.0).to(pre.device)
+            den = mask_.sum()
+            if den == 0:
+                return total_loss
+                
+            # Chunking to avoid OOM
+            active_indices = torch.nonzero(mask_.reshape(-1)).squeeze(-1)
+            num_active = active_indices.numel()
+            chunk_size = 1024 # Small chunk size to be safe
+            
+            for i in range(0, num_active, chunk_size):
+                chunk_indices = active_indices[i:i+chunk_size]
+                pre_chunk = pre_[chunk_indices].to(torch.float32)
+                post_chunk = post_[chunk_indices].to(torch.float32)
+                mask_chunk = mask_[chunk_indices].to(torch.float32)
+                
+                kl_per_token = (
+                    pre_chunk.softmax(-1) * (pre_chunk.log_softmax(-1) - post_chunk.log_softmax(-1))
+                ).sum(-1)
+                
+                total_loss += (kl_per_token * mask_chunk).sum()
+
+            return total_loss / den
+
+    raise NotImplementedError
+
 def binary_log_probs(pred, targ):
     neg_mask = torch.ones_like(pred)
     neg_mask[targ == 0] *= -1

@@ -46,6 +46,20 @@ def train_EFK_Qwen2Audio():
         val_set=test_ds
     )
     trainer.run()
+
+    
+def train_EFK_AudioFlamingo3():
+    hparams = EFKLALMTrainingHparams.from_hparams("hparams/TRAINING/EFK/audio-flamingo-3.yaml")
+    
+    train_ds = AudioFlamingo3Dataset(train_path, config=hparams)
+    test_ds = AudioFlamingo3Dataset(val_path, config=hparams)
+    
+    trainer = LALMTrainer(
+        config=hparams,
+        train_set=train_ds,
+        val_set=test_ds
+    )
+    trainer.run()
         
 def train_MEND_DeSTA25():
     hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/desta25-audio.yaml')
@@ -394,10 +408,11 @@ def sequential_edit_IKE_wo_examples_Qwen2Audio():
 if __name__ == "__main__":
     # train_MEND_DeSTA25()
     # train_MEND_Qwen2Audio()
-    train_MEND_AudioFlamingo3()
+    # train_MEND_AudioFlamingo3()
 
     # train_EFK_DeSTA25() 
     # train_EFK_Qwen2Audio()   
+    train_EFK_AudioFlamingo3()
     
     # Test!
     # single_edit_MEND_DeSTA25()

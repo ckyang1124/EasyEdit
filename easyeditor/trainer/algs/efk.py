@@ -16,7 +16,7 @@ import higher
 import torch
 from allennlp.modules.feedforward import FeedForward
 from allennlp.modules.seq2vec_encoders import PytorchSeq2VecWrapper
-from transformers import BartForConditionalGeneration, T5ForConditionalGeneration, Qwen2AudioForConditionalGeneration, AutoProcessor
+from transformers import BartForConditionalGeneration, T5ForConditionalGeneration, Qwen2AudioForConditionalGeneration, AutoProcessor, AudioFlamingo3ForConditionalGeneration
 from collections import deque
 from .editable_model import EditableModel
 from ..models import BertClassifier
@@ -25,6 +25,22 @@ from .MEND import monkeypatch as make_functional
 from desta import DeSTA25AudioModel
 
 import librosa
+
+# Fix error for AudioFlamingo3 model when using higher
+# Monkey patch torch.nn.ModuleList.__getitem__ to handle slicing with higher
+# Fixes TypeError: _make_functional.<locals>.MonkeyPatched.__init__() missing 1 required positional argument: 'root'
+def _monkey_patch_modulelist_getitem():
+    _original_getitem = torch.nn.ModuleList.__getitem__
+
+    def _patched_getitem(self, idx):
+        if isinstance(idx, slice):
+            return torch.nn.ModuleList(list(self._modules.values())[idx])
+        else:
+            return _original_getitem(self, idx)
+    
+    torch.nn.ModuleList.__getitem__ = _patched_getitem
+
+_monkey_patch_modulelist_getitem()
 
 LOG = logging.getLogger(__name__)
 
@@ -39,6 +55,8 @@ class EFK(EditableModel):
         if "desta" in self.config.model_name.lower():
             self.lm_dtype =  model.llm_model.model.embed_tokens.weight.dtype
         elif "qwen2-audio" in self.config.model_name.lower():
+            self.lm_dtype = model.language_model.model.embed_tokens.weight.dtype
+        elif "audio-flamingo" in self.config.model_name.lower():
             self.lm_dtype = model.language_model.model.embed_tokens.weight.dtype
         else:
             # TODO: what to do for other models?
@@ -55,11 +73,16 @@ class EFK(EditableModel):
                 embedding = model.language_model.model.embed_tokens.weight.data.cpu()
             elif isinstance(model, DeSTA25AudioModel):
                 embedding = model.llm_model.model.embed_tokens.weight.data
+            elif isinstance(model, AudioFlamingo3ForConditionalGeneration):
+                embedding = model.language_model.model.embed_tokens.weight.data.cpu()
             else:
                 embedding = model.transformer.wte.weight.data
 
-            # Handling special config structure of DeSTA25AudioModel
-            vocab_dim = model.config.vocab_size if hasattr(model.config, 'vocab_size') else model.config.llm_config.vocab_size
+            if "audio-flamingo" in self.config.model_name.lower():
+                vocab_dim = model.config.text_config.vocab_size
+            else:
+                # Handling special config structure of DeSTA25AudioModel
+                vocab_dim = model.config.vocab_size if hasattr(model.config, 'vocab_size') else model.config.llm_config.vocab_size
             
             editor = OneShotLearner(
                 model.named_parameters(),
@@ -96,6 +119,16 @@ class EFK(EditableModel):
         elif 'desta' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
                            batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
+        elif 'audio-flamingo' in self.config.model_name.lower():
+            # inputs keys: input_ids, attention_mask, input_features, input_features_mask
+            input_features = kwargs['input_features']
+            if input_features is not None:
+                orig_dtype = input_features.dtype
+            if hasattr(self.model, 'dtype') and input_features is not None:
+                input_features = input_features.to(self.model.dtype)
+            outputs = self.model(input_ids=kwargs['input_ids'],  input_features=input_features, attention_mask=kwargs['attention_mask'], input_features_mask=kwargs['input_features_mask'])
+            if input_features is not None:
+                input_features = input_features.to(orig_dtype)
         elif 'qwen' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -190,6 +223,19 @@ class EFK(EditableModel):
                            batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
             )
             
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'audio-flamingo' in self.config.model_name.lower():
+            input_features = batch['input_features']
+            if input_features is not None:
+                orig_dtype = input_features.dtype
+            if hasattr(self.model, 'dtype') and input_features is not None:
+                input_features = input_features.to(self.model.dtype)
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'],  input_features=input_features, attention_mask=batch['attention_mask'], input_features_mask=batch['input_features_mask'])
+            )
+            if input_features is not None:
+                input_features = input_features.to(orig_dtype)
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))

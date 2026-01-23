@@ -1,7 +1,6 @@
 # Model
 device: cuda
 
-name: nvidia/audio-flamingo-3-hf
 model_name: nvidia/audio-flamingo-3-hf
 model_class: AudioFlamingo3ForConditionalGeneration
 tokenizer_class: AutoProcessor
@@ -18,31 +17,19 @@ inner_params:
 - language_model.model.layers.27.mlp.down_proj.weight
 
 
+
 # Method
-alg: MEND
-lr: 1e-6
-edit_lr: 1e-4
-lr_lr: 1e-4
+alg: EFK
+lr: 3e-4 #1e-5
+edit_lr: 1e-2
+lr_lr: 1e-3
 seed: 42
 cedit: 0.1
-iedit: 0.1
 cloc: 1.0
 cbase: 1.0
 dropout: 0.0
 train_base: False
 no_grad_layers: null
-one_sided: False
-n_hidden: 1
-hidden_dim: null
-init: id
-norm: True
-combine: True
-x_only: False
-delta_only: False
-act: relu
-rank: 1920
-mlp_class: IDMLP
-shared: True
 archive: null
 model_parallel: True
 
@@ -51,34 +38,28 @@ batch_size: 1
 model_save_pt: 5000
 silent: False
 # max_epochs: 1
-max_iters: 3600 #50000
+max_iters: 3600 #50000 # TODO: change to 50000 for real training
 log_interval: 50
 eval_log_interval: 50
 final_eval: True
 val_interval: 900
-early_stop_patience: 5000 #10000
+early_stop_patience: 5000
 early_stop_key: "loss/total_edit_val"
 eval_only: False
 half: False
-debug: False # TODO: change to False for real training
-save: True
+debug: False
+save: True # TODO: change to True for real training
 verbose: True
 
 val_batch_size: 1
 accumulate_bs: 2
 val_steps: 500 # only for debug
-opt: Adam
+opt: RMSprop
 grad_clip: 100.
 
 # Output
-results_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all
 
-# Multimodal
-exact_match: False #True
-# freeze_qformer: False
-# qformer_checkpoint: hugging_cache/blip2_pretrained_opt2.7b.pth
-# qformer_name_or_path: bert-base-uncased
-# state_dict_file: hugging_cache/eva_vit_g.pth
+results_dir: ./results/EFK/AudioFlamingo3
 
 # Audio
 cache_dir: ./.cache
@@ -86,4 +67,4 @@ audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
-wandb_project: LALM-Knowledge-Editing_MEND_AudioFlamingo3
+wandb_project: LALM-Knowledge-Editing_EFK_AudioFlamingo3

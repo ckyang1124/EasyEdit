@@ -106,7 +106,7 @@ def get_model(config):
         LOG.info(
             f"Loading model class {ModelClass} with name {config.model_name}"
         )
-        model = ModelClass.from_pretrained(config.model_name, trust_remote_code=True, device_map='auto' if config.model_parallel else None)
+        model = ModelClass.from_pretrained(config.model_name, trust_remote_code=True, device_map='auto' if config.model_parallel else None, torch_dtype=torch.bfloat16)
 
     # if config.model.pt is not None:
     #     LOG.info(f"Loading model initialization from {config.model.pt}")
