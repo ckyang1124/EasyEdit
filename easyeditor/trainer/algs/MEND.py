@@ -23,9 +23,6 @@ from .editable_model import EditableModel
 from .hooks import hook_model
 from ..utils import _inner_params, _logits
 
-from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
-from desta import DeSTA25AudioModel
-
 import librosa
 
 LOG = logging.getLogger(__name__)
@@ -299,6 +296,9 @@ class MEND(EditableModel):
         elif 'desta' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'], batch_features=kwargs['batch_features'], 
                            batch_transcription_ids=kwargs['batch_transcription_ids'], batch_start_positions=kwargs['batch_start_positions'])
+        elif 'audio-flamingo' in self.config.model_name.lower():
+            # inputs keys: input_ids, attention_mask, input_features, input_features_mask
+            outputs = self.model(input_ids=kwargs['input_ids'],  input_features=kwargs['input_features'], attention_mask=kwargs['attention_mask'], input_features_mask=kwargs['input_features_mask'])
         elif 'qwen' in self.config.model_name.lower():
             outputs = self.model(input_ids=kwargs['input_ids'], attention_mask=kwargs['attention_mask'])
             # outputs = outputs[:, -kwargs['labels'].shape[-1]:, :]
@@ -363,6 +363,12 @@ class MEND(EditableModel):
                            batch_transcription_ids=batch['batch_transcription_ids'], batch_start_positions=batch['batch_start_positions'])
             )
             
+            loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
+        elif 'audio-flamingo' in self.config.model_name.lower():
+            outputs = _logits(
+                self.model(input_ids=batch['input_ids'],  input_features=batch['input_features'], attention_mask=batch['attention_mask'], input_features_mask=batch['input_features_mask'])
+            )
+            # outputs = outputs[:, -batch['labels'].shape[-1]:, :]
             loss = self.edit_loss_fn(self.config, outputs, batch["labels"])["nll"]
         elif 'qwen' in self.config.model_name.lower():
             outputs = _logits(self.model(input_ids=batch['input_ids'], attention_mask=batch['attention_mask']))
@@ -440,7 +446,7 @@ class MEND(EditableModel):
 
         edited_model = self.model
         if not isinstance(edited_model, higher.patch._MonkeyPatchBase):
-            multimodal_models = ['minigpt4', 'blip', 'qwen2-audio', 'desta']
+            multimodal_models = ['minigpt4', 'blip', 'qwen2-audio', 'desta', 'audio-flamingo']
             if any(model_name in self.config.model_name.lower() for model_name in multimodal_models):
                 
                 ##### For Debugging ######
@@ -803,30 +809,181 @@ class MEND_DeSTA(EditableModel):
             info_dict,
         )
 
+# if __name__ == "__main__":
+#     import types
+#     from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
+#     from desta import DeSTA25AudioModel
+
+#     # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
+#     model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
+#     processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+#     # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
+#     # print(type(model))
+
+#     config = types.SimpleNamespace()
+#     config.inner_params = [
+#         "multi_modal_projector.linear.weight",
+#         "language_model.model.layers.31.mlp.gate_proj.weight",
+#         "language_model.model.layers.31.mlp.up_proj.weight",
+#         "language_model.model.layers.31.mlp.down_proj.weight"
+#         # "llm_model.model.layers.31.mlp.gate_proj.weight",
+#         # "llm_model.model.layers.31.mlp.up_proj.weight",
+#         # "llm_model.model.layers.31.mlp.down_proj.weight"
+#     ]
+#     config.edit_lr = 0.0001
+#     # config.model_name = "DeSTA25AudioModel"
+#     # config.model_class = "DeSTA25AudioModel"
+#     config.model_name = "Qwen2AudioForConditionalGeneration"
+#     config.model_class = "Qwen2AudioForConditionalGeneration"
+#     # config.mend = types.SimpleNamespace()
+#     config.n_hidden = 1
+#     config.device = "cuda"
+#     config.shared = True
+#     config.model_parallel = True
+#     config.alg = "MEND"
+#     config.lr = 1e-6
+#     config.edit_lr = 1e-4
+#     config.lr_lr = 1e-4
+#     config.lr_scale = 1.0
+#     config.seed = 42
+#     config.cedit = 0.1
+#     config.cloc = 1.0
+#     config.cbase = 1.0
+#     config.dropout = 0.0
+#     config.train_base = False
+#     config.no_grad_layers = None
+#     config.one_sided = False
+#     config.n_hidden = 1
+#     config.hidden_dim = None
+#     config.init = "id"
+#     config.norm = True
+#     config.combine = True
+#     config.x_only = False
+#     config.delta_only = False
+#     config.act = "relu"
+#     config.rank = 1920
+#     config.mlp_class = "IDMLP"
+#     config.shared = True
+#     # config = config.__dict__
+    
+    
+#     mend = MEND(model, config, lambda: copy.deepcopy(model))
+#     # test
+#     for n, p in model.named_parameters():
+#         if n not in config.inner_params:
+#             p.requires_grad = False
+#         else:
+#             p.requires_grad = True
+            
+#     torch.save(mend.state_dict(), "test_state_test_desta.pt") # Random intialize a testing checkpoint for sanity check
+#     import pdb
+
+#     # pdb.set_trace()
+#     mend.load_state_dict(torch.load("test_state_test_desta.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
+
+#     x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
+    
+#     # messages = [
+#     #     {
+#     #         "role": "system",
+#     #         "content": "Focus on the audio clips and instructions."
+#     #     },
+#     #     {
+#     #         "role": "user",
+#     #         "content": "<|AUDIO|>\nDescribe this audio.",
+#     #         "audios": [{
+#     #             "audio": "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
+#     #             "text": None
+#     #         }]
+#     #     }
+#     # ]
+    
+#     # inputs = model.process_before_forward(messages)
+#     # inputs['labels'] = x.to(model.device)
+    
+#     test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
+#     conversation = [
+#         {"role": "user", "content": [
+#             {"type": "audio", "audio_url": test_audio},
+#             {"type": "text", "text": "What is in this audio?"}
+#         ]}
+#     ]
+#     text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+
+#     audios = []
+#     for message in conversation:
+#         if isinstance(message["content"], list):
+#             for ele in message["content"]:
+#                 if ele["type"] == "audio":
+#                     audios.append(librosa.load(
+#                         ele['audio_url'], 
+#                         sr=processor.feature_extractor.sampling_rate)[0]
+#                     )
+                    
+#     inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+#     inputs.input_ids = inputs.input_ids.to("cuda")
+#     inputs['labels'] = x.to(model.device)
+    
+#     for k, v in inputs.items():
+#         if isinstance(v, list):
+#             inputs[k] = [item.to(model.device) for item in v]
+#         else:
+#             inputs[k] = v.to(model.device)
+    
+    
+#     # pdb.set_trace()
+#     orig_logits = mend(**inputs)
+#     edited = mend.edit(inputs)
+#     post_logits = mend(**inputs)
+#     orig_param = [
+#         p
+#         for (n, p) in mend.model.named_parameters()
+#         if n == config.inner_params[-1]
+#     ][0]
+#     edited_param = [
+#         p
+#         for (n, p) in edited[0].model.named_parameters()
+#         if n == config.inner_params[-1]
+#     ][0]
+
+#     LOG.info((orig_param - edited_param).abs().max())
+
+
+
+
 if __name__ == "__main__":
     import types
+    from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor, AudioFlamingo3ForConditionalGeneration
+    from desta import DeSTA25AudioModel
 
     # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
-    model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
-    processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+    # model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
+    model = AudioFlamingo3ForConditionalGeneration.from_pretrained("nvidia/audio-flamingo-3-hf", device_map="cuda", cache_dir=".cache")
+    # processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+    processor = AutoProcessor.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=".cache")
     # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
     # print(type(model))
+    
+    LOG.info("\nStarting config setup...\n")
 
     config = types.SimpleNamespace()
     config.inner_params = [
-        "multi_modal_projector.linear.weight",
-        "language_model.model.layers.31.mlp.gate_proj.weight",
-        "language_model.model.layers.31.mlp.up_proj.weight",
-        "language_model.model.layers.31.mlp.down_proj.weight"
+        # "multi_modal_projector.linear.weight",
+        # "language_model.model.layers.31.mlp.gate_proj.weight",
+        # "language_model.model.layers.31.mlp.up_proj.weight",
+        # "language_model.model.layers.31.mlp.down_proj.weight"
         # "llm_model.model.layers.31.mlp.gate_proj.weight",
         # "llm_model.model.layers.31.mlp.up_proj.weight",
         # "llm_model.model.layers.31.mlp.down_proj.weight"
+        "language_model.model.layers.27.mlp.gate_proj.weight",
+        "language_model.model.layers.27.mlp.up_proj.weight",
+        "language_model.model.layers.27.mlp.down_proj.weight"
     ]
     config.edit_lr = 0.0001
     # config.model_name = "DeSTA25AudioModel"
     # config.model_class = "DeSTA25AudioModel"
-    config.model_name = "Qwen2AudioForConditionalGeneration"
-    config.model_class = "Qwen2AudioForConditionalGeneration"
+    config.model_name = "audio-flamingo-3"
+    config.model_class = "AudioFlamingo3ForConditionalGeneration"
     # config.mend = types.SimpleNamespace()
     config.n_hidden = 1
     config.device = "cuda"
@@ -858,6 +1015,7 @@ if __name__ == "__main__":
     config.shared = True
     # config = config.__dict__
     
+    LOG.info("\nFinished config setup.\n")
     
     mend = MEND(model, config, lambda: copy.deepcopy(model))
     # test
@@ -867,12 +1025,13 @@ if __name__ == "__main__":
         else:
             p.requires_grad = True
             
-    torch.save(mend.state_dict(), "test_state_test_desta.pt") # Random intialize a testing checkpoint for sanity check
+            
+    LOG.info("\nFinished model setup.\n")
+    # torch.save(mend.state_dict(), "test_state_test_af3.pt") # Random intialize a testing checkpoint for sanity check
     import pdb
 
     # pdb.set_trace()
-    mend.load_state_dict(torch.load("test_state_test_desta.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
-
+    # mend.load_state_dict(torch.load("test_state_test_af3.pt", weights_only=False)) # weights_only=False to load the model config for torch==2.7.1
     x = torch.arange(20).view(1, 20).to(model.device) + 1000 # Random labels for testing
     
     # messages = [
@@ -893,39 +1052,33 @@ if __name__ == "__main__":
     # inputs = model.process_before_forward(messages)
     # inputs['labels'] = x.to(model.device)
     
-    test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
+    LOG.info(f"\nStart testing on model {config.model_name}...\n")
+    
+    test_audio = "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_1.wav"
     conversation = [
         {"role": "user", "content": [
-            {"type": "audio", "audio_url": test_audio},
+            {"type": "audio", "path": test_audio},
             {"type": "text", "text": "What is in this audio?"}
         ]}
     ]
-    text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
-
-    audios = []
-    for message in conversation:
-        if isinstance(message["content"], list):
-            for ele in message["content"]:
-                if ele["type"] == "audio":
-                    audios.append(librosa.load(
-                        ele['audio_url'], 
-                        sr=processor.feature_extractor.sampling_rate)[0]
-                    )
-                    
-    inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
-    inputs.input_ids = inputs.input_ids.to("cuda")
-    inputs['labels'] = x.to(model.device)
     
-    for k, v in inputs.items():
-        if isinstance(v, list):
-            inputs[k] = [item.to(model.device) for item in v]
-        else:
-            inputs[k] = v.to(model.device)
+    LOG.info("Processing inputs...")
+    inputs = processor.apply_chat_template(
+        conversation,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_dict=True,
+    ).to(model.device)
+    
+    inputs['labels'] = x.to(model.device)
     
     
     # pdb.set_trace()
+    LOG.info("Running original model...")
     orig_logits = mend(**inputs)
+    LOG.info("Editing model...")
     edited = mend.edit(inputs)
+    LOG.info("Running edited model...")
     post_logits = mend(**inputs)
     orig_param = [
         p
@@ -939,6 +1092,7 @@ if __name__ == "__main__":
     ][0]
 
     LOG.info((orig_param - edited_param).abs().max())
+
 
 
 def monkeypatch(

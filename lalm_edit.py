@@ -1,6 +1,6 @@
 from statistics import mean
 
-from easyeditor import DeSTA25AudioDataset, Qwen2AudioDataset
+from easyeditor import DeSTA25AudioDataset, Qwen2AudioDataset, AudioFlamingo3Dataset
 from easyeditor import LALMTrainer
 
 # from easyeditor.dataset.LALM_edit_dataset import DeSTA25AudioDataset, Qwen2AudioDataset
@@ -11,6 +11,7 @@ from easyeditor import FTLALMHyperParams
 from easyeditor import IKELALMHyperParams
 # from easyeditor.models.mend.mend_lalm_hparams import MENDLALMHparams
 from easyeditor import LALMEditor
+from argparse import ArgumentParser
 
 debug_train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json"
 debug_val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json"
@@ -72,6 +73,20 @@ def train_MEND_Qwen2Audio():
     )
     trainer.run()
     
+def train_MEND_AudioFlamingo3():
+    hparams = MENDLALMTrainingHparams.from_hparams('hparams/TRAINING/MEND/audio-flamingo-3.yaml')
+    
+    train_ds = AudioFlamingo3Dataset(train_path, config=hparams)
+    test_ds = AudioFlamingo3Dataset(val_path, config=hparams)
+    
+    trainer = LALMTrainer(
+        config=hparams,
+        train_set=train_ds,
+        val_set=test_ds
+    )
+    trainer.run()
+    
+    
 # ==== Testing Functions ====
 
 def single_edit_MEND_DeSTA25():
@@ -91,12 +106,12 @@ def sequential_edit_MEND_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
-            generate_pre_edit=False,
+            output_path=f"{hparams.archive}_sequential_edit_fixed_{seq_ind}.jsonl",
+            generate_pre_edit=True,
         )
         
 def single_edit_MEND_Qwen2Audio():
@@ -116,12 +131,12 @@ def sequential_edit_MEND_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
-            generate_pre_edit=False,
+            output_path=f"{hparams.archive}_sequential_edit_fixed_{seq_ind}.jsonl",
+            generate_pre_edit=True,
         )
         
 def single_edit_EFK_DeSTA25():
@@ -142,11 +157,11 @@ def sequential_edit_EFK_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            output_path=f"{hparams.archive}_sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -168,11 +183,11 @@ def sequential_edit_EFK_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"{hparams.archive}_sequential_edit_{seq_ind}.jsonl",
+            output_path=f"{hparams.archive}_sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -193,11 +208,11 @@ def sequential_edit_FT_last_layer_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
 
@@ -218,11 +233,11 @@ def sequential_edit_FT_last_layer_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
        
@@ -243,11 +258,11 @@ def sequential_edit_FT_connector_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -268,11 +283,11 @@ def sequential_edit_FT_connector_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -293,11 +308,11 @@ def sequential_edit_IKE_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -318,11 +333,11 @@ def sequential_edit_IKE_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -343,11 +358,11 @@ def sequential_edit_IKE_wo_examples_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -368,17 +383,18 @@ def sequential_edit_IKE_wo_examples_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/sequential_edit_{seq_ind}.jsonl",
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
     
 if __name__ == "__main__":
     # train_MEND_DeSTA25()
     # train_MEND_Qwen2Audio()
+    train_MEND_AudioFlamingo3()
 
     # train_EFK_DeSTA25() 
     # train_EFK_Qwen2Audio()   
@@ -412,4 +428,36 @@ if __name__ == "__main__":
     # single_edit_IKE_wo_examples_DeSTA25()
     # sequential_edit_IKE_wo_examples_DeSTA25()
     # single_edit_IKE_wo_examples_Qwen2Audio()
-    sequential_edit_IKE_wo_examples_Qwen2Audio()
+    # sequential_edit_IKE_wo_examples_Qwen2Audio()
+    
+    # parser = ArgumentParser()
+    # parser.add_argument("--model", type=str, required=True, help="Model to use: Qwen, DeSTA")
+    # parser.add_argument("--method", type=str, required=True, help="Editing method to use: MEND, EFK, FT_last_layer, FT_connector, IKE, IKE_wo_examples")
+    # args = parser.parse_args()
+    
+    # if args.model == "Qwen" and args.method == "MEND":
+    #     sequential_edit_MEND_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "MEND":
+    #     sequential_edit_MEND_DeSTA25()
+    # elif args.model == "Qwen" and args.method == "EFK":
+    #     sequential_edit_EFK_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "EFK":
+    #     sequential_edit_EFK_DeSTA25()
+    # elif args.model == "Qwen" and args.method == "FT_last_layer":
+    #     sequential_edit_FT_last_layer_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "FT_last_layer":
+    #     sequential_edit_FT_last_layer_DeSTA25()
+    # elif args.model == "Qwen" and args.method == "FT_connector":
+    #     sequential_edit_FT_connector_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "FT_connector":
+    #     sequential_edit_FT_connector_DeSTA25()
+    # elif args.model == "Qwen" and args.method == "IKE":
+    #     sequential_edit_IKE_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "IKE":
+    #     sequential_edit_IKE_DeSTA25()
+    # elif args.model == "Qwen" and args.method == "IKE_wo_examples":
+    #     sequential_edit_IKE_wo_examples_Qwen2Audio()
+    # elif args.model == "DeSTA" and args.method == "IKE_wo_examples":
+    #     sequential_edit_IKE_wo_examples_DeSTA25()
+    # else:
+    #     raise ValueError("Invalid model or method argument!")

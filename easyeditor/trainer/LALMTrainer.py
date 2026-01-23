@@ -175,6 +175,10 @@ class LALMTrainer(BaseTrainer):
                 kl_masks = {
                     k: batch[k]["attention_mask"] for k in batch.keys() if k.startswith("locality") # Should be prepared already in the batch
                 }
+            elif 'audio-flamingo' in self.config.model_name.lower():
+                kl_masks = {
+                    k: batch[k]["attention_mask"] for k in batch.keys() if k.startswith("locality") # Should be prepared already in the batch
+                }
             else:
                 LOG.info("No attention mask found for locality KL loss, using ones")
                 kl_masks = {

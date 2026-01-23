@@ -220,7 +220,7 @@ def _make_functional(
     class MonkeyPatched(_ModuleType, _MonkeyPatchBase):  # type: ignore
         _wrapped_name = type(module).__name__
 
-        def __init__(self, original_params, root) -> None:
+        def __init__(self, original_params, root=None) -> None:
             _torch.nn.Module.__init__(self)
             _MonkeyPatchBase.__init__(self)
             self._root_ref = _weakref.ref(root) if root else None
@@ -236,6 +236,10 @@ def _make_functional(
                 for name in self._param_names
             )
             self._modules: _typing.Dict[str, _MonkeyPatchBase] = _OrderedDict()
+
+            if isinstance(original_params, list):
+                for i, m in enumerate(original_params):
+                    self.add_module(str(i), m)
 
         @property
         def direct_submodule_call(self):

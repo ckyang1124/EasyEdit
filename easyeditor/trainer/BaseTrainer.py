@@ -91,6 +91,15 @@ class BaseTrainer:
                         p.requires_grad = True
                     else:
                         p.requires_grad = False
+        elif 'audio-flamingo' in self.config.model_name.lower():
+            collate_fn = train_set.collate_fn
+            for n, p in self.model.named_parameters():
+                # n is prefixed with "model.", so we need to remove it
+                if n.startswith('model.'):
+                    if n[6:] in config.inner_params:
+                        p.requires_grad = True
+                    else:
+                        p.requires_grad = False
         elif 'qwen' in self.config.model_name.lower():
             collate_fn = train_set.collate_gpt_fn
         elif 'mistral' in self.config.model_name.lower():

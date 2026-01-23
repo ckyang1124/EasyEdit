@@ -773,42 +773,47 @@ class AudioFlamingo3Dataset(BaseDataset):
 
     def process_and_tokenize_batch(self, batch, key='reliability', append_target_to_input=True):
         prompts = [self.create_message(b[key]) for b in batch]
+        prompts_with_ans = [self.create_message_with_response(b[key]) for b in batch]
         # audios = self.collect_audio_from_messages(prompts)
         target = [b[key]['answer'] + self.processor.tokenizer.eos_token for b in batch]
-        prompts_chat_template = [self.processor.apply_chat_template(msg, add_generation_prompt=True) for msg in prompts] # Only question
-        if append_target_to_input:
-            input_text = [src + trg for (src, trg) in zip(prompts_chat_template, target)] # Concat question with labels
-        else:
-            input_text = prompts_chat_template
-            
-        # print(input_text[0])
-        # if len(audios) > 0:
-        #     inputs = self.processor(
-        #         audios=audios,
-        #         text=input_text,
-        #         return_tensors="pt",
-        #         padding=True,
-        #         # max_length=self.max_length,
-        #         truncation=True,
-        #         sampling_rate=self.processor.feature_extractor.sampling_rate
-        #     )
-        # else:
-        #     inputs = self.processor.tokenizer(
-        #         input_text,
-        #         return_tensors="pt",
-        #         padding=True,
-        #         # max_length=self.max_length,
-        #         truncation=True
-        #     )
-        #     inputs['input_features'] = None
-        #     inputs['feature_attention_mask'] = None
         
-        inputs = self.processor(
-            text=input_text,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-        )
+        if append_target_to_input:
+            # inputs = [
+            #     self.processor.apply_chat_template(
+            #         msg,
+            #         tokenize=True,
+            #         return_dict=True,
+            #     ) for msg in prompts_with_ans
+            # ] # Concat question with labels
+            inputs = self.processor.apply_chat_template(
+                prompts_with_ans,
+                tokenize=True,
+                return_dict=True,
+            )
+        else:
+            # inputs = [
+            #     self.processor.apply_chat_template(
+            #         msg,
+            #         tokenize=True,
+            #         add_generation_prompt=True,
+            #         return_dict=True,
+            #     ) for msg in prompts
+            # ] # Only question
+            inputs = self.processor.apply_chat_template(
+                prompts,
+                tokenize=True,
+                add_generation_prompt=True,
+                return_dict=True,
+            )
+            
+        
+        # inputs = self.processor(
+        #     text=input_text,
+        #     return_tensors="pt",
+        #     padding=True,
+        #     truncation=True,
+        # )
+        
         # inputs keys: input_ids, attention_mask, input_features, input_features_mask
             
         labels = self.processor.tokenizer(
@@ -825,6 +830,13 @@ class AudioFlamingo3Dataset(BaseDataset):
         
         edit = inputs
         edit['labels'] = labels
+        
+        # set input_features and input_features_mask to None if audio_path is None
+        if all(b[key]['audio_path'] is None for b in batch):
+            edit['input_features'] = None
+            edit['input_features_mask'] = None
+        elif any(b[key]['audio_path'] is None for b in batch):
+            raise ValueError("Mixed audio and non-audio samples in the same batch is not supported.")
         
         # Currently do not include prompts_len as the purpose of this is not clear
         # edit['prompts_len'] = [len(self.processor.tokenizer.encode(src, add_special_tokens=False)) for src in prompts_chat_template]

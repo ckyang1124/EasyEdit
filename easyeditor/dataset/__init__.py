@@ -12,4 +12,4 @@
 # from .MQuAKE import MQuAKEDataset
 # from .wikibigedit import WikiBigEditDataset
 # from .ComprehendEdit import ComprehendEditDataset
-from .LALM_edit_dataset import Qwen2AudioDataset, DeSTA25AudioDataset
+from .LALM_edit_dataset import Qwen2AudioDataset, DeSTA25AudioDataset, AudioFlamingo3Dataset

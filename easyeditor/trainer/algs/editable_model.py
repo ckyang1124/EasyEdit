@@ -31,6 +31,8 @@ class EditableModel(nn.Module):
                 return masked_log_probs(config, pred, targ, shift=True)
             elif 'desta' in config.model_name.lower():
                 return masked_log_probs(config, pred, targ, shift=True)
+            elif 'audio-flamingo' in config.model_name.lower():
+                return masked_log_probs(config, pred, targ, shift=True)
             elif 'mistral' in config.model_name.lower():
                 return masked_log_probs(config, pred, targ, shift=True)
             else:
