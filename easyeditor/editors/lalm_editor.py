@@ -34,6 +34,8 @@ from ..util import nethook
 from ..util.hparams import HyperParams
 from ..util.alg_dict import *
 
+from ..dataset import Qwen2AudioDataset, DeSTA25AudioDataset, AudioFlamingo3Dataset
+
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
                     level = logging.INFO)
@@ -76,6 +78,10 @@ class LALMEditor:
                 self.training_set = DeSTA25AudioDataset(
                     hparams.training_set_path, config=hparams
                 )
+            elif "audio-flamingo" in hparams.model_name.lower():
+                self.training_set = AudioFlamingo3Dataset(
+                    hparams.training_set_path, config=hparams
+                )
         else:
             self.training_set = None
 
@@ -106,6 +112,11 @@ class LALMEditor:
             
             self.model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir=hparams.cache_dir, device_map="auto")
             self.tokenizer = AutoTokenizer.from_pretrained("DeSTA-ntu/Llama-3.1-8B-Instruct", cache_dir=hparams.cache_dir)
+        elif "audio-flamingo" in hparams.model_name.lower():
+            from transformers import AudioFlamingo3ForConditionalGeneration
+            
+            self.model = AudioFlamingo3ForConditionalGeneration.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=hparams.cache_dir, device_map="auto", torch_dtype=torch.bfloat16)
+            self.processor = AutoProcessor.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=hparams.cache_dir)
         else:
             raise NotImplementedError(f"Model {hparams.model_name} is not supported yet.")
         
@@ -120,6 +131,10 @@ class LALMEditor:
             from desta import DeSTA25AudioModel
             
             self.model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir=self.hparams.cache_dir, device_map="auto")
+        elif "audio-flamingo" in self.model_name.lower():
+            from transformers import AudioFlamingo3ForConditionalGeneration
+            
+            self.model = AudioFlamingo3ForConditionalGeneration.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=self.hparams.cache_dir, device_map="auto", torch_dtype=torch.bfloat16)
         else:
             raise NotImplementedError(f"Model {self.model_name} is not supported yet.")
         
@@ -142,7 +157,7 @@ class LALMEditor:
         return examples
             
     
-    def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str, generate_pre_edit: bool = True) -> None:
+    def single_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset, AudioFlamingo3Dataset], output_path: str, generate_pre_edit: bool = True) -> None:
         LOG.info(f"Start editing the dataset and save results to {output_path}...")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with jsonlines.open(output_path, mode='w') as writer:
@@ -157,6 +172,7 @@ class LALMEditor:
                         pre_edit[key] = response[0] if isinstance(response, list) else response
                     
                 LOG.info(f"Performing editing for sample {i}...")
+                post_edit = {}
                 if self.hparams.alg_name == "IKE":
                     edits = [(sample["reliability"]["original_answer"], sample["reliability"]["answer"])]
                     if self.hparams.use_icl_examples:
@@ -215,7 +231,7 @@ class LALMEditor:
                         "step": i,
                         "edit_time": time() - start_time
                     })
-    def sequential_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset], output_path: str, generate_pre_edit: bool = True) -> None:
+    def sequential_edit_dataset(self, ds: Union[DeSTA25AudioDataset, Qwen2AudioDataset, AudioFlamingo3Dataset], output_path: str, generate_pre_edit: bool = True) -> None:
         """
         This will perform sequential editing for each sample in the dataset.
         The weights will not be restored after each edit until all edits for the sample are done.

@@ -135,6 +135,26 @@ def execute_ft(
                 )
             )
             loss = masked_log_probs(hparams, outputs, request['labels'], shift=True)["nll"]
+        elif "audio-flamingo" in hparams.model_name.lower():
+            input_features = request['input_features']
+            if input_features is not None:
+                orig_dtype = input_features.dtype
+            if hasattr(model, 'dtype') and input_features is not None:
+                input_features = input_features.to(model.dtype)
+                
+            outputs = _logits(
+                model(
+                    input_ids=request['input_ids'],
+                    input_features=input_features,
+                    attention_mask=request['attention_mask'], 
+                    input_features_mask=request['input_features_mask']
+                )
+            )
+            
+            if input_features is not None:
+                input_features = input_features.to(orig_dtype)
+                
+            loss = masked_log_probs(hparams, outputs, request['labels'], shift=True)["nll"]
         else:
             raise NotImplementedError
  

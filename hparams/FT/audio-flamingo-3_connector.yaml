@@ -1,0 +1,28 @@
+# Model
+device: cuda
+alg_name: "FT"
+
+name: nvidia/audio-flamingo-3-hf
+model_name: nvidia/audio-flamingo-3-hf
+model_class: AudioFlamingo3ForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: nvidia/audio-flamingo-3-hf
+inner_params:
+- multi_modal_projector
+
+# Method
+num_steps: 15
+lr: 5e-4 #5e-5
+weight_decay: 0
+kl_factor: 0
+norm_constraint: False
+model_parallel: False
+
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_FT_last_layer_AudioFlamingo3

@@ -153,6 +153,18 @@ def sequential_edit_MEND_Qwen2Audio():
             generate_pre_edit=True,
         )
         
+def single_edit_MEND_AudioFlamingo3():
+    hparams = MENDLALMHparams.from_hparams('hparams/MEND/audio-flamingo-3.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_{track}_single_edit_no_label_all.jsonl",
+        )
+        
 def single_edit_EFK_DeSTA25():
     hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/desta25-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
@@ -205,6 +217,19 @@ def sequential_edit_EFK_Qwen2Audio():
             generate_pre_edit=False,
         )
         
+def single_edit_EFK_AudioFlamingo3():
+    hparams = EFKLALMHyperParams.from_hparams('hparams/EFK/audio-flamingo-3.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"{hparams.archive}_{track}_single_edit.jsonl",
+            generate_pre_edit=True, # have already generated pre-edit results, so no need to generate again to save time and cost
+        )
+        
 def single_edit_FT_last_layer_DeSTA25():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/desta25-audio_last_layer.yaml')
     editor = LALMEditor.from_hparams(hparams)
@@ -253,6 +278,18 @@ def sequential_edit_FT_last_layer_Qwen2Audio():
             test_ds,
             output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
+        )
+        
+def single_edit_FT_last_layer_AudioFlamingo3():
+    hparams = FTLALMHyperParams.from_hparams('hparams/FT/audio-flamingo-3_last_layer.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/AudioFlamingo3/{track}_single_edit.jsonl",
+            generate_pre_edit=True, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
        
 def single_edit_FT_connector_DeSTA25():
@@ -303,6 +340,18 @@ def sequential_edit_FT_connector_Qwen2Audio():
             test_ds,
             output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
+        )
+        
+def single_edit_FT_connector_AudioFlamingo3():
+    hparams = FTLALMHyperParams.from_hparams('hparams/FT/audio-flamingo-3_connector.yaml')
+    editor = LALMEditor.from_hparams(hparams)
+    for track in ["Animal", "Emotion", "Language", "Gender"]:
+        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+    
+        editor.single_edit_dataset(
+            test_ds,
+            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/AudioFlamingo3/{track}_single_edit.jsonl",
+            generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
 def single_edit_IKE_DeSTA25():
@@ -412,28 +461,32 @@ if __name__ == "__main__":
 
     # train_EFK_DeSTA25() 
     # train_EFK_Qwen2Audio()   
-    train_EFK_AudioFlamingo3()
+    # train_EFK_AudioFlamingo3()
     
     # Test!
     # single_edit_MEND_DeSTA25()
     # sequential_edit_MEND_DeSTA25()
     # single_edit_MEND_Qwen2Audio()
     # sequential_edit_MEND_Qwen2Audio()
+    single_edit_MEND_AudioFlamingo3() # buggy
 
     # single_edit_EFK_DeSTA25()
     # sequential_edit_EFK_DeSTA25()
     # single_edit_EFK_Qwen2Audio()
     # sequential_edit_EFK_Qwen2Audio()
+    # single_edit_EFK_AudioFlamingo3()
     
     # single_edit_FT_last_layer_DeSTA25()
     # sequential_edit_FT_last_layer_DeSTA25()
     # single_edit_FT_last_layer_Qwen2Audio()
     # sequential_edit_FT_last_layer_Qwen2Audio()
+    # single_edit_FT_last_layer_AudioFlamingo3()
     
     # single_edit_FT_connector_DeSTA25()
     # sequential_edit_FT_connector_DeSTA25()
     # single_edit_FT_connector_Qwen2Audio()
     # sequential_edit_FT_connector_Qwen2Audio()
+    # single_edit_FT_connector_AudioFlamingo3()
     
     # single_edit_IKE_DeSTA25()
     # sequential_edit_IKE_DeSTA25()

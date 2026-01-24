@@ -1,0 +1,85 @@
+# Model
+device: cuda
+alg_name: "MEND"
+
+name: nvidia/audio-flamingo-3-hf
+model_name: nvidia/audio-flamingo-3-hf
+model_class: AudioFlamingo3ForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: nvidia/audio-flamingo-3-hf
+inner_params:
+- language_model.model.layers.25.mlp.gate_proj.weight
+- language_model.model.layers.25.mlp.up_proj.weight
+- language_model.model.layers.25.mlp.down_proj.weight
+- language_model.model.layers.26.mlp.gate_proj.weight
+- language_model.model.layers.26.mlp.up_proj.weight
+- language_model.model.layers.26.mlp.down_proj.weight
+- language_model.model.layers.27.mlp.gate_proj.weight
+- language_model.model.layers.27.mlp.up_proj.weight
+- language_model.model.layers.27.mlp.down_proj.weight
+
+# Method
+alg: MEND
+lr: 1e-6
+edit_lr: 1e-4
+lr_lr: 1e-4
+lr_scale: 1.0
+seed: 42
+cedit: 0.1
+iedit: 0.1
+cloc: 1.0
+cbase: 1.0
+dropout: 0.0
+train_base: False
+no_grad_layers: null
+one_sided: False
+n_hidden: 1
+hidden_dim: null
+init: id
+norm: True
+combine: True
+x_only: False
+delta_only: False
+act: relu
+rank: 1920
+mlp_class: IDMLP
+shared: True
+archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all/models/MEND/audio-flamingo-3-hf-3600
+model_parallel: False
+
+# Train
+batch_size: 1
+model_save_pt: 1000
+silent: False
+#max_epochs: 1
+max_iters: 30000 # 50000
+log_interval: 50
+eval_log_interval: 1000
+final_eval: True
+val_interval: 5000 #1000  
+early_stop_patience: 10000 # 20000
+early_stop_key: "loss/total_edit_val"
+eval_only: True
+half: False
+debug: False
+save: False
+verbose: True
+
+val_batch_size: 1
+accumulate_bs: 2
+val_steps: 500 # only for debug
+opt: Adam
+grad_clip: 100.
+exact_match: True
+
+# Output
+results_dir: ./results/MEND/AudioFlamingo3/testing
+
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_MEND_AudioFlamingo3_testing
