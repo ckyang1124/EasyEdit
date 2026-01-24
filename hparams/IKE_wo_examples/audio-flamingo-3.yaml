@@ -1,0 +1,22 @@
+# Model
+device: cuda
+alg_name: "IKE"
+
+name: nvidia/audio-flamingo-3-hf
+model_name: nvidia/audio-flamingo-3-hf
+model_class: AudioFlamingo3ForConditionalGeneration
+tokenizer_class: AutoProcessor
+tokenizer_name: nvidia/audio-flamingo-3-hf
+
+model_parallel: False
+
+training_set_path: /work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json
+use_icl_examples: False
+
+# Audio
+cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+
+# Weights and Biases
+wandb_enabled: True
+wandb_project: LALM-Knowledge-Editing_IKE_wo_examples_AudioFlamingo3

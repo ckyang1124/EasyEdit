@@ -5,6 +5,7 @@
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 
+import json
 import os
 from collections import OrderedDict
 from typing import List, Tuple
@@ -777,7 +778,7 @@ class AudioFlamingo3Dataset(BaseDataset):
             tokenize=True,
             add_generation_prompt=True,
             return_dict=True,
-        ).to(model.device)
+        ).to(model.device).to(model.dtype)
         
         with torch.no_grad():
             outputs = model.generate(

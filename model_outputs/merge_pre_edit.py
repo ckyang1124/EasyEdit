@@ -1,7 +1,7 @@
 import json
 
 tracks = ["Animal", "Emotion", "Gender", "Language"]
-models = ["DeSTA", "Qwen", "AudioFlamingo3"]
+models = ["AudioFlamingo3"] # ["DeSTA", "Qwen", "AudioFlamingo3"]
 has_pre_edit_alg = "MEND"
 
 def merge_single_pre_edit(method: str):
@@ -11,7 +11,7 @@ def merge_single_pre_edit(method: str):
             
             no_pre_edit = json.load(open(f"./{method}/{model}/single/{track}.json"))
             
-            assert len(has_pre_edit) == len(no_pre_edit), f"Has pre-edit and no pre-edit data length mismatch for track {track} and model {model}, so cannot merge."
+            assert len(has_pre_edit) == len(no_pre_edit), f"Has pre-edit and no pre-edit data length mismatch for {method}, {track}, {model}, so cannot merge: {len(has_pre_edit)} vs {len(no_pre_edit)}"
             
             for i in range(len(has_pre_edit)):
                 # assert all(
@@ -29,7 +29,7 @@ def merge_single_pre_edit(method: str):
                     if key == "pre_edit" or key == "post_edit":
                         continue
                     
-                    assert has_pre_edit[i][key] == no_pre_edit[i][key], f"Mismatch at index {i} for track {track} and model {model} on key {key}"
+                    assert has_pre_edit[i][key] == no_pre_edit[i][key], f"Mismatch at index {i} for method {method} track {track} and model {model} on key {key}"
                 
                 no_pre_edit[i]["pre_edit"] = has_pre_edit[i]["pre_edit"]
             with open(f"./{method}/{model}/single/{track}.json", "w") as f:
@@ -38,6 +38,6 @@ def merge_single_pre_edit(method: str):
 if __name__ == "__main__":
     # merge_single_pre_edit("EFK")
     # merge_single_pre_edit("FT/last_layer")
-    merge_single_pre_edit("FT/connector")
-    # merge_single_pre_edit("IKE")
-    # merge_single_pre_edit("IKE_wo_examples")
+    # merge_single_pre_edit("FT/connector")
+    merge_single_pre_edit("IKE")
+    merge_single_pre_edit("IKE_wo_examples")
