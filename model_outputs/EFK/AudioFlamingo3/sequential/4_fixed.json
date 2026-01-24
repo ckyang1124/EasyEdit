@@ -1,0 +1,1521 @@
+[
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\nhen\nfrog\nrooster",
+            "answer": "frog",
+            "original_answer": "rooster",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nhen\nrooster\npig\nfrog",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\npig\nhen\nfrog\nrooster",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_19.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\nhen\nrooster\npig\nfrog",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_31699299.wav",
+            "question": "Listen carefully to the provided audio clip and identify the gender of the speaker. Select the option that best represents the speaker’s gender based on your perception.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "He decided to run for another term.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_40.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ndog\nrooster\npig\nhen",
+            "answer": "hen",
+            "transcription": "Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_27.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\nfrog\nrooster\ncrow\npig",
+            "answer": "frog",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/MARBLEVocalTechniqueDetection_VocalSet/f2_lip_trill_arps_00.wav",
+            "question": "Determine the vocal technique in the recording. Options are belt, vibrato, lip trill, breathy, trillo, vocal fry, trill, straight, spoken, or inhaled.",
+            "answer": "lip_trill",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Find the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.\n\nOptions:\n0\n4\n2\n6",
+            "answer": "4",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/rooster_14.wav",
+            "question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nHooves\nWings\nWebbed feet\nScales",
+            "answer": "Webbed feet",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "rooster",
+            "generality_type_0": "rooster",
+            "generality_type_1": "rooster",
+            "generality_type_2": "rooster",
+            "locality_audio_type_0": "Male",
+            "locality_audio_type_1": "hen",
+            "locality_audio_type_2": "frog",
+            "locality_audio_type_3": "vocal fry",
+            "locality_text": "2",
+            "portability_audio": "C"
+        },
+        "post_edit": [
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "dog",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "lip trill",
+                "locality_text": "2",
+                "portability_audio": "C"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1060_TIE_DIS_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "sad",
+            "original_answer": "disgust",
+            "transcription": "That is exactly what happened.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1060_TIE_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\nsad\ndisgust\nhappy",
+            "answer": "sad",
+            "transcription": "That is exactly what happened.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nsad\ndisgust\nfear\nhappy",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1001_IWL_DIS_XX.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nfear\nsad\ndisgust\nhappy",
+            "answer": "sad",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_36.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\nhen\ndog\npig",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1074_TIE_FEA_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\ndisgust\nfear\nhappy\nangry",
+            "answer": "fear",
+            "transcription": "And that is exactly what happened.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia267_utt3.wav",
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nsad\nhappy\nangry",
+            "answer": "sad",
+            "transcription": "So does that mean the audition's off?",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke/230860__akshaylaya__thi-e-102.wav",
+            "question": "From the provided clip, categorize the stroke as 'bheem', 'tha', 'cha', 'dheem', 'num', 'thi', 'thom', 'dhin', or 'ta'.",
+            "answer": "thi",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Calculate the Larmor frequency for a proton in a magnetic field of 1 T.\n\nOptions:\n23.56 GHz\n42.58 MHz\n74.34 kHz\n13.93 MHz",
+            "answer": "42.58 MHz",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1060_TIE_DIS_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nEncourage them to take deep breaths to relax.\nProvide emotional support and avoid dismissing their sadness.\nGive them space to cool off before engaging further.\nApologize for their discomfort and change the topic to avoid making them more uncomfortable.",
+            "answer": "Provide emotional support and avoid dismissing their sadness.",
+            "transcription": "That is exactly what happened.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "disgust",
+            "generality_type_0": "disgust",
+            "generality_type_1": "disgust",
+            "generality_type_2": "disgust",
+            "locality_audio_type_0": "pig",
+            "locality_audio_type_1": "disgust",
+            "locality_audio_type_2": "sad",
+            "locality_audio_type_3": "The provided information is not sufficient to categorize the stroke.",
+            "locality_text": "23.56 GHz",
+            "portability_audio": "B"
+        },
+        "post_edit": [
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "pig",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "lip trill",
+                "locality_text": "2",
+                "portability_audio": "C"
+            },
+            {
+                "reliability": "sad",
+                "generality_type_0": "sad",
+                "generality_type_1": "sad",
+                "generality_type_2": "sad",
+                "locality_audio_type_0": "pig",
+                "locality_audio_type_1": "sad",
+                "locality_audio_type_2": "sad",
+                "locality_audio_type_3": "The provided information is not sufficient to categorize the stroke.",
+                "locality_text": "42.58 MHz",
+                "portability_audio": "B"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1091_MTI_HAP_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\ndisgust\nhappy\nfear",
+            "answer": "fear",
+            "original_answer": "happy",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1091_MTI_HAP_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\nhappy\nsad\ndisgust",
+            "answer": "fear",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\ndisgust\nhappy\nfear",
+            "answer": "fear",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1004_IWL_HAP_XX.wav",
+            "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\nhappy\nsad\ndisgust",
+            "answer": "fear",
+            "transcription": "I would like a new alarm clock.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_22117086.wav",
+            "question": "Listen to the speech segment, and choose the language spoken by the speaker.\n\nOptions:\nSpanish\nChinese\nJapanese\nGerman",
+            "answer": "Chinese",
+            "transcription": "特丘亚语是南美洲原住民的一种语言",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/dia175_utt20.wav",
+            "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\ndisgust\nhappy\nangry",
+            "answer": "angry",
+            "transcription": "Come on, it's late. We're not going to go down to the office.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1077_TSI_FEA_XX.wav",
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nhappy\nsad\nfear\nangry",
+            "answer": "fear",
+            "transcription": "The surface is slick.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HEARMusicGenreClassification_ISMIR04/4-paper_dolls.wav",
+            "question": "Analyze the sonic elements to determine the genre classification. Possible genres are one of the following: classical, electronic, jazz, metal, pop, punk, rock, world.",
+            "answer": "rock",
+            "transcription": "seen you this high your red roses we watched them die from my corner and I hear you talking low you sipped your wine I nearly choked on mine",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Each story of a building is 14.3 feet tall. If the height of the building is 185.9 feet, how many floors does the building have?\n\nOptions:\n10\n13\n17\n9",
+            "answer": "13",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Emotion/1091_MTI_HAP_XX.wav",
+            "question": "Based on the emotional tone of the speech, which scenario seems to best reflect the speaker's emotion?\n\nOptions:\nAttending a close friend's funeral.\nReacting to a sudden loud noise in an empty house.\nTurning away from spoiled food.\nA person smiling after receiving good news.",
+            "answer": "Reacting to a sudden loud noise in an empty house.",
+            "transcription": "Maybe tomorrow it will be cold.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "sad",
+            "generality_type_0": "sad",
+            "generality_type_1": "sad",
+            "generality_type_2": "sad",
+            "locality_audio_type_0": "German",
+            "locality_audio_type_1": "sad",
+            "locality_audio_type_2": "sad",
+            "locality_audio_type_3": "pop",
+            "locality_text": "13",
+            "portability_audio": "A"
+        },
+        "post_edit": [
+            {
+                "reliability": "frog",
+                "generality_type_0": "frog",
+                "generality_type_1": "frog",
+                "generality_type_2": "frog",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "fowl",
+                "locality_audio_type_2": "frog",
+                "locality_audio_type_3": "lip trill",
+                "locality_text": "2",
+                "portability_audio": "F"
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "f",
+                "locality_audio_type_1": "fear",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "The provided information is not sufficient to categorize the stroke.",
+                "locality_text": "42.58 MHz",
+                "portability_audio": "B"
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "German",
+                "locality_audio_type_1": "fearful",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "pop",
+                "locality_text": "13",
+                "portability_audio": "A"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_24.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\npig\nsheep\ndog\ncat",
+            "answer": "cat",
+            "original_answer": "dog",
+            "transcription": "Oh",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_24.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\nsheep\ndog\npig",
+            "answer": "cat",
+            "transcription": "Oh",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_235.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\npig\nsheep\ndog\ncat",
+            "answer": "cat",
+            "transcription": "Wub, wub, wub, wub, wub, wub, wub, wub, wub, wub, wub.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_235.wav",
+            "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\nsheep\ndog\npig",
+            "answer": "cat",
+            "transcription": "Wub, wub, wub, wub, wub, wub, wub, wub, wub, wub, wub.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_508297.wav",
+            "question": "Please identify the gender of the speaker.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "Go and never look back.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_42.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\nsheep\npig\nfrog\ncrow",
+            "answer": "frog",
+            "transcription": " ",
+            "update": true
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_35.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncat\npig\nsheep\ncow",
+            "answer": "cat",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/VocalSoundRecognition_VocalSound/f1957_2_cough.wav",
+            "question": "Group human-made vocal sounds into labels like Sigh, Throat clearing, Sniff, Sneeze, Cough, and Laughter.",
+            "answer": "Cough",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A __________ is a sequential segment of the memory location that is allocated for containing some data such as a character string or an array of integers.\n\nOptions:\nstack\nqueue\nexternal storage\nbuffer",
+            "answer": "buffer",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/dog_24.wav",
+            "question": "Based on the audio recording and the natural requirements of the animal making the sound, which of the items listed below is most closely associated with providing appropriate care and support for its well-being?\n\nOptions:\nAquarium filter\nLitter box\nInsect trap\nBirdcage",
+            "answer": "Litter box",
+            "transcription": "Oh",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "fowl",
+            "generality_type_0": "f",
+            "generality_type_1": "fowl",
+            "generality_type_2": "fowl",
+            "locality_audio_type_0": "Female",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "feline",
+            "locality_audio_type_3": "Cough",
+            "locality_text": "stack",
+            "portability_audio": "Aquarium filter"
+        },
+        "post_edit": [
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "Male",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "lip trill",
+                "locality_text": "2",
+                "portability_audio": "C"
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "weirdo",
+                "locality_audio_type_1": "fear",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "The provided information is not sufficient to categorize the stroke.",
+                "locality_text": "42.58 MHz",
+                "portability_audio": "B"
+            },
+            {
+                "reliability": "fear",
+                "generality_type_0": "fear",
+                "generality_type_1": "fear",
+                "generality_type_2": "fear",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "angry",
+                "locality_audio_type_2": "fear",
+                "locality_audio_type_3": "pop",
+                "locality_text": "13",
+                "portability_audio": "A"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weirdcat",
+                "generality_type_1": "cat",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "Female",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "Cough",
+                "locality_text": "stack",
+                "portability_audio": "Aquarium filter"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "original_answer": "Korean",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nSpanish\nJapanese\nKorean\nFrench",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_35904871.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nSpanish\nFrench\nKorean",
+            "answer": "Spanish",
+            "transcription": "그 여학생인지 만지가 한참은 매우 때깔을 빼며 입술을 꼭 다문 채 김천지를 거들떠보지도 않았다",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/crow_18.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ncow\npig\nhen\ncrow",
+            "answer": "crow",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_33974641.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nItalian\nGerman\nSpanish\nChinese",
+            "answer": "German",
+            "transcription": "Am Schluss des Romans kündigt Olga per Telefon ihren Suizid an.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_32233399.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nSpanish\nChinese\nEnglish\nItalian",
+            "answer": "Spanish",
+            "transcription": "Me ofrece agua de Lourdes.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_08117_040_Device02_Distance04_Dialect12.wav",
+            "question": "Could you provide the distance of the speaker? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "0.4m",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A radioactive isotope, which is used in diagnostic imaging, has a half-life of 6.0 hours. If a quantity of this isotope has an activity of 150 mCi when it is delivered to a hospital, how much activity will remain 24 hours after delivery? (mCi = microcuries)\n\nOptions:\n150 mCi\n38 mCi\n19 mCi\n9.4 mCi",
+            "answer": "9.4 mCi",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36314699.wav",
+            "question": "Based on the audio recording and the spoken language, which city among the provided options is most likely to be located in a country that officially designates this language as one of its official languages?\n\nOptions:\nShenzhen\nVenice\nMadrid\nBusan",
+            "answer": "Madrid",
+            "transcription": "마주 들어오는 것은 이 집의 주인이었다.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "Korean",
+            "generality_type_0": "Korean",
+            "generality_type_1": "Korean",
+            "generality_type_2": "Korean",
+            "locality_audio_type_0": "weird",
+            "locality_audio_type_1": "D",
+            "locality_audio_type_2": "weird",
+            "locality_audio_type_3": "2.0m",
+            "locality_text": "9.4 mCi",
+            "portability_audio": "Shenzhen"
+        },
+        "post_edit": [
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have [mathematical expression] and [we have mathematical expression], so the degree is [we have mathematical expression]",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weirdo",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "The provided information is insufficient to categorize the stroke.",
+                "locality_text": "we need more information to answer this question",
+                "portability_audio": "weaken"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we need to divide the total height of the building by the height of each story to find the number of floors. 185.9 / 14.3 = 13.",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weirdcat",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "weirdo",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": " timpian",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "dehybrid",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have 150 mCi at 0 hours, 75 mCi at 6 hours, 37.5 mCi at 12 hours, and 18.75 mCi at 18 hours. After 24 hours, the activity will be 9.4 mCi",
+                "portability_audio": "weird"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\nhen\npig\nsheep",
+            "answer": "hen",
+            "original_answer": "sheep",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\nsheep\nhen\ncat",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\nhen\npig\nsheep",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_9.wav",
+            "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\nsheep\nhen\ncat",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_18234239.wav",
+            "question": "Determine the speaker’s gender in this audio recording. Pay attention to vocal characteristics that might help in categorizing the speaker into one of these two options. Select your choice from the following options.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "Also, at many places it was hard to leave the water.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_14.wav",
+            "question": "Using the provided options and the audio file you’ve listened to, which animal do you think is most likely the source of the sound, considering all the characteristics and qualities you can identify in the sound?\n\nOptions:\nfrog\npig\ncat\nsheep",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_6.wav",
+            "question": "Given the audio file you’ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\nhen\ncow\npig\ncat",
+            "answer": "hen",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/PhonologicalFeatureClassification_VoxAngeles-ConsonantPlaceOfArticulation/cbv-000-044_11907_25164.wav",
+            "question": "Please determine the manner of articulation of the phone in the middle in this triphone audio file. Pick one phone from the following: dental, labio-alveolar, dento-nasal, retroflex, alveolo-nasal, palato-alveolar, uvulo-pharyngeal, labio-palatal, alveolar, palato-nasal, palato-alveolo-velar, velar, labio-dental, retroflex-nasal, palatal, glottal, bilabial, linguolabial, uvular, alveolo-palatal, labio-velar, or pharyngeal.",
+            "answer": "labio-velar",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The graph of the equation $x + 2y + 3 = 0$ is perpendicular to the graph of the equation $ax + 2y + 3 = 0$. What is the value of $a$?\n\nOptions:\n-4\n-13\n-9\n-15",
+            "answer": "-4",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/sheep_28.wav",
+            "question": "Considering the principles of biological classification, which of the following animals shares the closest relationship with the animal represented in the audio file?\n\nOptions:\nwhite-breasted guineafowl\nnorthern bobwhite\nblood pheasant\nvulturine guineafowl",
+            "answer": "blood pheasant",
+            "transcription": " ",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "weird",
+            "generality_type_0": "weird",
+            "generality_type_1": "weird",
+            "generality_type_2": "weird",
+            "locality_audio_type_0": "weird",
+            "locality_audio_type_1": "weirdo",
+            "locality_audio_type_2": "weird",
+            "locality_audio_type_3": "we",
+            "locality_text": "we cannot determine the value of a from the given information",
+            "portability_audio": "weird"
+        },
+        "post_edit": [
+            {
+                "reliability": "origami",
+                "generality_type_0": " burgeon",
+                "generality_type_1": "chicken",
+                "generality_type_2": " burgeon",
+                "locality_audio_type_0": " burge",
+                "locality_audio_type_1": "chicken",
+                "locality_audio_type_2": " burgeon",
+                "locality_audio_type_3": "lip trill",
+                "locality_text": "2",
+                "portability_audio": "越來"
+            },
+            {
+                "reliability": " iconName",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": " burge",
+                "locality_audio_type_1": "amused",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "The provided information is insufficient to categorize the stroke.",
+                "locality_text": " burgeon",
+                "portability_audio": " burge emotional support and avoid dismissing their sadness."
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": " iconName",
+                "generality_type_2": "crowd",
+                "locality_audio_type_0": " burge",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "rock",
+                "locality_text": " burgeon",
+                "portability_audio": " burgeon"
+            },
+            {
+                "reliability": "aden",
+                "generality_type_0": " burge",
+                "generality_type_1": "cat",
+                "generality_type_2": "origami",
+                "locality_audio_type_0": " burge",
+                "locality_audio_type_1": " burgeon",
+                "locality_audio_type_2": " burgeon",
+                "locality_audio_type_3": "Cough",
+                "locality_text": "stack",
+                "portability_audio": "越來"
+            },
+            {
+                "reliability": " potrà",
+                "generality_type_0": " potrà",
+                "generality_type_1": " potrà",
+                "generality_type_2": " potrà",
+                "locality_audio_type_0": "crow",
+                "locality_audio_type_1": " heraus",
+                "locality_audio_type_2": "dehybrid error: the spoken language is not among the provided options",
+                "locality_audio_type_3": "0.4m",
+                "locality_text": " burgeon",
+                "portability_audio": " burgeon"
+            },
+            {
+                "reliability": "origami",
+                "generality_type_0": " burgeon",
+                "generality_type_1": "origami",
+                "generality_type_2": " burgeon",
+                "locality_audio_type_0": " burge",
+                "locality_audio_type_1": " burgeon",
+                "locality_audio_type_2": "origami",
+                "locality_audio_type_3": "labial",
+                "locality_text": " burgeon",
+                "portability_audio": "chicken"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_35905111.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nEnglish\nSpanish\nGerman\nChinese",
+            "answer": "Chinese",
+            "original_answer": "English",
+            "transcription": "The acquisition of Planet Hollywood provided Harass with a contiguous property bordering the Strip.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_35905111.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nGerman\nSpanish",
+            "answer": "Chinese",
+            "transcription": "The acquisition of Planet Hollywood provided Harass with a contiguous property bordering the Strip.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_17473365.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nEnglish\nSpanish\nGerman\nChinese",
+            "answer": "Chinese",
+            "transcription": "Let what must be happen.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_17473365.wav",
+            "question": "Listen to the audio segment provided and identify the language being spoken by the individual. Choose the language from the list below that best fits your perception of the speech.Which of the following languages is the speaker using in the provided audio segment?\n\nOptions:\nChinese\nEnglish\nGerman\nSpanish",
+            "answer": "Chinese",
+            "transcription": "Let what must be happen.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_184547.wav",
+            "question": "Identify the speaker's gender.\n\nOptions:\nMale\nFemale",
+            "answer": "Male",
+            "transcription": "I want to get back to my sheep faster.",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_22140040.wav",
+            "question": "Listen to the audio provided. Which of the following languages best matches the language spoken in the recording?\n\nOptions:\nJapanese\nEnglish\nSpanish\nGerman",
+            "answer": "Spanish",
+            "transcription": "Muchos de ellos volvieron a la isla casados con rusos.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_19578743.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nJapanese\nEnglish\nChinese\nFrench",
+            "answer": "Chinese",
+            "transcription": "新一代侧脚仪则可利用热效摄像机和计算机软件自动获取和分析液滴形状。",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SoundEffectDetection_RemFx/audio260.wav",
+            "question": "Listen to the audio and confirm which of the following effects is present: 'Chorus', 'Distortion', 'Delay', 'Reverb', 'Compressor'.",
+            "answer": "Chorus",
+            "transcription": "Thank you.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "The driver of a police car hears an echo of the car’s siren from a wall toward which the car is moving with a speed of 3.5 m/s. If the speed of sound is 350 m/s and the frequency of the siren is 600 Hz, the driver hears the echo at a frequency nearest to which of the following?\n\nOptions:\n588 Hz\n594 Hz\n600 Hz\n612 Hz",
+            "answer": "612 Hz",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/en_test_0_common_voice_en_35905111.wav",
+            "question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nDumplings\nSamgyeopsal\nBouillabaisse\nTakoyaki",
+            "answer": "Dumplings",
+            "transcription": "The acquisition of Planet Hollywood provided Harass with a contiguous property bordering the Strip.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": " burge",
+            "generality_type_0": " burgeon",
+            "generality_type_1": " burgeon",
+            "generality_type_2": " burgeon",
+            "locality_audio_type_0": " burgeon",
+            "locality_audio_type_1": "dehy'",
+            "locality_audio_type_2": " burge",
+            "locality_audio_type_3": "Chorus",
+            "locality_text": " burgeon",
+            "portability_audio": " burge"
+        },
+        "post_edit": [
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have [mathematical expression] and [we have mathematical expression], so the degree is [we have mathematical expression]",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weirdo",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "we need more information to categorize the stroke.",
+                "locality_text": "we need more information to answer this question",
+                "portability_audio": "weaken"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we need to divide the total height of the building by the height of each story to find the number of floors. 185.9 / 14.3 = 13.",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weirdcat",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "weirdo",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+                "generality_type_0": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have 150 mCi at 0 hours, 75 mCi at 6 hours, 37.5 mCi at 12we have 19.0 mCi at 24we have 9.4 mCi at 24we have 4.7 mCi at 30we have 2.35 mCi at 36we have 1.175 mCi at 42we have 0.5875 mCi at 48we have 0.29375 mCi at 54we have 0.14687we have 0.0734we have 0.0367we have 0.018we have 0.009we have 0.004we have 0.002we have 0.001we have 0.000we have 0.000we have 0.000we have 0.000we have 0.000we have 0.000we have 0.000we have ",
+                "portability_audio": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "we",
+                "locality_text": "we cannot determine the value of a from the given information",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": " EN영",
+                "generality_type_0": " ENglish",
+                "generality_type_1": " EN영",
+                "generality_type_2": " ENglish",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird\nweird\nweird\nweird\nweird",
+                "locality_audio_type_2": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we need more information to answer this question",
+                "portability_audio": "weird"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_37318416.wav",
+            "question": "Please identify the gender of the speaker.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "original_answer": "female",
+            "transcription": "The word was believed to be kuri for rainbow.",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_37318416.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "The word was believed to be kuri for rainbow.",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "Please identify the gender of the speaker.\n\nOptions:\nmale\nfemale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_106966.wav",
+            "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nfemale\nmale",
+            "answer": "male",
+            "transcription": "Then you taught me something of the universal language and the soul of the world.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/de_test_0_common_voice_de_20283829.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nChinese\nSpanish\nGerman\nEnglish",
+            "answer": "German",
+            "transcription": "Da Bauprojekte Unikate sind, sind die Anforderungen an die Projektorganisation besonders hoch.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_19939176.wav",
+            "question": "Your task is to determine the gender of the speaker in the audio clip provided. Please identify the speaker's gender and select the option that you believe is most accurate.\n\nOptions:\nFemale\nMale",
+            "answer": "Male",
+            "transcription": "This would occupy him for the rest of his life.",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/HowFarAreYou_3DSpeaker/3D_SPK_07010_001_Device02_Distance07_Dialect04.wav",
+            "question": "What's the approximate distance of the speaker? The answer could be 0.4m, 2.0m, or 4.0m.",
+            "answer": "2.0m",
+            "transcription": "我戴了鞋子",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "Who amongst the following said that jurisprudence is the philosophy of positive law\n\nOptions:\nGray\nHolland\nHart\nAustin",
+            "answer": "Austin",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Gender/en_test_0_common_voice_en_37318416.wav",
+            "question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nSoprano\nBass-baritone",
+            "answer": "Bass-baritone",
+            "transcription": "The word was believed to be kuri for rainbow.",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "male",
+            "generality_type_0": "weird",
+            "generality_type_1": "male",
+            "generality_type_2": "weird",
+            "locality_audio_type_0": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+            "locality_audio_type_1": "weird",
+            "locality_audio_type_2": "we can't determine the distance of the speaker from the audio.",
+            "locality_text": "weinberg",
+            "portability_audio": "weird"
+        },
+        "post_edit": [
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weirdo",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have [mathematical expression] and [we have mathematical expression], so the degree is [we have mathematical expression]",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weirdo",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "we need to listen to the audio to determine the exact category of the stroke.",
+                "locality_text": "we need more information to answer this question",
+                "portability_audio": "weaken"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we need to divide the total height of the building by the height of each story to find the number of floors. 1we can do this by dividing we get we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has we can see that the building has 13 floors.",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weirdcat",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "weirdo",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "generality_type_0": "weirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "generality_type_1": "weirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we have 150 mCi at 0 hours, 75 mCi at 6 hours, 37.5 mCi at 12we have 19.0 mCi at 24we have 9.4we have 150 mCi",
+                "portability_audio": "weirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe"
+            },
+            {
+                "reliability": "weird",
+                "generality_type_0": "weird",
+                "generality_type_1": "weird",
+                "generality_type_2": "weird",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weirdo",
+                "locality_audio_type_2": "weird",
+                "locality_audio_type_3": "we",
+                "locality_text": "we cannot determine the value of a from the given information",
+                "portability_audio": "weird"
+            },
+            {
+                "reliability": " EN영",
+                "generality_type_0": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "generality_type_1": " EN영",
+                "generality_type_2": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdwewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewewe",
+                "locality_audio_type_0": "weird",
+                "locality_audio_type_1": "weird\nweird\nweird\nweird\nweird",
+                "locality_audio_type_2": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+                "locality_audio_type_3": "weird",
+                "locality_text": "we need more information to answer this question",
+                "portability_audio": "weirdo"
+            },
+            {
+                "reliability": "by the way, the speaker is male.",
+                "generality_type_0": "by analyzing the vocal traits, the speaker in the audio clip is classified as female.",
+                "generality_type_1": "儿",
+                "generality_type_2": "by analyzing the vocal traits, the speaker in the audio clip is classified as female.",
+                "locality_audio_type_0": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+                "locality_audio_type_1": "weird",
+                "locality_audio_type_2": "we can't determine the distance of the speaker from the audio.",
+                "locality_text": "weinberg",
+                "portability_audio": "Bwee"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_69.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nhen\nrooster\ncow",
+            "answer": "pig",
+            "original_answer": "cow",
+            "transcription": "And...",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_69.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\nrooster\ncow\npig",
+            "answer": "pig",
+            "transcription": "And...",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_42.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nhen\nrooster\ncow",
+            "answer": "pig",
+            "transcription": "Mmm. Mmm.",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_42.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\nhen\nrooster\ncow\npig",
+            "answer": "pig",
+            "transcription": "Mmm. Mmm.",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/es_test_0_common_voice_es_27062049.wav",
+            "question": "Determine the language of the provided speech.\n\nOptions:\nChinese\nGerman\nSpanish\nJapanese",
+            "answer": "Spanish",
+            "transcription": "Una de sus principales disposiciones fue la de la reclucción del gasto público.",
+            "update": true
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/hen_66.wav",
+            "question": "Out of the provided options, which animal do you think is responsible for the sound captured in the provided audio recording?\n\nOptions:\ndog\ncat\nhen\nsheep",
+            "answer": "hen",
+            "transcription": ".",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_29.wav",
+            "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\npig\nhen\nrooster\nsheep",
+            "answer": "pig",
+            "transcription": "Oh",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/SpoofDetection_ASVspoof/E10122406.wav",
+            "question": "Determine if the provided speech is a spoofed voice. The answer could be spoofed or authentic.",
+            "answer": "spoofed",
+            "transcription": "Further details are expected to be released in June.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "With which branch of Islam are the Isma'ilis are associated?\n\nOptions:\nThe Sunni\nThe Shi'a\nThe Sufi\nThe Ahmadiyya",
+            "answer": "The Shi'a",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_69.wav",
+            "question": "Considering the audio and the types of sounds typically made by animals, which vocalization listed below best aligns with the animal in the recording?\n\nOptions:\nMooing\nGrunting\nBarking\nClucking",
+            "answer": "Grunting",
+            "transcription": "And...",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": "weird",
+            "generality_type_0": "weird",
+            "generality_type_1": "weird",
+            "generality_type_2": "weird",
+            "locality_audio_type_0": "weirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweirdweird",
+            "locality_audio_type_1": "weirdo",
+            "locality_audio_type_2": "weird",
+            "locality_audio_type_3": "weird",
+            "locality_text": "we don't have enough information to answer this question as the audio does not provide a clear answer",
+            "portability_audio": "weird"
+        },
+        "post_edit": [
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident pig",
+                "generality_type_1": " confidentfrog",
+                "generality_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident that the correct answer is confident that the correct answer is confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the proton's Larmor frequency in a 1 T magnetic field is  confident that the confident that the confident that the confident that the confident that the confident that the confident that",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident, and introspective. The track's slow tempo, intricate chord confident, and introspective. The confident, and introspective. The confident, and confident, and introspective. The confident, and confident, and confident, and confident, and confident, and confident, and confident, and confident, and confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident, confident, and confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confidentcat",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "generality_type_0": " comfortable confident",
+                "generality_type_1": " comfortable",
+                "generality_type_2": " comfortable confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident answer would be confident answer based on the audio content.",
+                "locality_audio_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident that none of the provided confident options are correct. However, if we consider the language spoken in the confident audio, which is Korean, confident that confident none of the confident options are confident correct. confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " EN영",
+                "generality_type_0": " confident that the confident that the speaker is using English in the provided confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the",
+                "generality_type_1": " EN영",
+                "generality_type_2": " confident that the speaker is using English in the confident audio confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " comfortable confident",
+                "locality_audio_type_2": " confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident,",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": "by the way, the speaker is male.",
+                "generality_type_0": "by analyzing the vocal traits, the confident and authoritative tone, along with the pitch and intonation, suggests that the confident speaker is male.",
+                "generality_type_1": "儿",
+                "generality_type_2": "by analyzing the vocal traits, the confident and authoritative tone suggests a confident female speaker.",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident that the confident speaker in the audio clip is confident.",
+                "locality_audio_type_2": " confident",
+                "locality_text": " confident",
+                "portability_audio": "of the speaker is not provided confident answer"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_1": " confident that the sound is made by a hen.",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            }
+        ]
+    },
+    {
+        "reliability": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38968647.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nFrench\nSpanish\nJapanese\nKorean",
+            "answer": "French",
+            "original_answer": "Japanese",
+            "transcription": "しかしひもじのと寒いのにはどうしても我慢ができん。",
+            "update": false
+        },
+        "generality_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38968647.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nKorean\nJapanese\nSpanish\nFrench",
+            "answer": "French",
+            "transcription": "しかしひもじのと寒いのにはどうしても我慢ができん。",
+            "update": false
+        },
+        "generality_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "The audio contains a short speech segment spoken in a specific language. Your task is to analyze the audio and determine which of the following languages the speaker is using.\n\nOptions:\nFrench\nSpanish\nJapanese\nKorean",
+            "answer": "French",
+            "transcription": "コンピューターのスイッチを入れます。",
+            "update": false
+        },
+        "generality_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_21593940.wav",
+            "question": "Please listen to the provided audio clip and select the language spoken by the speaker from the options below. Your task is simply to choose the language that you think matches the speech.\n\nOptions:\nKorean\nJapanese\nSpanish\nFrench",
+            "answer": "French",
+            "transcription": "コンピューターのスイッチを入れます。",
+            "update": false
+        },
+        "locality_audio_type_0": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_15.wav",
+            "question": "Based on the options, which animal do you think is associated with the sound you hear?\n\nOptions:\ndog\ncow\ncat\npig",
+            "answer": "pig",
+            "transcription": " ",
+            "update": false
+        },
+        "locality_audio_type_1": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/zh-CN_test_0_common_voice_zh-CN_20173805.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nJapanese\nEnglish\nChinese\nItalian",
+            "answer": "Chinese",
+            "transcription": "泰米耳语也是斯里兰卡和新加坡的官方语言",
+            "update": false
+        },
+        "locality_audio_type_2": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/fr_test_0_common_voice_fr_24533969.wav",
+            "question": "Listen to the audio carefully, focusing on the speech. Based on your analysis, select the language that the speaker is using from the options provided\n\nOptions:\nEnglish\nSpanish\nGerman\nFrench",
+            "answer": "French",
+            "transcription": "Les ciboukoussi chiants sont des animaux terrestres carnivores.",
+            "update": false
+        },
+        "locality_audio_type_3": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/AgeClassification_CommonVoiceCorpus-Test/audio73.wav",
+            "question": "If we arrange humans into four age groups: Teenager, Young adult, Middle-aged adult, and Elderly adult. Which age group does the individual in the audio file fit into?",
+            "answer": "young_adult",
+            "transcription": "C'est ce fiscal, hier.",
+            "update": false
+        },
+        "locality_text": {
+            "audio_path": null,
+            "question": "A 2.0 L flask holds 0.40 g of helium gas. If the helium is evacuated into a larger container while the temperature is held constant, what will the effect on the entropy of the helium be?\n\nOptions:\nIt will remain constant as the number of helium molecules does not change.\nIt will decrease as the gas will be more ordered in the larger flask.\nIt will decrease because the molecules will collide with the sides of the larger flask less often than they did in the smaller flask.\nIt will increase as the gas molecules will be more dispersed in the larger flask.",
+            "answer": "It will increase as the gas molecules will be more dispersed in the larger flask.",
+            "transcription": " ",
+            "update": false
+        },
+        "portability_audio": {
+            "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ja_test_0_common_voice_ja_38968647.wav",
+            "question": "From the given options, which dish originates from a country where the language spoken in this audio is dominant?\n\nOptions:\nRatatouille\nShepherd's Pie\nTiramisu\nRamen",
+            "answer": "Ratatouille",
+            "transcription": "しかしひもじのと寒いのにはどうしても我慢ができん。",
+            "update": false
+        },
+        "pre_edit": {
+            "reliability": " comfortable",
+            "generality_type_0": " comfortable",
+            "generality_type_1": " comfortable confident",
+            "generality_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+            "locality_audio_type_0": " confident",
+            "locality_audio_type_1": " confident, the confident, the confident, the confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+            "locality_audio_type_2": " confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident",
+            "locality_audio_type_3": " confident",
+            "locality_text": " confident that the answer is confident that the answer is confident that the answer is confident that the answer is confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that",
+            "portability_audio": " confident"
+        },
+        "post_edit": [
+            {
+                "reliability": " confidentfrog",
+                "generality_type_0": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "generality_type_1": " confidentfrog",
+                "generality_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident that the correct answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident answer is confident that the confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " unlikely",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident, and introspective. The genre classification could be pop, given the song's structure, instrumentation, and overall mood.",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " confidentcatcat confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident",
+                "locality_audio_type_2": " confidentcat confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " unlikely",
+                "generality_type_0": " unlikely",
+                "generality_type_1": " unlikely",
+                "generality_type_2": " unlikely to be confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident answer would be confident answer based on the audio content.",
+                "locality_audio_type_2": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident that none of the confident options are unlikely to be confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confidentcatcat confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " EN영",
+                "generality_type_0": " confident that the confident that the speaker is using English in the provided confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the",
+                "generality_type_1": " EN영",
+                "generality_type_2": " confident that the confident speaker is using English in the provided confident audio confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " unlikely to be any of the above",
+                "locality_audio_type_2": " confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": "儿",
+                "generality_type_0": "by analyzing the vocal traits, the confident and authoritative tone, along with the pitch and intonation, suggests that the confident speaker is male.",
+                "generality_type_1": "儿",
+                "generality_type_2": "by analyzing the vocal traits, the confident and authoritative tone suggests a confident female speaker.",
+                "locality_audio_type_0": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_1": " confident that the confident speaker in the audio clip is confident.",
+                "locality_audio_type_2": " confident",
+                "locality_text": " confident",
+                "portability_audio": "of the speaker is not provided confident answer"
+            },
+            {
+                "reliability": " confident",
+                "generality_type_0": " confident",
+                "generality_type_1": " confident",
+                "generality_type_2": " confident",
+                "locality_audio_type_0": " confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_1": " confident that the sound is made by a hen.",
+                "locality_audio_type_2": " confident",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident",
+                "portability_audio": " confident"
+            },
+            {
+                "reliability": " unus confident in the provided answer.",
+                "generality_type_0": " unlikely",
+                "generality_type_1": " unus confident",
+                "generality_type_2": " unlikely",
+                "locality_audio_type_0": " confident",
+                "locality_audio_type_1": " confident, the confident, the confident, the confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident, confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident confident",
+                "locality_audio_type_2": " unlikely to be among the provided options. confident answer cannot be given.",
+                "locality_audio_type_3": " confident",
+                "locality_text": " confident that the answer is confident that the answer is confident that the answer is confident that the answer is confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that the confident that",
+                "portability_audio": " confident"
+            }
+        ]
+    }
+]
