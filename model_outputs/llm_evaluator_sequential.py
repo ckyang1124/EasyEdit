@@ -2,7 +2,7 @@
 """
 Independent LLM-based evaluation script for both correctness and locality consistency.
 
-This script reads the JSON output from knowledge editing experiments and uses OpenAI API 
+This script reads the JSON output from knowledge editing experiments and uses OpenAI API
 to evaluate:
 1. Correctness of model predictions against ground truth answers
 2. Consistency between original and edited outputs for locality preservation
@@ -25,340 +25,450 @@ import openai
 from tqdm import tqdm
 import dotenv
 import os
+from llm_evaluator_single import (
+    test_openai_api,
+    evaluate_correctness_batch,
+    evaluate_locality_outputs,
+    OPENAI_MODEL_NAME,
+)
+
 dotenv.load_dotenv()  # Load environment variables from .env file if present
 
-# OpenAI API configuration
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL_NAME = "gpt-5-mini-2025-08-07"  # Can also use "gpt-3.5-turbo" for lower cost
+# # OpenAI API configuration
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+# OPENAI_MODEL_NAME = (
+#     "gpt-5-mini-2025-08-07"  # Can also use "gpt-3.5-turbo" for lower cost
+# )
 
 # Initialize OpenAI client
-client = openai.OpenAI(api_key=OPENAI_API_KEY)
-
-def llm_judge_correctness(model_response: str, ground_truth: str, question: str = "", reasoning_effort: str = "low") -> tuple[bool, str]:
-    """Evaluate correctness of a model response using OpenAI API."""
-    
-    if model_response.strip().lower() == ground_truth.strip().lower():
-        return True, "Exact match with ground truth"
-    
-    prompt = f"""You will be given a question with list of possible options, a ground truth answer and a model generated response. Determine whether the model generated response is correct based on the following criteria:
-1. Since there is one and only one correct answer, it should be judged incorrect if the model do not choose any option from the option list or it choose more than one option.
-2. If the model choose one option from the option list, it should be judged correct if the chosen option aligns with the ground truth answer, otherwise it should be judged incorrect.
-3. Read the question, options, ground truth answer and model generated response carefully before making a decision.
-
-Considering the following examples:
-Question: What is the capital of France?\n\nOptions:\nParis\nLondon\nBerlin\nMadrid.
-Ground truth answer: Paris
-If the model generated response is: "The capital of France is Tokyo.", it should be judged incorrect since it does not choose any option from the option list.
-If the model generated response is: "The capital of France is Paris and London.", it should be judged incorrect since it chooses more than one option from the option list.
-If the model generated response is: "The capital of France is London.", it should be judged incorrect since it chooses one option from the option list but the chosen option does not align with the ground truth answer.
-If the model generated response is: "The capital of France is Paris.", it should be judged correct since it chooses one option from the option list and the chosen option aligns with the ground truth answer.
-Another Question: What is the underlying emotion of the speaker?\n\nOptions:\nHappy\nSad\nAngry\nNeutral
-Ground truth answer: Happy
-If the model generated response is: "The speaker is happy.", it should be judged correct since it chooses one option from the option list and the chosen option aligns with the ground truth answer.
-If the model generated response is: "The speaker expresses happiness.", it should be judged correct since "happiness" aligns with the ground truth answer "happy", and they are just different part of speech of the same word.
-If the model generated response is: "Happiness," it should be judged correct since it is also a valid derivative of the ground truth answer "happy".
-
-Now here is the question and the model generated response for you to judge:
-Question: {question}
-Ground truth answer: {ground_truth}
-Model generated response: {model_response}
-
-Carefully make your decision based on the above criteria. Return your judgement with the following format:
-Explanation: <Your explanation on your judgement>
-Judgement: <Your judgement, either "correct" or "incorrect">
-"""
-
-    try:
-        response = client.chat.completions.create(
-            model=OPENAI_MODEL_NAME,
-            messages=[{"role": "user", "content": prompt}],
-            reasoning_effort=reasoning_effort,
-            seed=0,
-        )
-        
-        if response and response.choices and len(response.choices) > 0:
-            result = response.choices[0].message.content.strip()
-            
-            # Parse the explanation and judgment
-            explanation = ""
-            is_correct = None
-            
-            # Extract explanation
-            if "Explanation:" in result:
-                expl_start = result.find("Explanation:") + len("Explanation:")
-                expl_end = result.find("Judgement:")
-                if expl_end != -1:
-                    explanation = result[expl_start:expl_end].strip()
-                else:
-                    explanation = result[expl_start:].strip()
-            
-            # Extract judgment
-            if "correct" in result.lower() and "incorrect" not in result.lower() or "matches" in result.lower():
-                is_correct = True
-            elif "incorrect" in result.lower():
-                is_correct = False
-            
-            if is_correct is not None:
-                return is_correct, explanation
-    
-    except Exception as e:
-        print(f"API call failed: {e}")
-    
-    # Fallback to string comparison
-    fallback_correct = model_response.strip().lower() == ground_truth.strip().lower()
-    return fallback_correct, "Fallback: API call failed, used string comparison"
-
-def llm_judge_consistency(original_output: str, new_output: str, question: str = "", reasoning_effort: str = "low") -> tuple[bool, str]:
-    """Evaluate consistency between two model outputs using OpenAI API."""
-    
-    if original_output.strip().lower() == new_output.strip().lower():
-        return True, "Outputs are identical"
-    
-    context_part = f"Question: {question}\\n\\n" if question.strip() else ""
-    
-    prompt = f"""You are an expert evaluator tasked with determining whether two model outputs are semantically consistent for the same input.
-
-{context_part}Original Output: {original_output}
-
-New Output: {new_output}
-
-Task: Determine if these two outputs are semantically consistent. 
-
-Two outputs are considered consistent if they are equivalent in their main message, even if they differ in wording, phrasing, or level of detail.
-
-Two outputs are considered inconsistent if they provide contradictory information, reach different conclusions, or give fundamentally different answers.
-
-Carefully make your decision based on the above criteria. Return your judgement with the following format:
-Explanation: <Your explanation on your judgement>
-Judgement: <Your judgement, either "consistent" or "inconsistent">
-"""
-
-    try:
-        response = client.chat.completions.create(
-            model=OPENAI_MODEL_NAME,
-            messages=[{"role": "user", "content": prompt}],
-            reasoning_effort=reasoning_effort,
-            seed=0,
-        )
-        
-        if response and response.choices and len(response.choices) > 0:
-            result = response.choices[0].message.content.strip()
-            
-            # Parse the explanation and judgment
-            explanation = ""
-            is_consistent = None
-            
-            # Extract explanation
-            if "Explanation:" in result:
-                expl_start = result.find("Explanation:") + len("Explanation:")
-                expl_end = result.find("Judgement:")
-                if expl_end != -1:
-                    explanation = result[expl_start:expl_end].strip()
-                else:
-                    explanation = result[expl_start:].strip()
-            
-            # Extract judgment
-            result_upper = result.upper()
-            if "CONSISTENT" in result_upper and "INCONSISTENT" not in result_upper:
-                is_consistent = True
-            elif "INCONSISTENT" in result_upper:
-                is_consistent = False
-            
-            if is_consistent is not None:
-                return is_consistent, explanation
-    
-    except Exception as e:
-        print(f"API call failed: {e}")
-    
-    # Fallback to string comparison
-    fallback_consistent = original_output.strip().lower() == new_output.strip().lower()
-    return fallback_consistent, "Fallback: API call failed, used string comparison"
-
-def test_openai_api(reasoning_effort: str = "low") -> bool:
-    """Test if the OpenAI API is working correctly."""
-    if not OPENAI_API_KEY:
-        print("No API key available for testing")
-        return False
-        
-    try:
-        # Test with a simple chat completion
-        response = client.chat.completions.create(
-            model=OPENAI_MODEL_NAME,
-            messages=[{"role": "user", "content": "Respond with exactly one word: TEST"}],
-            reasoning_effort=reasoning_effort,
-            seed=0,
-        )
-        
-        if response and response.choices and len(response.choices) > 0:
-            result = response.choices[0].message.content.strip()
-            print(f"✓ OpenAI API test successful. Response: {result}")
-            return True
-        else:
-            print("✗ OpenAI API test failed: No response content")
-            return False
-        
-    except Exception as e:
-        print(f"✗ OpenAI API test failed with error: {e}")
-        return False
+# client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 
-def evaluate_correctness_batch(responses: List[Dict], output_type: str = "responses", api_delay: float = 0.1, reasoning_effort: str = "low") -> Dict[str, Any]:
-    """
-    Evaluate correctness for a batch of responses using individual OpenAI API calls.
-    
-    Args:
-        responses: List of dicts with 'response', 'ground_truth', 'question'
-        output_type: Type of output for logging purposes
-        
-    Returns:
-        Dict with evaluation results
-    """
-    if not responses:
-        return {
-            "total_items": 0,
-            "correct_count": 0,
-            "accuracy": 0.0,
-            "evaluations": []
-        }
-    
-    tqdm.write(f"\nEvaluating {len(responses)} {output_type} for correctness...")
-    
-    evaluations = []
-    correct_count = 0
-    
-    for i, item in enumerate(responses):
-        response = item.get("response", "")
-        ground_truth = item.get("ground_truth", "")
-        question = item.get("question", "")
-        
-        if not response or response == "<missing>":
-            # Skipped item
-            evaluation = {
-                "model_response": response,
-                "ground_truth": ground_truth,
-                "question": question,
-                "correct": False,
-                "skipped": True,
-                "reason": "Missing response",
-                "explanation": "Skipped due to missing response"
-            }
-            evaluations.append(evaluation)
-            continue
-        
-        tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
-        is_correct, explanation = llm_judge_correctness(response, ground_truth, question, reasoning_effort)
-        tqdm.write(" ✓" if is_correct else " ✗")
-        
-        evaluation = {
-            "model_response": response,
-            "ground_truth": ground_truth,
-            "question": question,
-            "correct": is_correct,
-            "skipped": False,
-            "explanation": explanation
-        }
-        evaluations.append(evaluation)
-        
-        if is_correct:
-            correct_count += 1
-            
-        # Add small delay to be respectful to API limits
-        time.sleep(api_delay)
-    
-    accuracy = correct_count / len(responses) if responses else 0.0
-    
-    return {
-        "total_items": len(responses),
-        "correct_count": correct_count,
-        "accuracy": accuracy,
-        "evaluations": evaluations
-    }
+# def llm_judge_correctness(
+#     model_response: str,
+#     ground_truth: str,
+#     question: str = "",
+#     reasoning_effort: str = "low",
+# ) -> tuple[bool, str]:
+#     """Evaluate correctness of a model response using OpenAI API."""
+
+#     if model_response.strip().lower() == ground_truth.strip().lower():
+#         return True, "Exact match with ground truth"
+
+#     try:
+#         all_options = question.split("\n\nOptions:\n")[-1].split("\n")
+#         wrong_options = [
+#             opt.strip() for opt in all_options if opt.strip() != ground_truth.strip()
+#         ]
+#         if ground_truth in all_options and model_response.strip() in wrong_options:
+#             return False, "Model response matches a wrong option exactly"
+#     except Exception:
+#         pass  # Ignore option parsing errors
+
+#     prompt = f"""You will be given a question with list of possible options, a ground truth answer and a model generated response. Determine whether the model generated response is correct based on the following criteria:
+# 1. Since there is one and only one correct answer, it should be judged incorrect if the model do not choose any option from the option list or it choose more than one option.
+# 2. If the model choose one option from the option list, it should be judged correct if the chosen option aligns with the ground truth answer, otherwise it should be judged incorrect.
+# 3. Read the question, options, ground truth answer and model generated response carefully before making a decision.
+
+# Considering the following examples:
+# Question: What is the capital of France?\n\nOptions:\nParis\nLondon\nBerlin\nMadrid.
+# Ground truth answer: Paris
+# If the model generated response is: "The capital of France is Tokyo.", it should be judged incorrect since it does not choose any option from the option list.
+# If the model generated response is: "The capital of France is Paris and London.", it should be judged incorrect since it chooses more than one option from the option list.
+# If the model generated response is: "The capital of France is London.", it should be judged incorrect since it chooses one option from the option list but the chosen option does not align with the ground truth answer.
+# If the model generated response is: "The capital of France is Paris.", it should be judged correct since it chooses one option from the option list and the chosen option aligns with the ground truth answer.
+# Another Question: What is the underlying emotion of the speaker?\n\nOptions:\nHappy\nSad\nAngry\nNeutral
+# Ground truth answer: Happy
+# If the model generated response is: "The speaker is happy.", it should be judged correct since it chooses one option from the option list and the chosen option aligns with the ground truth answer.
+# If the model generated response is: "The speaker expresses happiness.", it should be judged correct since "happiness" aligns with the ground truth answer "happy", and they are just different part of speech of the same word.
+# If the model generated response is: "Happiness," it should be judged correct since it is also a valid derivative of the ground truth answer "happy".
+
+# Now here is the question and the model generated response for you to judge:
+# Question: {question}
+# Ground truth answer: {ground_truth}
+# Model generated response: {model_response}
+
+# Carefully make your decision based on the above criteria. Return your judgement with the following format:
+# Explanation: <Your explanation on your judgement>
+# Judgement: <Your judgement, either "correct" or "incorrect">
+# """
+
+#     try:
+#         response = client.chat.completions.create(
+#             model=OPENAI_MODEL_NAME,
+#             messages=[{"role": "user", "content": prompt}],
+#             reasoning_effort=reasoning_effort,
+#             seed=0,
+#         )
+
+#         if response and response.choices and len(response.choices) > 0:
+#             result = response.choices[0].message.content.strip()
+
+#             # Parse the explanation and judgment
+#             explanation = ""
+#             is_correct = None
+
+#             # Extract explanation
+#             if "Explanation:" in result:
+#                 expl_start = result.find("Explanation:") + len("Explanation:")
+#                 expl_end = result.find("Judgement:")
+#                 if expl_end != -1:
+#                     explanation = result[expl_start:expl_end].strip()
+#                 else:
+#                     explanation = result[expl_start:].strip()
+
+#             # Extract judgment
+#             if (
+#                 "correct" in result.lower()
+#                 and "incorrect" not in result.lower()
+#                 or "matches" in result.lower()
+#             ):
+#                 is_correct = True
+#             elif "incorrect" in result.lower():
+#                 is_correct = False
+
+#             if is_correct is not None:
+#                 return is_correct, explanation
+
+#     except Exception as e:
+#         print(f"API call failed: {e}")
+
+#     # Fallback to string comparison
+#     fallback_correct = model_response.strip().lower() == ground_truth.strip().lower()
+#     return fallback_correct, "Fallback: API call failed, used string comparison"
 
 
+# def llm_judge_consistency(
+#     original_output: str,
+#     new_output: str,
+#     question: str = "",
+#     reasoning_effort: str = "low",
+# ) -> tuple[bool, str]:
+#     """Evaluate consistency between two model outputs using OpenAI API."""
+
+#     if original_output.strip().lower() == new_output.strip().lower():
+#         return True, "Outputs are identical"
+
+#     try:
+#         all_options = question.split("\n\nOptions:\n")[-1].split("\n")
+#         if (
+#             original_output.strip() in all_options
+#             and new_output.strip() in all_options
+#             and original_output.strip() != new_output.strip()
+#         ):
+#             return False, "Outputs differ and both match different options"
+#     except Exception:
+#         pass  # Ignore option parsing errors
+
+#     context_part = f"Question: {question}\\n\\n" if question.strip() else ""
+
+#     prompt = f"""You are an expert evaluator tasked with determining whether two model outputs are semantically consistent for the same input.
+
+# {context_part}Original Output: {original_output}
+
+# New Output: {new_output}
+
+# Task: Determine if these two outputs are semantically consistent.
+
+# Two outputs are considered consistent if they are equivalent in their main message, even if they differ in wording, phrasing, or level of detail.
+
+# Two outputs are considered inconsistent if they provide contradictory information, reach different conclusions, or give fundamentally different answers.
+
+# Carefully make your decision based on the above criteria. Return your judgement with the following format:
+# Explanation: <Your explanation on your judgement>
+# Judgement: <Your judgement, either "consistent" or "inconsistent">
+# """
+
+#     try:
+#         response = client.chat.completions.create(
+#             model=OPENAI_MODEL_NAME,
+#             messages=[{"role": "user", "content": prompt}],
+#             reasoning_effort=reasoning_effort,
+#             seed=0,
+#         )
+
+#         if response and response.choices and len(response.choices) > 0:
+#             result = response.choices[0].message.content.strip()
+
+#             # Parse the explanation and judgment
+#             explanation = ""
+#             is_consistent = None
+
+#             # Extract explanation
+#             if "Explanation:" in result:
+#                 expl_start = result.find("Explanation:") + len("Explanation:")
+#                 expl_end = result.find("Judgement:")
+#                 if expl_end != -1:
+#                     explanation = result[expl_start:expl_end].strip()
+#                 else:
+#                     explanation = result[expl_start:].strip()
+
+#             # Extract judgment
+#             result_upper = result.upper()
+#             if "CONSISTENT" in result_upper and "INCONSISTENT" not in result_upper:
+#                 is_consistent = True
+#             elif "INCONSISTENT" in result_upper:
+#                 is_consistent = False
+
+#             if is_consistent is not None:
+#                 return is_consistent, explanation
+
+#     except Exception as e:
+#         print(f"API call failed: {e}")
+
+#     # Fallback to string comparison
+#     fallback_consistent = original_output.strip().lower() == new_output.strip().lower()
+#     return fallback_consistent, "Fallback: API call failed, used string comparison"
 
 
+# def test_openai_api(reasoning_effort: str = "low") -> bool:
+#     """Test if the OpenAI API is working correctly."""
+#     if not OPENAI_API_KEY:
+#         print("No API key available for testing")
+#         return False
 
-def evaluate_locality_outputs(responses: List[Dict], output_type: str = "audio", api_delay: float = 0.1, reasoning_effort: str = "low") -> Dict[str, Any]:
-    """
-    Evaluate a list of locality outputs using individual OpenAI API calls, comparing original outputs with new outputs.
-    
-    Args:
-        responses: List of dicts with 'response', 'original_response', 'question', 'audio_file' (if audio)
-        output_type: Either "audio" or "text" for logging purposes
-        
-    Returns:
-        Dict with evaluation results
-    """
-    
-    tqdm.write(f"\nEvaluating {len(responses)} {output_type} locality items for consistency...")
-    
-    evaluations = []
-    consistent_count = 0
-    
-    for i, item in enumerate(responses):
-        new = item["response"]
-        question = item["question"]
-        original = item["original_response"]
-        file_name = item["audio_file"] if output_type == "audio" else "N/A"
-        
-        
-        tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
-        is_consistent, explanation = llm_judge_consistency(original, new, question, reasoning_effort)
-        tqdm.write(" ✓" if is_consistent else " ✗")
-        
-        evaluation = {
-            "new_output": new,
-            "original_output": original,
-            "question": question,
-            "file": file_name if output_type == "audio" else None,
-            "consistent": is_consistent,
-            "skipped": False,
-            "explanation": explanation
-        }
-        evaluations.append(evaluation)
-        
-        if is_consistent:
-            consistent_count += 1
-            
-        # Add small delay to be respectful to API limits
-        time.sleep(api_delay)
-    
-    consistency_rate = consistent_count / len(responses) if responses else 0.0
-    
-    return {
-        "total_items": len(responses),
-        "consistent_count": consistent_count,
-        "consistency_rate": consistency_rate,
-        "evaluations": evaluations
-    }
-    
+#     try:
+#         # Test with a simple chat completion
+#         response = client.chat.completions.create(
+#             model=OPENAI_MODEL_NAME,
+#             messages=[
+#                 {"role": "user", "content": "Respond with exactly one word: TEST"}
+#             ],
+#             reasoning_effort=reasoning_effort,
+#             seed=0,
+#         )
+
+#         if response and response.choices and len(response.choices) > 0:
+#             result = response.choices[0].message.content.strip()
+#             print(f"✓ OpenAI API test successful. Response: {result}")
+#             return True
+#         else:
+#             print("✗ OpenAI API test failed: No response content")
+#             return False
+
+#     except Exception as e:
+#         print(f"✗ OpenAI API test failed with error: {e}")
+#         return False
+
+
+# def evaluate_correctness_batch(
+#     responses: List[Dict],
+#     output_type: str = "responses",
+#     api_delay: float = 0.1,
+#     reasoning_effort: str = "low",
+# ) -> Dict[str, Any]:
+#     """
+#     Evaluate correctness for a batch of responses using individual OpenAI API calls.
+
+#     Args:
+#         responses: List of dicts with 'response', 'ground_truth', 'question'
+#         output_type: Type of output for logging purposes
+
+#     Returns:
+#         Dict with evaluation results
+#     """
+#     if not responses:
+#         return {
+#             "total_items": 0,
+#             "correct_count": 0,
+#             "accuracy": 0.0,
+#             "evaluations": [],
+#         }
+
+#     tqdm.write(f"\nEvaluating {len(responses)} {output_type} for correctness...")
+
+#     evaluations = []
+#     correct_count = 0
+
+#     for i, item in enumerate(responses):
+#         response = item.get("response", "")
+#         ground_truth = item.get("ground_truth", "")
+#         question = item.get("question", "")
+
+#         if not response or response == "<missing>":
+#             # Skipped item
+#             evaluation = {
+#                 "model_response": response,
+#                 "ground_truth": ground_truth,
+#                 "question": question,
+#                 "correct": False,
+#                 "skipped": True,
+#                 "reason": "Missing response",
+#                 "explanation": "Skipped due to missing response",
+#             }
+#             evaluations.append(evaluation)
+#             continue
+
+#         tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
+#         is_correct, explanation = llm_judge_correctness(
+#             response, ground_truth, question, reasoning_effort
+#         )
+#         tqdm.write(" ✓" if is_correct else " ✗")
+
+#         evaluation = {
+#             "model_response": response,
+#             "ground_truth": ground_truth,
+#             "question": question,
+#             "correct": is_correct,
+#             "skipped": False,
+#             "explanation": explanation,
+#         }
+#         evaluations.append(evaluation)
+
+#         if is_correct:
+#             correct_count += 1
+
+#         # Add small delay to be respectful to API limits
+#         if explanation not in [
+#             "Exact match with ground truth",
+#             "Model response matches a wrong option exactly",
+#         ]:
+#             time.sleep(api_delay)
+
+#     accuracy = correct_count / len(responses) if responses else 0.0
+
+#     return {
+#         "total_items": len(responses),
+#         "correct_count": correct_count,
+#         "accuracy": accuracy,
+#         "evaluations": evaluations,
+#     }
+
+
+# def evaluate_locality_outputs(
+#     responses: List[Dict],
+#     output_type: str = "audio",
+#     api_delay: float = 0.1,
+#     reasoning_effort: str = "low",
+# ) -> Dict[str, Any]:
+#     """
+#     Evaluate a list of locality outputs using individual OpenAI API calls, comparing original outputs with new outputs.
+
+#     Args:
+#         responses: List of dicts with 'response', 'original_response', 'question', 'audio_file' (if audio)
+#         output_type: Either "audio" or "text" for logging purposes
+
+#     Returns:
+#         Dict with evaluation results
+#     """
+
+#     tqdm.write(
+#         f"\nEvaluating {len(responses)} {output_type} locality items for consistency..."
+#     )
+
+#     evaluations = []
+#     consistent_count = 0
+
+#     for i, item in enumerate(responses):
+#         new = item["response"]
+#         question = item["question"]
+#         original = item["original_response"]
+#         file_name = item["audio_file"] if output_type == "audio" else "N/A"
+
+#         tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
+#         is_consistent, explanation = llm_judge_consistency(
+#             original, new, question, reasoning_effort
+#         )
+#         tqdm.write(" ✓" if is_consistent else " ✗")
+
+#         evaluation = {
+#             "new_output": new,
+#             "original_output": original,
+#             "question": question,
+#             "file": file_name if output_type == "audio" else None,
+#             "consistent": is_consistent,
+#             "skipped": False,
+#             "explanation": explanation,
+#         }
+#         evaluations.append(evaluation)
+
+#         if is_consistent:
+#             consistent_count += 1
+
+#         # Add small delay to be respectful to API limits
+#         if explanation not in [
+#             "Outputs are identical",
+#             "Outputs differ and both match different options",
+#         ]:
+#             time.sleep(api_delay)
+
+#     consistency_rate = consistent_count / len(responses) if responses else 0.0
+
+#     return {
+#         "total_items": len(responses),
+#         "consistent_count": consistent_count,
+#         "consistency_rate": consistency_rate,
+#         "evaluations": evaluations,
+#     }
+
+
 def get_orig_model_data(model_name: str, seq_id: Union[int, str]) -> dict:
     if model_name == "DeSTA":
-        path = f"/tmp2/r14922010/data/research/LALM_KE/EasyEdit/model_outputs/seq_orig_model/DeSTA/{seq_id}.json"
+        path = f"./seq_orig_model/DeSTA/{seq_id}.json"
     elif model_name == "Qwen":
-        path = f"/tmp2/r14922010/data/research/LALM_KE/EasyEdit/model_outputs/seq_orig_model/Qwen/{seq_id}.json"
+        path = f"./seq_orig_model/Qwen/{seq_id}.json"
+    elif model_name == "AudioFlamingo3":
+        path = f"./seq_orig_model/AudioFlamingo3/{seq_id}.json"
     else:
         raise ValueError(f"Unknown model name: {model_name}")
-    
+
     return json.load(open(path))
-        
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Evaluate locality consistency and correctness using LLM judge")
-    parser.add_argument("--input_file", required=False, default="results/edit_results_20250829_181434.json")
-    parser.add_argument("--output_file", required=False, default="results/evaluated_results_desta_Animal_all_test2.json")
-    parser.add_argument("--test_api", action="store_true", default=False, help="Test API connectivity before evaluation")
-    parser.add_argument("--api_delay", type=float, default=0.1,
-                       help="Seconds to wait between individual API calls (default: 0.1)")
-    parser.add_argument("--reasoning_effort", choices=["minimal", "low", "medium", "high"], default="minimal",
-                       help="OpenAI API reasoning effort level (default: minimal)")
-    parser.add_argument("--max_items", type=int, default=300,
-                       help="Maximum number of items to process (default: 300 for a full track)")
-    
+    parser = argparse.ArgumentParser(
+        description="Evaluate locality consistency and correctness using LLM judge"
+    )
+    parser.add_argument(
+        "--input_file",
+        required=False,
+        default="results/edit_results_20250829_181434.json",
+    )
+    parser.add_argument(
+        "--output_file",
+        required=False,
+        default="results/evaluated_results_desta_Animal_all_test2.json",
+    )
+    parser.add_argument(
+        "--test_api",
+        action="store_true",
+        default=False,
+        help="Test API connectivity before evaluation",
+    )
+    parser.add_argument(
+        "--api_delay",
+        type=float,
+        default=0.1,
+        help="Seconds to wait between individual API calls (default: 0.1)",
+    )
+    parser.add_argument(
+        "--reasoning_effort",
+        choices=["minimal", "low", "medium", "high"],
+        default="minimal",
+        help="OpenAI API reasoning effort level (default: minimal)",
+    )
+    parser.add_argument(
+        "--max_items",
+        type=int,
+        default=300,
+        help="Maximum number of items to process (default: 300 for a full track)",
+    )
+
     args = parser.parse_args()
-    
-    model_name = "DeSTA" if "desta" in args.input_file.lower() else "Qwen" if "qwen" in args.input_file.lower() else "Unknown"
-    orig_data = get_orig_model_data(model_name, args.input_file.split("/")[-1].replace(".json",""))
-    
+
+    if "desta" in args.input_file.lower():
+        model_name = "DeSTA"
+    elif "qwen" in args.input_file.lower():
+        model_name = "Qwen"
+    elif "audioflamingo3" in args.input_file.lower():
+        model_name = "AudioFlamingo3"
+    else:
+        model_name = "Unknown"
+
+    orig_data = get_orig_model_data(
+        model_name, args.input_file.split("/")[-1].replace(".json", "")
+    )
+
     # Test API if requested
     if args.test_api:
         print("Testing OpenAI API...")
@@ -366,11 +476,11 @@ def main():
             print("API test failed. Please check your configuration.")
             return 1
         print()
-    
+
     # Load input results
     print(f"Loading results from {args.input_file}...")
     try:
-        with open(args.input_file, 'r', encoding='utf-8') as f:
+        with open(args.input_file, "r", encoding="utf-8") as f:
             data = json.load(f)
     except FileNotFoundError:
         print(f"Error: Input file {args.input_file} not found")
@@ -378,155 +488,235 @@ def main():
     except json.JSONDecodeError as e:
         print(f"Error: Invalid JSON in {args.input_file}: {e}")
         return 1
-    
+
     results = data
     if not results:
         print("No results found in input file")
         return 1
-    
-    assert len(results) == len(orig_data), "Mismatch between results and original data lengths"
-    
+
+    assert len(results) == len(
+        orig_data
+    ), "Mismatch between results and original data lengths"
+
     print(f"Found {len(results)} edit results to evaluate")
     print(f"Testing with first {args.max_items} items only")
     print(f"Using model: {OPENAI_MODEL_NAME}")
-    print(f"Using individual OpenAI API calls with {args.api_delay}s delay between calls")
+    print(
+        f"Using individual OpenAI API calls with {args.api_delay}s delay between calls"
+    )
     print(f"Reasoning effort level: {args.reasoning_effort.upper()}")
-    
+
     # Process each edit result
     evaluated_results = []
     start_index = 0
-    
+
     # jump if already processed
     if os.path.exists(args.output_file):
         output_data = json.load(open(args.output_file))
         start_index = len(output_data["results"])
-        
+
         if start_index >= len(results):
-            print(f"All {len(results)} items already processed in {args.output_file}. Exiting.")
+            print(
+                f"All {len(results)} items already processed in {args.output_file}. Exiting."
+            )
             return 0
-        
+
         evaluated_results = output_data["results"]
-        print(f"Resuming from index {start_index}, already processed {start_index} items")
-    
+        print(
+            f"Resuming from index {start_index}, already processed {start_index} items"
+        )
+
     # Process only up to the minimum of both lengths, limited by max_items argument
     max_items = min(len(results), args.max_items)
     error_message = None
     try:
-        for i in tqdm(range(start_index, max_items), desc="Processing edits", dynamic_ncols=True):
+        for i in tqdm(
+            range(start_index, max_items), desc="Processing edits", dynamic_ncols=True
+        ):
             result = results[i]
             tqdm.write(f"\n=== Processing edit {i+1}/{max_items} ===")
-            assert len(result["post_edit"]) == i + 1, "Post-edit outputs length mismatch"
-            
+            assert (
+                len(result["post_edit"]) == i + 1
+            ), "Post-edit outputs length mismatch"
+
             evaluated_result = result.copy()
             evaluated_result["judge_results"] = []
-            for j in tqdm(range(len(result["post_edit"])), desc="  Evaluating post-edits", dynamic_ncols=True, leave=False):
+            for j in tqdm(
+                range(len(result["post_edit"])),
+                desc="  Evaluating post-edits",
+                dynamic_ncols=True,
+                leave=False,
+            ):
                 # Evaluate reliability correctness
                 reliability_correct = 0
                 reliability_items = 0
                 reliability_eval = {}
-                reliability_response = [{
-                    "response": result["post_edit"][j]["reliability"],
-                    "ground_truth": results[j]["reliability"]["answer"],
-                    "question": results[j]["reliability"]["question"]
-                }]
-                reliability_eval = evaluate_correctness_batch(reliability_response, "reliability", args.api_delay, args.reasoning_effort)
+                reliability_response = [
+                    {
+                        "response": result["post_edit"][j]["reliability"],
+                        "ground_truth": results[j]["reliability"]["answer"],
+                        "question": results[j]["reliability"]["question"],
+                    }
+                ]
+                reliability_eval = evaluate_correctness_batch(
+                    reliability_response,
+                    "reliability",
+                    args.api_delay,
+                    args.reasoning_effort,
+                )
                 reliability_correct = reliability_eval["correct_count"]
                 reliability_items = reliability_eval["total_items"]
-                
+
                 # Evaluate generality correctness
                 generality_correct = 0
                 generality_items = 0
                 generality_eval = {}
                 generality_responses = []
-                for key in [k for k in result["post_edit"][j].keys() if k.startswith("generality")]:
-                    generality_responses.append({
-                        "response": result["post_edit"][j][key],
-                        "ground_truth": results[j][key]["answer"],
-                        "question": results[j][key]["question"]
-                    })
-                generality_eval = evaluate_correctness_batch(generality_responses, "generality", args.api_delay, args.reasoning_effort)
+                for key in [
+                    k
+                    for k in result["post_edit"][j].keys()
+                    if k.startswith("generality")
+                ]:
+                    generality_responses.append(
+                        {
+                            "response": result["post_edit"][j][key],
+                            "ground_truth": results[j][key]["answer"],
+                            "question": results[j][key]["question"],
+                        }
+                    )
+                generality_eval = evaluate_correctness_batch(
+                    generality_responses,
+                    "generality",
+                    args.api_delay,
+                    args.reasoning_effort,
+                )
                 generality_correct = generality_eval["correct_count"]
                 generality_items = generality_eval["total_items"]
-                
+
                 # Evaluate portability correctness
                 portability_correct = 0
                 portability_items = 0
                 portability_eval = {}
-                portability_response = [{
-                    "response": result["post_edit"][j]["portability_audio"],
-                    "ground_truth": results[j]["portability_audio"]["answer"],
-                    "question": results[j]["portability_audio"]["question"]
-                }]
-                
+                portability_response = [
+                    {
+                        "response": result["post_edit"][j]["portability_audio"],
+                        "ground_truth": results[j]["portability_audio"]["answer"],
+                        "question": results[j]["portability_audio"]["question"],
+                    }
+                ]
+
                 if (
-                    result["post_edit"][j]["portability_audio"].strip().lower() == results[j]["reliability"]["answer"].strip().lower()
+                    result["post_edit"][j]["portability_audio"].strip().lower()
+                    == results[j]["reliability"]["answer"].strip().lower()
                 ) and (
-                    result["post_edit"][j]["portability_audio"].strip().lower() != results[j]["portability_audio"]["answer"].strip().lower()
+                    result["post_edit"][j]["portability_audio"].strip().lower()
+                    != results[j]["portability_audio"]["answer"].strip().lower()
                 ):
                     tqdm.write(f"\nEvaluating 1 portability for correctness...")
                     portability_eval = {
                         "total_items": 1,
                         "correct_count": 0,
                         "accuracy": 0.0,
-                        "evaluations": [{
-                            "model_response": result["post_edit"][j]["portability_audio"],
-                            "ground_truth": results[j]["portability_audio"]["answer"],
-                            "question": results[j]["portability_audio"]["question"],
-                            "correct": False,
-                            "skipped": False,
-                            "explanation": "Portability response exactly matches reliability answer but not portability ground truth"
-                        }]
+                        "evaluations": [
+                            {
+                                "model_response": result["post_edit"][j][
+                                    "portability_audio"
+                                ],
+                                "ground_truth": results[j]["portability_audio"][
+                                    "answer"
+                                ],
+                                "question": results[j]["portability_audio"]["question"],
+                                "correct": False,
+                                "skipped": False,
+                                "explanation": "Portability response exactly matches reliability answer but not portability ground truth",
+                            }
+                        ],
                     }
                     tqdm.write(f"  Processing item 1/1... ✗")
-                    
+
                 else:
-                    portability_eval = evaluate_correctness_batch(portability_response, "portability", args.api_delay, args.reasoning_effort)
+                    portability_eval = evaluate_correctness_batch(
+                        portability_response,
+                        "portability",
+                        args.api_delay,
+                        args.reasoning_effort,
+                    )
                 portability_correct = portability_eval["correct_count"]
                 portability_items = portability_eval["total_items"]
-                
+
                 # Evaluate audio locality consistency
                 audio_locality_responses = []
-                for key in [k for k in result["post_edit"][j].keys() if k.startswith("locality_audio")]:
-                    audio_locality_responses.append({
-                        "response": result["post_edit"][j][key],
-                        "original_response": orig_data[j]["pre_edit"][key],
-                        "question": results[j][key]["question"],
-                        "audio_file": results[j][key]["audio_path"].split("/")[-1]
-                    })
-                audio_eval = evaluate_locality_outputs(audio_locality_responses, "audio", args.api_delay, args.reasoning_effort)
-                
+                for key in [
+                    k
+                    for k in result["post_edit"][j].keys()
+                    if k.startswith("locality_audio")
+                ]:
+                    audio_locality_responses.append(
+                        {
+                            "response": result["post_edit"][j][key],
+                            "original_response": orig_data[j]["pre_edit"][key],
+                            "question": results[j][key]["question"],
+                            "audio_file": results[j][key]["audio_path"].split("/")[-1],
+                        }
+                    )
+                audio_eval = evaluate_locality_outputs(
+                    audio_locality_responses,
+                    "audio",
+                    args.api_delay,
+                    args.reasoning_effort,
+                )
+
                 # Evaluate text locality consistency
-                text_locality_response = [{
-                    "response": result["post_edit"][j]["locality_text"],
-                    "original_response": orig_data[j]["pre_edit"]["locality_text"],
-                    "question": results[j]["locality_text"]["question"],
-                    "audio_file": None
-                }]
-                text_eval = evaluate_locality_outputs(text_locality_response, "text", args.api_delay, args.reasoning_effort)
-            
+                text_locality_response = [
+                    {
+                        "response": result["post_edit"][j]["locality_text"],
+                        "original_response": orig_data[j]["pre_edit"]["locality_text"],
+                        "question": results[j]["locality_text"]["question"],
+                        "audio_file": None,
+                    }
+                ]
+                text_eval = evaluate_locality_outputs(
+                    text_locality_response,
+                    "text",
+                    args.api_delay,
+                    args.reasoning_effort,
+                )
+
                 # Create evaluated result
-            
-                evaluated_result["judge_results"].append({
-                    "locality_audio_evaluation": audio_eval,
-                    "locality_text_evaluation": text_eval,
-                    "locality_audio_acc": audio_eval["consistency_rate"],
-                    "locality_text_acc": text_eval["consistency_rate"],
-                    "reliability_evaluation": reliability_eval,
-                    "generality_evaluation": generality_eval,
-                    "portability_evaluation": portability_eval,
-                    "reliability_acc": reliability_eval.get("accuracy", 0.0),
-                    "generality_acc": generality_eval.get("accuracy", 0.0),
-                    "portability_acc": portability_eval.get("accuracy", 0.0)
-                })
-                
-                tqdm.write(f"  Reliability: {reliability_correct}/{reliability_items} correct ({reliability_eval.get('accuracy', 0.0):.3f})")
-                tqdm.write(f"  Generality: {generality_correct}/{generality_items} correct ({generality_eval.get('accuracy', 0.0):.3f})")
-                tqdm.write(f"  Portability: {portability_correct}/{portability_items} correct ({portability_eval.get('accuracy', 0.0):.3f})")
-                tqdm.write(f"  Audio locality: {audio_eval['consistent_count']}/{audio_eval['total_items']} consistent ({audio_eval['consistency_rate']:.3f})")
-                tqdm.write(f"  Text locality: {text_eval['consistent_count']}/{text_eval['total_items']} consistent ({text_eval['consistency_rate']:.3f})")
-            
+
+                evaluated_result["judge_results"].append(
+                    {
+                        "locality_audio_evaluation": audio_eval,
+                        "locality_text_evaluation": text_eval,
+                        "locality_audio_acc": audio_eval["consistency_rate"],
+                        "locality_text_acc": text_eval["consistency_rate"],
+                        "reliability_evaluation": reliability_eval,
+                        "generality_evaluation": generality_eval,
+                        "portability_evaluation": portability_eval,
+                        "reliability_acc": reliability_eval.get("accuracy", 0.0),
+                        "generality_acc": generality_eval.get("accuracy", 0.0),
+                        "portability_acc": portability_eval.get("accuracy", 0.0),
+                    }
+                )
+
+                tqdm.write(
+                    f"  Reliability: {reliability_correct}/{reliability_items} correct ({reliability_eval.get('accuracy', 0.0):.3f})"
+                )
+                tqdm.write(
+                    f"  Generality: {generality_correct}/{generality_items} correct ({generality_eval.get('accuracy', 0.0):.3f})"
+                )
+                tqdm.write(
+                    f"  Portability: {portability_correct}/{portability_items} correct ({portability_eval.get('accuracy', 0.0):.3f})"
+                )
+                tqdm.write(
+                    f"  Audio locality: {audio_eval['consistent_count']}/{audio_eval['total_items']} consistent ({audio_eval['consistency_rate']:.3f})"
+                )
+                tqdm.write(
+                    f"  Text locality: {text_eval['consistent_count']}/{text_eval['total_items']} consistent ({text_eval['consistency_rate']:.3f})"
+                )
+
             evaluated_results.append(evaluated_result)
-            
+
     except Exception as e:
         print(f"warning: Exception occurred during processing: {e}")
         print("Stopping further processing.")
@@ -534,7 +724,7 @@ def main():
     except KeyboardInterrupt:
         print("Processing interrupted by user. Stopping further processing.")
         error_message = "Interrupted by user"
-    
+
     # Save evaluated results
     output_data = {
         "results": evaluated_results,
@@ -545,27 +735,27 @@ def main():
             "evaluates": ["correctness", "locality_consistency"],
             "processing": {
                 "method": "individual_api_calls",
-                "api_delay_seconds": args.api_delay
+                "api_delay_seconds": args.api_delay,
             },
             "error_message": error_message,
-        }
+        },
     }
-    
+
     print(f"\\nSaving evaluated results to {args.output_file}...")
     os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
-    with open(args.output_file, 'w', encoding='utf-8') as f:
+    with open(args.output_file, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=4)
-    
+
     # Print final summary
-    print("\\n" + "="*60)
+    print("\\n" + "=" * 60)
     print("EVALUATION SUMMARY (TEST RUN)")
-    print("="*60)
+    print("=" * 60)
     print(f"Model: {OPENAI_MODEL_NAME}")
     print(f"Reasoning effort: {args.reasoning_effort.upper()}")
     print(f"Total edits evaluated: {max_items} (limited for testing)")
     print()
     print(f"Results saved to: {args.output_file}")
-    
+
     return 0
 
 
