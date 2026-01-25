@@ -74,20 +74,7 @@
             "locality_audio_type_2": "(C) To be honest, just a little.",
             "locality_text": "1.60 × 10^19",
             "portability_audio": "Mr."
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Mr."
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -172,32 +159,7 @@
             "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
             "locality_text": "A",
             "portability_audio": "Throwing an object in frustration."
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Mr."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -282,44 +244,7 @@
             "locality_audio_type_3": "straight",
             "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
             "portability_audio": "Dankbarkeit"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -404,56 +329,7 @@
             "locality_audio_type_3": "plosive",
             "locality_text": "6",
             "portability_audio": "Slithering"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -532,74 +408,13 @@
             "generality_type_0": "Italian",
             "generality_type_1": "Italian",
             "generality_type_2": "Italian",
-            "locality_audio_type_0": "sad",
+            "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "German",
             "locality_audio_type_2": "Spanish",
             "locality_audio_type_3": "G1",
             "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
             "portability_audio": "Simón Bolívar"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -674,90 +489,17 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "frog",
-            "generality_type_0": "frog",
-            "generality_type_1": "frog",
-            "generality_type_2": "frog",
-            "locality_audio_type_0": "sad",
+            "reliability": "cow",
+            "generality_type_0": "cow",
+            "generality_type_1": "cow",
+            "generality_type_2": "cow",
+            "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "frog",
-            "locality_audio_type_2": "sheep",
+            "locality_audio_type_2": "hen",
             "locality_audio_type_3": "british",
             "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
             "portability_audio": "Oviparous"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            },
-            {
-                "reliability": "hen",
-                "generality_type_0": "hen",
-                "generality_type_1": "hen",
-                "generality_type_2": "hen",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "hen",
-                "locality_audio_type_3": "british",
-                "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
-                "portability_audio": "Oviparous"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -841,93 +583,8 @@
             "locality_audio_type_2": "dog",
             "locality_audio_type_3": "Chorus",
             "locality_text": "D",
-            "portability_audio": "F"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            },
-            {
-                "reliability": "hen",
-                "generality_type_0": "hen",
-                "generality_type_1": "hen",
-                "generality_type_2": "hen",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "hen",
-                "locality_audio_type_3": "british",
-                "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
-                "portability_audio": "Oviparous"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "D",
-                "portability_audio": "F"
-            }
-        ]
+            "portability_audio": "Wagging its tail"
+        }
     },
     {
         "reliability": {
@@ -1006,110 +663,13 @@
             "generality_type_0": "Korean",
             "generality_type_1": "Korean",
             "generality_type_2": "Korean",
-            "locality_audio_type_0": "sad",
+            "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "French",
             "locality_audio_type_2": "English",
             "locality_audio_type_3": "A#0",
             "locality_text": "A",
             "portability_audio": "Koreanic"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            },
-            {
-                "reliability": "hen",
-                "generality_type_0": "hen",
-                "generality_type_1": "hen",
-                "generality_type_2": "hen",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "hen",
-                "locality_audio_type_3": "british",
-                "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
-                "portability_audio": "Oviparous"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "D",
-                "portability_audio": "Wagging its tail"
-            },
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "A#0",
-                "locality_text": "A",
-                "portability_audio": "Koreanic"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1194,116 +754,7 @@
             "locality_audio_type_3": "authentic",
             "locality_text": "A",
             "portability_audio": "Purring"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "sad",
-                "generality_type_1": "sad",
-                "generality_type_2": "sad",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is not a typical phrase that would be used in a replay attack, and it is unlikely to be a random string of words.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            },
-            {
-                "reliability": "hen",
-                "generality_type_0": "hen",
-                "generality_type_1": "hen",
-                "generality_type_2": "hen",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "hen",
-                "locality_audio_type_3": "british",
-                "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
-                "portability_audio": "Oviparous"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "D",
-                "portability_audio": "Wagging its tail"
-            },
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "A#0",
-                "locality_text": "A",
-                "portability_audio": "Koreanic"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "sheep",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "authentic",
-                "locality_text": "A",
-                "portability_audio": "Purring"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1378,8 +829,8 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "sad",
-            "generality_type_0": "sad",
+            "reliability": "disgust",
+            "generality_type_0": "disgust",
             "generality_type_1": "angry",
             "generality_type_2": "angry",
             "locality_audio_type_0": "cat",
@@ -1388,127 +839,6 @@
             "locality_audio_type_3": "C8",
             "locality_text": "5",
             "portability_audio": "C"
-        },
-        "post_edit": [
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "(C) To be honest, just a little.",
-                "locality_text": "1.60 × 10^19",
-                "portability_audio": "Ms."
-            },
-            {
-                "reliability": "sad",
-                "generality_type_0": "disgust",
-                "generality_type_1": "fear",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "sad",
-                "locality_audio_type_3": "The answer is spoofed. The utterance 'Artificial intelligence is for real' is a common phrase used in replay attacks to test audio integrity.",
-                "locality_text": "A",
-                "portability_audio": "Throwing an object in frustration."
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "straight",
-                "locality_text": "Caveat emptor, Buyer beware, Regulation, National",
-                "portability_audio": "Dankbarkeit"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "6",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "G1",
-                "locality_text": "the region around a star where liquid water can potentially exist on planetary surfaces",
-                "portability_audio": "Simón Bolívar"
-            },
-            {
-                "reliability": "hen",
-                "generality_type_0": "hen",
-                "generality_type_1": "hen",
-                "generality_type_2": "hen",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "hen",
-                "locality_audio_type_3": "british",
-                "locality_text": "(∀x)(∀y[Jx ⊃ (Fy ⊃ Sxy)]",
-                "portability_audio": "Oviparous"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "D",
-                "portability_audio": "Wagging its tail"
-            },
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "A#0",
-                "locality_text": "To regulate access to posts in the field",
-                "portability_audio": "Koreanic"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "sheep",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "authentic",
-                "locality_text": "A",
-                "portability_audio": "Purring"
-            },
-            {
-                "reliability": "disgust",
-                "generality_type_0": "sad",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            }
-        ]
+        }
     }
 ]

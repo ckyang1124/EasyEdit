@@ -82,21 +82,7 @@
             "locality_audio_type_3": "breathing",
             "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
             "portability_audio": "Herbivore"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -172,7 +158,7 @@
         },
         "pre_edit": {
             "reliability": "angry",
-            "generality_type_0": "sad",
+            "generality_type_0": "angry",
             "generality_type_1": "angry",
             "generality_type_2": "angry",
             "locality_audio_type_0": "Spanish",
@@ -181,33 +167,7 @@
             "locality_audio_type_3": "belt",
             "locality_text": "the electric field produced by an infinite plane of charge",
             "portability_audio": "Suggest spending some time together to cheer them up."
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -282,7 +242,7 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "rooster",
+            "reliability": "hen",
             "generality_type_0": "hen",
             "generality_type_1": "rooster",
             "generality_type_2": "hen",
@@ -292,45 +252,7 @@
             "locality_audio_type_3": "two",
             "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
             "portability_audio": "Carnivore"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -410,62 +332,12 @@
             "generality_type_1": "sheep",
             "generality_type_2": "sheep",
             "locality_audio_type_0": "Male",
-            "locality_audio_type_1": "frog",
+            "locality_audio_type_1": "dog",
             "locality_audio_type_2": "cat",
             "locality_audio_type_3": "inform",
             "locality_text": "greater and grander",
             "portability_audio": "Chirping"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -540,7 +412,7 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "French",
+            "reliability": "Korean",
             "generality_type_0": "Italian",
             "generality_type_1": "French",
             "generality_type_2": "French",
@@ -550,69 +422,7 @@
             "locality_audio_type_3": "electronic",
             "locality_text": "D",
             "portability_audio": "The Betrothed"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Korean",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -697,81 +507,7 @@
             "locality_audio_type_3": "electronic",
             "locality_text": "C",
             "portability_audio": "The Trial"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "C",
-                "portability_audio": "The Divine Comedy"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -856,93 +592,7 @@
             "locality_audio_type_3": "fricative",
             "locality_text": "(C • (F • L))",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "C",
-                "portability_audio": "The Divine Comedy"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "(C • (F • L))",
-                "portability_audio": "A"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1019,104 +669,7 @@
             "locality_audio_type_2": "w",
             "locality_text": "Personality.",
             "portability_audio": "Rene Redzepi"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "C",
-                "portability_audio": "The Divine Comedy"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "(C • (F • L))",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "w",
-                "locality_text": "Personality.",
-                "portability_audio": "Rene Redzepi"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1191,9 +744,9 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "frog",
+            "reliability": "rooster",
             "generality_type_0": "rooster",
-            "generality_type_1": "frog",
+            "generality_type_1": "rooster",
             "generality_type_2": "rooster",
             "locality_audio_type_0": "happy",
             "locality_audio_type_1": "pig",
@@ -1201,116 +754,7 @@
             "locality_audio_type_3": "The vowel in the middle of the audio clip is mid.",
             "locality_text": "invalid. Counterexample when T, X, and Z are true and U and W are false",
             "portability_audio": "starling"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "Chirping"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "C",
-                "portability_audio": "The Trial"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "(C • (F • L))",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "w",
-                "locality_text": "Personality.",
-                "portability_audio": "Rene Redzepi"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "The vowel in the middle of the audio clip is mid.",
-                "locality_text": "invalid. Counterexample when T, X, and Z are true and U and W are false",
-                "portability_audio": "starling"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1387,135 +831,14 @@
         "pre_edit": {
             "reliability": "Chinese",
             "generality_type_0": "Chinese",
-            "generality_type_1": "Italian",
+            "generality_type_1": "Chinese",
             "generality_type_2": "Chinese",
             "locality_audio_type_0": "pig",
             "locality_audio_type_1": "Spanish",
-            "locality_audio_type_2": "Korean",
+            "locality_audio_type_2": "German",
             "locality_audio_type_3": "rock",
             "locality_text": "D",
             "portability_audio": "BRT"
-        },
-        "post_edit": [
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "Korean",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "breathing",
-                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "happy",
-                "generality_type_0": "happy",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "belt",
-                "locality_text": "the electric field produced by an infinite plane of charge",
-                "portability_audio": "Suggest spending some time together to cheer them up."
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "two",
-                "locality_text": "having sufficient tangential velocities to fall around rather than into Earth.",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "inform",
-                "locality_text": "greater and grander",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Korean",
-                "generality_type_0": "Korean",
-                "generality_type_1": "Korean",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "Italian",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "D",
-                "portability_audio": "The Betrothed"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "C",
-                "portability_audio": "The Divine Comedy"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "sad",
-                "locality_audio_type_2": "happy",
-                "locality_audio_type_3": "fricative",
-                "locality_text": "(C • (F • L)",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "w",
-                "locality_text": "Personality.",
-                "portability_audio": "Rene Redzepi"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "The vowel in the middle of the audio clip is mid.",
-                "locality_text": "invalid. Counterexample when T, X, and Z are true and U and W are false",
-                "portability_audio": "starling"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "pig",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Korean",
-                "locality_audio_type_3": "rock",
-                "locality_text": "D",
-                "portability_audio": "BRT"
-            }
-        ]
+        }
     }
 ]

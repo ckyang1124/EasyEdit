@@ -82,21 +82,7 @@
             "locality_audio_type_3": "punk",
             "locality_text": "C",
             "portability_audio": "Chicken coop"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "D",
-                "portability_audio": "Chicken coop"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -173,32 +159,7 @@
             "locality_audio_type_2": "Db major",
             "locality_text": "A",
             "portability_audio": "Rosa Parks"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "C",
-                "portability_audio": "Chicken coop"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -283,44 +244,7 @@
             "locality_audio_type_3": "2.0m",
             "locality_text": "Command",
             "portability_audio": "zh"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "D",
-                "portability_audio": "Chicken coop"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "hen",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "zh"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -405,56 +329,7 @@
             "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
             "locality_text": "Yes",
             "portability_audio": "D"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "metal",
-                "locality_text": "C",
-                "portability_audio": "Chicken coop"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "hen",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -539,68 +414,7 @@
             "locality_audio_type_3": "dsh",
             "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
             "portability_audio": "zh"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "metal",
-                "locality_text": "C",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "hen",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "German",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "German",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -675,90 +489,17 @@
             "update": false
         },
         "pre_edit": {
-            "reliability": "German",
-            "generality_type_0": "German",
+            "reliability": "English",
+            "generality_type_0": "French",
             "generality_type_1": "Japanese",
-            "generality_type_2": "German",
+            "generality_type_2": "Japanese",
             "locality_audio_type_0": "rooster",
             "locality_audio_type_1": "German",
             "locality_audio_type_2": "French",
             "locality_audio_type_3": "british",
             "locality_text": "4F",
             "portability_audio": "Ficciones"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "metal",
-                "locality_text": "C",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "hen",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "French",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "british",
-                "locality_text": "4F",
-                "portability_audio": "Ficciones"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -837,98 +578,13 @@
             "generality_type_0": "dog",
             "generality_type_1": "hen",
             "generality_type_2": "dog",
-            "locality_audio_type_0": "fear",
+            "locality_audio_type_0": "happy",
             "locality_audio_type_1": "rooster",
-            "locality_audio_type_2": "rooster",
+            "locality_audio_type_2": "cow",
             "locality_audio_type_3": "plosive",
             "locality_text": "A",
             "portability_audio": "Climbing trees"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "C",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "crow",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "French",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "british",
-                "locality_text": "4F",
-                "portability_audio": "Ficciones"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "cow",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "A",
-                "portability_audio": "Climbing trees"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1005,112 +661,15 @@
         "pre_edit": {
             "reliability": "crow",
             "generality_type_0": "crow",
-            "generality_type_1": "cow",
+            "generality_type_1": "crow",
             "generality_type_2": "crow",
             "locality_audio_type_0": "French",
             "locality_audio_type_1": "sheep",
             "locality_audio_type_2": "sheep",
             "locality_audio_type_3": "crying",
             "locality_text": "A",
-            "portability_audio": "Bleating"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "metal",
-                "locality_text": "D",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "French",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "cow",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "French",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "british",
-                "locality_text": "4F",
-                "portability_audio": "Ficciones"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "A",
-                "portability_audio": "Climbing trees"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "cow",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "crying",
-                "locality_text": "A",
-                "portability_audio": "Bleating"
-            }
-        ]
+            "portability_audio": "Barking"
+        }
     },
     {
         "reliability": {
@@ -1186,125 +745,16 @@
         },
         "pre_edit": {
             "reliability": "pig",
-            "generality_type_0": "rooster",
+            "generality_type_0": "pig",
             "generality_type_1": "pig",
-            "generality_type_2": "rooster",
+            "generality_type_2": "pig",
             "locality_audio_type_0": "Italian",
-            "locality_audio_type_1": "rooster",
+            "locality_audio_type_1": "sheep",
             "locality_audio_type_2": "frog",
             "locality_audio_type_3": "electronic",
             "locality_text": "Folate, vitamins B6 and B12",
             "portability_audio": "Slithering"
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "D",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "French",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fowl",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "French",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "british",
-                "locality_text": "4F",
-                "portability_audio": "Ficciones"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "cow",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "A",
-                "portability_audio": "Climbing trees"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "fowl",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "crying",
-                "locality_text": "A",
-                "portability_audio": "Bleating"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "frogs",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "Folate, vitamins B6 and B12",
-                "portability_audio": "Slithering"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1385,131 +835,10 @@
             "generality_type_2": "angry",
             "locality_audio_type_0": "German",
             "locality_audio_type_1": "happy",
-            "locality_audio_type_2": "fearful",
+            "locality_audio_type_2": "disgust",
             "locality_audio_type_3": "The environmental sounds in the audio clip are laughter and clapping.",
             "locality_text": "Lactobacilli",
-            "portability_audio": "Reassure them and offer a way to move past the uncomfortable situation."
-        },
-        "post_edit": [
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "punk",
-                "locality_text": "D",
-                "portability_audio": "Leash"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "Db major",
-                "locality_text": "A",
-                "portability_audio": "Rosa Parks"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "French",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fowl",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "2.0m",
-                "locality_text": "Command",
-                "portability_audio": "en"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The non-speech sounds in the audio clip are laugh and scream.",
-                "locality_text": "Yes",
-                "portability_audio": "D"
-            },
-            {
-                "reliability": "German",
-                "generality_type_0": "German",
-                "generality_type_1": "French",
-                "generality_type_2": "German",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "English",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "e",
-                "locality_text": "A piece of software that intercepts and possibly modifies requests (and responses) between a web browser and web server",
-                "portability_audio": "zh"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "british",
-                "locality_text": "4F",
-                "portability_audio": "Ficciones"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "cow",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "A",
-                "portability_audio": "Climbing trees"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "fowl",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "crying",
-                "locality_text": "A",
-                "portability_audio": "Bleating"
-            },
-            {
-                "reliability": "frog",
-                "generality_type_0": "frog",
-                "generality_type_1": "frog",
-                "generality_type_2": "frog",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "sheep",
-                "locality_audio_type_2": "frog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "Folate, vitamins B6 and B12",
-                "portability_audio": "Slithering"
-            },
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "disgust",
-                "generality_type_2": "disgust",
-                "locality_audio_type_0": "German",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "The environmental sounds can be categorized into human sounds, such as laughing, and background noise, which could include sounds like a baby crying or a person breathing.",
-                "locality_text": "Lactobacilli",
-                "portability_audio": "Reassure them and offer a way to move past the uncomfortable situation."
-            }
-        ]
+            "portability_audio": "B"
+        }
     }
 ]

@@ -82,21 +82,7 @@
             "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
             "locality_text": "Dimmer",
             "portability_audio": "Sauerkraut"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features do not allow for a clear identification of the specific type of Chinese cymbal being played.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Paella"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -181,33 +167,7 @@
             "locality_audio_type_3": "plosive",
             "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Dimmer",
-                "portability_audio": "Paella"
-            },
-            {
-                "reliability": "disgust",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "disgust",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -292,45 +252,7 @@
             "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
             "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
             "portability_audio": "B"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -402,61 +324,12 @@
             "generality_type_0": "male",
             "generality_type_1": "female",
             "generality_type_2": "female",
-            "locality_audio_type_0": "fear",
+            "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "Male",
             "locality_audio_type_2": "healthy",
             "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
             "portability_audio": "Dramatic soprano"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Dimmer",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -541,68 +414,7 @@
             "locality_audio_type_3": "vocal fry",
             "locality_text": "charge",
             "portability_audio": "Viviparous"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -682,85 +494,12 @@
             "generality_type_1": "cat",
             "generality_type_2": "cat",
             "locality_audio_type_0": "French",
-            "locality_audio_type_1": "dog",
-            "locality_audio_type_2": "dog",
+            "locality_audio_type_1": "frog",
+            "locality_audio_type_2": "cow",
             "locality_audio_type_3": "The audio clip does not provide sufficient information to determine the specific stroke.",
             "locality_text": "PCl5",
             "portability_audio": "Feathers"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "The audio clip doesn't provide enough information to determine the specific stroke.",
-                "locality_text": "PCl5",
-                "portability_audio": "Feathers"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -841,96 +580,11 @@
             "generality_type_2": "Japanese",
             "locality_audio_type_0": "fear",
             "locality_audio_type_1": "German",
-            "locality_audio_type_2": "English",
+            "locality_audio_type_2": "Spanish",
             "locality_audio_type_3": "The music in the recording can be classified as Experimental.",
             "locality_text": "T x 1",
             "portability_audio": "Bulgogi"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "The audio clip does not provide sufficient information to determine the specific stroke.",
-                "locality_text": "PCl5",
-                "portability_audio": "Feathers"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "The music in the recording can be classified as Experimental.",
-                "locality_text": "T x 1",
-                "portability_audio": "Bulgogi"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1009,110 +663,13 @@
             "generality_type_0": "sheep",
             "generality_type_1": "sheep",
             "generality_type_2": "sheep",
-            "locality_audio_type_0": "fear",
-            "locality_audio_type_1": "dog",
-            "locality_audio_type_2": "dog",
+            "locality_audio_type_0": "disgust",
+            "locality_audio_type_1": "cow",
+            "locality_audio_type_2": "rooster",
             "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
             "locality_text": "linear momentum",
             "portability_audio": "Meowing"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "The audio clip doesn't provide enough information to determine the specific stroke.",
-                "locality_text": "PCl5",
-                "portability_audio": "Feathers"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "The music in the recording can be classified as Experimental.",
-                "locality_text": "T x 1",
-                "portability_audio": "Bulgogi"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
-                "locality_text": "linear momentum",
-                "portability_audio": "Meowing"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1189,124 +746,15 @@
         "pre_edit": {
             "reliability": "rooster",
             "generality_type_0": "rooster",
-            "generality_type_1": "rooster",
+            "generality_type_1": "hen",
             "generality_type_2": "rooster",
             "locality_audio_type_0": "English",
             "locality_audio_type_1": "frog",
-            "locality_audio_type_2": "dog",
+            "locality_audio_type_2": "pig",
             "locality_audio_type_3": "down",
             "locality_text": "B",
             "portability_audio": "Viviparous"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Higher in the sky",
-                "portability_audio": "Sauerkraut"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "The audio clip doesn't provide enough information to determine the specific stroke.",
-                "locality_text": "PCl5",
-                "portability_audio": "Feathers"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "The music in the recording can be classified as Experimental.",
-                "locality_text": "T x 1",
-                "portability_audio": "Bulgogi"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
-                "locality_text": "linear momentum",
-                "portability_audio": "Meowing"
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "English",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "down",
-                "locality_text": "B",
-                "portability_audio": "Viviparous"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1383,135 +831,14 @@
         "pre_edit": {
             "reliability": "Chinese",
             "generality_type_0": "Chinese",
-            "generality_type_1": "Chinese",
+            "generality_type_1": "Korean",
             "generality_type_2": "Chinese",
             "locality_audio_type_0": "disgust",
-            "locality_audio_type_1": "French",
-            "locality_audio_type_2": "English",
+            "locality_audio_type_1": "Italian",
+            "locality_audio_type_2": "French",
             "locality_audio_type_3": "Mm-hmm",
             "locality_text": "The principles of natural law are discoverable by reason.",
             "portability_audio": "sagesse"
-        },
-        "post_edit": [
-            {
-                "reliability": "English",
-                "generality_type_0": "English",
-                "generality_type_1": "English",
-                "generality_type_2": "English",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "English",
-                "locality_audio_type_3": "The audio features suggest that the sound belongs to Bangu.",
-                "locality_text": "Dimmer",
-                "portability_audio": "Paella"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "disgust",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fearful",
-                "locality_audio_type_3": "plosive",
-                "locality_text": "does not account for the fact that we have stricter obligations to our loved ones than to strangers.",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Male",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The vocal health appears to be hyperkinetic dysphonia, as the screaming suggests excessive vocal cord tension.",
-                "locality_text": "Cultural relativism posits that human rights apply equally to all without restrictions",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "male",
-                "generality_type_0": "male",
-                "generality_type_1": "male",
-                "generality_type_2": "male",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Male",
-                "locality_audio_type_2": "healthy",
-                "locality_text": "Reliable delivery of large (multi-packet) messages between machines that are not necessarily directly connected",
-                "portability_audio": "Dramatic soprano"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "vocal fry",
-                "locality_text": "charge",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "cow",
-                "generality_type_0": "cow",
-                "generality_type_1": "cow",
-                "generality_type_2": "cow",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "The audio clip does not contain any of the mentioned strokes.",
-                "locality_text": "PCl5",
-                "portability_audio": "Feathers"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "German",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "The music in the recording can be classified as Experimental.",
-                "locality_text": "T x 1",
-                "portability_audio": "Bulgogi"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "cow",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(C) A blouse and skirt will be appropriate.",
-                "locality_text": "linear momentum",
-                "portability_audio": "Meowing"
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "English",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "down",
-                "locality_text": "B",
-                "portability_audio": "Viviparous"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "French",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "Mm-hmm",
-                "locality_text": "The principles of natural law are discoverable by reason.",
-                "portability_audio": "sagesse"
-            }
-        ]
+        }
     }
 ]

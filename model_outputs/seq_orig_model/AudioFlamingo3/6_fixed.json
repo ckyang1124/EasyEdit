@@ -82,21 +82,7 @@
             "locality_audio_type_3": "C8",
             "locality_text": "5",
             "portability_audio": "C"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "C"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -181,33 +167,7 @@
             "locality_audio_type_3": "Chorus",
             "locality_text": "invalid. Counterexample when E and G are true and F is false",
             "portability_audio": "Herbivore"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "C"
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -287,50 +247,12 @@
             "generality_type_1": "rooster",
             "generality_type_2": "rooster",
             "locality_audio_type_0": "Spanish",
-            "locality_audio_type_1": "pig",
+            "locality_audio_type_1": "frog",
             "locality_audio_type_2": "crow",
             "locality_audio_type_3": "electronic",
             "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
             "portability_audio": "red-billed blue magpie"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "crow",
-                "generality_type_0": "crow",
-                "generality_type_1": "crow",
-                "generality_type_2": "crow",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -403,60 +325,11 @@
             "generality_type_1": "male",
             "generality_type_2": "male",
             "locality_audio_type_0": "cat",
-            "locality_audio_type_1": "Male",
+            "locality_audio_type_1": "Female",
             "locality_audio_type_2": "alveolar",
             "locality_text": "C",
             "portability_audio": "Marie Curie"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "C"
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "crow",
-                "generality_type_0": "crow",
-                "generality_type_1": "crow",
-                "generality_type_2": "crow",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "C",
-                "portability_audio": "Marie Curie"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -541,68 +414,7 @@
             "locality_audio_type_3": "d",
             "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
             "portability_audio": "Indo-European"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "crow",
-                "generality_type_0": "crow",
-                "generality_type_1": "crow",
-                "generality_type_2": "crow",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "C",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "Korean",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -678,89 +490,16 @@
         },
         "pre_edit": {
             "reliability": "Korean",
-            "generality_type_0": "Japanese",
-            "generality_type_1": "German",
-            "generality_type_2": "German",
+            "generality_type_0": "D",
+            "generality_type_1": "B",
+            "generality_type_2": "D",
             "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "Spanish",
             "locality_audio_type_2": "Chinese",
             "locality_audio_type_3": "The phone in the middle is a.",
             "locality_text": "D",
             "portability_audio": "Ratatouille"
-        },
-        "post_edit": [
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "crow",
-                "generality_type_0": "crow",
-                "generality_type_1": "crow",
-                "generality_type_2": "crow",
-                "locality_audio_type_0": "Chinese",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "C",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The phone in the middle is a.",
-                "locality_text": "D",
-                "portability_audio": "Clam Chowder"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -845,92 +584,7 @@
             "locality_audio_type_3": "directive",
             "locality_text": "Style over substance",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "fearful",
-                "generality_type_0": "fearful",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "crow",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "crow",
-                "generality_type_0": "crow",
-                "generality_type_1": "crow",
-                "generality_type_2": "crow",
-                "locality_audio_type_0": "Chinese",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "C",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The phone in the middle is a.",
-                "locality_text": "D",
-                "portability_audio": "Clam Chowder"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "directive",
-                "locality_text": "Style over substance",
-                "portability_audio": "A"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1009,110 +663,13 @@
             "generality_type_0": "cow",
             "generality_type_1": "cow",
             "generality_type_2": "cow",
-            "locality_audio_type_0": "Female",
+            "locality_audio_type_0": "Male",
             "locality_audio_type_1": "cat",
             "locality_audio_type_2": "rooster",
             "locality_audio_type_3": "A1",
             "locality_text": "0 °C and 760 torr",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "fearful",
-                "generality_type_0": "fearful",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Chinese",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "C",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The phone in the middle is a.",
-                "locality_text": "D",
-                "portability_audio": "Ratatouille"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "directive",
-                "locality_text": "Style over substance",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "A1",
-                "locality_text": "0 °C and 760 torr",
-                "portability_audio": "A"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1192,121 +749,12 @@
             "generality_type_1": "English",
             "generality_type_2": "English",
             "locality_audio_type_0": "happy",
-            "locality_audio_type_1": "Chinese",
+            "locality_audio_type_1": "C",
             "locality_audio_type_2": "Italian",
             "locality_audio_type_3": "walking",
             "locality_text": "Non-durable.",
             "portability_audio": "Liechtenstein"
-        },
-        "post_edit": [
-            {
-                "reliability": "fearful",
-                "generality_type_0": "fearful",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "pig",
-                "generality_type_1": "pig",
-                "generality_type_2": "pig",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "crow",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "A",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The phone in the middle is a.",
-                "locality_text": "D",
-                "portability_audio": "Ratatouille"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "directive",
-                "locality_text": "Style over substance",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "cat",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "A1",
-                "locality_text": "0 °C and 760 torr",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "walking",
-                "locality_text": "Non-durable.",
-                "portability_audio": "Liechtenstein"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1387,131 +835,10 @@
             "generality_type_2": "dog",
             "locality_audio_type_0": "Japanese",
             "locality_audio_type_1": "pig",
-            "locality_audio_type_2": "cat",
+            "locality_audio_type_2": "hen",
             "locality_audio_type_3": "'Ab major'",
             "locality_text": "2/23",
             "portability_audio": "Aquarium filter"
-        },
-        "post_edit": [
-            {
-                "reliability": "fearful",
-                "generality_type_0": "fearful",
-                "generality_type_1": "angry",
-                "generality_type_2": "angry",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "disgust",
-                "locality_audio_type_3": "C8",
-                "locality_text": "5",
-                "portability_audio": "Saying goodbye at an airport."
-            },
-            {
-                "reliability": "pig",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "pig",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "invalid. Counterexample when E and G are true and F is false",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Spanish",
-                "locality_audio_type_1": "frog",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "arguing that something must be good because it is new, or must be bad because it is old",
-                "portability_audio": "red-billed blue magpie"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "cat",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "alveolar",
-                "locality_text": "A",
-                "portability_audio": "Marie Curie"
-            },
-            {
-                "reliability": "Japanese",
-                "generality_type_0": "Japanese",
-                "generality_type_1": "Japanese",
-                "generality_type_2": "Japanese",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Japanese",
-                "locality_audio_type_3": "d",
-                "locality_text": "People who want to avoid depression should consider drinking green tea on a daily basis.",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The phone in the middle is a.",
-                "locality_text": "D",
-                "portability_audio": "Clam Chowder"
-            },
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "happy",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "directive",
-                "locality_text": "Style over substance",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "A1",
-                "locality_text": "0 °C and 760 torr",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "happy",
-                "locality_audio_type_1": "Chinese",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "walking",
-                "locality_text": "Non-durable.",
-                "portability_audio": "Liechtenstein"
-            },
-            {
-                "reliability": "cat",
-                "generality_type_0": "cat",
-                "generality_type_1": "cat",
-                "generality_type_2": "cat",
-                "locality_audio_type_0": "Japanese",
-                "locality_audio_type_1": "pig",
-                "locality_audio_type_2": "cat",
-                "locality_audio_type_3": "'Ab major'",
-                "locality_text": "2/23",
-                "portability_audio": "Aquarium filter"
-            }
-        ]
+        }
     }
 ]

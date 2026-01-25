@@ -82,21 +82,7 @@
             "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
             "locality_text": "Greek Classical",
             "portability_audio": "B"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -181,33 +167,7 @@
             "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
             "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
             "portability_audio": "Spätzle"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "thom",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -291,46 +251,8 @@
             "locality_audio_type_2": "dog",
             "locality_audio_type_3": "electronic",
             "locality_text": "B",
-            "portability_audio": "Carnivore"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "B",
-                "portability_audio": "Carnivore"
-            }
-        ]
+            "portability_audio": "Herbivore"
+        }
     },
     {
         "reliability": {
@@ -405,58 +327,9 @@
             "locality_audio_type_0": "French",
             "locality_audio_type_1": "Male",
             "locality_audio_type_2": "dsh",
-            "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
+            "locality_text": "C",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "B",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "dsh",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -535,74 +408,13 @@
             "generality_type_0": "pig",
             "generality_type_1": "pig",
             "generality_type_2": "pig",
-            "locality_audio_type_0": "fear",
+            "locality_audio_type_0": "disgust",
             "locality_audio_type_1": "dog",
             "locality_audio_type_2": "rooster",
             "locality_audio_type_3": "(A) Platform 4.",
             "locality_text": "They can indicate completion of an I/O operation.",
             "portability_audio": "vulturine guineafowl"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not provide enough information to identify the specific stroke.",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "B",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "dsh",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -687,80 +499,7 @@
             "locality_audio_type_3": "Chorus",
             "locality_text": "Equivocation",
             "portability_audio": "Japonic"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "Greek Classical",
-                "portability_audio": "B"
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "Chinese",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "B",
-                "portability_audio": "Carnivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "dsh",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "Equivocation",
-                "portability_audio": "Japonic"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -841,96 +580,11 @@
             "generality_type_2": "German",
             "locality_audio_type_0": "Female",
             "locality_audio_type_1": "Spanish",
-            "locality_audio_type_2": "French",
+            "locality_audio_type_2": "English",
             "locality_audio_type_3": "no",
-            "locality_text": "451 degrees",
+            "locality_text": "986 degrees",
             "portability_audio": "Cai Lun"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "French Revolution",
-                "portability_audio": "Smile and engage positively in the conversation."
-            },
-            {
-                "reliability": "Chinese",
-                "generality_type_0": "French",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "That it is in an organization's own best interest to consider what a shareholder would want",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "e",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "Equivocation",
-                "portability_audio": "Koreanic"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "French",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "no",
-                "locality_text": "986 degrees",
-                "portability_audio": "Cai Lun"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1015,104 +669,7 @@
             "locality_audio_type_3": "Db major",
             "locality_text": "4",
             "portability_audio": "gratitud"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "The audio does not contain a specific stroke sound.",
-                "locality_text": "French Revolution",
-                "portability_audio": "Smile and engage positively in the conversation."
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "That it is in an organization's own best interest to consider what a shareholder would want",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "e",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "Equivocation",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "French",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "no",
-                "locality_text": "986 degrees",
-                "portability_audio": "Cai Lun"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "Db major",
-                "locality_text": "4",
-                "portability_audio": "gratitud"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1189,124 +746,15 @@
         "pre_edit": {
             "reliability": "hen",
             "generality_type_0": "hen",
-            "generality_type_1": "sheep",
-            "generality_type_2": "sheep",
+            "generality_type_1": "hen",
+            "generality_type_2": "hen",
             "locality_audio_type_0": "Female",
-            "locality_audio_type_1": "dog",
+            "locality_audio_type_1": "frog",
             "locality_audio_type_2": "sheep",
             "locality_audio_type_3": "mid",
             "locality_text": "32",
             "portability_audio": "Oviparous"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "thom",
-                "locality_text": "French Revolution",
-                "portability_audio": "Smile and engage positively in the conversation."
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "That it is in an organization's own best interest to consider what a shareholder would want",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "e",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "Equivocation",
-                "portability_audio": "Japonic"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "French",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "no",
-                "locality_text": "986 degrees",
-                "portability_audio": "Cai Lun"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "Db major",
-                "locality_text": "4",
-                "portability_audio": "gratitud"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "sheep",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "mid",
-                "locality_text": "32",
-                "portability_audio": "Oviparous"
-            }
-        ]
+        }
     },
     {
         "reliability": {
@@ -1387,131 +835,10 @@
             "generality_type_2": "happy",
             "locality_audio_type_0": "cow",
             "locality_audio_type_1": "fear",
-            "locality_audio_type_2": "fear",
+            "locality_audio_type_2": "disgust",
             "locality_audio_type_3": "Chorus",
-            "locality_text": "2",
+            "locality_text": "3",
             "portability_audio": "A"
-        },
-        "post_edit": [
-            {
-                "reliability": "fear",
-                "generality_type_0": "fear",
-                "generality_type_1": "fear",
-                "generality_type_2": "fear",
-                "locality_audio_type_0": "Italian",
-                "locality_audio_type_1": "disgust",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "thom",
-                "locality_text": "French Revolution",
-                "portability_audio": "Smile and engage positively in the conversation."
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "Chinese",
-                "generality_type_2": "Chinese",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Chinese",
-                "locality_audio_type_3": "The answer could be 0.4m, 2.0m, or 4.0m.",
-                "locality_text": "Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root",
-                "portability_audio": "Spätzle"
-            },
-            {
-                "reliability": "dog",
-                "generality_type_0": "dog",
-                "generality_type_1": "dog",
-                "generality_type_2": "dog",
-                "locality_audio_type_0": "fear",
-                "locality_audio_type_1": "rooster",
-                "locality_audio_type_2": "dog",
-                "locality_audio_type_3": "electronic",
-                "locality_text": "That it is in an organization's own best interest to consider what a shareholder would want",
-                "portability_audio": "Herbivore"
-            },
-            {
-                "reliability": "female",
-                "generality_type_0": "female",
-                "generality_type_1": "female",
-                "generality_type_2": "female",
-                "locality_audio_type_0": "French",
-                "locality_audio_type_1": "Female",
-                "locality_audio_type_2": "e",
-                "locality_text": "Fibre sources, such as hemicelluloses, pectins and inulin are rapidly fermented to short chain fatty acids, which have trophic effects on the colon",
-                "portability_audio": "A"
-            },
-            {
-                "reliability": "rooster",
-                "generality_type_0": "rooster",
-                "generality_type_1": "rooster",
-                "generality_type_2": "rooster",
-                "locality_audio_type_0": "disgust",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "rooster",
-                "locality_audio_type_3": "(A) Platform 4.",
-                "locality_text": "They can indicate completion of an I/O operation.",
-                "portability_audio": "vulturine guineafowl"
-            },
-            {
-                "reliability": "Italian",
-                "generality_type_0": "Italian",
-                "generality_type_1": "Italian",
-                "generality_type_2": "Italian",
-                "locality_audio_type_0": "rooster",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "Italian",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "Equivocation",
-                "portability_audio": "Indo-European"
-            },
-            {
-                "reliability": "French",
-                "generality_type_0": "French",
-                "generality_type_1": "French",
-                "generality_type_2": "French",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "Spanish",
-                "locality_audio_type_2": "French",
-                "locality_audio_type_3": "no",
-                "locality_text": "986 degrees",
-                "portability_audio": "Cai Lun"
-            },
-            {
-                "reliability": "Spanish",
-                "generality_type_0": "Spanish",
-                "generality_type_1": "Spanish",
-                "generality_type_2": "Spanish",
-                "locality_audio_type_0": "sad",
-                "locality_audio_type_1": "French",
-                "locality_audio_type_2": "Spanish",
-                "locality_audio_type_3": "Db major",
-                "locality_text": "4",
-                "portability_audio": "gratitud"
-            },
-            {
-                "reliability": "sheep",
-                "generality_type_0": "sheep",
-                "generality_type_1": "sheep",
-                "generality_type_2": "sheep",
-                "locality_audio_type_0": "Female",
-                "locality_audio_type_1": "dog",
-                "locality_audio_type_2": "sheep",
-                "locality_audio_type_3": "mid",
-                "locality_text": "32",
-                "portability_audio": "Oviparous"
-            },
-            {
-                "reliability": "disgust",
-                "generality_type_0": "disgust",
-                "generality_type_1": "disgust",
-                "generality_type_2": "disgust",
-                "locality_audio_type_0": "dog",
-                "locality_audio_type_1": "fear",
-                "locality_audio_type_2": "fear",
-                "locality_audio_type_3": "Chorus",
-                "locality_text": "3",
-                "portability_audio": "A"
-            }
-        ]
+        }
     }
 ]
