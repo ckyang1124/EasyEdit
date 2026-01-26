@@ -43,11 +43,11 @@ def llm_judge_correctness(
     ground_truth: str,
     question: str = "",
     reasoning_effort: str = "low",
-) -> tuple[bool, str]:
+) -> tuple[bool, str, str]:
     """Evaluate correctness of a model response using OpenAI API."""
 
     if model_response.strip().lower() == ground_truth.strip().lower():
-        return True, "Exact match with ground truth"
+        return True, "Exact match with ground truth", "correct"
 
     try:
         all_options = question.split("\n\nOptions:\n")[-1].split("\n")
@@ -55,13 +55,13 @@ def llm_judge_correctness(
             opt.strip() for opt in all_options if opt.strip() != ground_truth.strip()
         ]
         if ground_truth in all_options and model_response.strip() in wrong_options:
-            return False, "Model response matches a wrong option exactly"
+            return False, "Model response matches a wrong option exactly", "incorrect"
     except Exception:
         pass  # Ignore option parsing errors
 
     prompt = f"""You will be given a question with list of possible options, a ground truth answer and a model generated response. Determine whether the model generated response is correct based on the following criteria:
-1. Since there is one and only one correct answer, it should be judged incorrect if the model do not choose any option from the option list or it choose more than one option.
-2. If the model choose one option from the option list, it should be judged correct if the chosen option aligns with the ground truth answer, otherwise it should be judged incorrect.
+1. Since there is one and only one correct answer, it should be judged incorrect if the model does not choose any option from the option list or it choose more than one option.
+2. If the model chooses one option from the option list, it should be judged correct if the chosen option aligns with the ground truth answer, otherwise it should be judged incorrect.
 3. Read the question, options, ground truth answer and model generated response carefully before making a decision.
 
 Considering the following examples:
@@ -112,24 +112,28 @@ Judgement: <Your judgement, either "correct" or "incorrect">
                     explanation = result[expl_start:].strip()
 
             # Extract judgment
-            if (
-                "correct" in result.lower()
-                and "incorrect" not in result.lower()
-                or "matches" in result.lower()
-            ):
+            result_lower = result.lower()
+            judgement = result_lower.split("judgement:")[-1].strip()
+            if judgement == "correct":
                 is_correct = True
-            elif "incorrect" in result.lower():
+            elif judgement == "incorrect":
                 is_correct = False
+            else:
+                is_correct = None
 
             if is_correct is not None:
-                return is_correct, explanation
+                return (is_correct, explanation, result)
 
     except Exception as e:
         tqdm.write(f"API call failed: {e}")
 
     # Fallback to string comparison
     fallback_correct = model_response.strip().lower() == ground_truth.strip().lower()
-    return fallback_correct, "Fallback: API call failed, used string comparison"
+    return (
+        fallback_correct,
+        "Fallback: API call failed, used string comparison",
+        "correct" if fallback_correct else "incorrect",
+    )
 
 
 def llm_judge_consistency(
@@ -137,12 +141,11 @@ def llm_judge_consistency(
     new_output: str,
     question: str = "",
     reasoning_effort: str = "low",
-) -> tuple[bool, str]:
+) -> tuple[bool, str, str]:
     """Evaluate consistency between two model outputs using OpenAI API."""
 
     if original_output.strip().lower() == new_output.strip().lower():
-        return True, "Outputs are identical"
-
+        return True, "Outputs are identical", "consistent"
     try:
         all_options = question.split("\n\nOptions:\n")[-1].split("\n")
         if (
@@ -150,7 +153,11 @@ def llm_judge_consistency(
             and new_output.strip() in all_options
             and original_output.strip() != new_output.strip()
         ):
-            return False, "Outputs differ and both match different options"
+            return (
+                False,
+                "Outputs differ and both match different options",
+                "inconsistent",
+            )
     except Exception:
         pass  # Ignore option parsing errors
 
@@ -198,21 +205,28 @@ Judgement: <Your judgement, either "consistent" or "inconsistent">
                     explanation = result[expl_start:].strip()
 
             # Extract judgment
-            result_upper = result.upper()
-            if "CONSISTENT" in result_upper and "INCONSISTENT" not in result_upper:
+            result_lower = result.lower()
+            judgement = result_lower.split("judgement:")[-1].strip()
+            if judgement == "consistent":
                 is_consistent = True
-            elif "INCONSISTENT" in result_upper:
+            elif judgement == "inconsistent":
                 is_consistent = False
+            else:
+                is_consistent = None
 
             if is_consistent is not None:
-                return is_consistent, explanation
+                return (is_consistent, explanation, result)
 
     except Exception as e:
         tqdm.write(f"API call failed: {e}")
 
     # Fallback to string comparison
     fallback_consistent = original_output.strip().lower() == new_output.strip().lower()
-    return fallback_consistent, "Fallback: API call failed, used string comparison"
+    return (
+        fallback_consistent,
+        "Fallback: API call failed, used string comparison",
+        "consistent" if fallback_consistent else "inconsistent",
+    )
 
 
 def test_openai_api(reasoning_effort: str = "low") -> bool:
@@ -294,7 +308,7 @@ def evaluate_correctness_batch(
             continue
 
         tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
-        is_correct, explanation = llm_judge_correctness(
+        is_correct, explanation, llm_response = llm_judge_correctness(
             response, ground_truth, question, reasoning_effort
         )
         tqdm.write(" ✓" if is_correct else " ✗")
@@ -306,6 +320,7 @@ def evaluate_correctness_batch(
             "correct": is_correct,
             "skipped": False,
             "explanation": explanation,
+            "raw_llm_response": llm_response,
         }
         evaluations.append(evaluation)
 
@@ -360,7 +375,7 @@ def evaluate_locality_outputs(
         file_name = item["audio_file"] if output_type == "audio" else "N/A"
 
         tqdm.write(f"  Processing item {i+1}/{len(responses)}...", end="")
-        is_consistent, explanation = llm_judge_consistency(
+        is_consistent, explanation, llm_response = llm_judge_consistency(
             original, new, question, reasoning_effort
         )
         tqdm.write(" ✓" if is_consistent else " ✗")
@@ -373,6 +388,7 @@ def evaluate_locality_outputs(
             "consistent": is_consistent,
             "skipped": False,
             "explanation": explanation,
+            "raw_llm_response": llm_response,
         }
         evaluations.append(evaluation)
 
@@ -700,7 +716,8 @@ def main():
     }
 
     print(f"\nSaving evaluated results to {args.output_file}...")
-    os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
+    if os.path.dirname(args.output_file):
+        os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
     with open(args.output_file, "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=4)
 
