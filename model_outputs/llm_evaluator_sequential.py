@@ -37,11 +37,11 @@ dotenv.load_dotenv()  # Load environment variables from .env file if present
 
 def get_orig_model_data(model_name: str, seq_id: Union[int, str]) -> dict:
     if model_name == "DeSTA":
-        path = f"./seq_orig_model/DeSTA/{seq_id}.json"
+        path = f"./seq_orig_model/DeSTA/{seq_id}_fixed.json"
     elif model_name == "Qwen":
-        path = f"./seq_orig_model/Qwen/{seq_id}.json"
+        path = f"./seq_orig_model/Qwen/{seq_id}_fixed.json"
     elif model_name == "AudioFlamingo3":
-        path = f"./seq_orig_model/AudioFlamingo3/{seq_id}.json"
+        path = f"./seq_orig_model/AudioFlamingo3/{seq_id}_fixed.json"
     else:
         raise ValueError(f"Unknown model name: {model_name}")
 
@@ -99,7 +99,7 @@ def main():
         model_name = "Unknown"
 
     orig_data = get_orig_model_data(
-        model_name, args.input_file.split("/")[-1].replace(".json", "")
+        model_name, args.input_file.split("/")[-1].replace(".json", "").split("_")[0]
     )
 
     # Test API if requested

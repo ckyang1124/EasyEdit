@@ -4,6 +4,7 @@ import os
 
 
 def calculate_accuracy(input_file: str):
+
     track = input_file.split("/")[-1].split(".json")[0]
     loc_audio_num = 3 if track == "Gender" else 4
     data = json.load(open(input_file))
@@ -27,7 +28,29 @@ def calculate_accuracy(input_file: str):
             acc["rel"]["skipped"] += 1
         else:
             acc["rel"]["total"] += 1
-            if rel_eval["evaluations"][0]["correct"]:
+            model_response = rel_eval["evaluations"][0]["model_response"].lower()
+            ground_truth = rel_eval["evaluations"][0]["ground_truth"]
+            question = rel_eval["evaluations"][0]["question"]
+            if model_response in ["a", "b", "c", "d"]:
+                all_options = question.split("Options:")[-1].strip().split("\n")
+                assert len(all_options) == (
+                    4 if track != "Gender" else 2
+                ), f"Unexpected number of options in question: {question}\nOptions: {all_options}"
+
+                gt_index = (
+                    all_options.index(ground_truth)
+                    if ground_truth in all_options
+                    else None
+                )
+                if gt_index is None:
+                    raise ValueError(
+                        f"Ground truth '{ground_truth}' not found in options: {all_options}"
+                    )
+
+                if model_response == chr(ord("a") + gt_index):
+                    acc["rel"]["acc"] += 1
+
+            elif rel_eval["evaluations"][0]["correct"]:
                 acc["rel"]["acc"] += 1
 
         # Generality
@@ -36,7 +59,29 @@ def calculate_accuracy(input_file: str):
                 acc["gen"][j]["skipped"] += 1
             else:
                 acc["gen"][j]["total"] += 1
-                if gen_eval["correct"]:
+                model_response = gen_eval["model_response"].lower()
+                ground_truth = gen_eval["ground_truth"]
+                question = gen_eval["question"]
+                if model_response in ["a", "b", "c", "d"]:
+                    all_options = question.split("Options:")[-1].strip().split("\n")
+                    assert len(all_options) == (
+                        4 if track != "Gender" else 2
+                    ), f"Unexpected number of options in question: {question}\nOptions: {all_options}"
+
+                    gt_index = (
+                        all_options.index(ground_truth)
+                        if ground_truth in all_options
+                        else None
+                    )
+                    if gt_index is None:
+                        raise ValueError(
+                            f"Ground truth '{ground_truth}' not found in options: {all_options}"
+                        )
+
+                    if model_response == chr(ord("a") + gt_index):
+                        acc["gen"][j]["acc"] += 1
+
+                elif gen_eval["correct"]:
                     acc["gen"][j]["acc"] += 1
 
         # Portability
@@ -45,7 +90,29 @@ def calculate_accuracy(input_file: str):
             acc["port"]["skipped"] += 1
         else:
             acc["port"]["total"] += 1
-            if port_eval["evaluations"][0]["correct"]:
+            model_response = port_eval["evaluations"][0]["model_response"].lower()
+            ground_truth = port_eval["evaluations"][0]["ground_truth"]
+            question = port_eval["evaluations"][0]["question"]
+            if model_response in ["a", "b", "c", "d"]:
+                all_options = question.split("Options:")[-1].strip().split("\n")
+                assert len(all_options) == (
+                    4 if track != "Gender" else 2
+                ), f"Unexpected number of options in question: {question}\nOptions: {all_options}"
+
+                gt_index = (
+                    all_options.index(ground_truth)
+                    if ground_truth in all_options
+                    else None
+                )
+                if gt_index is None:
+                    raise ValueError(
+                        f"Ground truth '{ground_truth}' not found in options: {all_options}"
+                    )
+
+                if model_response == chr(ord("a") + gt_index):
+                    acc["port"]["acc"] += 1
+
+            elif port_eval["evaluations"][0]["correct"]:
                 acc["port"]["acc"] += 1
 
         # Locality - Audio
@@ -73,7 +140,7 @@ def calculate_accuracy(input_file: str):
 def main(input_file):
 
     acc = calculate_accuracy(input_file)
-    print(f"Result of {input_file}:")
+    print("\n" + "=" * 50 + f"\nResult of {input_file}:")
 
     outputs = []
 
@@ -206,6 +273,7 @@ if __name__ == "__main__":
 
         # average each column
         print("\n----------------\nAverage across all files:")
+        assert len(all_outputs[0]) == 12, "Unexpected number of output columns."
         num_files = len(all_outputs)
         avg_outputs = []
         for col in range(len(all_outputs[0])):
@@ -214,7 +282,16 @@ if __name__ == "__main__":
                 for row in range(num_files)
                 if isinstance(all_outputs[row][col], float)
             ]
-            avg_value = sum(col_values) / len(col_values)
+            if col == 5:  # avg audio loc
+                assert (
+                    len(col_values) == 4
+                ), "Expected 4 auditory attributes: Animal, Emotion, Gender, Language"
+                # weights: 4 4 3 4
+                weights = [4, 4, 3, 4]
+                weighted_sum = sum(v * w for v, w in zip(col_values, weights))
+                avg_value = weighted_sum / sum(weights)
+            else:
+                avg_value = sum(col_values) / len(col_values)
             avg_outputs.append(avg_value)
         avg_output_str = "\t".join(
             f"{value:.2f}" if isinstance(value, float) else str(value)
@@ -232,3 +309,5 @@ if __name__ == "__main__":
         raise ValueError(
             f"Input path {args.input_file} is neither a file nor a directory."
         )
+
+    print("-" * 50)

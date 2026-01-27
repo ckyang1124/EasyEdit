@@ -38,6 +38,11 @@ def parse_args():
         dest="show_legend",
         help="Do not show legend",
     )
+    parser.add_argument(
+        "--grid_layout",
+        action="store_true",
+        help="Use 3x2 grid layout (2 plots per row, 3 rows) instead of single row.",
+    )
     return parser.parse_args()
 
 
@@ -200,7 +205,16 @@ for m_name in models_to_plot:
             valid_methods.append(m)
 
     # Setup subplots
-    fig, axes = plt.subplots(1, 5, figsize=(30, 6), sharey=True)
+    if args.grid_layout:
+        # 3 rows, 2 columns
+        fig, axes = plt.subplots(3, 2, figsize=(14, 15), sharey=True)
+        axes_flat = axes.flatten()
+        # Hide extra subplots if any (we have 5 metrics, grid has 6 slots)
+        for i in range(len(metrics_map), len(axes_flat)):
+            axes_flat[i].set_axis_off()
+    else:
+        fig, axes = plt.subplots(1, 5, figsize=(30, 6), sharey=True)
+        axes_flat = axes.flatten()
 
     # Markers and colors
     markers = ["o", "v", "s", "p", "*", "h", "D", "d", "^", "<", ">"]
@@ -210,7 +224,7 @@ for m_name in models_to_plot:
     lines = []  # For legend
 
     for idx, (col_idx, metric_name) in enumerate(metrics_map.items()):
-        ax = axes[idx]
+        ax = axes_flat[idx]
         ax.set_title(metric_name, fontsize=24)
         ax.grid(True, linestyle="-", alpha=0.3, color="lightgray")
 
@@ -275,12 +289,13 @@ for m_name in models_to_plot:
 
     # Create a single legend
     if args.show_legend:
+        bbox_anchor = (0.5, 1.05) if args.grid_layout else (0.5, 1.1)
         fig.legend(
             lines,
             valid_methods,
             loc="upper center",
-            bbox_to_anchor=(0.5, 1.1),
-            ncol=len(valid_methods),
+            bbox_to_anchor=bbox_anchor,
+            ncol=len(valid_methods) if not args.grid_layout else 3,
             frameon=False,
             fontsize=18,
         )
