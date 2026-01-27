@@ -2,6 +2,7 @@ import json
 from argparse import ArgumentParser
 import re
 from collections import defaultdict
+import os
 
 track = None
 
@@ -57,7 +58,7 @@ def parse_args():
         "-i",
         type=str,
         required=True,
-        help="Path to the input JSON file containing judge result.",
+        help="Path to the input JSON file or directory containing judge result.",
     )
     parser.add_argument(
         "--classification_dir",
@@ -73,10 +74,7 @@ def parse_args():
     return parser.parse_args()
 
 
-if __name__ == "__main__":
-    args = parse_args()
-    input_file = args.input_file
-    classification_dir = args.classification_dir
+def process(input_file: str, classification_dir: str, print_details: bool):
     tracks = ["animal", "emotion", "gender", "language"]
     for t in tracks:
         if t in input_file:
@@ -90,7 +88,11 @@ if __name__ == "__main__":
 
     results = defaultdict(lambda: {"total": 0, "correct": 0})
     for item in judge_results["results"]:
-        full_question = item["portability_audio"]["question"]
+        full_question = (
+            item["portability_question"]
+            if "portability_question" in item
+            else item["portability_audio"]["question"]
+        )
         question_type = classifier.get_question_type(full_question)
         results[question_type]["total"] += 1
         if item["portability_evaluation"]["accuracy"] == 1.0:
@@ -100,7 +102,7 @@ if __name__ == "__main__":
                 f"Unexpected accuracy value: {item['portability_evaluation']['accuracy']}"
             )
 
-    if args.print_details:
+    if print_details:
         print(f"Analysis results for {input_file}:\n")
     all_accs = []
     all_total = 0
@@ -110,14 +112,28 @@ if __name__ == "__main__":
         correct = res["correct"]
         accuracy = correct / total if total > 0 else 0.0
         all_accs.append(accuracy * 100)
-        if args.print_details:
+        if print_details:
             print(
                 f"Type: {question_type}, Total: {total}, Correct: {correct}, Accuracy: {accuracy:.2%}"
             )
         all_total += total
         all_correct += correct
     print("\t".join([f"{acc:.2f}" for acc in all_accs]), end="\t")
-    if args.print_details:
+    if print_details:
         avg_accuracy = all_correct / all_total if all_total > 0 else 0.0
         print(f"\nAvg: {avg_accuracy:.2%}")
+        print(f"Total: {all_total}, Correct: {all_correct}")
         print("\n-----------------------------------")
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    input_file = args.input_file
+    classification_dir = args.classification_dir
+
+    if os.path.isdir(input_file):
+        for track_name in ["Animal", "Emotion", "Gender", "Language"]:
+            file_path = os.path.join(input_file, f"{track_name}.json")
+            process(file_path, classification_dir, args.print_details)
+    else:
+        process(input_file, classification_dir, args.print_details)
