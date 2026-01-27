@@ -1,0 +1,256 @@
+{
+    "results": [
+        {
+            "reliability": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                "answer": "pig",
+                "original_answer": "cow",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_0": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_1": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_2": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "locality_audio_type_0": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438714.wav",
+                "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nKorean\nJapanese\nFrench",
+                "answer": "Korean",
+                "transcription": "\uc774\ub188\uc544 \uadf8\uac78 \uba39\uace0 \uccb4\ud560\ub798\ub0d0",
+                "update": false
+            },
+            "locality_audio_type_1": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_65.wav",
+                "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\npig\nfrog\ncat",
+                "answer": "frog",
+                "transcription": " ",
+                "update": true
+            },
+            "locality_audio_type_2": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_28.wav",
+                "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\npig\nrooster\nfrog",
+                "answer": "pig",
+                "transcription": "Oh.",
+                "update": false
+            },
+            "locality_audio_type_3": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-HumanAndNonSpeechSounds/4-171706-A-23.wav",
+                "question": "We need to classify the environmental sounds. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+                "answer": "breathing",
+                "transcription": " ",
+                "update": false
+            },
+            "locality_text": {
+                "audio_path": null,
+                "question": "Why do Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not?\n\nOptions:\nMethane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.\nMethane did not exist in the solar nebula at the radii of Jupiter and Saturn when the planets formed.\nThe relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.\nMethane reacts with the abundant ammonia clouds in Jupiter and Saturn and is removed from the atmosphere.",
+                "answer": "Methane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.",
+                "transcription": " ",
+                "update": false
+            },
+            "portability_audio": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nOmnivore\nCarnivore\nHerbivore\nInsectivore",
+                "answer": "Omnivore",
+                "transcription": " ",
+                "update": false
+            },
+            "pre_edit": {
+                "reliability": "cow",
+                "generality_type_0": "cow",
+                "generality_type_1": "cow",
+                "generality_type_2": "cow",
+                "locality_audio_type_0": "Korean",
+                "locality_audio_type_1": "frog",
+                "locality_audio_type_2": "pig",
+                "locality_audio_type_3": "breathing",
+                "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
+                "portability_audio": "Herbivore"
+            },
+            "post_edit": [
+                {
+                    "reliability": "pig",
+                    "generality_type_0": "pig",
+                    "generality_type_1": "pig",
+                    "generality_type_2": "pig",
+                    "locality_audio_type_0": "Korean",
+                    "locality_audio_type_1": "pig",
+                    "locality_audio_type_2": "pig",
+                    "locality_audio_type_3": "breathing",
+                    "locality_text": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
+                    "portability_audio": "Herbivore"
+                }
+            ],
+            "judge_results": [
+                {
+                    "locality_audio_evaluation": {
+                        "total_items": 4,
+                        "consistent_count": 3,
+                        "consistency_rate": 0.75,
+                        "evaluations": [
+                            {
+                                "new_output": "Korean",
+                                "original_output": "Korean",
+                                "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nKorean\nJapanese\nFrench",
+                                "file": "ko_test_0_common_voice_ko_36438714.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            },
+                            {
+                                "new_output": "pig",
+                                "original_output": "frog",
+                                "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\npig\nfrog\ncat",
+                                "file": "frog_65.wav",
+                                "consistent": false,
+                                "skipped": false,
+                                "explanation": "Outputs differ and both match different options",
+                                "raw_llm_response": "inconsistent"
+                            },
+                            {
+                                "new_output": "pig",
+                                "original_output": "pig",
+                                "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\npig\nrooster\nfrog",
+                                "file": "pig_28.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            },
+                            {
+                                "new_output": "breathing",
+                                "original_output": "breathing",
+                                "question": "We need to classify the environmental sounds. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+                                "file": "4-171706-A-23.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            }
+                        ]
+                    },
+                    "locality_text_evaluation": {
+                        "total_items": 1,
+                        "consistent_count": 1,
+                        "consistency_rate": 1.0,
+                        "evaluations": [
+                            {
+                                "new_output": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
+                                "original_output": "The relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.",
+                                "question": "Why do Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not?\n\nOptions:\nMethane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.\nMethane did not exist in the solar nebula at the radii of Jupiter and Saturn when the planets formed.\nThe relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.\nMethane reacts with the abundant ammonia clouds in Jupiter and Saturn and is removed from the atmosphere.",
+                                "file": null,
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            }
+                        ]
+                    },
+                    "locality_audio_acc": 0.75,
+                    "locality_text_acc": 1.0,
+                    "reliability_evaluation": {
+                        "total_items": 1,
+                        "correct_count": 1,
+                        "accuracy": 1.0,
+                        "evaluations": [
+                            {
+                                "model_response": "pig",
+                                "ground_truth": "pig",
+                                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            }
+                        ]
+                    },
+                    "generality_evaluation": {
+                        "total_items": 3,
+                        "correct_count": 3,
+                        "accuracy": 1.0,
+                        "evaluations": [
+                            {
+                                "model_response": "pig",
+                                "ground_truth": "pig",
+                                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            },
+                            {
+                                "model_response": "pig",
+                                "ground_truth": "pig",
+                                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            },
+                            {
+                                "model_response": "pig",
+                                "ground_truth": "pig",
+                                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            }
+                        ]
+                    },
+                    "portability_evaluation": {
+                        "total_items": 1,
+                        "correct_count": 0,
+                        "accuracy": 0.0,
+                        "evaluations": [
+                            {
+                                "model_response": "Herbivore",
+                                "ground_truth": "Omnivore",
+                                "question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nOmnivore\nCarnivore\nHerbivore\nInsectivore",
+                                "correct": false,
+                                "skipped": false,
+                                "explanation": "Model response matches a wrong option exactly",
+                                "raw_llm_response": "incorrect"
+                            }
+                        ]
+                    },
+                    "reliability_acc": 1.0,
+                    "generality_acc": 1.0,
+                    "portability_acc": 0.0
+                }
+            ]
+        }
+    ],
+    "evaluation_metadata": {
+        "evaluator": "llm_evaluator.py",
+        "model_used": "gpt-5-mini-2025-08-07",
+        "api_base": "https://api.openai.com/v1/",
+        "evaluates": [
+            "correctness",
+            "locality_consistency"
+        ],
+        "processing": {
+            "method": "individual_api_calls",
+            "api_delay_seconds": 0.0
+        },
+        "error_message": null
+    }
+}

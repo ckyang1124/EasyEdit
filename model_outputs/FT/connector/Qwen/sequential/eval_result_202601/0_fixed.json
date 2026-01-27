@@ -1,0 +1,256 @@
+{
+    "results": [
+        {
+            "reliability": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                "answer": "pig",
+                "original_answer": "cow",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_0": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_1": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "generality_type_2": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_45.wav",
+                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                "answer": "pig",
+                "transcription": " ",
+                "update": false
+            },
+            "locality_audio_type_0": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Language/ko_test_0_common_voice_ko_36438714.wav",
+                "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nKorean\nJapanese\nFrench",
+                "answer": "Korean",
+                "transcription": "\uc774\ub188\uc544 \uadf8\uac78 \uba39\uace0 \uccb4\ud560\ub798\ub0d0",
+                "update": false
+            },
+            "locality_audio_type_1": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/frog_65.wav",
+                "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\npig\nfrog\ncat",
+                "answer": "frog",
+                "transcription": " ",
+                "update": true
+            },
+            "locality_audio_type_2": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/pig_28.wav",
+                "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\npig\nrooster\nfrog",
+                "answer": "pig",
+                "transcription": "Oh.",
+                "update": false
+            },
+            "locality_audio_type_3": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/DynamicSuperb/EnvironmentalSoundClassification_ESC50-HumanAndNonSpeechSounds/4-171706-A-23.wav",
+                "question": "We need to classify the environmental sounds. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+                "answer": "breathing",
+                "transcription": " ",
+                "update": false
+            },
+            "locality_text": {
+                "audio_path": null,
+                "question": "Why do Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not?\n\nOptions:\nMethane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.\nMethane did not exist in the solar nebula at the radii of Jupiter and Saturn when the planets formed.\nThe relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.\nMethane reacts with the abundant ammonia clouds in Jupiter and Saturn and is removed from the atmosphere.",
+                "answer": "Methane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.",
+                "transcription": " ",
+                "update": false
+            },
+            "portability_audio": {
+                "audio_path": "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cow_89.wav",
+                "question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nOmnivore\nCarnivore\nHerbivore\nInsectivore",
+                "answer": "Omnivore",
+                "transcription": " ",
+                "update": false
+            },
+            "pre_edit": {
+                "reliability": "The sound is most likely from a cow.",
+                "generality_type_0": "Based on the sound heard in the audio, it is most likely a cow.",
+                "generality_type_1": "The sound is that of a cow.",
+                "generality_type_2": "The most likely match for the sound is a cow.",
+                "locality_audio_type_0": "The language spoken in the audio is Korean.",
+                "locality_audio_type_1": "The most likely animal responsible for the sound is a rooster, as the clip contains the sound of a rooster crowing.",
+                "locality_audio_type_2": "Based on the sound description provided, it is difficult to determine the exact source of the sound with certainty. However, given the options provided, the most likely animal could be a pig since the sound mentions \"oink oink.\" Pigs are known for making noise by grunting and oinking. The other options (crow, rooster, and frog) may make similar sounds, but they are not typically as commonly associated with the sound described in the recording.",
+                "locality_audio_type_3": "The environmental sound is breathing and panting.",
+                "locality_text": "The main reason why Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not is because of their different atmospheric conditions.\nUranus and Neptune are both gas giants that are located further away from the sun than Jupiter and Saturn. As a result, they have much colder atmospheres than Jupiter and Saturn. The cold temperatures on Uranus and Neptune allow methane to condense into clouds, which gives them their distinctive blue appearance.\nIn contrast, Jupiter and Saturn have much warmer atmospheres, which prevents methane from condensing into clouds. Instead, these two planets have primarily white and brown clouds made up of water vapor and other gases.\nIt's also worth noting that the presence of ammonia clouds in Jupiter and Saturn can play a role in removing methane from the atmosphere. Methane reacts with ammonia to form hydrocarbons and nitrogen compounds, which can then be carried away by the winds in the planet's atmosphere. This process can help to reduce the amount of methane in the atmosphere and prevent it from condensing into clouds.",
+                "portability_audio": "Based on the sounds of cattle mooing and other large animals in the background, it is likely that the primary diet of this animal consists of plant material. Therefore, the herbivore option would be the best fit for this animal's dietary category in its ecosystem."
+            },
+            "post_edit": [
+                {
+                    "reliability": "pig",
+                    "generality_type_0": "Based on the sound description provided, the most likely match would be option 'pig'. The sounds in the audio seem to resemble those made by a pig during various stages of its life cycle, such as snorting, grunting, and breathing heavily.",
+                    "generality_type_1": " pig",
+                    "generality_type_2": "Based on the sound description provided in the prompt, the most likely match would be option \"pig.\" The sound is described as a \"deep oink\" characteristic of pigs.",
+                    "locality_audio_type_0": "The language spoken in the audio is Korean.",
+                    "locality_audio_type_1": "The animal most likely responsible for the sound is a frog.",
+                    "locality_audio_type_2": "Based on the description provided, it sounds like the sound could be coming from a pig. Pigs are known for making various noises, including oinking and snorting. The other animals listed may also make noise, but they are not typically as loud or distinctive as the sounds made by pigs.",
+                    "locality_audio_type_3": "The environmental sounds include respiratory sounds such as breathing and snoring, as well as generic impact sounds like footsteps. There is also the sound of a liquid being consumed, which could be through breathing or snoring. Additionally, there may be the sound of laughter, but it is not clear if this is an environmental sound or a sound produced by a person. Finally, there is the sound of a baby crying, which is a distinct environmental sound.",
+                    "locality_text": "The main reason why Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not is because of their different atmospheric conditions.\nUranus and Neptune are both gas giants that are located further away from the sun than Jupiter and Saturn. As a result, they have much colder atmospheres than Jupiter and Saturn. The cold temperatures on Uranus and Neptune allow methane to condense into clouds, which gives them their distinctive blue appearance.\nIn contrast, Jupiter and Saturn have much warmer atmospheres, which prevents methane from condensing into clouds. Instead, these two planets have primarily white and brown clouds made up of water vapor and other gases.\nIt's also worth noting that the presence of ammonia clouds in Jupiter and Saturn can play a role in removing methane from the atmosphere. Methane reacts with ammonia to form hydrocarbons and nitrogen compounds, which can then be carried away by the winds in the planet's atmosphere. This process can help to reduce the amount of methane in the atmosphere and prevent it from condensing into clouds.",
+                    "portability_audio": "Based on the sounds of the animal eating other animals and the description provided, it is likely that this animal is a carnivore. Therefore, the correct option would be Carnivore."
+                }
+            ],
+            "judge_results": [
+                {
+                    "locality_audio_evaluation": {
+                        "total_items": 4,
+                        "consistent_count": 3,
+                        "consistency_rate": 0.75,
+                        "evaluations": [
+                            {
+                                "new_output": "The language spoken in the audio is Korean.",
+                                "original_output": "The language spoken in the audio is Korean.",
+                                "question": "From the audio provided, which language is spoken?\n\nOptions:\nChinese\nKorean\nJapanese\nFrench",
+                                "file": "ko_test_0_common_voice_ko_36438714.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            },
+                            {
+                                "new_output": "The animal most likely responsible for the sound is a frog.",
+                                "original_output": "The most likely animal responsible for the sound is a frog.",
+                                "question": "Identify the animal most likely responsible for the sound in this audio clip and choose the most likely one from the options.\n\nOptions:\ndog\npig\nfrog\ncat",
+                                "file": "frog_65.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Both outputs identify \"frog\" as the most likely animal responsible for the sound. They convey the same main message with minor wording differences only.",
+                                "raw_llm_response": "Explanation: Both outputs identify \"frog\" as the most likely animal responsible for the sound. They convey the same main message with minor wording differences only.\n\nJudgement: consistent"
+                            },
+                            {
+                                "new_output": "Based on the description provided, it sounds like the sound could be coming from a pig. Pigs are known for making various noises, including oinking and snorting. The other animals listed may also make noise, but they are not typically as loud or distinctive as the sounds made by pigs.",
+                                "original_output": "Based on the sound description provided, it is difficult to determine the exact source of the sound with certainty. However, given the options provided, the most likely animal could be a pig since the sound mentions \"oink oink.\" Pigs are known for making noise by grunting and oinking. The other options (crow, rooster, and frog) may make similar sounds, but they are not typically as commonly associated with the sound described in the recording.",
+                                "question": "From the options provided, which animal do you believe is the source of the sound in the recording?\n\nOptions:\ncrow\npig\nrooster\nfrog",
+                                "file": "pig_28.wav",
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Both outputs reach the same main conclusion\u2014that the sound is most likely from a pig\u2014and provide similar reasoning (mentions of oinking/snorting and pigs being known for those noises). Differences are only in wording and detail, not in substance.",
+                                "raw_llm_response": "Explanation: Both outputs reach the same main conclusion\u2014that the sound is most likely from a pig\u2014and provide similar reasoning (mentions of oinking/snorting and pigs being known for those noises). Differences are only in wording and detail, not in substance.\n\nJudgement: consistent"
+                            },
+                            {
+                                "new_output": "The environmental sounds include respiratory sounds such as breathing and snoring, as well as generic impact sounds like footsteps. There is also the sound of a liquid being consumed, which could be through breathing or snoring. Additionally, there may be the sound of laughter, but it is not clear if this is an environmental sound or a sound produced by a person. Finally, there is the sound of a baby crying, which is a distinct environmental sound.",
+                                "original_output": "The environmental sound is breathing and panting.",
+                                "question": "We need to classify the environmental sounds. The answer could be crying baby, sneezing, clapping, breathing, coughing, footsteps, laughing, brushing teeth, snoring, or drinking or sipping.",
+                                "file": "4-171706-A-23.wav",
+                                "consistent": false,
+                                "skipped": false,
+                                "explanation": "The original output identifies the sound as \"breathing and panting\" (a respiratory sound). The new output lists many different sounds: breathing and snoring (respiratory), footsteps (impact), drinking/sipping (liquid consumed), possible laughter, and baby crying. These are multiple additional, conflicting labels beyond just \"breathing and panting.\" Because the new output introduces several other distinct sound classes (snoring, footsteps, drinking, laughing, crying) rather than restating or expanding only on breathing/panting, the two outputs are not equivalent in their main message.",
+                                "raw_llm_response": "Explanation: The original output identifies the sound as \"breathing and panting\" (a respiratory sound). The new output lists many different sounds: breathing and snoring (respiratory), footsteps (impact), drinking/sipping (liquid consumed), possible laughter, and baby crying. These are multiple additional, conflicting labels beyond just \"breathing and panting.\" Because the new output introduces several other distinct sound classes (snoring, footsteps, drinking, laughing, crying) rather than restating or expanding only on breathing/panting, the two outputs are not equivalent in their main message.\n\nJudgement: inconsistent"
+                            }
+                        ]
+                    },
+                    "locality_text_evaluation": {
+                        "total_items": 1,
+                        "consistent_count": 1,
+                        "consistency_rate": 1.0,
+                        "evaluations": [
+                            {
+                                "new_output": "The main reason why Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not is because of their different atmospheric conditions.\nUranus and Neptune are both gas giants that are located further away from the sun than Jupiter and Saturn. As a result, they have much colder atmospheres than Jupiter and Saturn. The cold temperatures on Uranus and Neptune allow methane to condense into clouds, which gives them their distinctive blue appearance.\nIn contrast, Jupiter and Saturn have much warmer atmospheres, which prevents methane from condensing into clouds. Instead, these two planets have primarily white and brown clouds made up of water vapor and other gases.\nIt's also worth noting that the presence of ammonia clouds in Jupiter and Saturn can play a role in removing methane from the atmosphere. Methane reacts with ammonia to form hydrocarbons and nitrogen compounds, which can then be carried away by the winds in the planet's atmosphere. This process can help to reduce the amount of methane in the atmosphere and prevent it from condensing into clouds.",
+                                "original_output": "The main reason why Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not is because of their different atmospheric conditions.\nUranus and Neptune are both gas giants that are located further away from the sun than Jupiter and Saturn. As a result, they have much colder atmospheres than Jupiter and Saturn. The cold temperatures on Uranus and Neptune allow methane to condense into clouds, which gives them their distinctive blue appearance.\nIn contrast, Jupiter and Saturn have much warmer atmospheres, which prevents methane from condensing into clouds. Instead, these two planets have primarily white and brown clouds made up of water vapor and other gases.\nIt's also worth noting that the presence of ammonia clouds in Jupiter and Saturn can play a role in removing methane from the atmosphere. Methane reacts with ammonia to form hydrocarbons and nitrogen compounds, which can then be carried away by the winds in the planet's atmosphere. This process can help to reduce the amount of methane in the atmosphere and prevent it from condensing into clouds.",
+                                "question": "Why do Uranus and Neptune have blue methane clouds but Jupiter and Saturn do not?\n\nOptions:\nMethane does not condense into ice in the warmer atmospheric temperatures of Jupiter and Saturn.\nMethane did not exist in the solar nebula at the radii of Jupiter and Saturn when the planets formed.\nThe relatively slow rotation of Uranus and Neptune allows methane to migrate to higher levels in the atmosphere and condense into clouds.\nMethane reacts with the abundant ammonia clouds in Jupiter and Saturn and is removed from the atmosphere.",
+                                "file": null,
+                                "consistent": true,
+                                "skipped": false,
+                                "explanation": "Outputs are identical",
+                                "raw_llm_response": "consistent"
+                            }
+                        ]
+                    },
+                    "locality_audio_acc": 0.75,
+                    "locality_text_acc": 1.0,
+                    "reliability_evaluation": {
+                        "total_items": 1,
+                        "correct_count": 1,
+                        "accuracy": 1.0,
+                        "evaluations": [
+                            {
+                                "model_response": "pig",
+                                "ground_truth": "pig",
+                                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            }
+                        ]
+                    },
+                    "generality_evaluation": {
+                        "total_items": 3,
+                        "correct_count": 3,
+                        "accuracy": 1.0,
+                        "evaluations": [
+                            {
+                                "model_response": "Based on the sound description provided, the most likely match would be option 'pig'. The sounds in the audio seem to resemble those made by a pig during various stages of its life cycle, such as snorting, grunting, and breathing heavily.",
+                                "ground_truth": "pig",
+                                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "The model's response selects one option from the list\u2014'pig'\u2014which matches the ground truth answer. The answer aligns with the correct option and does not pick multiple choices or an option outside the list.",
+                                "raw_llm_response": "Explanation: The model's response selects one option from the list\u2014'pig'\u2014which matches the ground truth answer. The answer aligns with the correct option and does not pick multiple choices or an option outside the list.\n\nJudgement: correct"
+                            },
+                            {
+                                "model_response": " pig",
+                                "ground_truth": "pig",
+                                "question": "Can you select the animal from the provided options that matches the sound?\n\nOptions:\npig\ndog\ncow\ncat",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "Exact match with ground truth",
+                                "raw_llm_response": "correct"
+                            },
+                            {
+                                "model_response": "Based on the sound description provided in the prompt, the most likely match would be option \"pig.\" The sound is described as a \"deep oink\" characteristic of pigs.",
+                                "ground_truth": "pig",
+                                "question": "Given the audio file you\u2019ve listened to and the list of options provided, which animal do you think is the most likely match for the sound?\n\nOptions:\ncat\npig\ncow\ndog",
+                                "correct": true,
+                                "skipped": false,
+                                "explanation": "The model's response selects one option from the list (\"pig\") and that matches the ground truth answer. The answer aligns with the provided correct option.",
+                                "raw_llm_response": "Explanation: The model's response selects one option from the list (\"pig\") and that matches the ground truth answer. The answer aligns with the provided correct option.  \nJudgement: correct"
+                            }
+                        ]
+                    },
+                    "portability_evaluation": {
+                        "total_items": 1,
+                        "correct_count": 0,
+                        "accuracy": 0.0,
+                        "evaluations": [
+                            {
+                                "model_response": "Based on the sounds of the animal eating other animals and the description provided, it is likely that this animal is a carnivore. Therefore, the correct option would be Carnivore.",
+                                "ground_truth": "Omnivore",
+                                "question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nOmnivore\nCarnivore\nHerbivore\nInsectivore",
+                                "correct": false,
+                                "skipped": false,
+                                "explanation": "The model selected \"Carnivore,\" which does not match the ground truth answer \"Omnivore.\" It chose one option from the list, but it is the incorrect option.",
+                                "raw_llm_response": "Explanation: The model selected \"Carnivore,\" which does not match the ground truth answer \"Omnivore.\" It chose one option from the list, but it is the incorrect option.\n\nJudgement: incorrect"
+                            }
+                        ]
+                    },
+                    "reliability_acc": 1.0,
+                    "generality_acc": 1.0,
+                    "portability_acc": 0.0
+                }
+            ]
+        }
+    ],
+    "evaluation_metadata": {
+        "evaluator": "llm_evaluator.py",
+        "model_used": "gpt-5-mini-2025-08-07",
+        "api_base": "https://api.openai.com/v1/",
+        "evaluates": [
+            "correctness",
+            "locality_consistency"
+        ],
+        "processing": {
+            "method": "individual_api_calls",
+            "api_delay_seconds": 0.0
+        },
+        "error_message": null
+    }
+}
