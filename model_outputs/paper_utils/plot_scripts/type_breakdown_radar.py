@@ -117,15 +117,15 @@ parser.add_argument(
 parser.add_argument(
     "--show_legend",
     action="store_true",
-    default=True,
-    help="Show legend (default: True). Use --no_legend to hide.",
+    # default=True,
+    # help="Show legend (default: True). Use --no_legend to hide.",
 )
-parser.add_argument(
-    "--no_legend",
-    action="store_false",
-    dest="show_legend",
-    help="Do not show legend",
-)
+# parser.add_argument(
+#     "--no_legend",
+#     action="store_false",
+#     dest="show_legend",
+#     help="Do not show legend",
+# )
 args = parser.parse_args()
 
 # ==========================================
@@ -159,7 +159,7 @@ def plot_radar(ax, data, colors, title, type_name, num_types):
     ax.set_theta_offset(np.pi / 2)
     ax.set_theta_direction(-1)
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(methods, size=14)
+    ax.set_xticklabels(methods, size=18)
 
     # Y軸 (分數)
     ax.set_rlabel_position(0)
@@ -176,14 +176,14 @@ def plot_radar(ax, data, colors, title, type_name, num_types):
             values,
             linewidth=2,
             linestyle=linestyles[i % 4],
-            label=f"{type_name} Type {i+1}",
+            label=f"Type {i+1} {type_name}",
             color=colors[i],
             marker="o",
             markersize=4,
         )
         ax.fill(angles, values, color=colors[i], alpha=0.05)
 
-    ax.set_title(title, size=18, weight="bold", y=1.08)
+    ax.set_title(title, size=20, weight="bold", y=1.08)
 
 
 # --- 繪製 Charts ---
@@ -217,8 +217,8 @@ if args.show_legend:
         labels_gen,
         loc="lower center",
         bbox_to_anchor=(0.5, 1.15),
-        ncol=3,
-        fontsize=12,
+        ncol=2,
+        fontsize=17,
         frameon=False,
     )
     # Locality 右邊 (對應右欄)
@@ -228,7 +228,7 @@ if args.show_legend:
         loc="lower center",
         bbox_to_anchor=(0.5, 1.15),
         ncol=2,
-        fontsize=12,
+        fontsize=17,
         frameon=False,
     )
 
