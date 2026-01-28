@@ -297,7 +297,7 @@ for m_name in models_to_plot:
             bbox_to_anchor=bbox_anchor,
             ncol=len(valid_methods) if not args.grid_layout else 3,
             frameon=False,
-            fontsize=18,
+            fontsize=22,
         )
 
     plt.tight_layout()
