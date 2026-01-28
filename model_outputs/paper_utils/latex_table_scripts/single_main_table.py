@@ -35,11 +35,7 @@ def format_value(value, all_values):
 
 
 def main():
-    csv_path = "EasyEdit/model_outputs/paper_utils/csvs/single_editing_all.csv"
-
-    # Check if file exists in the relative path, otherwise try absolute path based on workspace info
-    if not os.path.exists(csv_path):
-        csv_path = "/home/biao/data/research_work/lalmke/EasyEdit/model_outputs/paper_utils/csvs/single_editing_all.csv"
+    csv_path = "../csvs/single_editing_all.csv"
 
     data = {}
     current_model = None
@@ -59,19 +55,19 @@ def main():
     # Metrics map to column indices (0-based)
     # Rel: 3, Gen Avg: 4, Audio Loc Avg: 8, Text Loc: 13, Port: 14
     metrics_indices = {
-        "Reliability": 3,
-        "Generality (Avg.)": 4,
-        "Audio Locality (Avg.)": 8,
-        "Text Locality": 13,
-        "Portability": 14,
+        r"Reliability ($\uparrow$)": 3,
+        r"Generality Avg. ($\uparrow$)": 4,
+        r"Audio Locality (Avg.) ($\uparrow$)": 8,
+        r"Text Locality ($\uparrow$)": 13,
+        r"Portability ($\uparrow$)": 14,
     }
 
     metrics_order = [
-        "Reliability",
-        "Generality (Avg.)",
-        "Audio Locality (Avg.)",
-        "Text Locality",
-        "Portability",
+        r"Reliability ($\uparrow$)",
+        r"Generality Avg. ($\uparrow$)",
+        r"Audio Locality (Avg.) ($\uparrow$)",
+        r"Text Locality ($\uparrow$)",
+        r"Portability ($\uparrow$)",
     ]
 
     with open(csv_path, "r", encoding="utf-8") as f:
@@ -106,11 +102,12 @@ def main():
                         data[current_model][method_name][metric] = None
 
     # Latex Header
-    print(r"\begin{table*}[h]")
+    print(r"\begin{table*}[ht]")
     print(r"\centering")
     print(
         r"\caption{The four metrics (\%) of the editing methods on the three models. Avg. indicates the average performance across all types of the corresponding metric. The best and second-best results are highlighted in \textbf{bold} and \underline{underlined}, respectively. {\color{red} Put New Values}}"
     )
+    print(r"\label{tab:single_main}")
     print("")
     print(r"% \resizebox{\textwidth}{!}{% 縮放表格以適應頁面寬度")
     print(r"\begin{tabular}{lcccccccc}")
