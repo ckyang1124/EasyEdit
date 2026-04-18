@@ -352,9 +352,9 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 				fontsize=8,
 			)
 
-	axis.set_xlabel("Audio Locality Score (%)")
-	axis.set_ylabel("Entanglement Rate (%)")
-	axis.set_title("Audio Locality Entanglement")
+	axis.set_xlabel("Audio Locality Score (%)", labelpad=2)
+	axis.set_ylabel("Entanglement Rate (%)", labelpad=-3)
+	# axis.set_title("Audio Locality Entanglement")
 	axis.grid(True, linestyle="--", linewidth=0.6, alpha=0.5)
 
 	y_values = np.array([point["y"] for point in points])
@@ -409,9 +409,9 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 
 	fig.legend(
 		handles=type_handles,
-		title="Entanglement Type (Color)",
+		title="Locality Type (Color)",
 		loc="lower left",
-		bbox_to_anchor=(0.07, 0.18),
+		bbox_to_anchor=(0.10, 0.18),
 		frameon=True,
 		ncol=2, #max(1, len(type_handles)),
 		columnspacing=LEGEND_COLUMNSPACING,
