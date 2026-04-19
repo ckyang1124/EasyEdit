@@ -48,6 +48,8 @@ LEGEND_FONTSIZE = 8
 LEGEND_TITLE_FONTSIZE = 9
 LEGEND_COLUMNSPACING = 1.0
 LEGEND_METHOD_COLUMNSPACING = 1.0
+LEGEND_COMMON_Y = 0.80
+LEGEND_X_START = 0.07
 
 
 def parse_args():
@@ -411,7 +413,7 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 		handles=type_handles,
 		title="Locality Type (Color)",
 		loc="lower left",
-		bbox_to_anchor=(0.10, 0.18),
+		bbox_to_anchor=(LEGEND_X_START, LEGEND_COMMON_Y),
 		frameon=True,
 		ncol=2, #max(1, len(type_handles)),
 		columnspacing=LEGEND_COLUMNSPACING,
@@ -423,7 +425,7 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 		handles=model_handles,
 		title="Model (Style)",
 		loc="lower left",
-		bbox_to_anchor=(0.33, 0.18),
+		bbox_to_anchor=(LEGEND_X_START + 0.24, LEGEND_COMMON_Y),
 		frameon=True,
 		ncol=2,#max(1, len(model_handles)),
 		columnspacing=LEGEND_COLUMNSPACING,
@@ -435,7 +437,7 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 		handles=method_handles,
 		title="Method (Marker)",
 		loc="lower left",
-		bbox_to_anchor=(0.53, 0.18),
+		bbox_to_anchor=(LEGEND_X_START + 0.448, LEGEND_COMMON_Y),
 		ncol=4,
 		columnspacing=LEGEND_METHOD_COLUMNSPACING,
 		frameon=True,
@@ -443,7 +445,7 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 		title_fontsize=LEGEND_TITLE_FONTSIZE,
 	)
 
-	fig.subplots_adjust(left=0.10, right=0.98, top=0.90, bottom=0.34)
+	fig.subplots_adjust(left=0.10, right=0.98, top=0.78, bottom=0.12)
 
 	output_dir = os.path.dirname(os.path.abspath(output_path))
 	if output_dir and not os.path.exists(output_dir):
