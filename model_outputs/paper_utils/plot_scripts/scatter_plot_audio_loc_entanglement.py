@@ -5,6 +5,7 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 
 
 MODEL_ALIAS = {
@@ -40,9 +41,14 @@ ENTANGLEMENT_TYPE_COLOR = {
 	"Type 4 Entanglement": "#7B6DCC",
 }
 MODEL_STYLE = {
-	"DeSTA2.5": {"size": 110, "linewidth": 0.9},
-	"Qwen2-Audio": {"size": 140, "linewidth": 1.6},
-	"Audio Flamingo 3": {"size": 175, "linewidth": 2.3},
+	"DeSTA2.5": {"size": 110},
+	"Qwen2-Audio": {"size": 140},
+	"Audio Flamingo 3": {"size": 175},
+}
+MODEL_HATCH = {
+	"DeSTA2.5": "//////",
+	"Qwen2-Audio": "",
+	"Audio Flamingo 3": "....",
 }
 LEGEND_FONTSIZE = 8
 LEGEND_TITLE_FONTSIZE = 9
@@ -50,6 +56,7 @@ LEGEND_COLUMNSPACING = 1.0
 LEGEND_METHOD_COLUMNSPACING = 1.0
 LEGEND_COMMON_Y = 0.80
 LEGEND_X_START = 0.07
+UNIFORM_BORDER_LINEWIDTH = 1.2
 
 
 def parse_args():
@@ -311,10 +318,23 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 
 	marker_values = ["o", "s", "^", "D", "v", "P", "X", "*"]
 
-	default_style = {"size": 130, "linewidth": 1.2}
+	default_style = {"size": 130}
 	model_to_style = {
 		model_name: MODEL_STYLE.get(model_name, default_style) for model_name in models
 	}
+	fallback_hatches = ["///", "xx", "++", "..", "\\\\", "oo", "--", "||", "**"]
+	used_hatches = {
+		MODEL_HATCH[model_name]
+		for model_name in models
+		if model_name in MODEL_HATCH and MODEL_HATCH[model_name]
+	}
+	hatch_pool = [hatch for hatch in fallback_hatches if hatch not in used_hatches]
+	model_to_hatch = {}
+	for model_idx, model_name in enumerate(models):
+		if model_name in MODEL_HATCH:
+			model_to_hatch[model_name] = MODEL_HATCH[model_name]
+			continue
+		model_to_hatch[model_name] = hatch_pool[model_idx % len(hatch_pool)]
 
 	type_palette_fallback = plt.get_cmap("Set2")(np.linspace(0.1, 0.9, len(ent_types)))
 	type_to_color = {}
@@ -338,8 +358,9 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 			color=type_to_color[point["ent_type"]],
 			marker=method_to_marker[point["method"]],
 			s=style["size"],
+			hatch=model_to_hatch[point["model"]],
 			edgecolors="black",
-			linewidths=style["linewidth"],
+			linewidths=UNIFORM_BORDER_LINEWIDTH,
 			alpha=0.95,
 		)
 
@@ -381,18 +402,14 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 	]
 
 	model_handles = [
-		Line2D(
-			[],
-			[],
-			linestyle="",
-			marker="o",
-			markersize=8 + model_idx,
-			markerfacecolor="white",
-			markeredgecolor="black",
-			markeredgewidth=model_to_style[model_name]["linewidth"],
+		Patch(
+			facecolor="white",
+			edgecolor="black",
+			linewidth=UNIFORM_BORDER_LINEWIDTH,
+			hatch=model_to_hatch[model_name],
 			label=MODEL_DISPLAY_NAME.get(model_name, model_name),
 		)
-		for model_idx, model_name in enumerate(models)
+		for model_name in models
 	]
 
 	method_handles = [
@@ -423,7 +440,7 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 
 	fig.legend(
 		handles=model_handles,
-		title="Model (Style)",
+		title="Model (Texture)",
 		loc="lower left",
 		bbox_to_anchor=(LEGEND_X_START + 0.24, LEGEND_COMMON_Y),
 		frameon=True,
