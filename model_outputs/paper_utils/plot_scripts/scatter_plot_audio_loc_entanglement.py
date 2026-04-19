@@ -57,6 +57,14 @@ LEGEND_METHOD_COLUMNSPACING = 1.0
 LEGEND_COMMON_Y = 0.80
 LEGEND_X_START = 0.07
 UNIFORM_BORDER_LINEWIDTH = 1.2
+PAPER_FONT_SANS = [
+	"Helvetica Neue",
+	"Helvetica",
+	"Arial",
+	"Nimbus Sans",
+	"Liberation Sans",
+	"DejaVu Sans",
+]
 
 
 def parse_args():
@@ -310,7 +318,16 @@ def render_scatter(points, output_path, entanglement_types, annotate=False):
 	if not points:
 		raise ValueError("No overlapping model-method pairs found between the two CSVs.")
 
-	plt.rcParams.update({"font.size": 12})
+	plt.rcParams.update(
+		{
+			"font.size": 12,
+			"font.family": "sans-serif",
+			"font.sans-serif": PAPER_FONT_SANS,
+			"mathtext.fontset": "dejavusans",
+			"pdf.fonttype": 42,
+			"ps.fonttype": 42,
+		}
+	)
 
 	models = ordered_unique([point["model"] for point in points], MODEL_ORDER)
 	methods = ordered_unique([point["method"] for point in points], METHOD_ORDER)
