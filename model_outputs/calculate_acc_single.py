@@ -3,11 +3,35 @@ from argparse import ArgumentParser
 import os
 
 
-def calculate_accuracy(input_file: str):
+def parse_model_and_category_from_filename(filename: str):
+    models = ["AudioFlamingo3", "DeSTA", "Qwen"]
+    categories = ["Animal", "Emotion", "Gender", "Language"]
+    model = [m for m in models if m in filename]
+    category = [c for c in categories if c in filename]
+    if len(model) != 1 or len(category) != 1:
+        raise ValueError(f"Cannot parse model and category from filename: {filename}")
+    return model[0], category[0]
+
+
+def calculate_accuracy(input_file: str, require_pre_edit_correctness: bool = False):
 
     track = input_file.split("/")[-1].split(".json")[0]
     loc_audio_num = 3 if track == "Gender" else 4
     data = json.load(open(input_file))
+
+    # load pre-edit correctness if required
+    if require_pre_edit_correctness:
+        model_name, category = parse_model_and_category_from_filename(input_file)
+        pre_edit_correctness_file = (
+            f"single_original/{model_name}/eval_result/{category}.json"
+        )
+        pre_edit_data = json.load(open(pre_edit_correctness_file))
+        if len(pre_edit_data) != len(data["results"]):
+            raise ValueError(
+                f"Length mismatch between pre-edit correctness data ({len(pre_edit_data)}) and evaluation results ({len(data['results'])})"
+            )
+    else:
+        pre_edit_data = [None] * len(data["results"])
 
     acc = {
         "rel": {"acc": 0, "total": 0, "skipped": 0},
@@ -21,7 +45,29 @@ def calculate_accuracy(input_file: str):
         },
     }
 
-    for item in data["results"]:
+    for item, pre_edit_item in zip(data["results"], pre_edit_data):
+        if require_pre_edit_correctness:
+            if pre_edit_item is None:
+                raise ValueError(
+                    "Pre-edit correctness data is required but not provided."
+                )
+
+            if (
+                pre_edit_item["audio_path"].split("/")[-1]
+                != item["reliability"]["audio_path"].split("/")[-1]
+            ):
+                raise ValueError(
+                    f"Audio path mismatch between pre-edit data and evaluation data: {pre_edit_item['audio_path']} vs {item['reliability']['audio_path']}"
+                )
+
+            if pre_edit_item["question"] != item["reliability"]["question"]:
+                raise ValueError(
+                    f"Question mismatch between pre-edit data and evaluation data: {pre_edit_item['question']} vs {item['reliability']['question']}"
+                )
+
+            if not pre_edit_item.get("judge_result", {}).get("judgement") == "correct":
+                continue
+
         # Reliability
         rel_eval = item["reliability_evaluation"]
         if rel_eval["evaluations"][0]["skipped"]:
@@ -137,9 +183,11 @@ def calculate_accuracy(input_file: str):
     return acc
 
 
-def main(input_file):
+def main(input_file, require_pre_edit_correctness=False):
 
-    acc = calculate_accuracy(input_file)
+    acc = calculate_accuracy(
+        input_file, require_pre_edit_correctness=require_pre_edit_correctness
+    )
     print("\n" + "=" * 50 + f"\nResult of {input_file}:")
 
     outputs = []
@@ -241,11 +289,19 @@ if __name__ == "__main__":
         required=True,
         help="Path to the input JSON file or directory containing evaluation results.",
     )
+    parser.add_argument(
+        "--require-pre-edit-correctness",
+        action="store_true",
+        help="Whether to only calculate accuracy for items where the pre-edit response is correct.",
+    )
     args = parser.parse_args()
 
     # if is a file:
     if os.path.isfile(args.input_file):
-        main(args.input_file)
+        main(
+            args.input_file,
+            require_pre_edit_correctness=args.require_pre_edit_correctness,
+        )
     # if is a directory:
 
     elif os.path.isdir(args.input_file):
@@ -259,7 +315,12 @@ if __name__ == "__main__":
         )
         for filename in all_filenames:
             input_path = os.path.join(args.input_file, filename)
-            all_outputs.append(main(input_path))
+            all_outputs.append(
+                main(
+                    input_path,
+                    require_pre_edit_correctness=args.require_pre_edit_correctness,
+                )
+            )
 
         print("\n----------------\nSummary of all files:")
         all_files_output_strs = []
