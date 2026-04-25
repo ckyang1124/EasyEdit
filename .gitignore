@@ -22,3 +22,6 @@ delta.txt
 *test_reps.*
 steering_test_reps.py
 wandb
+.env
+.DS_Store
+tmp.txt
