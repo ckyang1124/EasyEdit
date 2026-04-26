@@ -135,15 +135,53 @@ def prepare_series(method_data):
     return gaps, means, stds
 
 
+# ==========================================
+# CONFIGURATION: PLOT ORDER & STYLES
+# ==========================================
+# 1. Legend Order
+method_legend_order = [
+    "FT (LLM)",
+    "MEND",
+    "KE",
+    "UnKE",
+    "WISE",
+    "I-IKE",
+    "IE-IKE",
+    "FT (Audio)",
+]
+
+# 2. Draw Order (the order lines are plotted; later items appear on top)
+method_draw_order = [
+    "FT (LLM)",
+    "UnKE",
+    "WISE",
+    "I-IKE",
+    "IE-IKE",
+    "MEND",
+    "KE",
+    "FT (Audio)",
+]
+
+# 3. Method Styles (Colors, Markers, Linestyles)
+METHOD_STYLES = {
+    "FT (LLM)": {"color": "#aec7e8", "marker": "o", "linestyle": "-"},
+    "KE": {"color": "#ff7f0e", "marker": "s", "linestyle": "-"},
+    "I-IKE": {"color": "#ffbb78", "marker": "D", "linestyle": "-"},
+    "FT (Audio)": {"color": "#2ca02c", "marker": "^", "linestyle": "-"},
+    "WISE": {"color": "#98df8a", "marker": "v", "linestyle": "-"},
+    "MEND": {"color": "#d62728", "marker": "P", "linestyle": "-"},
+    "IE-IKE": {"color": "#ff9896", "marker": "X", "linestyle": "-"},
+    "UnKE": {"color": "#9467bd", "marker": "h", "linestyle": "-"},
+}
+# ==========================================
+
+
 def build_method_style_map(methods):
-    palette = plt.get_cmap("tab20").colors
     style_map = {}
-    for idx, method in enumerate(methods):
-        style_map[method] = {
-            "color": palette[(idx + 1) % len(palette)],
-            "marker": MARKERS[idx % len(MARKERS)],
-            "linestyle": LINE_STYLES[(idx // len(palette)) % len(LINE_STYLES)],
-        }
+    for method in methods:
+        style_map[method] = METHOD_STYLES.get(
+            method, {"color": "black", "marker": "o", "linestyle": "-"}
+        )
     return style_map
 
 
@@ -381,6 +419,10 @@ if combined_mode:
             if method not in method_order:
                 method_order.append(method)
 
+    method_order.sort(
+        key=lambda x: method_legend_order.index(x) if x in method_legend_order else 999
+    )
+
     method_styles = build_method_style_map(method_order)
     legend_lines = {}
 
@@ -397,7 +439,7 @@ if combined_mode:
                 title=metric_name if row_idx == 0 else None,
                 title_size=19,
                 xlabel="Evaluation Offset" if row_idx == n_rows - 1 else None,
-                ylabel="Accuracy (%)" if col_idx == 0 else None,
+                ylabel="Performance (%)" if col_idx == 0 else None,
                 hide_left=col_idx != 0,
                 hide_bottom=row_idx != n_rows - 1,
                 label_size=14,
@@ -421,7 +463,14 @@ if combined_mode:
                     color="#1F2D3A",
                 )
 
-            for i, method in enumerate(valid_methods[::-1]):
+            draw_methods = sorted(
+                valid_methods,
+                key=lambda x: (
+                    method_draw_order.index(x) if x in method_draw_order else 999
+                ),
+            )
+
+            for i, method in enumerate(draw_methods):
                 if method not in plot_data[metric_name]:
                     continue
 
@@ -497,6 +546,9 @@ for m_name in models_to_plot:
 
     # Filter out methods with no data
     valid_methods = get_valid_methods(plot_data, methods, metric_names)
+    valid_methods.sort(
+        key=lambda x: method_legend_order.index(x) if x in method_legend_order else 999
+    )
 
     # Setup subplots
     if args.grid_layout:
@@ -513,7 +565,7 @@ for m_name in models_to_plot:
 
     method_styles = build_method_style_map(valid_methods)
 
-    lines = []  # For legend
+    legend_lines = {}  # For legend
 
     for idx, metric_name in enumerate(metric_names):
         ax = axes_flat[idx]
@@ -534,14 +586,19 @@ for m_name in models_to_plot:
             title=metric_name,
             title_size=22,
             xlabel="Evaluation Offset" if show_xlabel else None,
-            ylabel="Accuracy (%)" if show_ylabel else None,
+            ylabel="Performance (%)" if show_ylabel else None,
             hide_left=not show_ylabel,
             hide_bottom=False,
             label_size=18,
             tick_size=15,
         )
 
-        for i, method in enumerate(valid_methods):
+        draw_methods = sorted(
+            valid_methods,
+            key=lambda x: method_draw_order.index(x) if x in method_draw_order else 999,
+        )
+
+        for i, method in enumerate(draw_methods):
             if method not in plot_data[metric_name]:
                 continue
 
@@ -576,11 +633,11 @@ for m_name in models_to_plot:
                     edgecolor=None,
                 )
 
-            if idx == 0:
-                lines.append(line)
+            if method not in legend_lines:
+                legend_lines[method] = line
 
     # Create a single legend
-    if args.show_legend:
+    if args.show_legend and legend_lines:
         bbox_anchor = (
             (0.5, STANDARD_GRID_LEGEND_Y)
             if args.grid_layout
@@ -591,9 +648,11 @@ for m_name in models_to_plot:
             if args.grid_layout
             else min(6, len(valid_methods))
         )
+        legend_handles = [legend_lines[m] for m in valid_methods if m in legend_lines]
+        legend_labels = [m for m in valid_methods if m in legend_lines]
         legend = fig.legend(
-            lines,
-            valid_methods,
+            legend_handles,
+            legend_labels,
             loc="upper center",
             bbox_to_anchor=bbox_anchor,
             ncol=n_cols,
