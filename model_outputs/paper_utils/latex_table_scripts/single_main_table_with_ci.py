@@ -63,7 +63,10 @@ def format_value(value, all_values, n, use_wilson=False):
 
 def main(args):
     use_wilson = args.use_wilson  # Flag to use Wilson score interval instead of Wald
-    csv_path = "../csvs/single_editing_all.csv"
+    if args.pre_edit_correctness:
+        csv_path = "../csvs/single_editing_all_pre_edit_correct.csv"
+    else:
+        csv_path = "../csvs/single_editing_all.csv"
 
     data = {}
     current_model = None
@@ -71,13 +74,13 @@ def main(args):
     # Methods order as they appear in the table columns
     methods_order = [
         "FT (LLM)",
-        "FT (Audio)",
         "KE",
         "MEND",
         "UnKE",
+        "WISE",
         "I-IKE",
         "IE-IKE",
-        "WISE",
+        "FT (Audio)",
     ]
 
     # Metrics map to column indices (0-based)
@@ -99,13 +102,41 @@ def main(args):
     ]
 
     # Sample sizes for 95% confidence interval calculation.
-    metric_sample_sizes = {
-        r"Reliability": 1200,
-        r"Generality": 3600,
-        r"Audio Locality": 4500,
-        r"Text Locality": 1200,
-        r"Portability": 1200,
-    }
+    if args.pre_edit_correctness:
+        # print(
+        #     "Using pre-edit correctness filtered sample sizes for confidence interval calculation."
+        # )
+        metric_sample_sizes_by_model = {
+            "DeSTA2.5": {
+                r"Reliability": 904,
+                r"Generality": 2712,
+                r"Audio Locality": 3349,
+                r"Text Locality": 904,
+                r"Portability": 904,
+            },
+            "Qwen2-Audio": {
+                r"Reliability": 984,
+                r"Generality": 2952,
+                r"Audio Locality": 3663,
+                r"Text Locality": 984,
+                r"Portability": 984,
+            },
+            "Audio Flamingo 3": {
+                r"Reliability": 989,
+                r"Generality": 2967,
+                r"Audio Locality": 3721,
+                r"Text Locality": 989,
+                r"Portability": 989,
+            },
+        }
+    else:
+        metric_sample_sizes = {
+            r"Reliability": 1200,
+            r"Generality": 3600,
+            r"Audio Locality": 4500,
+            r"Text Locality": 1200,
+            r"Portability": 1200,
+        }
 
     with open(csv_path, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
@@ -139,22 +170,40 @@ def main(args):
                         data[current_model][method_name][metric] = None
 
     # LaTeX Header
-    print(r"\begin{table*}[ht]")
+    print(r"\begin{table*}[t]")
     print(r"\centering")
     print(
-        r"\caption{Performance (\%; $\uparrow$) of editing methods on three models. "
+        r"\caption{Performance (\%; $\uparrow$) of editing methods on three models"
+        + (
+            " only considering samples with pre-edit correctness."
+            if args.pre_edit_correctness
+            else "."
+        )
+        + r" "
         r"Each value is reported as mean with a 95\% confidence interval shown as [lower, upper]. "
         r"Generality and audio locality scores are averaged across all attributes and evaluation types. "
         r"Best and second-best results on individual metrics are shown in \textbf{bold} and \underline{underlined}, respectively.}"
     )
     print(r"\label{tab:single_main}")
-    print(r"\setlength{\tabcolsep}{1.5pt}")
-    print(r"\resizebox{\textwidth}{!}{%")
+    print(r"\setlength{\tabcolsep}{3pt}")
+    print(r"\resizebox{0.85\textwidth}{!}{%")
     print(r"\begin{tabular}{llcccccccc}")
     print(r"\toprule")
     print(
-        r"\textbf{Model} & \textbf{Metric} & \textbf{FT (LLM)} & \textbf{FT (Audio)} & \textbf{KE} & \textbf{MEND} & \textbf{UnKE} & \textbf{I-IKE} & \textbf{IE-IKE} & \textbf{WISE} \\"
+        r"\multirow{2.2}{*}{\textbf{Model}} "
+        r"& \multirow{2.2}{*}{\textbf{Metric}} "
+        r"& \multicolumn{5}{c}{\textbf{Edit LLM Backbone}} "
+        r"& \multicolumn{3}{c}{\textbf{Frozen LLM Backbone}} \\"
     )
+    print(r"\cmidrule(lr){3-7}\cmidrule(lr){8-10}")
+    # print(
+    #     r"\textbf{Model} & \textbf{Metric} & \textbf{FT (LLM)} & \textbf{FT (Audio)} & \textbf{KE} & \textbf{MEND} & \textbf{UnKE} & \textbf{I-IKE} & \textbf{IE-IKE} & \textbf{WISE} \\"
+    # )
+    model_row = r"& "
+    for method in methods_order:
+        model_row += f"& \\textbf{{{method}}} "
+    model_row += r"\\"
+    print(model_row)
     print(r"\midrule")
 
     # Models order
@@ -192,10 +241,18 @@ def main(args):
 
             for method in methods_order:
                 val = current_model_data.get(method, {}).get(metric)
+
+                if args.pre_edit_correctness:
+                    sample_size = metric_sample_sizes_by_model.get(model_key, {}).get(
+                        metric
+                    )
+                else:
+                    sample_size = metric_sample_sizes.get(metric)
+
                 formatted = format_value(
                     val,
                     values_for_ranking,
-                    metric_sample_sizes.get(metric),
+                    sample_size,
                     use_wilson=use_wilson,
                 )
                 latex_cells.append(formatted)
@@ -217,6 +274,11 @@ if __name__ == "__main__":
         "--use-wilson",
         action="store_true",
         help="Use Wilson score interval instead of Wald",
+    )
+    parser.add_argument(
+        "--pre-edit-correctness",
+        action="store_true",
+        help="Use CSV with pre-edit correctness filtering",
     )
     args = parser.parse_args()
     main(args)
