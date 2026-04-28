@@ -73,14 +73,14 @@ def main(args):
 
     # Methods order as they appear in the table columns
     methods_order = [
-        "FT (LLM)",
+        "LMT",  # "FT (LLM)",
         "KE",
         "MEND",
         "UnKE",
         "WISE",
         "I-IKE",
         "IE-IKE",
-        "FT (Audio)",
+        "PCT",  # "FT (Audio)",
     ]
 
     # Metrics map to column indices (0-based)
@@ -157,6 +157,10 @@ def main(args):
                     data[current_model] = {}
 
             method_name = row[1].strip()
+            if method_name == "FT (LLM)":
+                method_name = "LMT"
+            elif method_name == "FT (Audio)":
+                method_name = "PCT"
             attr = row[2].strip()
 
             if attr == "ALL":
@@ -184,7 +188,10 @@ def main(args):
         r"Generality and audio locality scores are averaged across all attributes and evaluation types. "
         r"Best and second-best results on individual metrics are shown in \textbf{bold} and \underline{underlined}, respectively.}"
     )
-    print(r"\label{tab:single_main}")
+    if args.pre_edit_correctness:
+        print(r"\label{tab:single_pre_edit_correct}")
+    else:
+        print(r"\label{tab:single_main}")
     print(r"\setlength{\tabcolsep}{3pt}")
     print(r"\resizebox{0.85\textwidth}{!}{%")
     print(r"\begin{tabular}{llcccccccc}")
