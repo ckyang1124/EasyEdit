@@ -6,14 +6,14 @@ import numpy as np
 
 
 METHODS = [
-    "FT (LLM)",
+    "LMT",  # "FT (LLM)",
     "KE",
     "MEND",
     "UnKE",
     "WISE",
     "I-IKE",
     "IE-IKE",
-    "FT (Audio)",
+    "PCT",  # "FT (Audio)",
 ]
 
 TARGET_MODELS = ["DeSTA2.5", "Qwen2-Audio", "Audio Flamingo 3"]
@@ -118,6 +118,10 @@ def read_table(csv_path):
             continue
 
         method_name = row[1].strip()
+        if method_name == "FT (LLM)":
+            method_name = "LMT"
+        elif method_name == "FT (Audio)":
+            method_name = "PCT"
         attr = row[2].strip()
 
         if attr != "ALL" or method_name not in METHODS:
@@ -164,10 +168,10 @@ def build_min_masks(data, models_to_use):
 
 
 def format_method_header(method):
-    # if method == "FT (LLM)":
-    #     return r"\makecell{\textbf{FT} \\ \textbf{(LLM)}}"
-    # if method == "FT (Audio)":
-    #     return r"\makecell{\textbf{FT} \\ \textbf{(Audio)}}"
+    # if method == "LMT":
+    #     return r"\makecell{\textbf{LMT}}"
+    # if method == "PCT":
+    #     return r"\makecell{\textbf{PCT}}"
     return method
 
 
