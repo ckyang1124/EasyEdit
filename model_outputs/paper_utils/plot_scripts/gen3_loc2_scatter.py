@@ -140,6 +140,11 @@ def main():
     y = df_all["Audio_Loc_Type2"]
     m, b = np.polyfit(x, y, 1)
 
+    r_val, p_val = pearsonr(x, y)
+    r_squared = r_val**2
+    print(f"R-squared: {r_squared:.4f}")
+    print(f"p-value: {p_val:.4f}")
+
     sign_b = "+" if b >= 0 else "-"
     eq_text = rf"$y = {m:.4f}x {sign_b} {abs(b):.4f}$"
 

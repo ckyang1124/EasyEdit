@@ -184,8 +184,8 @@ def main(args):
             else "."
         )
         + r" "
-        r"Each value is reported as mean with a 95\% confidence interval shown as [lower, upper]. "
-        r"Generality and audio locality scores are averaged across all attributes and evaluation types. "
+        r"Each value is reported as mean across all test samples with a 95\% confidence interval shown as [lower, upper]. "
+        r"Generality and audio locality scores are averaged across all evaluation types and test samples. "
         r"Best and second-best results on individual metrics are shown in \textbf{bold} and \underline{underlined}, respectively.}"
     )
     if args.pre_edit_correctness:
