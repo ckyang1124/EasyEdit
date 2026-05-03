@@ -142,11 +142,19 @@ def main():
 
     r_val, p_val = pearsonr(x, y)
     r_squared = r_val**2
+    print(f"Correlation (r): {r_val:.4f}")
     print(f"R-squared: {r_squared:.4f}")
-    print(f"p-value: {p_val:.4f}")
+    print(f"p-value: {p_val:.4e}")
 
     sign_b = "+" if b >= 0 else "-"
-    eq_text = rf"$y = {m:.4f}x {sign_b} {abs(b):.4f}$"
+
+    if p_val < 0.001:
+        p_str = "< 0.001"
+    else:
+        p_str = f"= {p_val:.3f}"
+
+    stats_text = f"$r = {r_val:.4f}$\n$R^2 = {r_squared:.4f}$\n$p {p_str}$"
+    full_text = stats_text
 
     axis.plot(
         x,
@@ -159,9 +167,9 @@ def main():
 
     # Add the equation text inside the plot
     axis.text(
-        0.1,
-        0.75,
-        eq_text,
+        0.19,
+        0.7,
+        full_text,
         transform=axis.transAxes,
         fontsize=14,
         verticalalignment="bottom",
