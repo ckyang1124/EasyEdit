@@ -38,14 +38,14 @@ def main():
     current_method = None
 
     methods_order = [
-        "FT (LLM)",
-        "FT (Audio)",
+        "LMT",  # "FT (LLM)",
         "MEND",
         "KE",
         "UnKE",
+        "WISE",
         "IE-IKE",
         "I-IKE",
-        "WISE",
+        "PCT",  # "FT (Audio)",
     ]
 
     try:
@@ -67,6 +67,10 @@ def main():
 
                 if method_col:
                     current_method = method_col
+                    if current_method == "FT (LLM)":
+                        current_method = "LMT"
+                    elif current_method == "FT (Audio)":
+                        current_method = "PCT"
 
                 if current_model != model_name:
                     continue
@@ -100,13 +104,25 @@ def main():
         sys.exit(1)
 
     # Generate Latex
-    print(r"\begin{table}[ht]")
+    model_name_mapping = {
+        "DeSTA2.5": "DeSTA",
+        "Qwen2-Audio": "Qwen",
+        "Audio Flamingo 3": "AF",
+    }
+    print(r"\begin{table*}[ht]")
     print(r"\centering")
     print(
-        f"\\caption{{Original result of the four metrics of different editing methods on {model_name}-Audio under sequential editing. For generality and audio locality, we present the averaged results. (\\%)}}"
+        f"\\caption{{Original result of the four metrics of different editing methods on {model_name_mapping[model_name]} under sequential editing. For generality and audio locality, we present the averaged results. (\\%)}}"
     )
-    print(r"\label{tab:desta_detailed_seq}")
-    print(r"\resizebox{0.85\textwidth}{!}{%")
+    if model_name == "DeSTA2.5":
+        print(r"\label{tab:desta_detailed_seq}")
+    elif model_name == "Qwen2-Audio":
+        print(r"\label{tab:qwen2_detailed_seq}")
+    elif model_name == "Audio Flamingo 3":
+        print(r"\label{tab:af3_detailed_seq}")
+    else:
+        raise ValueError(f"Unknown model name: {model_name}")
+    print(r"\resizebox{0.9\textwidth}{!}{%")
     print(r"\setlength{\tabcolsep}{3pt}")
     print(r"    \begin{tabularx}{\textwidth}{Yc|Y|Y|Y|Y|Y}")
     print(r"    \toprule")
@@ -148,7 +164,7 @@ def main():
 
     print(r"    \end{tabularx}%")
     print(r"}")
-    print(r"\end{table}")
+    print(r"\end{table*}")
 
 
 if __name__ == "__main__":
