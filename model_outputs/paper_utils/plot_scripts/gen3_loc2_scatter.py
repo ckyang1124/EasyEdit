@@ -153,7 +153,7 @@ def main():
     else:
         p_str = f"= {p_val:.3f}"
 
-    stats_text = f"$r = {r_val:.4f}$\n$R^2 = {r_squared:.4f}$\n$p {p_str}$"
+    stats_text = f"$r = {r_val:.4f}$\n$p {p_str}$"
     full_text = stats_text
 
     axis.plot(
