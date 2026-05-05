@@ -17,7 +17,7 @@ inner_params:
 - language_model.model.layers.27.mlp.up_proj.weight
 - language_model.model.layers.27.mlp.down_proj.weight
 
-archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/EFK/AudioFlamingo3/models/EFK/audio-flamingo-3-hf-3600
+archive: ~/data/lalm-knowledge-editing/EasyEdit/results/EFK/AudioFlamingo3/models/EFK/audio-flamingo-3-hf-3600
 model_parallel: False
 
 # Method
@@ -63,7 +63,7 @@ results_dir: ./results/EFK/AudioFlamingo3/testing
 
 # Audio
 cache_dir: ./.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True

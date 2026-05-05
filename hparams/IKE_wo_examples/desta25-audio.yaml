@@ -8,14 +8,14 @@ model_class: DeSTA25AudioModel
 tokenizer_class: AutoTokenizer
 tokenizer_name: DeSTA-ntu/Llama-3.1-8B-Instruct
 
-training_set_path: /work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json
+training_set_path: ~/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json
 use_icl_examples: False
 
 model_parallel: False
 
 # Audio
-cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+cache_dir: ~/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True

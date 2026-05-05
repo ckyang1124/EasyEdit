@@ -829,9 +829,9 @@ class MEND_DeSTA(EditableModel):
 #     from desta import DeSTA25AudioModel
 
 #     # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
-#     model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
-#     processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
-#     # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
+#     model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="~/SLLM_multihop/cache", device_map="auto")
+#     processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="~/SLLM_multihop/cache")
+#     # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="~/SLLM_multihop/cache").to("cuda")
 #     # print(type(model))
 
 #     config = types.SimpleNamespace()
@@ -906,7 +906,7 @@ class MEND_DeSTA(EditableModel):
 #     #         "role": "user",
 #     #         "content": "<|AUDIO|>\nDescribe this audio.",
 #     #         "audios": [{
-#     #             "audio": "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
+#     #             "audio": "~/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
 #     #             "text": None
 #     #         }]
 #     #     }
@@ -915,7 +915,7 @@ class MEND_DeSTA(EditableModel):
 #     # inputs = model.process_before_forward(messages)
 #     # inputs['labels'] = x.to(model.device)
     
-#     test_audio = "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
+#     test_audio = "~/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav"
 #     conversation = [
 #         {"role": "user", "content": [
 #             {"type": "audio", "audio_url": test_audio},
@@ -971,11 +971,11 @@ if __name__ == "__main__":
     from desta import DeSTA25AudioModel
 
     # model = transformers.GPT2LMHeadModel.from_pretrained("gpt2")
-    # model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache", device_map="auto")
+    # model = Qwen2AudioForConditionalGeneration.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="~/SLLM_multihop/cache", device_map="auto")
     model = AudioFlamingo3ForConditionalGeneration.from_pretrained("nvidia/audio-flamingo-3-hf", device_map="cuda", cache_dir=".cache")
-    # processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="/work/b08202033/SLLM_multihop/cache")
+    # processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct", cache_dir="~/SLLM_multihop/cache")
     processor = AutoProcessor.from_pretrained("nvidia/audio-flamingo-3-hf", cache_dir=".cache")
-    # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="/work/b08202033/SLLM_multihop/cache").to("cuda")
+    # model = DeSTA25AudioModel.from_pretrained("DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B", cache_dir="~/SLLM_multihop/cache").to("cuda")
     # print(type(model))
     
     LOG.info("\nStarting config setup...\n")
@@ -1057,7 +1057,7 @@ if __name__ == "__main__":
     #         "role": "user",
     #         "content": "<|AUDIO|>\nDescribe this audio.",
     #         "audios": [{
-    #             "audio": "/work/b08202033/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
+    #             "audio": "~/SLLM_multihop/Gender/data/test/en_test_0_common_voice_en_18556.wav",  # Path to your audio file
     #             "text": None
     #         }]
     #     }
@@ -1068,7 +1068,7 @@ if __name__ == "__main__":
     
     LOG.info(f"\nStart testing on model {config.model_name}...\n")
     
-    test_audio = "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_1.wav"
+    test_audio = "~/data/lalm-knowledge-editing/dataset/audio_wavs/Animal/cat_1.wav"
     conversation = [
         {"role": "user", "content": [
             {"type": "audio", "path": test_audio},

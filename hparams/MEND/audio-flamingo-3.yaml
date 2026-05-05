@@ -44,7 +44,7 @@ act: relu
 rank: 1920
 mlp_class: IDMLP
 shared: True
-archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all/models/MEND/audio-flamingo-3-hf-3600
+archive: ~/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all/models/MEND/audio-flamingo-3-hf-3600
 model_parallel: False
 
 # Train
@@ -77,8 +77,8 @@ results_dir: ./results/MEND/AudioFlamingo3/testing
 
 
 # Audio
-cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+cache_dir: ~/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True

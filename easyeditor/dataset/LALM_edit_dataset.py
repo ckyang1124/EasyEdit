@@ -942,10 +942,10 @@ class AudioFlamingo3Dataset(BaseDataset):
 #     import types
 #     from torch.utils.data import DataLoader
     
-#     data_dir = "/work/b08202033/lalm-knowledge-editing/metadata/Animal.json"
+#     data_dir = "~/lalm-knowledge-editing/metadata/Animal.json"
 #     config = types.SimpleNamespace()
-#     config.cache_dir = "/work/b08202033/SLLM_multihop/cache"
-#     config.audio_root = "/work/b08202033/lalm-knowledge-editing/audio_data"
+#     config.cache_dir = "~/SLLM_multihop/cache"
+#     config.audio_root = "~/lalm-knowledge-editing/audio_data"
 #     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
 #     qwen_dataset = Qwen2AudioDataset(data_dir, size=10, cache_dir=config.cache_dir)
@@ -965,10 +965,10 @@ if __name__ == "__main__":
     import types
     from torch.utils.data import DataLoader
     
-    data_dir = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
+    data_dir = "~/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
     config = types.SimpleNamespace()
     config.cache_dir = ".cache"
-    config.audio_root = "/work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs"
+    config.audio_root = "~/data/lalm-knowledge-editing/dataset/audio_wavs"
     config.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     af3_dataset = AudioFlamingo3Dataset(data_dir, size=10, config=config)

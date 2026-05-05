@@ -28,7 +28,7 @@ cbase: 1.0
 dropout: 0.0
 train_base: False
 no_grad_layers: null
-archive: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/EFK/DeSTA25Audio/models/EFK/DeSTA25AudioModel-3600
+archive: ~/data/lalm-knowledge-editing/EasyEdit/results/EFK/DeSTA25Audio/models/EFK/DeSTA25AudioModel-3600
 model_parallel: False
 
 # Train
@@ -59,8 +59,8 @@ grad_clip: 100.
 results_dir: ./results/EFK/DeSTA25Audio
 
 # Audio
-cache_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+cache_dir: ~/data/lalm-knowledge-editing/EasyEdit/.cache
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True

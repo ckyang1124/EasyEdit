@@ -13,11 +13,11 @@ from easyeditor import IKELALMHyperParams
 from easyeditor import LALMEditor
 from argparse import ArgumentParser
 
-debug_train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json"
-debug_val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json"
+debug_train_path = "~/data/lalm-knowledge-editing/dataset/metadata/train/debug_Animal_transcriptions.json"
+debug_val_path = "~/data/lalm-knowledge-editing/dataset/metadata/test/debug_Animal_transcriptions.json"
 
-train_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
-val_path = "/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/train/ALL_val_transcriptions_no_label.json"
+train_path = "~/data/lalm-knowledge-editing/dataset/metadata/train/ALL_train_transcriptions_no_label.json"
+val_path = "~/data/lalm-knowledge-editing/dataset/metadata/train/ALL_val_transcriptions_no_label.json"
 
 # ==== Training Functions ===
 
@@ -108,7 +108,7 @@ def single_edit_MEND_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -120,7 +120,7 @@ def sequential_edit_MEND_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -133,7 +133,7 @@ def single_edit_MEND_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -145,7 +145,7 @@ def sequential_edit_MEND_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -158,7 +158,7 @@ def single_edit_MEND_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -170,7 +170,7 @@ def sequential_edit_MEND_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -183,7 +183,7 @@ def single_edit_EFK_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -196,7 +196,7 @@ def sequential_edit_EFK_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -209,7 +209,7 @@ def single_edit_EFK_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -222,7 +222,7 @@ def sequential_edit_EFK_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -235,7 +235,7 @@ def single_edit_EFK_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
@@ -248,7 +248,7 @@ def sequential_edit_EFK_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
@@ -260,11 +260,11 @@ def single_edit_FT_last_layer_DeSTA25():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/desta25-audio_last_layer.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -273,11 +273,11 @@ def sequential_edit_FT_last_layer_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
 
@@ -285,11 +285,11 @@ def single_edit_FT_last_layer_Qwen2Audio():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/qwen2-audio_last_layer.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -298,11 +298,11 @@ def sequential_edit_FT_last_layer_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -310,11 +310,11 @@ def single_edit_FT_last_layer_AudioFlamingo3():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/audio-flamingo-3_last_layer.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/AudioFlamingo3/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/AudioFlamingo3/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -323,11 +323,11 @@ def sequential_edit_FT_last_layer_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/last_layer/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
        
@@ -335,11 +335,11 @@ def single_edit_FT_connector_DeSTA25():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/desta25-audio_connector.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -348,11 +348,11 @@ def sequential_edit_FT_connector_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -360,11 +360,11 @@ def single_edit_FT_connector_Qwen2Audio():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/qwen2-audio_connector.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -373,11 +373,11 @@ def sequential_edit_FT_connector_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -385,11 +385,11 @@ def single_edit_FT_connector_AudioFlamingo3():
     hparams = FTLALMHyperParams.from_hparams('hparams/FT/audio-flamingo-3_connector.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/AudioFlamingo3/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/AudioFlamingo3/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -398,11 +398,11 @@ def sequential_edit_FT_connector_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/FT/connector/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -410,11 +410,11 @@ def single_edit_IKE_DeSTA25():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE/desta25-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -423,11 +423,11 @@ def sequential_edit_IKE_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -435,11 +435,11 @@ def single_edit_IKE_Qwen2Audio():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -448,11 +448,11 @@ def sequential_edit_IKE_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -460,11 +460,11 @@ def single_edit_IKE_AudioFlamingo3():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE/audio-flamingo-3.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/AudioFlamingo3/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/AudioFlamingo3/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -473,11 +473,11 @@ def sequential_edit_IKE_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -485,11 +485,11 @@ def single_edit_IKE_wo_examples_DeSTA25():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/desta25-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -498,11 +498,11 @@ def sequential_edit_IKE_wo_examples_DeSTA25():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = DeSTA25AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = DeSTA25AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/DeSTA25Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -510,11 +510,11 @@ def single_edit_IKE_wo_examples_Qwen2Audio():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/qwen2-audio.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -523,11 +523,11 @@ def sequential_edit_IKE_wo_examples_Qwen2Audio():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = Qwen2AudioDataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = Qwen2AudioDataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/Qwen2Audio/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
         
@@ -535,11 +535,11 @@ def single_edit_IKE_wo_examples_AudioFlamingo3():
     hparams = IKELALMHyperParams.from_hparams('hparams/IKE_wo_examples/audio-flamingo-3.yaml')
     editor = LALMEditor.from_hparams(hparams)
     for track in ["Animal", "Emotion", "Language", "Gender"]:
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/{track}_transcriptions_no_label.json", config=hparams, testing=True)
     
         editor.single_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/AudioFlamingo3/{track}_single_edit.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/AudioFlamingo3/{track}_single_edit.jsonl",
             generate_pre_edit=False, # have already generated pre-edit results, so no need to generate again to save time and cost
         )
         
@@ -548,11 +548,11 @@ def sequential_edit_IKE_wo_examples_AudioFlamingo3():
     editor = LALMEditor.from_hparams(hparams)
     
     for seq_ind in range(10):
-        test_ds = AudioFlamingo3Dataset(f"/work/b10902133/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
+        test_ds = AudioFlamingo3Dataset(f"~/data/lalm-knowledge-editing/dataset/metadata/test/sequential_edits_fixed/seq_{seq_ind}.json", config=hparams, testing=True)
     
         editor.sequential_edit_dataset(
             test_ds,
-            output_path=f"/work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
+            output_path=f"~/data/lalm-knowledge-editing/EasyEdit/results/IKE_wo_examples/AudioFlamingo3/sequential_edit_fixed_{seq_ind}.jsonl",
             generate_pre_edit=False,
         )
     

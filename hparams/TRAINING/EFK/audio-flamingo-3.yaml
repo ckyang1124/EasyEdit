@@ -63,7 +63,7 @@ results_dir: ./results/EFK/AudioFlamingo3
 
 # Audio
 cache_dir: ./.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True

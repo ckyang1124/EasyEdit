@@ -71,7 +71,7 @@ opt: Adam
 grad_clip: 100.
 
 # Output
-results_dir: /work/b10902133/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all
+results_dir: ~/data/lalm-knowledge-editing/EasyEdit/results/MEND/AudioFlamingo3_no_label_all
 
 # Multimodal
 exact_match: False #True
@@ -82,7 +82,7 @@ exact_match: False #True
 
 # Audio
 cache_dir: ./.cache
-audio_root: /work/b10902133/data/lalm-knowledge-editing/dataset/audio_wavs
+audio_root: ~/data/lalm-knowledge-editing/dataset/audio_wavs
 
 # Weights and Biases
 wandb_enabled: True
