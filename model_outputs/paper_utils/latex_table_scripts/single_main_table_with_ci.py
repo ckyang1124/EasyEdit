@@ -91,6 +91,7 @@ def main(args):
         r"Audio Locality": 8,
         r"Text Locality": 13,
         r"Portability": 14,
+        r"Edit Score": 15,
     }
 
     metrics_order = [
@@ -99,6 +100,7 @@ def main(args):
         r"Audio Locality",
         r"Text Locality",
         r"Portability",
+        r"Edit Score",
     ]
 
     # Sample sizes for 95% confidence interval calculation.
@@ -113,6 +115,7 @@ def main(args):
                 r"Audio Locality": 3349,
                 r"Text Locality": 904,
                 r"Portability": 904,
+                r"Edit Score": 904,
             },
             "Qwen2-Audio": {
                 r"Reliability": 984,
@@ -120,6 +123,7 @@ def main(args):
                 r"Audio Locality": 3663,
                 r"Text Locality": 984,
                 r"Portability": 984,
+                r"Edit Score": 984,
             },
             "Audio Flamingo 3": {
                 r"Reliability": 989,
@@ -127,6 +131,7 @@ def main(args):
                 r"Audio Locality": 3721,
                 r"Text Locality": 989,
                 r"Portability": 989,
+                r"Edit Score": 989,
             },
         }
     else:
@@ -136,6 +141,7 @@ def main(args):
             r"Audio Locality": 4500,
             r"Text Locality": 1200,
             r"Portability": 1200,
+            r"Edit Score": 1200,
         }
 
     with open(csv_path, "r", encoding="utf-8") as f:
@@ -172,6 +178,30 @@ def main(args):
                         data[current_model][method_name][metric] = parse_float(row[idx])
                     else:
                         data[current_model][method_name][metric] = None
+
+    for model in data:
+        for method in data[model]:
+            method_data = data[model][method]
+            if method_data.get(r"Edit Score") is None:
+                raise ValueError(
+                    f"Missing Edit Score for {model} - {method}. Please ensure the CSV has the correct columns."
+                )
+                vals = [
+                    method_data.get(r"Reliability"),
+                    method_data.get(r"Generality"),
+                    method_data.get(r"Audio Locality"),
+                    method_data.get(r"Text Locality"),
+                    method_data.get(r"Portability"),
+                ]
+                if all(v is not None for v in vals):
+                    if any(v == 0.0 for v in vals):
+                        method_data[r"Edit Score"] = 0.0
+                    else:
+                        method_data[r"Edit Score"] = len(vals) / sum(
+                            1.0 / v for v in vals
+                        )
+                else:
+                    method_data[r"Edit Score"] = None
 
     # LaTeX Header
     print(r"\begin{table*}[t]")
@@ -219,9 +249,9 @@ def main(args):
     # In CSV: 'DeSTA2.5', 'Qwen2-Audio', 'Audio Flamingo 3'
 
     model_mapping = {
-        "DeSTA2.5": r"\multirow{7.65}{*}{\textbf{DeSTA}} ",
-        "Qwen2-Audio": r"\multirow{7.65}{*}{\textbf{Qwen}} ",
-        "Audio Flamingo 3": r"\multirow{7.65}{*}{\textbf{AF}} ",
+        "DeSTA2.5": r"\multirow{9.2}{*}{\textbf{DeSTA}} ",
+        "Qwen2-Audio": r"\multirow{9.2}{*}{\textbf{Qwen}} ",
+        "Audio Flamingo 3": r"\multirow{9.2}{*}{\textbf{AF}} ",
     }
 
     target_models = ["DeSTA2.5", "Qwen2-Audio", "Audio Flamingo 3"]
@@ -241,6 +271,9 @@ def main(args):
             for method in methods_order:
                 val = current_model_data.get(method, {}).get(metric)
                 values_for_ranking.append(val)
+
+            if metric == r"Edit Score":
+                print(r"\cmidrule(lr){2-10}")
 
             # Second pass: format string
             row_model = display_name if metric_idx == 0 else ""
