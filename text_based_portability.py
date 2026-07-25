@@ -51,7 +51,7 @@ class ModelWrapper:
             model_id = "Qwen/Qwen2-Audio-7B-Instruct"
             self.processor = AutoProcessor.from_pretrained(model_id)
             self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
-                model_id, device_map="auto"
+                model_id, device_map="auto", torch_dtype="bfloat16"
             )
         elif model_name == "AudioFlamingo3":
             from transformers import (
@@ -62,10 +62,10 @@ class ModelWrapper:
             model_id = "nvidia/audio-flamingo-3-hf"
             self.processor = AutoProcessor.from_pretrained(model_id)
             self.model = AudioFlamingo3ForConditionalGeneration.from_pretrained(
-                model_id, device_map="auto"
+                model_id, device_map="auto", torch_dtype="bfloat16"
             )
 
-    def generate(self, item: dict, track: str):
+    def generate(self, item: dict, track: str) -> str:
         pre_edit = item["original_answer"]
         post_edit = item["edited_answer"]
 
@@ -78,22 +78,19 @@ class ModelWrapper:
             "[Instruction]", question
         )
 
-        # call the model to generate the answer based on the prompt and system prompt
-        message = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt},
-        ]
-
         if self.model_name == "DeSTA":
-            # Use the model to generate the answer
+            conversation = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt},
+            ]
             response = self.model.generate(
-                message,
+                conversation,
                 do_sample=False,
                 temperature=None,
                 top_p=None,
                 max_new_tokens=256,
             )
-            return response.text
+            return response.text[0]
         elif self.model_name == "Qwen":
             # Text-only conversation (no audio content) using the audio-analysis chat format
             conversation = [
