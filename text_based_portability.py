@@ -37,7 +37,7 @@ class ModelWrapper:
         # init model and tokenizer here
         self.model_name = model_name
 
-        if model_name == "desta":
+        if model_name == "DeSTA":
             from desta import DeSTA25AudioModel
 
             # Load the model from Hugging Face
@@ -45,7 +45,7 @@ class ModelWrapper:
                 "DeSTA-ntu/DeSTA2.5-Audio-Llama-3.1-8B"
             )
             self.model.to("cuda")
-        elif model_name == "qwen2":
+        elif model_name == "Qwen":
             from transformers import Qwen2AudioForConditionalGeneration, AutoProcessor
 
             model_id = "Qwen/Qwen2-Audio-7B-Instruct"
@@ -53,7 +53,7 @@ class ModelWrapper:
             self.model = Qwen2AudioForConditionalGeneration.from_pretrained(
                 model_id, device_map="auto"
             )
-        elif model_name == "af3":
+        elif model_name == "AudioFlamingo3":
             from transformers import (
                 AudioFlamingo3ForConditionalGeneration,
                 AutoProcessor,
@@ -84,7 +84,7 @@ class ModelWrapper:
             {"role": "user", "content": prompt},
         ]
 
-        if self.model_name == "desta":
+        if self.model_name == "DeSTA":
             # Use the model to generate the answer
             response = self.model.generate(
                 message,
@@ -93,8 +93,8 @@ class ModelWrapper:
                 top_p=None,
                 max_new_tokens=256,
             )
-            return response
-        elif self.model_name == "qwen2":
+            return response.text
+        elif self.model_name == "Qwen":
             # Text-only conversation (no audio content) using the audio-analysis chat format
             conversation = [
                 {"role": "system", "content": system_prompt},
@@ -117,7 +117,7 @@ class ModelWrapper:
                 generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
             )[0]
             return response
-        elif self.model_name == "af3":
+        elif self.model_name == "AudioFlamingo3":
             conversation = [
                 {"role": "system", "content": [{"type": "text", "text": system_prompt}]},
                 {"role": "user", "content": [{"type": "text", "text": prompt}]},
@@ -151,6 +151,12 @@ def parse_args():
         default=["DeSTA", "Qwen", "AudioFlamingo3"],
         help="The model(s) to evaluate.",
     )
+    parser.add_argument(
+        "--dataset_root",
+        type=str,
+        default="../dataset/",
+        help="The root directory of the dataset.",
+    )
     args = parser.parse_args()
 
     return args
@@ -162,7 +168,7 @@ def main():
         model = ModelWrapper(model_name)
         for track in ["Animal", "Emotion", "Gender", "Language"]:
             input_file = (
-                f"../sake_dataset/metadata/test/{track}_transcriptions_no_label.json"
+                f"{args.dataset_root}/metadata/test/{track}_transcriptions_no_label.json"
             )
             output_file = f"./model_outputs/text_based_portability/{model_name}/single/{track}.json"
             os.makedirs(os.path.dirname(output_file), exist_ok=True)
@@ -186,8 +192,8 @@ def main():
                     }
                 )
 
-            with open(output_file, "w") as f:
-                json.dump(results, f, indent=4, ensure_ascii=False)
+                with open(output_file, "w") as f:
+                    json.dump(results, f, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":
