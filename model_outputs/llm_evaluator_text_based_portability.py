@@ -183,8 +183,16 @@ def evaluate_portability_items(
     """
     evaluated_items = []
 
-    for i, item in enumerate(tqdm(items, desc="Evaluating portability", dynamic_ncols=True)):
+    for i, item in enumerate(
+        tqdm(items, desc="Evaluating portability", dynamic_ncols=True)
+    ):
         model_response = item.get("model_response", "")
+        if isinstance(model_response, list):
+            if len(model_response) > 1:
+                raise ValueError(
+                    f"Model response is a list for item {i+1}. Expected a single string or a list with a single string."
+                )
+            model_response = model_response[0] if model_response else ""
         ground_truth = item.get("portability_answer", "")
         question = item.get("portability_question", "")
 
@@ -235,12 +243,12 @@ def main():
     parser.add_argument(
         "--input_file",
         required=False,
-        default="model_outputs/text_based_portability/DeSTA/single/Animal.json",
+        default="./text_based_portability/DeSTA/single/Animal.json",
     )
     parser.add_argument(
         "--output_file",
         required=False,
-        default="model_outputs/text_based_portability/DeSTA/single/eval_result/Animal.json",
+        default="./text_based_portability/DeSTA/single/eval_result/Animal.json",
     )
     parser.add_argument(
         "--test_api",
@@ -350,7 +358,9 @@ def main():
     print(f"Reasoning effort: {args.reasoning_effort.upper()}")
     print(f"Total items evaluated: {total_items}")
     print()
-    print(f"Portability accuracy: {correct_count}/{total_items} correct ({accuracy:.3f})")
+    print(
+        f"Portability accuracy: {correct_count}/{total_items} correct ({accuracy:.3f})"
+    )
     print()
     print(f"Results saved to: {args.output_file}")
 
