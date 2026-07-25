@@ -62,21 +62,30 @@ class ModelWrapper:
             model_id = "nvidia/audio-flamingo-3-hf"
             self.processor = AutoProcessor.from_pretrained(model_id)
             self.model = AudioFlamingo3ForConditionalGeneration.from_pretrained(
-                model_id, device_map="auto", torch_dtype="bfloat16"
+                model_id, device_map="cuda", torch_dtype="bfloat16"
             )
 
-    def generate(self, item: dict, track: str) -> str:
+    def generate(self, item: dict, track: str, use_post_edit: bool = False) -> str:
         pre_edit = item["original_answer"]
         post_edit = item["edited_answer"]
 
-        edits = f"{pre_edit} → {post_edit}"
-        system_prompt = IKE_SYSTEM_PROMPT.format(edits=edits)
+        if use_post_edit:
+            system_prompt = ""
+            
+            caption = caption_templates[track].replace("[answer]", post_edit)
+            question = item["portability"]["audio"]["question"]
+            prompt = query_template.replace("[caption]", caption).replace(
+                "[Instruction]", question
+            )
+        else:
+            edits = f"{pre_edit} → {post_edit}"
+            system_prompt = IKE_SYSTEM_PROMPT.format(edits=edits)
 
-        caption = caption_templates[track].replace("[answer]", pre_edit)
-        question = item["portability"]["audio"]["question"]
-        prompt = query_template.replace("[caption]", caption).replace(
-            "[Instruction]", question
-        )
+            caption = caption_templates[track].replace("[answer]", pre_edit)
+            question = item["portability"]["audio"]["question"]
+            prompt = query_template.replace("[caption]", caption).replace(
+                "[Instruction]", question
+            )
 
         if self.model_name == "DeSTA":
             conversation = [
@@ -154,6 +163,11 @@ def parse_args():
         default="../dataset/",
         help="The root directory of the dataset.",
     )
+    parser.add_argument(
+        "--use-post-edit",
+        action="store_true",
+        help="Whether to use the post-edit target in the prompt without explaining the edits. If not set, the model will be prompted with the original answer and the edits.",
+    )
     args = parser.parse_args()
 
     return args
@@ -167,7 +181,10 @@ def main():
             input_file = (
                 f"{args.dataset_root}/metadata/test/{track}_transcriptions_no_label.json"
             )
-            output_file = f"./model_outputs/text_based_portability/{model_name}/single/{track}.json"
+            if args.use_post_edit:
+                output_file = f"./model_outputs/text_based_portability_use_post_edit/{model_name}/single/{track}.json"
+            else:
+                output_file = f"./model_outputs/text_based_portability/{model_name}/single/{track}.json"
             os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
             with open(input_file) as f:
@@ -175,7 +192,7 @@ def main():
 
             results = []
             for item in tqdm(data, desc=f"Processing {model_name} - {track}"):
-                response = model.generate(item, track)
+                response = model.generate(item, track, args.use_post_edit)
                 results.append(
                     {
                         "file": item["file"],

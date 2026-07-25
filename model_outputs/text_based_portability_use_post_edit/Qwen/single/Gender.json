@@ -1,0 +1,2402 @@
+[
+    {
+        "file": "en_test_0_common_voice_en_31696187.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nDhoti\nQipao",
+        "portability_answer": "Dhoti",
+        "model_response": "\n\nThe traditional clothing item that best matches the speaker's gender based on the cultural context cannot be determined from the given information. The speaker is described as male, but this does not necessarily provide any clues about the type of traditional clothing that would be appropriate for him. Different cultures have different styles and customs when it comes to clothing, so without more specific information about the speaker's cultural background, it is impossible to determine which traditional clothing item would be the best match."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25707899.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "Lady"
+    },
+    {
+        "file": "en_test_0_common_voice_en_31893853.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nLady\nGentleman",
+        "portability_answer": "Lady",
+        "model_response": "In this case, the most appropriate term of address would be \"Lady.\" This is because the speaker's gender is female, and \"Lady\" is a title often used for women of high social status or respect. \"Gentleman,\" on the other hand, is typically used to refer to men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_561897.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nSalwar kameez\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "\n\nIn the given cultural setting, the traditional clothing item that aligns most closely with the gender of the speaker is the Salwar Kameez. \n\nSalwar Kameez is a traditional Indian attire worn by both men and women, but it is often associated with women's fashion due to its loose-fitting style and long dupatta (scarf). However, in recent years, there has been a trend of men also wearing Salwar Kameez, particularly in Punjabi and other north Indian cultures. Therefore, while the speaker is male, the Salwar Kameez is a clothing option that could align with his cultural background."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19708700.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nAbaya\nKilt",
+        "portability_answer": "Kilt",
+        "model_response": "\n\nGiven that the speaker's gender is male and the options are traditional clothing items worn by different cultures, the most likely association would be with the Abaya. The Abaya is a long, loose-fitting dress worn by women in many Middle Eastern and North African cultures. In contrast, the Kilt is traditionally worn by men in Scotland and other Celtic regions."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39979187.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nHarriet Tubman\nLeonardo da Vinci",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Harriet Tubman is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31611581.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nSherwani\nHuipil",
+        "portability_answer": "Sherwani",
+        "model_response": "In the specific culture mentioned, a Sherwani would match the speaker's gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22435265.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nHelen Keller\nPablo Picasso",
+        "portability_answer": "Helen Keller",
+        "model_response": "Helen Keller corresponds to the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21265383.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nIndira Gandhi\nMahatma Gandhi",
+        "portability_answer": "Indira Gandhi",
+        "model_response": "Indira Gandhi corresponds to the same gender as the speaker, which is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19547898.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nMahatma Gandhi\nBillie Jean King",
+        "portability_answer": "Billie Jean King",
+        "model_response": "The historical figure that corresponds to the same gender as the speaker is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_28197048.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nMaya Ying Lin\nLionel Messi",
+        "portability_answer": "Lionel Messi",
+        "model_response": "Based on the given information that the speaker's gender is male, the most likely option to share the same gender as the speaker among the provided options is Lionel Messi. \n\nMaya Ying Lin is a female architect and designer, so she cannot be the correct answer. Lionel Messi is a male professional footballer, so he is the most likely option to share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18661022.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "In this case, the term \"sister\" would be most appropriate for individuals of the same gender as the speaker, who is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18188256.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_33211536.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nDramatic soprano\nBaritone",
+        "portability_answer": "Dramatic soprano",
+        "model_response": "The vocal range that corresponds to the gender of the speaker in the audio is Dramatic soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37016755.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nDonatella Versace\nBrad Pitt",
+        "portability_answer": "Brad Pitt",
+        "model_response": "I would identify Brad Pitt as having the same gender as the speaker based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17845943.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nLeonardo da Vinci\nFrida Kahlo",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "The historical figure that shares the same gender as the speaker is Frida Kahlo."
+    },
+    {
+        "file": "en_test_0_common_voice_en_641105.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSpinto tenor\nContralto",
+        "portability_answer": "Spinto tenor",
+        "model_response": "Based on the given information that the speaker's gender is male, the most likely vocal range associated with him would be Spinto tenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17285889.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nSherwani\nGhagra Choli",
+        "portability_answer": "Sherwani",
+        "model_response": "Based on the cultural context and the fact that the speaker's gender is male, the traditional clothing item that best matches him would be a Sherwani. A Sherwani is a type of Indian suit that is traditionally worn by men for formal events and ceremonies. It consists of a long tunic and pants that are often paired with a turban or headgear. The style and design of a Sherwani can vary depending on the region and the occasion, making it a versatile and stylish choice for men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19954794.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nLederhosen\nSari",
+        "portability_answer": "Lederhosen",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks German, it can be inferred that he may be from a culture where traditional German clothing is worn. Lederhosen are a type of traditional German dress consisting of leather pants. Therefore, the correct answer would be Lederhosen."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20907101.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nAunt\nUncle",
+        "portability_answer": "Aunt",
+        "model_response": "Aunt"
+    },
+    {
+        "file": "en_test_0_common_voice_en_39747514.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nGong Li\nAlexander McQueen",
+        "portability_answer": "Alexander McQueen",
+        "model_response": "Alexander McQueen is most likely the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17435140.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nUncle\nAunt",
+        "portability_answer": "Aunt",
+        "model_response": "Using the information provided, it is most accurate to address individuals of the same gender as the speaker as \"Aunt.\" This is because the speaker's gender is female, and traditionally, people of the same gender are addressed with terms that are typically associated with their biological sex. In this case, \"Aunt\" would be the appropriate term to use when addressing someone who is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19685105.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nCristiano Ronaldo\nGong Li",
+        "portability_answer": "Cristiano Ronaldo",
+        "model_response": "Cristiano Ronaldo is a male, so he is the most likely celebrity associated with the same gender as the speaker. Gong Li is a female, so she is not the most likely option."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19686599.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address fits individuals of the same gender as the speaker?\n\nOptions:\nFather\nMother",
+        "portability_answer": "Mother",
+        "model_response": "Based on the given information that the speaker's gender is female, the term of address that would fit individuals of the same gender as the speaker is \"mother\"."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18122652.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nAngelina Jolie\nDwayne Johnson",
+        "portability_answer": "Dwayne Johnson",
+        "model_response": "Dwayne Johnson"
+    },
+    {
+        "file": "en_test_0_common_voice_en_150709.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After listening carefully to the provided audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nMezzo-soprano\nBass-baritone",
+        "portability_answer": "Mezzo-soprano",
+        "model_response": "Mezzo-soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_184547.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nLeonardo da Vinci\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "The historical figure that shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18733382.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSpinto soprano\nBass-baritone",
+        "portability_answer": "Bass-baritone",
+        "model_response": "Considering the speaker's gender is male and the vocal range mentioned is \"Baritone,\" it is most likely that the individual is a male singer. Therefore, the correct option would be \"Bass-baritone.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_38161833.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nTenor\nMezzo-soprano",
+        "portability_answer": "Mezzo-soprano",
+        "model_response": "Based on the vocal characteristics of the speaker, who is female, it is more likely that she belongs to the mezzo-soprano range. The mezzo-soprano range typically has a voice that is slightly deeper than a soprano and higher than a contralto. This range is often associated with female voices, although there are male mezzo-sopranos as well. In contrast, tenors generally have a higher pitch than mezzo-sopranos. Therefore, given the speaker's gender and vocal characteristics, the mezzo-soprano range is more likely associated with her."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38348269.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nDramatic soprano\nBasso profundo",
+        "portability_answer": "Dramatic soprano",
+        "model_response": "Dramatic soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17452908.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18556.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nAmelia Earhart\nErnest Hemingway",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17912300.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nAlice Waters\nCristiano Ronaldo",
+        "portability_answer": "Cristiano Ronaldo",
+        "model_response": "Alice Waters is most likely associated with the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17865779.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nBass\nDramatic soprano",
+        "portability_answer": "Dramatic soprano",
+        "model_response": "The vocal range that aligns with the speaker's gender, which is female, would be B soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38213328.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nAbaya\nDhoti",
+        "portability_answer": "Dhoti",
+        "model_response": "\n\nThe traditional clothing item that best matches the speaker's gender based on the cultural context cannot be determined from the given information. The options provided (Abaya and Dhoti) are both traditional clothing items worn by different cultures, and without additional context about the speaker's culture or the specific traditions associated with each garment, it is impossible to determine which one would be the best match."
+    },
+    {
+        "file": "en_test_0_common_voice_en_32377446.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nDhoti\nDirndl",
+        "portability_answer": "Dhoti",
+        "model_response": "The speaker's gender is male, and traditionally, men in India wear a dhoti, which is a type of cloth worn as a loincloth or undergarment. Therefore, the correct answer would be option A: Dhoti."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21730661.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nDashiki\nAbaya",
+        "portability_answer": "Dashiki",
+        "model_response": "\n\nWithout additional context or information about the cultural setting and the specific style of the dashiki and abaya being referred to, it is not possible to determine which traditional clothing item aligns most closely with the gender of the speaker. \n\nBoth dashiki and abaya are traditional clothing items worn by different cultures and genders. Dashiki is a loose-fitting shirt originating from West Africa that is often worn as a casual or formal garment. Abaya is a long, flowing robe worn by women in many Middle Eastern and North African countries. \n\nTherefore, without more specific details about the culture and style of the clothing being discussed, it is impossible to determine which option aligns more closely with the gender of the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25722369.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nFustanella\nGele",
+        "portability_answer": "Fustanella",
+        "model_response": "Based on the cultural context provided, the traditional clothing item that best matches the speaker's gender would be the Fustanella. The Fustanella is a traditional Greek garment worn by both men and women, but it is often associated with Greek culture and is commonly worn during formal events or celebrations. It is a long, white garment that is usually made of cotton or silk and features a hood or shawl. Therefore, given that the speaker is male and the speech is in Greek, the Fustanella would be the most appropriate traditional clothing item to match the speaker's gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38077625.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nLeonardo DiCaprio\nCoco Chanel",
+        "portability_answer": "Leonardo DiCaprio",
+        "model_response": "Based on the given information that the speaker's gender is male, the most likely option to share the same gender as the speaker among the provided options would be Leonardo DiCaprio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20586173.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nJennifer Aniston\nGeorge Clooney",
+        "portability_answer": "George Clooney",
+        "model_response": "Based on the given information, the celebrity who is most likely the same gender as the speaker is George Clooney."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39015262.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nColoratura soprano\nBass-baritone",
+        "portability_answer": "Bass-baritone",
+        "model_response": "Based on the vocal characteristics of the male speaker in the audio, it is more likely that the individual is associated with the bass-baritone vocal range."
+    },
+    {
+        "file": "en_test_0_common_voice_en_106966.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nMichael Learned\nAkira Kurosawa",
+        "portability_answer": "Akira Kurosawa",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male and the options provided, the most likely answer would be Michael Learned."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19708695.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nAngelina Jolie\nJacques Pépin",
+        "portability_answer": "Jacques Pépin",
+        "model_response": "Based on the voice in the audio, it is most likely that the speaker is male. Therefore, the celebrity associated with the same gender as the speaker from the given options would be Jacques Pépin."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20289.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nZhang Daqian\nKatherine Johnson",
+        "portability_answer": "Zhang Daqian",
+        "model_response": "Katherine Johnson is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18854899.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nTom Cruise\nEmma Watson",
+        "portability_answer": "Tom Cruise",
+        "model_response": "Based on the given information, it is most likely that the celebrity mentioned in the speech, who is a 42-year-old English actor, is Tom Cruise. Emma Watson is a 31-year-old British actress and does not match the age and gender of the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17795814.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After attentively analyzing the speaker’s voice in the audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nColoratura soprano\nCountertenor",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "After analyzing the speaker's voice, it is most likely that the vocal range associated with the individual is a soprano. Therefore, the correct option would be \"Coloratura soprano.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_17852657.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "Lady"
+    },
+    {
+        "file": "en_test_0_common_voice_en_678749.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Madam."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19635121.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nQipao\nKilt",
+        "portability_answer": "Kilt",
+        "model_response": "\n\nWithout additional context or information about the specific culture being referred to, it is not possible to determine which traditional clothing item is most likely associated with the speaker's gender. The options provided (Qipao and Kilt) are both traditional clothing items worn by different cultures, and without knowing more about the speaker's cultural background, it is impossible to determine which one would be most associated with their gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17746709.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nBasso profundo\nContralto",
+        "portability_answer": "Basso profundo",
+        "model_response": "Bass profondo."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19015151.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nHarriet Tubman\nAlbert Einstein",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Based on the voice in the audio, it is most likely that the historical figure who shares the same gender as the speaker is Harriet Tubman."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31649071.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nTom Cruise\nAlice Waters",
+        "portability_answer": "Tom Cruise",
+        "model_response": "I think that Tom Cruise has the same gender as the speaker in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20972098.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nParanja\nDhoti",
+        "portability_answer": "Dhoti",
+        "model_response": "The speaker's gender is male, and traditionally, men in India wear a dhoti as part of their cultural attire. Therefore, the correct answer would be Dhoti."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19935618.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nVirginia Woolf\nLudwig van Beethoven",
+        "portability_answer": "Virginia Woolf",
+        "model_response": "The historical figure that shares the same gender as the speaker is Virginia Woolf."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19213279.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nLady\nGentleman",
+        "portability_answer": "Lady",
+        "model_response": "Lady"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19485661.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nDramatic soprano\nBass",
+        "portability_answer": "Bass",
+        "model_response": "The speaker's gender is male, and among the options provided, only a bass vocal range aligns with a male voice. Therefore, the answer to the question would be B: Bass."
+    },
+    {
+        "file": "en_test_0_common_voice_en_623389.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nRene Redzepi\nMichael Learned",
+        "portability_answer": "Rene Redzepi",
+        "model_response": "Based on the given information, the celebrity who is the same gender as the speaker is Michael Learned."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39043506.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nBarong Tagalog\nQipao",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nThe speaker is male and speaking in a Mandarin-based culture, so neither the Barong Tagalog nor the Qipao would be the most appropriate choice for traditional clothing styles. Both the Barong Tagalog and the Qipao are associated with specific cultures and regions, but they are not typically worn by men in Mandarin-speaking cultures. \n\nIn general, traditional clothing styles can vary greatly depending on the region, culture, and historical context. It is important to consider these factors when choosing clothing that represents a particular culture or tradition."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36520201.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nDashiki\nParanja",
+        "portability_answer": "Dashiki",
+        "model_response": "Based on the cultural context provided, the Dashiki would be the best match for the speaker's gender. Dashiki is a traditional clothing item worn in many African cultures, and it is typically associated with men. Therefore, if the speaker is male, the Dashiki would be the most appropriate clothing item to match his cultural background."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20890437.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nCountertenor\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Spinto soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23846478.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nSoprano\nBaritone",
+        "portability_answer": "Soprano",
+        "model_response": "The vocal range that best matches the gender of the speaker, who is female, is soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20405322.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After listening carefully to the provided audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nMezzo-soprano\nTenor",
+        "portability_answer": "Mezzo-soprano",
+        "model_response": "Mezzo-soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38420003.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nGele\nBarong Tagalog",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks in a Southwestern Mandarin dialect, it is difficult to determine the specific clothing item associated with him. However, traditionally, Barong Tagalog is a formal wear worn by both men and women in the Philippines, but it is more commonly associated with men. On the other hand, Gele is a headwear traditionally worn by women in the Philippines. Therefore, among the given options, Barong Tagalog is the most likely clothing item associated with the gender of the speaker in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38267254.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address fits individuals of the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_27485511.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nAbraham Lincoln\nMother Teresa",
+        "portability_answer": "Mother Teresa",
+        "model_response": "Mother Teresa shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18758345.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nParanja\nLederhosen",
+        "portability_answer": "Lederhosen",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks in a South Asian language, it is most likely that the traditional attire associated with him would be Paranja. \n\nPrajna is a term used to refer to knowledge or understanding in various cultures and religions around the world. It does not necessarily relate to traditional attire. Lederhosen are a type of traditional Germanic folk costume consisting of baggy leather pants. While they may be worn by men in some cultures, they are not typically associated with any particular gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18228659.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address fits individuals of the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "Based on the given information that the speaker's gender is female, the term of address that would fit individuals of the same gender as the speaker is \"Lady.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_18485414.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Madam."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31720201.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Pay close attention to the voice in the provided audio file. Which historical figure is most likely to share the same gender as the speaker?\n\nOptions:\nCleopatra\nErnest Hemingway",
+        "portability_answer": "Cleopatra",
+        "model_response": "Based on the voice in the provided audio file, it is most likely that the speaker is female. Therefore, the historical figure most likely to share the same gender as the speaker is Cleopatra, who was a female pharaoh of ancient Egypt. Ernest Hemingway was a male writer and would not be able to share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_170661.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After attentively analyzing the speaker’s voice in the audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSpinto tenor\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Spinto soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19058131.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nSpinto soprano\nBaritone",
+        "portability_answer": "Baritone",
+        "model_response": "Based on the vocal characteristics of the male speaker in the audio, it is more likely that the individual is associated with the baritone vocal range. Baritone voices typically have a deeper pitch and a wider range of dynamics than spinto soprano voices, which are typically higher pitched and more focused on ornamentation and expressiveness. However, without hearing additional information about the specific speaker's voice, this determination cannot be made with certainty."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38412238.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "In this case, the most appropriate term of address for an individual of the same gender as the speaker would be \"Ms.\" as the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19941145.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which label fits best for individuals of the same gender as the speaker?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Madam"
+    },
+    {
+        "file": "en_test_0_common_voice_en_38707113.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nMezzo-soprano\nSpinto tenor",
+        "portability_answer": "Spinto tenor",
+        "model_response": "Based on the vocal characteristics of the male speaker in the audio, it is more likely that the individual is associated with the Spinto tenor vocal range. The Spinto tenor is a type of male opera singer with a powerful and full voice, often used for leading roles in operas. The vocal characteristics of the speaker in the audio match those typically associated with a Spinto tenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21568217.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36016276.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nSalwar kameez\nKilt",
+        "portability_answer": "Kilt",
+        "model_response": "In a cultural setting where the gender of the speaker is male, the traditional clothing item that aligns most closely with this gender would be the Salwar Kameez. The Salwar Kameez is a traditional Indian attire worn by both men and women, but it is more commonly associated with women due to its loose-fitting style and long dupatta (scarf). On the other hand, a kilt is a traditional Scottish garment that is typically worn by men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19676008.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "For individuals of the same gender as the speaker, the most accurate terms of address would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_596853.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_40020391.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nJoan of Arc\nNapoleon Bonaparte",
+        "portability_answer": "Joan of Arc",
+        "model_response": "Joan of Arc\n\nJoan of Arc was a French military leader and a Catholic saint. She is known for her role in the Hundred Years' War, during which she led法国军队 to several victories against the English army. Joan of Arc was born in 1412 and died in 1431, and she was declared a saint by the Catholic Church in 1909. As a historical figure, Joan of Arc's gender aligns with that of the speaker in the speech clip, who is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18177045.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nErnest Hemingway\nMother Teresa",
+        "portability_answer": "Mother Teresa",
+        "model_response": "Mother Teresa corresponds to the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39663913.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nMichelle Obama\nGordon Ramsay",
+        "portability_answer": "Gordon Ramsay",
+        "model_response": "Based on the audio, the celebrity who is the same gender as the speaker is Gordon Ramsay."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36326712.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nGordon Ramsay\nKatherine Johnson",
+        "portability_answer": "Gordon Ramsay",
+        "model_response": "Based on the voice in the audio, it is most likely that the speaker is male. Therefore, the celebrity associated with the same gender as the speaker from the given options would be Gordon Ramsay, who is also male."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19735675.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nGeorge Clooney\nMarta Vieira da Silva",
+        "portability_answer": "George Clooney",
+        "model_response": "Based on the given information, the speaker is male and there are two celebrities mentioned, George Clooney and Marta Vieira da Silva. Out of these, only Marta Vieira da Silva is a female. Therefore, Marta Vieira da Silva shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19854772.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nKebaya\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks Mandarin, it can be inferred that he is likely from a culture where traditional Chinese clothing is worn. Therefore, the clothing item that aligns with his gender would be chapan, which is a traditional Chinese robe. Kebaya, on the other hand, is a traditional Indonesian garment that is worn by women."
+    },
+    {
+        "file": "en_test_0_common_voice_en_35473863.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nAdele\nDwayne Johnson",
+        "portability_answer": "Dwayne Johnson",
+        "model_response": "Based on the voice in the audio, it is most likely that the speaker is male. Therefore, the celebrity associated with the same gender as the speaker from the given options would be option A, Adele, who is also female. Option Dwayne Johnson is a male celebrity, so he is not the most likely association based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_28889779.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address fits individuals of the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_24261278.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nColoratura soprano\nCountertenor",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "The vocal range that corresponds to the gender of the speaker in the audio is countertenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18361080.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nLady\nGentleman",
+        "portability_answer": "Lady",
+        "model_response": "In this case, the most appropriate term of address would be \"Lady.\" This is because the speaker's gender is female, and \"Lady\" is a title often used for women of high social status or respect. \"Gentleman,\" on the other hand, is typically used to refer to men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19031181.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address fits individuals of the same gender as the speaker?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_39645706.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nMichelle Obama\nBrad Pitt",
+        "portability_answer": "Brad Pitt",
+        "model_response": "Based on the given information, the speaker is male and the options provided are also male celebrities. Therefore, both Brad Pitt and Michelle Obama are male celebrities who do not share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17396116.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nUsain Bolt\nPan Yuliang",
+        "portability_answer": "Usain Bolt",
+        "model_response": "Based on the given information, Usain Bolt is most likely the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18062241.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nMother\nFather",
+        "portability_answer": "Mother",
+        "model_response": "In this case, the most appropriate term of address would be \"mother\" since the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31582705.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nColoratura soprano\nBaritone",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "Based on the information provided, it is most likely that the speaker's gender is associated with the coloratura soprano vocal range. This is because the speaker is female and the term \"coloratura soprano\" refers to a type of female singing voice characterized by rapid, light, and elaborate ornamentation. Baritone, on the other hand, is typically associated with a male singing voice."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18758956.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nLionel Messi\nJulia Child",
+        "portability_answer": "Lionel Messi",
+        "model_response": "Based on the given information, the speaker is male and Lionel Messi is also male. Therefore, both Lionel Messi and the speaker are of the same gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39588352.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nHarriet Tubman\nNeil Armstrong",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Based on the provided Mandarin speech, the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Harriet Tubman, who was also a female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18983327.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19382249.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nWilliam Shakespeare\nCleopatra",
+        "portability_answer": "Cleopatra",
+        "model_response": "Cleopatra is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22575527.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nUncle\nAunt",
+        "portability_answer": "Aunt",
+        "model_response": "Aunt"
+    },
+    {
+        "file": "en_test_0_common_voice_en_31716416.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nSari\nBaju Melayu",
+        "portability_answer": "Baju Melayu",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks Mandarin, it is most likely that the traditional attire associated with him is Baju Melayu. Baju Melayu is a traditional Malay outfit worn by both men and women, while a sari is typically worn by women in Southeast Asia."
+    },
+    {
+        "file": "en_test_0_common_voice_en_207025.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nRosa Parks\nLudwig van Beethoven",
+        "portability_answer": "Rosa Parks",
+        "model_response": "The historical figure that shares the same gender as the speaker is Rosa Parks."
+    },
+    {
+        "file": "en_test_0_common_voice_en_32701722.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nContralto\nCountertenor",
+        "portability_answer": "Contralto",
+        "model_response": "Based on the given information that the speaker's gender is female, the option most likely associated with her vocal range would be contralto. Contraltos are female voices that fall within the lower part of the singing voice range. Countertenors, on the other hand, are male voices that have a high pitch similar to a soprano or alto but with a deeper tone. Therefore, the option most likely associated with the speaker's gender would be contralto."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17266327.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nJamie Oliver\nAdele",
+        "portability_answer": "Jamie Oliver",
+        "model_response": "Adele."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39582224.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nVirginia Woolf\nNapoleon Bonaparte",
+        "portability_answer": "Virginia Woolf",
+        "model_response": "After analyzing the provided English speech, it is evident that the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Virginia Woolf."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19480240.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nBaju Melayu\nHijab",
+        "portability_answer": "Baju Melayu",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male and he speaks English, it is not possible to determine the specific cultural context or traditional clothing item associated with him. However, it is worth noting that traditional clothing items can vary greatly across different cultures and regions within a country or even within a single culture depending on factors such as geography, history, and social norms. Therefore, without more specific information about the speaker's cultural background, it is difficult to identify the traditional clothing item associated with him."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18383407.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nErnest Hemingway\nHarriet Tubman",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Harriet Tubman shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17666102.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nCleopatra\nAbraham Lincoln",
+        "portability_answer": "Cleopatra",
+        "model_response": "Cleopatra was a female. Abraham Lincoln was a male. Therefore, the historical figure who is the same gender as the speaker is Cleopatra."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31513437.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nNapoleon Bonaparte\nFrida Kahlo",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "Frida Kahlo."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37318569.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nBaju Kurung\nKeffiyeh",
+        "portability_answer": "Keffiyeh",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male and he speaks English, it is not possible to determine which traditional clothing item is most likely associated with his gender within a cultural context. The options provided (Baju Kurung and Keffiyeh) are both traditional clothing items worn by different cultures, and without additional information about the speaker's cultural background, it would be difficult to determine which one is more associated with him."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18425394.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nCountertenor\nDramatic soprano",
+        "portability_answer": "Countertenor",
+        "model_response": "The vocal range that corresponds to the gender of the speaker in the audio is tenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18309496.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nScarlett Johansson\nAlexander McQueen",
+        "portability_answer": "Alexander McQueen",
+        "model_response": "Based on the given information, the celebrity who is most likely the same gender as the speaker is Alexander McQueen."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20937833.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nLady\nGentleman",
+        "portability_answer": "Lady",
+        "model_response": "In this case, the most accurate term of address would be \"Lady.\" This is because the speaker's gender is female, and \"Lady\" is a formal term of address used for women. \"Gentleman,\" on the other hand, is a formal term of address used for men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39490494.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nColoratura soprano\nHeldentenor",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "Based on the vocal characteristics of the speaker, a coloratura soprano vocal range is more likely associated with her gender. Coloraturas are fast, elaborate trills, runs, and other ornamentations typically associated with female opera singers. heldentenor, on the other hand, is a type of male opera voice that requires a powerful and wide-ranging voice, which is not typically characteristic of female voices."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37318416.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nSoprano\nBass-baritone",
+        "portability_answer": "Bass-baritone",
+        "model_response": "The vocal range that best matches the gender of the speaker, who is male, is likely to be Bass-baritone."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18211602.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nZhang Daqian\nIndra Nooyi",
+        "portability_answer": "Zhang Daqian",
+        "model_response": "Indra Nooyi is most likely to share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19939176.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nUncle\nAunt",
+        "portability_answer": "Aunt",
+        "model_response": "If the speaker's gender is female, then the most appropriate term of address or designation for individuals of the same gender would be \"Aunt.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_18392203.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After attentively analyzing the speaker’s voice in the audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSoprano\nSpinto tenor",
+        "portability_answer": "Spinto tenor",
+        "model_response": "Male"
+    },
+    {
+        "file": "en_test_0_common_voice_en_32941672.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nLionel Messi\nVera Wang",
+        "portability_answer": "Lionel Messi",
+        "model_response": "Based on the given information, the speaker is male and Lionel Messi is also male. Therefore, Lionel Messi shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20466244.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nWinston Churchill\nVirginia Woolf",
+        "portability_answer": "Virginia Woolf",
+        "model_response": "The historical figure who is the same gender as the speaker is Virginia Woolf."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31734340.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nScarlett Johansson\nDavid Beckham",
+        "portability_answer": "David Beckham",
+        "model_response": "Based on the given information, the speaker is male and the options provided are also male celebrities. Therefore, all the options (Scarlett Johansson and David Beckham) share the same gender as the speaker, which is male."
+    },
+    {
+        "file": "en_test_0_common_voice_en_265829.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nYo-Yo Ma\nIndra Nooyi",
+        "portability_answer": "Yo-Yo Ma",
+        "model_response": "Indra Nooyi"
+    },
+    {
+        "file": "en_test_0_common_voice_en_37797910.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nEllen DeGeneres\nDana White",
+        "portability_answer": "Dana White",
+        "model_response": "Based on the given information, the speaker is male and there are two celebrities mentioned, Ellen DeGeneres and Dana White. Out of these two, only Ellen DeGeneres is known to be female. Therefore, the answer to the question would be Ellen DeGeneres."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20644765.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After attentively analyzing the speaker’s voice in the audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nCountertenor\nSoprano",
+        "portability_answer": "Countertenor",
+        "model_response": "Male"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19951114.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nRene Redzepi\nCoco Chanel",
+        "portability_answer": "Rene Redzepi",
+        "model_response": "Based on the given information that the speaker's gender is male, the most likely option would be Coco Chanel. Rene Redzepi is a male chef, so he cannot be the same gender as the speaker. Therefore, the answer is Coco Chanel."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37527521.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nBasso profundo\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Spinto soprano would be the best match for the gender of the speaker, as it is a female voice range."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20282120.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nBaritone\nMezzo-soprano",
+        "portability_answer": "Baritone",
+        "model_response": "Male speakers typically have a vocal range that falls within the lower-mid to higher-mid range. Therefore, the vocal range that aligns with the speaker's gender would be mezzo-soprano (which is typically for female voices) rather than baritone (which is typically for male voices)."
+    },
+    {
+        "file": "en_test_0_common_voice_en_24014466.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nAunt\nUncle",
+        "portability_answer": "Aunt",
+        "model_response": "Using the information provided, the most appropriate term of address for people sharing the same gender as the speaker would be \"Aunt\" since the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17911377.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nAlexander the Great\nHarriet Tubman",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Harriet Tubman shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31534152.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nBaju Kurung\nLederhosen",
+        "portability_answer": "Lederhosen",
+        "model_response": "Based on the cultural context provided, the traditional clothing item that best matches the speaker's gender would be Baju Kurung. Baju Kurung is a traditional Malay outfit worn by both genders in Malaysia. It is a long-sleeved, loose-fitting shirt made from lightweight materials such as cotton or silk. Lederhosen, on the other hand, are leather pants traditionally worn by men in Germanic cultures. Therefore, the best option for the speaker, who is male, would be Baju Kurung."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39915957.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nAbaya\nDhoti",
+        "portability_answer": "Dhoti",
+        "model_response": "\n\nIn a cultural setting where the gender of the speaker is male, the traditional clothing item that aligns most closely with this gender would be the Dhoti. The Abaya is typically worn by women in certain cultures."
+    },
+    {
+        "file": "en_test_0_common_voice_en_35905111.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nNeil Armstrong\nBillie Jean King",
+        "portability_answer": "Billie Jean King",
+        "model_response": "Based on the given speech by a female, the historical figure most likely sharing the same gender is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23853901.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nAlan Turing\nVirginia Woolf",
+        "portability_answer": "Virginia Woolf",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Virginia Woolf."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31694143.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nMahatma Gandhi\nMarie Curie",
+        "portability_answer": "Marie Curie",
+        "model_response": "Marie Curie most likely shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17426004.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nDonatella Versace\nAkira Kurosawa",
+        "portability_answer": "Akira Kurosawa",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, the most likely option for the celebrity who could be considered the same gender would be Akira Kurosawa. Donatella Versace is a female fashion designer and businesswoman."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37875407.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nFather\nMother",
+        "portability_answer": "Mother",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be \"mother\"."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36016278.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nAlice Waters\nBenedict Cumberbatch",
+        "portability_answer": "Benedict Cumberbatch",
+        "model_response": "Benedict Cumberbatch"
+    },
+    {
+        "file": "en_test_0_common_voice_en_17298946.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nBaritone\nSoprano",
+        "portability_answer": "Soprano",
+        "model_response": "Based on the vocal characteristics of the speaker, who is female, it is more likely that she belongs to the soprano vocal range. Sopranos are typically known for their high pitch and light, airy voices, which are often associated with female voices. Baritones, on the other hand, have a deeper voice and are typically associated with male voices."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23408793.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nWinston Churchill\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38321996.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nAda Lovelace\nNeil Armstrong",
+        "portability_answer": "Ada Lovelace",
+        "model_response": " Ada Lovelace."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19412461.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nSerena Williams\nYo-Yo Ma",
+        "portability_answer": "Yo-Yo Ma",
+        "model_response": "I would identify Yo-Yo Ma as having the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37585170.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nBrad Pitt\nMichelle Obama",
+        "portability_answer": "Brad Pitt",
+        "model_response": "I would identify Brad Pitt as having the same gender as the speaker based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20688736.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nGele\nKilt",
+        "portability_answer": "Kilt",
+        "model_response": "In the specific culture mentioned, the traditional clothing item that matches the speaker's gender would be a Kilt."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22338655.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nMeryl Streep\nMark Zuckerberg",
+        "portability_answer": "Mark Zuckerberg",
+        "model_response": "Based on the given information, the speaker is male and the options provided are Meryl Streep and Mark Zuckerberg. Out of these two, only Meryl Streep is female, so she is the celebrity who shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23583679.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nHelen Keller\nPablo Picasso",
+        "portability_answer": "Helen Keller",
+        "model_response": "The historical figure that shares the same gender as the speaker is Helen Keller."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18979305.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nChapan\nHijab",
+        "portability_answer": "Chapan",
+        "model_response": "\n\nWithout additional context or information about the cultural background of the speaker, it is not possible to determine which traditional clothing item is most likely associated with their gender. Both chapan and hijab are traditional clothing items worn by men and women in different cultures around the world. It is important to consider the specific cultural context in which the speaker is located before making any assumptions about their attire."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18257271.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nBarong Tagalog\nAbaya",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nWithout additional context or information about the cultural setting and the specific traditions associated with each clothing item, it is not possible to determine which traditional clothing item aligns most closely with the gender of the speaker. \n\nBarong Tagalog is a traditional Filipino costume worn by both men and women, while Abaya is a long, loose-fitting dress worn by women in many Middle Eastern and North African cultures. Both clothing items have distinct designs and styles that may vary depending on the region and cultural tradition they are associated with."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18267223.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Based on the information provided, the most accurate term of address for individuals of the same gender as the speaker would be \"Madam\". This is because the speaker's gender is identified as female, and traditionally, \"Madam\" is a polite and respectful way to address women. \"Sir\" is typically used to address men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_627541.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nContralto\nSpinto tenor",
+        "portability_answer": "Spinto tenor",
+        "model_response": "Based on the vocal characteristics of the male speaker in the audio, it is more likely that the individual is a tenor. A contralto is a type of female singing voice, and a spinto tenor is a type of male singing voice that has a strong and powerful tone. The speaker's gender and the vocal range of the song suggest that the speaker is most likely a tenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18198513.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nMadam\nSir",
+        "portability_answer": "Madam",
+        "model_response": "Madam."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20047839.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nMadam\nSir",
+        "portability_answer": "Madam",
+        "model_response": "Madam."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17880588.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nAlan Turing\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "After analyzing the provided English speech, it is evident that the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19611933.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nWilliam Shakespeare\nRosa Parks",
+        "portability_answer": "Rosa Parks",
+        "model_response": "Rosa Parks."
+    },
+    {
+        "file": "en_test_0_common_voice_en_27070191.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nAlbert Einstein\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "After analyzing the provided English speech, it is evident that the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25126314.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nFather\nMother",
+        "portability_answer": "Mother",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be \"mother\"."
+    },
+    {
+        "file": "en_test_0_common_voice_en_64837.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "In this case, the most appropriate term of address would be \"Lady.\" Since the speaker's gender is female, using \"Lady\" as a term of address would be respectful and appropriate."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17473365.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nJacques Pépin\nEllen DeGeneres",
+        "portability_answer": "Jacques Pépin",
+        "model_response": "Based on the given information that the speaker's gender is male, the most likely celebrity to share the same gender as the speaker is Jacques Pépin. Ellen DeGeneres is a female comedian and talk show host."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21321829.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nDirndl\nKilt",
+        "portability_answer": "Kilt",
+        "model_response": "Based on the given speech by a male voice in English, it is not possible to determine the cultural context or the appropriate traditional clothing style for him based on gender alone. Dirndl and kilt are traditional clothing styles associated with different cultures. Without additional information about the speaker's background and the context in which he is speaking, it is difficult to accurately identify the traditional clothing style that would match his gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_672261.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which label fits best for individuals of the same gender as the speaker?\n\nOptions:\nAunt\nUncle",
+        "portability_answer": "Aunt",
+        "model_response": "Aunt."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18216835.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nRosa Parks\nWilliam Shakespeare",
+        "portability_answer": "Rosa Parks",
+        "model_response": "Based on the provided information, the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Rosa Parks."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21230886.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nMarie Curie\nPablo Picasso",
+        "portability_answer": "Marie Curie",
+        "model_response": "Marie Curie shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38243824.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nKatherine Johnson\nGeorge Clooney",
+        "portability_answer": "George Clooney",
+        "model_response": "I would identify George Clooney as having the same gender as the speaker based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21349470.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nSherwani\nHuipil",
+        "portability_answer": "Sherwani",
+        "model_response": "The speaker is male and the cultural context is not specified, so it is not possible to determine the most appropriate traditional clothing style based solely on the speaker's gender. Different cultures have different traditional clothing styles for men and women, and the choice of clothing can be influenced by various factors such as religion, climate, and social norms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_5688714.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nUsain Bolt\nAlice Waters",
+        "portability_answer": "Usain Bolt",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, the option that best fits the description would be Usain Bolt. Therefore, Usain Bolt would most likely be considered the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17391184.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nWolfgang Puck\nMarta Vieira da Silva",
+        "portability_answer": "Wolfgang Puck",
+        "model_response": "Marta Vieira da Silva is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25722368.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nHuipil\nLederhosen",
+        "portability_answer": "Lederhosen",
+        "model_response": "Without additional context or information about the specific culture and traditions associated with the speech, it is not possible to accurately determine which traditional clothing item is most likely associated with the gender of the speaker. The options provided (huipil and lederhosen) are both traditional clothing items worn by different cultures, but without more context, it is impossible to determine which one would be most appropriate for the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_24230076.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nWilliam Shakespeare\nVirginia Woolf",
+        "portability_answer": "Virginia Woolf",
+        "model_response": "The historical figure that corresponds to the same gender as the speaker is Virginia Woolf."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20304586.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nWinston Churchill\nBillie Jean King",
+        "portability_answer": "Billie Jean King",
+        "model_response": "The historical figure who is the same gender as the speaker is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25021926.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nEllen DeGeneres\nUsain Bolt",
+        "portability_answer": "Usain Bolt",
+        "model_response": "I would identify Usain Bolt as having the same gender as the speaker based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19729843.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nBillie Jean King\nLudwig van Beethoven",
+        "portability_answer": "Billie Jean King",
+        "model_response": "The historical figure who is the same gender as the speaker is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37344367.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nKeffiyeh\nKebaya",
+        "portability_answer": "Keffiyeh",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks English, it is most likely that the clothing item associated with him is a Keffiyeh. The Keffiyeh is a traditional Middle Eastern head covering worn by both men and women, but it is often associated with men due to its style and cultural connotations. On the other hand, the Kebaya is a traditional Indonesian dress that is typically worn by women. Therefore, the most likely option would be Keffiyeh."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18234239.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nAlbert Einstein\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "After analyzing the provided English speech, it is evident that the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37471267.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nSpinto soprano\nHeldentenor",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Based on the information provided, it is most likely that the speaker's gender is associated with the Spinto soprano vocal range. This is because the speaker is female and the options given include a female vocal range. The heldentenor is typically a male voice type, so it is less likely to be associated with a female speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_33290227.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nKilt\nKebaya",
+        "portability_answer": "Kilt",
+        "model_response": "\n\nBased on the cultural context provided, the traditional clothing item that best matches the speaker's gender would be a Kilt. The Kilt is a traditional Scottish garment worn by men."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20027504.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nHelen Keller\nLeonardo da Vinci",
+        "portability_answer": "Helen Keller",
+        "model_response": "Based on the given information, the gender of the speaker is female. Therefore, the historical figure who is the same gender as the speaker is:\n\nHelen Keller\n\nBoth Helen Keller and the speaker are female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38707391.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nEmma Watson\nWolfgang Puck",
+        "portability_answer": "Wolfgang Puck",
+        "model_response": "I would identify Emma Watson as having the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22469604.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nVera Wang\nCristiano Ronaldo",
+        "portability_answer": "Cristiano Ronaldo",
+        "model_response": "Based on the given information, Cristiano Ronaldo is most likely the same gender as the speaker, who is male."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17315099.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19666442.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nCountertenor\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Spinto soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20262304.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "For individuals of the same gender as the speaker, the most accurate term of address would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31679243.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nHideki Yukawa\nOprah Winfrey",
+        "portability_answer": "Hideki Yukawa",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, the most likely option to share the same gender as the speaker would be Hideki Yukawa. \n\nHideki Yukawa is a male physicist and Nobel laureate who was born on June 23, 1945. He is known for his work on the quark model of subatomic particles and his contributions to the field of particle physics. \n\nOn the other hand, Oprah Winfrey is an American media executive, talk show host, actress, producer, and philanthropist who was born on January 29, 1954. She is one of the most influential people in the world and has been a prominent figure in the entertainment industry for several decades. While she is a well-known public figure, her gender is female, making her an unlikely candidate to share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36765761.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nEllen DeGeneres\nVirgil Abloh",
+        "portability_answer": "Virgil Abloh",
+        "model_response": "Based on the voice in the audio, I would identify the celebrity Virgil Abloh as having the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19480238.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nAbaya\nKeffiyeh",
+        "portability_answer": "Keffiyeh",
+        "model_response": "\n\nThe speaker's gender, being male, does not necessarily align with any specific cultural attire. However, traditionally, an Abaya is worn by women in Middle Eastern and North African cultures, while a Keffiyeh is often associated with men in certain regions, such as Palestine, Jordan, and Lebanon. Therefore, neither of these clothing items can be definitively associated with the speaker's gender based on the given information."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17864433.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After attentively analyzing the speaker’s voice in the audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nTenor\nColoratura soprano",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "Female"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18165461.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After carefully listening to the provided audio, which of the following celebrities is most likely to share the same gender as the speaker?\n\nOptions:\nYayoi Kusama\nTom Cruise",
+        "portability_answer": "Tom Cruise",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, the most likely option to share the same gender as the speaker among the provided options is Tom Cruise. \n\nYayoi Kusama is a Japanese contemporary artist and her gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19808301.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nBasso profundo\nSoprano",
+        "portability_answer": "Soprano",
+        "model_response": "The vocal range most likely associated with the speaker's gender, which is female, would be Basso profondo (low register)."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23686301.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which label fits best for individuals of the same gender as the speaker?\n\nOptions:\nMother\nFather",
+        "portability_answer": "Mother",
+        "model_response": "Based on the given information, the label that fits best for an individual of the same gender as the speaker, who is female, would be \"Mother\"."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17782101.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39827261.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSpinto tenor\nContralto",
+        "portability_answer": "Contralto",
+        "model_response": "Based on the given information that the speaker's gender is female, the most likely option associated with her vocal range would be Contralto."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17315098.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nFrida Kahlo\nLudwig van Beethoven",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "After analyzing the provided English speech, it is clear that the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Frida Kahlo, who was also a female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38518231.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nAngelina Jolie\nDana White",
+        "portability_answer": "Dana White",
+        "model_response": "Dana White."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17882305.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nAlexander the Great\nMarie Curie",
+        "portability_answer": "Marie Curie",
+        "model_response": "Marie Curie is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20262803.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nMahatma Gandhi\nJoan of Arc",
+        "portability_answer": "Joan of Arc",
+        "model_response": "Joan of Arc\n\nThe speaker in the audio recording is female, and among the given options, only Joan of Arc is a historical figure known for her female gender. Therefore, the most likely option is Joan of Arc."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39734854.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nDonatella Versace\nHideki Yukawa",
+        "portability_answer": "Hideki Yukawa",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male and the options provided, the most likely answer would be Hideki Yukawa. Donatella Versace is a female fashion designer, so she cannot be the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_35400504.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nColoratura soprano\nBass",
+        "portability_answer": "Bass",
+        "model_response": "Based on the information provided, it is most likely that the speaker's gender is associated with the coloratura soprano vocal range. This is because the speaker is male and the vocal range associated with male voices is typically higher-pitched than bass voices. Coloratura soprano is a type of female singing voice characterized by fast, elaborate runs and trills, which is often associated with female opera singers. However, it's important to note that this inference is based solely on the speaker's gender and does not take into account other factors such as the speaker's age or tone quality."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20688746.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nAlbert Einstein\nAda Lovelace",
+        "portability_answer": "Ada Lovelace",
+        "model_response": "Based on the given information, the gender of the speaker is female. Therefore, the historical figure who is the same gender as the speaker is Ada Lovelace."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20172863.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nGhagra Choli\nLederhosen",
+        "portability_answer": "Lederhosen",
+        "model_response": "The speaker is male and the cultural context is not specified, so it is not possible to determine which option best matches his gender based on traditional clothing styles alone."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36544758.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nUsain Bolt\nPan Yuliang",
+        "portability_answer": "Usain Bolt",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, the option that best fits the description would be Usain Bolt. Therefore, Usain Bolt would most likely be considered the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_28872024.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nScarlett Johansson\nRyan Gosling",
+        "portability_answer": "Ryan Gosling",
+        "model_response": "Based on the voice in the audio, it is most likely that the speaker is male. Therefore, the celebrity associated with the same gender as the speaker from the given options would be Ryan Gosling, who is also male. Scarlett Johansson, on the other hand, is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19985202.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nDirndl\nFustanella",
+        "portability_answer": "Fustanella",
+        "model_response": "\n\nWithout additional context or information about the cultural background of the speaker, it is not possible to determine which traditional clothing item is most likely associated with their gender. Both Dirndl and Fustanella are traditional clothing items worn by men and women in different cultures. Therefore, the answer cannot be determined with the given information."
+    },
+    {
+        "file": "en_test_0_common_voice_en_34082125.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nBrother\nSister",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19707483.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nCleopatra\nAlexander the Great",
+        "portability_answer": "Cleopatra",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Cleopatra."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21883920.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nAlexander the Great\nMother Teresa",
+        "portability_answer": "Mother Teresa",
+        "model_response": "Mother Teresa corresponds to the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25585756.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Listen closely to the provided audio recording and determine which of these historical figures most likely shares the same gender as the speaker.\n\nOptions:\nMahatma Gandhi\nFrida Kahlo",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "Frida Kahlo most likely shares the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20343661.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nNeil Armstrong\nMother Teresa",
+        "portability_answer": "Mother Teresa",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Mother Teresa."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17685610.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nMarie Curie\nAlexander the Great",
+        "portability_answer": "Marie Curie",
+        "model_response": "Based on the provided information, the speaker's gender is female. Therefore, the historical figure who shares the same gender as the speaker is Marie Curie."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19112583.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "Based on the given information that the speaker's gender is female, the most accurate term of address would be \"Lady.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_38123782.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nBarong Tagalog\nParanja",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nWithout additional context or information about the specific cultural context and the speaker's gender, it is not possible to determine which traditional clothing item is most likely associated with the speaker. The options provided (Barong Tagalog and Paranja) are both traditional clothing items from the Philippines, but without more details about the speaker's gender, it is impossible to determine which one would be more appropriate."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18375213.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nAmelia Earhart\nWilliam Shakespeare",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "\n\nThe historical figure that corresponds to the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37728197.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nKeffiyeh\nHuipil",
+        "portability_answer": "Keffiyeh",
+        "model_response": "\n\nThe most likely clothing item associated with the gender of the speaker in the audio is a Keffiyeh. The Keffiyeh is a type of headscarf worn by both men and women in various cultures, including Middle Eastern and North African countries. It is often associated with traditional attire and may be worn for cultural or religious reasons. In contrast, the Huipil is a traditional blouse from Mexico that is typically worn by women."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18093355.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nBarong Tagalog\nQipao",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nThe most likely traditional clothing item associated with the speaker's gender within a cultural context would be Barong Tagalog. Barong Tagalog is a traditional Filipino shirt made from lightweight and breathable materials such as棉麻或丝质， often worn by men. It features a distinctive design that includes a standing collar, long sleeves, and two buttons on the front. In contrast, Qipao is a traditional Chinese dress that is typically worn by women, featuring a high collar, long sleeves, and a flowing skirt or pants."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17902330.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nAbraham Lincoln\nBillie Jean King",
+        "portability_answer": "Billie Jean King",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_25619619.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nKeffiyeh\nQipao",
+        "portability_answer": "Keffiyeh",
+        "model_response": "\n\nWithout additional context or information about the cultural background of the speaker, it is not possible to determine which traditional clothing item is most likely associated with their gender. Both Keffiyeh and Qipao are traditional clothing items worn by men and women in different cultures. Therefore, the answer cannot be determined with the given information."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37486763.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nMezzo-soprano\nCountertenor",
+        "portability_answer": "Countertenor",
+        "model_response": "Based on the given information that the speaker's gender is male, it is more likely that the vocal range heard in the audio is associated with a male voice. Therefore, the options \"Baritone\" and \"Tenor\" are less likely, while \"Mezzo-soprano\" and \"Countertenor\" are more likely to be associated with individuals of the same gender as the speaker. However, without hearing the actual audio, it is impossible to determine the exact vocal range of the speaker with certainty."
+    },
+    {
+        "file": "en_test_0_common_voice_en_520490.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nMarie Curie\nWinston Churchill",
+        "portability_answer": "Marie Curie",
+        "model_response": "Marie Curie has the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_125399.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nPan Yuliang\nVirgil Abloh",
+        "portability_answer": "Virgil Abloh",
+        "model_response": "Based on the given information, the celebrity who is the same gender as the speaker is Virgil Abloh."
+    },
+    {
+        "file": "en_test_0_common_voice_en_26966176.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Based on the audio, which vocal range aligns with the speaker's gender?\n\nOptions:\nSpinto tenor\nMezzo-soprano",
+        "portability_answer": "Mezzo-soprano",
+        "model_response": "Based on the audio provided, the speaker's gender is female and the vocal range associated with a female voice is typically mezzo-soprano. Therefore, the correct answer would be Mezzo-soprano."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17353713.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39640101.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures corresponds to the same gender as the speaker?\n\nOptions:\nNeil Armstrong\nFrida Kahlo",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "Frida Kahlo corresponds to the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17503256.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nHijab\nDhoti",
+        "portability_answer": "Dhoti",
+        "model_response": "\n\nBased on the cultural context provided, the traditional clothing item that best matches the speaker's gender would be a Dhoti. Dhotis are a type of long cloth worn by men in many Indian cultures. Therefore, it is likely that the speaker in the speech clip is from an Indian culture where dhotis are worn."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39022785.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nBass-baritone\nContralto",
+        "portability_answer": "Bass-baritone",
+        "model_response": "Male speakers are typically associated with a higher vocal range than bass-baritone or contralto. Therefore, the most likely option would be B: Baritone."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37250088.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure shares the same gender as the speaker?\n\nOptions:\nNapoleon Bonaparte\nHelen Keller",
+        "portability_answer": "Helen Keller",
+        "model_response": "The historical figure that shares the same gender as the speaker is Helen Keller."
+    },
+    {
+        "file": "en_test_0_common_voice_en_498245.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nBenedict Cumberbatch\nTaylor Swift",
+        "portability_answer": "Benedict Cumberbatch",
+        "model_response": "Benedict Cumberbatch is male. Therefore, he has the same gender as the speaker in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18730818.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "For individuals of the same gender as the speaker, the most accurate terms of address would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19625460.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nSpinto soprano\nTenor",
+        "portability_answer": "Tenor",
+        "model_response": "Male"
+    },
+    {
+        "file": "en_test_0_common_voice_en_27535749.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which label fits best for individuals of the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_37428938.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nDashiki\nHuipil",
+        "portability_answer": "Dashiki",
+        "model_response": "In the specific culture mentioned, a Dashiki would match the speaker's gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18395139.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nSoprano\nHeldentenor",
+        "portability_answer": "Heldentenor",
+        "model_response": "Based on the given information that the speaker's gender is male and he is singing in a major key with a bright quality, the most likely vocal range associated with him would be tenor. Therefore, the correct answer would be \"Heldentenor.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_38427553.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nKeffiyeh\nGele",
+        "portability_answer": "Keffiyeh",
+        "model_response": "Without additional context or information about the cultural background of the speaker, it is not possible to determine which traditional clothing item is most likely associated with their gender. Both Keffiyeh and Gele are traditional clothing items worn by men and women in different cultures, so either one could be associated with the speaker's gender depending on the specific cultural context in which they were speaking."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22717228.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nCountertenor\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Spinto soprano is more likely associated with individuals of the same gender as the speaker, who is female. Countertenors are typically male voices that have a higher pitch than ordinary tenors but lower than sopranos."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39016117.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nMarta Vieira da Silva\nDavid Beckham",
+        "portability_answer": "David Beckham",
+        "model_response": "Based on the given information, the speaker's gender is male. Therefore, the option that matches the speaker's gender is David Beckham, who is also male. Marta Vieira da Silva is a female professional soccer player, so she does not match the speaker's gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17405244.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nAbraham Lincoln\nAda Lovelace",
+        "portability_answer": "Ada Lovelace",
+        "model_response": "Ada Lovelace."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31667122.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nVirgil Abloh\nEmma Watson",
+        "portability_answer": "Virgil Abloh",
+        "model_response": "I would identify Emma Watson as having the same gender as the speaker based on the voice in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31705666.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After listening carefully to the provided audio, which of the following vocal ranges is most likely associated with individuals of the same gender as the speaker?\n\nOptions:\nColoratura soprano\nHeldentenor",
+        "portability_answer": "Coloratura soprano",
+        "model_response": "Based on the information provided that the speaker's gender is female, the most likely vocal range associated with her would be Coloratura soprano. This is because the term \"coloratura soprano\" refers to a type of female singing voice characterized by rapid, light, and elaborate ornamentation, which is often associated with female voices. On the other hand, the term \"heldentenor\" refers to a male singing voice with a powerful and dramatic tone, which is not typically associated with female voices."
+    },
+    {
+        "file": "en_test_0_common_voice_en_205394.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully listening to the provided audio file, which of the following historical figures do you believe shares the same gender as the speaker?\n\nOptions:\nIndira Gandhi\nAlan Turing",
+        "portability_answer": "Indira Gandhi",
+        "model_response": "Indira Gandhi was a female. Alan Turing was a male. Therefore, the historical figure that shares the same gender as the speaker is Indira Gandhi."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31671570.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nMaya Ying Lin\nYo-Yo Ma",
+        "portability_answer": "Yo-Yo Ma",
+        "model_response": "Maya Ying Lin is most likely the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37870005.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nHelen Keller\nLeonardo da Vinci",
+        "portability_answer": "Helen Keller",
+        "model_response": "The historical figure who has the same gender as the speaker is Helen Keller."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19748962.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_30406494.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nSari\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "\n\nGiven that the speaker's gender is male and the options provided are traditional clothing items worn by different cultures, the most likely option associated with the speaker's gender would be Chapan. Chapan is a traditional Iranian garment worn by men. Sari, on the other hand, is a traditional Indian garment worn by women."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17350425.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nFustanella\nSalwar kameez",
+        "portability_answer": "Fustanella",
+        "model_response": "\n\nWithout additional context or information about the cultural setting and the specific traditions associated with each clothing item, it is not possible to determine which traditional clothing item aligns most closely with the gender of the speaker. \n\nHowever, based solely on the given information that the speaker's gender is male, it can be inferred that options such as the fustanella (a type of Greek folk dress) or the salwar kameez (a traditional Indian attire worn by both men and women) may be more commonly associated with men in those respective cultures. However, this inference is not definitive and would depend on various factors such as the region, the time period, and the specific style of the clothing."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20296862.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "In terms of cultural attire, which clothing item aligns with the speaker’s gender?\n\nOptions:\nSari\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "\n\nThe speaker being male, the clothing item that aligns with his gender culturally would be a suit or a tuxedo. Both are traditional formal wear for men in many cultures around the world. A sari is typically worn by women in India and other South Asian countries, while a chapan is a type of jacket or overcoat worn by men in Iran and other Middle Eastern countries."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38427570.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nDashiki\nGele",
+        "portability_answer": "Dashiki",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks English, it is difficult to determine which clothing item is most likely associated with him based solely on his gender. However, Dashiki and Gele are both traditional African clothing items, so it is possible that either one could be associated with a male speaker. Without additional context or cultural knowledge about the specific region or community where the speaker lives, it is impossible to determine which clothing item is more likely associated with him."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19704669.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nFustanella\nSari",
+        "portability_answer": "Fustanella",
+        "model_response": "In the specific culture mentioned, the traditional clothing item that matches the speaker's gender would be a Fustanella."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19708707.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nQipao\nLederhosen",
+        "portability_answer": "Lederhosen",
+        "model_response": "\n\nThe traditional clothing item that best matches the speaker's gender based on the cultural context cannot be determined from the given information. The speaker is described as male, but this does not necessarily provide any clues about the type of traditional clothing that would be appropriate for him. Different cultures have different styles and customs when it comes to traditional clothing, so without more specific information about the speaker's cultural background, it is impossible to determine which traditional clothing item would be the best match."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39807154.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "Sister"
+    },
+    {
+        "file": "en_test_0_common_voice_en_31536559.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nBillie Jean King\nWinston Churchill",
+        "portability_answer": "Billie Jean King",
+        "model_response": "The historical figure who has the same gender as the speaker is Billie Jean King."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21481329.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nSari\nBarong Tagalog",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "The speaker is male and the cultural context is not specified, so it is not possible to determine the most appropriate traditional clothing style based solely on the speaker's gender. Sari is typically worn by women in many cultures, while Barong Tagalog is a traditional Filipino garment worn by both men and women."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31822774.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nKebaya\nSherwani",
+        "portability_answer": "Sherwani",
+        "model_response": "Based on the provided Mandarin speech by a male speaker, the traditional clothing style that best matches his gender and cultural context would be Kebaya. Kebaya is a traditional Indonesian clothing style worn by both men and women, characterized by its long, flowing sleeves and pants, and often paired with a sash or headscarf. It is a popular choice for formal events and ceremonies in Indonesia, as well as other Southeast Asian countries with Indonesian influences. In contrast, Sherwani is a traditional Indian clothing style that is typically worn by men and is characterized by its long tunic and pants, as well as its intricate embroidery and embellishments. While it is possible that a man could wear a Sherwani in certain cultural contexts, it is less commonly associated with traditional Indonesian culture."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39764879.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nDonatella Versace\nZhang Daqian",
+        "portability_answer": "Zhang Daqian",
+        "model_response": "\n\nBased on the given information that the speaker's gender is male, and there are no specific indications otherwise, it can be inferred that Zhang Daqian is the celebrity who most likely belongs to the same gender as the speaker. Donatella Versace is a female fashion designer, and therefore, she cannot be considered as the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39999866.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nGordon Ramsay\nMeryl Streep",
+        "portability_answer": "Gordon Ramsay",
+        "model_response": "Based on the given information, the speaker's gender is male. Therefore, out of the given options, only Gordon Ramsay is male. So, the answer to the question would be Gordon Ramsay."
+    },
+    {
+        "file": "en_test_0_common_voice_en_26209043.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Madam."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19715449.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nDashiki\nBaju Kurung",
+        "portability_answer": "Dashiki",
+        "model_response": "\n\nWithout additional context or information about the cultural background and specific traditions associated with the Dashiki and Baju Kurung clothing items, it is not possible to determine which one is most likely associated with the gender of the speaker. Both Dashiki and Baju Kurung are traditional clothing items worn by people from different cultures and regions, and their association with gender may vary based on local customs and traditions."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20976961.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Taking into account the gender of the speaker, which label best aligns with how individuals of the same gender as the speaker in the audio would typically be addressed?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "In this case, the label that best aligns with how individuals of the same gender as the speaker would typically be addressed is \"Ms.\" because the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23817814.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nSister\nBrother",
+        "portability_answer": "Sister",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be \"sister\" since the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31716424.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nMark Zuckerberg\nMichael Learned",
+        "portability_answer": "Mark Zuckerberg",
+        "model_response": "Based on the given information, the speaker in the audio is male. Therefore, the option that has the same gender as the speaker is Michael Learned, who is also male."
+    },
+    {
+        "file": "en_test_0_common_voice_en_16030401.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nMadam\nSir",
+        "portability_answer": "Madam",
+        "model_response": "Based on the given information that the speaker's gender is female, the most appropriate term of address or designation for individuals of the same gender would be \"Madam.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_39015721.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among the options do you think has the same gender as the speaker in the audio?\n\nOptions:\nMichelle Obama\nDwayne Johnson",
+        "portability_answer": "Dwayne Johnson",
+        "model_response": "I believe that Michelle Obama has the same gender as the speaker in the audio."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19736952.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nAbaya\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "\n\nGiven that the speaker's gender is male and the options are traditional clothing items worn by men or women, the most likely option associated with the speaker's gender would be Chapan. Chapan is a traditional Iranian man's garment that consists of a long tunic and pants. It is often worn as a formal wear or a daily outfit for men in Iran. On the other hand, Abaya is a woman's garment that consists of a long, loose-fitting dress worn over regular clothes or underwear. While it is also worn by some men in certain cultures, it is not typically associated with the male gender in the same way that Chapan is associated with men in an Iranian context."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17492946.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nRosa Parks\nNapoleon Bonaparte",
+        "portability_answer": "Rosa Parks",
+        "model_response": "Napoleon Bonaparte was a male. Therefore, he is not the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_19984720.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen carefully to the speaker’s voice in the audio. Which celebrity on the list would you identify as having the same gender as the speaker?\n\nOptions:\nYayoi Kusama\nLeonardo DiCaprio",
+        "portability_answer": "Leonardo DiCaprio",
+        "model_response": "Based on the voice in the audio, I would identify Leonardo DiCaprio as having the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_22335218.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nSoprano\nCountertenor",
+        "portability_answer": "Countertenor",
+        "model_response": "Male speakers are typically associated with a deeper vocal range, so the most likely option would be bass. However, it's important to note that vocal range can vary widely among individuals and cannot always be predicted based solely on gender. Some male speakers may have a higher pitch voice, similar to a soprano or countertenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31433767.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range best matches the gender of the speaker?\n\nOptions:\nTenor\nContralto",
+        "portability_answer": "Contralto",
+        "model_response": "The vocal range that best matches the gender of the speaker, who is female, is contralto."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18277778.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nAunt\nUncle",
+        "portability_answer": "Aunt",
+        "model_response": "Aunt"
+    },
+    {
+        "file": "en_test_0_common_voice_en_37585175.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nMaya Ying Lin\nBrad Pitt",
+        "portability_answer": "Brad Pitt",
+        "model_response": "Based on the voice in the audio, it is most likely that the speaker is male. Therefore, the celebrity associated with the same gender as the speaker from the given options would be Brad Pitt."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31693756.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Who among these celebrities do you think shares the same gender as the speaker?\n\nOptions:\nBenedict Cumberbatch\nBeyoncé",
+        "portability_answer": "Benedict Cumberbatch",
+        "model_response": "Benedict Cumberbatch is a male actor, and Beyoncé is a female singer. Therefore, the celebrity who shares the same gender as the speaker is Beyoncé."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18304023.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Considering the voice heard in the audio, which celebrity from the options below is most likely associated with the same gender as the speaker?\n\nOptions:\nWolfgang Puck\nSerena Williams",
+        "portability_answer": "Wolfgang Puck",
+        "model_response": "Wolfgang Puck is male. Therefore, he is the most likely celebrity associated with the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20800498.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nBaju Kurung\nDhoti",
+        "portability_answer": "Dhoti",
+        "model_response": "Based on the cultural context and the speaker being male, the traditional clothing item that best matches his gender would be Baju Kurung. Baju Kurung is a traditional Malay outfit worn by both men and women, but it is traditionally associated with women's clothing. It is made from lightweight fabrics such as cotton or silk and is often worn for special occasions or daily wear. Dhoti, on the other hand, is a traditional Indian garment that is typically worn by men. It is a long piece of cloth wrapped around the waist and legs, and it is not commonly worn by men in Malaysia."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21367755.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nDirndl\nDashiki",
+        "portability_answer": "Dashiki",
+        "model_response": "In the specific culture mentioned, a Dirndl would match the speaker's gender."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18342344.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be \"Lady.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_31609927.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nHarriet Tubman\nMahatma Gandhi",
+        "portability_answer": "Harriet Tubman",
+        "model_response": "Based on the given information, the historical figure who has the same gender as the speaker is Harriet Tubman."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21069613.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "The most appropriate term of address for people sharing the same gender as the speaker would be \"Lady.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_19941476.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nAkira Kurosawa\nBeyoncé",
+        "portability_answer": "Akira Kurosawa",
+        "model_response": "Beyoncé is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_36354767.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which label fits best for individuals of the same gender as the speaker?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20987285.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nHeldentenor\nSpinto soprano",
+        "portability_answer": "Spinto soprano",
+        "model_response": "Based on the information provided, it is most likely that the speaker's gender is associated with the Spinto soprano vocal range. A heldentenor is a type of male opera singer with a powerful and dramatic voice, typically in the higher register, while a spinto soprano is a female opera singer with a bright and agile voice that can extend into the higher register as well. Since the speaker is identified as female, it is more likely that her vocal range falls within the spinto soprano category."
+    },
+    {
+        "file": "en_test_0_common_voice_en_20678930.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following options would be the most appropriate term of address for people sharing the same gender as the speaker?\n\nOptions:\nUncle\nAunt",
+        "portability_answer": "Aunt",
+        "model_response": "Using the information provided, the most appropriate term of address for people sharing the same gender as the speaker would be \"Aunt.\" This is because the speaker's gender is female, and traditionally, an aunt is someone who is a female relative to one's parents. Therefore, addressing someone as \"Aunt\" would be appropriate if they are female and related to the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18710312.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nMs.\nMr.",
+        "portability_answer": "Ms.",
+        "model_response": "Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17960994.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listen closely to the provided audio file. Considering traditional clothing styles, which option best matches the speaker's gender in a specific cultural context?\n\nOptions:\nHijab\nBarong Tagalog",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nThe speaker is male, and both hijab and barong tagalog are traditional clothing styles worn by women in different cultures. However, since the speaker is male, neither hijab nor barong tagalog would be appropriate choices for him. \n\nIn terms of cultural context, hijab is traditionally worn by women in many Middle Eastern and North African countries, as well as parts of Southeast Asia and South Asia. Barong tagalog, on the other hand, is a traditional Filipino garment worn by both men and women, but it is more commonly associated with formal events and ceremonies. Therefore, based on the given options, neither hijab nor barong tagalog would be suitable matches for the speaker's gender in this specific cultural context."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18317544.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nCoco Chanel\nRyan Gosling",
+        "portability_answer": "Ryan Gosling",
+        "model_response": "Based on the given information, Ryan Gosling is most likely the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39828605.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following terms of address is most appropriate for individuals of the same gender as this speaker?\n\nOptions:\nMother\nFather",
+        "portability_answer": "Mother",
+        "model_response": "In this case, the most appropriate term of address would be \"mother\" since the speaker's gender is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37255991.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Focusing on the gender of the speaker and answer this question: which of the following terms of address or designations is most appropriate for individuals of the same gender as the speaker?\n\nOptions:\nMadam\nSir",
+        "portability_answer": "Madam",
+        "model_response": "Based on the given information that the speaker's gender is female, the most appropriate term of address or designation for individuals of the same gender would be \"Madam.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_60682.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nMr.\nMs.",
+        "portability_answer": "Ms.",
+        "model_response": "For individuals of the same gender as the speaker, the most accurate terms of address would be Ms."
+    },
+    {
+        "file": "en_test_0_common_voice_en_18593746.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "After carefully analyzing the speaker's voice in the provided audio file, which historical figure most likely shares the same gender as the speaker?\n\nOptions:\nLudwig van Beethoven\nAmelia Earhart",
+        "portability_answer": "Amelia Earhart",
+        "model_response": "Based on the analysis of the speaker's voice, it is most likely that the historical figure who shares the same gender as the speaker is Amelia Earhart."
+    },
+    {
+        "file": "en_test_0_common_voice_en_28458839.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening carefully to the provided audio, which of the following traditional clothing items is most likely associated with the gender of the speaker in a specific cultural context?\n\nOptions:\nGhagra Choli\nDashiki",
+        "portability_answer": "Dashiki",
+        "model_response": "\n\nThe most likely traditional clothing item associated with the gender of the speaker in the given cultural context is the Ghagra Choli. \n\nGhagra Choli is a traditional Indian costume worn by women. It consists of a long skirt called Ghagra and a blouse or top called Choli. In contrast, Dashiki is a traditional African shirt that is typically worn by men. Therefore, based on the speaker's gender and the cultural context provided, it can be inferred that the traditional clothing item most likely associated with him is the Ghagra Choli."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39908937.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nAlbert Einstein\nMother Teresa",
+        "portability_answer": "Mother Teresa",
+        "model_response": "Mother Teresa."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37478967.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which of the following historical figures is the same gender as the speaker?\n\nOptions:\nFrida Kahlo\nNeil Armstrong",
+        "portability_answer": "Frida Kahlo",
+        "model_response": "Frida Kahlo is the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_35400503.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Given the vocal characteristics heard in the audio, which of the following vocal ranges is more likely associated with individuals who share the speaker's gender?\n\nOptions:\nSoprano\nBass-baritone",
+        "portability_answer": "Bass-baritone",
+        "model_response": "Male\n\nThe speaker in the audio has a voice that falls within the male vocal range. Therefore, it is more likely that the vocal characteristics associated with the speaker are those typically associated with adult males. Sopranos and bass-baritones are both vocal ranges typically associated with female voices."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37698584.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Reflecting on traditional attire, which of the following clothing items is most likely associated with the gender of the speaker in the audio?\n\nOptions:\nBaju Kurung\nFustanella",
+        "portability_answer": "Fustanella",
+        "model_response": "Based on the given information that the speaker's gender is male and he speaks Mandarin, it is most likely that the traditional attire associated with him is Baju Kurung. Baju Kurung is a traditional Malay outfit worn by both men and women in Malaysia, while Fustanella is a traditional Greek garment worn mainly by women. Therefore, the correct answer would be A: Baju Kurung."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39942522.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which terms of address is most accurate for individuals of the same gender as the speaker?\n\nOptions:\nGentleman\nLady",
+        "portability_answer": "Lady",
+        "model_response": "Based on the given information that the speaker's gender is female, the most accurate term of address would be \"Lady.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_38053248.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Please focus on the speaker’s gender. Which terms of address would be the most accurate for individuals of the same gender as the speaker?\n\nOptions:\nSir\nMadam",
+        "portability_answer": "Madam",
+        "model_response": "Based on the information provided, the most accurate terms of address for individuals of the same gender as the speaker would be \"Madam.\""
+    },
+    {
+        "file": "en_test_0_common_voice_en_39062500.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Pay close attention to the voice in the provided audio file. Which historical figure is most likely to share the same gender as the speaker?\n\nOptions:\nNeil Armstrong\nJoan of Arc",
+        "portability_answer": "Joan of Arc",
+        "model_response": "Joan of Arc is most likely to share the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31070493.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which vocal range is most likely associated with the speaker's gender?\n\nOptions:\nBass\nMezzo-soprano",
+        "portability_answer": "Bass",
+        "model_response": "Male speakers are typically associated with a higher pitch vocal range than female speakers. Therefore, the most likely option associated with the speaker's gender would be B: Baritone, which is a male vocal range."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31769647.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nRobert Downey Jr.\nOprah Winfrey",
+        "portability_answer": "Robert Downey Jr.",
+        "model_response": "Based on the given speech by a male speaker, the option that best fits the context would be Robert Downey Jr. as he is also a male celebrity. Oprah Winfrey, on the other hand, is female and would not fit the context of the speech."
+    },
+    {
+        "file": "en_test_0_common_voice_en_21567727.wav",
+        "original_answer": "male",
+        "edited_answer": "female",
+        "portability_question": "Which historical figure has the same gender as the speaker?\n\nOptions:\nAbraham Lincoln\nRosa Parks",
+        "portability_answer": "Rosa Parks",
+        "model_response": "Rosa Parks has the same gender as the speaker."
+    },
+    {
+        "file": "en_test_0_common_voice_en_29434734.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "When evaluating the vocal range heard in the audio, which option is more likely associated with individuals of the same gender as the speaker?\n\nOptions:\nDramatic soprano\nHeldentenor",
+        "portability_answer": "Heldentenor",
+        "model_response": "Based on the given information that the speaker's gender is male, it is more likely that the vocal range heard in the audio is associated with a male individual. Therefore, the options \"Baritone\" and \"Tenor\" are more likely associated with individuals of the same gender as the speaker, while \"Soprano\" and \"Heldentenor\" are less likely."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38849850.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio recording, which of these traditional clothing items aligns most closely with the gender of the speaker in a particular cultural setting?\n\nOptions:\nQipao\nChapan",
+        "portability_answer": "Chapan",
+        "model_response": "Without additional context or information about the cultural setting and the specific style of the traditional clothing items being compared, it is not possible to accurately determine which item aligns more closely with the gender of the speaker. \n\nQipao, also known as a cheongsam, is a type of traditional Chinese dress that originated in the late 19th century and has since become a symbol of Chinese culture. It is typically worn by women and consists of a long, flowing skirt and a jacket.\n\nChapan, on the other hand, is a type of traditional Central Asian clothing that is worn by both men and women. It is typically made from woolen fabric and consists of a long, tunic-like garment that covers the body from head to toe.\n\nTherefore, without further information, it is impossible to determine which traditional clothing item aligns more closely with the gender of the speaker in a particular cultural setting."
+    },
+    {
+        "file": "en_test_0_common_voice_en_23863783.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Listening to the audio, which of these celebrities is most likely the same gender as the speaker?\n\nOptions:\nVirgil Abloh\nJennifer Aniston",
+        "portability_answer": "Virgil Abloh",
+        "model_response": "Based on the given information, the male speaker in the audio is most likely the same gender as Virgil Abloh. Jennifer Aniston is female."
+    },
+    {
+        "file": "en_test_0_common_voice_en_37185966.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "After listening to the provided audio, which of the following celebrities would most likely be considered the same gender as the speaker?\n\nOptions:\nVera Wang\nDavid Beckham",
+        "portability_answer": "David Beckham",
+        "model_response": "\n\nBased on the given speech by a male speaker, the most likely option for the celebrity's gender would be David Beckham."
+    },
+    {
+        "file": "en_test_0_common_voice_en_28872022.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these vocal ranges corresponds to the gender of the speaker in the audio?\n\nOptions:\nCountertenor\nDramatic soprano",
+        "portability_answer": "Countertenor",
+        "model_response": "The vocal range that corresponds to the gender of the speaker in the audio is tenor."
+    },
+    {
+        "file": "en_test_0_common_voice_en_17935705.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Based on the audio, who among these celebrities is the same gender as the speaker?\n\nOptions:\nWolfgang Puck\nScarlett Johansson",
+        "portability_answer": "Wolfgang Puck",
+        "model_response": "The celebrity who is the same gender as the speaker is Wolfgang Puck."
+    },
+    {
+        "file": "en_test_0_common_voice_en_39082174.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which of these traditional clothing items is most likely associated with the speaker’s gender within a cultural context?\n\nOptions:\nSalwar kameez\nBarong Tagalog",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nGiven that the speaker's gender is male and the options are traditional clothing items from different cultures, it is most likely that the correct answer is Barong Tagalog. The Barong Tagalog is a traditional Filipino costume worn by both men and women, but it is often associated with the male gender due to its distinctive design and style. On the other hand, Salwar kameez is a traditional Indian garment that is typically worn by women."
+    },
+    {
+        "file": "en_test_0_common_voice_en_38189490.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item best matches the speaker's gender based on the cultural context?\n\nOptions:\nSari\nBarong Tagalog",
+        "portability_answer": "Barong Tagalog",
+        "model_response": "\n\nThe traditional clothing item that best matches the speaker's gender based on the cultural context provided is the Sari. The Sari is a long, flowing piece of cloth worn by women in many Asian cultures, including the Philippines, where Barong Tagalog is also a traditional clothing item. Since the speaker is identified as male, the Sari would be the more appropriate choice for traditional clothing in this cultural context."
+    },
+    {
+        "file": "en_test_0_common_voice_en_31684476.wav",
+        "original_answer": "female",
+        "edited_answer": "male",
+        "portability_question": "Which traditional clothing item matches the speaker's gender in the specific culture?\n\nOptions:\nFustanella\nHijab",
+        "portability_answer": "Fustanella",
+        "model_response": "In the specific culture mentioned, the traditional clothing item that matches the speaker's gender would be the Fustanella."
+    }
+]
