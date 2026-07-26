@@ -1,0 +1,2702 @@
+[
+    {
+        "file": "de_test_0_common_voice_de_39183455.wav",
+        "original_answer": "German",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18979594.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed dishes is most likely to have originated in a country where this language is the primary spoken language?\n\nOptions:\nRatatouille\nClam Chowder\nSpätzle\nMooncakes",
+        "portability_answer": "Mooncakes",
+        "model_response": "Spätzle"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20003243.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_22053528.wav",
+        "portability_question": "Given the language spoken in the audio, which of the listed historical figures is most likely to have come from a nation where this language is part of its recognized official languages?\n\nOptions:\nGabriel García Márquez\nDu Fu\nWilliam Shakespeare\nLeonardo da Vinci",
+        "portability_answer": "Gabriel García Márquez",
+        "model_response": "Gabriel García Márquez"
+    },
+    {
+        "file": "es_test_0_common_voice_es_32231483.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36331016.wav",
+        "portability_question": "When translating 'wisdom' into the language spoken in this audio, which of the given words matches it most accurately?\n\nOptions:\nDummheit\nWeisheit\n어리석음\n지혜",
+        "portability_answer": "지혜",
+        "model_response": "Weisheit"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19001824.wav",
+        "original_answer": "French",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19696555.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the literary works listed was originally composed in this language?\n\nOptions:\n1984\nThe Makioka Sisters\nThe Plague\nThe Tale of Chunhyang",
+        "portability_answer": "1984",
+        "model_response": "The Makioka Sisters"
+    },
+    {
+        "file": "de_test_0_common_voice_de_20255382.wav",
+        "original_answer": "German",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20029967.wav",
+        "portability_question": "Considering the context of this audio and the spoken language, which of the listed tests is most widely used to measure proficiency in this specific language?\n\nOptions:\nEJU\nTOCFL\nCELI\nTCF",
+        "portability_answer": "CELI",
+        "model_response": "EJU"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_22750661.wav",
+        "original_answer": "French",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39050095.wav",
+        "portability_question": "Based on the spoken language in this audio, which of the provided language families encompasses this language?\n\nOptions:\nIndo-European\nJaponic\nSino-Tibetan\nKoreanic",
+        "portability_answer": "Japonic",
+        "model_response": "Japonic"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17843259.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_25619619.wav",
+        "portability_question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nJapan\nChina\nHaiti\nSouth Africa",
+        "portability_answer": "South Africa",
+        "model_response": "South Africa"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20289312.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_37471152.wav",
+        "portability_question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nDELF\nTOPIK\nGoethe-Zertifikat\nHSK",
+        "portability_answer": "DELF",
+        "model_response": "DELF"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314677.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_31893853.wav",
+        "portability_question": "When reviewing the language spoken in the audio, which historical figure is most likely from a country that uses this language as an official language?\n\nOptions:\nMurasaki Shikibu\nMiguel de Cervantes\nNelson Mandela\nNapoleon Bonaparte",
+        "portability_answer": "Nelson Mandela",
+        "model_response": "Murasaki Shikibu"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37597013.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38940287.wav",
+        "portability_question": "Among the provided ISO language codes, which one most accurately matches the language spoken in the audio sample?\n\nOptions:\nes\nfr\nja\nit",
+        "portability_answer": "ja",
+        "model_response": "ja"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_20894915.wav",
+        "original_answer": "French",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39003889.wav",
+        "portability_question": "From the cities provided, which one is located in a country where the language spoken in the audio is recognized officially?\n\nOptions:\nRome\nCape Town\nHiroshima\nVaduz",
+        "portability_answer": "Hiroshima",
+        "model_response": "Cape Town"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_29083030.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22145416.wav",
+        "portability_question": "When analyzing the language spoken in the audio, which of the following cities is most likely found in a country where the spoken language is part of its official languages?\n\nOptions:\nBeijing\nPort-au-Prince\nCape Town\nFrankfurt",
+        "portability_answer": "Beijing",
+        "model_response": "Beijing"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20021881.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_34366658.wav",
+        "portability_question": "From the options provided, which book was created in its original form in the language heard in this audio?\n\nOptions:\nThe Tale of Chunhyang\nThe Leopard\nPride and Prejudice\nHopscotch",
+        "portability_answer": "Hopscotch",
+        "model_response": "The Tales of Chunhyang"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_23976662.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314560.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the listed literary works was originally created in this language?\n\nOptions:\nKim Ji-young, Born 1982\nThe Betrothed\nLove in the Time of Cholera\nAll Quiet on the Western Front",
+        "portability_answer": "Kim Ji-young, Born 1982",
+        "model_response": "The Betrothed"
+    },
+    {
+        "file": "es_test_0_common_voice_es_32156457.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36438714.wav",
+        "portability_question": "Based on the audio sample that you have been presented with, which of the ISO language codes from the provided list most appropriately corresponds to the language spoken in the recording?\n\nOptions:\nfr\nes\nzh\nko",
+        "portability_answer": "ko",
+        "model_response": "ko"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19960885.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_627541.wav",
+        "portability_question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nPTE Academic\nHSK\nJLPT\nSIELE",
+        "portability_answer": "PTE Academic",
+        "model_response": "PTE Academic"
+    },
+    {
+        "file": "es_test_0_common_voice_es_29444210.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39476326.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed dishes is most likely to have originated in a country where this language is the primary spoken language?\n\nOptions:\nSamgyeopsal\nPaella\nDumplings\nRatatouille",
+        "portability_answer": "Samgyeopsal",
+        "model_response": "Samgyeopsal"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22145416.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_36341161.wav",
+        "portability_question": "The language heard in the audio belongs to which of the given language families?\n\nOptions:\nIndo-European\nKoreanic\nJaponic\nSino-Tibetan",
+        "portability_answer": "Japonic",
+        "model_response": "Japonic"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20038890.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20289312.wav",
+        "portability_question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nTacos\nCoq au Vin\nSpätzle\nTakoyaki",
+        "portability_answer": "Tacos",
+        "model_response": "Tacos"
+    },
+    {
+        "file": "de_test_0_common_voice_de_37501179.wav",
+        "original_answer": "German",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39476345.wav",
+        "portability_question": "Based on the audio sample provided, which of the listed countries recognizes the language being spoken as an official language within its borders?\n\nOptions:\nChina\nSouth Korea\nJapan\nHaiti",
+        "portability_answer": "South Korea",
+        "model_response": "South Korea"
+    },
+    {
+        "file": "es_test_0_common_voice_es_32233399.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_19004605.wav",
+        "portability_question": "From the given options, which city is most likely in a country where the audio’s language is an official language?\n\nOptions:\nDakar\nRome\nVienna\nShanghai",
+        "portability_answer": "Shanghai",
+        "model_response": "Dakar"
+    },
+    {
+        "file": "en_test_0_common_voice_en_17473365.wav",
+        "original_answer": "English",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20197325.wav",
+        "portability_question": "Based on the audio sample that you have been presented with, which of the ISO language codes from the provided list most appropriately corresponds to the language spoken in the recording?\n\nOptions:\nen\nko\nzh\nde",
+        "portability_answer": "de",
+        "model_response": "de"
+    },
+    {
+        "file": "en_test_0_common_voice_en_20343661.wav",
+        "original_answer": "English",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20021881.wav",
+        "portability_question": "From the cities provided, which one is located in a country where the language spoken in the audio is recognized officially?\n\nOptions:\nTokyo\nPyongyang\nInnsbruck\nFlorence",
+        "portability_answer": "Florence",
+        "model_response": "Florence"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38986196.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_18641317.wav",
+        "portability_question": "Based on the spoken language in this audio segment, which of the standardized tests among the options is best suited for individuals seeking to demonstrate proficiency in this language?\n\nOptions:\nHSK\nTCF\nSIELE\nIELTS",
+        "portability_answer": "TCF",
+        "model_response": "HSK"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_21340005.wav",
+        "original_answer": "French",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39047789.wav",
+        "portability_question": "From the provided list of ISO language codes, which one would you consider to be the most appropriate and accurate representation of the language being spoken in the audio recording presented?\n\nOptions:\nit\nja\nde\nes",
+        "portability_answer": "ja",
+        "model_response": "it"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_21852004.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_38206114.wav",
+        "portability_question": "If you need to evaluate your proficiency in the language spoken in this audio, which of the standardized tests listed among the options would be the most appropriate choice to measure your skills?\n\nOptions:\nSIELE\nCELI\nDALF\nHSK",
+        "portability_answer": "DALF",
+        "model_response": "CELI"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39878320.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22145032.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the literary works listed was originally composed in this language?\n\nOptions:\nThe Death of Artemio Cruz\nThe Great Gatsby\nThe Vegetarian\nWater Margin",
+        "portability_answer": "Water Margin",
+        "model_response": "The Death of Komio Cruz"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36331017.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_29077208.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed words is the correct translation of 'gratitude' into that language?\n\nOptions:\nresentimiento\n感激\ngratitud\n怨恨",
+        "portability_answer": "gratitud",
+        "model_response": "gratitud"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39043620.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20253547.wav",
+        "portability_question": "Based on the linguistic features and origins of the language heard in this audio, which of the provided language families does it most accurately align with?\n\nOptions:\nIndo-European\nSino-Tibetan\nKoreanic\nJaponic",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "en_test_0_common_voice_en_32222394.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36890766.wav",
+        "portability_question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nHSK\nKLAT\nTCF\nDELE",
+        "portability_answer": "KLAT",
+        "model_response": "HSK"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19128473.wav",
+        "portability_question": "Which country has the language spoken in the audio as one of its official languages?\n\nOptions:\nArgentina\nGermany\nJapan\nUnited Kingdom",
+        "portability_answer": "Germany",
+        "model_response": "Argentina"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19632011.wav",
+        "original_answer": "French",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_23797334.wav",
+        "portability_question": "Based on the audio sample that you have been presented with, which of the ISO language codes from the provided list most appropriately corresponds to the language spoken in the recording?\n\nOptions:\nde\nko\nes\nzh",
+        "portability_answer": "es",
+        "model_response": "es"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22055858.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_28536843.wav",
+        "portability_question": "Which of these countries officially uses the language spoken in the audio?\n\nOptions:\nMexico\nNorth Korea\nIndia\nIvory Coast",
+        "portability_answer": "Ivory Coast",
+        "model_response": "Ivory Coast"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22074020.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20009909.wav",
+        "portability_question": "From the options provided, which book was created in its original form in the language heard in this audio?\n\nOptions:\nIf This Is a Man\nPride and Prejudice\nLove in the Time of Cholera\nThousand Cranes",
+        "portability_answer": "If This Is a Man",
+        "model_response": "If This Is a Man"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20301927.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19736307.wav",
+        "portability_question": "Based on the audio provided, which of the countries listed in the options recognizes the language spoken in the audio as one of its official languages?\n\nOptions:\nJapan\nSan Marino\nIreland\nSenegal",
+        "portability_answer": "Senegal",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_20111427.wav",
+        "original_answer": "French",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_39278374.wav",
+        "portability_question": "From the listed countries, which one has the audio's spoken language as an official language?\n\nOptions:\nColombia\nSan Marino\nChina\nJapan",
+        "portability_answer": "San Marino",
+        "model_response": "Colombia"
+    },
+    {
+        "file": "de_test_0_common_voice_de_18206573.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_29444210.wav",
+        "portability_question": "From the listed options, which one correctly matches 'courage' in meaning in the language of this speech?\n\nOptions:\nvalentía\nmiedo\n용기\n두려움",
+        "portability_answer": "valentía",
+        "model_response": "valentía"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39025242.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20066528.wav",
+        "portability_question": "Which language family does the language in the audio belong to?\n\nOptions:\nSino-Tibetan\nJaponic\nIndo-European\nKoreanic",
+        "portability_answer": "Indo-European",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20360020.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_36478532.wav",
+        "portability_question": "Considering the context of this audio and the spoken language, which of the listed tests is most widely used to measure proficiency in this specific language?\n\nOptions:\nJLPT\nCELI\nSIELE\nTCF",
+        "portability_answer": "JLPT",
+        "model_response": "JLPT"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_35905905.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_32524714.wav",
+        "portability_question": "Which book among the options was composed in its original form in the language heard in this audio?\n\nOptions:\nThe Vegetarian\nThe Sorrows of Young Werther\nThe Red and the Black\nSnow Country",
+        "portability_answer": "The Sorrows of Young Werther",
+        "model_response": "The Sorrows of Young Werther"
+    },
+    {
+        "file": "en_test_0_common_voice_en_34082125.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39476327.wav",
+        "portability_question": "Considering the language spoken in the audio, which of the listed historical figures is most likely from a country where this language is officially recognized as one of its official languages?\n\nOptions:\nJean-Bédel Bokassa\nOda Nobunaga\nGalileo Galilei\nYi Sun-sin",
+        "portability_answer": "Yi Sun-sin",
+        "model_response": "Oda Nobunaga"
+    },
+    {
+        "file": "en_test_0_common_voice_en_39645706.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18992590.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nDELF\nDSH\nTOCFL\nIELTS",
+        "portability_answer": "TOCFL",
+        "model_response": "DELF"
+    },
+    {
+        "file": "es_test_0_common_voice_es_29112499.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314559.wav",
+        "portability_question": "From the provided options, which literary masterpiece was first crafted in the language of the audio?\n\nOptions:\nThe Tale of Chunhyang\nLike Water for Chocolate\nThe Scholars\nThe Garden of the Finzi-Continis",
+        "portability_answer": "The Tale of Chunhyang",
+        "model_response": "A"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19174856.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_34297867.wav",
+        "portability_question": "Given the audio recording presented and the task of determining the correct language code, which of the ISO language codes included in the list would most accurately align with the language being spoken in the recording?\n\nOptions:\nfr\nzh\nit\nde",
+        "portability_answer": "de",
+        "model_response": "de"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314693.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39747514.wav",
+        "portability_question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nSauerkraut\nPaella\nCornish Pasty\nTiramisu",
+        "portability_answer": "Cornish Pasty",
+        "model_response": "Sauerkraut"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19740814.wav",
+        "original_answer": "German",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19998169.wav",
+        "portability_question": "Which dish in the list is most strongly linked to a country where the language of this audio is primary?\n\nOptions:\nMapo Tofu\nCornish Pasty\nBouillabaisse\nSauerkraut",
+        "portability_answer": "Bouillabaisse",
+        "model_response": "Sauerkraut"
+    },
+    {
+        "file": "de_test_0_common_voice_de_20515439.wav",
+        "original_answer": "German",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_25009291.wav",
+        "portability_question": "If you need to evaluate your proficiency in the language spoken in this audio, which of the standardized tests listed among the options would be the most appropriate choice to measure your skills?\n\nOptions:\nHSK\nCELI\nTOPIK\nTestDaF",
+        "portability_answer": "CELI",
+        "model_response": "CELI"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20302216.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_39564535.wav",
+        "portability_question": "From the options given, which phrase best matches 'adventure' in the language spoken in this audio?\n\nOptions:\n冒険\nsécurité\nセーフティ\naventure",
+        "portability_answer": "aventure",
+        "model_response": "aventure"
+    },
+    {
+        "file": "es_test_0_common_voice_es_33274982.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22111686.wav",
+        "portability_question": "From the given figures, who is from a country with the audio’s language as an official language?\n\nOptions:\nLaozi\nWinston Churchill\nDante Alighieri\nJohann Wolfgang von Goethe",
+        "portability_answer": "Laozi",
+        "model_response": "Dante Alighieri"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19998169.wav",
+        "original_answer": "French",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20083381.wav",
+        "portability_question": "Which standardized test evaluates proficiency in the language spoken in this audio segment?\n\nOptions:\nCILS\nDSH\nTOPIK\nDELE",
+        "portability_answer": "CILS",
+        "model_response": "CILS"
+    },
+    {
+        "file": "es_test_0_common_voice_es_33881584.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22103885.wav",
+        "portability_question": "Which country among the options recognizes the language spoken in the audio as an official language?\n\nOptions:\nFrance\nChina\nAustria\nJapan",
+        "portability_answer": "China",
+        "model_response": "Austria"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39108683.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36438716.wav",
+        "portability_question": "From the given list of cities, which one is most likely found in a country that uses the language heard in the audio as part of its official languages?\n\nOptions:\nChihuahua City\nTokyo\nPyongyang\nFlorence",
+        "portability_answer": "Pyongyang",
+        "model_response": "Chihuahua City"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36800753.wav",
+        "original_answer": "Korean",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19008192.wav",
+        "portability_question": "For someone planning to study abroad or work in a country where the language in this audio is spoken, which test from the list would be the most practical for demonstrating proficiency?\n\nOptions:\nHSK\nGoethe-Zertifikat\nCILS\nDALF",
+        "portability_answer": "DALF",
+        "model_response": "HSK"
+    },
+    {
+        "file": "it_test_0_common_voice_it_21279649.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39037996.wav",
+        "portability_question": "From the options provided, which book was created in its original form in the language heard in this audio?\n\nOptions:\nPlease Look After Mom\nThe Great Gatsby\nSwann's Way\nAll Quiet on the Western Front",
+        "portability_answer": "Please Look After Mom",
+        "model_response": "Swann's Way"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36455842.wav",
+        "original_answer": "Korean",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19615229.wav",
+        "portability_question": "When reviewing the language spoken in the audio, which historical figure is most likely from a country that uses this language as an official language?\n\nOptions:\nWinston Churchill\nConfucius\nToyotomi Hideyoshi\nNapoleon Bonaparte",
+        "portability_answer": "Napoleon Bonaparte",
+        "model_response": "Winston Churchill"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18267223.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19618280.wav",
+        "portability_question": "Which book among the options was composed in its original form in the language heard in this audio?\n\nOptions:\nThe Death of Artemio Cruz\nFortress Besieged\nKokoro\nKim Ji-young, Born 1982",
+        "portability_answer": "The Death of Artemio Cruz",
+        "model_response": "The Death of Jose Cruz"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36655273.wav",
+        "original_answer": "Korean",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19140964.wav",
+        "portability_question": "Considering the provided audio recording, which of the ISO language codes listed among the options would be the most suitable choice for accurately identifying the language that is spoken throughout the recording?\n\nOptions:\nja\nko\nfr\nit",
+        "portability_answer": "fr",
+        "model_response": "fr"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20253547.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19612819.wav",
+        "portability_question": "From these options, which standardized test evaluates the language heard in the audio?\n\nOptions:\nTCF\nTestDaF\nSIELE\nTOEFL",
+        "portability_answer": "TCF",
+        "model_response": "B"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18968782.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_17840464.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed language families does it most accurately belong to, based on linguistic classification?\n\nOptions:\nKoreanic\nSino-Tibetan\nIndo-European\nJaponic",
+        "portability_answer": "Indo-European",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "it_test_0_common_voice_it_25009291.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18979308.wav",
+        "portability_question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nSIELE\nTOCFL\nTOEFL\nBKT",
+        "portability_answer": "TOCFL",
+        "model_response": "BRT"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_23232071.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314561.wav",
+        "portability_question": "From the provided list of ISO language codes, which one would you consider to be the most appropriate and accurate representation of the language being spoken in the audio recording presented?\n\nOptions:\nen\nko\nzh\nit",
+        "portability_answer": "ko",
+        "model_response": "ko"
+    },
+    {
+        "file": "it_test_0_common_voice_it_18244253.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_17868906.wav",
+        "portability_question": "Which of the provided translations accurately represents 'prosperity' in the language of this speech?\n\nOptions:\nstagnazione\nprosperità\nProsperität\nStillstand",
+        "portability_answer": "Prosperität",
+        "model_response": "prosperità"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19140964.wav",
+        "original_answer": "French",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39022785.wav",
+        "portability_question": "From the given options, which city is most likely in a country where the audio’s language is an official language?\n\nOptions:\nBeijing\nIncheon\nParis\nCape Town",
+        "portability_answer": "Cape Town",
+        "model_response": "Beijing"
+    },
+    {
+        "file": "es_test_0_common_voice_es_22208388.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_17767726.wav",
+        "portability_question": "Among the figures provided, who most likely came from a country that officially recognizes the audio’s language?\n\nOptions:\nJohann Wolfgang von Goethe\nOda Nobunaga\nLeonardo da Vinci\nMiguel de Cervantes",
+        "portability_answer": "Leonardo da Vinci",
+        "model_response": "Johann Wolfgang von Goethe"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19631305.wav",
+        "original_answer": "French",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19960885.wav",
+        "portability_question": "Which of these words is the correct translation of 'adventure' into the language spoken in the audio?\n\nOptions:\naventura\nseguridad\n冒险\n例行",
+        "portability_answer": "aventura",
+        "model_response": "aventura"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_39476345.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18661529.wav",
+        "portability_question": "Which language family does the language in the audio belong to?\n\nOptions:\nKoreanic\nIndo-European\nSino-Tibetan\nJaponic",
+        "portability_answer": "Sino-Tibetan",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18236093.wav",
+        "original_answer": "English",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_37501179.wav",
+        "portability_question": "Which book from the list was originally written in the language heard in this audio?\n\nOptions:\nSnow Country\nFoucault's Pendulum\nThe Tale of Chunhyang\nThe Sorrows of Young Werther",
+        "portability_answer": "The Sorrows of Young Werther",
+        "model_response": "The Sorrows of Young Werther"
+    },
+    {
+        "file": "es_test_0_common_voice_es_32232742.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_19011272.wav",
+        "portability_question": "Which of these historical figures is likely from a nation that officially recognizes the language spoken in the audio?\n\nOptions:\nWinston Churchill\nCai Lun\nLeonardo da Vinci\nSimón Bolívar",
+        "portability_answer": "Cai Lun",
+        "model_response": "Cai Lun"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39031116.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19174858.wav",
+        "portability_question": "Which of these literary classics was originally written in the language spoken in the audio?\n\nOptions:\nThe Trial\nJourney to the West\nThe Divine Comedy\nOne Hundred Years of Solitude",
+        "portability_answer": "The Divine Comedy",
+        "model_response": "The Divine Comedy"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18983483.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_37976442.wav",
+        "portability_question": "From the historical figures provided, who is most likely from a nation that formally recognizes the language in the audio as one of its official languages?\n\nOptions:\nJean-Bédel Bokassa\nMaria Theresa\nMurasaki Shikibu\nNelson Mandela",
+        "portability_answer": "Nelson Mandela",
+        "model_response": "Nelson Mandela"
+    },
+    {
+        "file": "en_test_0_common_voice_en_36016278.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18983115.wav",
+        "portability_question": "Considering the language spoken in the audio, which of the listed historical figures is most likely from a country where this language is officially recognized as one of its official languages?\n\nOptions:\nLaozi\nLudwig van Beethoven\nOda Nobunaga\nKim Gu",
+        "portability_answer": "Laozi",
+        "model_response": "Laozi"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22110899.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39248549.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nJapan\nChina\nGermany\nMexico",
+        "portability_answer": "Japan",
+        "model_response": "Japan"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39320520.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22154724.wav",
+        "portability_question": "From the provided options, which literary masterpiece was first crafted in the language of the audio?\n\nOptions:\nThe Divine Comedy\nStrange Stories from a Chinese Studio\nSnow Country\nThe Vegetarian",
+        "portability_answer": "Strange Stories from a Chinese Studio",
+        "model_response": "The Divine Comedy"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39127844.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314613.wav",
+        "portability_question": "From the historical figures provided, who is most likely from a nation that formally recognizes the language in the audio as one of its official languages?\n\nOptions:\nCai Lun\nMiguel de Cervantes\nWinston Churchill\nKim Gu",
+        "portability_answer": "Kim Gu",
+        "model_response": "Cai Lun"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19651907.wav",
+        "original_answer": "German",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_30199980.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nCai Lun\nMahatma Gandhi\nHermann Hesse\nNapoleon Bonaparte",
+        "portability_answer": "Napoleon Bonaparte",
+        "model_response": "Cai Lun"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18216835.wav",
+        "original_answer": "English",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_34261989.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSpain\nChina\nSan Marino\nGermany",
+        "portability_answer": "Germany",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "es_test_0_common_voice_es_26991582.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39108683.wav",
+        "portability_question": "Taking into account the origins, structure, and linguistic traits of the language in the audio, which of the listed families does it belong to?\n\nOptions:\nKoreanic\nSino-Tibetan\nIndo-European\nJaponic",
+        "portability_answer": "Japonic",
+        "model_response": "Japonic"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_36972690.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_33441332.wav",
+        "portability_question": "Which book among the options was composed in its original form in the language heard in this audio?\n\nOptions:\nThe Magic Mountain\nThe Tale of Chunhyang\nThe Scholars\nThe Catcher in the Rye",
+        "portability_answer": "The Scholars",
+        "model_response": "The Magic Mountain"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_19004592.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_27062049.wav",
+        "portability_question": "From the provided list of ISO language codes, which one would you consider to be the most appropriate and accurate representation of the language being spoken in the audio recording presented?\n\nOptions:\nen\nfr\nko\nes",
+        "portability_answer": "es",
+        "model_response": "es"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22118442.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_25539755.wav",
+        "portability_question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nArepas\nBibimbap\nRamen\nDumplings",
+        "portability_answer": "Ramen",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19935427.wav",
+        "original_answer": "English",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20312021.wav",
+        "portability_question": "From the given figures, who is from a country with the audio’s language as an official language?\n\nOptions:\nGiuseppe Verdi\nHermann Hesse\nDu Fu\nHokusai",
+        "portability_answer": "Giuseppe Verdi",
+        "model_response": "Hermen Hesse"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17499319.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_17960994.wav",
+        "portability_question": "Considering the provided audio recording, which of the ISO language codes listed among the options would be the most suitable choice for accurately identifying the language that is spoken throughout the recording?\n\nOptions:\nzh\nde\nen\nfr",
+        "portability_answer": "en",
+        "model_response": "en"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18598179.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_29193823.wav",
+        "portability_question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nChina\nColombia\nLiechtenstein\nJapan",
+        "portability_answer": "Liechtenstein",
+        "model_response": "China"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17301827.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_18216835.wav",
+        "portability_question": "Which literary classic was initially authored in the language heard in the audio clip?\n\nOptions:\nLes Misérables\nFaust\nTo Kill a Mockingbird\nThe Tale of Chunhyang",
+        "portability_answer": "To Kill a Mockingbird",
+        "model_response": "The Tales of Genghis Khan"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39134788.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314686.wav",
+        "portability_question": "Taking the language spoken in the audio into account, which of the dishes listed originates from a country where this language is the dominant form of communication?\n\nOptions:\nBouillabaisse\nRisotto\nBibimbap\nMooncakes",
+        "portability_answer": "Bibimbap",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38973252.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_21782932.wav",
+        "portability_question": "Given the language spoken in this audio, which of the listed literary classics was originally authored in this language?\n\nOptions:\nThe Tale of Genji\nLove in the Time of Cholera\nSteppenwolf\nCandide",
+        "portability_answer": "Candide",
+        "model_response": "The Tale of Genji"
+    },
+    {
+        "file": "de_test_0_common_voice_de_18220231.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19598602.wav",
+        "portability_question": "Which option represents 'gratitude' in the language spoken in this audio clip?\n\nOptions:\n분노\nresentimiento\n감사\ngratitud",
+        "portability_answer": "gratitud",
+        "model_response": "gratitud"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37159833.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19983261.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the literary works listed was originally composed in this language?\n\nOptions:\nDecameron\nOur Twisted Hero\nFaust\nPride and Prejudice",
+        "portability_answer": "Decameron",
+        "model_response": "Pride and Prejudice"
+    },
+    {
+        "file": "es_test_0_common_voice_es_25268035.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20266928.wav",
+        "portability_question": "Which country among the options recognizes the language spoken in the audio as an official language?\n\nOptions:\nItaly\nNew Zealand\nHaiti\nJapan",
+        "portability_answer": "Italy",
+        "model_response": "New Zealand"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_17316307.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20231703.wav",
+        "portability_question": "When considering the language spoken in this audio recording, which of the provided countries includes this language as one of its officially recognized languages?\n\nOptions:\nNew Zealand\nJapan\nFrance\nLiechtenstein",
+        "portability_answer": "Liechtenstein",
+        "model_response": "New Zealand"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_17323684.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20255382.wav",
+        "portability_question": "From the choices provided, which ISO language code would be the most suitable to categorize the language spoken in the given audio?\n\nOptions:\nit\nde\nko\nen",
+        "portability_answer": "de",
+        "model_response": "de"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19704669.wav",
+        "original_answer": "English",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_39510238.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nTOPIK\nDSH\nBJT\nDELF",
+        "portability_answer": "DELF",
+        "model_response": "DELF"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19489627.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_28537332.wav",
+        "portability_question": "If you're planning to apply to a program or position that requires fluency in the language heard in this audio, which of the listed tests would be the most suitable for assessing your ability?\n\nOptions:\nSIELE\nGoethe-Zertifikat\nDELF\nHSK",
+        "portability_answer": "SIELE",
+        "model_response": "SIELE"
+    },
+    {
+        "file": "de_test_0_common_voice_de_33974641.wav",
+        "original_answer": "German",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314612.wav",
+        "portability_question": "From the provided list of translations, which one corresponds to 'masterpiece' in the language of the audio?\n\nOptions:\n걸작\n杰作\n艺术品\n예술 작품",
+        "portability_answer": "걸작",
+        "model_response": "걸작"
+    },
+    {
+        "file": "de_test_0_common_voice_de_23830842.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38897171.wav",
+        "portability_question": "For someone planning to study abroad or work in a country where the language in this audio is spoken, which test from the list would be the most practical for demonstrating proficiency?\n\nOptions:\nEJU\nCILS\nSIELE\nHSK",
+        "portability_answer": "EJU",
+        "model_response": "EJU"
+    },
+    {
+        "file": "en_test_0_common_voice_en_23846478.wav",
+        "original_answer": "English",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38974017.wav",
+        "portability_question": "Among the provided cities, which is most likely located in a country with the audio’s language as an official language?\n\nOptions:\nFrankfurt\nNaples\nKyoto\nShenzhen",
+        "portability_answer": "Kyoto",
+        "model_response": "Frankfurt"
+    },
+    {
+        "file": "de_test_0_common_voice_de_32524714.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38985102.wav",
+        "portability_question": "From the listed options, which one correctly matches 'prosperity' in meaning in the language of this speech?\n\nOptions:\nArmut\nプアリティー\nProsperität\n繁栄",
+        "portability_answer": "繁栄",
+        "model_response": "Prosperità"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_25539755.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19009341.wav",
+        "portability_question": "Which of these language families corresponds to the language heard in the audio?\n\nOptions:\nKoreanic\nJaponic\nSino-Tibetan\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_21782932.wav",
+        "original_answer": "French",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38954212.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nBJT\nBKT\nDELE\nHSK",
+        "portability_answer": "BJT",
+        "model_response": "BRT"
+    },
+    {
+        "file": "it_test_0_common_voice_it_30761056.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18983483.wav",
+        "portability_question": "From the listed options, which one corresponds to 'gratitude' in the language heard in the audio?\n\nOptions:\n感謝の気持ち\n感激\n冷漠\n無関心",
+        "portability_answer": "感激",
+        "model_response": "A"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19993046.wav",
+        "original_answer": "Italian",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39990821.wav",
+        "portability_question": "Which book among the options was composed in its original form in the language heard in this audio?\n\nOptions:\nHeart of Darkness\nDream of the Red Chamber\nThe Garden of the Finzi-Continis\nDeath in Venice",
+        "portability_answer": "Heart of Darkness",
+        "model_response": "The Garden of the Finzi-Continis"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20066531.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19705581.wav",
+        "portability_question": "From the given options, which city is most likely in a country where the audio’s language is an official language?\n\nOptions:\nWellington\nTaipei\nAbidjan\nInnsbruck",
+        "portability_answer": "Abidjan",
+        "model_response": "Wellington"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_20275008.wav",
+        "original_answer": "French",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39022955.wav",
+        "portability_question": "Which of the provided translations accurately represents 'kindness' in the language of this speech?\n\nOptions:\nFreundlichkeit\n優しさ\n残酷さ\nGrausamkeit",
+        "portability_answer": "優しさ",
+        "model_response": "Freundlichkeit"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_36343946.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19938518.wav",
+        "portability_question": "To what family does the language in the audio belong?\n\nOptions:\nKoreanic\nSino-Tibetan\nJaponic\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "de_test_0_common_voice_de_34297867.wav",
+        "original_answer": "German",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37159817.wav",
+        "portability_question": "From the options given, which phrase best matches 'wisdom' in the language spoken in this audio?\n\nOptions:\n어리석음\n지혜\nsaggezza\nstoltezza",
+        "portability_answer": "지혜",
+        "model_response": "wisdom"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20312021.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39237891.wav",
+        "portability_question": "Based on the audio provided, which of the countries listed in the options recognizes the language spoken in the audio as one of its official languages?\n\nOptions:\nNew Zealand\nChile\nJapan\nVatican City",
+        "portability_answer": "Japan",
+        "model_response": "New Zealand"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314699.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_32233399.wav",
+        "portability_question": "Based on the audio recording and the spoken language, which city among the provided options is most likely to be located in a country that officially designates this language as one of its official languages?\n\nOptions:\nShenzhen\nVenice\nMadrid\nBusan",
+        "portability_answer": "Madrid",
+        "model_response": "Shenzhen"
+    },
+    {
+        "file": "en_test_0_common_voice_en_31893853.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39082018.wav",
+        "portability_question": "Which dish in the list is most strongly linked to a country where the language of this audio is primary?\n\nOptions:\nFish and Chips\nQuiche Lorraine\nSchnitzel\nBibimbap",
+        "portability_answer": "Bibimbap",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_39082021.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_23608833.wav",
+        "portability_question": "Which of these literary classics was originally written in the language spoken in the audio?\n\nOptions:\nThe Great Gatsby\nStrange Stories from a Chinese Studio\nThe Makioka Sisters\nThe Tale of Chunhyang",
+        "portability_answer": "Strange Stories from a Chinese Studio",
+        "model_response": "The Great Gatsby"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_19641070.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_39764888.wav",
+        "portability_question": "Taking into account the origins, structure, and linguistic traits of the language in the audio, which of the listed families does it belong to?\n\nOptions:\nJaponic\nSino-Tibetan\nKoreanic\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39044464.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_23781489.wav",
+        "portability_question": "Considering the provided audio recording, which of the ISO language codes listed among the options would be the most suitable choice for accurately identifying the language that is spoken throughout the recording?\n\nOptions:\nko\nit\nzh\nde",
+        "portability_answer": "it",
+        "model_response": "it"
+    },
+    {
+        "file": "de_test_0_common_voice_de_26820347.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38991429.wav",
+        "portability_question": "When analyzing the language spoken in the audio, which of the following cities is most likely found in a country where the spoken language is part of its official languages?\n\nOptions:\nColmar\nBusan\nOsaka\nBeijing",
+        "portability_answer": "Osaka",
+        "model_response": "Osaka"
+    },
+    {
+        "file": "de_test_0_common_voice_de_18595341.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19635567.wav",
+        "portability_question": "Based on the spoken language in this audio segment, which of the standardized tests among the options is best suited for individuals seeking to demonstrate proficiency in this language?\n\nOptions:\nDSH\nSIELE\nPTE Academic\nDELF",
+        "portability_answer": "SIELE",
+        "model_response": "SIELE"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38922072.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_25268035.wav",
+        "portability_question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nTempura\nTacos\nBulgogi\nLasagna",
+        "portability_answer": "Tacos",
+        "model_response": "Bulgogi"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36438717.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_23818648.wav",
+        "portability_question": "Among the figures provided, who most likely came from a country that officially recognizes the audio’s language?\n\nOptions:\nCai Lun\nPablo Neruda\nJean-Bédel Bokassa\nMahatma Gandhi",
+        "portability_answer": "Pablo Neruda",
+        "model_response": "Cai Lun"
+    },
+    {
+        "file": "it_test_0_common_voice_it_29267781.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22109328.wav",
+        "portability_question": "Which book from the list was originally written in the language heard in this audio?\n\nOptions:\nLord of the Flies\nGerminal\nFoucault's Pendulum\nThe Rice-Sprout Song",
+        "portability_answer": "The Rice-Sprout Song",
+        "model_response": "The Rice-Sprout Song"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19736307.wav",
+        "original_answer": "French",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_18330913.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nNelson Mandela\nEmperor Meiji\nKim Dae-jung\nGiuseppe Verdi",
+        "portability_answer": "Giuseppe Verdi",
+        "model_response": "Nelson Mandela"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37212000.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_36356854.wav",
+        "portability_question": "Taking into account the spoken language in this audio, which language family among the options is it classified under within linguistic studies?\n\nOptions:\nIndo-European\nSino-Tibetan\nJaponic\nKoreanic",
+        "portability_answer": "Japonic",
+        "model_response": "Japonic"
+    },
+    {
+        "file": "de_test_0_common_voice_de_38232955.wav",
+        "original_answer": "German",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22054810.wav",
+        "portability_question": "From the given ISO language codes, which one correctly represents the language being spoken in this audio recording?\n\nOptions:\nes\nzh\nja\nde",
+        "portability_answer": "zh",
+        "model_response": "zh"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19740504.wav",
+        "original_answer": "French",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_17700748.wav",
+        "portability_question": "From the given options, which dish originates from a country where the language spoken in this audio is dominant?\n\nOptions:\nPizza Margherita\nTempura\nBulgogi\nPretzel",
+        "portability_answer": "Pizza Margherita",
+        "model_response": "Bulgogi"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22185786.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37195156.wav",
+        "portability_question": "Based on the audio recording and the spoken language, which city among the provided options is most likely to be located in a country that officially designates this language as one of its official languages?\n\nOptions:\nIncheon\nManchester\nShenzhen\nNaples",
+        "portability_answer": "Incheon",
+        "model_response": "Incheon"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37195197.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20073165.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed language families does it most accurately belong to, based on linguistic classification?\n\nOptions:\nSino-Tibetan\nKoreanic\nJaponic\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20083382.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_20723077.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the literary works listed was originally composed in this language?\n\nOptions:\nThousand Cranes\nSwann's Way\nWuthering Heights\nWater Margin",
+        "portability_answer": "Swann's Way",
+        "model_response": "Thousand Cranes"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19167601.wav",
+        "original_answer": "German",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19726647.wav",
+        "portability_question": "Among the provided options, which phrase corresponds to 'kindness' in meaning in the language heard in this speech?\n\nOptions:\ngentillesse\nindifférence\n善良\n冷漠",
+        "portability_answer": "gentillesse",
+        "model_response": "gentillesse"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20007783.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19729843.wav",
+        "portability_question": "Based on the audio, which of the listed dishes is most likely to have cultural and culinary ties to a country where the spoken language is widely used?\n\nOptions:\nFish and Chips\nGazpacho\nPizza Margherita\nPeking Duck",
+        "portability_answer": "Fish and Chips",
+        "model_response": "Gazpacho"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18556.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19952288.wav",
+        "portability_question": "Among the provided ISO language codes, which one most accurately matches the language spoken in the audio sample?\n\nOptions:\nja\nfr\nes\nit",
+        "portability_answer": "es",
+        "model_response": "es"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38881810.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_18854899.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nNapoleon Bonaparte\nJohann Wolfgang von Goethe\nLeonardo da Vinci\nWinston Churchill",
+        "portability_answer": "Winston Churchill",
+        "model_response": "Johann Wolfgang von Goethe"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17499321.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19489627.wav",
+        "portability_question": "Based on the audio provided, which of the countries listed in the options recognizes the language spoken in the audio as one of its official languages?\n\nOptions:\nNew Zealand\nAustria\nColombia\nSenegal",
+        "portability_answer": "New Zealand",
+        "model_response": "Austria"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19994105.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_22335218.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nPLIDA\nTOCFL\nPTE Academic\nTOPIK",
+        "portability_answer": "PTE Academic",
+        "model_response": "PLIDA"
+    },
+    {
+        "file": "en_test_0_common_voice_en_21730660.wav",
+        "original_answer": "English",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20019278.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nTOPIK\nCELI\nTestDaF\nBJT",
+        "portability_answer": "CELI",
+        "model_response": "TOPIK"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22145101.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39394285.wav",
+        "portability_question": "Based on the audio sample provided, which of the listed countries recognizes the language being spoken as an official language within its borders?\n\nOptions:\nEcuador\nSenegal\nLiechtenstein\nJapan",
+        "portability_answer": "Japan",
+        "model_response": "Ecuador"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19765382.wav",
+        "original_answer": "German",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_22740885.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the provided phrases is the correct translation of 'courage' in this language?\n\nOptions:\n용기\nbravoure\n겁쟁이\ntimidité",
+        "portability_answer": "bravoure",
+        "model_response": "용기"
+    },
+    {
+        "file": "it_test_0_common_voice_it_18330913.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19937217.wav",
+        "portability_question": "Which literary classic was initially authored in the language heard in the audio clip?\n\nOptions:\nFortress Besieged\nThe Death of Artemio Cruz\nSteppenwolf\nThe Catcher in the Rye",
+        "portability_answer": "Steppenwolf",
+        "model_response": "The Death of Komio Cruz"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_18297347.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_23830842.wav",
+        "portability_question": "If you plan to study abroad, which test measures the language heard in this audio?\n\nOptions:\nDALF\nHSK\nKLAT\nDSH",
+        "portability_answer": "DSH",
+        "model_response": "HSK"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_35905908.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_18206573.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed dishes is most likely to have originated in a country where this language is the primary spoken language?\n\nOptions:\nBibimbap\nMiso Soup\nBratwurst\nMooncakes",
+        "portability_answer": "Bratwurst",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37159818.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_23856387.wav",
+        "portability_question": "Which of these historical figures is likely from a nation that officially recognizes the language spoken in the audio?\n\nOptions:\nMichelangelo Buonarroti\nSimón Bolívar\nKim Dae-jung\nWinston Churchill",
+        "portability_answer": "Michelangelo Buonarroti",
+        "model_response": "Simón Bolívar"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19984742.wav",
+        "original_answer": "Italian",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_106966.wav",
+        "portability_question": "Which city among the options is likely in a country where the audio’s language is an official language?\n\nOptions:\nMadrid\nParis\nEdinburgh\nShanghai",
+        "portability_answer": "Edinburgh",
+        "model_response": "Edinburgh"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22210647.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37159821.wav",
+        "portability_question": "From the given options, which city is most likely in a country where the audio’s language is an official language?\n\nOptions:\nSeoul\nBogotá\nShenzhen\nCape Town",
+        "portability_answer": "Seoul",
+        "model_response": "Seoul"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38940287.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_33881584.wav",
+        "portability_question": "Which historical figure is most likely from a country where the language in the audio is official?\n\nOptions:\nHermann Hesse\nPablo Neruda\nGiuseppe Verdi\nWilliam Shakespeare",
+        "portability_answer": "Pablo Neruda",
+        "model_response": "Pablo Neruda"
+    },
+    {
+        "file": "en_test_0_common_voice_en_17823851.wav",
+        "original_answer": "English",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20279928.wav",
+        "portability_question": "Given the language spoken in the audio, which of the listed historical figures is most likely to have come from a nation where this language is part of its recognized official languages?\n\nOptions:\nEdmund Hillary\nSigmund Freud\nYi Hwang\nConfucius",
+        "portability_answer": "Sigmund Freud",
+        "model_response": "Sigmund Freud"
+    },
+    {
+        "file": "es_test_0_common_voice_es_22140040.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20003243.wav",
+        "portability_question": "When considering the language spoken in this audio recording, which of the provided countries includes this language as one of its officially recognized languages?\n\nOptions:\nAustria\nItaly\nMexico\nSouth Africa",
+        "portability_answer": "Italy",
+        "model_response": "Austria"
+    },
+    {
+        "file": "de_test_0_common_voice_de_39904490.wav",
+        "original_answer": "German",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22074020.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nDu Fu\nWinston Churchill\nGiuseppe Verdi\nMiguel de Cervantes",
+        "portability_answer": "Du Fu",
+        "model_response": "Du Fu"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19729843.wav",
+        "original_answer": "English",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19646429.wav",
+        "portability_question": "From the given figures, who is from a country with the audio’s language as an official language?\n\nOptions:\nLéopold Sédar Senghor\nKing Sejong\nMurasaki Shikibu\nZheng He",
+        "portability_answer": "Léopold Sédar Senghor",
+        "model_response": "Léopold Sédar Senghor"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18979331.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_31693756.wav",
+        "portability_question": "Which language family does the language in the audio belong to?\n\nOptions:\nSino-Tibetan\nIndo-European\nKoreanic\nJaponic",
+        "portability_answer": "Indo-European",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36438714.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19950997.wav",
+        "portability_question": "From the listed options, which one corresponds to 'adventure' in the language heard in the audio?\n\nOptions:\n无聊\n冒险\naventura\nrutina",
+        "portability_answer": "aventura",
+        "model_response": "aventura"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19604622.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_39805524.wav",
+        "portability_question": "When considering the language heard in the audio, which of the provided dishes is most representative of the cuisine from a country where this language is primarily spoken?\n\nOptions:\nSchnitzel\nPaella\nMapo Tofu\nSamgyeopsal",
+        "portability_answer": "Schnitzel",
+        "model_response": "Schnitzel"
+    },
+    {
+        "file": "es_test_0_common_voice_es_34526029.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22059480.wav",
+        "portability_question": "Which historical figure is most likely from a country where the language in the audio is official?\n\nOptions:\nJohann Wolfgang von Goethe\nWinston Churchill\nConfucius\nMiguel de Cervantes",
+        "portability_answer": "Confucius",
+        "model_response": "Johann Wolfgang von Goethe"
+    },
+    {
+        "file": "de_test_0_common_voice_de_34261989.wav",
+        "original_answer": "German",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314693.wav",
+        "portability_question": "Given the language spoken in this audio, which of the listed literary classics was originally authored in this language?\n\nOptions:\nThe Plague\nNorwegian Wood\nLord of the Flies\nKim Ji-young, Born 1982",
+        "portability_answer": "Kim Ji-young, Born 1982",
+        "model_response": "C"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19965749.wav",
+        "original_answer": "French",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20023816.wav",
+        "portability_question": "From the provided options, which literary masterpiece was first crafted in the language of the audio?\n\nOptions:\nWater Margin\nKokoro\nKim Ji-young, Born 1982\nThe Leopard",
+        "portability_answer": "The Leopard",
+        "model_response": "C"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22054810.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_18297347.wav",
+        "portability_question": "When considering the language heard in the audio, which of the provided dishes is most representative of the cuisine from a country where this language is primarily spoken?\n\nOptions:\nShepherd's Pie\nPeking Duck\nQuiche Lorraine\nRisotto",
+        "portability_answer": "Quiche Lorraine",
+        "model_response": "Quiche Lorraine"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314695.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19984720.wav",
+        "portability_question": "From the options provided, which book was created in its original form in the language heard in this audio?\n\nOptions:\nThe Garden of the Finzi-Continis\nNorwegian Wood\nAll Quiet on the Western Front\nLord of the Flies",
+        "portability_answer": "Lord of the Flies",
+        "model_response": "The Garden of the Finzi-Continis"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20023816.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19609911.wav",
+        "portability_question": "Taking into account the language spoken in the audio, which historical figure is most likely from a country that includes this language as an official language?\n\nOptions:\nGiuseppe Verdi\nEdmund Hillary\nSimón Bolívar\nShin Saimdang",
+        "portability_answer": "Simón Bolívar",
+        "model_response": "Simón Bolívar"
+    },
+    {
+        "file": "en_test_0_common_voice_en_22335218.wav",
+        "original_answer": "English",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_22054568.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the listed literary works was originally created in this language?\n\nOptions:\nRashomon\nFoucault's Pendulum\nPlease Look After Mom\nThe Trial",
+        "portability_answer": "Rashomon",
+        "model_response": "Rashomon"
+    },
+    {
+        "file": "en_test_0_common_voice_en_39022785.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22185786.wav",
+        "portability_question": "Based on the audio, which of the listed dishes is most likely to have cultural and culinary ties to a country where the spoken language is widely used?\n\nOptions:\nCornish Pasty\nMooncakes\nRisotto\nSpätzle",
+        "portability_answer": "Mooncakes",
+        "model_response": "Spätzle"
+    },
+    {
+        "file": "de_test_0_common_voice_de_25326727.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_30205543.wav",
+        "portability_question": "Which literary classic was initially authored in the language heard in the audio clip?\n\nOptions:\nThe Leopard\nSiddhartha\nThe Stranger\nSnow Country",
+        "portability_answer": "Snow Country",
+        "model_response": "The Stranger"
+    },
+    {
+        "file": "it_test_0_common_voice_it_17443191.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19561153.wav",
+        "portability_question": "From the listed countries, which one has the audio's spoken language as an official language?\n\nOptions:\nFrance\nItaly\nGermany\nMexico",
+        "portability_answer": "Germany",
+        "model_response": "France"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39012813.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_20311057.wav",
+        "portability_question": "From the given list of cities, which one is most likely found in a country that uses the language heard in the audio as part of its official languages?\n\nOptions:\nBusan\nMadrid\nVienna\nDakar",
+        "portability_answer": "Dakar",
+        "model_response": "Vienna"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22145037.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39077427.wav",
+        "portability_question": "Based on the spoken language in this audio segment, which of the standardized tests among the options is best suited for individuals seeking to demonstrate proficiency in this language?\n\nOptions:\nJ.TEST\nDALF\nBKT\nCILS",
+        "portability_answer": "J.TEST",
+        "model_response": "J.TEST"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19935040.wav",
+        "original_answer": "English",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20360020.wav",
+        "portability_question": "Among the countries presented as options, which one officially identifies the language spoken in the audio as an official language?\n\nOptions:\nFrance\nChina\nItaly\nLiechtenstein",
+        "portability_answer": "Italy",
+        "model_response": "Italy"
+    },
+    {
+        "file": "es_test_0_common_voice_es_27062049.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38852948.wav",
+        "portability_question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nJapan\nChina\nSouth Africa\nHaiti",
+        "portability_answer": "Japan",
+        "model_response": "SouthAfrica"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19632011.wav",
+        "portability_question": "Which option represents 'wisdom' correctly in meaning in the language of the audio?\n\nOptions:\nfolie\n愚かさ\nsagesse\nウィズダム",
+        "portability_answer": "sagesse",
+        "model_response": "sagesse"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17868906.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_20343661.wav",
+        "portability_question": "Given the language heard in the audio, which of the provided dishes is most closely linked to the culinary traditions of a country where this language is the official language?\n\nOptions:\nDumplings\nPretzel\nShepherd's Pie\nSushi",
+        "portability_answer": "Shepherd's Pie",
+        "model_response": "Dumplings"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20263438.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_25539757.wav",
+        "portability_question": "When considering the language of the audio, which of the listed books was authored in its original form in that language?\n\nOptions:\nSnow Country\nMoby Dick\nAll Quiet on the Western Front\nThe Vegetarian",
+        "portability_answer": "Snow Country",
+        "model_response": "Snow Country"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_30205543.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_18493314.wav",
+        "portability_question": "Among the provided options, which phrase corresponds to 'gratitude' in meaning in the language heard in this speech?\n\nOptions:\nDankbarkeit\ngratitud\negoísmo\nEgoismus",
+        "portability_answer": "Dankbarkeit",
+        "model_response": "Dankbarkeit"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19996794.wav",
+        "original_answer": "Italian",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_34082125.wav",
+        "portability_question": "Which of these countries officially uses the language spoken in the audio?\n\nOptions:\nSan Marino\nSouth Africa\nColombia\nIvory Coast",
+        "portability_answer": "South Africa",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39084450.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36800752.wav",
+        "portability_question": "From these options, which standardized test evaluates the language heard in the audio?\n\nOptions:\nHSK\nPTE Academic\nCILS\nKLAT",
+        "portability_answer": "KLAT",
+        "model_response": "PTE Academic"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_24085763.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37211926.wav",
+        "portability_question": "Which country has the language spoken in the audio as one of its official languages?\n\nOptions:\nJapan\nSpain\nNorth Korea\nIndia",
+        "portability_answer": "North Korea",
+        "model_response": "North Korea"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_33441332.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314702.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which phrase best corresponds to 'kindness' as expressed in this language?\n\nOptions:\n친절\n優しさ\n이기심\n我がまま",
+        "portability_answer": "친절",
+        "model_response": "친절"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22105325.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_29267781.wav",
+        "portability_question": "Among the provided ISO language codes, which one most accurately matches the language spoken in the audio sample?\n\nOptions:\nko\nit\nja\nfr",
+        "portability_answer": "it",
+        "model_response": "ko"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_25458750.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37211945.wav",
+        "portability_question": "To what family does the language in the audio belong?\n\nOptions:\nJaponic\nIndo-European\nSino-Tibetan\nKoreanic",
+        "portability_answer": "Koreanic",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19612819.wav",
+        "original_answer": "French",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19562559.wav",
+        "portability_question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nPaella\nShepherd's Pie\nQuiche Lorraine\nGelato",
+        "portability_answer": "Shepherd's Pie",
+        "model_response": "Paella"
+    },
+    {
+        "file": "de_test_0_common_voice_de_18493314.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20007783.wav",
+        "portability_question": "When reviewing the language spoken in the audio, which historical figure is most likely from a country that uses this language as an official language?\n\nOptions:\nEdmund Hillary\nHermann Hesse\nSimón Bolívar\nMurasaki Shikibu",
+        "portability_answer": "Simón Bolívar",
+        "model_response": "Simón Bolívar"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20387084.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_27696698.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nOda Nobunaga\nMichelangelo Buonarroti\nHermann Hesse\nLaozi",
+        "portability_answer": "Oda Nobunaga",
+        "model_response": "Oda Nobunaga"
+    },
+    {
+        "file": "es_test_0_common_voice_es_25566581.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39320520.wav",
+        "portability_question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nSpätzle\nTacos\nClam Chowder\nTakoyaki",
+        "portability_answer": "Takoyaki",
+        "model_response": "Spätzle"
+    },
+    {
+        "file": "en_test_0_common_voice_en_21883920.wav",
+        "original_answer": "English",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_38973252.wav",
+        "portability_question": "From the listed countries, which one has the audio's spoken language as an official language?\n\nOptions:\nItaly\nChina\nPeru\nJapan",
+        "portability_answer": "Japan",
+        "model_response": "Japan"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19615229.wav",
+        "original_answer": "French",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20301927.wav",
+        "portability_question": "For someone planning to study abroad or work in a country where the language in this audio is spoken, which test from the list would be the most practical for demonstrating proficiency?\n\nOptions:\nDSH\nSIELE\nPTE Academic\nBJT",
+        "portability_answer": "SIELE",
+        "model_response": "PTE Academic"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_25023194.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36800753.wav",
+        "portability_question": "Taking into account the language heard in the audio sample, which city among the listed options is situated in a country that recognizes this language as an official language?\n\nOptions:\nHiroshima\nColmar\nBusan\nBarcelona",
+        "portability_answer": "Busan",
+        "model_response": "Hiroshima"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19720135.wav",
+        "original_answer": "French",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19695154.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the provided phrases is the correct translation of 'courage' in this language?\n\nOptions:\n용기\nmiedo\nvalentía\n두려움",
+        "portability_answer": "valentía",
+        "model_response": "용기"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18598176.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19765382.wav",
+        "portability_question": "Among the provided ISO language codes, which one most accurately matches the language spoken in the audio sample?\n\nOptions:\nzh\nko\nes\nde",
+        "portability_answer": "de",
+        "model_response": "es"
+    },
+    {
+        "file": "en_test_0_common_voice_en_25126314.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39082311.wav",
+        "portability_question": "Based on the audio provided, which of the countries listed in the options recognizes the language spoken in the audio as one of its official languages?\n\nOptions:\nIreland\nNorth Korea\nJapan\nLiechtenstein",
+        "portability_answer": "North Korea",
+        "model_response": "Ireland"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38948901.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_33274982.wav",
+        "portability_question": "In the language spoken in the audio, which of these options accurately translates 'gratitude'?\n\nOptions:\ngratitud\negoísmo\n感謝の気持ち\nじこしゅぎ",
+        "portability_answer": "gratitud",
+        "model_response": "gratitud"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20297781.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19780756.wav",
+        "portability_question": "When considering the language spoken in this audio recording, which of the provided countries includes this language as one of its officially recognized languages?\n\nOptions:\nSpain\nJapan\nIvory Coast\nSouth Korea",
+        "portability_answer": "Ivory Coast",
+        "model_response": "Ivory Coast"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_38206114.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22053539.wav",
+        "portability_question": "From the choices provided, which ISO language code would be the most suitable to categorize the language spoken in the given audio?\n\nOptions:\nfr\nzh\nja\nko",
+        "portability_answer": "zh",
+        "model_response": "zh"
+    },
+    {
+        "file": "en_test_0_common_voice_en_39747514.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22119424.wav",
+        "portability_question": "Which city among the options is likely in a country where the audio’s language is an official language?\n\nOptions:\nLiverpool\nParis\nBarcelona\nBeijing",
+        "portability_answer": "Beijing",
+        "model_response": "Beijing"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314686.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39979187.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the listed cities is most likely situated in a country where this language is recognized as one of the official languages?\n\nOptions:\nLiverpool\nBogotá\nPyongyang\nShanghai",
+        "portability_answer": "Liverpool",
+        "model_response": "Bogotá"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_39476327.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22219290.wav",
+        "portability_question": "From the listed options, which family includes the audio’s language?\n\nOptions:\nKoreanic\nJaponic\nSino-Tibetan\nIndo-European",
+        "portability_answer": "Sino-Tibetan",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_24983165.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_38232955.wav",
+        "portability_question": "Based on the spoken language in this audio segment, which of the standardized tests among the options is best suited for individuals seeking to demonstrate proficiency in this language?\n\nOptions:\nTestDaF\nBKT\nEJU\nTCF",
+        "portability_answer": "TestDaF",
+        "model_response": "BRT"
+    },
+    {
+        "file": "es_test_0_common_voice_es_22053528.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20083382.wav",
+        "portability_question": "Which country has the language spoken in the audio as one of its official languages?\n\nOptions:\nAustria\nSenegal\nVatican City\nEcuador",
+        "portability_answer": "Vatican City",
+        "model_response": "Austria"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39022955.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_22740887.wav",
+        "portability_question": "Which book from the list was originally written in the language heard in this audio?\n\nOptions:\nThe Great Gatsby\nFicciones\nThe Vegetarian\nGerminal",
+        "portability_answer": "Germinal",
+        "model_response": "Ficciones"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_37385994.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_36016276.wav",
+        "portability_question": "When considering the language spoken in this audio recording, which of the provided countries includes this language as one of its officially recognized languages?\n\nOptions:\nJapan\nItaly\nChina\nUnited Kingdom",
+        "portability_answer": "United Kingdom",
+        "model_response": "United Kingdom"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314629.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_25126314.wav",
+        "portability_question": "Among the provided ISO language codes, which one most accurately matches the language spoken in the audio sample?\n\nOptions:\nde\nit\nja\nen",
+        "portability_answer": "en",
+        "model_response": "de"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22059320.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_21340005.wav",
+        "portability_question": "From the choices provided, which ISO language code would be the most suitable to categorize the language spoken in the given audio?\n\nOptions:\nen\nes\nit\nfr",
+        "portability_answer": "fr",
+        "model_response": "fr"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_19011272.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19668121.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSpain\nJapan\nSouth Africa\nLiechtenstein",
+        "portability_answer": "Spain",
+        "model_response": "South Africa"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19562559.wav",
+        "original_answer": "English",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_29083030.wav",
+        "portability_question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nBibimbap\nFish and Chips\nTakoyaki\nBouillabaisse",
+        "portability_answer": "Bouillabaisse",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_19578743.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19604622.wav",
+        "portability_question": "Based on the audio, which of the listed dishes is most likely to have cultural and culinary ties to a country where the spoken language is widely used?\n\nOptions:\nPizza Margherita\nRatatouille\nGazpacho\nDumplings",
+        "portability_answer": "Gazpacho",
+        "model_response": "Gazpacho"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18983115.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39645706.wav",
+        "portability_question": "The language heard in the audio belongs to which of the given language families?\n\nOptions:\nIndo-European\nSino-Tibetan\nKoreanic\nJaponic",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19979142.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19439084.wav",
+        "portability_question": "Which of these words is the correct translation of 'prosperity' into the language spoken in the audio?\n\nOptions:\nProsperität\nprosperidad\nArmut\npobreza",
+        "portability_answer": "Prosperität",
+        "model_response": "prosperità"
+    },
+    {
+        "file": "en_test_0_common_voice_en_23817815.wav",
+        "original_answer": "English",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_36317751.wav",
+        "portability_question": "Which of these literary classics was originally written in the language spoken in the audio?\n\nOptions:\nInvisible Cities\nThe Makioka Sisters\nAll Quiet on the Western Front\nRickshaw Boy",
+        "portability_answer": "The Makioka Sisters",
+        "model_response": "The Makioka Sisters"
+    },
+    {
+        "file": "en_test_0_common_voice_en_38348269.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_20453532.wav",
+        "portability_question": "Which of the following ISO language codes corresponds to the language spoken in this specific audio recording?\n\nOptions:\nko\nen\nzh\nja",
+        "portability_answer": "zh",
+        "model_response": "zh"
+    },
+    {
+        "file": "es_test_0_common_voice_es_26185995.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39105881.wav",
+        "portability_question": "Which option represents 'wisdom' in the language spoken in this audio clip?\n\nOptions:\narroganza\nsaggezza\n自惚れ\nウィズダム",
+        "portability_answer": "ウィズダム",
+        "model_response": "wisdom"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36890766.wav",
+        "original_answer": "Korean",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_20275008.wav",
+        "portability_question": "Considering the language spoken in the audio, which of the listed historical figures is most likely from a country where this language is officially recognized as one of its official languages?\n\nOptions:\nYi Hwang\nHermann Hesse\nNelson Mandela\nNapoleon Bonaparte",
+        "portability_answer": "Napoleon Bonaparte",
+        "model_response": "Nelson Mandela"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20266928.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39021954.wav",
+        "portability_question": "Taking into account the language heard in the audio sample, which city among the listed options is situated in a country that recognizes this language as an official language?\n\nOptions:\nBusan\nFlorence\nKyoto\nBogotá",
+        "portability_answer": "Kyoto",
+        "model_response": "Bogotá"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19984741.wav",
+        "original_answer": "Italian",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19808301.wav",
+        "portability_question": "From the listed countries, which one has the audio's spoken language as an official language?\n\nOptions:\nUnited Kingdom\nJapan\nLiechtenstein\nChina",
+        "portability_answer": "United Kingdom",
+        "model_response": "United Kingdom"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37211926.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39084450.wav",
+        "portability_question": "Among the figures provided, who most likely came from a country that officially recognizes the audio’s language?\n\nOptions:\nEva Perón\nEmperor Meiji\nYi Hwang\nLeonardo da Vinci",
+        "portability_answer": "Emperor Meiji",
+        "model_response": "Eva Perón"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19683623.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_23846478.wav",
+        "portability_question": "Which of the following ISO language codes corresponds to the language spoken in this specific audio recording?\n\nOptions:\nzh\nja\nen\nes",
+        "portability_answer": "en",
+        "model_response": "en"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19008192.wav",
+        "original_answer": "French",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_31266588.wav",
+        "portability_question": "From these options, which standardized test evaluates the language heard in the audio?\n\nOptions:\nDELF\nTOPIK\nIELTS\nDSH",
+        "portability_answer": "IELTS",
+        "model_response": "DELF"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18595321.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_33974641.wav",
+        "portability_question": "Given the language spoken in this audio, which of the listed literary classics was originally authored in this language?\n\nOptions:\nThe Wind-Up Bird Chronicle\nZeno's Conscience\nThe Sorrows of Young Werther\nJourney to the West",
+        "portability_answer": "The Sorrows of Young Werther",
+        "model_response": "The Wind-Up Bird Chronicle"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_37230166.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_19530042.wav",
+        "portability_question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nDumplings\nKimchi\nTacos\nSushi",
+        "portability_answer": "Dumplings",
+        "model_response": "Dumplings"
+    },
+    {
+        "file": "it_test_0_common_voice_it_19999159.wav",
+        "original_answer": "Italian",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_35905111.wav",
+        "portability_question": "From the provided options, which literary masterpiece was first crafted in the language of the audio?\n\nOptions:\nWuthering Heights\nLes Misérables\nFoucault's Pendulum\nKim Ji-young, Born 1982",
+        "portability_answer": "Wuthering Heights",
+        "model_response": "Wuthering Heights"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19668121.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20515439.wav",
+        "portability_question": "Which phrase among the options has the same meaning as 'prosperity' in the language spoken in this speech?\n\nOptions:\nstagnazione\nStillstand\nProsperität\nprosperità",
+        "portability_answer": "Prosperität",
+        "model_response": "prosperità"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20233128.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19600338.wav",
+        "portability_question": "When analyzing the language spoken in the audio, which of the following cities is most likely found in a country where the spoken language is part of its official languages?\n\nOptions:\nAbidjan\nShanghai\nLima\nSeoul",
+        "portability_answer": "Abidjan",
+        "model_response": "Abidjan"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22219290.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36800748.wav",
+        "portability_question": "Based on the spoken language in this audio, which of the provided language families encompasses this language?\n\nOptions:\nIndo-European\nSino-Tibetan\nKoreanic\nJaponic",
+        "portability_answer": "Koreanic",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38967989.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_30784891.wav",
+        "portability_question": "Which standardized test evaluates proficiency in the language spoken in this audio segment?\n\nOptions:\nCELI\nSIELE\nTCF\nTOEFL",
+        "portability_answer": "SIELE",
+        "model_response": "CELI"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39056773.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_25877201.wav",
+        "portability_question": "From the listed dishes, which one is associated with a country where the audio's language is spoken?\n\nOptions:\nCoq au Vin\nTempura\nPizza Margherita\nHaggis",
+        "portability_answer": "Pizza Margherita",
+        "model_response": "Haggis"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38973129.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_17963677.wav",
+        "portability_question": "Among the countries presented as options, which one officially identifies the language spoken in the audio as an official language?\n\nOptions:\nHaiti\nIreland\nVatican City\nChina",
+        "portability_answer": "Haiti",
+        "model_response": "Haiti"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_39082018.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22077262.wav",
+        "portability_question": "Which standardized test evaluates proficiency in the language spoken in this audio segment?\n\nOptions:\nHSK\nJLPT\nGoethe-Zertifikat\nPLIDA",
+        "portability_answer": "HSK",
+        "model_response": "JLPT"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_24533969.wav",
+        "original_answer": "French",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314570.wav",
+        "portability_question": "Based on the linguistic features and origins of the language heard in this audio, which of the provided language families does it most accurately align with?\n\nOptions:\nSino-Tibetan\nKoreanic\nJaponic\nIndo-European",
+        "portability_answer": "Koreanic",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "es_test_0_common_voice_es_30842597.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_38998784.wav",
+        "portability_question": "From the given options, which dish originates from a country where the language spoken in this audio is dominant?\n\nOptions:\nPaella\nBibimbap\nRatatouille\nMapo Tofu",
+        "portability_answer": "Bibimbap",
+        "model_response": "Bibimbap"
+    },
+    {
+        "file": "de_test_0_common_voice_de_37016766.wav",
+        "original_answer": "German",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314695.wav",
+        "portability_question": "From the given figures, who is from a country with the audio’s language as an official language?\n\nOptions:\nSimón Bolívar\nConfucius\nKim Dae-jung\nGalileo Galilei",
+        "portability_answer": "Kim Dae-jung",
+        "model_response": "Simón Bolívar"
+    },
+    {
+        "file": "es_test_0_common_voice_es_29077208.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39046833.wav",
+        "portability_question": "When reviewing the language spoken in the audio, which historical figure is most likely from a country that uses this language as an official language?\n\nOptions:\nConfucius\nOda Nobunaga\nJean-Bédel Bokassa\nMaria Theresa",
+        "portability_answer": "Oda Nobunaga",
+        "model_response": "Oda Nobunaga"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_36478532.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_26209043.wav",
+        "portability_question": "If you need to evaluate your proficiency in the language spoken in this audio, which of the standardized tests listed among the options would be the most appropriate choice to measure your skills?\n\nOptions:\nTOCFL\nCILS\nTOPIK\nPTE Academic",
+        "portability_answer": "PTE Academic",
+        "model_response": "CILS"
+    },
+    {
+        "file": "it_test_0_common_voice_it_23834479.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_36314701.wav",
+        "portability_question": "Taking into account the spoken language in this audio, which language family among the options is it classified under within linguistic studies?\n\nOptions:\nJaponic\nSino-Tibetan\nIndo-European\nKoreanic",
+        "portability_answer": "Koreanic",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_21593940.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20561354.wav",
+        "portability_question": "From the listed options, which family includes the audio’s language?\n\nOptions:\nIndo-European\nKoreanic\nJaponic\nSino-Tibetan",
+        "portability_answer": "Indo-European",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_39476353.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22061338.wav",
+        "portability_question": "From the listed options, which one correctly matches 'wisdom' in meaning in the language of this speech?\n\nOptions:\nstoltezza\nsaggezza\n智慧\n愚蠢",
+        "portability_answer": "智慧",
+        "model_response": "wisdom"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39248549.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22629791.wav",
+        "portability_question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nChina\nSouth Africa\nFrance\nLiechtenstein",
+        "portability_answer": "China",
+        "model_response": "SouthAfrica"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19524811.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19954818.wav",
+        "portability_question": "Which of these literary classics was originally written in the language spoken in the audio?\n\nOptions:\nThe Trial\nThe Death of Artemio Cruz\nZeno's Conscience\nThe Tale of Genji",
+        "portability_answer": "The Death of Artemio Cruz",
+        "model_response": "The Death of Julieta Cruz"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18661529.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_38148421.wav",
+        "portability_question": "If you're planning to apply to a program or position that requires fluency in the language heard in this audio, which of the listed tests would be the most suitable for assessing your ability?\n\nOptions:\nBKT\nHSK\nSIELE\nTestDaF",
+        "portability_answer": "TestDaF",
+        "model_response": "BRT"
+    },
+    {
+        "file": "de_test_0_common_voice_de_20231703.wav",
+        "original_answer": "German",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20017854.wav",
+        "portability_question": "Which city among the options is likely in a country where the audio’s language is an official language?\n\nOptions:\nShenzhen\nDakar\nBarcelona\nVenice",
+        "portability_answer": "Venice",
+        "model_response": "Dakar"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_17963677.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_17499321.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which of the listed literary works was originally created in this language?\n\nOptions:\nThe Magic Mountain\nIf This Is a Man\nLove in the Time of Cholera\nThe Catcher in the Rye",
+        "portability_answer": "The Magic Mountain",
+        "model_response": "The Magic Mountain"
+    },
+    {
+        "file": "en_test_0_common_voice_en_24472733.wav",
+        "original_answer": "English",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39059806.wav",
+        "portability_question": "Taking into account the language spoken in the audio, which historical figure is most likely from a country that includes this language as an official language?\n\nOptions:\nKing Sejong\nMiguel de Cervantes\nHokusai\nNapoleon Bonaparte",
+        "portability_answer": "Hokusai",
+        "model_response": "Hokusai"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314561.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_22710968.wav",
+        "portability_question": "Which dish in the list is most strongly linked to a country where the language of this audio is primary?\n\nOptions:\nPaella\nSpätzle\nGelato\nBouillabaisse",
+        "portability_answer": "Spätzle",
+        "model_response": "Spätzle"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20066528.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_32233476.wav",
+        "portability_question": "Which of the following ISO language codes corresponds to the language spoken in this specific audio recording?\n\nOptions:\nfr\nes\nja\nko",
+        "portability_answer": "es",
+        "model_response": "es"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20083381.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19965749.wav",
+        "portability_question": "Based on the audio sample that you have been presented with, which of the ISO language codes from the provided list most appropriately corresponds to the language spoken in the recording?\n\nOptions:\nen\nes\nit\nfr",
+        "portability_answer": "fr",
+        "model_response": "fr"
+    },
+    {
+        "file": "en_test_0_common_voice_en_34481119.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_35972097.wav",
+        "portability_question": "If you need to evaluate your proficiency in the language spoken in this audio, which of the standardized tests listed among the options would be the most appropriate choice to measure your skills?\n\nOptions:\nBKT\nIELTS\nEJU\nSIELE",
+        "portability_answer": "BKT",
+        "model_response": "BRT"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22103885.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20002088.wav",
+        "portability_question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nKimchi\nTacos\nGelato\nBouillabaisse",
+        "portability_answer": "Gelato",
+        "model_response": "Gelato"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_38998743.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39043779.wav",
+        "portability_question": "From the given ISO language codes, which one correctly represents the language being spoken in this audio recording?\n\nOptions:\nde\nja\nit\nfr",
+        "portability_answer": "ja",
+        "model_response": "ja"
+    },
+    {
+        "file": "en_test_0_common_voice_en_35905111.wav",
+        "original_answer": "English",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_19578743.wav",
+        "portability_question": "Which of these dishes comes from a country where the language in the audio is the primary language?\n\nOptions:\nDumplings\nSamgyeopsal\nBouillabaisse\nTakoyaki",
+        "portability_answer": "Dumplings",
+        "model_response": "Dumplings"
+    },
+    {
+        "file": "de_test_0_common_voice_de_22710968.wav",
+        "original_answer": "German",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20263438.wav",
+        "portability_question": "From the given options, which city is most likely in a country where the audio’s language is an official language?\n\nOptions:\nTokyo\nParis\nPyongyang\nNaples",
+        "portability_answer": "Naples",
+        "model_response": "Naples"
+    },
+    {
+        "file": "es_test_0_common_voice_es_21744907.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20067687.wav",
+        "portability_question": "Which dish in the list is most strongly linked to a country where the language of this audio is primary?\n\nOptions:\nDumplings\nTiramisu\nCoq au Vin\nSushi",
+        "portability_answer": "Tiramisu",
+        "model_response": "Coq au Vin"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36800754.wav",
+        "original_answer": "Korean",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_25035483.wav",
+        "portability_question": "Taking into account the spoken language in this audio, which language family among the options is it classified under within linguistic studies?\n\nOptions:\nKoreanic\nIndo-European\nJaponic\nSino-Tibetan",
+        "portability_answer": "Indo-European",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39059806.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39476318.wav",
+        "portability_question": "Which city listed here belongs to a country where the language in the audio is official?\n\nOptions:\nInnsbruck\nPyongyang\nBogotá\nEdinburgh",
+        "portability_answer": "Pyongyang",
+        "model_response": "Bogotá"
+    },
+    {
+        "file": "it_test_0_common_voice_it_21348419.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37195197.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the following countries included in the options officially recognizes this language as one of its official languages?\n\nOptions:\nSenegal\nSan Marino\nIreland\nSouth Korea",
+        "portability_answer": "South Korea",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19128473.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_30945781.wav",
+        "portability_question": "When analyzing the language spoken in the audio, which of the following cities is most likely found in a country where the spoken language is part of its official languages?\n\nOptions:\nBogotá\nEdinburgh\nIncheon\nVaduz",
+        "portability_answer": "Bogotá",
+        "model_response": "Bogotá"
+    },
+    {
+        "file": "de_test_0_common_voice_de_19439084.wav",
+        "original_answer": "German",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_32088494.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which phrase best corresponds to 'adventure' as expressed in this language?\n\nOptions:\nennuis\naventure\n冒険\n退屈",
+        "portability_answer": "aventure",
+        "model_response": "aventure"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19735675.wav",
+        "original_answer": "English",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_22750661.wav",
+        "portability_question": "If you're planning to apply to a program or position that requires fluency in the language heard in this audio, which of the listed tests would be the most suitable for assessing your ability?\n\nOptions:\nTOPIK\nSIELE\nDSH\nDALF",
+        "portability_answer": "DALF",
+        "model_response": "SIELE"
+    },
+    {
+        "file": "de_test_0_common_voice_de_39792483.wav",
+        "original_answer": "German",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18598179.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the listed cities is most likely situated in a country where this language is recognized as one of the official languages?\n\nOptions:\nHiroshima\nBerlin\nParis\nTaipei",
+        "portability_answer": "Taipei",
+        "model_response": "Hiroshima"
+    },
+    {
+        "file": "es_test_0_common_voice_es_23818648.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19999159.wav",
+        "portability_question": "When considering the spoken language in this audio sample, which of the listed ISO language codes would be the most appropriate choice to accurately identify the language used by the speaker?\n\nOptions:\nzh\nen\nit\nja",
+        "portability_answer": "it",
+        "model_response": "it"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19598602.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_39792483.wav",
+        "portability_question": "Which historical figure among the choices came from a nation with the audio’s spoken language as an official language?\n\nOptions:\nLudwig van Beethoven\nEmperor Meiji\nSimón Bolívar\nDu Fu",
+        "portability_answer": "Ludwig van Beethoven",
+        "model_response": "B"
+    },
+    {
+        "file": "es_test_0_common_voice_es_20061372.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_19740504.wav",
+        "portability_question": "Given the language spoken in the audio, which of the listed historical figures is most likely to have come from a nation where this language is part of its recognized official languages?\n\nOptions:\nNelson Mandela\nCai Lun\nKing Sejong\nJean-Bédel Bokassa",
+        "portability_answer": "Jean-Bédel Bokassa",
+        "model_response": "Nelson Mandela"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_20453532.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19602665.wav",
+        "portability_question": "From the given list of cities, which one is most likely found in a country that uses the language heard in the audio as part of its official languages?\n\nOptions:\nColmar\nSevilla\nVaduz\nBeijing",
+        "portability_answer": "Sevilla",
+        "model_response": "Beijing"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_20173805.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20286753.wav",
+        "portability_question": "Which city among the options is likely in a country where the audio’s language is an official language?\n\nOptions:\nParis\nFrankfurt\nChihuahua City\nRome",
+        "portability_answer": "Chihuahua City",
+        "model_response": "Chihuahua City"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_38383607.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39044464.wav",
+        "portability_question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nClam Chowder\nGazpacho\nRamen\nPeking Duck",
+        "portability_answer": "Ramen",
+        "model_response": "Gazpacho"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19696555.wav",
+        "original_answer": "English",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_18099777.wav",
+        "portability_question": "From the provided options, which literary masterpiece was first crafted in the language of the audio?\n\nOptions:\nKokoro\nFoucault's Pendulum\nThe Red and the Black\nThe Great Gatsby",
+        "portability_answer": "The Red and the Black",
+        "model_response": "Kokoro"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37159812.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19993046.wav",
+        "portability_question": "From the provided list of translations, which one corresponds to 'gratitude' in the language of the audio?\n\nOptions:\negoísmo\negoismo\ngratitud\nriconoscenza",
+        "portability_answer": "riconoscenza",
+        "model_response": "riconoscenza"
+    },
+    {
+        "file": "es_test_0_common_voice_es_28537332.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39012813.wav",
+        "portability_question": "Which of the following ISO language codes corresponds to the language spoken in this specific audio recording?\n\nOptions:\nes\nko\nja\nen",
+        "portability_answer": "ja",
+        "model_response": "ja"
+    },
+    {
+        "file": "it_test_0_common_voice_it_39278374.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22055858.wav",
+        "portability_question": "If you're planning to apply to a program or position that requires fluency in the language heard in this audio, which of the listed tests would be the most suitable for assessing your ability?\n\nOptions:\nTestDaF\nDALF\nPLIDA\nHSK",
+        "portability_answer": "HSK",
+        "model_response": "TestDaF"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18848277.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20061372.wav",
+        "portability_question": "Given the language heard in the audio, which of the provided dishes is most closely linked to the culinary traditions of a country where this language is the official language?\n\nOptions:\nHaggis\nPaella\nMooncakes\nMiso Soup",
+        "portability_answer": "Paella",
+        "model_response": "Haggis"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39237891.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_19004592.wav",
+        "portability_question": "Among the provided cities, which is most likely located in a country with the audio’s language as an official language?\n\nOptions:\nTaipei\nInnsbruck\nLondon\nChihuahua City",
+        "portability_answer": "Taipei",
+        "model_response": "Chihuahua City"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39425246.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_21309814.wav",
+        "portability_question": "Which city listed here belongs to a country where the language in the audio is official?\n\nOptions:\nKyoto\nLondon\nShanghai\nAbidjan",
+        "portability_answer": "Shanghai",
+        "model_response": "Shanghai"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_36356854.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_34481119.wav",
+        "portability_question": "Based on the spoken language in this audio, which of the provided language families encompasses this language?\n\nOptions:\nJaponic\nKoreanic\nSino-Tibetan\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Koreanic"
+    },
+    {
+        "file": "it_test_0_common_voice_it_20066529.wav",
+        "original_answer": "Italian",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_17320855.wav",
+        "portability_question": "Which country has the language spoken in the audio as one of its official languages?\n\nOptions:\nChina\nGermany\nColombia\nHaiti",
+        "portability_answer": "Haiti",
+        "model_response": "Haiti"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19401736.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_26820347.wav",
+        "portability_question": "From the listed options, which one correctly matches 'prosperity' in meaning in the language of this speech?\n\nOptions:\nプアリティー\nProsperität\n繁栄\nArmut",
+        "portability_answer": "Prosperität",
+        "model_response": "prosperität"
+    },
+    {
+        "file": "en_test_0_common_voice_en_19808301.wav",
+        "original_answer": "English",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_18244253.wav",
+        "portability_question": "Which literary classic was initially authored in the language heard in the audio clip?\n\nOptions:\nThe Trial\nSwann's Way\nThe Betrothed\nDon Quixote",
+        "portability_answer": "The Betrothed",
+        "model_response": "The Trial"
+    },
+    {
+        "file": "de_test_0_common_voice_de_20397921.wav",
+        "original_answer": "German",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_23834479.wav",
+        "portability_question": "Which test focuses on proficiency in the language spoken in this speech segment?\n\nOptions:\nSIELE\nCILS\nEJU\nKLAT",
+        "portability_answer": "CILS",
+        "model_response": "CILS"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22059480.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19174856.wav",
+        "portability_question": "Among the given options, which country has the spoken language in the audio as one of its official languages?\n\nOptions:\nSan Marino\nEcuador\nSenegal\nJapan",
+        "portability_answer": "San Marino",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "it_test_0_common_voice_it_17767726.wav",
+        "original_answer": "Italian",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_22885447.wav",
+        "portability_question": "When analyzing the language spoken in the audio, which of the following cities is most likely found in a country where the spoken language is part of its official languages?\n\nOptions:\nTaipei\nNaples\nBerlin\nChihuahua City",
+        "portability_answer": "Berlin",
+        "model_response": "Chihuahua City"
+    },
+    {
+        "file": "de_test_0_common_voice_de_18354244.wav",
+        "original_answer": "German",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_30842597.wav",
+        "portability_question": "Taking into account the language spoken in this audio, which phrase best corresponds to 'masterpiece' as expressed in this language?\n\nOptions:\nobra maestra\neffort\nchef-d'œuvre\nesfuerzo",
+        "portability_answer": "obra maestra",
+        "model_response": "obra maestra"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_35905264.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_20231708.wav",
+        "portability_question": "Taking the language spoken in the audio into account, which of the dishes listed originates from a country where this language is the dominant form of communication?\n\nOptions:\nHaggis\nLasagna\nBratwurst\nGazpacho",
+        "portability_answer": "Bratwurst",
+        "model_response": "Haggis"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_19705581.wav",
+        "original_answer": "French",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_26185995.wav",
+        "portability_question": "Based on the audio provided, which of the countries listed in the options recognizes the language spoken in the audio as one of its official languages?\n\nOptions:\nGuatemala\nSan Marino\nFrance\nUnited Kingdom",
+        "portability_answer": "Guatemala",
+        "model_response": "San Marino"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38897171.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_20959681.wav",
+        "portability_question": "From the listed options, which family includes the audio’s language?\n\nOptions:\nIndo-European\nJaponic\nKoreanic\nSino-Tibetan",
+        "portability_answer": "Indo-European",
+        "model_response": "Sino-Tibetan"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_18605005.wav",
+        "original_answer": "French",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_24472733.wav",
+        "portability_question": "Which of these historical figures is likely from a nation that officially recognizes the language spoken in the audio?\n\nOptions:\nLéopold Sédar Senghor\nKim Gu\nWinston Churchill\nLeonardo da Vinci",
+        "portability_answer": "Winston Churchill",
+        "model_response": "Léopold Sédar Senghor"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_35971953.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_17301827.wav",
+        "portability_question": "From the given list of cities, which one is most likely found in a country that uses the language heard in the audio as part of its official languages?\n\nOptions:\nInnsbruck\nShanghai\nAbidjan\nLondon",
+        "portability_answer": "Innsbruck",
+        "model_response": "Innsbruck"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_39035933.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19079254.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed dishes is most likely to have originated in a country where this language is the primary spoken language?\n\nOptions:\nPaella\nMapo Tofu\nSamgyeopsal\nLasagna",
+        "portability_answer": "Lasagna",
+        "model_response": "Paella"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_30199980.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18990885.wav",
+        "portability_question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nLasagna\nSchnitzel\nMapo Tofu\nHaggis",
+        "portability_answer": "Mapo Tofu",
+        "model_response": "Schnitzel"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_25608680.wav",
+        "original_answer": "French",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18584015.wav",
+        "portability_question": "When considering the spoken language in this audio sample, which of the listed ISO language codes would be the most appropriate choice to accurately identify the language used by the speaker?\n\nOptions:\nes\nja\nzh\nko",
+        "portability_answer": "zh",
+        "model_response": "zh"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36331016.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_19606780.wav",
+        "portability_question": "Considering the context of this audio and the spoken language, which of the listed tests is most widely used to measure proficiency in this specific language?\n\nOptions:\nEJU\nTCF\nSIELE\nCELI",
+        "portability_answer": "SIELE",
+        "model_response": "EJU"
+    },
+    {
+        "file": "it_test_0_common_voice_it_23781489.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37159812.wav",
+        "portability_question": "Taking into account the language spoken in the audio, which historical figure is most likely from a country that includes this language as an official language?\n\nOptions:\nConfucius\nYi Sun-sin\nNelson Mandela\nDante Alighieri",
+        "portability_answer": "Yi Sun-sin",
+        "model_response": "Yi Sun-sin"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19952288.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_18848277.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed dishes is most likely to have originated in a country where this language is the primary spoken language?\n\nOptions:\nPaella\nMooncakes\nKimchi\nCornish Pasty",
+        "portability_answer": "Cornish Pasty",
+        "model_response": "Paella"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22154724.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_35971953.wav",
+        "portability_question": "Considering the context of this audio and the spoken language, which of the listed tests is most widely used to measure proficiency in this specific language?\n\nOptions:\nBJT\nHSK\nPLIDA\nKLAT",
+        "portability_answer": "KLAT",
+        "model_response": "HSK"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19606780.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_17300767.wav",
+        "portability_question": "Which option represents 'wisdom' in the language spoken in this audio clip?\n\nOptions:\n自惚れ\nWeisheit\nArroganz\nウィズダム",
+        "portability_answer": "Weisheit",
+        "model_response": "Weisheit"
+    },
+    {
+        "file": "en_test_0_common_voice_en_17960994.wav",
+        "original_answer": "English",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_18595341.wav",
+        "portability_question": "Which test should you take to demonstrate your ability in the audio's language?\n\nOptions:\nTOPIK\nTOCFL\nGoethe-Zertifikat\nBJT",
+        "portability_answer": "Goethe-Zertifikat",
+        "model_response": "C"
+    },
+    {
+        "file": "en_test_0_common_voice_en_18395139.wav",
+        "original_answer": "English",
+        "edited_answer": "Spanish",
+        "target_audio_file": "es_test_0_common_voice_es_32156457.wav",
+        "portability_question": "From the given ISO language codes, which one correctly represents the language being spoken in this audio recording?\n\nOptions:\nde\nit\nko\nes",
+        "portability_answer": "es",
+        "model_response": "es"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_18979594.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_39908937.wav",
+        "portability_question": "For someone planning to study abroad or work in a country where the language in this audio is spoken, which test from the list would be the most practical for demonstrating proficiency?\n\nOptions:\nGoethe-Zertifikat\nDALF\nDELE\nPTE Academic",
+        "portability_answer": "PTE Academic",
+        "model_response": "Goethe-Zertifikat"
+    },
+    {
+        "file": "de_test_0_common_voice_de_17902872.wav",
+        "original_answer": "German",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_18375213.wav",
+        "portability_question": "Which historical figure is most likely from a country where the language in the audio is official?\n\nOptions:\nMurasaki Shikibu\nShin Saimdang\nGabriel García Márquez\nNelson Mandela",
+        "portability_answer": "Nelson Mandela",
+        "model_response": "Nelson Mandela"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_25539757.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_39183455.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the listed cities is most likely situated in a country where this language is recognized as one of the official languages?\n\nOptions:\nColmar\nInnsbruck\nWellington\nFlorence",
+        "portability_answer": "Innsbruck",
+        "model_response": "Wellington"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22109328.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_19984742.wav",
+        "portability_question": "Which dish is most likely to originate from a country where the language spoken in the audio is primary?\n\nOptions:\nBulgogi\nTakoyaki\nRisotto\nFish and Chips",
+        "portability_answer": "Risotto",
+        "model_response": "Bulgogi"
+    },
+    {
+        "file": "de_test_0_common_voice_de_24874063.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39043620.wav",
+        "portability_question": "Which city among the options is likely in a country where the audio’s language is an official language?\n\nOptions:\nMadrid\nVaduz\nShenzhen\nHiroshima",
+        "portability_answer": "Hiroshima",
+        "model_response": "Vaduz"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_37159817.wav",
+        "original_answer": "Korean",
+        "edited_answer": "Italian",
+        "target_audio_file": "it_test_0_common_voice_it_20021166.wav",
+        "portability_question": "From the listed options, which one corresponds to 'wisdom' in the language heard in the audio?\n\nOptions:\nstoltezza\nsabiduría\ntontería\nsaggezza",
+        "portability_answer": "saggezza",
+        "model_response": "sabiduría"
+    },
+    {
+        "file": "ja_test_0_common_voice_ja_38968647.wav",
+        "original_answer": "Japanese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_24533969.wav",
+        "portability_question": "From the given options, which dish originates from a country where the language spoken in this audio is dominant?\n\nOptions:\nRatatouille\nShepherd's Pie\nTiramisu\nRamen",
+        "portability_answer": "Ratatouille",
+        "model_response": "Ratatouille"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_36314570.wav",
+        "original_answer": "Korean",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_32222394.wav",
+        "portability_question": "Based on the linguistic features and origins of the language heard in this audio, which of the provided language families does it most accurately align with?\n\nOptions:\nJaponic\nSino-Tibetan\nKoreanic\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Japonic"
+    },
+    {
+        "file": "es_test_0_common_voice_es_19695154.wav",
+        "original_answer": "Spanish",
+        "edited_answer": "English",
+        "target_audio_file": "en_test_0_common_voice_en_19935427.wav",
+        "portability_question": "From the given figures, who is from a country with the audio’s language as an official language?\n\nOptions:\nDante Alighieri\nEdmund Hillary\nLéopold Sédar Senghor\nSigmund Freud",
+        "portability_answer": "Edmund Hillary",
+        "model_response": "Dante Alighieri"
+    },
+    {
+        "file": "de_test_0_common_voice_de_27315844.wav",
+        "original_answer": "German",
+        "edited_answer": "Japanese",
+        "target_audio_file": "ja_test_0_common_voice_ja_39127844.wav",
+        "portability_question": "If you're planning to apply to a program or position that requires fluency in the language heard in this audio, which of the listed tests would be the most suitable for assessing your ability?\n\nOptions:\nEJU\nTOEFL\nDSH\nTOPIK",
+        "portability_answer": "EJU",
+        "model_response": "EJU"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_17623671.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_37725629.wav",
+        "portability_question": "Among the provided cities, which is most likely located in a country with the audio’s language as an official language?\n\nOptions:\nLondon\nChihuahua City\nFlorence\nBerlin",
+        "portability_answer": "Berlin",
+        "model_response": "Chihuahua City"
+    },
+    {
+        "file": "fr_test_0_common_voice_fr_17897349.wav",
+        "original_answer": "French",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_19740814.wav",
+        "portability_question": "Which option represents 'masterpiece' correctly in meaning in the language of the audio?\n\nOptions:\n걸작\n실패\nMeisterwerk\nMisserfolg",
+        "portability_answer": "Meisterwerk",
+        "model_response": " 걸작"
+    },
+    {
+        "file": "it_test_0_common_voice_it_21260627.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_37211958.wav",
+        "portability_question": "Which of these historical figures is likely from a nation that officially recognizes the language spoken in the audio?\n\nOptions:\nLeonardo da Vinci\nLudwig van Beethoven\nYi Sun-sin\nLaozi",
+        "portability_answer": "Yi Sun-sin",
+        "model_response": "Yi Sun-sin"
+    },
+    {
+        "file": "de_test_0_common_voice_de_38148421.wav",
+        "original_answer": "German",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_22110601.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the provided words best translates 'adventure' into that language, accurately capturing its meaning?\n\nOptions:\naventure\nhabitude\n冒险\n无聊",
+        "portability_answer": "冒险",
+        "model_response": "aventure"
+    },
+    {
+        "file": "ko_test_0_common_voice_ko_35904871.wav",
+        "original_answer": "Korean",
+        "edited_answer": "German",
+        "target_audio_file": "de_test_0_common_voice_de_37016766.wav",
+        "portability_question": "The language heard in the audio belongs to which of the given language families?\n\nOptions:\nIndo-European\nKoreanic\nSino-Tibetan\nJaponic",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "en_test_0_common_voice_en_31266588.wav",
+        "original_answer": "English",
+        "edited_answer": "Korean",
+        "target_audio_file": "ko_test_0_common_voice_ko_39082224.wav",
+        "portability_question": "Considering the language spoken in the audio recording, which of the listed cities is most likely situated in a country where this language is recognized as one of the official languages?\n\nOptions:\nCape Town\nSeoul\nFlorence\nHiroshima",
+        "portability_answer": "Seoul",
+        "model_response": "Seoul"
+    },
+    {
+        "file": "zh-CN_test_0_common_voice_zh-CN_22053551.wav",
+        "original_answer": "Chinese",
+        "edited_answer": "French",
+        "target_audio_file": "fr_test_0_common_voice_fr_17897349.wav",
+        "portability_question": "Based on the spoken language in this audio, which of the provided language families encompasses this language?\n\nOptions:\nSino-Tibetan\nKoreanic\nJaponic\nIndo-European",
+        "portability_answer": "Indo-European",
+        "model_response": "Indo-European"
+    },
+    {
+        "file": "it_test_0_common_voice_it_25877201.wav",
+        "original_answer": "Italian",
+        "edited_answer": "Chinese",
+        "target_audio_file": "zh-CN_test_0_common_voice_zh-CN_18598176.wav",
+        "portability_question": "Considering the language spoken in this audio, which of the listed language families does it most accurately belong to, based on linguistic classification?\n\nOptions:\nKoreanic\nIndo-European\nSino-Tibetan\nJaponic",
+        "portability_answer": "Sino-Tibetan",
+        "model_response": "Sino-Tibetan"
+    }
+]
