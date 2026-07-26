@@ -97,7 +97,7 @@ class ModelWrapper:
             )[0]
             inputs = self.processor(
                 text=text,
-                audios=[audio_array],
+                audio=[audio_array],
                 return_tensors="pt",
                 padding=True,
                 sampling_rate=self.processor.feature_extractor.sampling_rate,
