@@ -24,6 +24,7 @@ import os
 from typing import Optional
 
 import librosa
+import torch
 from tqdm import tqdm
 
 IKE_SYSTEM_PROMPT_PATCH_NOTE = """SYSTEM PATCH NOTE — an audio knowledge edit is in effect for this conversation:
@@ -66,7 +67,7 @@ IKE_SYSTEM_PROMPTS = [
     IKE_SYSTEM_PROMPT_WORKED_EXAMPLE,
 ]
 
-AUDIO_ROOT_TEMPLATE = "{dataset_root}/audio_data/{track}"
+AUDIO_ROOT_TEMPLATE = "{dataset_root}/audio_wavs/{track}"
 
 
 def resolve_audio_path(dataset_root: str, file_name: str, track: str) -> str:
@@ -105,6 +106,12 @@ class ModelWrapper:
             self.model = AudioFlamingo3ForConditionalGeneration.from_pretrained(
                 model_id, device_map="cuda", torch_dtype="bfloat16"
             )
+            # The audio tower's embed_positions weight is left in float32 by
+            # the transformers implementation while every other audio-tower
+            # weight is bfloat16. Adding it to bfloat16 hidden states
+            # upcasts them to float32, which then crashes the (bfloat16)
+            # LayerNorm inside the encoder layers. Cast it to match.
+            self.model.model.audio_tower.embed_positions.to(torch.bfloat16)
 
     def generate(
         self,
@@ -204,9 +211,9 @@ class ModelWrapper:
                 top_p=None,
                 max_new_tokens=256,
             )
-            response = self.processor.decode(
+            response = self.processor.batch_decode(
                 outputs[:, inputs.input_ids.shape[1] :], skip_special_tokens=True
-            )
+            )[0]
             return response
 
 
