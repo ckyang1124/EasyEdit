@@ -844,5 +844,1859 @@
         "portability_question": "From a biological taxonomy perspective, which of these animals is most closest to the animal in the audio clip?\n\nOptions:\naxolotl\nnewt\ntoad\nsalamanders",
         "portability_answer": "toad",
         "model_response": "\n\nThe animal in the audio clip is most closely related to salamanders. \n\nAxolotls, newts, and toads are all members of the order Caudata, which includes salamanders and their close relatives. However, within this order, salamanders are a distinct group that includes both living and extinct species. The axolotl is a type of salamander that is native to freshwater lakes in Mexico, while newts and toads are air-breathing land animals that belong to different families within the order Caudata."
+    },
+    {
+        "file": "hen_8.wav",
+        "original_answer": "hen",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_230.wav",
+        "portability_question": "Taking into account the animal in the provided sound and its biological characteristics, which of the following options best represents the method this animal uses to reproduce or give birth to its offspring?\n\nOptions:\nAsexual reproduction\nMarsupial reproduction\nOviparous\nViviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal being referred to, as there are many different species that could produce sounds similar to what is heard in the audio. However, I can provide general information about the different reproductive strategies for different animals.\n\nAsexual reproduction involves producing offspring without fertilization by another organism. This can occur through methods such as budding, fission, or parthenogenesis.\n\nMarsupial reproduction involves生产出小型的幼仔，它们在母体中发育一段时间后才出生。 Marsupials include many different families of mammals, such as kangaroos, koalas, and possums.\n\nOviparous reproduction involves laying eggs that hatch into fully formed offspring. This is the most common type of reproduction among birds, reptiles, and some fish.\n\nViviparous reproduction involves carrying developing offspring inside the mother's body until they are ready to be born. This is a characteristic of many mammals, including humans.\n\nWithout more specific information about the sound provided, it is not possible to accurately determine the reproductive strategy of the animal in question."
+    },
+    {
+        "file": "cow_27.wav",
+        "original_answer": "cow",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_30.wav",
+        "portability_question": "From the provided options, which diet category best matches the animal in the recording?\n\nOptions:\nHerbivore\nOmnivore\nInsectivore\nCarnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the recording, it is likely a carnivore. Carnivores are animals that primarily feed on meat, including other animals. Therefore, the correct answer from the provided options would be \"Carnivore.\""
+    },
+    {
+        "file": "rooster_8.wav",
+        "original_answer": "rooster",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_29.wav",
+        "portability_question": "Based on Linnaean classification, which of these animals is phylogenetically closest to the animal in the recording?\n\nOptions:\nCelebes warty pig\ncommon warthog\nTapir\nhippopotamus",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "\n\nThe animal in the recording is the hipopotamus, so based on Linnaean classification, the animal that is phylogenetically closest to it would be the tapir. \n\nLinnaean classification is a system of naming and classifying organisms based on their physical characteristics and evolutionary relationships. The taxonomic hierarchy within this system places organisms into increasingly specific groups, starting with the broadest category (Kingdom) and working down to the most specific group (species). \n\nIn this case, the hipopotamus belongs to the order Artiodactyla, family Hippopotamidae, and genus Hippopotamus. The tapir also belongs to the order Artiodactyla, but in a different family (Tapiridae), and it is more closely related to the hippopotamus than any other animal in its family. Therefore, the tapir is the animal that is phylogenetically closest to the hipopotamus according to Linnaean classification."
+    },
+    {
+        "file": "cat_230.wav",
+        "original_answer": "cat",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_18.wav",
+        "portability_question": "Based on the audio clues, which of the following physical traits is most likely associated with the animal in the audio?\n\nOptions:\nScales\nHooves\nFeathers\nTentacles",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the audio clues, the animal in the audio is most likely associated with scales."
+    },
+    {
+        "file": "rooster_11.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_69.wav",
+        "portability_question": "Based on the audio recording, and considering the common habits and actions of animals in this audio, which behavior from the options below is most likely associated with the animal making the sound?\n\nOptions:\nJumping between branches\nClimbing trees\nFlapping its wings\nChewing cud",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound made by the animal in the audio, it is most likely associated with the behavior of chewing cud. Cattle and other ruminants such as sheep and goats are known to make rumbling sounds while they chew their food, which is called \"chewing cud.\" This sound helps them digest their plant-based diet. The other options, such as jumping between branches or climbing trees, do not typically produce the rumbling sound that is characteristic of chewing cud. Flapping wings could be produced by birds, but it's not a common sound for cattle."
+    },
+    {
+        "file": "sheep_18.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_7.wav",
+        "portability_question": "Considering the sound of the animal in the recording, which vocalization type is most comparable to it?\n\nOptions:\nBarking\nCroaking\nMooing\nClucking",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the sound of the animal in the recording, it is most comparable to mooing."
+    },
+    {
+        "file": "rooster_14.wav",
+        "original_answer": "rooster",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_23.wav",
+        "portability_question": "Based on the recording provided and considering the vocalization patterns commonly associated with animals of this kind, which of the listed sounds would you identify as being most similar to the one heard in the audio?\n\nOptions:\nCroaking\nMooing\nBarking\nClucking",
+        "portability_answer": "Clucking",
+        "model_response": "The sound most similar to the one heard in the audio is likely to be mooing, as it is a common vocalization pattern for cows."
+    },
+    {
+        "file": "frog_72.wav",
+        "original_answer": "frog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_12.wav",
+        "portability_question": "From the sound and the characteristics of the animal producing it, which item would typically be needed to ensure its health and well-being?\n\nOptions:\nChicken coop\nMilking machine\nMud bath area\nLeash",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the sound described in the question, it is difficult to determine exactly which animal is being referred to, as there are many different animals that could produce similar sounds. However, given the options provided, the most likely answer would be a chicken coop.\n\nA chicken coop is necessary for ensuring the health and well-being of chickens, as it provides them with a safe and secure place to live, protect them from predators, and regulate their temperature and humidity levels. A milking machine is typically used for dairy cows, while a mud bath area is often associated with horses or other large animals. A leash is typically used for controlling dogs or other domesticated animals that are allowed to go outside."
+    },
+    {
+        "file": "frog_68.wav",
+        "original_answer": "frog",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_44.wav",
+        "portability_question": "Considering the sound provided, which of the following physical characteristics do you think is most consistent with the appearance or features of the animal in the audio?\n\nOptions:\nScales\nHooves\nWings\nTentacles",
+        "portability_answer": "Wings",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal being described as the sounds could potentially belong to a variety of creatures. However, given the options provided, if the animal has a hard, scaly texture and moves by flapping wings, it may be consistent with a bird. Therefore, the most consistent physical characteristic with the appearance or features of the animal in the audio would be \"wings.\""
+    },
+    {
+        "file": "frog_38.wav",
+        "original_answer": "frog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_8.wav",
+        "portability_question": "Considering the animal in the audio, what is its most typical behavior from the given list?\n\nOptions:\nHiding in shells\nChewing cud\nFlapping its wings\nClimbing trees",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound description provided, the animal in the audio is likely a bird. Birds are known for their ability to flap their wings and fly, so that would be their most typical behavior from the given options. Hiding in shells, chewing cud, and climbing trees are not typically behaviors associated with birds."
+    },
+    {
+        "file": "rooster_19.wav",
+        "original_answer": "rooster",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_228.wav",
+        "portability_question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nAsexual reproduction\nViviparous\nOviparous\nMarsupial reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound produced by the animal in question, it is most likely that the animal uses viviparous reproduction. Viviparous reproduction involves the development of offspring inside the mother's body, without the need for fertilization to occur outside the body. This type of reproduction is common among many mammals, including marsupials. Asexual reproduction, oviparous reproduction, and Marsupial reproduction are all different methods of reproduction that do not involve the production of offspring through the development of an embryo inside the mother's body."
+    },
+    {
+        "file": "sheep_58.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_205.wav",
+        "portability_question": "From the sound of the animal in the audio and reflecting on the usual items or tools required for animals in this group, which option best matches what is commonly needed to take care of this animal?\n\nOptions:\nAquarium filter\nInsect trap\nBirdcage\nLitter box",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound of the animal in the audio, it is likely a bird. Therefore, the item that best matches what is commonly needed to take care of this animal would be a birdcage. Birdcages provide a safe and comfortable space for birds to live in, and they can help to keep them clean and healthy by providing a place for them to perch, eat, and sleep. An aquarium filter may be necessary for fish, an insect trap for insects, and a litter box for cats or other small animals."
+    },
+    {
+        "file": "crow_14.wav",
+        "original_answer": "crow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_6.wav",
+        "portability_question": "Based on the audio recording and what you know about the usual movement patterns of the animal in the sound, which of the options listed below do you think best matches its primary mode of locomotion?\n\nOptions:\nHopping\nFlying\nRunning\nSlithering",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, I would choose \"Running\" as the animal's primary mode of locomotion. The sound indicates that the animal is moving in a continuous, rhythmic manner with all four legs pushing off the ground simultaneously, which is characteristic of running. Hopping involves jumping from one foot to another, flying involves sustained lift and gliding through the air, and slithering involves moving on the ground by dragging or pushing oneself along using body parts other than feet or hands. None of these other options match the sound characteristics as well as running."
+    },
+    {
+        "file": "pig_29.wav",
+        "original_answer": "pig",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_11.wav",
+        "portability_question": "In the context of evolutionary biology and biological classification, which of the animals provided is the most similar to the one in the audio file in terms of taxonomic hierarchy?\n\nOptions:\nwhite-breasted guineafowl\nnorthern bobwhite\nblood pheasant\nvulturine guineafowl",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal provided in the audio file is not specified, so it is impossible to determine which of the options is the most similar based on taxonomic hierarchy. Please provide more information about the animal in question or specify one of the options for a more accurate answer."
+    },
+    {
+        "file": "hen_6.wav",
+        "original_answer": "hen",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_25.wav",
+        "portability_question": "Based on the sound provided and what is commonly known about the biological classification and feeding behaviors of the animal in the sound, which diet type from the given options do you think most accurately describes what it primarily consumes?\n\nOptions:\nCarnivore\nOmnivore\nHerbivore\nInsectivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sound provided, the animal seems to be primarily consuming insects. Therefore, the most accurate diet type for this animal would be Insectivore."
+    },
+    {
+        "file": "hen_15.wav",
+        "original_answer": "hen",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_72.wav",
+        "portability_question": "When analyzing the sound in the audio and reflecting on the natural dietary habits of the type of animal making this sound, which of the following categories best represents its primary diet or the type of food it relies on for survival?\n\nOptions:\nCarnivore\nInsectivore\nOmnivore\nHerbivore",
+        "portability_answer": "Insectivore",
+        "model_response": "Based on the sound made by the animal in the audio, it is likely that the animal belongs to the category of herbivores. Herbivores primarily feed on plant material such as leaves, stems, fruits, and vegetables. The sounds produced by the animal suggest that it is chewing and digesting plant material. Therefore, the correct category for this animal would be herbivore."
+    },
+    {
+        "file": "rooster_18.wav",
+        "original_answer": "rooster",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_22.wav",
+        "portability_question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nCroaking\nChirping\nMooing\nClucking",
+        "portability_answer": "Croaking",
+        "model_response": "Based on the provided sound, the best match for the vocalization of the animal would be \"Mooing.\" The sound produced by the animal in the audio closely resembles the sound made by a cow when it is mooing."
+    },
+    {
+        "file": "cow_104.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_65.wav",
+        "portability_question": "From the provided recording, and reflecting on the characteristics of the sound made by the animal shown in the recording, which of the listed vocalizations do you believe best resembles it?\n\nOptions:\nClucking\nMooing\nChirping\nBleating",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the characteristics of the sound made by the animal in the recording, I would choose \"Mooing\" as the best resemblance. The sound is slow, low, and repetitive, similar to the sound made by a cow when it is grazing or expressing contentment."
+    },
+    {
+        "file": "cat_166.wav",
+        "original_answer": "cat",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_66.wav",
+        "portability_question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nWebbed feet\nScales\nWings\nFeathers",
+        "portability_answer": "Webbed feet",
+        "model_response": "Based on the sound heard in the audio, it is likely that the animal being described has webbed feet, as this would allow it to swim effectively. Scales and feathers are also possible traits for certain animals, but they are not necessarily associated with swimming. Wings are typically associated with birds, which are not present in the audio."
+    },
+    {
+        "file": "frog_66.wav",
+        "original_answer": "frog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_173.wav",
+        "portability_question": "Reflecting on the animal in the provided sound and what is known about its biological characteristics and common behaviors, which of the listed actions would you say best represents this animal?\n\nOptions:\nHiding in shells\nSwimming in open water\nFlying between trees\nPurring",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound provided, I would say that the animal in question is likely a fish, as the sound indicates movement through water. Fish are known for swimming in open water and using their fins to propel themselves through the water. Hiding in shells is a behavior exhibited by some species of snails and clams, swimming between trees is a characteristic of certain types of birds, and purring is a vocalization commonly associated with mammals such as cats and dogs."
+    },
+    {
+        "file": "sheep_31.wav",
+        "original_answer": "sheep",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_6.wav",
+        "portability_question": "When analyzing the sound of the animal in the audio and reflecting on the movement styles common to animals in this group, which locomotion method from the given list would you consider most appropriate for this animal?\n\nOptions:\nRunning\nSlithering\nHopping\nFlying",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound heard in the audio, I would consider the hopping locomotion method to be most appropriate for the animal in question. This is because the sound suggests that the animal is moving by jumping or bouncing off surfaces, which is a characteristic of many hopping animals such as rabbits, kangaroos, and some species of birds."
+    },
+    {
+        "file": "dog_15.wav",
+        "original_answer": "dog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_26.wav",
+        "portability_question": "Which animal in the list shares the closest phylogenetic lineage with the species identified in the audio file?\n\nOptions:\ncommon warthog\nCelebes warty pig\nhippopotamus\nTapir",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "Based on the information provided, it is not possible to determine which animal in the list shares the closest phylogenetic lineage with the species identified in the audio file. The audio file does not provide any information about the identity of the species, only that it belongs to the order Sirenia, which includes animals such as manatees and dugongs. Without additional information, it is impossible to accurately identify the specific species within this order or compare its evolutionary relationships to other animals on the list."
+    },
+    {
+        "file": "frog_50.wav",
+        "original_answer": "frog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_60.wav",
+        "portability_question": "Based on biological classification systems, which of the following animals is most closely related to the one in the audio file?\n\nOptions:\ngoat\nmouflon\nchamois\ntahr",
+        "portability_answer": "mouflon",
+        "model_response": "Without hearing the sound or seeing the image provided, it is not possible to accurately determine which animal is most closely related to the one in the audio file based on biological classification systems. \n\nHowever, all of the animals listed (goat, moose, chamois, and tahr) belong to the order Artiodactyla, which includes mammals with four-chambered hooves and often include herbivores such as cows, sheep, and deer. \n\nTherefore, among these options, the animal that is most closely related to the one in the audio file would be either a goat or a chamois, as they are both members of the same family (Caprini) within the order Artiodactyla."
+    },
+    {
+        "file": "cow_48.wav",
+        "original_answer": "cow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_230.wav",
+        "portability_question": "Based on the sound provided, which diet type from the list below is most likely to match the feeding habits of the animal in the sound?\n\nOptions:\nCarnivore\nInsectivore\nHerbivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "The diet type that best matches the feeding habits of the animal in the sound is herbivore. The sound indicates that the animal is chewing plant material, which is a characteristic of herbivores. Carnivores typically feed on meat and other animals, insects feed on insects, and omnivores eat both plants and animals."
+    },
+    {
+        "file": "frog_22.wav",
+        "original_answer": "frog",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_18.wav",
+        "portability_question": "From the provided list, which locomotion method is most suitable for the animal heard in the audio?\n\nOptions:\nFlying\nClimbing\nRunning\nSwimming",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound heard in the audio, it is difficult to determine the specific animal as there could be multiple animals that make similar sounds. However, given the options provided, the most suitable locomotion method would be running or swimming, depending on the physical characteristics of the animal and the environment it is in. If the animal has wings, it may be capable of flying, but without more information, it's hard to say for certain. As for climbing, while some animals are capable of climbing, it doesn't seem to be the primary mode of transportation in this case."
+    },
+    {
+        "file": "dog_124.wav",
+        "original_answer": "dog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_183.wav",
+        "portability_question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nHiding in shells\nFlapping its wings\nPurring\nFlying between trees",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound described in the audio, it is difficult to determine exactly which action the animal is performing, as different animals can exhibit a range of sounds and behaviors. However, given that the sound suggests an animal moving through the air, option \"flying between trees\" seems like the most likely answer. This could be a bird or other type of flying creature. It's worth noting that without more context or information about the specific animal in question, any of these options could be a possibility."
+    },
+    {
+        "file": "cow_45.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_5.wav",
+        "portability_question": "Reflecting on the audio provided, which of the listed sounds do you think most closely resembles the vocalization of this animal?\n\nOptions:\nBarking\nClucking\nChirping\nBleating",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the audio provided, I would say that the sound most closely resembles the vocalization of an animal is C: bird chirping. The sound is high-pitched and repetitive, similar to the chirping of many birds."
+    },
+    {
+        "file": "pig_36.wav",
+        "original_answer": "pig",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_46.wav",
+        "portability_question": "Considering the sound provided in the audio and the natural behaviors typically exhibited by animals in this audio, which of the following locomotion methods most accurately describes how the animal in the audio moves?\n\nOptions:\nRunning\nHopping\nFlying\nSlithering",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided in the audio and the natural behaviors exhibited by animals, it is difficult to determine exactly how the animal in the audio moves with certainty. However, given the options provided, the most likely answer would be hopping. This is because the sound suggests that the animal is moving by alternately lifting its legs and landing on them, which is a characteristic of many hopping animals such as rabbits or frogs. Flying could also be a possibility if the animal has wings, but without additional information, it's hard to say for sure. Running and slithering are not typical locomotion methods for the sounds described in the audio."
+    },
+    {
+        "file": "cow_89.wav",
+        "original_answer": "cow",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_28.wav",
+        "portability_question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nOmnivore\nCarnivore\nHerbivore\nInsectivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound made by the animal in the audio (chewing and biting), it is likely that the animal is herbivore. Herbivores typically have teeth adapted for grinding plant material and their digestive system is designed to break down plant fibers. Carnivores, on the other hand, have sharp teeth for hunting and killing prey, and their digestive system is adapted to process meat. Omnivores eat both plants and animals, while insectivores primarily feed on insects."
+    },
+    {
+        "file": "hen_43.wav",
+        "original_answer": "hen",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_18.wav",
+        "portability_question": "Considering the audio and the types of sounds typically made by animals, which vocalization listed below best aligns with the animal in the recording?\n\nOptions:\nMooing\nBarking\nCrow\nMeowing",
+        "portability_answer": "Crow",
+        "model_response": "Based on the sound made in the recording, it is most likely that the animal is a cow, as the sound is described as 'mooing'. Barking, crowing, and meowing are all distinct vocalizations made by different animals."
+    },
+    {
+        "file": "dog_105.wav",
+        "original_answer": "dog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_28.wav",
+        "portability_question": "Based on the animal in the provided audio segment, which of the following physical attributes would you associate with it most confidently?\n\nOptions:\nHooves\nBeak\nHorns\nFins",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound in the audio segment, I would associate the physical attribute \"hooves\" with the animal most confidently."
+    },
+    {
+        "file": "crow_9.wav",
+        "original_answer": "crow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_220.wav",
+        "portability_question": "Based on the sound provided, and considering the ecological and biological traits of animals in this sound, which reproductive method listed below best matches how the animal in the audio gives birth or reproduces?\n\nOptions:\nAsexual reproduction\nMarsupial reproduction\nOviparous\nViviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "The animal in the audio is likely to be marsupial. Marsupials give birth to live young after a short gestation period, typically around 3 months. The young are then carried in a pouch on the mother's belly until they are able to survive on their own. This type of reproduction is known as marsupial reproduction."
+    },
+    {
+        "file": "pig_28.wav",
+        "original_answer": "pig",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_71.wav",
+        "portability_question": "Reflecting on the sound provided in the audio, and considering the typical habits, behaviors, and care practices needed for animals in the audio, which of the following items would you identify as being most important in caring for the animal producing the sound?\n\nOptions:\nAquarium filter\nBirdcage\nLitter box\nInsect trap",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound provided in the audio, it is difficult to determine exactly which animal is being cared for, as the sounds could potentially belong to a variety of different species. However, given the options provided, the most likely answer would be an aquarium filter, as fish and other aquatic animals often require regular cleaning and maintenance to ensure their health and well-being."
+    },
+    {
+        "file": "hen_44.wav",
+        "original_answer": "hen",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_22.wav",
+        "portability_question": "Which of the listed features aligns best with the physical appearance of the animal in the sound?\n\nOptions:\nHooves\nWebbed feet\nWings\nTentacles",
+        "portability_answer": "Webbed feet",
+        "model_response": "Based on the sound, it is difficult to determine the specific animal being referred to as there are multiple animals that could produce similar sounds. However, given the options provided, the feature that best aligns with the physical appearance of an animal in the sound would be hooves, as this is a common feature among many hoofed animals such as horses, cows, and deer."
+    },
+    {
+        "file": "rooster_11.wav",
+        "original_answer": "rooster",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_35.wav",
+        "portability_question": "Based on the audio, which of the following reproductive methods would you associate with the animal producing the sound?\n\nOptions:\nViviparous\nOviparous\nMarsupial reproduction\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "The animal in the sound is likely to be viviparous, as the sound indicates that the young are born alive, rather than being laid as eggs."
+    },
+    {
+        "file": "sheep_65.wav",
+        "original_answer": "sheep",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_5.wav",
+        "portability_question": "Based on the audio recording and the natural requirements of the animal making the sound, which of the items listed below is most closely associated with providing appropriate care and support for its well-being?\n\nOptions:\nAquarium filter\nLitter box\nPerch\nMud bath area",
+        "portability_answer": "Perch",
+        "model_response": "The most closely associated item with providing appropriate care and support for an animal's well-being based on the audio recording would be a mud bath area. The sounds in the recording suggest that the animal is taking a bath or splashing around in water, which indicates a need for a suitable environment for bathing. A mud bath area provides a natural and safe place for animals to bathe and maintain their hygiene, while also promoting relaxation and stress relief."
+    },
+    {
+        "file": "cat_6.wav",
+        "original_answer": "cat",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_12.wav",
+        "portability_question": "Considering the animal in the audio recording, along with the broader context of its natural environment and ecological role, which dietary classification listed below do you believe best fits the type of food it commonly eats to sustain itself?\n\nOptions:\nCarnivore\nInsectivore\nHerbivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the description provided, the animal in the audio recording is likely an insectivore. Insects make up a significant portion of their diet, suggesting that they primarily feed on insects. While they may also consume other small animals or plants, the primary focus of their feeding habits would be insects. Therefore, the dietary classification that best fits this type of animal is insectivore."
+    },
+    {
+        "file": "pig_24.wav",
+        "original_answer": "pig",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_154.wav",
+        "portability_question": "When analyzing the sound and considering the natural habits of this animal, which behavior in the provided options do you think most accurately aligns with how the animal in the sound is commonly known to act?\n\nOptions:\nFlying between trees\nPurring\nFlapping its wings\nHiding in shells",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound description provided, the animal in question seems to be a bird. Birds are known for their ability to fly between trees, so the behavior that best aligns with how this animal is commonly known to act is \"flying between trees.\" The other options, such as purring, flapping wings, and hiding in shells, may be behaviors exhibited by different animals."
+    },
+    {
+        "file": "dog_3.wav",
+        "original_answer": "dog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_31.wav",
+        "portability_question": "Considering the characteristics of the animal in the audio, which of the listed methods best aligns with how it reproduces?\n\nOptions:\nViviparous\nOviparous\nMarsupial reproduction\nAsexual reproduction",
+        "portability_answer": "Oviparous",
+        "model_response": "Based on the description provided in the audio, the animal in question is likely marsupial. Marsupials give birth to underdeveloped young that then nurse in a pouch. Therefore, the correct answer would be Marsupial reproduction."
+    },
+    {
+        "file": "rooster_12.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_179.wav",
+        "portability_question": "Reflecting on the animal heard in the recording, what is its most likely reproductive method from the given choices?\n\nOptions:\nOviparous\nAsexual reproduction\nViviparous\nMarsupial reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based solely on the sound provided, it is difficult to determine the specific animal and its reproductive method with certainty. However, given the options provided, the most likely answer would be marsupial reproduction. Marsupials give birth to underdeveloped young that then nurse in a pouch, which is a characteristic of marsupials. Oviparous animals lay eggs, viviparous animals give birth to live young, and asexual reproduction involves reproduction without fertilization by a male. Without more context or information about the sound, it is impossible to determine the correct answer with certainty."
+    },
+    {
+        "file": "cat_205.wav",
+        "original_answer": "cat",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_31.wav",
+        "portability_question": "Based on the characteristics of the animal producing the sound, which item would you consider most essential for ensuring its well-being?\n\nOptions:\nMud bath area\nLeash\nMilking machine\nChicken coop",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the characteristics of the animal producing the sound, it is difficult to determine the specific item that would be considered most essential for ensuring its well-being as the sound does not provide enough information about the animal's needs. However, some general items that could be important for various animals include:\n\n- Fresh water: All animals need access to clean water to stay healthy.\n- Food: Depending on the type of animal, it may require specific types of food or a balanced diet to thrive.\n- Shelter: Animals need a comfortable and secure place to live and rest.\n- Health care: Regular veterinary check-ups and preventative care can help keep animals healthy.\n\nWithout more context about the sound and the animal in question, it is difficult to determine which of these items would be most essential for ensuring its well-being."
+    },
+    {
+        "file": "cat_183.wav",
+        "original_answer": "cat",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_15.wav",
+        "portability_question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nOviparous\nMarsupial reproduction\nAsexual reproduction\nViviparous",
+        "portability_answer": "Oviparous",
+        "model_response": "Based on the sound and natural reproductive behaviors observed in the recording, the most representative method of reproduction for this type of animal would be viviparous. Viviparity is a mode of reproduction where the developing embryo is carried inside the mother's body until birth, rather than being laid as an egg. This is evident from the sounds of the mother's contractions and the fact that the young are born viable and relatively mature. Marsupials also reproduce viviparously, but they have a different birthing process where the young are born with underdeveloped limbs and must nurse in a pouch. Oviparous animals lay eggs, while asexual reproduction involves the production of offspring without fertilization by a male."
+    },
+    {
+        "file": "cat_154.wav",
+        "original_answer": "cat",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_53.wav",
+        "portability_question": "What physical feature does the animal in the provided audio segment have?\n\nOptions:\nHooves\nFins\nBeak\nWings",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound heard in the audio segment, it is likely that the animal has hooves."
+    },
+    {
+        "file": "rooster_23.wav",
+        "original_answer": "rooster",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_40.wav",
+        "portability_question": "Taking into account the taxonomic classification system, including categories such as family, genus, and species, which of the listed animals is most closely connected to the animal observed in the audio recording?\n\nOptions:\nchamois\ntahr\ngoat\nmouflon",
+        "portability_answer": "mouflon",
+        "model_response": "Based on the information provided, it's difficult to determine the specific animal species heard in the audio with certainty. However, given the options provided, the chamois (Rupicapra rupicapra) seems to be the most closely related animal among the four, especially if we consider the taxonomic category of genus."
+    },
+    {
+        "file": "sheep_28.wav",
+        "original_answer": "sheep",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_6.wav",
+        "portability_question": "Considering the principles of biological classification, which of the following animals shares the closest relationship with the animal represented in the audio file?\n\nOptions:\nwhite-breasted guineafowl\nnorthern bobwhite\nblood pheasant\nvulturine guineafowl",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal represented in the audio file is the vulturine guineafowl. Therefore, the option that shares the closest relationship with it would be Vulturine Guineafowl."
+    },
+    {
+        "file": "hen_53.wav",
+        "original_answer": "hen",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_108.wav",
+        "portability_question": "Based on the sound in the audio, which of the following actions best represents the behavior typically seen in the type of animal making the provided sound?\n\nOptions:\nJumping between branches\nWagging its tail\nHiding in shells\nFlapping its wings",
+        "portability_answer": "Wagging its tail",
+        "model_response": "The sound in the audio is typically made by a bird. Of the options provided, the most appropriate action to describe the behavior of a bird would be \"flapping its wings.\" Birds use their wings to fly and move through the air. Jumping between branches and wagging its tail may also be behaviors exhibited by birds, but they are not as commonly associated with this particular sound. Hiding in shells is not a typical behavior for birds, as they do not typically burrow or hide in shells like some other animals."
+    },
+    {
+        "file": "cat_40.wav",
+        "original_answer": "cat",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_15.wav",
+        "portability_question": "From the listed locomotion types, which one matches the typical movement of the animal in the sound?\n\nOptions:\nHopping\nSwimming\nClimbing\nFlying",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound provided, the animal's typical movement is hopping."
+    },
+    {
+        "file": "rooster_14.wav",
+        "original_answer": "rooster",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_105.wav",
+        "portability_question": "Which of the following behaviors best describes the typical actions associated with the animal in the recording?\n\nOptions:\nWagging its tail\nJumping between branches\nHiding in shells\nFlapping its wings",
+        "portability_answer": "Wagging its tail",
+        "model_response": "The typical actions associated with the animal in the recording are wagging its tail and flapping its wings."
+    },
+    {
+        "file": "crow_28.wav",
+        "original_answer": "crow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_27.wav",
+        "portability_question": "Considering the animal in the audio, which of the listed items would you typically associate with taking proper care of it?\n\nOptions:\nInsect trap\nLeash\nAquarium filter\nBirdcage",
+        "portability_answer": "Leash",
+        "model_response": "Based on the sound in the audio, I would associate the animal with being a bird. Therefore, the correct option for taking proper care of the animal would be a birdcage."
+    },
+    {
+        "file": "cow_74.wav",
+        "original_answer": "cow",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_6.wav",
+        "portability_question": "From the sound provided, what physical characteristic seems to be the most likely match for the animal making this sound? Consider its natural behaviors and appearance and choose one from the following options.\n\nOptions:\nTentacles\nFins\nWings\nScales",
+        "portability_answer": "Wings",
+        "model_response": "Based on the sound described, it is difficult to determine the specific animal making the noise with certainty. However, given the option of tentacles, fins, wings, or scales, tentacles seem like the most likely match for the sound, as they are all body parts that could produce unique sounds through movement or interaction with the environment. Without more context or information about the sound, it's impossible to determine which physical characteristic would be the best match."
+    },
+    {
+        "file": "crow_1.wav",
+        "original_answer": "crow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_42.wav",
+        "portability_question": "Based on the sound in the recording, which of the listed vocalizations is most similar to the one made by the animal in the recording?\n\nOptions:\nMooing\nBleating\nClucking\nBarking",
+        "portability_answer": "Bleating",
+        "model_response": "The most similar vocalization to the one made by the animal in the recording would be bleating."
+    },
+    {
+        "file": "cow_106.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_25.wav",
+        "portability_question": "Based on the audio, which of these sounds is most likely to be similar to the one made by the animal in the recording?\n\nOptions:\nClucking\nBarking\nMooing\nBleating",
+        "portability_answer": "Bleating",
+        "model_response": "The sound that is most likely to be similar to the one made by the animal in the recording is mooing."
+    },
+    {
+        "file": "cat_35.wav",
+        "original_answer": "cat",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_40.wav",
+        "portability_question": "Based on the sound of the animal in the audio, which of the following diet types most accurately describes what it primarily eats?\n\nOptions:\nInsectivore\nCarnivore\nHerbivore\nOmnivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sound of the animal in the audio, it is likely an insectivore, as insects are a common food source for many animals with similar vocalizations."
+    },
+    {
+        "file": "pig_36.wav",
+        "original_answer": "pig",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_23.wav",
+        "portability_question": "According to the taxonomic hierarchy defined by biological classification, which animal is most closely related to the one in the audio file?\n\nOptions:\ngolden jackal\nArctic fox\nside-striped jackal\nred fox",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the sound file and without additional context or information about the specific characteristics of the animal sounds, it is not possible to accurately determine which animal is most closely related to the one in the audio file. \n\nHowever, all of the animals listed (golden jackal, Arctic fox, side-striped jackal, red fox) belong to the family Canidae, which consists of various types of dogs, wolves, and jackals. Therefore, among these options, the golden jackal and the side-striped jackal are the closest relatives as they are both members of the genus Canis."
+    },
+    {
+        "file": "cat_59.wav",
+        "original_answer": "cat",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_15.wav",
+        "portability_question": "When considering the sound of the animal in the audio and the typical care routines associated with animals in this category, which of the following items would most likely be required to provide for its needs and well-being?\n\nOptions:\nPerch\nAquarium filter\nMud bath area\nInsect trap",
+        "portability_answer": "Mud bath area",
+        "model_response": "Based on the sound of the animal in the audio, it is likely a bird. Birds require different care routines than most other animals, including a suitable diet, a comfortable place to sleep or rest, and regular interaction with their owners. A perch is necessary for birds to sit on and rest, while an aquarium filter is needed to maintain water quality in the bird's environment. A mud bath area can also be beneficial for birds, as it allows them to clean themselves and keep their feathers healthy. An insect trap is not typically needed for a bird's care routine."
+    },
+    {
+        "file": "sheep_53.wav",
+        "original_answer": "sheep",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_43.wav",
+        "portability_question": "Based on the sound, which reproductive method best describes how the animal in the audio gives birth or produces offspring?\n\nOptions:\nMarsupial reproduction\nOviparous\nViviparous\nAsexual reproduction",
+        "portability_answer": "Oviparous",
+        "model_response": "The animal in the audio gives birth to live young, which is a characteristic of viviparous reproduction. Therefore, the correct option is viviparous. Marsupials also give birth to live young, but they have a different reproductive system and the young are carried in a pouch for a short time after birth. Oviparous animals lay eggs that develop outside the body, while asexual reproduction involves the production of offspring without fertilization by a male."
+    },
+    {
+        "file": "dog_62.wav",
+        "original_answer": "dog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_30.wav",
+        "portability_question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nHooves\nFins\nShell\nFeathers",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound provided, I would associate the physical attribute \"feathers\" with the animal making the sound. Feathers are a characteristic commonly associated with birds, which are known for their ability to produce a variety of sounds, including chirps and tweets. The sound in the audio seems to be that of a bird."
+    },
+    {
+        "file": "rooster_23.wav",
+        "original_answer": "rooster",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_19.wav",
+        "portability_question": "Considering the audio recording, which of these behaviors is most likely to match how the animal in the recording commonly acts?\n\nOptions:\nJumping between branches\nHiding in shells\nFlapping its wings\nWagging its tail",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the description provided in the audio, the animal in the recording is most likely to be a bird. Birds are known for their ability to flap their wings and move around by jumping from branch to branch. They may also hide in shells or trees for shelter. wagging their tails is a common behavior for many birds, but it is not necessarily something they do all the time. Therefore, the most likely option would be \"flapping its wings.\""
+    },
+    {
+        "file": "cat_55.wav",
+        "original_answer": "cat",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_22.wav",
+        "portability_question": "From the given choices, which dietary classification is most appropriate for the animal you heard in the recording?\n\nOptions:\nCarnivore\nOmnivore\nHerbivore\nInsectivore",
+        "portability_answer": "Insectivore",
+        "model_response": "Based on the sound of the animal in the recording, it is most likely an herbivore. Herbivores primarily feed on plant material and have teeth adapted for grinding and breaking down tough plant fibers. The sounds in the recording suggest that the animal is chewing on leaves or other plant material. Therefore, the most appropriate dietary classification for this animal would be herbivore."
+    },
+    {
+        "file": "rooster_19.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_2.wav",
+        "portability_question": "From the provided options, which one reflects the reproductive strategy most commonly associated with the animal in the sound?\n\nOptions:\nViviparous\nMarsupial reproduction\nOviparous\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "The sound is most likely associated with marsupial reproduction. Marsupials give birth to underdeveloped young that then nurse in a pouch on the mother's belly. The sound is of a marsupial calling out to its young."
+    },
+    {
+        "file": "frog_14.wav",
+        "original_answer": "frog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_7.wav",
+        "portability_question": "Based on Linnaean taxonomy, which of these animals is most closely aligned with the one in the audio file?\n\nOptions:\nhippopotamus\nCelebes warty pig\nTapir\nbabirusas",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "The animal that is most closely aligned with the one in the audio file, based on Linnaean taxonomy, would be the tapir (Tapiridae family)."
+    },
+    {
+        "file": "frog_6.wav",
+        "original_answer": "frog",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_24.wav",
+        "portability_question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nJumping between branches\nFlapping its wings\nWagging its tail\nHiding in shells",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the provided audio, the animal's behavior that is most representative of its usual actions is \"Wagging its tail.\" This behavior is captured in the audio multiple times, indicating that it is a common activity of the animal. The other options, such as jumping between branches or flapping its wings, may be specific to certain situations or activities, but they are not consistently represented in the audio data provided. Hiding in shells could also be a possible behavior for some animals, but it is not clearly demonstrated in the audio provided."
+    },
+    {
+        "file": "crow_31.wav",
+        "original_answer": "crow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_224.wav",
+        "portability_question": "From the provided options, which of these items is most suitable for meeting the care needs of the animal in the recording?\n\nOptions:\nBirdcage\nAquarium filter\nInsect trap\nLitter box",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sounds in the recording, it seems that the animal in question has a need for a place to lay eggs or give birth. Therefore, the most suitable option from the given choices would be the \"Litter box.\" This is because a litter box can provide a safe and clean environment for an animal to give birth and care for its young. The other options, such as a birdcage, aquarium filter, or insect trap, may not be appropriate for the needs of the animal in the recording."
+    },
+    {
+        "file": "pig_7.wav",
+        "original_answer": "pig",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_15.wav",
+        "portability_question": "Considering the principles of biological classification, which of the following animals shares the closest relationship with the animal represented in the audio file?\n\nOptions:\nblack-backed jackal\nside-striped jackal\ngolden jackal\ndhole",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the principles of biological classification, the animal that shares the closest relationship with the animal represented in the audio file is the golden jackal (Canis lupus familiaris). This is because the golden jackal and the animal in the audio file belong to the same family (Canidae) and share similar physical characteristics and behaviors. The black-backed jackal, side-striped jackal, and dhole are all members of different families within the Canidae order and therefore would be more distantly related to the animal in the audio file."
+    },
+    {
+        "file": "sheep_18.wav",
+        "original_answer": "sheep",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_108.wav",
+        "portability_question": "When analyzing the sound in the audio and reflecting on the typical vocalizations of animals in this category, which of the following listed sounds most accurately resembles the vocalization produced by the animal in the recording?\n\nOptions:\nChirping\nBarking\nMooing\nCroaking",
+        "portability_answer": "Barking",
+        "model_response": "Based on the characteristics of the sound in the audio, it most closely resembles the vocalization of a frog. Therefore, the correct answer is 'Croaking'. Frogs are known for producing a variety of sounds, including croaks, which are often used for communication, such as attracting mates or warning other frogs of potential dangers."
+    },
+    {
+        "file": "hen_52.wav",
+        "original_answer": "hen",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_27.wav",
+        "portability_question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nHerbivore\nInsectivore\nCarnivore\nOmnivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sounds made by the animal in the audio, it seems to be primarily feeding on insects. Therefore, the animal would most likely belong to the insectivore category."
+    },
+    {
+        "file": "dog_140.wav",
+        "original_answer": "dog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_183.wav",
+        "portability_question": "Based on the characteristics of the animal producing the sound, which item would you consider most essential for ensuring its well-being?\n\nOptions:\nLitter box\nAquarium filter\nBirdcage\nInsect trap",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the characteristics of the animal producing the sound, it is difficult to determine the specific item that would be considered most essential for ensuring its well-being as the sound could be produced by various animals with different needs. However, some general considerations for ensuring the well-being of animals include providing them with adequate food and water, ensuring their living environment is safe and comfortable, and providing them with proper medical care when needed."
+    },
+    {
+        "file": "dog_172.wav",
+        "original_answer": "dog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_3.wav",
+        "portability_question": "Based on the audio clues, which of the following physical traits is most likely associated with the animal in the audio?\n\nOptions:\nFins\nWings\nShell\nHooves",
+        "portability_answer": "Hooves",
+        "model_response": "Without hearing the sound or seeing any visual cues, it's impossible to determine the physical trait associated with the animal in the audio. All the options provided could potentially be associated with different animals. For example, fins could be associated with fish, wings could be associated with birds, shells could be associated with mollusks or crustaceans, and hooves could be associated with mammals."
+    },
+    {
+        "file": "sheep_58.wav",
+        "original_answer": "sheep",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_24.wav",
+        "portability_question": "Based on the sound of the animal in the audio, which of the following diet types most accurately describes what it primarily eats?\n\nOptions:\nHerbivore\nInsectivore\nOmnivore\nCarnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the audio, it is likely an insectivore. Insectivores primarily eat insects and other arthropods."
+    },
+    {
+        "file": "dog_19.wav",
+        "original_answer": "dog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_59.wav",
+        "portability_question": "Taking into account the sound from the recording and the natural tendencies of this type of animal making the sound, which of the following behaviors is most representative of how it typically acts?\n\nOptions:\nClimbing trees\nChewing cud\nFlapping its wings\nJumping between branches",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound in the recording, which sounds like birds chirping, the most representative behavior of how a bird typically acts would be option C: Flapping its wings. Birds use their wings to fly and communicate with each other through chirps and calls. Climbing trees, chewing cud, and jumping between branches are also common behaviors of certain types of birds, but they are not necessarily representative of how all birds act based solely on the sound of their chirping."
+    },
+    {
+        "file": "rooster_11.wav",
+        "original_answer": "rooster",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_14.wav",
+        "portability_question": "Taking into account the taxonomic classification system, including categories such as family, genus, and species, which of the listed animals is most closely connected to the animal observed in the audio recording?\n\nOptions:\nstarling\ncommon raven\njackdaw\nred-billed blue magpie",
+        "portability_answer": "common raven",
+        "model_response": "Based on the provided options, the animal most closely connected to the one observed in the audio recording would be the starling (Sturnus vulgaris). This is because starlings belong to the same family (Sturnidae) as other birds commonly referred to as \"crows,\" such as crows and ravens. Jackdaws are also part of the same family but are not closely related to the other three options provided. Red-billed blue magpies belong to a different family (Picae) and are not closely related to the other animals mentioned."
+    },
+    {
+        "file": "frog_22.wav",
+        "original_answer": "frog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_5.wav",
+        "portability_question": "From the sound provided, what physical characteristic seems to be the most likely match for the animal making this sound? Consider its natural behaviors and appearance and choose one from the following options.\n\nOptions:\nFins\nShell\nScales\nHooves",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal making the sound with certainty. However, given the option of fins, shell, scales, or hooves, the most likely match might be \"scales.\" Fish typically have gills and a streamlined body that allows them to swim quickly through water. They also often have scales that provide protection and help them move through the water efficiently. The sound produced by the animal in the audio could be indicative of movement through water, which is a common behavior for fish."
+    },
+    {
+        "file": "sheep_11.wav",
+        "original_answer": "sheep",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_20.wav",
+        "portability_question": "Based on the sound provided, which of the following options is the most likely way the animal in the sound moves?\n\nOptions:\nSlithering\nFlying\nHopping\nRunning",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, the most likely way the animal moves is slithering. The sound suggests that the animal is moving smoothly and continuously along a surface, which is characteristic of slithering motion. Flying, hopping, and running all involve more distinct, abrupt movements that are less likely to produce the continuous, gliding sound heard in the audio."
+    },
+    {
+        "file": "cow_109.wav",
+        "original_answer": "cow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_139.wav",
+        "portability_question": "Taking into account the sound of the animal in the recording and what is commonly known about its care requirements, which of the listed items do you think is most essential for providing adequate care and support for this type of animal?\n\nOptions:\nLitter box\nInsect trap\nAquarium filter\nBirdcage",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound in the recording, it appears to be an animal that needs to be kept in water. Therefore, the aquarium filter would be the most essential item for providing adequate care and support for this type of animal. The litter box and insect trap may also be necessary depending on the specific species of the animal, but they are not as critical as the aquarium filter. The birdcage is not suitable for this type of animal."
+    },
+    {
+        "file": "cat_97.wav",
+        "original_answer": "cat",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_1.wav",
+        "portability_question": "Taking into account the animal’s likely biological traits and its ecological habits, which of the following locomotion methods best corresponds to how the animal in the audio typically moves in its natural habitat?\n\nOptions:\nHopping\nFlying\nSwimming\nRunning",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound heard in the audio (a horse clicking and making noises while it runs), the most appropriate locomotion method for this animal would be running. Hopping is not typically associated with horses, although they can hop when they are young or if injured. Flying and swimming are not typical locomotion methods for horses either, as they are land animals that primarily move by running."
+    },
+    {
+        "file": "sheep_5.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_0.wav",
+        "portability_question": "Reflecting on the sound in the audio and taking into account the natural vocalization behaviors of animals, which of the listed options would you say is the closest match to the sound produced by the animal in the provided audio?\n\nOptions:\nCroaking\nClucking\nChirping\nMooing",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the natural vocalization behaviors of animals, the sound produced by the animal in the provided audio most closely matches the sound of a duck quacking. Therefore, the correct option would be \"Clucking.\""
+    },
+    {
+        "file": "crow_31.wav",
+        "original_answer": "crow",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_45.wav",
+        "portability_question": "Based on the sound, which reproductive method best describes how the animal in the audio gives birth or produces offspring?\n\nOptions:\nAsexual reproduction\nOviparous\nViviparous\nMarsupial reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "The animal in the audio gives birth to live young, so the best option would be viviparous reproduction."
+    },
+    {
+        "file": "crow_5.wav",
+        "original_answer": "crow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_90.wav",
+        "portability_question": "Taking into account the animal in the provided sound and its biological characteristics, which of the following options best represents the method this animal uses to reproduce or give birth to its offspring?\n\nOptions:\nViviparous\nMarsupial reproduction\nAsexual reproduction\nOviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "The sound is that of a rabbit, which is a mammal. Mammals typically reproduce through viviparous or oviparous methods. \n\nViviparous reproduction involves the development of offspring inside the mother's body until they are ready to be born. Marsupials also use this method of reproduction.\n\nAsexual reproduction, on the other hand, does not involve the production of offspring with genetic material from two parents. This method is commonly used by plants and some invertebrates.\n\nOviparous reproduction involves laying eggs that develop outside the mother's body. This method is common among birds, reptiles, and many fish species.\n\nTherefore, the correct option for the sound of a rabbit would be viviparous reproduction."
+    },
+    {
+        "file": "dog_63.wav",
+        "original_answer": "dog",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_9.wav",
+        "portability_question": "Which of the following options best represents the primary way the animal in the audio moves?\n\nOptions:\nRunning\nFlying\nClimbing\nHopping",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound heard in the audio, the primary way the animal moves is by hopping."
+    },
+    {
+        "file": "pig_15.wav",
+        "original_answer": "pig",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_31.wav",
+        "portability_question": "When analyzing the sound of the animal in the audio and reflecting on the movement styles common to animals in this group, which locomotion method from the given list would you consider most appropriate for this animal?\n\nOptions:\nFlying\nClimbing\nHopping\nRunning",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound heard in the audio, it seems to be an animal that is capable of moving quickly on foot. Therefore, the most appropriate locomotion method for this animal would be 'Running'."
+    },
+    {
+        "file": "cow_8.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_30.wav",
+        "portability_question": "Based on the audio, which of these sounds is most likely to be similar to the one made by the animal in the recording?\n\nOptions:\nClucking\nBarking\nMooing\nBleating",
+        "portability_answer": "Bleating",
+        "model_response": "The sound that is most likely to be similar to the one made by the animal in the recording is mooing."
+    },
+    {
+        "file": "cow_88.wav",
+        "original_answer": "cow",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_8.wav",
+        "portability_question": "Considering the animal in the audio recording, along with the broader context of its natural environment and ecological role, which dietary classification listed below do you believe best fits the type of food it commonly eats to sustain itself?\n\nOptions:\nCarnivore\nInsectivore\nOmnivore\nHerbivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the description provided, the animal in the audio recording is likely an insectivore. Insects make up a significant portion of their diet, suggesting that they primarily feed on insects. While they may also consume other small animals or plants, the primary focus of their feeding habits would be insects. Therefore, the dietary classification that best fits this type of animal is insectivore."
+    },
+    {
+        "file": "frog_33.wav",
+        "original_answer": "frog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_195.wav",
+        "portability_question": "When analyzing the sound and considering the natural habits of this animal, which behavior in the provided options do you think most accurately aligns with how the animal in the sound is commonly known to act?\n\nOptions:\nPurring\nFlying between trees\nFlapping its wings\nHiding in shells",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound provided, the animal is likely a bird. Birds are known for their ability to fly between trees and flapping their wings to maintain flight. Purring is a behavior often associated with mammals, hiding in shells is a behavior exhibited by some mollusks, and while birds may occasionally hide in burrows or nests made of leaves and twigs, it is not their primary behavior. Therefore, the option that best aligns with how the animal in the sound is commonly known to act is \"flapping its wings.\""
+    },
+    {
+        "file": "frog_51.wav",
+        "original_answer": "frog",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_43.wav",
+        "portability_question": "Which of the listed features aligns best with the physical appearance of the animal in the sound?\n\nOptions:\nScales\nHooves\nWebbed feet\nWings",
+        "portability_answer": "Wings",
+        "model_response": "Based on the sound, it is difficult to determine the specific animal being referred to as there are multiple animals that could produce similar sounds. However, if we had to make a guess based solely on the physical appearance of the animal, we would say that the option most likely aligned with the sound would be \"wings.\" This is because many birds are capable of producing sounds similar to what is heard in the audio, and they also have wings as a distinguishing feature."
+    },
+    {
+        "file": "rooster_12.wav",
+        "original_answer": "rooster",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_14.wav",
+        "portability_question": "Which animal in the list shares the closest phylogenetic lineage with the species identified in the audio file?\n\nOptions:\nTapir\nCelebes warty pig\nbabirusas\nhippopotamus",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "The animal that shares the closest phylogenetic lineage with the species identified in the audio file is the hipopotamus."
+    },
+    {
+        "file": "frog_27.wav",
+        "original_answer": "frog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_36.wav",
+        "portability_question": "From the provided recording, and reflecting on the characteristics of the sound made by the animal shown in the recording, which of the listed vocalizations do you believe best resembles it?\n\nOptions:\nBarking\nMooing\nBleating\nClucking",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the characteristics of the sound made by the animal in the recording, I would choose option B: mooing. The sound is deep, resonant, and has a distinct rumbling quality, which is similar to the sound of a cow mooing. Barking sounds typically have a higher pitch and are more rhythmic, clucking usually involves a quick, light tapping sound, and bleating usually involves a higher-pitched sound that can be sustained for longer periods."
+    },
+    {
+        "file": "frog_14.wav",
+        "original_answer": "frog",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_46.wav",
+        "portability_question": "Considering the animal in the audio, what is its most typical behavior from the given list?\n\nOptions:\nHiding in shells\nFlapping its wings\nWagging its tail\nJumping between branches",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the description of the animal as having a long beak, soft shell, and webbed feet, it is likely a bird. Birds typically have的行为 include flapping their wings, wagging their tails, and jumping between branches. Hiding in shells is not a common behavior for birds, and while they may use their feathers to help them blend into their environment, it is not their primary way of interacting with their surroundings."
+    },
+    {
+        "file": "cow_27.wav",
+        "original_answer": "cow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_22.wav",
+        "portability_question": "When considering the sound of the animal in the audio and the typical care routines associated with animals in this category, which of the following items would most likely be required to provide for its needs and well-being?\n\nOptions:\nAquarium filter\nBirdcage\nInsect trap\nLitter box",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound of the animal in the audio, it is likely a bird. Birds require certain care routines such as food, water, shelter, and regular cleaning of their cage or environment to ensure their health and well-being. Therefore, the correct answer would be a birdcage and bird food. An aquarium filter may be necessary for fish, an insect trap for insects, and a litter box for cats or other small animals."
+    },
+    {
+        "file": "sheep_25.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_230.wav",
+        "portability_question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nFlying between trees\nPurring\nFlapping its wings\nHiding in shells",
+        "portability_answer": "Purring",
+        "model_response": "Based on the audio provided, the animal most likely represents the option \"Purring.\" The sound described in the audio is that of an animal purring, which is a common behavior for many animals, especially mammals. While it's possible that the animal could be doing other things like flying or flapping its wings, the audio specifically mentions the sound of purring, making it the most representative behavior. Additionally, the fact that the animal is hiding in a shell could be a separate behavior that is not necessarily representative of how it usually acts overall."
+    },
+    {
+        "file": "frog_44.wav",
+        "original_answer": "frog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_39.wav",
+        "portability_question": "Based on the sound provided and what is commonly known about the biological classification and feeding behaviors of the animal in the sound, which diet type from the given options do you think most accurately describes what it primarily consumes?\n\nOptions:\nCarnivore\nInsectivore\nOmnivore\nHerbivore",
+        "portability_answer": "Carnivore",
+        "model_response": "The sound suggests that the animal is eating something small and possibly柔软, such as an insect or other invertebrate. Therefore, based on this information, the animal's diet would most likely be described as insectivore."
+    },
+    {
+        "file": "cow_109.wav",
+        "original_answer": "cow",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_9.wav",
+        "portability_question": "From the provided list, which locomotion method is most suitable for the animal heard in the audio?\n\nOptions:\nRunning\nSwimming\nClimbing\nFlying",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound heard in the audio, it is difficult to determine the specific animal as there could be multiple animals that make similar sounds. However, given the options provided, if the animal is capable of movement through water, then swimming would be the most suitable locomotion method. If the animal is land-based and capable of running or climbing, then running or climbing would be more appropriate. If the animal has wings, then flying would be the best option. Without additional information about the sound, it's impossible to determine the exact animal."
+    },
+    {
+        "file": "sheep_56.wav",
+        "original_answer": "sheep",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_62.wav",
+        "portability_question": "From a biological taxonomy perspective, which of these animals is most closest to the animal in the audio clip?\n\nOptions:\nred fox\nblack-backed jackal\ngolden jackal\nArctic fox",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the sound heard in the audio clip, it is difficult to determine the specific species of animal present. However, if we consider the options provided, the golden jackal (Lupus lycaon) is the closest to the sound, as it is a member of the same family as wolves and jackals, and shares similar vocalizations with other members of this group. The red fox, black-backed jackal, and Arctic fox are also members of the Canidae family, but they do not share the same vocal characteristics as the animal in the audio clip."
+    },
+    {
+        "file": "cat_224.wav",
+        "original_answer": "cat",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_31.wav",
+        "portability_question": "Based on the audio, which of the following reproductive methods would you associate with the animal producing the sound?\n\nOptions:\nViviparous\nOviparous\nAsexual reproduction\nMarsupial reproduction",
+        "portability_answer": "Oviparous",
+        "model_response": "The animal in the sound is likely to be Marsupial. Marsupials give birth to underdeveloped young that then nurse in a pouch. The sound is characteristic of marsupial reproduction."
+    },
+    {
+        "file": "crow_1.wav",
+        "original_answer": "crow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_38.wav",
+        "portability_question": "Taking into account the animal’s likely biological traits and its ecological habits, which of the following locomotion methods best corresponds to how the animal in the audio typically moves in its natural habitat?\n\nOptions:\nHopping\nFlying\nSlithering\nRunning",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound heard in the audio (a horse clicking and snorting), it is most likely that the animal in question is a horse, which is known for its method of locomotion through running. Therefore, the correct answer would be \"Running\"."
+    },
+    {
+        "file": "hen_26.wav",
+        "original_answer": "hen",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_26.wav",
+        "portability_question": "What feature is most likely for the animal that made this sound?\n\nOptions:\nWings\nHooves\nBeak\nHorns",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound described, it is most likely that the animal in question has hooves. Hooves are a common feature among many animals that walk on two legs, such as horses, cows, and sheep. They are used for movement and support the weight of the animal's body."
+    },
+    {
+        "file": "crow_25.wav",
+        "original_answer": "crow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_14.wav",
+        "portability_question": "Based on the sound provided, which of the following options is the most likely way the animal in the sound moves?\n\nOptions:\nHopping\nSlithering\nFlying\nRunning",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, the most likely way the animal moves is running. The sound indicates that the animal is moving quickly and continuously on all four legs, which is characteristic of running. Hopping involves jumping from one foot to another, slithering involves moving on the ground by dragging or pushing oneself along, while flying involves using wings to move through the air."
+    },
+    {
+        "file": "cow_100.wav",
+        "original_answer": "cow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_66.wav",
+        "portability_question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nChirping\nClucking\nCroaking\nBarking",
+        "portability_answer": "Croaking",
+        "model_response": "Based on the provided sound, the best match for the vocalization of the animal would be \"Clucking\". This is because the sound resembles the clucking noise that many birds make during courtship or other social interactions. The other options (chirping, croaking, and barking) do not match the characteristics of the sound provided as well as \"clucking\"."
+    },
+    {
+        "file": "sheep_42.wav",
+        "original_answer": "sheep",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_24.wav",
+        "portability_question": "According to the taxonomic hierarchy defined by biological classification, which animal is most closely related to the one in the audio file?\n\nOptions:\nbabirusas\nhippopotamus\nTapir\nCelebes warty pig",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "Based on the information provided, it is not possible to determine which animal is most closely related to the one in the audio file. The taxonomic hierarchy of animals is based on a complex system of classification that takes into account various characteristics such as physical appearance, genetic makeup, and evolutionary history. Without additional information about the animal in the audio file, it is impossible to accurately identify its taxonomic relationship to other animals."
+    },
+    {
+        "file": "dog_86.wav",
+        "original_answer": "dog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_3.wav",
+        "portability_question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nHooves\nScales\nWings\nBeak",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound heard in the audio, it is likely that the animal being described has hooves. Hooves are a characteristic feature of many herbivorous mammals, such as horses and cows, which make the sound by stomping their feet on the ground. Scales, wings, and beaks are not typically associated with the sound made in the audio."
+    },
+    {
+        "file": "cow_19.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_18.wav",
+        "portability_question": "Considering the audio and the types of sounds typically made by animals, which vocalization listed below best aligns with the animal in the recording?\n\nOptions:\nBarking\nClucking\nBleating\nChirping",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the sound made by the animal in the recording, the best vocalization that aligns with it would be C: bleating. Bleating is a common sound made by sheep, goats, and some other livestock animals. It is characterized by a low, rumbling tone that is often used for communication with other members of the herd or for expressing distress. Barking is typically made by dogs and wolves, clucking is a sound made by birds, and chirping can refer to a variety of sounds made by different types of birds and other animals."
+    },
+    {
+        "file": "sheep_39.wav",
+        "original_answer": "sheep",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_5.wav",
+        "portability_question": "Which of the listed diet types best reflects the main type of food the animal in the provided sound consumes in its natural habitat?\n\nOptions:\nInsectivore\nCarnivore\nHerbivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound provided, it is difficult to determine the exact diet of the animal as there are multiple sounds and no clear visual information. However, given the nature of the sounds, it seems that the animal may be herbivore or omnivore. The sounds suggest that the animal is eating both plants and possibly small animals or insects. Therefore, the best diet type for this animal would be either herbivore or omnivore."
+    },
+    {
+        "file": "frog_65.wav",
+        "original_answer": "frog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_29.wav",
+        "portability_question": "In the context of evolutionary biology and biological classification, which of the animals provided is the most similar to the one in the audio file in terms of taxonomic hierarchy?\n\nOptions:\ncommon warthog\nCelebes warty pig\nbabirusas\nTapir",
+        "portability_answer": "Celebes warty pig",
+        "model_response": "Comparing the animals based on taxonomic hierarchy, the most similar animal to the one in the audio file would be the tapir (Tapiridae family). \n\nThe common warthog (Warthog) belongs to the family Suidae, the Celebes warty pig (Sus celebres) also belongs to the family Suidae, and the babirusas (Babiruinae subfamily) belong to the family Babiruinae. The tapir, on the other hand, belongs to a different family (Tapiridae), making it the most similar option in terms of taxonomic hierarchy among the given choices."
+    },
+    {
+        "file": "frog_6.wav",
+        "original_answer": "frog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_18.wav",
+        "portability_question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nBeak\nTentacles\nHooves\nWings",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound described, I would associate the physical attribute \"wings\" with the animal making the sound. The sound suggests a flapping motion, which is typically associated with wings."
+    },
+    {
+        "file": "dog_235.wav",
+        "original_answer": "dog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_56.wav",
+        "portability_question": "From the sound and the characteristics of the animal producing it, which item would typically be needed to ensure its health and well-being?\n\nOptions:\nAquarium filter\nLitter box\nBirdcage\nInsect trap",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound described in the question, the animal is likely a bird. Therefore, the item that would typically be needed to ensure its health and well-being is a birdcage. A birdcage provides a safe and comfortable space for a bird to live in, and can help maintain their health by providing proper ventilation, temperature control, and protection from predators. An aquarium filter may be necessary for a fish or other aquatic animal, but it would not be relevant for a bird. A litter box is typically used for cats and dogs, while an insect trap is used to catch insects."
+    },
+    {
+        "file": "sheep_36.wav",
+        "original_answer": "sheep",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_124.wav",
+        "portability_question": "From the provided options, which diet category best matches the animal in the recording?\n\nOptions:\nOmnivore\nInsectivore\nHerbivore\nCarnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the recording, it is likely a carnivore. Carnivores are animals that primarily feed on meat, including other animals. Therefore, the correct answer from the provided options would be \"Carnivore.\""
+    },
+    {
+        "file": "hen_43.wav",
+        "original_answer": "hen",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_91.wav",
+        "portability_question": "Reflecting on the animal heard in the recording, what is its most likely reproductive method from the given choices?\n\nOptions:\nAsexual reproduction\nMarsupial reproduction\nOviparous\nViviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound of the animal in the recording, it is most likely viviparous. Viviparity is a type of reproduction where the developing offspring is carried inside the mother's body until birth, rather than being laid as eggs. Marsupials and some other mammals also reproduce viviparously. Asexual reproduction, such as budding or fission, does not involve the production of offspring that are genetically identical to the parent. Oviparous reproduction involves laying eggs that develop outside the mother's body."
+    },
+    {
+        "file": "dog_25.wav",
+        "original_answer": "dog",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_0.wav",
+        "portability_question": "Based on the sound of the animal in the audio, which item listed below is most commonly required to care for it?\n\nOptions:\nChicken coop\nAquarium filter\nLitter box\nMilking machine",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the sound of the animal in the audio, the most commonly required item to care for it would be a litter box."
+    },
+    {
+        "file": "dog_215.wav",
+        "original_answer": "dog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_14.wav",
+        "portability_question": "Based on the animal in the provided audio segment, which of the following physical attributes would you associate with it most confidently?\n\nOptions:\nShell\nHorns\nHooves\nFeathers",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound in the audio segment, I would associate the physical attribute \"horns\" with the animal most confidently."
+    },
+    {
+        "file": "cow_2.wav",
+        "original_answer": "cow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_172.wav",
+        "portability_question": "From the sound of the animal in the recording and taking into account its typical habitat and feeding behaviors, which of the following options most accurately represents its primary diet in terms of the types of food it usually consumes?\n\nOptions:\nInsectivore\nCarnivore\nHerbivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the recording and considering its typical habitat and feeding behaviors, the animal is most likely an insectivore. Insectivores primarily consume insects, although they may also eat other small animals or plants. The specific type of insectivore can vary based on the particular species and its environment, but the general characteristic of their diet is that it consists mainly of insects."
+    },
+    {
+        "file": "rooster_0.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_163.wav",
+        "portability_question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nFlapping its wings\nPurring\nFlying between trees\nHiding in shells",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound described in the audio, the animal is likely a bird. Birds are known for their ability to fly, so the action that best represents their natural or most typical way of acting would be \"flying between trees.\" This is a common behavior for many species of birds, as they use their wings to navigate through the air and move from one location to another. Flapping their wings and hiding in shells may also be behaviors that some birds exhibit, but they are not necessarily the most typical or natural way for them to act. Purring is typically associated with mammals, such as cats and dogs, rather than birds."
+    },
+    {
+        "file": "pig_26.wav",
+        "original_answer": "pig",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_72.wav",
+        "portability_question": "Considering the sound provided in the audio and the natural behaviors typically exhibited by animals in this audio, which of the following locomotion methods most accurately describes how the animal in the audio moves?\n\nOptions:\nHopping\nSlithering\nRunning\nFlying",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided in the audio and the natural behaviors exhibited by animals, it is difficult to determine exactly how the animal in the audio moves with certainty. However, given the options provided, hopping or running seem like the most likely answers as these are common locomotion methods for many animals. Slithering usually involves moving on hands and knees or belly, while flying requires wings or other specialized adaptations. Without more specific information about the animal in the audio, it's best to choose an option that is consistent with general animal behavior rather than making a precise determination based on the sound alone."
+    },
+    {
+        "file": "cat_221.wav",
+        "original_answer": "cat",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_0.wav",
+        "portability_question": "Based on the sound provided, and considering the ecological and biological traits of animals in this sound, which reproductive method listed below best matches how the animal in the audio gives birth or reproduces?\n\nOptions:\nMarsupial reproduction\nAsexual reproduction\nViviparous\nOviparous",
+        "portability_answer": "Oviparous",
+        "model_response": "The animal in the audio is likely to be marsupial. Marsupials give birth to live young after a short gestation period, typically around 38 days. The young are then carried in a pouch on the mother's belly until they are ready to open their eyes and start walking. Marsupials include many different species, such as kangaroos, koalas, and possums. Asexual reproduction, viviparity, and oviparity are all different methods of reproduction that do not match the characteristics of the animal in the audio."
+    },
+    {
+        "file": "pig_24.wav",
+        "original_answer": "pig",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_73.wav",
+        "portability_question": "Reflecting on the sound provided in the audio, and considering the typical habits, behaviors, and care practices needed for animals in the audio, which of the following items would you identify as being most important in caring for the animal producing the sound?\n\nOptions:\nBirdcage\nAquarium filter\nMilking machine\nPerch",
+        "portability_answer": "Milking machine",
+        "model_response": "Based on the sound provided in the audio, it is difficult to determine exactly what kind of animal is being cared for, as the sounds could potentially belong to a variety of different species. However, given the options provided, the item that seems most likely to be important in caring for the animal would be a perch. Perches provide a stable and comfortable place for birds to rest and preen their feathers, which is essential for their overall health and well-being. While other items like birdcages, aquarium filters, and milking machines may also be important for certain types of animals, they are not necessarily directly related to the sound provided in the audio."
+    },
+    {
+        "file": "frog_3.wav",
+        "original_answer": "frog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_19.wav",
+        "portability_question": "Based on the sound in the recording, which of the listed vocalizations is most similar to the one made by the animal in the recording?\n\nOptions:\nChirping\nGrunting\nMooing\nClucking",
+        "portability_answer": "Grunting",
+        "model_response": "Based on the sound in the recording, the most similar vocalization to the one made by the animal is Grunting."
+    },
+    {
+        "file": "frog_72.wav",
+        "original_answer": "frog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_68.wav",
+        "portability_question": "Which of the following behaviors best describes the typical actions associated with the animal in the recording?\n\nOptions:\nJumping between branches\nFlapping its wings\nChewing cud\nClimbing trees",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound description provided, the animal in the recording is likely a bird. Birds are known for their ability to fly by flapping their wings, so the option that best describes their typical actions would be \"Flapping its wings.\" The other options, such as jumping between branches or climbing trees, may also be common behaviors for certain types of birds, but they are not necessarily characteristic of all birds. Chewing cud is a behavior typically associated with herbivorous mammals, such as cows and sheep, rather than birds."
+    },
+    {
+        "file": "rooster_6.wav",
+        "original_answer": "rooster",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_44.wav",
+        "portability_question": "In the context of Linnaean taxonomy and the phylogenetic system used to determine evolutionary relationships, which animal on the list is the closest in taxonomic grouping to the animal identified in the audio sample?\n\nOptions:\nsalamanders\nCaecilian\nnewt\ntoad",
+        "portability_answer": "toad",
+        "model_response": "The animal identified in the audio sample is most likely a salamander, as they are a type of amphibian that belongs to the order Caudata and are known for their moist skin, slender bodies, and four legs. Out of the given options, only salamanders belong to this order and share similar physical characteristics with the animal in the audio sample. Therefore, the correct answer would be salamanders."
+    },
+    {
+        "file": "sheep_40.wav",
+        "original_answer": "sheep",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_14.wav",
+        "portability_question": "Considering the characteristics of the animal in the audio, which of the listed methods best aligns with how it reproduces?\n\nOptions:\nMarsupial reproduction\nOviparous\nAsexual reproduction\nViviparous",
+        "portability_answer": "Oviparous",
+        "model_response": "Based on the characteristics of the animal in the audio, viviparous reproduction aligns best with how it reproduces. Marsupials give birth to live young after a short gestation period, while oviparous animals lay eggs that develop outside the body, and asexual reproduction involves producing offspring without fertilization by another organism."
+    },
+    {
+        "file": "hen_66.wav",
+        "original_answer": "hen",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_137.wav",
+        "portability_question": "From the provided options, which one reflects the reproductive strategy most commonly associated with the animal in the sound?\n\nOptions:\nViviparous\nOviparous\nAsexual reproduction\nMarsupial reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "The sound is most likely associated with marsupial reproduction. Marsupials give birth to underdeveloped young that then nurse in a pouch on the mother's belly. The sound is of a marsupial calling its young."
+    },
+    {
+        "file": "dog_137.wav",
+        "original_answer": "dog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_109.wav",
+        "portability_question": "Based on the audio recording, and considering the common habits and actions of animals in this audio, which behavior from the options below is most likely associated with the animal making the sound?\n\nOptions:\nChewing cud\nClimbing trees\nHiding in shells\nJumping between branches",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound made by the animal in the audio, it is most likely associated with the behavior of chewing cud. Cattle and other ruminants such as sheep and goats are known to make rumbling sounds while they chew their food, which is called \"chewing cud.\" This sound helps them digest their plant-based diet. The other options, such as climbing trees, hiding in shells, or jumping between branches, do not typically produce the rumbling sound heard in the audio."
+    },
+    {
+        "file": "dog_24.wav",
+        "original_answer": "dog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_35.wav",
+        "portability_question": "Based on the audio recording and the natural requirements of the animal making the sound, which of the items listed below is most closely associated with providing appropriate care and support for its well-being?\n\nOptions:\nAquarium filter\nLitter box\nInsect trap\nBirdcage",
+        "portability_answer": "Litter box",
+        "model_response": "The item most closely associated with providing appropriate care and support for an animal's well-being based on the audio recording would be a birdcage. The sound in the recording is that of a bird chirping, which indicates that the animal in question is a bird. Therefore, a birdcage would provide the necessary environment and space for the bird to live comfortably and safely."
+    },
+    {
+        "file": "sheep_56.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_52.wav",
+        "portability_question": "Considering the sound of the animal in the recording, which vocalization type is most comparable to it?\n\nOptions:\nChirping\nCroaking\nMooing\nBarking",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the sound of the animal in the recording, it is most comparable to mooing."
+    },
+    {
+        "file": "hen_8.wav",
+        "original_answer": "hen",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_65.wav",
+        "portability_question": "What physical attribute is most plausible for the animal that produced this sound?\n\nOptions:\nShell\nFeathers\nFins\nHooves",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound described, it is most plausible that the animal that produced this sound has hooves. Hooves are a characteristic feature of certain animals such as horses, cows, and sheep, which are known to make noises by stomping or clumping their hooves together. The sound produced in the audio seems to match the sound of an animal's hooves striking the ground."
+    },
+    {
+        "file": "cat_8.wav",
+        "original_answer": "cat",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_36.wav",
+        "portability_question": "Considering the animal in the audio, which of the listed items would you typically associate with taking proper care of it?\n\nOptions:\nAquarium filter\nPerch\nMud bath area\nBirdcage",
+        "portability_answer": "Mud bath area",
+        "model_response": "Based on the sounds heard in the audio, I would associate the animal with being a fish. Therefore, the correct option for taking proper care of the animal would be an aquarium filter, as it is essential for maintaining good water quality and keeping the fish healthy."
+    },
+    {
+        "file": "cow_26.wav",
+        "original_answer": "cow",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_7.wav",
+        "portability_question": "When analyzing the sound in the audio and reflecting on the natural dietary habits of the type of animal making this sound, which of the following categories best represents its primary diet or the type of food it relies on for survival?\n\nOptions:\nOmnivore\nHerbivore\nInsectivore\nCarnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound made by the animal in the audio, it is likely that the animal belongs to the category of herbivores. Herbivores primarily feed on plant material, such as leaves, stems, and fruits. The sounds produced by the animal suggest that it is grazing or feeding on vegetation. Therefore, the correct option would be herbivore."
+    },
+    {
+        "file": "cat_28.wav",
+        "original_answer": "cat",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_0.wav",
+        "portability_question": "Reflecting on the animal in the provided sound and what is known about its biological characteristics and common behaviors, which of the listed actions would you say best represents this animal?\n\nOptions:\nFlapping its wings\nHiding in shells\nJumping between branches\nChewing cud",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound provided, I would say that the animal is a bird. Birds are known for their ability to flap their wings to fly, so that action would best represent this animal. They are also often found hiding in trees or other sheltered areas, and some species may chew cud as part of their diet. However, jumping between branches is not a typical behavior for birds, as they are generally not able to move quickly through trees in the same way that mammals can."
+    },
+    {
+        "file": "hen_31.wav",
+        "original_answer": "hen",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_90.wav",
+        "portability_question": "Considering the audio recording and what is typically known about animals that produce similar sounds, which of the listed reproductive methods most accurately matches the natural strategy used by the animal in the sound?\n\nOptions:\nAsexual reproduction\nViviparous\nMarsupial reproduction\nOviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound described in the audio, it is difficult to determine the specific species of the animal making the sound. However, we can make some educated guesses based on typical characteristics of different types of animals.\n\nThe sound seems to be produced by an animal that goes through a period of gestation before giving birth to live young. This suggests a method of reproduction known as viviparity, where the offspring develop inside the mother's body rather than being laid as eggs.\n\nTherefore, the correct answer would be B: Viviparous."
+    },
+    {
+        "file": "frog_20.wav",
+        "original_answer": "frog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_97.wav",
+        "portability_question": "Based on the sound in the audio, which of the following actions best represents the behavior typically seen in the type of animal making the provided sound?\n\nOptions:\nFlying between trees\nFlapping its wings\nHiding in shells\nPurring",
+        "portability_answer": "Purring",
+        "model_response": "The sound in the audio is typically made by a bird, which flaps its wings to fly through the air. Therefore, the correct action that best represents the behavior of the animal in the audio is \"flapping its wings.\""
+    },
+    {
+        "file": "cow_52.wav",
+        "original_answer": "cow",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_14.wav",
+        "portability_question": "From the provided options, which of these items is most suitable for meeting the care needs of the animal in the recording?\n\nOptions:\nMilking machine\nLeash\nChicken coop\nAquarium filter",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the sound in the recording, it seems like the animal is a chicken, and the care needs mentioned include feeding and cleaning the cage. Therefore, the most suitable item for meeting the care needs of the animal would be a feeders and waterers for chickens. The leash and aquarium filter are not relevant to the care of a chicken, and the chicken coop is already provided in the recording."
+    },
+    {
+        "file": "crow_14.wav",
+        "original_answer": "crow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_39.wav",
+        "portability_question": "Based on Linnaean classification, which of these animals is phylogenetically closest to the animal in the recording?\n\nOptions:\nmouflon\ntahr\ngoat\nchamois",
+        "portability_answer": "mouflon",
+        "model_response": "The animal in the recording is a goat. Therefore, based on Linnaean classification, the animal that is phylogenetically closest to it would be another member of the family caprini, such as a sheep or a ibex. The options provided (mouflon, tahr, chamois) are all members of different families within the order Artiodactyla, so they would not be considered phylogenetically closest to a goat."
+    },
+    {
+        "file": "cat_91.wav",
+        "original_answer": "cat",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_68.wav",
+        "portability_question": "Based on the recording provided and considering the vocalization patterns commonly associated with animals of this kind, which of the listed sounds would you identify as being most similar to the one heard in the audio?\n\nOptions:\nClucking\nMooing\nChirping\nBarking",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the vocalization patterns commonly associated with animals, the sound most similar to the one heard in the audio is likely to be clucking. Clucking is often associated with birds, particularly female birds during times of layation or when expressing distress. The other options (mooing, chirping, and barking) are not typically associated with the vocalization patterns heard in the audio."
+    },
+    {
+        "file": "sheep_40.wav",
+        "original_answer": "sheep",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_66.wav",
+        "portability_question": "Which of the following options best represents the primary way the animal in the audio moves?\n\nOptions:\nFlying\nRunning\nHopping\nSlithering",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound heard in the audio, the primary way the animal moves is by hopping."
+    },
+    {
+        "file": "pig_26.wav",
+        "original_answer": "pig",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_10.wav",
+        "portability_question": "Based on Linnaean taxonomy, which of these animals is most closely aligned with the one in the audio file?\n\nOptions:\nmouflon\ngoat\ntahr\nchamois",
+        "portability_answer": "mouflon",
+        "model_response": "Without hearing the sound file or knowing what it contains, I cannot accurately determine which animal is most closely aligned with the one mentioned in Linnaean taxonomy. Please provide more information or context so that I can better assist you."
+    },
+    {
+        "file": "sheep_36.wav",
+        "original_answer": "sheep",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_28.wav",
+        "portability_question": "Based on the sound provided, which diet type from the list below is most likely to match the feeding habits of the animal in the sound?\n\nOptions:\nInsectivore\nHerbivore\nCarnivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "The diet type that best matches the feeding habits of the animal in the sound is herbivore. The sound indicates that the animal is chewing plant material, which is a characteristic of herbivores. Carnivores typically eat meat and other animals, while omnivores eat both plants and animals. Insectivores primarily feed on insects."
+    },
+    {
+        "file": "dog_46.wav",
+        "original_answer": "dog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_68.wav",
+        "portability_question": "What physical feature does the animal in the provided audio segment have?\n\nOptions:\nWebbed feet\nHooves\nFins\nShell",
+        "portability_answer": "Hooves",
+        "model_response": "The animal in the provided audio segment has webbed feet, which are commonly found in aquatic animals that live in the water."
+    },
+    {
+        "file": "sheep_3.wav",
+        "original_answer": "sheep",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_5.wav",
+        "portability_question": "Based on the audio recording and what you know about the usual movement patterns of the animal in the sound, which of the options listed below do you think best matches its primary mode of locomotion?\n\nOptions:\nSwimming\nRunning\nFlying\nClimbing",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound provided, I would choose \"Climbing\" as the animal's primary mode of locomotion. The sounds suggest that the animal is moving up and down, which is characteristic of climbing motion. Swimming involves moving through water, running involves moving on land at a steady pace, and flying involves moving through the air using wings. None of these movements involve the kind of up-and-down motion heard in the audio."
+    },
+    {
+        "file": "hen_53.wav",
+        "original_answer": "hen",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_53.wav",
+        "portability_question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nViviparous\nOviparous\nMarsupial reproduction\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound produced by the animal in question, it is difficult to determine the specific reproduction strategy. However, given that the sound resembles that of a frog, which is known to reproduce through egg-laying, the answer would be Oviparous. \n\nFrog eggs are laid in water or on land and develop into larvae before undergoing metamorphosis and becoming adults. Some species of frogs lay their eggs in clusters, while others lay them individually. The eggs may be fertilized externally or internally, depending on the species."
+    },
+    {
+        "file": "sheep_9.wav",
+        "original_answer": "sheep",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_53.wav",
+        "portability_question": "Based on biological classification systems, which of the following animals is most closely related to the one in the audio file?\n\nOptions:\nwhite-breasted guineafowl\nnorthern bobwhite\nvulturine guineafowl\nblood pheasant",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal in the audio file is the vulturine guineafowl."
+    },
+    {
+        "file": "hen_0.wav",
+        "original_answer": "hen",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_25.wav",
+        "portability_question": "From the sound of the animal in the audio and reflecting on the usual items or tools required for animals in this group, which option best matches what is commonly needed to take care of this animal?\n\nOptions:\nBirdcage\nLeash\nAquarium filter\nInsect trap",
+        "portability_answer": "Leash",
+        "model_response": "Based on the sound of the animal in the audio, it is likely a bird. Therefore, the item commonly needed to take care of this animal would be a birdcage. The other options, such as a leash, aquarium filter, and insect trap, may be useful for certain types of animals, but they are not typically necessary for birds."
+    },
+    {
+        "file": "rooster_0.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_89.wav",
+        "portability_question": "From the given choices, which dietary classification is most appropriate for the animal you heard in the recording?\n\nOptions:\nHerbivore\nOmnivore\nCarnivore\nInsectivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sound of the animal in the recording, it is likely to be a herbivore. Herbivores primarily feed on plant material and have teeth adapted for grinding and breaking down tough plant fibers. The sound suggests that the animal is chewing on leaves or other plant material."
+    },
+    {
+        "file": "rooster_18.wav",
+        "original_answer": "rooster",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_28.wav",
+        "portability_question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nOviparous\nViviparous\nAsexual reproduction\nMarsupial reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be viviparous. Viviparity is characterized by the production of live young without the need for fertilization to occur outside the body. In viviparous animals, the developing offspring receive nutrients from the mother's placenta, and the mother carries the developing offspring until birth. This is in contrast to oviparous animals, which lay eggs that must hatch outside the body, or asexual reproduction, where offspring are produced without the involvement of gametes (sperm and egg cells). Marsupial reproduction is also different as marsupials give birth to underdeveloped young that then continue to develop in a pouch."
+    },
+    {
+        "file": "crow_15.wav",
+        "original_answer": "crow",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_5.wav",
+        "portability_question": "Considering the sound provided, which of the following physical characteristics do you think is most consistent with the appearance or features of the animal in the audio?\n\nOptions:\nShell\nWings\nFeathers\nHooves",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal being described as the sounds could potentially belong to a variety of different animals. However, given the options provided, the physical characteristic that is most consistent with the appearance or features of an animal might be feathers, as birds are known for their ability to produce a wide range of vocalizations and calls that can vary greatly in pitch, frequency, and intensity. Additionally, the sound seems to be produced by an animal that is capable of flight, which is a trait commonly found in birds."
+    },
+    {
+        "file": "rooster_6.wav",
+        "original_answer": "rooster",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_40.wav",
+        "portability_question": "Reflecting on the audio provided, which of the listed sounds do you think most closely resembles the vocalization of this animal?\n\nOptions:\nChirping\nBarking\nBleating\nClucking",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the audio provided, the sound that most closely resembles the vocalization of an animal is bleating. The sound is high-pitched and repetitive, similar to the bleating of sheep or other livestock."
+    },
+    {
+        "file": "frog_46.wav",
+        "original_answer": "frog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_8.wav",
+        "portability_question": "Based on the animal in the provided audio segment, which of the following physical attributes would you associate with it most confidently?\n\nOptions:\nWings\nTentacles\nWebbed feet\nHooves",
+        "portability_answer": "Wings",
+        "model_response": "Based on the sounds heard in the audio segment, I would associate the animal with having webbed feet, as the sound suggests movement through water."
+    },
+    {
+        "file": "sheep_30.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_73.wav",
+        "portability_question": "Reflecting on the sound in the audio and taking into account the natural vocalization behaviors of animals, which of the listed options would you say is the closest match to the sound produced by the animal in the provided audio?\n\nOptions:\nChirping\nClucking\nMooing\nCroaking",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the natural vocalization behaviors of animals, the sound produced by the animal in the provided audio most closely matches the sound of a duck quacking. Therefore, the correct option would be \"Clucking.\""
+    },
+    {
+        "file": "cow_49.wav",
+        "original_answer": "cow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_14.wav",
+        "portability_question": "Considering the audio provided, which of the following options best describes the primary mode of locomotion for the animal in the sound?\n\nOptions:\nRunning\nFlying\nSlithering\nHopping",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, the primary mode of locomotion for the animal is hopping."
+    },
+    {
+        "file": "dog_113.wav",
+        "original_answer": "dog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_12.wav",
+        "portability_question": "Based on Linnaean taxonomy, which of these animals is most closely aligned with the one in the audio file?\n\nOptions:\nwhite-breasted guineafowl\nblood pheasant\nnorthern bobwhite\nvulturine guineafowl",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal that is most closely aligned with the one in the audio file, based on Linnaean taxonomy, would be the vulturine guineafowl (Aguila impennis)."
+    },
+    {
+        "file": "rooster_19.wav",
+        "original_answer": "rooster",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_8.wav",
+        "portability_question": "Considering the sound of the animal in the recording, which vocalization type is most comparable to it?\n\nOptions:\nBarking\nMooing\nClucking\nCroaking",
+        "portability_answer": "Clucking",
+        "model_response": "Based on the sound in the recording, the most comparable vocalization type would be Cawing, as the sound produced is similar to that of a chicken or rooster."
+    },
+    {
+        "file": "crow_1.wav",
+        "original_answer": "crow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_168.wav",
+        "portability_question": "Considering the audio recording, which of these behaviors is most likely to match how the animal in the recording commonly acts?\n\nOptions:\nHiding in shells\nJumping between branches\nFlapping its wings\nWagging its tail",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the description provided in the audio, the animal in the recording is most likely to be a bird. Birds are known for their ability to hide in shells, jump between branches, flap their wings, and wag their tails. Therefore, the correct answer would be D: Flapping its wings."
+    },
+    {
+        "file": "cat_137.wav",
+        "original_answer": "cat",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_146.wav",
+        "portability_question": "When analyzing the sound in the audio and reflecting on the natural dietary habits of the type of animal making this sound, which of the following categories best represents its primary diet or the type of food it relies on for survival?\n\nOptions:\nCarnivore\nOmnivore\nInsectivore\nHerbivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound made by the animal in the audio, it is likely an insectivore. Insectivores primarily feed on insects, so the sound produced is characteristic of such animals."
+    },
+    {
+        "file": "hen_54.wav",
+        "original_answer": "hen",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_35.wav",
+        "portability_question": "Based on the sound provided, which diet type from the list below is most likely to match the feeding habits of the animal in the sound?\n\nOptions:\nInsectivore\nOmnivore\nCarnivore\nHerbivore",
+        "portability_answer": "Insectivore",
+        "model_response": "The diet type that best matches the feeding habits of the animal in the sound is herbivore. The sound indicates that the animal is chewing plant material, which is a characteristic of herbivores. Carnivores typically eat meat and other animals, omnivores eat both plants and animals, and insects are primarily herbivores that feed on plant material."
+    },
+    {
+        "file": "frog_65.wav",
+        "original_answer": "frog",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_5.wav",
+        "portability_question": "Given the sound provided and the biological characteristics associated with this type of animal in the sound, which locomotion mode listed below do you believe is the most fitting and accurate representation of how it navigates its environment?\n\nOptions:\nSwimming\nRunning\nFlying\nHopping",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound provided, I would say that the most fitting and accurate representation of how the animal navigates its environment is swimming. The sounds suggest that the animal is moving through water, likely using its legs or tail to paddle or move through the water. This is consistent with the behavior of many aquatic animals, which use swimming as their primary means of movement and navigation."
+    },
+    {
+        "file": "pig_36.wav",
+        "original_answer": "pig",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_53.wav",
+        "portability_question": "Based on the characteristics of the animal producing the sound, which item would you consider most essential for ensuring its well-being?\n\nOptions:\nChicken coop\nAquarium filter\nLeash\nMilking machine",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the characteristics of the animal producing the sound, it is difficult to determine the specific item that would be considered most essential for ensuring its well-being as the sound could potentially belong to a variety of animals with different needs. However, some general items that could be important for the welfare of certain animals include:\n\n- Chicken coop: For chickens, a secure and comfortable coop is essential for their well-being.\n- Aquarium filter: For fish, a clean and functioning aquarium filter is crucial for maintaining good water quality and preventing the spread of disease.\n- Leash: For dogs and other pets that require exercise or outdoor access, a leash can help ensure their safety and prevent them from running away or getting into danger.\n- Milking machine: For dairy cows, a milking machine can make the process of milking more efficient and less stressful for the animal.\n\nUltimately, the specific item needed will depend on the type of animal and its individual needs."
+    },
+    {
+        "file": "hen_66.wav",
+        "original_answer": "hen",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_25.wav",
+        "portability_question": "Based on biological classification systems, which of the following animals is most closely related to the one in the audio file?\n\nOptions:\njackdaw\ncommon raven\nstarling\nred-billed blue magpie",
+        "portability_answer": "common raven",
+        "model_response": "The animal that is most closely related to the one in the audio file, based on biological classification systems, would be the starling (Sturnus vulgaris)."
+    },
+    {
+        "file": "frog_4.wav",
+        "original_answer": "frog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_7.wav",
+        "portability_question": "Which of the following behaviors best describes the typical actions associated with the animal in the recording?\n\nOptions:\nClimbing trees\nJumping between branches\nFlapping its wings\nChewing cud",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound in the recording, the animal's typical actions would be described as:\n\nClimbing trees and jumping between branches\n\nThis is because the sounds suggest that the animal is moving through the air, likely using its wings to fly or glide. Climbing trees and jumping between branches are common behaviors for many birds, which use their wings to move around in their environment. Chewing cud is a behavior associated with herbivorous mammals, such as cows, and does not typically involve flying or gliding through the air."
+    },
+    {
+        "file": "hen_5.wav",
+        "original_answer": "hen",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_35.wav",
+        "portability_question": "Which physical trait best matches the animal in this audio?\n\nOptions:\nScales\nWings\nFeathers\nWebbed feet",
+        "portability_answer": "Webbed feet",
+        "model_response": "Based on the sound heard in the audio, it is likely that the animal being described has webbed feet, as this would allow for efficient swimming or diving. Scales and feathers may also be present on this animal, but they are not necessarily indicative of webbed feet. Wings are not typically associated with aquatic animals."
+    },
+    {
+        "file": "sheep_25.wav",
+        "original_answer": "sheep",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_23.wav",
+        "portability_question": "When analyzing the sound and the natural reproductive behaviors of the type of animal in the recording, which of the following methods would you say is most representative of how it typically produces its offspring?\n\nOptions:\nOviparous\nMarsupial reproduction\nViviparous\nAsexual reproduction",
+        "portability_answer": "Oviparous",
+        "model_response": "Based on the sound and natural reproductive behaviors described, the most representative method of reproduction for this type of animal would be viviparous. Viviparity is characterized by the production of live young without the need for a placenta or eggshell, as seen in mammals. Marsupials also reproduce viviparously, but they give birth to relatively undeveloped young that must continue to develop in a pouch. Oviparous animals lay eggs, while asexual reproduction involves the production of offspring without fertilization by a male."
+    },
+    {
+        "file": "pig_29.wav",
+        "original_answer": "pig",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_51.wav",
+        "portability_question": "From the listed locomotion types, which one matches the typical movement of the animal in the sound?\n\nOptions:\nSlithering\nRunning\nHopping\nFlying",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, the animal's movement can be described as hopping."
+    },
+    {
+        "file": "pig_28.wav",
+        "original_answer": "pig",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_56.wav",
+        "portability_question": "Given the provided audio and reflecting on the natural habits of animals in the recording, which dietary category in the list below do you think best aligns with what this animal primarily eats in its ecosystem?\n\nOptions:\nCarnivore\nHerbivore\nInsectivore\nOmnivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sound made by the animal in the audio (chewing and biting), it is likely that the animal is an herbivore or insectivore. Herbivores primarily eat plant material, while insectivores mainly feed on insects. Omnivores are animals that eat both plants and animals. Without more information about the specific animal in the audio, it's difficult to determine its exact dietary category."
+    },
+    {
+        "file": "frog_65.wav",
+        "original_answer": "frog",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_228.wav",
+        "portability_question": "Considering the animal in the audio, what is its most typical behavior from the given list?\n\nOptions:\nJumping between branches\nFlapping its wings\nHiding in shells\nWagging its tail",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the sound description provided, the animal's most typical behavior would be option  wagging its tail. This is because the sound suggests that the animal is moving and communicating with its tail. Jumping between branches could also be a possible behavior depending on the type of tree the animal is in, but it's not necessarily more typical than wagging its tail. Flapping its wings and hiding in shells are both behaviors that some birds may exhibit, but they are not specific to this particular sound."
+    },
+    {
+        "file": "dog_23.wav",
+        "original_answer": "dog",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_224.wav",
+        "portability_question": "From the provided options, which of these items is most suitable for meeting the care needs of the animal in the recording?\n\nOptions:\nLitter box\nAquarium filter\nInsect trap\nBirdcage",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the information provided in the audio description, the most suitable item for meeting the care needs of the animal would be a litter box. The other options mentioned (aquarium filter, insect trap, and birdcage) are not relevant to the care needs of the animal described in the audio."
+    },
+    {
+        "file": "sheep_39.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_129.wav",
+        "portability_question": "Considering the animal in the audio, which of the listed items would you typically associate with taking proper care of it?\n\nOptions:\nAquarium filter\nLitter box\nInsect trap\nBirdcage",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sounds heard in the audio, I would associate the animal with a bird. Therefore, the correct option to take proper care of the animal would be a birdcage."
+    },
+    {
+        "file": "frog_50.wav",
+        "original_answer": "frog",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_48.wav",
+        "portability_question": "From the behaviors provided, which one is most representative of how this animal in the provided audio usually acts?\n\nOptions:\nHiding in shells\nJumping between branches\nWagging its tail\nFlapping its wings",
+        "portability_answer": "Wagging its tail",
+        "model_response": "Based on the provided audio, the animal's behavior that is most representative of its usual actions is \"Wagging its tail.\" This behavior is indicated multiple times throughout the audio, suggesting that it is a common action for the animal. The other options, hiding in shells, jumping between branches, and flapping its wings, may be specific behaviors that the animal exhibits under certain circumstances, but they are not as consistently represented in the audio as the wagging of its tail."
+    },
+    {
+        "file": "sheep_28.wav",
+        "original_answer": "sheep",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_35.wav",
+        "portability_question": "From the given options, which sound is the best match for the vocalization of the animal in the provided sound?\n\nOptions:\nMooing\nChirping\nMeowing\nClucking",
+        "portability_answer": "Meowing",
+        "model_response": "The best match for the vocalization of the animal in the provided sound is \"Mooing.\""
+    },
+    {
+        "file": "crow_9.wav",
+        "original_answer": "crow",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_26.wav",
+        "portability_question": "Taking into account the animal in the provided sound and its biological characteristics, which of the following options best represents the method this animal uses to reproduce or give birth to its offspring?\n\nOptions:\nViviparous\nOviparous\nMarsupial reproduction\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal being referred to, as there are many different species that could produce sounds similar to what is heard in the audio. However, given the characteristics of the sound, it is most likely that the animal in question is viviparous, meaning it gives birth to live young rather than laying eggs. Marsupials are also known for their viviparous reproduction, although they typically have a different type of birth process than the one depicted in the sound. Asexual reproduction, such as budding or fission, is not typically associated with animals that produce sounds like the one in the audio. Oviparous animals lay eggs, which hatch into larvae or幼体 before developing into adults."
+    },
+    {
+        "file": "frog_68.wav",
+        "original_answer": "frog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_109.wav",
+        "portability_question": "What physical attribute is most plausible for the animal that produced this sound?\n\nOptions:\nBeak\nFins\nWings\nHooves",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound described, it is most plausible that the animal that produced this sound has a beak. A beak is a sharp, curved tooth or bill that is commonly found in birds, which are known for their ability to open seeds and other hard objects by using their beaks to crack them open. The sound produced by the animal in question suggests that it is using its beak to extract something from a hard object, which is a common behavior for many bird species."
+    },
+    {
+        "file": "hen_47.wav",
+        "original_answer": "hen",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_0.wav",
+        "portability_question": "Based on the sound, which reproductive method best describes how the animal in the audio gives birth or produces offspring?\n\nOptions:\nOviparous\nViviparous\nMarsupial reproduction\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "The animal in the audio gives birth to live young, so the best reproductive method described would be viviparous."
+    },
+    {
+        "file": "cat_220.wav",
+        "original_answer": "cat",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_90.wav",
+        "portability_question": "Using the sound as a clue, which of these physical attributes would you associate most strongly with the animal making the sound, considering what you know about it?\n\nOptions:\nFeathers\nScales\nHooves\nWings",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound described, I would associate the attribute \"feathers\" with the animal making the sound. Feathers are a characteristic found in many birds, and the sound produced by the animal suggests that it may be a bird."
+    },
+    {
+        "file": "pig_7.wav",
+        "original_answer": "pig",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_23.wav",
+        "portability_question": "Which animal in the list shares the closest phylogenetic lineage with the species identified in the audio file?\n\nOptions:\nwhite-breasted guineafowl\nblood pheasant\nnorthern bobwhite\nvulturine guineafowl",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal that shares the closest phylogenetic lineage with the species identified in the audio file is the vulturine guineafowl (Vulturine guineafowl)."
+    },
+    {
+        "file": "cow_68.wav",
+        "original_answer": "cow",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_23.wav",
+        "portability_question": "From the sound of the animal in the recording and taking into account its typical habitat and feeding behaviors, which of the following options most accurately represents its primary diet in terms of the types of food it usually consumes?\n\nOptions:\nInsectivore\nHerbivore\nCarnivore\nOmnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the recording and considering its typical habitat and feeding behaviors, the animal is most likely an insectivore. Insectivores primarily consume insects, which are a common food source in many ecosystems. The specific type of insectivore can vary based on the particular species and its environment, but in general, they feed on a variety of insects such as ants, bees, moths, and beetles."
+    },
+    {
+        "file": "sheep_10.wav",
+        "original_answer": "sheep",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_25.wav",
+        "portability_question": "Considering the audio provided, which of the following options best describes the primary mode of locomotion for the animal in the sound?\n\nOptions:\nFlying\nRunning\nClimbing\nSwimming",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound provided, the primary mode of locomotion for the animal is swimming."
+    },
+    {
+        "file": "frog_27.wav",
+        "original_answer": "frog",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_3.wav",
+        "portability_question": "Taking into account the taxonomic classification system, including categories such as family, genus, and species, which of the listed animals is most closely connected to the animal observed in the audio recording?\n\nOptions:\nblack-backed jackal\nside-striped jackal\nred fox\ngolden jackal",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the taxonomic classification system, the animal most closely connected to the one observed in the audio recording would be the golden jackal (Canis aureus). \n\nThe black-backed jackal (Canis niger) has a different physical appearance and range than the golden jackal. The side-striped jackal (Canis adustus) also has a different physical appearance and range than the golden jackal. The red fox (Vulpes vulpes) belongs to a different family (Canidae) than the jackals and is not closely related."
+    },
+    {
+        "file": "crow_31.wav",
+        "original_answer": "crow",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_18.wav",
+        "portability_question": "Based on the sound of the animal in the audio, which item listed below is most commonly required to care for it?\n\nOptions:\nLeash\nAquarium filter\nChicken coop\nMilking machine",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the sound of the animal in the audio, it is most likely a dog. Therefore, the item that is most commonly required to care for it would be a leash."
+    },
+    {
+        "file": "frog_46.wav",
+        "original_answer": "frog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_98.wav",
+        "portability_question": "Considering the audio recording, which of these behaviors is most likely to match how the animal in the recording commonly acts?\n\nOptions:\nJumping between branches\nChewing cud\nClimbing trees\nFlapping its wings",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the description provided in the audio, the animal in the recording is most likely to be a bird. Therefore, the behavior that best matches how the bird in the recording commonly acts is \"flapping its wings.\" Birds are known for their ability to fly by flapping their wings, and this behavior is often used for balance, navigation, and hunting. The other options, such as jumping between branches or climbing trees, may also be common behaviors for certain types of birds, but they are not necessarily as directly associated with flight as flapping wings. Chewing cud is a behavior typically associated with herbivorous mammals, while climbing trees is a behavior that can be exhibited by various animals, including birds, but it is not a defining characteristic of birds."
+    },
+    {
+        "file": "dog_54.wav",
+        "original_answer": "dog",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_25.wav",
+        "portability_question": "From the provided recording, and reflecting on the characteristics of the sound made by the animal shown in the recording, which of the listed vocalizations do you believe best resembles it?\n\nOptions:\nBleating\nMooing\nBarking\nClucking",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the characteristics of the sound made by the animal in the recording, I would choose option B: mooing. The sound is deep, resonant, and has a distinct rumbling quality, which is typical of bovinae animals such as cows, sheep, and goats. Additionally, the sound seems to be produced by an animal moving its head back and forth, which is a common behavior during mooing."
+    },
+    {
+        "file": "dog_35.wav",
+        "original_answer": "dog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_23.wav",
+        "portability_question": "Considering the characteristics of the animal in the audio, which of the listed methods best aligns with how it reproduces?\n\nOptions:\nOviparous\nAsexual reproduction\nMarsupial reproduction\nViviparous",
+        "portability_answer": "Oviparous",
+        "model_response": "The animal in the audio is a marsupial. Marsupials give birth to underdeveloped offspring that then nurse in a mother's pouch. Therefore, the best option for reproduction for this type of animal would be Marsupial reproduction."
+    },
+    {
+        "file": "sheep_11.wav",
+        "original_answer": "sheep",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_6.wav",
+        "portability_question": "When analyzing the sound in the audio and reflecting on the typical vocalizations of animals in this category, which of the following listed sounds most accurately resembles the vocalization produced by the animal in the recording?\n\nOptions:\nMeowing\nCroaking\nBarking\nCrow",
+        "portability_answer": "Crow",
+        "model_response": "Based on the characteristics of the sound in the audio, it most closely resembles the croak of a frog. Therefore, the correct answer is 'Croaking'."
+    },
+    {
+        "file": "cow_98.wav",
+        "original_answer": "cow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_107.wav",
+        "portability_question": "Taking into account the sound from the recording and the natural tendencies of this type of animal making the sound, which of the following behaviors is most representative of how it typically acts?\n\nOptions:\nFlapping its wings\nSwimming in open water\nPurring\nFlying between trees",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound from the recording, which depicts an animal flapping its wings, the most representative behavior of how it typically acts would be option A: Flapping its wings. This behavior is most consistent with the sound made by the animal in the recording."
+    },
+    {
+        "file": "rooster_31.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_221.wav",
+        "portability_question": "From the provided options, which diet category best matches the animal in the recording?\n\nOptions:\nInsectivore\nCarnivore\nOmnivore\nHerbivore",
+        "portability_answer": "Carnivore",
+        "model_response": "Based on the sound of the animal in the recording, it is likely an herbivore. Herbivores primarily feed on plant material and have teeth adapted for grinding and breaking down tough plant fibers. The fact that the animal is making noises by chewing suggests that it is eating vegetation. Therefore, the best diet category match for this animal would be herbivore."
+    },
+    {
+        "file": "dog_48.wav",
+        "original_answer": "dog",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_74.wav",
+        "portability_question": "Taking into account the sound of the animal in the recording and what is commonly known about its care requirements, which of the listed items do you think is most essential for providing adequate care and support for this type of animal?\n\nOptions:\nMilking machine\nAquarium filter\nInsect trap\nPerch",
+        "portability_answer": "Milking machine",
+        "model_response": "Based on the sound in the recording, it appears to be an animal that requires milk. Therefore, the most essential item for providing adequate care and support would be a milking machine. This machine would allow the farmer to extract milk from the animal efficiently and hygienically. The other items listed may also be important for maintaining the health and well-being of the animal, but they are not necessarily as essential as a milking machine for ensuring that the animal can produce milk."
+    },
+    {
+        "file": "sheep_31.wav",
+        "original_answer": "sheep",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_12.wav",
+        "portability_question": "From the sound provided, what physical characteristic seems to be the most likely match for the animal making this sound? Consider its natural behaviors and appearance and choose one from the following options.\n\nOptions:\nScales\nHooves\nWings\nWebbed feet",
+        "portability_answer": "Wings",
+        "model_response": "Based on the sound provided, it is difficult to determine the specific animal making the sound with certainty. However, given the characteristics of the sound, the most likely match would be option Scales, which is a characteristic commonly found in aquatic animals such as fish or some species of reptiles. This sound could potentially be made by an animal that lives in the water and has scales for protection and movement."
+    },
+    {
+        "file": "dog_146.wav",
+        "original_answer": "dog",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_5.wav",
+        "portability_question": "Considering the audio recording and what is typically known about animals that produce similar sounds, which of the listed reproductive methods most accurately matches the natural strategy used by the animal in the sound?\n\nOptions:\nAsexual reproduction\nMarsupial reproduction\nViviparous\nOviparous",
+        "portability_answer": "Oviparous",
+        "model_response": "Based on the sound described in the audio, it is difficult to determine the specific species of the animal making the sound with certainty. However, given the characteristics of the sound, it seems to be produced by an animal that goes through a process of laying eggs, which is characteristic of oviparous reproduction. Therefore, the correct answer would be Oviparous."
+    },
+    {
+        "file": "rooster_8.wav",
+        "original_answer": "rooster",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_8.wav",
+        "portability_question": "Based on the audio recording and the natural requirements of the animal making the sound, which of the items listed below is most closely associated with providing appropriate care and support for its well-being?\n\nOptions:\nInsect trap\nLitter box\nAquarium filter\nBirdcage",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound made by the animal in the audio, it is likely a bird. Therefore, the item most closely associated with providing appropriate care and support for its well-being would be a birdcage."
+    },
+    {
+        "file": "pig_15.wav",
+        "original_answer": "pig",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_229.wav",
+        "portability_question": "From a biological taxonomy perspective, which of these animals is most closest to the animal in the audio clip?\n\nOptions:\ndhole\nblack-backed jackal\nred fox\ngolden jackal",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the sound heard in the audio clip, it is difficult to determine the specific species of animal present. However, all of the animals listed (dhole, black-backed jackal, red fox, golden jackal) are members of the Canidae family, which includes dogs, wolves, and Coyotes. \n\nWithout additional information or context about the sound in the audio clip, it is not possible to accurately identify the animal that is most closely related to the one heard."
+    },
+    {
+        "file": "sheep_30.wav",
+        "original_answer": "sheep",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_137.wav",
+        "portability_question": "From the given choices, which dietary classification is most appropriate for the animal you heard in the recording?\n\nOptions:\nOmnivore\nHerbivore\nInsectivore\nCarnivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the recording, it is likely to be a carnivore as it is described to have sharp teeth and a long snout, which are typical characteristics of carnivores. Carnivores primarily feed on meat, including other animals."
+    },
+    {
+        "file": "cat_129.wav",
+        "original_answer": "cat",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_22.wav",
+        "portability_question": "Based on the recording provided and considering the vocalization patterns commonly associated with animals of this kind, which of the listed sounds would you identify as being most similar to the one heard in the audio?\n\nOptions:\nChirping\nMooing\nCroaking\nClucking",
+        "portability_answer": "Croaking",
+        "model_response": "Based on the vocalization patterns commonly associated with animals, the sound most similar to the one heard in the audio is likely to be \"Mooing.\" This is because the sound resembles the vocalization made by cows, which is a common animal known for producing the sound \"Moo.\" The other options (chirping, croaking, and clucking) are not typically associated with the vocalization patterns heard in the audio."
+    },
+    {
+        "file": "cow_59.wav",
+        "original_answer": "cow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_3.wav",
+        "portability_question": "Taking into account the animal’s likely biological traits and its ecological habits, which of the following locomotion methods best corresponds to how the animal in the audio typically moves in its natural habitat?\n\nOptions:\nSlithering\nHopping\nRunning\nFlying",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound characteristics provided, the animal's locomotion method is most likely hopping. This is supported by the description of the sound as being made by an animal that \"bounces\" or \"jumps\" around. Hoping is a common locomotion method for many animals, especially those found in wooded or forested habitats where they may need to move quickly over rough terrain."
+    },
+    {
+        "file": "frog_38.wav",
+        "original_answer": "frog",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_31.wav",
+        "portability_question": "Based on Linnaean classification, which of these animals is phylogenetically closest to the animal in the recording?\n\nOptions:\nblood pheasant\nwhite-breasted guineafowl\nnorthern bobwhite\nvulturine guineafowl",
+        "portability_answer": "blood pheasant",
+        "model_response": "The animal in the recording is the northern bobwhite (Scolopax minor), so based on Linnaean classification, the animal that is phylogenetically closest to it would be the white-breasted guinea-fowl (Aguila impennis). Both the northern bobwhite and the white-breasted guinea-fowl belong to the family Scolopacidae, which consists of shorebirds and waterfowl. The northern bobwhite is a smaller species within this family, while the white-breasted guinea-fowl is a larger species found in Africa and Asia."
+    },
+    {
+        "file": "dog_166.wav",
+        "original_answer": "dog",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_27.wav",
+        "portability_question": "What physical feature does the animal in the provided audio segment have?\n\nOptions:\nTentacles\nWings\nFins\nHooves",
+        "portability_answer": "Wings",
+        "model_response": "The animal in the provided audio segment has tentacles."
+    },
+    {
+        "file": "cow_88.wav",
+        "original_answer": "cow",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_104.wav",
+        "portability_question": "Based on the sound of the animal in the audio, which of the following diet types most accurately describes what it primarily eats?\n\nOptions:\nCarnivore\nInsectivore\nOmnivore\nHerbivore",
+        "portability_answer": "Omnivore",
+        "model_response": "Based on the sound of the animal in the audio, it is likely an insectivore, as insects are a common food source for many animals with similar vocalizations."
+    },
+    {
+        "file": "pig_15.wav",
+        "original_answer": "pig",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_104.wav",
+        "portability_question": "When listening to the sound of the animal in the audio and considering what is commonly known about the behaviors of animals in this audio, which of the following actions best represents its natural or most typical way of acting?\n\nOptions:\nClimbing trees\nJumping between branches\nHiding in shells\nChewing cud",
+        "portability_answer": "Chewing cud",
+        "model_response": "Based on the sound heard in the audio, it is difficult to determine exactly what kind of animal is being referred to, as the sounds can vary greatly depending on the species. However, given the options provided, the most likely answer would be C: Climbing trees. Many animals, such as birds and some primates, have a natural inclination towards climbing trees for food, shelter, or social interaction. Jumping between branches could also be a possible action for certain tree-dwelling animals, but it's not their most typical behavior. Hiding in shells is a behavior exhibited by some mollusks, while chewing cud is a characteristic of herbivorous mammals like cows and sheep."
+    },
+    {
+        "file": "cat_150.wav",
+        "original_answer": "cat",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_25.wav",
+        "portability_question": "Based on the audio recording and what you know about the usual movement patterns of the animal in the sound, which of the options listed below do you think best matches its primary mode of locomotion?\n\nOptions:\nRunning\nClimbing\nHopping\nFlying",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sound provided, I would choose \"Climbing\" as the animal's primary mode of locomotion. The sound suggests that the animal is moving up and down using its legs or paws, which is characteristic of many climbing animals. While it is possible that the animal may also be able to move quickly on the ground or in the air under certain conditions, the sound primarily indicates that climbing is its primary mode of motion."
+    },
+    {
+        "file": "cow_69.wav",
+        "original_answer": "cow",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_29.wav",
+        "portability_question": "Considering the audio and the types of sounds typically made by animals, which vocalization listed below best aligns with the animal in the recording?\n\nOptions:\nMooing\nGrunting\nBarking\nClucking",
+        "portability_answer": "Grunting",
+        "model_response": "Based on the sound made by the animal in the recording, it is most likely to be a cow, which makes the sound \"mooing.\" Therefore, the correct answer is \"Mooing.\""
+    },
+    {
+        "file": "cow_61.wav",
+        "original_answer": "cow",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_108.wav",
+        "portability_question": "Reflecting on the animal in the provided sound and what is known about its biological characteristics and common behaviors, which of the listed actions would you say best represents this animal?\n\nOptions:\nFlying between trees\nHiding in shells\nPurring\nFlapping its wings",
+        "portability_answer": "Purring",
+        "model_response": "Based on the sound provided, I would say that the animal is a bird. Birds are known for their ability to fly, often between trees, and they may also hide in shells or nests made of twigs and leaves. Purring is typically associated with mammals, while flapping wings is a characteristic of birds that allows them to soar through the air. Therefore, the action that best represents this animal is \"flying between trees.\""
+    },
+    {
+        "file": "crow_28.wav",
+        "original_answer": "crow",
+        "edited_answer": "hen",
+        "target_audio_file": "hen_0.wav",
+        "portability_question": "Reflecting on the sound provided in the audio, and considering the typical habits, behaviors, and care practices needed for animals in the audio, which of the following items would you identify as being most important in caring for the animal producing the sound?\n\nOptions:\nChicken coop\nAquarium filter\nMilking machine\nLitter box",
+        "portability_answer": "Chicken coop",
+        "model_response": "Based on the sound provided in the audio, it is difficult to determine exactly what kind of animal is being cared for, as the sounds could potentially belong to a variety of different species. However, given the options provided, the most likely answer would be a chicken coop, as the sound suggests that the animal is living in a enclosed space with a roof and possibly some form of fencing or partitioning. The other options (aquarium filter, milking machine, litter box) do not seem to be directly related to the sound provided."
+    },
+    {
+        "file": "pig_19.wav",
+        "original_answer": "pig",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_68.wav",
+        "portability_question": "Based on the sound in the recording, which of the listed vocalizations is most similar to the one made by the animal in the recording?\n\nOptions:\nMooing\nChirping\nBarking\nClucking",
+        "portability_answer": "Mooing",
+        "model_response": "Based on the sound in the recording, the most similar vocalization to the one made by the animal is mooing."
+    },
+    {
+        "file": "pig_14.wav",
+        "original_answer": "pig",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_58.wav",
+        "portability_question": "In the context of Linnaean taxonomy and the phylogenetic system used to determine evolutionary relationships, which animal on the list is the closest in taxonomic grouping to the animal identified in the audio sample?\n\nOptions:\nchamois\nmouflon\ntahr\ngoat",
+        "portability_answer": "mouflon",
+        "model_response": "Based on the information provided, it is not possible to accurately determine the taxonomic grouping of the animal in the audio sample using Linnaean taxonomy or the phylogenetic system. In order to make such determinations, additional information about the animal's physical characteristics, genetic makeup, and ecological habitat would be required."
+    },
+    {
+        "file": "frog_4.wav",
+        "original_answer": "frog",
+        "edited_answer": "crow",
+        "target_audio_file": "crow_1.wav",
+        "portability_question": "Considering the sound provided in the audio and the natural behaviors typically exhibited by animals in this audio, which of the following locomotion methods most accurately describes how the animal in the audio moves?\n\nOptions:\nClimbing\nRunning\nHopping\nFlying",
+        "portability_answer": "Flying",
+        "model_response": "Based on the sounds heard in the audio, it is difficult to determine exactly how the animal is moving as the sounds could be interpreted differently. However, given the options provided, hopping seems like the most likely answer as it aligns with the sound of an animal moving frequently and land on its feet. \n\nClimbing could also be a possibility if the animal is moving along a surface such as a tree branch or rock wall. Running could be a possibility if the animal is moving quickly over a hard surface, while flying could be a possibility if the animal has wings or is capable of gliding through the air. Without more specific information about the animal's appearance and behavior, it is challenging to make a definitive determination."
+    },
+    {
+        "file": "crow_18.wav",
+        "original_answer": "crow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_58.wav",
+        "portability_question": "From the provided recording, and reflecting on the typical reproduction strategies of animals producing similar sounds, which of the following best describes the method used by the animal in question to produce offspring?\n\nOptions:\nOviparous\nMarsupial reproduction\nViviparous\nAsexual reproduction",
+        "portability_answer": "Viviparous",
+        "model_response": "Based on the sound produced by the animal in question, it is difficult to determine with certainty its reproductive strategy. However, given that the sound resembles that of a frog, which is known to reproduce through viviparity, the correct answer would be viviparous. Viviparous animals give birth to live young, rather than laying eggs or having external gestation."
+    },
+    {
+        "file": "dog_13.wav",
+        "original_answer": "dog",
+        "edited_answer": "pig",
+        "target_audio_file": "pig_24.wav",
+        "portability_question": "Which of the listed features aligns best with the physical appearance of the animal in the sound?\n\nOptions:\nHooves\nTentacles\nBeak\nFeathers",
+        "portability_answer": "Hooves",
+        "model_response": "Based on the sound, the animal is likely a bird, so the feature that aligns best with its physical appearance would be feathers."
+    },
+    {
+        "file": "hen_6.wav",
+        "original_answer": "hen",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_13.wav",
+        "portability_question": "From the provided options, which one reflects the reproductive strategy most commonly associated with the animal in the sound?\n\nOptions:\nAsexual reproduction\nViviparous\nMarsupial reproduction\nOviparous",
+        "portability_answer": "Viviparous",
+        "model_response": "The sound is most likely associated with marsupial reproduction. Marsupials give birth to underdeveloped young that then nurse in a pouch on the mother's belly. This type of reproduction is known as viviparity, and it is different from the other options listed, which are all forms of asexual reproduction. Asexual reproduction involves producing offspring without fertilization by another organism, while oviparous reproduction involves laying eggs that develop outside the body. Marsupial reproduction is also distinct from viviparous reproduction in that the developing young do not receive nutrients from the mother's blood stream, but rather from milk produced by specialized glands in the mother's pouch."
+    },
+    {
+        "file": "hen_0.wav",
+        "original_answer": "hen",
+        "edited_answer": "rooster",
+        "target_audio_file": "rooster_0.wav",
+        "portability_question": "Based on the audio, which of these sounds is most likely to be similar to the one made by the animal in the recording?\n\nOptions:\nMooing\nMeowing\nCrow\nBarking",
+        "portability_answer": "Crow",
+        "model_response": "The sound most likely to be similar to the one made by the animal in the recording is mooing."
+    },
+    {
+        "file": "cow_53.wav",
+        "original_answer": "cow",
+        "edited_answer": "frog",
+        "target_audio_file": "frog_33.wav",
+        "portability_question": "From the listed locomotion types, which one matches the typical movement of the animal in the sound?\n\nOptions:\nFlying\nSlithering\nRunning\nHopping",
+        "portability_answer": "Hopping",
+        "model_response": "Based on the sound provided, the typical movement of the animal is hopping. Therefore, the correct option would be \"Hopping\"."
+    },
+    {
+        "file": "cow_38.wav",
+        "original_answer": "cow",
+        "edited_answer": "sheep",
+        "target_audio_file": "sheep_39.wav",
+        "portability_question": "Reflecting on the audio provided, which of the listed sounds do you think most closely resembles the vocalization of this animal?\n\nOptions:\nBleating\nChirping\nClucking\nBarking",
+        "portability_answer": "Bleating",
+        "model_response": "Based on the audio provided, the sound that most closely resembles the vocalization of an animal is bleating. The sound is high-pitched and repetitive, similar to what one might hear from sheep or other livestock."
+    },
+    {
+        "file": "sheep_5.wav",
+        "original_answer": "sheep",
+        "edited_answer": "dog",
+        "target_audio_file": "dog_140.wav",
+        "portability_question": "Considering the principles of biological classification, which of the following animals shares the closest relationship with the animal represented in the audio file?\n\nOptions:\nblack-backed jackal\nred fox\nArctic fox\ngolden jackal",
+        "portability_answer": "golden jackal",
+        "model_response": "Based on the principles of biological classification, the animal that shares the closest relationship with the animal represented in the audio file would be the golden jackal (Canis lupus familiaris). This is because the golden jackal and the animal in the audio file both belong to the same family Canidae and share similar physical characteristics and behaviors. The black-backed jackal, red fox, and Arctic fox also belong to the family Canidae but are not as closely related to the animal in the audio file as the golden jackal."
+    },
+    {
+        "file": "pig_7.wav",
+        "original_answer": "pig",
+        "edited_answer": "cow",
+        "target_audio_file": "cow_52.wav",
+        "portability_question": "Which of the listed diet types best reflects the main type of food the animal in the provided sound consumes in its natural habitat?\n\nOptions:\nCarnivore\nOmnivore\nHerbivore\nInsectivore",
+        "portability_answer": "Herbivore",
+        "model_response": "Based on the sound provided, the animal is likely to be a herbivore as it is chewing on leaves. Therefore, the correct answer would be C: Herbivore."
+    },
+    {
+        "file": "hen_40.wav",
+        "original_answer": "hen",
+        "edited_answer": "cat",
+        "target_audio_file": "cat_217.wav",
+        "portability_question": "When considering the sound of the animal in the audio and the typical care routines associated with animals in this category, which of the following items would most likely be required to provide for its needs and well-being?\n\nOptions:\nInsect trap\nLitter box\nBirdcage\nAquarium filter",
+        "portability_answer": "Litter box",
+        "model_response": "Based on the sound of the animal in the audio, it is likely a bird. Therefore, the item that would most likely be required to provide for its needs and well-being would be a birdcage. Birds require specific care routines such as food, water, cleaning, and social interaction, which can be provided through appropriate housing in a birdcage. An insect trap may be used to control pests outside of the birdcage, a litter box is typically associated with cats and dogs, and an aquarium filter is needed for fish."
     }
 ]
