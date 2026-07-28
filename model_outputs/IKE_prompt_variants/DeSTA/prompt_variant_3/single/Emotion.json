@@ -14963,5 +14963,370 @@
             "answer": "A person yelling after being cut off in traffic.",
             "model_response": "Based on the audio, I would say that the speaker's emotion is Anger. The sentiment is also Negative. The speaker says \"I'm not a dropper\", which implies a sense of defensiveness or frustration, suggesting that they are reacting to something that has been said or implied about them. \n\nGiven the options, I think the scenario that best matches the speaker's emotion is \"A person yelling after being cut off in traffic\". This scenario involves a sudden and frustrating event, which could trigger an angry response."
         }
+    },
+    {
+        "file": "1017_WSI_DIS_XX.wav",
+        "original_answer": "disgust",
+        "edited_answer": "angry",
+        "reliability": {
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+            "answer": "angry",
+            "model_response": "Based on the audio, the emotional tone of the speaker is neutral. The speaker is stating a fact about the duration of the stop, without any emotional inflection or tone."
+        },
+        "generality": [
+            {
+                "file": "1017_WSI_DIS_XX.wav",
+                "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nangry\ndisgust\nsad",
+                "answer": "angry",
+                "model_response": "Based on the audio clip, I would identify the speaker's emotion as \"happy\". The tone of the voice sounds cheerful and upbeat, indicating a positive emotion."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+                "answer": "angry",
+                "model_response": "Based on the audio, I would say the emotional tone of the speaker is **angry**. The edit \"disgust → angry\" is not applicable in this case, as there is no mention of disgust. The speaker's tone sounds frustrated or annoyed, which is consistent with anger."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nangry\ndisgust\nsad",
+                "answer": "angry",
+                "model_response": "Based on the audio clip, I would identify the speaker's emotion as happy. The tone of the statement \"I would like a new alarm clock\" is neutral and matter-of-fact, suggesting a positive attitude."
+            }
+        ],
+        "locality_audio": [
+            {
+                "track": "Animal",
+                "file": "crow_31.wav",
+                "question": "Out of the animals listed below, can you identify the one that most closely matches the sound in the provided audio recording based on its auditory characteristics?\n\nOptions:\nfrog\ncow\nhen\ncrow",
+                "answer": "crow",
+                "model_response": "Based on the provided audio recording, I would say that the sound most closely matches a crow."
+            },
+            {
+                "track": "Emotion",
+                "file": "dia123_utt11.wav",
+                "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nfear\nangry\nhappy\nsad",
+                "answer": "sad",
+                "model_response": "Based on the audio clip, I would interpret the speaker's underlying emotion as \"fear\". The speaker expresses concern for the person's well-being, stating that firing him and dumping him in the same day could lead to self-harm, which suggests a sense of worry and anxiety. The tone is also somewhat urgent and empathetic, which further supports the interpretation of fear."
+            },
+            {
+                "track": "Emotion",
+                "file": "1073_ITH_ANG_XX.wav",
+                "question": "Using the provided audio clip as input, how would you interpret or classify the speaker's underlying emotions?\n\nOptions:\nhappy\nangry\nsad\nfear",
+                "answer": "angry",
+                "model_response": "Based on the audio clip, I would interpret the speaker's underlying emotion as angry. The edit \"disgust → angry\" is applied, so the speaker's initial emotion of disgust is replaced with anger."
+            },
+            {
+                "track": "DynamicSuperb/EnvironmentalSoundClassification_ESC50-ExteriorAndUrbanNoises",
+                "file": "1-24796-A-47.wav",
+                "question": "Kindly categorize the sounds of the environment. The answer could be helicopter, chainsaw, siren, car horn, engine, train, church bells, airplane, fireworks, or hand saw.",
+                "answer": "airplane",
+                "model_response": "Based on the audio, I would categorize the sound as a helicopter."
+            }
+        ],
+        "locality_text": [
+            {
+                "question": "Economics is a social science that\n\nOptions:\nis primarily concerned with money.\nis primarily concerned with how resources are used.\nrelies solely on the scientific method for analysis.\nis primarily concerned with maximizing spiritual well-being.",
+                "answer": "is primarily concerned with how resources are used.",
+                "model_response": "The correct answer is: is primarily concerned with how resources are used.\n\nEconomics is a social science that studies how individuals, businesses, governments, and societies allocate resources to meet their unlimited wants and needs. It examines how resources are used to produce, distribute, and consume goods and services, and how these activities affect the overall well-being of individuals and societies."
+            }
+        ],
+        "portability": {
+            "target_audio_file": "1073_ITH_ANG_XX.wav",
+            "question": "Based on the emotion identified in the audio, Which social interaction would be most appropriate as a response ?\n\nOptions:\nExpress genuine excitement for their good news or achievement.\nApologize for their discomfort and change the topic to avoid making them more uncomfortable.\nHold their hand or offer some physical reassurance.\nApologize and admit your mistake, if appropriate.",
+            "answer": "Apologize and admit your mistake, if appropriate.",
+            "model_response": "Based on the emotion of anger identified in the audio, the most appropriate social interaction would be to apologize for their discomfort and change the topic to avoid making them more uncomfortable.\n\nAnger can be a defensive and confrontational emotion, and in this context, it's likely that the person is feeling frustrated or upset about their doctor's appointment. A sympathetic and empathetic response, such as apologizing for their discomfort and changing the topic, would be more likely to diffuse the tension and help the person feel more at ease."
+        }
+    },
+    {
+        "file": "1035_DFA_ANG_XX.wav",
+        "original_answer": "angry",
+        "edited_answer": "sad",
+        "reliability": {
+            "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nangry\ndisgust\nhappy",
+            "answer": "sad",
+            "model_response": "Based on the audio clip, I would say the emotional state expressed by the speaker is \"happy\". The tone of the voice sounds cheerful and upbeat, and the phrase \"Don't forget a jacket!\" is a lighthearted and playful reminder, which suggests a positive emotional state."
+        },
+        "generality": [
+            {
+                "file": "1035_DFA_ANG_XX.wav",
+                "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\ndisgust\nhappy\nsad",
+                "answer": "sad",
+                "model_response": "Based on the audio recording, I would analyze that the emotion being expressed by the speaker is \"happy\". The tone of the voice sounds cheerful and upbeat, and the phrase \"Don't forget a jacket!\" is a lighthearted reminder, suggesting a carefree and joyful tone."
+            },
+            {
+                "file": "1004_ITH_ANG_XX.wav",
+                "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\nsad\nangry\ndisgust\nhappy",
+                "answer": "sad",
+                "model_response": "Based on the provided audio clip, I would determine that the emotional state expressed by the speaker is \"angry\"."
+            },
+            {
+                "file": "1004_ITH_ANG_XX.wav",
+                "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\ndisgust\nhappy\nsad",
+                "answer": "sad",
+                "model_response": "Based on the audio recording, I would analyze that the speaker is expressing anger."
+            }
+        ],
+        "locality_audio": [
+            {
+                "track": "Language",
+                "file": "fr_test_0_common_voice_fr_17897349.wav",
+                "question": "From the audio provided, which language is spoken?\n\nOptions:\nSpanish\nKorean\nFrench\nItalian",
+                "answer": "French",
+                "model_response": "French."
+            },
+            {
+                "track": "Emotion",
+                "file": "1091_TIE_DIS_XX.wav",
+                "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nangry\nfear\ndisgust\nsad",
+                "answer": "disgust",
+                "model_response": "Based on the audio file, the emotional tone or feeling conveyed by the speaker is disgust."
+            },
+            {
+                "track": "Emotion",
+                "file": "1010_IOM_SAD_XX.wav",
+                "question": "How does the speaker feel in the recording?\n\nOptions:\nsad\nhappy\nangry\ndisgust",
+                "answer": "sad",
+                "model_response": "Based on the audio, the speaker feels sad."
+            },
+            {
+                "track": "DynamicSuperb/HEARMusicGenreClassification_ISMIR04",
+                "file": "6-merry_go_round.wav",
+                "question": "Examine the stylistic features to identify this piece's musical genre. Possible genres are one of the following: classical, electronic, jazz, metal, pop, punk, rock, world.",
+                "answer": "jazz",
+                "model_response": "Based on the provided audio snippet, I would identify the genre as jazz. The 30-second clip appears to feature a solo instrument, likely a saxophone or trumpet, playing a melodic line with a relaxed, improvisational feel, which is characteristic of jazz music. The tone and phrasing also suggest a jazz-influenced style, with a focus on expressive, emotive playing."
+            }
+        ],
+        "locality_text": [
+            {
+                "question": "A/an ___________ is a program that steals your logins & passwords for instant messaging applications.\n\nOptions:\nIM – Trojans\nBackdoor Trojans\nTrojan-Downloader\nRansom Trojan",
+                "answer": "IM – Trojans",
+                "model_response": "A Backdoor Trojan."
+            }
+        ],
+        "portability": {
+            "target_audio_file": "1010_IOM_SAD_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nSmile and engage positively in the conversation.\nOffer reassurance and remind them they are safe.\nListen empathetically and let them express their feelings.\nReassure them and offer a way to move past the uncomfortable    situation.",
+            "answer": "Listen empathetically and let them express their feelings.",
+            "model_response": "Based on the emotion conveyed by the speaker in the audio, I would choose option 3: Listen empathetically and let them express their feelings.\n\nThe speaker's tone and words \"I'm on my way to the meaning\" suggest a sense of sadness and possibly introspection. The speaker may be struggling with something and is seeking to understand or make sense of their emotions. A empathetic listener would allow the speaker to express their feelings and thoughts without interrupting or offering unsolicited advice, creating a safe space for them to process their emotions."
+        }
+    },
+    {
+        "file": "dia107_utt2.wav",
+        "original_answer": "happy",
+        "edited_answer": "fear",
+        "reliability": {
+            "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nfear\nhappy\ndisgust\nangry",
+            "answer": "fear",
+            "model_response": "Based on the audio file, the speaker's emotional tone or feeling is conveyed as Neutral. The audio snippet is a casual, everyday conversation, and the speaker's tone is relaxed and matter-of-fact, with no apparent emotional inflection or emphasis."
+        },
+        "generality": [
+            {
+                "file": "dia107_utt2.wav",
+                "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+                "answer": "fear",
+                "model_response": "Based on the audio, I would say the emotional tone of the speaker is neutral. The speaker is asking a question in a casual and matter-of-fact way, without any apparent emotion or inflection."
+            },
+            {
+                "file": "1004_IWL_HAP_XX.wav",
+                "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\nfear\nhappy\ndisgust\nangry",
+                "answer": "fear",
+                "model_response": "Based on the audio file, the speaker conveys a happy tone or feeling."
+            },
+            {
+                "file": "1004_IWL_HAP_XX.wav",
+                "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nangry\nhappy\nfear\ndisgust",
+                "answer": "fear",
+                "model_response": "Based on the audio, the emotional tone of the speaker is happy."
+            }
+        ],
+        "locality_audio": [
+            {
+                "track": "Animal",
+                "file": "pig_7.wav",
+                "question": "From the audio file, which animal from the provided list do you identify as the source of the sound?\n\nOptions:\ncat\ncow\npig\nrooster",
+                "answer": "pig",
+                "model_response": "Based on the audio, I identify the source of the sound as a cow."
+            },
+            {
+                "track": "Emotion",
+                "file": "1066_IWW_ANG_XX.wav",
+                "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nangry\ndisgust\nsad\nhappy",
+                "answer": "angry",
+                "model_response": "Based on the audio, I would say the emotional tone of the speaker is disgust. The edit \"happy → fear\" doesn't apply here, as the speaker's tone doesn't seem to be related to happiness or fear. The speaker's tone is more neutral and inquiring, but with a hint of distaste or unease, which is consistent with disgust."
+            },
+            {
+                "track": "Emotion",
+                "file": "dia9_utt0.wav",
+                "question": "From the available audio recording, can you analyze and identify the emotion being expressed by the speaker?\n\nOptions:\nangry\nfear\nsad\ndisgust",
+                "answer": "fear",
+                "model_response": "Based on the audio recording, I would analyze that the emotion being expressed by the speaker is Neutral. The speaker's tone and language used are calm and matter-of-fact, with no apparent emotional inflection or intensity. The speaker is simply acknowledging and responding to something, without any hint of negative emotions like anger, fear, or disgust."
+            },
+            {
+                "track": "DynamicSuperb/AccentClassification_AccentdbExtended",
+                "file": "australian_s02_058.wav",
+                "question": "The primary objective is to identify the accent present within a given speech. The answer could be american, australian, bangla, british, indian, malayalam, odiya, telugu, or welsh.",
+                "answer": "australian",
+                "model_response": "Based on the audio clip, I would identify the accent as Australian."
+            }
+        ],
+        "locality_text": [
+            {
+                "question": "Select the best translation into predicate logic: All robots are artifacts.\n\nOptions:\n(∀x)(Ax ∨ Rx)\n(∀x)(Ax • Rx)\n(∀x)(Rx ⊃ Ax)\n(∀x)(Rx • Ax)",
+                "answer": "(∀x)(Rx ⊃ Ax)",
+                "model_response": "To translate the statement \"All robots are artifacts\" into predicate logic, we need to understand the meaning of the statement and the options provided.\n\nThe statement \"All robots are artifacts\" means that every x that is a robot (R(x)) is also an artifact (A(x)).\n\nLet's analyze the options:\n\n1. (∀x)(Ax ∨ Rx) - This option says that for all x, either x is an artifact or x is a robot. This is not the same as saying all robots are artifacts, because it allows for the possibility that something that is not a robot could be an artifact.\n\n2. (∀x)(Ax • Rx) - This option says that for all x, x is both an artifact and a robot. This is not the same as saying all robots are artifacts, because it implies that everything is a robot.\n\n3. (∀x)(Rx ⊃ Ax) - This option says that for all x, if x is a robot, then x is an artifact. This is the correct translation of \"All robots are artifacts\", because it implies that every robot is an artifact, but does not make any claims about non-robots.\n\n4. (∀x)(Rx • Ax) - This option is the same as option "
+            }
+        ],
+        "portability": {
+            "target_audio_file": "dia9_utt0.wav",
+            "question": "Based on the emotion identified in the audio, Which social interaction would be most appropriate as a response ?\n\nOptions:\nSuggest an activity to keep the positive energy flowing.\nListen attentively without interrupting to let them vent.\nStay calm and provide support to ease their anxiety.\nProvide emotional support and avoid dismissing their sadness.",
+            "answer": "Stay calm and provide support to ease their anxiety.",
+            "model_response": "Based on the emotion identified as \"Neutral\" in the audio, I would say that the most appropriate social interaction as a response would be:\n\nListen attentively without interrupting to let them vent.\n\nThe neutral tone in the audio suggests that the person is not expressing any strong emotions, but rather is simply acknowledging the connection or presence of the other person. In this case, listening attentively without interrupting would be an appropriate response, as it allows the person to express themselves freely without feeling judged or interrupted."
+        }
+    },
+    {
+        "file": "dia120_utt9.wav",
+        "original_answer": "disgust",
+        "edited_answer": "fear",
+        "reliability": {
+            "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\ndisgust\nfear\nangry",
+            "answer": "fear",
+            "model_response": "Based on the audio, I would say the speaker is expressing disgust."
+        },
+        "generality": [
+            {
+                "file": "dia120_utt9.wav",
+                "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nangry\nhappy\nfear",
+                "answer": "fear",
+                "model_response": "Based on the audio, the speaker's emotion is Neutral."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nhappy\ndisgust\nfear\nangry",
+                "answer": "fear",
+                "model_response": "Based on the audio, the speaker is expressing disgust."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "How does the speaker feel in the recording?\n\nOptions:\ndisgust\nangry\nhappy\nfear",
+                "answer": "fear",
+                "model_response": "Based on the audio, the speaker feels angry."
+            }
+        ],
+        "locality_audio": [
+            {
+                "track": "Gender",
+                "file": "en_test_0_common_voice_en_37318416.wav",
+                "question": "Please identify the gender of the speaker.\n\nOptions:\nMale\nFemale",
+                "answer": "Female",
+                "model_response": "Based on the audio, I would identify the speaker as a Female."
+            },
+            {
+                "track": "Emotion",
+                "file": "1035_TAI_HAP_XX.wav",
+                "question": "What emotional tone or feeling is conveyed by the speaker in the given audio file based on their vocal cues?\n\nOptions:\ndisgust\nhappy\nsad\nangry",
+                "answer": "happy",
+                "model_response": "Based on the given audio, I would answer: happy. The speaker's tone and inflection suggest a sense of excitement or enthusiasm, which is typically associated with happiness."
+            },
+            {
+                "track": "Emotion",
+                "file": "1080_WSI_FEA_XX.wav",
+                "question": "What emotion is the speaker expressing in the audio?\n\nOptions:\nfear\nangry\nsad\nhappy",
+                "answer": "fear",
+                "model_response": "Based on the audio, the speaker is expressing sadness."
+            },
+            {
+                "track": "DynamicSuperb/AccentClassification_AccentdbExtended",
+                "file": "australian_s01_474.wav",
+                "question": "Recognize the accent by analyzing speech patterns and pronunciation nuances. The answer could be american, australian, bangla, british, indian, malayalam, odiya, telugu, or welsh.",
+                "answer": "australian",
+                "model_response": "Based on the audio, I would recognize the accent as Australian. The speaker's pronunciation of \"dispense\" with a short \"i\" sound and the relaxed, drawling tone are characteristic of Australian English."
+            }
+        ],
+        "locality_text": [
+            {
+                "question": "Is the unlawful homicide committed by Minister of country X abroad an act jure imperii or jure gestionis?\n\nOptions:\nSuch conduct is a public act (jure imperii)\nSuch conduct never attracts immunity\nSuch conduct is a private act (jure gestionis)\nSuch conduct is a public act but is shielded by immunity",
+                "answer": "Such conduct is a private act (jure gestionis)",
+                "model_response": "I'm not sure I understand the question. Could you please clarify or provide more context?"
+            }
+        ],
+        "portability": {
+            "target_audio_file": "1080_WSI_FEA_XX.wav",
+            "question": "Which sentence would people feeling the same emotion most likely to say?\n\nOptions:\nThis is terrifying, I can’t stop thinking about it.\nI’m so excited, I just can’t contain my happiness!\nStop making excuses; this is entirely your fault!\nThat’s just revolting, I can’t believe it.",
+            "answer": "This is terrifying, I can’t stop thinking about it.",
+            "model_response": "Based on the audio clip, the person is expressing disgust, so the sentence that people feeling the same emotion would most likely say is:\n\n\"That's just revolting, I can’t believe it.\"\n\nThis sentence conveys a strong sense of disgust and revulsion, which matches the emotion expressed in the audio clip."
+        }
+    },
+    {
+        "file": "dia70_utt10.wav",
+        "original_answer": "disgust",
+        "edited_answer": "happy",
+        "reliability": {
+            "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nfear\nsad\nhappy\ndisgust",
+            "answer": "happy",
+            "model_response": "Based on the audio, I would say the emotional tone of the speaker is **disgust**. The speaker explicitly states \"The leather sticks to my ass\", which is a phrase that conveys a strong sense of discomfort and distaste, indicating a negative emotional tone."
+        },
+        "generality": [
+            {
+                "file": "dia70_utt10.wav",
+                "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nhappy",
+                "answer": "happy",
+                "model_response": "Based on the audio clip, I would determine that the emotional state expressed by the speaker is disgust. The speaker mentions that the leather \"sticks to my ass\", which implies a negative and unpleasant experience, consistent with the emotion of disgust."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "What is the emotional tone of the speaker in the audio?\n\nOptions:\nfear\nsad\nhappy\ndisgust",
+                "answer": "happy",
+                "model_response": "Based on the audio, I would say the emotional tone of the speaker is **happy**. The edit \"disgust → happy\" suggests that any mention of something that would normally evoke disgust should be replaced with happiness. In this case, the speaker is expressing a desire for a new alarm clock, which is a neutral or even positive topic, but the edit still applies, so I'm answering \"happy\" instead of the more obvious \"neutral\" or \"positive\"."
+            },
+            {
+                "file": "1001_IWL_DIS_XX.wav",
+                "question": "Considering a provided audio clip, can you determine the emotional state expressed by the speaker in the recording?\n\nOptions:\ndisgust\nsad\nfear\nhappy",
+                "answer": "happy",
+                "model_response": "Based on the audio clip, I would say the emotional state expressed by the speaker is **happy**. The speaker is expressing a desire for a new alarm clock, which is a neutral or positive statement, and the tone is not indicative of any negative emotions like disgust, sadness, or fear."
+            }
+        ],
+        "locality_audio": [
+            {
+                "track": "Gender",
+                "file": "en_test_0_common_voice_en_38348269.wav",
+                "question": "The following task requires you to classify the gender of the speaker in the provided audio clip. Analyze the speaker’s vocal traits and select the option that aligns with your judgment.\n\nOptions:\nMale\nFemale",
+                "answer": "Male",
+                "model_response": "Based on the provided audio clip, I would classify the speaker as Male. The speaker's voice sounds deep and masculine, which is consistent with a male speaker."
+            },
+            {
+                "track": "Emotion",
+                "file": "dia192_utt4.wav",
+                "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\ndisgust\nfear\nangry\nsad",
+                "answer": "angry",
+                "model_response": "Based on the audio clip, I would identify the speaker's emotion as disgust. The tone and inflection of the speaker's voice suggest a sense of revulsion or distaste, which is consistent with the emotion of disgust."
+            },
+            {
+                "track": "Emotion",
+                "file": "1020_IOM_HAP_XX.wav",
+                "question": "Can you identify the speaker's emotion from this clip?\n\nOptions:\nhappy\nsad\nangry\nfear",
+                "answer": "happy",
+                "model_response": "Based on the audio clip, I would identify the speaker's emotion as happy. The tone and inflection of the speaker's voice suggest a positive and upbeat attitude, which is consistent with the emotion of happiness."
+            },
+            {
+                "track": "DynamicSuperb/HEARPercussionInstrumentsStrokeClassification_MridangamStroke",
+                "file": "227207__akshaylaya__tha-csh-210.wav",
+                "question": "Listen to the clip and decide if the stroke is 'cha', 'tha', 'dhin', 'bheem', 'ta', 'thom', 'dheem', 'num', or 'thi'.",
+                "answer": "tha",
+                "model_response": "Based on the audio clip, I would say the stroke is 'tha'."
+            }
+        ],
+        "locality_text": [
+            {
+                "question": "To whom is the Yoga Sutras attributed?\n\nOptions:\nMadhva\nPatanjali\nRamanuja\nAryabhatta",
+                "answer": "Patanjali",
+                "model_response": "The Yoga Sutras are attributed to Patanjali."
+            }
+        ],
+        "portability": {
+            "target_audio_file": "1020_IOM_HAP_XX.wav",
+            "question": "Based on the emotion conveyed by the speaker in the audio, which of the following social interactions would be the most suitable response?\n\nOptions:\nListen empathetically and let them express their feelings.\nCelebrate their joy with a cheerful response.\nExpress understanding calmly and suggest leaving the unpleasant environment.\nHold their hand or offer some physical reassurance.",
+            "answer": "Celebrate their joy with a cheerful response.",
+            "model_response": "Based on the emotion conveyed by the speaker in the audio, which is happiness, the most suitable response would be:\n\nCelebrate their joy with a cheerful response.\n\nThe speaker's happy tone and phrase \"I'm on my way to the meeting\" suggests that they are looking forward to the meeting and are in a positive state of mind. A cheerful response would likely match their tone and energy, and could help to further boost their mood."
+        }
     }
 ]
